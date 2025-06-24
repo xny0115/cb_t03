@@ -41,6 +41,7 @@ class AutoTuner:
     def suggest(self) -> Dict[str, Any]:
         """Return recommended hyperparameters."""
         cfg: Dict[str, Any] = {}
+        logger.info("AutoTuner dataset=%d, vram=%dGB, ram=%dGB", self.dataset_size, self.vram_gb, self.ram_gb)
         high_mem = self.vram_gb >= 8 or self.ram_gb >= 16
         cfg["batch_size"] = 32 if high_mem else 8
         cfg["model_dim"] = 512 if self.vram_gb >= 8 else 256
