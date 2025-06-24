@@ -19,7 +19,7 @@ class ChatbotService:
             self.model = load_model(self.model_path)
 
     def start_training(self) -> Dict[str, Any]:
-        mapping = {s.input: s.output for s in self.dataset}
+        mapping = {f"{s.instruction} {s.input}".strip(): s.output for s in self.dataset}
         self.model = DummyModel(mapping)
         save_model(self.model, self.model_path)
         return {"success": True, "msg": "done", "data": None}
