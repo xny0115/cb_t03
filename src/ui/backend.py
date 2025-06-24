@@ -18,8 +18,8 @@ class WebBackend:
         ok = self._svc.delete_model()
         return {"success": ok, "msg": "deleted" if ok else "no_model", "data": None}
 
-    def infer(self, instruction: str, text: str) -> Dict[str, Any]:
-        return self._svc.infer(instruction, text)
+    def infer(self, text: str) -> Dict[str, Any]:
+        return self._svc.infer(text)
 
     def get_status(self) -> Dict[str, Any]:
         return self._svc.get_status()

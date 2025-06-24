@@ -31,10 +31,10 @@ class ChatbotService:
             return True
         return False
 
-    def infer(self, instruction: str, text: str) -> Dict[str, Any]:
+    def infer(self, text: str) -> Dict[str, Any]:
         if not self.model:
             return {"success": False, "msg": "no_model", "data": None}
-        out = self.model.predict(instruction, text)
+        out = self.model.predict("", text)
         return {"success": True, "msg": "ok", "data": out}
 
     def get_status(self) -> Dict[str, Any]:
