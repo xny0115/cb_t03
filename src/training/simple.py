@@ -2,6 +2,9 @@ from __future__ import annotations
 
 from typing import List, Tuple, Any
 
+import logging
+import time
+
 import torch
 from torch import nn, optim
 from torch.utils.data import DataLoader, Dataset
@@ -32,6 +35,9 @@ def _collate(batch):
 
 
 def train(samples: List[InstructionSample], cfg: dict[str, Any] | None = None):
+    """Train a Seq2SeqTransformer on given samples."""
+
+    logger = logging.getLogger(__name__)
     cfg = cfg or {}
     epochs = int(cfg.get("num_epochs", 5))
     lr = float(cfg.get("learning_rate", 1e-3))
@@ -67,8 +73,11 @@ def train(samples: List[InstructionSample], cfg: dict[str, Any] | None = None):
     crit = nn.CrossEntropyLoss(ignore_index=0)
     opt = optim.Adam(model.parameters(), lr=lr)
 
-    for _ in range(epochs):
+    logger.info("Training start: epochs=%d, samples=%d", epochs, len(samples))
+    for epoch in range(epochs):
         model.train()
+        total_loss = 0.0
+        start = time.perf_counter()
         for src, tgt in loader:
             src, tgt = src.to(device), tgt.to(device)
             opt.zero_grad()
@@ -76,6 +85,12 @@ def train(samples: List[InstructionSample], cfg: dict[str, Any] | None = None):
             loss = crit(out.reshape(-1, tokenizer.vocab_size), tgt[:, 1:].reshape(-1))
             loss.backward()
             opt.step()
+            total_loss += loss.item()
+        ms = int((time.perf_counter() - start) * 1000)
+        avg_loss = total_loss / len(loader)
+        logger.info("Epoch: %d/%d | Loss: %.3f | Time: %dms", epoch + 1, epochs, avg_loss, ms)
+
+    logger.info("Training complete")
 
     return model, tokenizer
 
