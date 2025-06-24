@@ -82,8 +82,10 @@ def train(samples: List[InstructionSample], cfg: dict[str, Any] | None = None):
         torch.backends.cudnn.benchmark = True
     else:
         device = "cpu"
-        logger.warning("CUDA not available, falling back to CPU. Training will be slow")
-    logger.info("Using device: %s", device)
+        logger.warning(
+            "CUDA not available, falling back to CPU. Training will be slow"
+        )
+    logger.info("Training device: %s", device)
     model.to(device)
     crit = nn.CrossEntropyLoss(ignore_index=0)
     opt = optim.Adam(model.parameters(), lr=lr)
@@ -91,6 +93,7 @@ def train(samples: List[InstructionSample], cfg: dict[str, Any] | None = None):
     scaler = torch.cuda.amp.GradScaler(enabled=use_amp)
 
     logger.info("Training start: epochs=%d, samples=%d", epochs, len(samples))
+    train_start = time.perf_counter()
     for epoch in range(epochs):
         model.train()
         total_loss = 0.0
@@ -110,11 +113,19 @@ def train(samples: List[InstructionSample], cfg: dict[str, Any] | None = None):
                 loss.backward()
                 opt.step()
             total_loss += loss.item()
-        ms = int((time.perf_counter() - start) * 1000)
+        ms = time.perf_counter() - start
         avg_loss = total_loss / len(loader)
-        logger.info("Epoch: %d/%d | Loss: %.3f | Time: %dms", epoch + 1, epochs, avg_loss, ms)
+        progress = ((epoch + 1) / epochs) * 100
+        logger.info(
+            "Epoch %d/%d (%.0f%%) | Loss: %.3f | Time: %.2fs",
+            epoch + 1,
+            epochs,
+            progress,
+            avg_loss,
+            ms,
+        )
 
-    logger.info("Training complete")
+    logger.info("Training complete in %.2fs", time.perf_counter() - train_start)
 
     return model, tokenizer
 
