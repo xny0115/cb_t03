@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from typing import List, Tuple
+from typing import List, Tuple, Any
 
 import torch
 from torch import nn, optim
@@ -31,7 +31,17 @@ def _collate(batch):
     return src_pad, tgt_pad
 
 
-def train(samples: List[InstructionSample], epochs: int = 5, lr: float = 1e-3):
+def train(samples: List[InstructionSample], cfg: dict[str, Any] | None = None):
+    cfg = cfg or {}
+    epochs = int(cfg.get("num_epochs", 5))
+    lr = float(cfg.get("learning_rate", 1e-3))
+    batch_size = int(cfg.get("batch_size", 8))
+    model_dim = int(cfg.get("model_dim", 128))
+    num_heads = int(cfg.get("num_heads", 4))
+    enc_layers = int(cfg.get("num_encoder_layers", 2))
+    dec_layers = int(cfg.get("num_decoder_layers", 2))
+    ff_dim = int(cfg.get("ff_dim", 512))
+    dropout = float(cfg.get("dropout_ratio", 0.1))
     texts = [f"{s.instruction} {s.input} {s.output}" for s in samples]
     tokenizer = CharTokenizer(texts)
     pairs = []
@@ -41,9 +51,17 @@ def train(samples: List[InstructionSample], epochs: int = 5, lr: float = 1e-3):
         pairs.append((src, tgt))
 
     dataset = _PairDataset(pairs)
-    loader = DataLoader(dataset, batch_size=8, shuffle=True, collate_fn=_collate)
+    loader = DataLoader(dataset, batch_size=batch_size, shuffle=True, collate_fn=_collate)
 
-    model = Seq2SeqTransformer(tokenizer.vocab_size)
+    model = Seq2SeqTransformer(
+        tokenizer.vocab_size,
+        embed_dim=model_dim,
+        num_heads=num_heads,
+        num_encoder_layers=enc_layers,
+        num_decoder_layers=dec_layers,
+        dim_ff=ff_dim,
+        dropout=dropout,
+    )
     device = "cuda" if torch.cuda.is_available() else "cpu"
     model.to(device)
     crit = nn.CrossEntropyLoss(ignore_index=0)

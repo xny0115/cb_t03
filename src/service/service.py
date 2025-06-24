@@ -1,12 +1,13 @@
 from __future__ import annotations
 
 from pathlib import Path
-from typing import Any, Dict
+from typing import Any, Dict, Tuple
 import logging
 import os
 import torch
 
 from ..data.loader import load_dataset
+from ..config import load_config, save_config
 from ..model import (
     DummyModel,
     HFModel,
@@ -31,6 +32,7 @@ class ChatbotService:
         self.dataset = load_dataset(self.data_dir)
         self.model: DummyModel | HFModel | Seq2SeqTransformer | None = None
         self.tokenizer: CharTokenizer | None = None
+        self._config = load_config()
 
         hf_name = os.getenv("HF_MODEL_NAME")
         if hf_name:
@@ -45,13 +47,25 @@ class ChatbotService:
     def start_training(self) -> Dict[str, Any]:
         if isinstance(self.model, HFModel):
             return {"success": True, "msg": "done", "data": None}
-        model, tokenizer = train_transformer(self.dataset)
+        model, tokenizer = train_transformer(self.dataset, self._config)
         save_transformer(model, tokenizer.stoi, self.model_path)
         self.model = model
         self.tokenizer = tokenizer
         logger = logging.getLogger(__name__)
         logger.info("Training complete")
         return {"success": True, "msg": "done", "data": None}
+
+    def set_config(self, cfg: Dict[str, Any]) -> Tuple[bool, str]:
+        try:
+            self._config.update(cfg)
+            save_config(self._config)
+            return True, "saved"
+        except Exception as exc:  # pragma: no cover - best effort
+            logging.getLogger(__name__).warning("config save failed: %s", exc)
+            return False, str(exc)
+
+    def get_config(self) -> Dict[str, Any]:
+        return self._config.copy()
 
     def delete_model(self) -> bool:
         if self.model_path.exists():

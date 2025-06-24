@@ -9,7 +9,7 @@ from src.data.loader import InstructionSample
 
 def test_transformer_save_load(tmp_path: Path) -> None:
     samples = [InstructionSample("다음 질문에 답하세요.", "안녕", "안녕!")]
-    model, tokenizer = train(samples, epochs=1)
+    model, tokenizer = train(samples, {"num_epochs": 1})
     path = tmp_path / "m.pth"
     save_transformer(model, tokenizer.stoi, path)
     assert path.exists() and path.stat().st_size >= 1_000_000
