@@ -1170,10 +1170,18 @@
                 finetuneBtn.onclick = () => handleTraining('finetune');
                 additionalFinetuneBtn.onclick = () => handleTraining('additional_finetune');
                 
-                autoBtn.onclick = () => api.auto_tune().then(r => {
-                    if (r && r.data) applyCfg(r.data);
-                    showStatus(trainStatus, 'Auto-tune이 적용되었습니다!', 'success');
-                }).catch(err => showStatus(trainStatus, 'Auto-tune 실패: ' + (err.message || err), 'error'));
+                autoBtn.onclick = () =>
+                    api.auto_tune()
+                       .then(r => {
+                           applyCfg(r.data || r);
+                           showStatus(trainStatus,
+                               'Auto-Tune 완료. 학습을 시작하려면 Start를 누르십시오.',
+                               'success');
+                       })
+                       .catch(err =>
+                           showStatus(trainStatus,
+                               'Auto-Tune 실패: ' + (err.msg || err),
+                               'error'));
 
                 deleteBtn.onclick = () => api.delete_model().then(r => {
                     if (r.success) {

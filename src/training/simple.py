@@ -26,9 +26,10 @@ class _PairDataset(Dataset):
 
 
 def _collate(batch):
+    """Tensorize and pad sequences."""  # speed tweak
     srcs, tgts = zip(*batch)
-    srcs = [torch.tensor(s, dtype=torch.long) for s in srcs]
-    tgts = [torch.tensor(t, dtype=torch.long) for t in tgts]
+    srcs = [torch.as_tensor(s, dtype=torch.long) for s in srcs]
+    tgts = [torch.as_tensor(t, dtype=torch.long) for t in tgts]
     src_pad = nn.utils.rnn.pad_sequence(srcs, batch_first=True, padding_value=0)
     tgt_pad = nn.utils.rnn.pad_sequence(tgts, batch_first=True, padding_value=0)
     return src_pad, tgt_pad
@@ -57,8 +58,9 @@ def train(samples: List[InstructionSample], cfg: dict[str, Any] | None = None):
         pairs.append((src, tgt))
 
     dataset = _PairDataset(pairs)
-    num_workers = int(cfg.get("num_workers", 0))
-    pin_memory = bool(cfg.get("pin_memory", False)) and torch.cuda.is_available()
+    num_workers = min(max(os.cpu_count() // 2, 2), 8)
+    pin_memory = True
+    batch_size = int(cfg.get("batch_size", 32))
     loader = DataLoader(
         dataset,
         batch_size=batch_size,
@@ -66,7 +68,7 @@ def train(samples: List[InstructionSample], cfg: dict[str, Any] | None = None):
         collate_fn=_collate,
         num_workers=num_workers,
         pin_memory=pin_memory,
-    )
+    )  # dataloader tuned
 
     model = Seq2SeqTransformer(
         tokenizer.vocab_size,
@@ -77,6 +79,8 @@ def train(samples: List[InstructionSample], cfg: dict[str, Any] | None = None):
         dim_ff=ff_dim,
         dropout=dropout,
     )
+    if tuple(map(int, torch.__version__.split(".")[:2])) >= (2, 1):
+        model = torch.compile(model)  # compile when supported
     if torch.cuda.is_available():
         device = "cuda"
         torch.backends.cudnn.benchmark = True

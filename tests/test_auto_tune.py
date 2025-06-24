@@ -9,9 +9,10 @@ from src.service.service import ChatbotService
 def test_auto_tune_updates_config(tmp_path: Path) -> None:
     svc = ChatbotService()
     before = svc.get_config().copy()
-    cfg = svc.auto_tune()
+    res = svc.auto_tune()
+    cfg = res["data"]
     after = svc.get_config()
     for k, v in cfg.items():
         assert after[k] == v
-    assert cfg  # ensure not empty
+    assert res["success"] and cfg
 

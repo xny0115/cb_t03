@@ -151,4 +151,4 @@ class ChatbotService:
         self._config.update(cfg)
         save_config(self._config)
         logging.getLogger(__name__).info("auto-tune applied: %s", cfg)
-        return cfg
+        return {"success": True, "msg": "auto-tune applied", "data": cfg}  # api spec
