@@ -136,7 +136,17 @@ class ChatbotService:
 
     def auto_tune(self) -> Dict[str, Any]:
         """Apply AutoTuner suggestions to config."""
-        tuner = AutoTuner(len(self.dataset))
+        size = len(self.dataset)
+        try:
+            size = max(
+                size,
+                len(load_pretrain_dataset(self.pretrain_dir)),
+                len(load_instruction_dataset(self.finetune_dir)),
+                len(load_instruction_dataset(self.additional_dir)),
+            )
+        except Exception:  # pragma: no cover - best effort
+            logging.getLogger(__name__).warning("dataset size detection failed")
+        tuner = AutoTuner(size)
         cfg = tuner.suggest()
         self._config.update(cfg)
         save_config(self._config)
