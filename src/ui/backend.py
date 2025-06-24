@@ -32,4 +32,5 @@ class WebBackend:
         return {"success": True, "msg": "ok", "data": self._svc.get_config()}
 
     def auto_tune(self) -> Dict[str, Any]:  # pragma: no cover
-        return {}
+        cfg = self._svc.auto_tune()
+        return {"success": True, "msg": "ok", "data": cfg}
