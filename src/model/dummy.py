@@ -5,13 +5,18 @@ from pathlib import Path
 
 
 class DummyModel:
-    """매우 단순한 매핑 기반 모델."""
+    """매우 단순한 매핑 기반 모델.
+
+    instruction과 input을 합친 문자열을 키로 사용한다.
+    """
 
     def __init__(self, mapping: dict[str, str]):
         self.mapping = mapping
 
     def predict(self, instruction: str, inp: str) -> str:
-        return self.mapping.get(inp.strip(), "")
+        """instruction+input 조합으로 출력 문자열을 조회한다."""
+        key = f"{instruction.strip()} {inp.strip()}".strip()
+        return self.mapping.get(key, "")
 
 
 def save_model(model: DummyModel, path: Path) -> None:
