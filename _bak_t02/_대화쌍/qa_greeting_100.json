@@ -1,0 +1,2728 @@
+[
+  {
+    "question": {
+      "text": "안녕하세요!",
+      "tokens": [
+        {
+          "text": "안녕하세요",
+          "lemma": "안녕하세요",
+          "pos": "NNP"
+        }
+      ],
+      "concepts": [
+        "안녕하세요"
+      ],
+      "domain": "greeting"
+    },
+    "answer": {
+      "text": "안녕하세요!",
+      "tokens": [
+        {
+          "text": "안녕하세요",
+          "lemma": "안녕하세요",
+          "pos": "NNP"
+        }
+      ]
+    },
+    "concepts": [
+      "안녕하세요"
+    ],
+    "domain": "greeting"
+  },
+  {
+    "question": {
+      "text": "오랜만이야!",
+      "tokens": [
+        {
+          "text": "오랜만",
+          "lemma": "오랜만",
+          "pos": "NNG"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "VCP"
+        },
+        {
+          "text": "야",
+          "lemma": "야",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "오랜만"
+      ],
+      "domain": "greeting"
+    },
+    "answer": {
+      "text": "진짜 오랜만이다! 잘 지냈어?",
+      "tokens": [
+        {
+          "text": "진짜",
+          "lemma": "진짜",
+          "pos": "MAG"
+        },
+        {
+          "text": "오랜만",
+          "lemma": "오랜만",
+          "pos": "NNG"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "VCP"
+        },
+        {
+          "text": "다",
+          "lemma": "다",
+          "pos": "EF"
+        },
+        {
+          "text": "잘",
+          "lemma": "잘",
+          "pos": "MAG"
+        },
+        {
+          "text": "지내",
+          "lemma": "지내",
+          "pos": "VV"
+        },
+        {
+          "text": "었",
+          "lemma": "었",
+          "pos": "EP"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "오랜만"
+    ],
+    "domain": "greeting"
+  },
+  {
+    "question": {
+      "text": "좋은 아침!",
+      "tokens": [
+        {
+          "text": "좋은 아침",
+          "lemma": "좋은 아침",
+          "pos": "NNP"
+        }
+      ],
+      "concepts": [
+        "좋은 아침"
+      ],
+      "domain": "greeting"
+    },
+    "answer": {
+      "text": "좋은 아침이야!",
+      "tokens": [
+        {
+          "text": "좋은 아침",
+          "lemma": "좋은 아침",
+          "pos": "NNP"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "VCP"
+        },
+        {
+          "text": "야",
+          "lemma": "야",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "좋은 아침"
+    ],
+    "domain": "greeting"
+  },
+  {
+    "question": {
+      "text": "점심 맛있게 먹었어?",
+      "tokens": [
+        {
+          "text": "점심",
+          "lemma": "점심",
+          "pos": "NNP"
+        },
+        {
+          "text": "맛있",
+          "lemma": "맛있",
+          "pos": "VA"
+        },
+        {
+          "text": "게",
+          "lemma": "게",
+          "pos": "EC"
+        },
+        {
+          "text": "먹",
+          "lemma": "먹",
+          "pos": "VV"
+        },
+        {
+          "text": "었",
+          "lemma": "었",
+          "pos": "EP"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "너는",
+        "점심"
+      ],
+      "domain": "greeting"
+    },
+    "answer": {
+      "text": "응, 맛있게 먹었어. 너는?",
+      "tokens": [
+        {
+          "text": "응",
+          "lemma": "응",
+          "pos": "IC"
+        },
+        {
+          "text": "맛있",
+          "lemma": "맛있",
+          "pos": "VA"
+        },
+        {
+          "text": "게",
+          "lemma": "게",
+          "pos": "EC"
+        },
+        {
+          "text": "먹",
+          "lemma": "먹",
+          "pos": "VV"
+        },
+        {
+          "text": "었",
+          "lemma": "었",
+          "pos": "EP"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        },
+        {
+          "text": "너는",
+          "lemma": "너는",
+          "pos": "NNP"
+        }
+      ]
+    },
+    "concepts": [
+      "너는",
+      "점심"
+    ],
+    "domain": "greeting"
+  },
+  {
+    "question": {
+      "text": "저녁은 뭐 먹었어?",
+      "tokens": [
+        {
+          "text": "저녁",
+          "lemma": "저녁",
+          "pos": "NNG"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "JX"
+        },
+        {
+          "text": "뭐",
+          "lemma": "뭐",
+          "pos": "NP"
+        },
+        {
+          "text": "먹",
+          "lemma": "먹",
+          "pos": "VV"
+        },
+        {
+          "text": "었",
+          "lemma": "었",
+          "pos": "EP"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "저녁"
+      ],
+      "domain": "greeting"
+    },
+    "answer": {
+      "text": "아직 안 먹었어. 뭐 먹을까?",
+      "tokens": [
+        {
+          "text": "아직",
+          "lemma": "아직",
+          "pos": "MAG"
+        },
+        {
+          "text": "안",
+          "lemma": "안",
+          "pos": "MAG"
+        },
+        {
+          "text": "먹",
+          "lemma": "먹",
+          "pos": "VV"
+        },
+        {
+          "text": "었",
+          "lemma": "었",
+          "pos": "EP"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        },
+        {
+          "text": "뭐",
+          "lemma": "뭐",
+          "pos": "NP"
+        },
+        {
+          "text": "먹",
+          "lemma": "먹",
+          "pos": "VV"
+        },
+        {
+          "text": "을까",
+          "lemma": "을까",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "저녁"
+    ],
+    "domain": "greeting"
+  },
+  {
+    "question": {
+      "text": "다음에 또 봐!",
+      "tokens": [
+        {
+          "text": "다음",
+          "lemma": "다음",
+          "pos": "NNG"
+        },
+        {
+          "text": "에",
+          "lemma": "에",
+          "pos": "JKB"
+        },
+        {
+          "text": "또",
+          "lemma": "또",
+          "pos": "MAJ"
+        },
+        {
+          "text": "보",
+          "lemma": "보",
+          "pos": "VX"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "다음"
+      ],
+      "domain": "greeting"
+    },
+    "answer": {
+      "text": "그래, 다음에 또 보자!",
+      "tokens": [
+        {
+          "text": "그래",
+          "lemma": "그래",
+          "pos": "IC"
+        },
+        {
+          "text": "다음",
+          "lemma": "다음",
+          "pos": "NNG"
+        },
+        {
+          "text": "에",
+          "lemma": "에",
+          "pos": "JKB"
+        },
+        {
+          "text": "또",
+          "lemma": "또",
+          "pos": "MAJ"
+        },
+        {
+          "text": "보",
+          "lemma": "보",
+          "pos": "VX"
+        },
+        {
+          "text": "자",
+          "lemma": "자",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "다음"
+    ],
+    "domain": "greeting"
+  },
+  {
+    "question": {
+      "text": "별일 없지?",
+      "tokens": [
+        {
+          "text": "별일",
+          "lemma": "별일",
+          "pos": "NNG"
+        },
+        {
+          "text": "없",
+          "lemma": "없",
+          "pos": "VA"
+        },
+        {
+          "text": "지",
+          "lemma": "지",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "넌",
+        "별일"
+      ],
+      "domain": "greeting"
+    },
+    "answer": {
+      "text": "응, 별일 없어. 넌?",
+      "tokens": [
+        {
+          "text": "응",
+          "lemma": "응",
+          "pos": "IC"
+        },
+        {
+          "text": "별일",
+          "lemma": "별일",
+          "pos": "NNG"
+        },
+        {
+          "text": "없",
+          "lemma": "없",
+          "pos": "VA"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        },
+        {
+          "text": "넌",
+          "lemma": "넌",
+          "pos": "NNP"
+        }
+      ]
+    },
+    "concepts": [
+      "넌",
+      "별일"
+    ],
+    "domain": "greeting"
+  },
+  {
+    "question": {
+      "text": "어떻게 지내세요?",
+      "tokens": [
+        {
+          "text": "어떻",
+          "lemma": "어떻",
+          "pos": "VA"
+        },
+        {
+          "text": "게",
+          "lemma": "게",
+          "pos": "EC"
+        },
+        {
+          "text": "지내",
+          "lemma": "지내",
+          "pos": "VV"
+        },
+        {
+          "text": "시",
+          "lemma": "시",
+          "pos": "EP"
+        },
+        {
+          "text": "어요",
+          "lemma": "어요",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "덕분"
+      ],
+      "domain": "greeting"
+    },
+    "answer": {
+      "text": "덕분에 잘 지내고 있습니다.",
+      "tokens": [
+        {
+          "text": "덕분",
+          "lemma": "덕분",
+          "pos": "NNG"
+        },
+        {
+          "text": "에",
+          "lemma": "에",
+          "pos": "JKB"
+        },
+        {
+          "text": "잘",
+          "lemma": "잘",
+          "pos": "MAG"
+        },
+        {
+          "text": "지내",
+          "lemma": "지내",
+          "pos": "VV"
+        },
+        {
+          "text": "고",
+          "lemma": "고",
+          "pos": "EC"
+        },
+        {
+          "text": "있",
+          "lemma": "있",
+          "pos": "VX"
+        },
+        {
+          "text": "습니다",
+          "lemma": "습니다",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "덕분"
+    ],
+    "domain": "greeting"
+  },
+  {
+    "question": {
+      "text": "무슨 일이야?",
+      "tokens": [
+        {
+          "text": "무슨",
+          "lemma": "무슨",
+          "pos": "MM"
+        },
+        {
+          "text": "일",
+          "lemma": "일",
+          "pos": "NNB"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "VCP"
+        },
+        {
+          "text": "야",
+          "lemma": "야",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "별일",
+        "일"
+      ],
+      "domain": "greeting"
+    },
+    "answer": {
+      "text": "별일 없어. 그냥.",
+      "tokens": [
+        {
+          "text": "별일",
+          "lemma": "별일",
+          "pos": "NNG"
+        },
+        {
+          "text": "없",
+          "lemma": "없",
+          "pos": "VA"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        },
+        {
+          "text": "그냥",
+          "lemma": "그냥",
+          "pos": "MAG"
+        }
+      ]
+    },
+    "concepts": [
+      "별일",
+      "일"
+    ],
+    "domain": "greeting"
+  },
+  {
+    "question": {
+      "text": "오늘 하루 어땠어?",
+      "tokens": [
+        {
+          "text": "오늘",
+          "lemma": "오늘",
+          "pos": "NNG"
+        },
+        {
+          "text": "하루",
+          "lemma": "하루",
+          "pos": "NNG"
+        },
+        {
+          "text": "어떻",
+          "lemma": "어떻",
+          "pos": "VA"
+        },
+        {
+          "text": "었",
+          "lemma": "었",
+          "pos": "EP"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "오늘",
+        "하루"
+      ],
+      "domain": "greeting"
+    },
+    "answer": {
+      "text": "음, 오늘은 좀 바빴어. 너는 어땠어?",
+      "tokens": [
+        {
+          "text": "음",
+          "lemma": "음",
+          "pos": "IC"
+        },
+        {
+          "text": "오늘",
+          "lemma": "오늘",
+          "pos": "NNG"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "JX"
+        },
+        {
+          "text": "좀",
+          "lemma": "좀",
+          "pos": "MAG"
+        },
+        {
+          "text": "바쁘",
+          "lemma": "바쁘",
+          "pos": "VA"
+        },
+        {
+          "text": "았",
+          "lemma": "았",
+          "pos": "EP"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        },
+        {
+          "text": "너",
+          "lemma": "너",
+          "pos": "NP"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "JX"
+        },
+        {
+          "text": "어떻",
+          "lemma": "어떻",
+          "pos": "VA"
+        },
+        {
+          "text": "었",
+          "lemma": "었",
+          "pos": "EP"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "오늘",
+      "하루"
+    ],
+    "domain": "greeting"
+  },
+  {
+    "question": {
+      "text": "처음 뵙겠습니다.",
+      "tokens": [
+        {
+          "text": "처음",
+          "lemma": "처음",
+          "pos": "NNG"
+        },
+        {
+          "text": "뵙",
+          "lemma": "뵙",
+          "pos": "VV"
+        },
+        {
+          "text": "겠",
+          "lemma": "겠",
+          "pos": "EP"
+        },
+        {
+          "text": "습니다",
+          "lemma": "습니다",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "처음"
+      ],
+      "domain": "greeting"
+    },
+    "answer": {
+      "text": "네, 처음 뵙겠습니다.",
+      "tokens": [
+        {
+          "text": "네",
+          "lemma": "네",
+          "pos": "IC"
+        },
+        {
+          "text": "처음",
+          "lemma": "처음",
+          "pos": "NNG"
+        },
+        {
+          "text": "뵙",
+          "lemma": "뵙",
+          "pos": "VV"
+        },
+        {
+          "text": "겠",
+          "lemma": "겠",
+          "pos": "EP"
+        },
+        {
+          "text": "습니다",
+          "lemma": "습니다",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "처음"
+    ],
+    "domain": "greeting"
+  },
+  {
+    "question": {
+      "text": "명함 한 장 주시겠어요?",
+      "tokens": [
+        {
+          "text": "명함",
+          "lemma": "명함",
+          "pos": "NNP"
+        },
+        {
+          "text": "한",
+          "lemma": "한",
+          "pos": "MM"
+        },
+        {
+          "text": "장",
+          "lemma": "장",
+          "pos": "NNP"
+        },
+        {
+          "text": "주",
+          "lemma": "주",
+          "pos": "VX"
+        },
+        {
+          "text": "시",
+          "lemma": "시",
+          "pos": "EP"
+        },
+        {
+          "text": "겠",
+          "lemma": "겠",
+          "pos": "EP"
+        },
+        {
+          "text": "어요",
+          "lemma": "어요",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "명함",
+        "장"
+      ],
+      "domain": "greeting"
+    },
+    "answer": {
+      "text": "네, 여기 있습니다.",
+      "tokens": [
+        {
+          "text": "네",
+          "lemma": "네",
+          "pos": "IC"
+        },
+        {
+          "text": "여기",
+          "lemma": "여기",
+          "pos": "NP"
+        },
+        {
+          "text": "있",
+          "lemma": "있",
+          "pos": "VX"
+        },
+        {
+          "text": "습니다",
+          "lemma": "습니다",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "명함",
+      "장"
+    ],
+    "domain": "greeting"
+  },
+  {
+    "question": {
+      "text": "안녕히 계세요.",
+      "tokens": [
+        {
+          "text": "안녕히 계세요",
+          "lemma": "안녕히 계세요",
+          "pos": "NNP"
+        }
+      ],
+      "concepts": [
+        "안녕히 계세요"
+      ],
+      "domain": "greeting"
+    },
+    "answer": {
+      "text": "안녕히 가세요.",
+      "tokens": [
+        {
+          "text": "안녕히",
+          "lemma": "안녕히",
+          "pos": "MAG"
+        },
+        {
+          "text": "가",
+          "lemma": "가",
+          "pos": "VV"
+        },
+        {
+          "text": "시",
+          "lemma": "시",
+          "pos": "EP"
+        },
+        {
+          "text": "어요",
+          "lemma": "어요",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "안녕히 계세요"
+    ],
+    "domain": "greeting"
+  },
+  {
+    "question": {
+      "text": "안녕히 주무셨어요?",
+      "tokens": [
+        {
+          "text": "안녕히",
+          "lemma": "안녕히",
+          "pos": "MAG"
+        },
+        {
+          "text": "주무",
+          "lemma": "주무",
+          "pos": "NNG"
+        },
+        {
+          "text": "시",
+          "lemma": "시",
+          "pos": "VA"
+        },
+        {
+          "text": "었",
+          "lemma": "었",
+          "pos": "EP"
+        },
+        {
+          "text": "어요",
+          "lemma": "어요",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "주무"
+      ],
+      "domain": "greeting"
+    },
+    "answer": {
+      "text": "네, 잘 잤습니다. 당신은요?",
+      "tokens": [
+        {
+          "text": "네",
+          "lemma": "네",
+          "pos": "IC"
+        },
+        {
+          "text": "잘",
+          "lemma": "잘",
+          "pos": "MAG"
+        },
+        {
+          "text": "자",
+          "lemma": "자",
+          "pos": "VV"
+        },
+        {
+          "text": "았",
+          "lemma": "았",
+          "pos": "EP"
+        },
+        {
+          "text": "습니다",
+          "lemma": "습니다",
+          "pos": "EF"
+        },
+        {
+          "text": "당신",
+          "lemma": "당신",
+          "pos": "NP"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "JX"
+        },
+        {
+          "text": "요",
+          "lemma": "요",
+          "pos": "JX"
+        }
+      ]
+    },
+    "concepts": [
+      "주무"
+    ],
+    "domain": "greeting"
+  },
+  {
+    "question": {
+      "text": "오랜만입니다.",
+      "tokens": [
+        {
+          "text": "오랜만",
+          "lemma": "오랜만",
+          "pos": "NNG"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "VCP"
+        },
+        {
+          "text": "ㅂ니다",
+          "lemma": "ㅂ니다",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "오랜만"
+      ],
+      "domain": "greeting"
+    },
+    "answer": {
+      "text": "네, 정말 오랜만입니다.",
+      "tokens": [
+        {
+          "text": "네",
+          "lemma": "네",
+          "pos": "IC"
+        },
+        {
+          "text": "정말",
+          "lemma": "정말",
+          "pos": "MAG"
+        },
+        {
+          "text": "오랜만",
+          "lemma": "오랜만",
+          "pos": "NNG"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "VCP"
+        },
+        {
+          "text": "ㅂ니다",
+          "lemma": "ㅂ니다",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "오랜만"
+    ],
+    "domain": "greeting"
+  },
+  {
+    "question": {
+      "text": "식사는 하셨어요?",
+      "tokens": [
+        {
+          "text": "식사",
+          "lemma": "식사",
+          "pos": "NNG"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "JX"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "VV"
+        },
+        {
+          "text": "시",
+          "lemma": "시",
+          "pos": "EP"
+        },
+        {
+          "text": "었",
+          "lemma": "었",
+          "pos": "EP"
+        },
+        {
+          "text": "어요",
+          "lemma": "어요",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "식사"
+      ],
+      "domain": "greeting"
+    },
+    "answer": {
+      "text": "네, 맛있게 먹었습니다.",
+      "tokens": [
+        {
+          "text": "네",
+          "lemma": "네",
+          "pos": "IC"
+        },
+        {
+          "text": "맛있",
+          "lemma": "맛있",
+          "pos": "VA"
+        },
+        {
+          "text": "게",
+          "lemma": "게",
+          "pos": "EC"
+        },
+        {
+          "text": "먹",
+          "lemma": "먹",
+          "pos": "VV"
+        },
+        {
+          "text": "었",
+          "lemma": "었",
+          "pos": "EP"
+        },
+        {
+          "text": "습니다",
+          "lemma": "습니다",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "식사"
+    ],
+    "domain": "greeting"
+  },
+  {
+    "question": {
+      "text": "잘 지내고 계세요?",
+      "tokens": [
+        {
+          "text": "잘",
+          "lemma": "잘",
+          "pos": "MAG"
+        },
+        {
+          "text": "지내",
+          "lemma": "지내",
+          "pos": "VV"
+        },
+        {
+          "text": "고",
+          "lemma": "고",
+          "pos": "EC"
+        },
+        {
+          "text": "계세",
+          "lemma": "계세",
+          "pos": "NNG"
+        },
+        {
+          "text": "요",
+          "lemma": "요",
+          "pos": "JX"
+        }
+      ],
+      "concepts": [
+        "계세"
+      ],
+      "domain": "greeting"
+    },
+    "answer": {
+      "text": "네, 잘 지내고 있습니다.",
+      "tokens": [
+        {
+          "text": "네",
+          "lemma": "네",
+          "pos": "IC"
+        },
+        {
+          "text": "잘",
+          "lemma": "잘",
+          "pos": "MAG"
+        },
+        {
+          "text": "지내",
+          "lemma": "지내",
+          "pos": "VV"
+        },
+        {
+          "text": "고",
+          "lemma": "고",
+          "pos": "EC"
+        },
+        {
+          "text": "있",
+          "lemma": "있",
+          "pos": "VX"
+        },
+        {
+          "text": "습니다",
+          "lemma": "습니다",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "계세"
+    ],
+    "domain": "greeting"
+  },
+  {
+    "question": {
+      "text": "다음에 또 뵙겠습니다.",
+      "tokens": [
+        {
+          "text": "다음",
+          "lemma": "다음",
+          "pos": "NNG"
+        },
+        {
+          "text": "에",
+          "lemma": "에",
+          "pos": "JKB"
+        },
+        {
+          "text": "또",
+          "lemma": "또",
+          "pos": "MAJ"
+        },
+        {
+          "text": "뵙",
+          "lemma": "뵙",
+          "pos": "VV"
+        },
+        {
+          "text": "겠",
+          "lemma": "겠",
+          "pos": "EP"
+        },
+        {
+          "text": "습니다",
+          "lemma": "습니다",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "다음"
+      ],
+      "domain": "greeting"
+    },
+    "answer": {
+      "text": "네, 다음에 또 뵙겠습니다.",
+      "tokens": [
+        {
+          "text": "네",
+          "lemma": "네",
+          "pos": "IC"
+        },
+        {
+          "text": "다음",
+          "lemma": "다음",
+          "pos": "NNG"
+        },
+        {
+          "text": "에",
+          "lemma": "에",
+          "pos": "JKB"
+        },
+        {
+          "text": "또",
+          "lemma": "또",
+          "pos": "MAJ"
+        },
+        {
+          "text": "뵙",
+          "lemma": "뵙",
+          "pos": "VV"
+        },
+        {
+          "text": "겠",
+          "lemma": "겠",
+          "pos": "EP"
+        },
+        {
+          "text": "습니다",
+          "lemma": "습니다",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "다음"
+    ],
+    "domain": "greeting"
+  },
+  {
+    "question": {
+      "text": "식사는 맛있게 하셨습니까?",
+      "tokens": [
+        {
+          "text": "식사",
+          "lemma": "식사",
+          "pos": "NNG"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "JX"
+        },
+        {
+          "text": "맛있",
+          "lemma": "맛있",
+          "pos": "VA"
+        },
+        {
+          "text": "게",
+          "lemma": "게",
+          "pos": "EC"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "VV"
+        },
+        {
+          "text": "시",
+          "lemma": "시",
+          "pos": "EP"
+        },
+        {
+          "text": "었",
+          "lemma": "었",
+          "pos": "EP"
+        },
+        {
+          "text": "습니까",
+          "lemma": "습니까",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "덕분",
+        "식사",
+        "잘 먹었습니다"
+      ],
+      "domain": "greeting"
+    },
+    "answer": {
+      "text": "네, 덕분에 맛있게 잘 먹었습니다.",
+      "tokens": [
+        {
+          "text": "네",
+          "lemma": "네",
+          "pos": "IC"
+        },
+        {
+          "text": "덕분",
+          "lemma": "덕분",
+          "pos": "NNG"
+        },
+        {
+          "text": "에",
+          "lemma": "에",
+          "pos": "JKB"
+        },
+        {
+          "text": "맛있",
+          "lemma": "맛있",
+          "pos": "VA"
+        },
+        {
+          "text": "게",
+          "lemma": "게",
+          "pos": "EC"
+        },
+        {
+          "text": "잘 먹었습니다",
+          "lemma": "잘 먹었습니다",
+          "pos": "NNP"
+        }
+      ]
+    },
+    "concepts": [
+      "덕분",
+      "식사",
+      "잘 먹었습니다"
+    ],
+    "domain": "greeting"
+  },
+  {
+    "question": {
+      "text": "무슨 일로 오셨어요?",
+      "tokens": [
+        {
+          "text": "무슨",
+          "lemma": "무슨",
+          "pos": "MM"
+        },
+        {
+          "text": "일",
+          "lemma": "일",
+          "pos": "NNG"
+        },
+        {
+          "text": "로",
+          "lemma": "로",
+          "pos": "JKB"
+        },
+        {
+          "text": "오",
+          "lemma": "오",
+          "pos": "VX"
+        },
+        {
+          "text": "시",
+          "lemma": "시",
+          "pos": "EP"
+        },
+        {
+          "text": "었",
+          "lemma": "었",
+          "pos": "EP"
+        },
+        {
+          "text": "어요",
+          "lemma": "어요",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "게",
+        "일"
+      ],
+      "domain": "greeting"
+    },
+    "answer": {
+      "text": "궁금한 게 있어서 왔습니다.",
+      "tokens": [
+        {
+          "text": "궁금",
+          "lemma": "궁금",
+          "pos": "XR"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSA"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "게",
+          "lemma": "게",
+          "pos": "NNG"
+        },
+        {
+          "text": "있",
+          "lemma": "있",
+          "pos": "VV"
+        },
+        {
+          "text": "어서",
+          "lemma": "어서",
+          "pos": "EC"
+        },
+        {
+          "text": "오",
+          "lemma": "오",
+          "pos": "VX"
+        },
+        {
+          "text": "았",
+          "lemma": "았",
+          "pos": "EP"
+        },
+        {
+          "text": "습니다",
+          "lemma": "습니다",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "게",
+      "일"
+    ],
+    "domain": "greeting"
+  },
+  {
+    "question": {
+      "text": "어떻게 오셨습니까?",
+      "tokens": [
+        {
+          "text": "어떻",
+          "lemma": "어떻",
+          "pos": "VA"
+        },
+        {
+          "text": "게",
+          "lemma": "게",
+          "pos": "EC"
+        },
+        {
+          "text": "오",
+          "lemma": "오",
+          "pos": "VX"
+        },
+        {
+          "text": "시",
+          "lemma": "시",
+          "pos": "EP"
+        },
+        {
+          "text": "었",
+          "lemma": "었",
+          "pos": "EP"
+        },
+        {
+          "text": "습니까",
+          "lemma": "습니까",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "볼일"
+      ],
+      "domain": "greeting"
+    },
+    "answer": {
+      "text": "이쪽에 볼일이 있어서 왔습니다.",
+      "tokens": [
+        {
+          "text": "이쪽",
+          "lemma": "이쪽",
+          "pos": "NP"
+        },
+        {
+          "text": "에",
+          "lemma": "에",
+          "pos": "JKB"
+        },
+        {
+          "text": "볼일",
+          "lemma": "볼일",
+          "pos": "NNG"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "JKS"
+        },
+        {
+          "text": "있",
+          "lemma": "있",
+          "pos": "VV"
+        },
+        {
+          "text": "어서",
+          "lemma": "어서",
+          "pos": "EC"
+        },
+        {
+          "text": "오",
+          "lemma": "오",
+          "pos": "VX"
+        },
+        {
+          "text": "았",
+          "lemma": "았",
+          "pos": "EP"
+        },
+        {
+          "text": "습니다",
+          "lemma": "습니다",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "볼일"
+    ],
+    "domain": "greeting"
+  },
+  {
+    "question": {
+      "text": "건강은 어떠세요?",
+      "tokens": [
+        {
+          "text": "건강",
+          "lemma": "건강",
+          "pos": "NNG"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "JX"
+        },
+        {
+          "text": "어떻",
+          "lemma": "어떻",
+          "pos": "VA"
+        },
+        {
+          "text": "시",
+          "lemma": "시",
+          "pos": "EP"
+        },
+        {
+          "text": "어요",
+          "lemma": "어요",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "건강"
+      ],
+      "domain": "greeting"
+    },
+    "answer": {
+      "text": "네, 건강하게 잘 지내고 있습니다.",
+      "tokens": [
+        {
+          "text": "네",
+          "lemma": "네",
+          "pos": "IC"
+        },
+        {
+          "text": "건강",
+          "lemma": "건강",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "게",
+          "lemma": "게",
+          "pos": "EC"
+        },
+        {
+          "text": "잘",
+          "lemma": "잘",
+          "pos": "MAG"
+        },
+        {
+          "text": "지내",
+          "lemma": "지내",
+          "pos": "VV"
+        },
+        {
+          "text": "고",
+          "lemma": "고",
+          "pos": "EC"
+        },
+        {
+          "text": "있",
+          "lemma": "있",
+          "pos": "VX"
+        },
+        {
+          "text": "습니다",
+          "lemma": "습니다",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "건강"
+    ],
+    "domain": "greeting"
+  },
+  {
+    "question": {
+      "text": "행복하세요!",
+      "tokens": [
+        {
+          "text": "행복",
+          "lemma": "행복",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "시",
+          "lemma": "시",
+          "pos": "EP"
+        },
+        {
+          "text": "어요",
+          "lemma": "어요",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "행복"
+      ],
+      "domain": "greeting"
+    },
+    "answer": {
+      "text": "네, 당신도 행복하세요!",
+      "tokens": [
+        {
+          "text": "네",
+          "lemma": "네",
+          "pos": "IC"
+        },
+        {
+          "text": "당신",
+          "lemma": "당신",
+          "pos": "NP"
+        },
+        {
+          "text": "도",
+          "lemma": "도",
+          "pos": "JX"
+        },
+        {
+          "text": "행복",
+          "lemma": "행복",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "시",
+          "lemma": "시",
+          "pos": "EP"
+        },
+        {
+          "text": "어요",
+          "lemma": "어요",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "행복"
+    ],
+    "domain": "greeting"
+  },
+  {
+    "question": {
+      "text": "늘 건강하세요!",
+      "tokens": [
+        {
+          "text": "늘",
+          "lemma": "늘",
+          "pos": "MAG"
+        },
+        {
+          "text": "건강",
+          "lemma": "건강",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "시",
+          "lemma": "시",
+          "pos": "EP"
+        },
+        {
+          "text": "어요",
+          "lemma": "어요",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "건강",
+        "당신",
+        "도요"
+      ],
+      "domain": "greeting"
+    },
+    "answer": {
+      "text": "고맙습니다. 당신도요!",
+      "tokens": [
+        {
+          "text": "고맙",
+          "lemma": "고맙",
+          "pos": "VA"
+        },
+        {
+          "text": "습니다",
+          "lemma": "습니다",
+          "pos": "EF"
+        },
+        {
+          "text": "당신",
+          "lemma": "당신",
+          "pos": "NNP"
+        },
+        {
+          "text": "도요",
+          "lemma": "도요",
+          "pos": "NNP"
+        }
+      ]
+    },
+    "concepts": [
+      "건강",
+      "당신",
+      "도요"
+    ],
+    "domain": "greeting"
+  },
+  {
+    "question": {
+      "text": "좋은 하루 되세요!",
+      "tokens": [
+        {
+          "text": "좋은 하루",
+          "lemma": "좋은 하루",
+          "pos": "NNP"
+        },
+        {
+          "text": "되",
+          "lemma": "되",
+          "pos": "VV"
+        },
+        {
+          "text": "시",
+          "lemma": "시",
+          "pos": "EP"
+        },
+        {
+          "text": "어요",
+          "lemma": "어요",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "좋은 하루"
+      ],
+      "domain": "greeting"
+    },
+    "answer": {
+      "text": "네, 당신도 좋은 하루 되세요!",
+      "tokens": [
+        {
+          "text": "네",
+          "lemma": "네",
+          "pos": "IC"
+        },
+        {
+          "text": "당신",
+          "lemma": "당신",
+          "pos": "NP"
+        },
+        {
+          "text": "도",
+          "lemma": "도",
+          "pos": "JX"
+        },
+        {
+          "text": "좋은 하루",
+          "lemma": "좋은 하루",
+          "pos": "NNP"
+        },
+        {
+          "text": "되",
+          "lemma": "되",
+          "pos": "VV"
+        },
+        {
+          "text": "시",
+          "lemma": "시",
+          "pos": "EP"
+        },
+        {
+          "text": "어요",
+          "lemma": "어요",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "좋은 하루"
+    ],
+    "domain": "greeting"
+  },
+  {
+    "question": {
+      "text": "즐거운 시간 보내세요!",
+      "tokens": [
+        {
+          "text": "즐겁",
+          "lemma": "즐겁",
+          "pos": "VA"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "시간",
+          "lemma": "시간",
+          "pos": "NNG"
+        },
+        {
+          "text": "보내",
+          "lemma": "보내",
+          "pos": "VV"
+        },
+        {
+          "text": "시",
+          "lemma": "시",
+          "pos": "EP"
+        },
+        {
+          "text": "어요",
+          "lemma": "어요",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "시간"
+      ],
+      "domain": "greeting"
+    },
+    "answer": {
+      "text": "네, 즐거운 시간 보낼게요!",
+      "tokens": [
+        {
+          "text": "네",
+          "lemma": "네",
+          "pos": "IC"
+        },
+        {
+          "text": "즐겁",
+          "lemma": "즐겁",
+          "pos": "VA"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "시간",
+          "lemma": "시간",
+          "pos": "NNG"
+        },
+        {
+          "text": "보내",
+          "lemma": "보내",
+          "pos": "VV"
+        },
+        {
+          "text": "ㄹ게요",
+          "lemma": "ㄹ게요",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "시간"
+    ],
+    "domain": "greeting"
+  },
+  {
+    "question": {
+      "text": "환영합니다!",
+      "tokens": [
+        {
+          "text": "환영",
+          "lemma": "환영",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "ㅂ니다",
+          "lemma": "ㅂ니다",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "감사",
+        "환영"
+      ],
+      "domain": "greeting"
+    },
+    "answer": {
+      "text": "네, 감사합니다!",
+      "tokens": [
+        {
+          "text": "네",
+          "lemma": "네",
+          "pos": "IC"
+        },
+        {
+          "text": "감사",
+          "lemma": "감사",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "ㅂ니다",
+          "lemma": "ㅂ니다",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "감사",
+      "환영"
+    ],
+    "domain": "greeting"
+  },
+  {
+    "question": {
+      "text": "다음에 또 연락할게!",
+      "tokens": [
+        {
+          "text": "다음",
+          "lemma": "다음",
+          "pos": "NNG"
+        },
+        {
+          "text": "에",
+          "lemma": "에",
+          "pos": "JKB"
+        },
+        {
+          "text": "또",
+          "lemma": "또",
+          "pos": "MAJ"
+        },
+        {
+          "text": "연락",
+          "lemma": "연락",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "ㄹ게",
+          "lemma": "ㄹ게",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "다음",
+        "연락"
+      ],
+      "domain": "greeting"
+    },
+    "answer": {
+      "text": "그래, 연락해!",
+      "tokens": [
+        {
+          "text": "그래",
+          "lemma": "그래",
+          "pos": "IC"
+        },
+        {
+          "text": "연락",
+          "lemma": "연락",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "다음",
+      "연락"
+    ],
+    "domain": "greeting"
+  },
+  {
+    "question": {
+      "text": "어디 가세요?",
+      "tokens": [
+        {
+          "text": "어디",
+          "lemma": "어디",
+          "pos": "NP"
+        },
+        {
+          "text": "가",
+          "lemma": "가",
+          "pos": "VV"
+        },
+        {
+          "text": "시",
+          "lemma": "시",
+          "pos": "EP"
+        },
+        {
+          "text": "어요",
+          "lemma": "어요",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "길"
+      ],
+      "domain": "greeting"
+    },
+    "answer": {
+      "text": "잠깐 나가는 길이야.",
+      "tokens": [
+        {
+          "text": "잠깐",
+          "lemma": "잠깐",
+          "pos": "MAG"
+        },
+        {
+          "text": "나가",
+          "lemma": "나가",
+          "pos": "VV"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "ETM"
+        },
+        {
+          "text": "길",
+          "lemma": "길",
+          "pos": "NNG"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "VCP"
+        },
+        {
+          "text": "야",
+          "lemma": "야",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "길"
+    ],
+    "domain": "greeting"
+  },
+  {
+    "question": {
+      "text": "축하해!",
+      "tokens": [
+        {
+          "text": "축하",
+          "lemma": "축하",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "축하"
+      ],
+      "domain": "greeting"
+    },
+    "answer": {
+      "text": "고마워!",
+      "tokens": [
+        {
+          "text": "고맙",
+          "lemma": "고맙",
+          "pos": "VA"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "축하"
+    ],
+    "domain": "greeting"
+  },
+  {
+    "question": {
+      "text": "고맙습니다!",
+      "tokens": [
+        {
+          "text": "고맙",
+          "lemma": "고맙",
+          "pos": "VA"
+        },
+        {
+          "text": "습니다",
+          "lemma": "습니다",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "천만에요"
+      ],
+      "domain": "greeting"
+    },
+    "answer": {
+      "text": "천만에요!",
+      "tokens": [
+        {
+          "text": "천만에요",
+          "lemma": "천만에요",
+          "pos": "NNP"
+        }
+      ]
+    },
+    "concepts": [
+      "천만에요"
+    ],
+    "domain": "greeting"
+  },
+  {
+    "question": {
+      "text": "도와주셔서 감사합니다.",
+      "tokens": [
+        {
+          "text": "도와주",
+          "lemma": "도와주",
+          "pos": "VV"
+        },
+        {
+          "text": "시",
+          "lemma": "시",
+          "pos": "EP"
+        },
+        {
+          "text": "어서",
+          "lemma": "어서",
+          "pos": "EC"
+        },
+        {
+          "text": "감사",
+          "lemma": "감사",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "ㅂ니다",
+          "lemma": "ㅂ니다",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "감사",
+        "별말씀"
+      ],
+      "domain": "greeting"
+    },
+    "answer": {
+      "text": "별말씀을요.",
+      "tokens": [
+        {
+          "text": "별말씀",
+          "lemma": "별말씀",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "요",
+          "lemma": "요",
+          "pos": "JX"
+        }
+      ]
+    },
+    "concepts": [
+      "감사",
+      "별말씀"
+    ],
+    "domain": "greeting"
+  },
+  {
+    "question": {
+      "text": "수고하세요!",
+      "tokens": [
+        {
+          "text": "수고",
+          "lemma": "수고",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "시",
+          "lemma": "시",
+          "pos": "EP"
+        },
+        {
+          "text": "어요",
+          "lemma": "어요",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "수고"
+      ],
+      "domain": "greeting"
+    },
+    "answer": {
+      "text": "네, 수고하십시오!",
+      "tokens": [
+        {
+          "text": "네",
+          "lemma": "네",
+          "pos": "IC"
+        },
+        {
+          "text": "수고",
+          "lemma": "수고",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "시",
+          "lemma": "시",
+          "pos": "EP"
+        },
+        {
+          "text": "ㅂ시오",
+          "lemma": "ㅂ시오",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "수고"
+    ],
+    "domain": "greeting"
+  },
+  {
+    "question": {
+      "text": "고생 많으셨습니다.",
+      "tokens": [
+        {
+          "text": "고생",
+          "lemma": "고생",
+          "pos": "NNG"
+        },
+        {
+          "text": "많",
+          "lemma": "많",
+          "pos": "VA"
+        },
+        {
+          "text": "으시",
+          "lemma": "으시",
+          "pos": "EP"
+        },
+        {
+          "text": "었",
+          "lemma": "었",
+          "pos": "EP"
+        },
+        {
+          "text": "습니다",
+          "lemma": "습니다",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "고생"
+      ],
+      "domain": "greeting"
+    },
+    "answer": {
+      "text": "네, 당신도 고생 많으셨습니다.",
+      "tokens": [
+        {
+          "text": "네",
+          "lemma": "네",
+          "pos": "IC"
+        },
+        {
+          "text": "당신",
+          "lemma": "당신",
+          "pos": "NP"
+        },
+        {
+          "text": "도",
+          "lemma": "도",
+          "pos": "JX"
+        },
+        {
+          "text": "고생",
+          "lemma": "고생",
+          "pos": "NNG"
+        },
+        {
+          "text": "많",
+          "lemma": "많",
+          "pos": "VA"
+        },
+        {
+          "text": "으시",
+          "lemma": "으시",
+          "pos": "EP"
+        },
+        {
+          "text": "었",
+          "lemma": "었",
+          "pos": "EP"
+        },
+        {
+          "text": "습니다",
+          "lemma": "습니다",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "고생"
+    ],
+    "domain": "greeting"
+  },
+  {
+    "question": {
+      "text": "잘 부탁드립니다.",
+      "tokens": [
+        {
+          "text": "잘",
+          "lemma": "잘",
+          "pos": "MAG"
+        },
+        {
+          "text": "부탁",
+          "lemma": "부탁",
+          "pos": "NNG"
+        },
+        {
+          "text": "드리",
+          "lemma": "드리",
+          "pos": "VV"
+        },
+        {
+          "text": "ㅂ니다",
+          "lemma": "ㅂ니다",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "부탁"
+      ],
+      "domain": "greeting"
+    },
+    "answer": {
+      "text": "네, 잘 부탁드립니다.",
+      "tokens": [
+        {
+          "text": "네",
+          "lemma": "네",
+          "pos": "IC"
+        },
+        {
+          "text": "잘",
+          "lemma": "잘",
+          "pos": "MAG"
+        },
+        {
+          "text": "부탁",
+          "lemma": "부탁",
+          "pos": "NNG"
+        },
+        {
+          "text": "드리",
+          "lemma": "드리",
+          "pos": "VV"
+        },
+        {
+          "text": "ㅂ니다",
+          "lemma": "ㅂ니다",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "부탁"
+    ],
+    "domain": "greeting"
+  },
+  {
+    "question": {
+      "text": "별일 없으시죠?",
+      "tokens": [
+        {
+          "text": "별일",
+          "lemma": "별일",
+          "pos": "NNG"
+        },
+        {
+          "text": "없",
+          "lemma": "없",
+          "pos": "VA"
+        },
+        {
+          "text": "으시",
+          "lemma": "으시",
+          "pos": "EP"
+        },
+        {
+          "text": "죠",
+          "lemma": "죠",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "별일"
+      ],
+      "domain": "greeting"
+    },
+    "answer": {
+      "text": "네, 별일 없습니다.",
+      "tokens": [
+        {
+          "text": "네",
+          "lemma": "네",
+          "pos": "IC"
+        },
+        {
+          "text": "별일",
+          "lemma": "별일",
+          "pos": "NNG"
+        },
+        {
+          "text": "없",
+          "lemma": "없",
+          "pos": "VA"
+        },
+        {
+          "text": "습니다",
+          "lemma": "습니다",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "별일"
+    ],
+    "domain": "greeting"
+  },
+  {
+    "question": {
+      "text": "평안하세요?",
+      "tokens": [
+        {
+          "text": "평안",
+          "lemma": "평안",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "시",
+          "lemma": "시",
+          "pos": "EP"
+        },
+        {
+          "text": "어요",
+          "lemma": "어요",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "평안"
+      ],
+      "domain": "greeting"
+    },
+    "answer": {
+      "text": "네, 평안합니다.",
+      "tokens": [
+        {
+          "text": "네",
+          "lemma": "네",
+          "pos": "IC"
+        },
+        {
+          "text": "평안",
+          "lemma": "평안",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "ㅂ니다",
+          "lemma": "ㅂ니다",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "평안"
+    ],
+    "domain": "greeting"
+  },
+  {
+    "question": {
+      "text": "늘 행복하세요!",
+      "tokens": [
+        {
+          "text": "늘",
+          "lemma": "늘",
+          "pos": "MAG"
+        },
+        {
+          "text": "행복",
+          "lemma": "행복",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "시",
+          "lemma": "시",
+          "pos": "EP"
+        },
+        {
+          "text": "어요",
+          "lemma": "어요",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "행복"
+      ],
+      "domain": "greeting"
+    },
+    "answer": {
+      "text": "네, 당신도 늘 행복하세요!",
+      "tokens": [
+        {
+          "text": "네",
+          "lemma": "네",
+          "pos": "IC"
+        },
+        {
+          "text": "당신",
+          "lemma": "당신",
+          "pos": "NP"
+        },
+        {
+          "text": "도",
+          "lemma": "도",
+          "pos": "JX"
+        },
+        {
+          "text": "늘",
+          "lemma": "늘",
+          "pos": "MAG"
+        },
+        {
+          "text": "행복",
+          "lemma": "행복",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "시",
+          "lemma": "시",
+          "pos": "EP"
+        },
+        {
+          "text": "어요",
+          "lemma": "어요",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "행복"
+    ],
+    "domain": "greeting"
+  }
+]

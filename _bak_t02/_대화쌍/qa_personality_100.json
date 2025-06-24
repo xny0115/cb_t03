@@ -1,0 +1,8972 @@
+[
+  {
+    "question": {
+      "text": "너는 어떤 성격이라고 생각해?",
+      "tokens": [
+        {
+          "text": "너",
+          "lemma": "너",
+          "pos": "NP"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "JX"
+        },
+        {
+          "text": "어떤",
+          "lemma": "어떤",
+          "pos": "MM"
+        },
+        {
+          "text": "성격",
+          "lemma": "성격",
+          "pos": "NNG"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "VCP"
+        },
+        {
+          "text": "라고",
+          "lemma": "라고",
+          "pos": "EC"
+        },
+        {
+          "text": "생각",
+          "lemma": "생각",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "내향",
+        "모습",
+        "생각",
+        "성격",
+        "외향",
+        "편"
+      ],
+      "domain": "personality"
+    },
+    "answer": {
+      "text": "나는 좀 내향적인 편인데, 친해지면 외향적인 모습도 나와.",
+      "tokens": [
+        {
+          "text": "나",
+          "lemma": "나",
+          "pos": "NP"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "JX"
+        },
+        {
+          "text": "좀",
+          "lemma": "좀",
+          "pos": "MAG"
+        },
+        {
+          "text": "내향",
+          "lemma": "내향",
+          "pos": "NNG"
+        },
+        {
+          "text": "적",
+          "lemma": "적",
+          "pos": "XSN"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "VCP"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "편",
+          "lemma": "편",
+          "pos": "NNB"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "VCP"
+        },
+        {
+          "text": "ㄴ데",
+          "lemma": "ㄴ데",
+          "pos": "EC"
+        },
+        {
+          "text": "친하",
+          "lemma": "친하",
+          "pos": "VA"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EC"
+        },
+        {
+          "text": "지",
+          "lemma": "지",
+          "pos": "VX"
+        },
+        {
+          "text": "면",
+          "lemma": "면",
+          "pos": "EC"
+        },
+        {
+          "text": "외향",
+          "lemma": "외향",
+          "pos": "NNG"
+        },
+        {
+          "text": "적",
+          "lemma": "적",
+          "pos": "XSN"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "VCP"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "모습",
+          "lemma": "모습",
+          "pos": "NNG"
+        },
+        {
+          "text": "도",
+          "lemma": "도",
+          "pos": "JX"
+        },
+        {
+          "text": "나오",
+          "lemma": "나오",
+          "pos": "VV"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "내향",
+      "모습",
+      "생각",
+      "성격",
+      "외향",
+      "편"
+    ],
+    "domain": "personality"
+  },
+  {
+    "question": {
+      "text": "가장 좋아하는 성격 유형은 뭐야?",
+      "tokens": [
+        {
+          "text": "가장",
+          "lemma": "가장",
+          "pos": "MAG"
+        },
+        {
+          "text": "좋아하",
+          "lemma": "좋아하",
+          "pos": "VV"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "ETM"
+        },
+        {
+          "text": "성격",
+          "lemma": "성격",
+          "pos": "NNG"
+        },
+        {
+          "text": "유형",
+          "lemma": "유형",
+          "pos": "NNG"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "JX"
+        },
+        {
+          "text": "뭐",
+          "lemma": "뭐",
+          "pos": "NP"
+        },
+        {
+          "text": "야",
+          "lemma": "야",
+          "pos": "JKV"
+        }
+      ],
+      "concepts": [
+        "긍정",
+        "성격",
+        "유형"
+      ],
+      "domain": "personality"
+    },
+    "answer": {
+      "text": "긍정적이고 유머러스한 성격을 좋아해.",
+      "tokens": [
+        {
+          "text": "긍정",
+          "lemma": "긍정",
+          "pos": "NNG"
+        },
+        {
+          "text": "적",
+          "lemma": "적",
+          "pos": "XSN"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "VCP"
+        },
+        {
+          "text": "고",
+          "lemma": "고",
+          "pos": "EC"
+        },
+        {
+          "text": "유머러스",
+          "lemma": "유머러스",
+          "pos": "XR"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSA"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "성격",
+          "lemma": "성격",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "좋아하",
+          "lemma": "좋아하",
+          "pos": "VV"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "긍정",
+      "성격",
+      "유형"
+    ],
+    "domain": "personality"
+  },
+  {
+    "question": {
+      "text": "성격은 변할 수 있을까?",
+      "tokens": [
+        {
+          "text": "성격",
+          "lemma": "성격",
+          "pos": "NNG"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "JX"
+        },
+        {
+          "text": "변하",
+          "lemma": "변하",
+          "pos": "VV"
+        },
+        {
+          "text": "ㄹ",
+          "lemma": "ㄹ",
+          "pos": "ETM"
+        },
+        {
+          "text": "수",
+          "lemma": "수",
+          "pos": "NNB"
+        },
+        {
+          "text": "있",
+          "lemma": "있",
+          "pos": "VX"
+        },
+        {
+          "text": "을까",
+          "lemma": "을까",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "노력",
+        "생각",
+        "성격",
+        "수",
+        "정도"
+      ],
+      "domain": "personality"
+    },
+    "answer": {
+      "text": "응, 완전히 달라지진 않겠지만, 노력하면 어느 정도는 변할 수 있다고 생각해.",
+      "tokens": [
+        {
+          "text": "응",
+          "lemma": "응",
+          "pos": "IC"
+        },
+        {
+          "text": "완전히",
+          "lemma": "완전히",
+          "pos": "MAG"
+        },
+        {
+          "text": "달라지",
+          "lemma": "달라지",
+          "pos": "VV"
+        },
+        {
+          "text": "지",
+          "lemma": "지",
+          "pos": "EC"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "JX"
+        },
+        {
+          "text": "않",
+          "lemma": "않",
+          "pos": "VX"
+        },
+        {
+          "text": "겠",
+          "lemma": "겠",
+          "pos": "EP"
+        },
+        {
+          "text": "지만",
+          "lemma": "지만",
+          "pos": "EC"
+        },
+        {
+          "text": "노력",
+          "lemma": "노력",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "면",
+          "lemma": "면",
+          "pos": "EC"
+        },
+        {
+          "text": "어느",
+          "lemma": "어느",
+          "pos": "MM"
+        },
+        {
+          "text": "정도",
+          "lemma": "정도",
+          "pos": "NNG"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "JX"
+        },
+        {
+          "text": "변하",
+          "lemma": "변하",
+          "pos": "VV"
+        },
+        {
+          "text": "ㄹ",
+          "lemma": "ㄹ",
+          "pos": "ETM"
+        },
+        {
+          "text": "수",
+          "lemma": "수",
+          "pos": "NNB"
+        },
+        {
+          "text": "있",
+          "lemma": "있",
+          "pos": "VV"
+        },
+        {
+          "text": "다고",
+          "lemma": "다고",
+          "pos": "EC"
+        },
+        {
+          "text": "생각",
+          "lemma": "생각",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "노력",
+      "생각",
+      "성격",
+      "수",
+      "정도"
+    ],
+    "domain": "personality"
+  },
+  {
+    "question": {
+      "text": "성격에 영향을 미치는 요인이 뭐가 있을까?",
+      "tokens": [
+        {
+          "text": "성격",
+          "lemma": "성격",
+          "pos": "NNG"
+        },
+        {
+          "text": "에",
+          "lemma": "에",
+          "pos": "JKB"
+        },
+        {
+          "text": "영향",
+          "lemma": "영향",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "미치",
+          "lemma": "미치",
+          "pos": "VV"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "ETM"
+        },
+        {
+          "text": "요인",
+          "lemma": "요인",
+          "pos": "NNG"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "JKS"
+        },
+        {
+          "text": "뭐",
+          "lemma": "뭐",
+          "pos": "NP"
+        },
+        {
+          "text": "가",
+          "lemma": "가",
+          "pos": "JKS"
+        },
+        {
+          "text": "있",
+          "lemma": "있",
+          "pos": "VX"
+        },
+        {
+          "text": "을까",
+          "lemma": "을까",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "경험",
+        "등",
+        "성격",
+        "영향",
+        "요인",
+        "유전",
+        "형성",
+        "환경"
+      ],
+      "domain": "personality"
+    },
+    "answer": {
+      "text": "유전적인 요인, 환경, 경험 등이 성격 형성에 영향을 줘.",
+      "tokens": [
+        {
+          "text": "유전",
+          "lemma": "유전",
+          "pos": "NNG"
+        },
+        {
+          "text": "적",
+          "lemma": "적",
+          "pos": "XSN"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "VCP"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "요인",
+          "lemma": "요인",
+          "pos": "NNG"
+        },
+        {
+          "text": "환경",
+          "lemma": "환경",
+          "pos": "NNG"
+        },
+        {
+          "text": "경험",
+          "lemma": "경험",
+          "pos": "NNG"
+        },
+        {
+          "text": "등",
+          "lemma": "등",
+          "pos": "NNB"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "JKS"
+        },
+        {
+          "text": "성격",
+          "lemma": "성격",
+          "pos": "NNG"
+        },
+        {
+          "text": "형성",
+          "lemma": "형성",
+          "pos": "NNG"
+        },
+        {
+          "text": "에",
+          "lemma": "에",
+          "pos": "JKB"
+        },
+        {
+          "text": "영향",
+          "lemma": "영향",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "주",
+          "lemma": "주",
+          "pos": "VX"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "경험",
+      "등",
+      "성격",
+      "영향",
+      "요인",
+      "유전",
+      "형성",
+      "환경"
+    ],
+    "domain": "personality"
+  },
+  {
+    "question": {
+      "text": "외향적인 사람의 특징은?",
+      "tokens": [
+        {
+          "text": "외향",
+          "lemma": "외향",
+          "pos": "NNG"
+        },
+        {
+          "text": "적",
+          "lemma": "적",
+          "pos": "XSN"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "VCP"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "사람",
+          "lemma": "사람",
+          "pos": "NNG"
+        },
+        {
+          "text": "의",
+          "lemma": "의",
+          "pos": "JKG"
+        },
+        {
+          "text": "특징",
+          "lemma": "특징",
+          "pos": "NNG"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "JX"
+        }
+      ],
+      "concepts": [
+        "사교",
+        "사람",
+        "외향",
+        "특징",
+        "편",
+        "활동"
+      ],
+      "domain": "personality"
+    },
+    "answer": {
+      "text": "사교적이고 활동적이며, 사람들과 어울리는 걸 좋아하는 편이야.",
+      "tokens": [
+        {
+          "text": "사교",
+          "lemma": "사교",
+          "pos": "NNG"
+        },
+        {
+          "text": "적",
+          "lemma": "적",
+          "pos": "XSN"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "VCP"
+        },
+        {
+          "text": "고",
+          "lemma": "고",
+          "pos": "EC"
+        },
+        {
+          "text": "활동",
+          "lemma": "활동",
+          "pos": "NNG"
+        },
+        {
+          "text": "적",
+          "lemma": "적",
+          "pos": "XSN"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "VCP"
+        },
+        {
+          "text": "며",
+          "lemma": "며",
+          "pos": "EC"
+        },
+        {
+          "text": "사람",
+          "lemma": "사람",
+          "pos": "NNG"
+        },
+        {
+          "text": "들",
+          "lemma": "들",
+          "pos": "XSN"
+        },
+        {
+          "text": "과",
+          "lemma": "과",
+          "pos": "JC"
+        },
+        {
+          "text": "어울리",
+          "lemma": "어울리",
+          "pos": "VV"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "ETM"
+        },
+        {
+          "text": "걸",
+          "lemma": "걸",
+          "pos": "VV"
+        },
+        {
+          "text": "ㄹ",
+          "lemma": "ㄹ",
+          "pos": "ETM"
+        },
+        {
+          "text": "좋아하",
+          "lemma": "좋아하",
+          "pos": "VV"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "ETM"
+        },
+        {
+          "text": "편",
+          "lemma": "편",
+          "pos": "NNB"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "VCP"
+        },
+        {
+          "text": "야",
+          "lemma": "야",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "사교",
+      "사람",
+      "외향",
+      "특징",
+      "편",
+      "활동"
+    ],
+    "domain": "personality"
+  },
+  {
+    "question": {
+      "text": "내향적인 사람의 특징은?",
+      "tokens": [
+        {
+          "text": "내향",
+          "lemma": "내향",
+          "pos": "NNG"
+        },
+        {
+          "text": "적",
+          "lemma": "적",
+          "pos": "XSN"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "VCP"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "사람",
+          "lemma": "사람",
+          "pos": "NNG"
+        },
+        {
+          "text": "의",
+          "lemma": "의",
+          "pos": "JKG"
+        },
+        {
+          "text": "특징",
+          "lemma": "특징",
+          "pos": "NNG"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "JX"
+        }
+      ],
+      "concepts": [
+        "내향",
+        "사람",
+        "생각",
+        "시간",
+        "신중",
+        "특징",
+        "혼자"
+      ],
+      "domain": "personality"
+    },
+    "answer": {
+      "text": "조용하고 신중하며, 혼자만의 시간을 중요하게 생각해.",
+      "tokens": [
+        {
+          "text": "조용",
+          "lemma": "조용",
+          "pos": "XR"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSA"
+        },
+        {
+          "text": "고",
+          "lemma": "고",
+          "pos": "EC"
+        },
+        {
+          "text": "신중",
+          "lemma": "신중",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "며",
+          "lemma": "며",
+          "pos": "EC"
+        },
+        {
+          "text": "혼자",
+          "lemma": "혼자",
+          "pos": "NNG"
+        },
+        {
+          "text": "만",
+          "lemma": "만",
+          "pos": "JX"
+        },
+        {
+          "text": "의",
+          "lemma": "의",
+          "pos": "JKG"
+        },
+        {
+          "text": "시간",
+          "lemma": "시간",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "중요",
+          "lemma": "중요",
+          "pos": "XR"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSA"
+        },
+        {
+          "text": "게",
+          "lemma": "게",
+          "pos": "EC"
+        },
+        {
+          "text": "생각",
+          "lemma": "생각",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "내향",
+      "사람",
+      "생각",
+      "시간",
+      "신중",
+      "특징",
+      "혼자"
+    ],
+    "domain": "personality"
+  },
+  {
+    "question": {
+      "text": "MBTI 검사 해봤어?",
+      "tokens": [
+        {
+          "text": "MBTI",
+          "lemma": "MBTI",
+          "pos": "SL"
+        },
+        {
+          "text": "검사",
+          "lemma": "검사",
+          "pos": "NNG"
+        },
+        {
+          "text": "해보",
+          "lemma": "해보",
+          "pos": "VV"
+        },
+        {
+          "text": "았",
+          "lemma": "았",
+          "pos": "EP"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "검사",
+        "것"
+      ],
+      "domain": "personality"
+    },
+    "answer": {
+      "text": "응, 해봤어! 나는 INFP 나왔는데, 꽤 잘 맞는 것 같아.",
+      "tokens": [
+        {
+          "text": "응",
+          "lemma": "응",
+          "pos": "IC"
+        },
+        {
+          "text": "해보",
+          "lemma": "해보",
+          "pos": "VV"
+        },
+        {
+          "text": "았",
+          "lemma": "았",
+          "pos": "EP"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        },
+        {
+          "text": "나",
+          "lemma": "나",
+          "pos": "NP"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "JX"
+        },
+        {
+          "text": "INFP",
+          "lemma": "INFP",
+          "pos": "SL"
+        },
+        {
+          "text": "나오",
+          "lemma": "나오",
+          "pos": "VV"
+        },
+        {
+          "text": "았",
+          "lemma": "았",
+          "pos": "EP"
+        },
+        {
+          "text": "는데",
+          "lemma": "는데",
+          "pos": "EC"
+        },
+        {
+          "text": "꽤",
+          "lemma": "꽤",
+          "pos": "MAG"
+        },
+        {
+          "text": "잘",
+          "lemma": "잘",
+          "pos": "MAG"
+        },
+        {
+          "text": "맞",
+          "lemma": "맞",
+          "pos": "VV"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "ETM"
+        },
+        {
+          "text": "것",
+          "lemma": "것",
+          "pos": "NNB"
+        },
+        {
+          "text": "같",
+          "lemma": "같",
+          "pos": "VA"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "검사",
+      "것"
+    ],
+    "domain": "personality"
+  },
+  {
+    "question": {
+      "text": "MBTI가 성격을 정확히 나타낼 수 있을까?",
+      "tokens": [
+        {
+          "text": "MBTI",
+          "lemma": "MBTI",
+          "pos": "SL"
+        },
+        {
+          "text": "가",
+          "lemma": "가",
+          "pos": "JKS"
+        },
+        {
+          "text": "성격",
+          "lemma": "성격",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "정확히",
+          "lemma": "정확히",
+          "pos": "MAG"
+        },
+        {
+          "text": "나타내",
+          "lemma": "나타내",
+          "pos": "VV"
+        },
+        {
+          "text": "ㄹ",
+          "lemma": "ㄹ",
+          "pos": "ETM"
+        },
+        {
+          "text": "수",
+          "lemma": "수",
+          "pos": "NNB"
+        },
+        {
+          "text": "있",
+          "lemma": "있",
+          "pos": "VX"
+        },
+        {
+          "text": "을까",
+          "lemma": "을까",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "사람",
+        "생각",
+        "성격",
+        "수",
+        "완벽",
+        "정도",
+        "정의",
+        "참고"
+      ],
+      "domain": "personality"
+    },
+    "answer": {
+      "text": "어느 정도 참고는 되지만, 사람의 성격을 완벽하게 정의할 순 없다고 생각해.",
+      "tokens": [
+        {
+          "text": "어느",
+          "lemma": "어느",
+          "pos": "MM"
+        },
+        {
+          "text": "정도",
+          "lemma": "정도",
+          "pos": "NNG"
+        },
+        {
+          "text": "참고",
+          "lemma": "참고",
+          "pos": "NNG"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "JX"
+        },
+        {
+          "text": "되",
+          "lemma": "되",
+          "pos": "VV"
+        },
+        {
+          "text": "지만",
+          "lemma": "지만",
+          "pos": "EC"
+        },
+        {
+          "text": "사람",
+          "lemma": "사람",
+          "pos": "NNG"
+        },
+        {
+          "text": "의",
+          "lemma": "의",
+          "pos": "JKG"
+        },
+        {
+          "text": "성격",
+          "lemma": "성격",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "완벽",
+          "lemma": "완벽",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "게",
+          "lemma": "게",
+          "pos": "EC"
+        },
+        {
+          "text": "정의",
+          "lemma": "정의",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "ㄹ",
+          "lemma": "ㄹ",
+          "pos": "ETM"
+        },
+        {
+          "text": "순",
+          "lemma": "순",
+          "pos": "MM"
+        },
+        {
+          "text": "없",
+          "lemma": "없",
+          "pos": "VA"
+        },
+        {
+          "text": "다고",
+          "lemma": "다고",
+          "pos": "EC"
+        },
+        {
+          "text": "생각",
+          "lemma": "생각",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "사람",
+      "생각",
+      "성격",
+      "수",
+      "완벽",
+      "정도",
+      "정의",
+      "참고"
+    ],
+    "domain": "personality"
+  },
+  {
+    "question": {
+      "text": "사람의 성격이 왜 중요하다고 생각해?",
+      "tokens": [
+        {
+          "text": "사람",
+          "lemma": "사람",
+          "pos": "NNG"
+        },
+        {
+          "text": "의",
+          "lemma": "의",
+          "pos": "JKG"
+        },
+        {
+          "text": "성격",
+          "lemma": "성격",
+          "pos": "NNG"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "JKS"
+        },
+        {
+          "text": "왜",
+          "lemma": "왜",
+          "pos": "MAG"
+        },
+        {
+          "text": "중요",
+          "lemma": "중요",
+          "pos": "XR"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSA"
+        },
+        {
+          "text": "다고",
+          "lemma": "다고",
+          "pos": "EC"
+        },
+        {
+          "text": "생각",
+          "lemma": "생각",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "등",
+        "부분",
+        "사람",
+        "삶",
+        "생각",
+        "선택",
+        "성격",
+        "영향",
+        "인간관계",
+        "직업"
+      ],
+      "domain": "personality"
+    },
+    "answer": {
+      "text": "성격은 인간관계나 직업 선택 등 삶의 여러 부분에 영향을 미치니까 중요하다고 생각해.",
+      "tokens": [
+        {
+          "text": "성격",
+          "lemma": "성격",
+          "pos": "NNG"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "JX"
+        },
+        {
+          "text": "인간관계",
+          "lemma": "인간관계",
+          "pos": "NNG"
+        },
+        {
+          "text": "나",
+          "lemma": "나",
+          "pos": "JC"
+        },
+        {
+          "text": "직업",
+          "lemma": "직업",
+          "pos": "NNG"
+        },
+        {
+          "text": "선택",
+          "lemma": "선택",
+          "pos": "NNG"
+        },
+        {
+          "text": "등",
+          "lemma": "등",
+          "pos": "NNB"
+        },
+        {
+          "text": "삶",
+          "lemma": "삶",
+          "pos": "NNG"
+        },
+        {
+          "text": "의",
+          "lemma": "의",
+          "pos": "JKG"
+        },
+        {
+          "text": "여러",
+          "lemma": "여러",
+          "pos": "MM"
+        },
+        {
+          "text": "부분",
+          "lemma": "부분",
+          "pos": "NNG"
+        },
+        {
+          "text": "에",
+          "lemma": "에",
+          "pos": "JKB"
+        },
+        {
+          "text": "영향",
+          "lemma": "영향",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "미치",
+          "lemma": "미치",
+          "pos": "VV"
+        },
+        {
+          "text": "니까",
+          "lemma": "니까",
+          "pos": "EC"
+        },
+        {
+          "text": "중요",
+          "lemma": "중요",
+          "pos": "XR"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSA"
+        },
+        {
+          "text": "다고",
+          "lemma": "다고",
+          "pos": "EC"
+        },
+        {
+          "text": "생각",
+          "lemma": "생각",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "등",
+      "부분",
+      "사람",
+      "삶",
+      "생각",
+      "선택",
+      "성격",
+      "영향",
+      "인간관계",
+      "직업"
+    ],
+    "domain": "personality"
+  },
+  {
+    "question": {
+      "text": "성격이 급한 사람의 장단점은?",
+      "tokens": [
+        {
+          "text": "성격",
+          "lemma": "성격",
+          "pos": "NNG"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "JKS"
+        },
+        {
+          "text": "급하",
+          "lemma": "급하",
+          "pos": "VA"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "사람",
+          "lemma": "사람",
+          "pos": "NNG"
+        },
+        {
+          "text": "의",
+          "lemma": "의",
+          "pos": "JKG"
+        },
+        {
+          "text": "장단점",
+          "lemma": "장단점",
+          "pos": "NNG"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "JX"
+        }
+      ],
+      "concepts": [
+        "거",
+        "단점",
+        "사람",
+        "성격",
+        "수",
+        "실수",
+        "일",
+        "장단점",
+        "장점",
+        "처리"
+      ],
+      "domain": "personality"
+    },
+    "answer": {
+      "text": "장점은 일 처리가 빠르다는 거고, 단점은 실수가 잦을 수 있다는 거야.",
+      "tokens": [
+        {
+          "text": "장점",
+          "lemma": "장점",
+          "pos": "NNG"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "JX"
+        },
+        {
+          "text": "일",
+          "lemma": "일",
+          "pos": "NNB"
+        },
+        {
+          "text": "처리",
+          "lemma": "처리",
+          "pos": "NNG"
+        },
+        {
+          "text": "가",
+          "lemma": "가",
+          "pos": "JKS"
+        },
+        {
+          "text": "빠르",
+          "lemma": "빠르",
+          "pos": "VA"
+        },
+        {
+          "text": "다는",
+          "lemma": "다는",
+          "pos": "ETM"
+        },
+        {
+          "text": "거",
+          "lemma": "거",
+          "pos": "NNB"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "VCP"
+        },
+        {
+          "text": "고",
+          "lemma": "고",
+          "pos": "EC"
+        },
+        {
+          "text": "단점",
+          "lemma": "단점",
+          "pos": "NNG"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "JX"
+        },
+        {
+          "text": "실수",
+          "lemma": "실수",
+          "pos": "NNG"
+        },
+        {
+          "text": "가",
+          "lemma": "가",
+          "pos": "JKS"
+        },
+        {
+          "text": "잦",
+          "lemma": "잦",
+          "pos": "VA"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "ETM"
+        },
+        {
+          "text": "수",
+          "lemma": "수",
+          "pos": "NNB"
+        },
+        {
+          "text": "있",
+          "lemma": "있",
+          "pos": "VV"
+        },
+        {
+          "text": "다는",
+          "lemma": "다는",
+          "pos": "ETM"
+        },
+        {
+          "text": "거",
+          "lemma": "거",
+          "pos": "NNB"
+        },
+        {
+          "text": "야",
+          "lemma": "야",
+          "pos": "JKV"
+        }
+      ]
+    },
+    "concepts": [
+      "거",
+      "단점",
+      "사람",
+      "성격",
+      "수",
+      "실수",
+      "일",
+      "장단점",
+      "장점",
+      "처리"
+    ],
+    "domain": "personality"
+  },
+  {
+    "question": {
+      "text": "느긋한 성격의 장단점은?",
+      "tokens": [
+        {
+          "text": "느긋",
+          "lemma": "느긋",
+          "pos": "XR"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSA"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "성격",
+          "lemma": "성격",
+          "pos": "NNG"
+        },
+        {
+          "text": "의",
+          "lemma": "의",
+          "pos": "JKG"
+        },
+        {
+          "text": "장단점",
+          "lemma": "장단점",
+          "pos": "NNG"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "JX"
+        }
+      ],
+      "concepts": [
+        "거",
+        "단점",
+        "부족",
+        "성격",
+        "수",
+        "여유",
+        "장단점",
+        "장점",
+        "추진력",
+        "침착"
+      ],
+      "domain": "personality"
+    },
+    "answer": {
+      "text": "장점은 여유롭고 침착하다는 거고, 단점은 때때로 추진력이 부족할 수 있다는 거야.",
+      "tokens": [
+        {
+          "text": "장점",
+          "lemma": "장점",
+          "pos": "NNG"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "JX"
+        },
+        {
+          "text": "여유",
+          "lemma": "여유",
+          "pos": "NNG"
+        },
+        {
+          "text": "롭",
+          "lemma": "롭",
+          "pos": "XSA"
+        },
+        {
+          "text": "고",
+          "lemma": "고",
+          "pos": "EC"
+        },
+        {
+          "text": "침착",
+          "lemma": "침착",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "다는",
+          "lemma": "다는",
+          "pos": "ETM"
+        },
+        {
+          "text": "거",
+          "lemma": "거",
+          "pos": "NNB"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "VCP"
+        },
+        {
+          "text": "고",
+          "lemma": "고",
+          "pos": "EC"
+        },
+        {
+          "text": "단점",
+          "lemma": "단점",
+          "pos": "NNG"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "JX"
+        },
+        {
+          "text": "때때로",
+          "lemma": "때때로",
+          "pos": "MAG"
+        },
+        {
+          "text": "추진력",
+          "lemma": "추진력",
+          "pos": "NNG"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "JKS"
+        },
+        {
+          "text": "부족",
+          "lemma": "부족",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "ㄹ",
+          "lemma": "ㄹ",
+          "pos": "ETM"
+        },
+        {
+          "text": "수",
+          "lemma": "수",
+          "pos": "NNB"
+        },
+        {
+          "text": "있",
+          "lemma": "있",
+          "pos": "VV"
+        },
+        {
+          "text": "다는",
+          "lemma": "다는",
+          "pos": "ETM"
+        },
+        {
+          "text": "거",
+          "lemma": "거",
+          "pos": "NNB"
+        },
+        {
+          "text": "야",
+          "lemma": "야",
+          "pos": "JKV"
+        }
+      ]
+    },
+    "concepts": [
+      "거",
+      "단점",
+      "부족",
+      "성격",
+      "수",
+      "여유",
+      "장단점",
+      "장점",
+      "추진력",
+      "침착"
+    ],
+    "domain": "personality"
+  },
+  {
+    "question": {
+      "text": "소심한 성격을 바꾸고 싶다면 어떻게 해야 할까?",
+      "tokens": [
+        {
+          "text": "소심",
+          "lemma": "소심",
+          "pos": "XR"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSA"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "성격",
+          "lemma": "성격",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "바꾸",
+          "lemma": "바꾸",
+          "pos": "VV"
+        },
+        {
+          "text": "고",
+          "lemma": "고",
+          "pos": "EC"
+        },
+        {
+          "text": "싶",
+          "lemma": "싶",
+          "pos": "VX"
+        },
+        {
+          "text": "다면",
+          "lemma": "다면",
+          "pos": "EC"
+        },
+        {
+          "text": "어떻",
+          "lemma": "어떻",
+          "pos": "VA"
+        },
+        {
+          "text": "게",
+          "lemma": "게",
+          "pos": "EC"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "VV"
+        },
+        {
+          "text": "아야",
+          "lemma": "아야",
+          "pos": "EC"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "VX"
+        },
+        {
+          "text": "ㄹ까",
+          "lemma": "ㄹ까",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "경험",
+        "교류",
+        "사람",
+        "성격",
+        "성공",
+        "자신감"
+      ],
+      "domain": "personality"
+    },
+    "answer": {
+      "text": "작은 성공 경험을 쌓거나, 새로운 사람들과 교류하면서 자신감을 키워봐.",
+      "tokens": [
+        {
+          "text": "작",
+          "lemma": "작",
+          "pos": "VA"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "ETM"
+        },
+        {
+          "text": "성공",
+          "lemma": "성공",
+          "pos": "NNG"
+        },
+        {
+          "text": "경험",
+          "lemma": "경험",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "쌓",
+          "lemma": "쌓",
+          "pos": "VV"
+        },
+        {
+          "text": "거나",
+          "lemma": "거나",
+          "pos": "EC"
+        },
+        {
+          "text": "새롭",
+          "lemma": "새롭",
+          "pos": "VA"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "사람",
+          "lemma": "사람",
+          "pos": "NNG"
+        },
+        {
+          "text": "들",
+          "lemma": "들",
+          "pos": "XSN"
+        },
+        {
+          "text": "과",
+          "lemma": "과",
+          "pos": "JC"
+        },
+        {
+          "text": "교류",
+          "lemma": "교류",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "면서",
+          "lemma": "면서",
+          "pos": "EC"
+        },
+        {
+          "text": "자신감",
+          "lemma": "자신감",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "키우",
+          "lemma": "키우",
+          "pos": "VV"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EC"
+        },
+        {
+          "text": "보",
+          "lemma": "보",
+          "pos": "VX"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "경험",
+      "교류",
+      "사람",
+      "성격",
+      "성공",
+      "자신감"
+    ],
+    "domain": "personality"
+  },
+  {
+    "question": {
+      "text": "적극적인 성격은 어떤 상황에서 빛을 발해?",
+      "tokens": [
+        {
+          "text": "적극",
+          "lemma": "적극",
+          "pos": "NNG"
+        },
+        {
+          "text": "적",
+          "lemma": "적",
+          "pos": "XSN"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "VCP"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "성격",
+          "lemma": "성격",
+          "pos": "NNG"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "JX"
+        },
+        {
+          "text": "어떤",
+          "lemma": "어떤",
+          "pos": "MM"
+        },
+        {
+          "text": "상황",
+          "lemma": "상황",
+          "pos": "NNG"
+        },
+        {
+          "text": "에서",
+          "lemma": "에서",
+          "pos": "JKB"
+        },
+        {
+          "text": "빛",
+          "lemma": "빛",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "발해",
+          "lemma": "발해",
+          "pos": "NNP"
+        }
+      ],
+      "concepts": [
+        "것",
+        "도전",
+        "때",
+        "리더",
+        "발",
+        "발해",
+        "빛",
+        "상황",
+        "성격",
+        "역할",
+        "적극"
+      ],
+      "domain": "personality"
+    },
+    "answer": {
+      "text": "새로운 도전을 하거나, 리더 역할을 맡을 때 빛을 발하는 것 같아.",
+      "tokens": [
+        {
+          "text": "새롭",
+          "lemma": "새롭",
+          "pos": "VA"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "도전",
+          "lemma": "도전",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "VV"
+        },
+        {
+          "text": "거나",
+          "lemma": "거나",
+          "pos": "EC"
+        },
+        {
+          "text": "리더",
+          "lemma": "리더",
+          "pos": "NNP"
+        },
+        {
+          "text": "역할",
+          "lemma": "역할",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "맡",
+          "lemma": "맡",
+          "pos": "VV"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "ETM"
+        },
+        {
+          "text": "때",
+          "lemma": "때",
+          "pos": "NNG"
+        },
+        {
+          "text": "빛",
+          "lemma": "빛",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "발",
+          "lemma": "발",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "ETM"
+        },
+        {
+          "text": "것",
+          "lemma": "것",
+          "pos": "NNB"
+        },
+        {
+          "text": "같",
+          "lemma": "같",
+          "pos": "VA"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "것",
+      "도전",
+      "때",
+      "리더",
+      "발",
+      "발해",
+      "빛",
+      "상황",
+      "성격",
+      "역할",
+      "적극"
+    ],
+    "domain": "personality"
+  },
+  {
+    "question": {
+      "text": "이해심 많은 사람의 특징은?",
+      "tokens": [
+        {
+          "text": "이해심",
+          "lemma": "이해심",
+          "pos": "NNG"
+        },
+        {
+          "text": "많",
+          "lemma": "많",
+          "pos": "VA"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "ETM"
+        },
+        {
+          "text": "사람",
+          "lemma": "사람",
+          "pos": "NNG"
+        },
+        {
+          "text": "의",
+          "lemma": "의",
+          "pos": "JKG"
+        },
+        {
+          "text": "특징",
+          "lemma": "특징",
+          "pos": "NNG"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "JX"
+        }
+      ],
+      "concepts": [
+        "공감",
+        "능력",
+        "사람",
+        "생각",
+        "이해심",
+        "입장",
+        "특징"
+      ],
+      "domain": "personality"
+    },
+    "answer": {
+      "text": "다른 사람의 입장에서 생각하고, 공감 능력이 뛰어나.",
+      "tokens": [
+        {
+          "text": "다른",
+          "lemma": "다른",
+          "pos": "MM"
+        },
+        {
+          "text": "사람",
+          "lemma": "사람",
+          "pos": "NNG"
+        },
+        {
+          "text": "의",
+          "lemma": "의",
+          "pos": "JKG"
+        },
+        {
+          "text": "입장",
+          "lemma": "입장",
+          "pos": "NNG"
+        },
+        {
+          "text": "에서",
+          "lemma": "에서",
+          "pos": "JKB"
+        },
+        {
+          "text": "생각",
+          "lemma": "생각",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "고",
+          "lemma": "고",
+          "pos": "EC"
+        },
+        {
+          "text": "공감",
+          "lemma": "공감",
+          "pos": "NNG"
+        },
+        {
+          "text": "능력",
+          "lemma": "능력",
+          "pos": "NNG"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "JKS"
+        },
+        {
+          "text": "뛰어나",
+          "lemma": "뛰어나",
+          "pos": "VA"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "공감",
+      "능력",
+      "사람",
+      "생각",
+      "이해심",
+      "입장",
+      "특징"
+    ],
+    "domain": "personality"
+  },
+  {
+    "question": {
+      "text": "고집이 센 사람과 어떻게 소통해야 할까?",
+      "tokens": [
+        {
+          "text": "고집",
+          "lemma": "고집",
+          "pos": "NNG"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "JKS"
+        },
+        {
+          "text": "세",
+          "lemma": "세",
+          "pos": "VA"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "사람",
+          "lemma": "사람",
+          "pos": "NNG"
+        },
+        {
+          "text": "과",
+          "lemma": "과",
+          "pos": "JC"
+        },
+        {
+          "text": "어떻",
+          "lemma": "어떻",
+          "pos": "VA"
+        },
+        {
+          "text": "게",
+          "lemma": "게",
+          "pos": "EC"
+        },
+        {
+          "text": "소통",
+          "lemma": "소통",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "아야",
+          "lemma": "아야",
+          "pos": "EC"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "VX"
+        },
+        {
+          "text": "ㄹ까",
+          "lemma": "ㄹ까",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "게",
+        "고집",
+        "논리",
+        "사람",
+        "상대방",
+        "소통",
+        "의견",
+        "자신",
+        "제시",
+        "존중"
+      ],
+      "domain": "personality"
+    },
+    "answer": {
+      "text": "상대방의 의견을 존중하면서도, 자신의 의견을 논리적으로 제시하는 게 중요해.",
+      "tokens": [
+        {
+          "text": "상대방",
+          "lemma": "상대방",
+          "pos": "NNG"
+        },
+        {
+          "text": "의",
+          "lemma": "의",
+          "pos": "JKG"
+        },
+        {
+          "text": "의견",
+          "lemma": "의견",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "존중",
+          "lemma": "존중",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "면서",
+          "lemma": "면서",
+          "pos": "EC"
+        },
+        {
+          "text": "도",
+          "lemma": "도",
+          "pos": "JX"
+        },
+        {
+          "text": "자신",
+          "lemma": "자신",
+          "pos": "NNG"
+        },
+        {
+          "text": "의",
+          "lemma": "의",
+          "pos": "JKG"
+        },
+        {
+          "text": "의견",
+          "lemma": "의견",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "논리",
+          "lemma": "논리",
+          "pos": "NNG"
+        },
+        {
+          "text": "적",
+          "lemma": "적",
+          "pos": "XSN"
+        },
+        {
+          "text": "으로",
+          "lemma": "으로",
+          "pos": "JKB"
+        },
+        {
+          "text": "제시",
+          "lemma": "제시",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "ETM"
+        },
+        {
+          "text": "게",
+          "lemma": "게",
+          "pos": "NNG"
+        },
+        {
+          "text": "중요",
+          "lemma": "중요",
+          "pos": "XR"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSA"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "게",
+      "고집",
+      "논리",
+      "사람",
+      "상대방",
+      "소통",
+      "의견",
+      "자신",
+      "제시",
+      "존중"
+    ],
+    "domain": "personality"
+  },
+  {
+    "question": {
+      "text": "성격 좋은 사람의 기준은 뭐라고 생각해?",
+      "tokens": [
+        {
+          "text": "성격",
+          "lemma": "성격",
+          "pos": "NNG"
+        },
+        {
+          "text": "좋",
+          "lemma": "좋",
+          "pos": "VA"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "ETM"
+        },
+        {
+          "text": "사람",
+          "lemma": "사람",
+          "pos": "NNG"
+        },
+        {
+          "text": "의",
+          "lemma": "의",
+          "pos": "JKG"
+        },
+        {
+          "text": "기준",
+          "lemma": "기준",
+          "pos": "NNG"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "JX"
+        },
+        {
+          "text": "뭐",
+          "lemma": "뭐",
+          "pos": "NP"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "VCP"
+        },
+        {
+          "text": "라고",
+          "lemma": "라고",
+          "pos": "EC"
+        },
+        {
+          "text": "생각",
+          "lemma": "생각",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "긍정",
+        "기준",
+        "배려",
+        "사람",
+        "생각",
+        "성격",
+        "타인"
+      ],
+      "domain": "personality"
+    },
+    "answer": {
+      "text": "타인을 배려하고, 긍정적이며, 솔직한 사람이 성격 좋다고 생각해.",
+      "tokens": [
+        {
+          "text": "타인",
+          "lemma": "타인",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "배려",
+          "lemma": "배려",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "고",
+          "lemma": "고",
+          "pos": "EC"
+        },
+        {
+          "text": "긍정",
+          "lemma": "긍정",
+          "pos": "NNG"
+        },
+        {
+          "text": "적",
+          "lemma": "적",
+          "pos": "XSN"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "VCP"
+        },
+        {
+          "text": "며",
+          "lemma": "며",
+          "pos": "EC"
+        },
+        {
+          "text": "솔직",
+          "lemma": "솔직",
+          "pos": "XR"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSA"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "사람",
+          "lemma": "사람",
+          "pos": "NNG"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "JKS"
+        },
+        {
+          "text": "성격",
+          "lemma": "성격",
+          "pos": "NNG"
+        },
+        {
+          "text": "좋",
+          "lemma": "좋",
+          "pos": "VA"
+        },
+        {
+          "text": "다고",
+          "lemma": "다고",
+          "pos": "EC"
+        },
+        {
+          "text": "생각",
+          "lemma": "생각",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "긍정",
+      "기준",
+      "배려",
+      "사람",
+      "생각",
+      "성격",
+      "타인"
+    ],
+    "domain": "personality"
+  },
+  {
+    "question": {
+      "text": "자신감을 키우려면 어떻게 해야 할까?",
+      "tokens": [
+        {
+          "text": "자신감",
+          "lemma": "자신감",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "키우",
+          "lemma": "키우",
+          "pos": "VV"
+        },
+        {
+          "text": "려면",
+          "lemma": "려면",
+          "pos": "EC"
+        },
+        {
+          "text": "어떻",
+          "lemma": "어떻",
+          "pos": "VA"
+        },
+        {
+          "text": "게",
+          "lemma": "게",
+          "pos": "EC"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "VV"
+        },
+        {
+          "text": "아야",
+          "lemma": "아야",
+          "pos": "EC"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "VX"
+        },
+        {
+          "text": "ㄹ까",
+          "lemma": "ㄹ까",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "게",
+        "긍정",
+        "달성",
+        "도움",
+        "목표",
+        "암시",
+        "자신감"
+      ],
+      "domain": "personality"
+    },
+    "answer": {
+      "text": "작은 목표를 세우고 달성해보거나, 긍정적인 자기 암시를 해보는 게 도움이 돼.",
+      "tokens": [
+        {
+          "text": "작",
+          "lemma": "작",
+          "pos": "VA"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "ETM"
+        },
+        {
+          "text": "목표",
+          "lemma": "목표",
+          "pos": "NNG"
+        },
+        {
+          "text": "를",
+          "lemma": "를",
+          "pos": "JKO"
+        },
+        {
+          "text": "세우",
+          "lemma": "세우",
+          "pos": "VV"
+        },
+        {
+          "text": "고",
+          "lemma": "고",
+          "pos": "EC"
+        },
+        {
+          "text": "달성",
+          "lemma": "달성",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EC"
+        },
+        {
+          "text": "보",
+          "lemma": "보",
+          "pos": "VX"
+        },
+        {
+          "text": "거나",
+          "lemma": "거나",
+          "pos": "EC"
+        },
+        {
+          "text": "긍정",
+          "lemma": "긍정",
+          "pos": "NNG"
+        },
+        {
+          "text": "적",
+          "lemma": "적",
+          "pos": "XSN"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "VCP"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "자기",
+          "lemma": "자기",
+          "pos": "NP"
+        },
+        {
+          "text": "암시",
+          "lemma": "암시",
+          "pos": "NNG"
+        },
+        {
+          "text": "를",
+          "lemma": "를",
+          "pos": "JKO"
+        },
+        {
+          "text": "해보",
+          "lemma": "해보",
+          "pos": "VV"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "ETM"
+        },
+        {
+          "text": "게",
+          "lemma": "게",
+          "pos": "NNG"
+        },
+        {
+          "text": "도움",
+          "lemma": "도움",
+          "pos": "NNG"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "JKS"
+        },
+        {
+          "text": "되",
+          "lemma": "되",
+          "pos": "VV"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "게",
+      "긍정",
+      "달성",
+      "도움",
+      "목표",
+      "암시",
+      "자신감"
+    ],
+    "domain": "personality"
+  },
+  {
+    "question": {
+      "text": "인내심이 강한 사람의 장점은?",
+      "tokens": [
+        {
+          "text": "인내심",
+          "lemma": "인내심",
+          "pos": "NNG"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "JKS"
+        },
+        {
+          "text": "강하",
+          "lemma": "강하",
+          "pos": "VA"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "사람",
+          "lemma": "사람",
+          "pos": "NNG"
+        },
+        {
+          "text": "의",
+          "lemma": "의",
+          "pos": "JKG"
+        },
+        {
+          "text": "장점",
+          "lemma": "장점",
+          "pos": "NNG"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "JX"
+        }
+      ],
+      "concepts": [
+        "노력",
+        "달성",
+        "때",
+        "목표",
+        "사람",
+        "어려움",
+        "인내심",
+        "장점",
+        "점",
+        "포기"
+      ],
+      "domain": "personality"
+    },
+    "answer": {
+      "text": "어려움이 있어도 쉽게 포기하지 않고, 목표를 달성할 때까지 꾸준히 노력하는 점이야.",
+      "tokens": [
+        {
+          "text": "어려움",
+          "lemma": "어려움",
+          "pos": "NNG"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "JKS"
+        },
+        {
+          "text": "있",
+          "lemma": "있",
+          "pos": "VV"
+        },
+        {
+          "text": "어도",
+          "lemma": "어도",
+          "pos": "EC"
+        },
+        {
+          "text": "쉽",
+          "lemma": "쉽",
+          "pos": "VA"
+        },
+        {
+          "text": "게",
+          "lemma": "게",
+          "pos": "EC"
+        },
+        {
+          "text": "포기",
+          "lemma": "포기",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "지",
+          "lemma": "지",
+          "pos": "EC"
+        },
+        {
+          "text": "않",
+          "lemma": "않",
+          "pos": "VX"
+        },
+        {
+          "text": "고",
+          "lemma": "고",
+          "pos": "EC"
+        },
+        {
+          "text": "목표",
+          "lemma": "목표",
+          "pos": "NNG"
+        },
+        {
+          "text": "를",
+          "lemma": "를",
+          "pos": "JKO"
+        },
+        {
+          "text": "달성",
+          "lemma": "달성",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "ㄹ",
+          "lemma": "ㄹ",
+          "pos": "ETM"
+        },
+        {
+          "text": "때",
+          "lemma": "때",
+          "pos": "NNG"
+        },
+        {
+          "text": "까지",
+          "lemma": "까지",
+          "pos": "JX"
+        },
+        {
+          "text": "꾸준히",
+          "lemma": "꾸준히",
+          "pos": "MAG"
+        },
+        {
+          "text": "노력",
+          "lemma": "노력",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "ETM"
+        },
+        {
+          "text": "점",
+          "lemma": "점",
+          "pos": "NNB"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "VCP"
+        },
+        {
+          "text": "야",
+          "lemma": "야",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "노력",
+      "달성",
+      "때",
+      "목표",
+      "사람",
+      "어려움",
+      "인내심",
+      "장점",
+      "점",
+      "포기"
+    ],
+    "domain": "personality"
+  },
+  {
+    "question": {
+      "text": "결단력이 있는 사람의 특징은?",
+      "tokens": [
+        {
+          "text": "결단력",
+          "lemma": "결단력",
+          "pos": "NNG"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "JKS"
+        },
+        {
+          "text": "있",
+          "lemma": "있",
+          "pos": "VV"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "ETM"
+        },
+        {
+          "text": "사람",
+          "lemma": "사람",
+          "pos": "NNG"
+        },
+        {
+          "text": "의",
+          "lemma": "의",
+          "pos": "JKG"
+        },
+        {
+          "text": "특징",
+          "lemma": "특징",
+          "pos": "NNG"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "JX"
+        }
+      ],
+      "concepts": [
+        "결단력",
+        "사람",
+        "우유부단",
+        "특징",
+        "판단",
+        "행동"
+      ],
+      "domain": "personality"
+    },
+    "answer": {
+      "text": "빠르게 판단하고 행동하며, 우유부단하지 않아.",
+      "tokens": [
+        {
+          "text": "빠르",
+          "lemma": "빠르",
+          "pos": "VA"
+        },
+        {
+          "text": "게",
+          "lemma": "게",
+          "pos": "EC"
+        },
+        {
+          "text": "판단",
+          "lemma": "판단",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "고",
+          "lemma": "고",
+          "pos": "EC"
+        },
+        {
+          "text": "행동",
+          "lemma": "행동",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "며",
+          "lemma": "며",
+          "pos": "EC"
+        },
+        {
+          "text": "우유부단",
+          "lemma": "우유부단",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "지",
+          "lemma": "지",
+          "pos": "EC"
+        },
+        {
+          "text": "않",
+          "lemma": "않",
+          "pos": "VX"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "결단력",
+      "사람",
+      "우유부단",
+      "특징",
+      "판단",
+      "행동"
+    ],
+    "domain": "personality"
+  },
+  {
+    "question": {
+      "text": "유머러스한 성격은 왜 매력적일까?",
+      "tokens": [
+        {
+          "text": "유머러스",
+          "lemma": "유머러스",
+          "pos": "XR"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSA"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "성격",
+          "lemma": "성격",
+          "pos": "NNG"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "JX"
+        },
+        {
+          "text": "왜",
+          "lemma": "왜",
+          "pos": "MAG"
+        },
+        {
+          "text": "매력",
+          "lemma": "매력",
+          "pos": "NNG"
+        },
+        {
+          "text": "적",
+          "lemma": "적",
+          "pos": "XSN"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "VCP"
+        },
+        {
+          "text": "ㄹ까",
+          "lemma": "ㄹ까",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "매력",
+        "분위기",
+        "사람",
+        "성격",
+        "즐거움"
+      ],
+      "domain": "personality"
+    },
+    "answer": {
+      "text": "분위기를 좋게 만들고, 사람들에게 즐거움을 줘서 매력적이야.",
+      "tokens": [
+        {
+          "text": "분위기",
+          "lemma": "분위기",
+          "pos": "NNG"
+        },
+        {
+          "text": "를",
+          "lemma": "를",
+          "pos": "JKO"
+        },
+        {
+          "text": "좋",
+          "lemma": "좋",
+          "pos": "VA"
+        },
+        {
+          "text": "게",
+          "lemma": "게",
+          "pos": "EC"
+        },
+        {
+          "text": "만들",
+          "lemma": "만들",
+          "pos": "VV"
+        },
+        {
+          "text": "고",
+          "lemma": "고",
+          "pos": "EC"
+        },
+        {
+          "text": "사람",
+          "lemma": "사람",
+          "pos": "NNG"
+        },
+        {
+          "text": "들",
+          "lemma": "들",
+          "pos": "XSN"
+        },
+        {
+          "text": "에게",
+          "lemma": "에게",
+          "pos": "JKB"
+        },
+        {
+          "text": "즐거움",
+          "lemma": "즐거움",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "주",
+          "lemma": "주",
+          "pos": "VX"
+        },
+        {
+          "text": "어서",
+          "lemma": "어서",
+          "pos": "EC"
+        },
+        {
+          "text": "매력",
+          "lemma": "매력",
+          "pos": "NNG"
+        },
+        {
+          "text": "적",
+          "lemma": "적",
+          "pos": "XSN"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "VCP"
+        },
+        {
+          "text": "야",
+          "lemma": "야",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "매력",
+      "분위기",
+      "사람",
+      "성격",
+      "즐거움"
+    ],
+    "domain": "personality"
+  },
+  {
+    "question": {
+      "text": "이기적인 성격을 가진 사람과 어떻게 지내야 해?",
+      "tokens": [
+        {
+          "text": "이기",
+          "lemma": "이기",
+          "pos": "NNG"
+        },
+        {
+          "text": "적",
+          "lemma": "적",
+          "pos": "XSN"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "VCP"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "성격",
+          "lemma": "성격",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "가지",
+          "lemma": "가지",
+          "pos": "VV"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "사람",
+          "lemma": "사람",
+          "pos": "NNG"
+        },
+        {
+          "text": "과",
+          "lemma": "과",
+          "pos": "JC"
+        },
+        {
+          "text": "어떻",
+          "lemma": "어떻",
+          "pos": "VA"
+        },
+        {
+          "text": "게",
+          "lemma": "게",
+          "pos": "EC"
+        },
+        {
+          "text": "지내",
+          "lemma": "지내",
+          "pos": "VV"
+        },
+        {
+          "text": "어야",
+          "lemma": "어야",
+          "pos": "EC"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "VX"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "거리",
+        "거절",
+        "게",
+        "불합리",
+        "사람",
+        "성격",
+        "요구",
+        "유지",
+        "이기"
+      ],
+      "domain": "personality"
+    },
+    "answer": {
+      "text": "적당한 거리를 유지하고, 불합리한 요구는 단호하게 거절하는 게 좋아.",
+      "tokens": [
+        {
+          "text": "적당",
+          "lemma": "적당",
+          "pos": "XR"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSA"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "거리",
+          "lemma": "거리",
+          "pos": "NNG"
+        },
+        {
+          "text": "를",
+          "lemma": "를",
+          "pos": "JKO"
+        },
+        {
+          "text": "유지",
+          "lemma": "유지",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "고",
+          "lemma": "고",
+          "pos": "EC"
+        },
+        {
+          "text": "불합리",
+          "lemma": "불합리",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "요구",
+          "lemma": "요구",
+          "pos": "NNG"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "JX"
+        },
+        {
+          "text": "단호",
+          "lemma": "단호",
+          "pos": "XR"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSA"
+        },
+        {
+          "text": "게",
+          "lemma": "게",
+          "pos": "EC"
+        },
+        {
+          "text": "거절",
+          "lemma": "거절",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "ETM"
+        },
+        {
+          "text": "게",
+          "lemma": "게",
+          "pos": "NNG"
+        },
+        {
+          "text": "좋",
+          "lemma": "좋",
+          "pos": "VA"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "거리",
+      "거절",
+      "게",
+      "불합리",
+      "사람",
+      "성격",
+      "요구",
+      "유지",
+      "이기"
+    ],
+    "domain": "personality"
+  },
+  {
+    "question": {
+      "text": "성격 테스트 같은 거 믿는 편이야?",
+      "tokens": [
+        {
+          "text": "성격",
+          "lemma": "성격",
+          "pos": "NNG"
+        },
+        {
+          "text": "테스트",
+          "lemma": "테스트",
+          "pos": "NNP"
+        },
+        {
+          "text": "같",
+          "lemma": "같",
+          "pos": "VA"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "ETM"
+        },
+        {
+          "text": "거",
+          "lemma": "거",
+          "pos": "NNB"
+        },
+        {
+          "text": "믿",
+          "lemma": "믿",
+          "pos": "VV"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "ETM"
+        },
+        {
+          "text": "편",
+          "lemma": "편",
+          "pos": "NNB"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "VCP"
+        },
+        {
+          "text": "야",
+          "lemma": "야",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "거",
+        "맹신",
+        "성격",
+        "재미",
+        "테스트",
+        "편"
+      ],
+      "domain": "personality"
+    },
+    "answer": {
+      "text": "재미로 보긴 하지만, 너무 맹신하지는 않아.",
+      "tokens": [
+        {
+          "text": "재미",
+          "lemma": "재미",
+          "pos": "NNG"
+        },
+        {
+          "text": "로",
+          "lemma": "로",
+          "pos": "JKB"
+        },
+        {
+          "text": "보",
+          "lemma": "보",
+          "pos": "VV"
+        },
+        {
+          "text": "기",
+          "lemma": "기",
+          "pos": "ETN"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "JX"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "VV"
+        },
+        {
+          "text": "지만",
+          "lemma": "지만",
+          "pos": "EC"
+        },
+        {
+          "text": "너무",
+          "lemma": "너무",
+          "pos": "MAG"
+        },
+        {
+          "text": "맹신",
+          "lemma": "맹신",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "지",
+          "lemma": "지",
+          "pos": "EC"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "JX"
+        },
+        {
+          "text": "않",
+          "lemma": "않",
+          "pos": "VX"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "거",
+      "맹신",
+      "성격",
+      "재미",
+      "테스트",
+      "편"
+    ],
+    "domain": "personality"
+  },
+  {
+    "question": {
+      "text": "솔직한 성격의 장단점은?",
+      "tokens": [
+        {
+          "text": "솔직",
+          "lemma": "솔직",
+          "pos": "XR"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSA"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "성격",
+          "lemma": "성격",
+          "pos": "NNG"
+        },
+        {
+          "text": "의",
+          "lemma": "의",
+          "pos": "JKG"
+        },
+        {
+          "text": "장단점",
+          "lemma": "장단점",
+          "pos": "NNG"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "JX"
+        }
+      ],
+      "concepts": [
+        "거",
+        "단점",
+        "상처",
+        "성격",
+        "수",
+        "신뢰",
+        "장단점",
+        "장점",
+        "타인"
+      ],
+      "domain": "personality"
+    },
+    "answer": {
+      "text": "장점은 신뢰를 얻기 쉽다는 거고, 단점은 때때로 타인에게 상처를 줄 수 있다는 거야.",
+      "tokens": [
+        {
+          "text": "장점",
+          "lemma": "장점",
+          "pos": "NNG"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "JX"
+        },
+        {
+          "text": "신뢰",
+          "lemma": "신뢰",
+          "pos": "NNG"
+        },
+        {
+          "text": "를",
+          "lemma": "를",
+          "pos": "JKO"
+        },
+        {
+          "text": "얻",
+          "lemma": "얻",
+          "pos": "VV"
+        },
+        {
+          "text": "기",
+          "lemma": "기",
+          "pos": "ETN"
+        },
+        {
+          "text": "쉽",
+          "lemma": "쉽",
+          "pos": "VA"
+        },
+        {
+          "text": "다는",
+          "lemma": "다는",
+          "pos": "ETM"
+        },
+        {
+          "text": "거",
+          "lemma": "거",
+          "pos": "NNB"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "VCP"
+        },
+        {
+          "text": "고",
+          "lemma": "고",
+          "pos": "EC"
+        },
+        {
+          "text": "단점",
+          "lemma": "단점",
+          "pos": "NNG"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "JX"
+        },
+        {
+          "text": "때때로",
+          "lemma": "때때로",
+          "pos": "MAG"
+        },
+        {
+          "text": "타인",
+          "lemma": "타인",
+          "pos": "NNP"
+        },
+        {
+          "text": "에게",
+          "lemma": "에게",
+          "pos": "JKB"
+        },
+        {
+          "text": "상처",
+          "lemma": "상처",
+          "pos": "NNG"
+        },
+        {
+          "text": "를",
+          "lemma": "를",
+          "pos": "JKO"
+        },
+        {
+          "text": "주",
+          "lemma": "주",
+          "pos": "VX"
+        },
+        {
+          "text": "ㄹ",
+          "lemma": "ㄹ",
+          "pos": "ETM"
+        },
+        {
+          "text": "수",
+          "lemma": "수",
+          "pos": "NNB"
+        },
+        {
+          "text": "있",
+          "lemma": "있",
+          "pos": "VV"
+        },
+        {
+          "text": "다는",
+          "lemma": "다는",
+          "pos": "ETM"
+        },
+        {
+          "text": "거",
+          "lemma": "거",
+          "pos": "NNB"
+        },
+        {
+          "text": "야",
+          "lemma": "야",
+          "pos": "JKV"
+        }
+      ]
+    },
+    "concepts": [
+      "거",
+      "단점",
+      "상처",
+      "성격",
+      "수",
+      "신뢰",
+      "장단점",
+      "장점",
+      "타인"
+    ],
+    "domain": "personality"
+  },
+  {
+    "question": {
+      "text": "예민한 성격은 어떻게 받아들여야 할까?",
+      "tokens": [
+        {
+          "text": "예민",
+          "lemma": "예민",
+          "pos": "XR"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSA"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "성격",
+          "lemma": "성격",
+          "pos": "NNG"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "JX"
+        },
+        {
+          "text": "어떻",
+          "lemma": "어떻",
+          "pos": "VA"
+        },
+        {
+          "text": "게",
+          "lemma": "게",
+          "pos": "EC"
+        },
+        {
+          "text": "받아들이",
+          "lemma": "받아들이",
+          "pos": "VV"
+        },
+        {
+          "text": "어야",
+          "lemma": "어야",
+          "pos": "EC"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "VX"
+        },
+        {
+          "text": "ㄹ까",
+          "lemma": "ㄹ까",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "게",
+        "단점",
+        "생각",
+        "성격",
+        "장점"
+      ],
+      "domain": "personality"
+    },
+    "answer": {
+      "text": "예민함을 단점이 아닌, 섬세함이라는 장점으로 생각하고 받아들이는 게 중요해.",
+      "tokens": [
+        {
+          "text": "예민",
+          "lemma": "예민",
+          "pos": "XR"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSA"
+        },
+        {
+          "text": "ㅁ",
+          "lemma": "ㅁ",
+          "pos": "ETN"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "단점",
+          "lemma": "단점",
+          "pos": "NNG"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "JKS"
+        },
+        {
+          "text": "아니",
+          "lemma": "아니",
+          "pos": "VCN"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "섬세",
+          "lemma": "섬세",
+          "pos": "XR"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSA"
+        },
+        {
+          "text": "ㅁ",
+          "lemma": "ㅁ",
+          "pos": "ETN"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "VCP"
+        },
+        {
+          "text": "라는",
+          "lemma": "라는",
+          "pos": "ETM"
+        },
+        {
+          "text": "장점",
+          "lemma": "장점",
+          "pos": "NNG"
+        },
+        {
+          "text": "으로",
+          "lemma": "으로",
+          "pos": "JKB"
+        },
+        {
+          "text": "생각",
+          "lemma": "생각",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "고",
+          "lemma": "고",
+          "pos": "EC"
+        },
+        {
+          "text": "받아들이",
+          "lemma": "받아들이",
+          "pos": "VV"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "ETM"
+        },
+        {
+          "text": "게",
+          "lemma": "게",
+          "pos": "NNG"
+        },
+        {
+          "text": "중요",
+          "lemma": "중요",
+          "pos": "XR"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSA"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "게",
+      "단점",
+      "생각",
+      "성격",
+      "장점"
+    ],
+    "domain": "personality"
+  },
+  {
+    "question": {
+      "text": "성격과 직업은 관련이 있을까?",
+      "tokens": [
+        {
+          "text": "성격",
+          "lemma": "성격",
+          "pos": "NNG"
+        },
+        {
+          "text": "과",
+          "lemma": "과",
+          "pos": "JC"
+        },
+        {
+          "text": "직업",
+          "lemma": "직업",
+          "pos": "NNG"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "JX"
+        },
+        {
+          "text": "관련",
+          "lemma": "관련",
+          "pos": "NNG"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "JKS"
+        },
+        {
+          "text": "있",
+          "lemma": "있",
+          "pos": "VX"
+        },
+        {
+          "text": "을까",
+          "lemma": "을까",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "관련",
+        "만족도",
+        "성격",
+        "정도",
+        "직업"
+      ],
+      "domain": "personality"
+    },
+    "answer": {
+      "text": "응, 어느 정도는 관련이 있어. 성격에 맞는 직업을 찾으면 만족도가 높아지지.",
+      "tokens": [
+        {
+          "text": "응",
+          "lemma": "응",
+          "pos": "IC"
+        },
+        {
+          "text": "어느",
+          "lemma": "어느",
+          "pos": "MM"
+        },
+        {
+          "text": "정도",
+          "lemma": "정도",
+          "pos": "NNG"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "JX"
+        },
+        {
+          "text": "관련",
+          "lemma": "관련",
+          "pos": "NNG"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "JKS"
+        },
+        {
+          "text": "있",
+          "lemma": "있",
+          "pos": "VX"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        },
+        {
+          "text": "성격",
+          "lemma": "성격",
+          "pos": "NNG"
+        },
+        {
+          "text": "에",
+          "lemma": "에",
+          "pos": "JKB"
+        },
+        {
+          "text": "맞",
+          "lemma": "맞",
+          "pos": "VV"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "ETM"
+        },
+        {
+          "text": "직업",
+          "lemma": "직업",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "찾",
+          "lemma": "찾",
+          "pos": "VV"
+        },
+        {
+          "text": "으면",
+          "lemma": "으면",
+          "pos": "EC"
+        },
+        {
+          "text": "만족도",
+          "lemma": "만족도",
+          "pos": "NNG"
+        },
+        {
+          "text": "가",
+          "lemma": "가",
+          "pos": "JKS"
+        },
+        {
+          "text": "높",
+          "lemma": "높",
+          "pos": "VA"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EC"
+        },
+        {
+          "text": "지",
+          "lemma": "지",
+          "pos": "VX"
+        },
+        {
+          "text": "지",
+          "lemma": "지",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "관련",
+      "만족도",
+      "성격",
+      "정도",
+      "직업"
+    ],
+    "domain": "personality"
+  },
+  {
+    "question": {
+      "text": "친절한 성격의 사람을 보면 어떤 느낌이 들어?",
+      "tokens": [
+        {
+          "text": "친절",
+          "lemma": "친절",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "성격",
+          "lemma": "성격",
+          "pos": "NNG"
+        },
+        {
+          "text": "의",
+          "lemma": "의",
+          "pos": "JKG"
+        },
+        {
+          "text": "사람",
+          "lemma": "사람",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "보",
+          "lemma": "보",
+          "pos": "VV"
+        },
+        {
+          "text": "면",
+          "lemma": "면",
+          "pos": "EC"
+        },
+        {
+          "text": "어떤",
+          "lemma": "어떤",
+          "pos": "MM"
+        },
+        {
+          "text": "느낌",
+          "lemma": "느낌",
+          "pos": "NNG"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "JKS"
+        },
+        {
+          "text": "들",
+          "lemma": "들",
+          "pos": "VV"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "느낌",
+        "마음",
+        "사람",
+        "생각",
+        "성격",
+        "친절"
+      ],
+      "domain": "personality"
+    },
+    "answer": {
+      "text": "마음이 따뜻해지고, 나도 저런 사람이 되고 싶다는 생각이 들어.",
+      "tokens": [
+        {
+          "text": "마음",
+          "lemma": "마음",
+          "pos": "NNG"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "JKS"
+        },
+        {
+          "text": "따뜻",
+          "lemma": "따뜻",
+          "pos": "XR"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSA"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EC"
+        },
+        {
+          "text": "지",
+          "lemma": "지",
+          "pos": "VX"
+        },
+        {
+          "text": "고",
+          "lemma": "고",
+          "pos": "EC"
+        },
+        {
+          "text": "나",
+          "lemma": "나",
+          "pos": "NP"
+        },
+        {
+          "text": "도",
+          "lemma": "도",
+          "pos": "JX"
+        },
+        {
+          "text": "저런",
+          "lemma": "저런",
+          "pos": "MM"
+        },
+        {
+          "text": "사람",
+          "lemma": "사람",
+          "pos": "NNG"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "JKS"
+        },
+        {
+          "text": "되",
+          "lemma": "되",
+          "pos": "VV"
+        },
+        {
+          "text": "고",
+          "lemma": "고",
+          "pos": "EC"
+        },
+        {
+          "text": "싶",
+          "lemma": "싶",
+          "pos": "VX"
+        },
+        {
+          "text": "다는",
+          "lemma": "다는",
+          "pos": "ETM"
+        },
+        {
+          "text": "생각",
+          "lemma": "생각",
+          "pos": "NNG"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "JKS"
+        },
+        {
+          "text": "들",
+          "lemma": "들",
+          "pos": "VV"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "느낌",
+      "마음",
+      "사람",
+      "생각",
+      "성격",
+      "친절"
+    ],
+    "domain": "personality"
+  },
+  {
+    "question": {
+      "text": "성격 때문에 고민이 있다면 어떻게 해야 할까?",
+      "tokens": [
+        {
+          "text": "성격",
+          "lemma": "성격",
+          "pos": "NNG"
+        },
+        {
+          "text": "때문",
+          "lemma": "때문",
+          "pos": "NNB"
+        },
+        {
+          "text": "에",
+          "lemma": "에",
+          "pos": "JKB"
+        },
+        {
+          "text": "고민",
+          "lemma": "고민",
+          "pos": "NNG"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "JKS"
+        },
+        {
+          "text": "있",
+          "lemma": "있",
+          "pos": "VV"
+        },
+        {
+          "text": "다면",
+          "lemma": "다면",
+          "pos": "EC"
+        },
+        {
+          "text": "어떻",
+          "lemma": "어떻",
+          "pos": "VA"
+        },
+        {
+          "text": "게",
+          "lemma": "게",
+          "pos": "EC"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "VV"
+        },
+        {
+          "text": "아야",
+          "lemma": "아야",
+          "pos": "EC"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "VX"
+        },
+        {
+          "text": "ㄹ까",
+          "lemma": "ㄹ까",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "것",
+        "고민",
+        "도움",
+        "때문",
+        "만",
+        "사람",
+        "성격",
+        "이야기",
+        "전문가",
+        "주변"
+      ],
+      "domain": "personality"
+    },
+    "answer": {
+      "text": "주변에 믿을 만한 사람과 이야기하거나, 전문가의 도움을 받는 것도 좋아.",
+      "tokens": [
+        {
+          "text": "주변",
+          "lemma": "주변",
+          "pos": "NNG"
+        },
+        {
+          "text": "에",
+          "lemma": "에",
+          "pos": "JKB"
+        },
+        {
+          "text": "믿",
+          "lemma": "믿",
+          "pos": "VV"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "ETM"
+        },
+        {
+          "text": "만",
+          "lemma": "만",
+          "pos": "NNB"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSA"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "사람",
+          "lemma": "사람",
+          "pos": "NNG"
+        },
+        {
+          "text": "과",
+          "lemma": "과",
+          "pos": "JC"
+        },
+        {
+          "text": "이야기",
+          "lemma": "이야기",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "거나",
+          "lemma": "거나",
+          "pos": "EC"
+        },
+        {
+          "text": "전문가",
+          "lemma": "전문가",
+          "pos": "NNG"
+        },
+        {
+          "text": "의",
+          "lemma": "의",
+          "pos": "JKG"
+        },
+        {
+          "text": "도움",
+          "lemma": "도움",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "받",
+          "lemma": "받",
+          "pos": "VV"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "ETM"
+        },
+        {
+          "text": "것",
+          "lemma": "것",
+          "pos": "NNB"
+        },
+        {
+          "text": "도",
+          "lemma": "도",
+          "pos": "JX"
+        },
+        {
+          "text": "좋",
+          "lemma": "좋",
+          "pos": "VA"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "것",
+      "고민",
+      "도움",
+      "때문",
+      "만",
+      "사람",
+      "성격",
+      "이야기",
+      "전문가",
+      "주변"
+    ],
+    "domain": "personality"
+  },
+  {
+    "question": {
+      "text": "낙천적인 성격의 장점은?",
+      "tokens": [
+        {
+          "text": "낙천",
+          "lemma": "낙천",
+          "pos": "NNG"
+        },
+        {
+          "text": "적",
+          "lemma": "적",
+          "pos": "XSN"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "VCP"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "성격",
+          "lemma": "성격",
+          "pos": "NNG"
+        },
+        {
+          "text": "의",
+          "lemma": "의",
+          "pos": "JKG"
+        },
+        {
+          "text": "장점",
+          "lemma": "장점",
+          "pos": "NNG"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "JX"
+        }
+      ],
+      "concepts": [
+        "거",
+        "극복",
+        "긍정",
+        "낙천",
+        "면",
+        "상황",
+        "성격",
+        "장점"
+      ],
+      "domain": "personality"
+    },
+    "answer": {
+      "text": "어려운 상황에서도 긍정적인 면을 보고, 잘 극복해내는 거야.",
+      "tokens": [
+        {
+          "text": "어렵",
+          "lemma": "어렵",
+          "pos": "VA"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "상황",
+          "lemma": "상황",
+          "pos": "NNG"
+        },
+        {
+          "text": "에서",
+          "lemma": "에서",
+          "pos": "JKB"
+        },
+        {
+          "text": "도",
+          "lemma": "도",
+          "pos": "JX"
+        },
+        {
+          "text": "긍정",
+          "lemma": "긍정",
+          "pos": "NNG"
+        },
+        {
+          "text": "적",
+          "lemma": "적",
+          "pos": "XSN"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "VCP"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "면",
+          "lemma": "면",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "보",
+          "lemma": "보",
+          "pos": "VV"
+        },
+        {
+          "text": "고",
+          "lemma": "고",
+          "pos": "EC"
+        },
+        {
+          "text": "잘",
+          "lemma": "잘",
+          "pos": "MAG"
+        },
+        {
+          "text": "극복",
+          "lemma": "극복",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EC"
+        },
+        {
+          "text": "내",
+          "lemma": "내",
+          "pos": "VX"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "ETM"
+        },
+        {
+          "text": "거",
+          "lemma": "거",
+          "pos": "NNB"
+        },
+        {
+          "text": "야",
+          "lemma": "야",
+          "pos": "JKV"
+        }
+      ]
+    },
+    "concepts": [
+      "거",
+      "극복",
+      "긍정",
+      "낙천",
+      "면",
+      "상황",
+      "성격",
+      "장점"
+    ],
+    "domain": "personality"
+  },
+  {
+    "question": {
+      "text": "비관적인 성격은 어떻게 바꿀 수 있을까?",
+      "tokens": [
+        {
+          "text": "비관",
+          "lemma": "비관",
+          "pos": "NNG"
+        },
+        {
+          "text": "적",
+          "lemma": "적",
+          "pos": "XSN"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "VCP"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "성격",
+          "lemma": "성격",
+          "pos": "NNG"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "JX"
+        },
+        {
+          "text": "어떻",
+          "lemma": "어떻",
+          "pos": "VA"
+        },
+        {
+          "text": "게",
+          "lemma": "게",
+          "pos": "EC"
+        },
+        {
+          "text": "바꾸",
+          "lemma": "바꾸",
+          "pos": "VV"
+        },
+        {
+          "text": "ㄹ",
+          "lemma": "ㄹ",
+          "pos": "ETM"
+        },
+        {
+          "text": "수",
+          "lemma": "수",
+          "pos": "NNB"
+        },
+        {
+          "text": "있",
+          "lemma": "있",
+          "pos": "VX"
+        },
+        {
+          "text": "을까",
+          "lemma": "을까",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "게",
+        "경험",
+        "긍정",
+        "도움",
+        "비관",
+        "생각",
+        "성격",
+        "성공",
+        "수",
+        "훈련"
+      ],
+      "domain": "personality"
+    },
+    "answer": {
+      "text": "긍정적인 생각 훈련을 하거나, 성공 경험을 늘려보는 게 도움이 돼.",
+      "tokens": [
+        {
+          "text": "긍정",
+          "lemma": "긍정",
+          "pos": "NNG"
+        },
+        {
+          "text": "적",
+          "lemma": "적",
+          "pos": "XSN"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "VCP"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "생각",
+          "lemma": "생각",
+          "pos": "NNG"
+        },
+        {
+          "text": "훈련",
+          "lemma": "훈련",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "VV"
+        },
+        {
+          "text": "거나",
+          "lemma": "거나",
+          "pos": "EC"
+        },
+        {
+          "text": "성공",
+          "lemma": "성공",
+          "pos": "NNG"
+        },
+        {
+          "text": "경험",
+          "lemma": "경험",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "늘리",
+          "lemma": "늘리",
+          "pos": "VV"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EC"
+        },
+        {
+          "text": "보",
+          "lemma": "보",
+          "pos": "VX"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "ETM"
+        },
+        {
+          "text": "게",
+          "lemma": "게",
+          "pos": "NNG"
+        },
+        {
+          "text": "도움",
+          "lemma": "도움",
+          "pos": "NNG"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "JKS"
+        },
+        {
+          "text": "되",
+          "lemma": "되",
+          "pos": "VV"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "게",
+      "경험",
+      "긍정",
+      "도움",
+      "비관",
+      "생각",
+      "성격",
+      "성공",
+      "수",
+      "훈련"
+    ],
+    "domain": "personality"
+  },
+  {
+    "question": {
+      "text": "책임감이 강한 사람의 특징은?",
+      "tokens": [
+        {
+          "text": "책임감",
+          "lemma": "책임감",
+          "pos": "NNG"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "JKS"
+        },
+        {
+          "text": "강하",
+          "lemma": "강하",
+          "pos": "VA"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "사람",
+          "lemma": "사람",
+          "pos": "NNG"
+        },
+        {
+          "text": "의",
+          "lemma": "의",
+          "pos": "JKG"
+        },
+        {
+          "text": "특징",
+          "lemma": "특징",
+          "pos": "NNG"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "JX"
+        }
+      ],
+      "concepts": [
+        "끝",
+        "사람",
+        "약속",
+        "일",
+        "자신",
+        "책임감",
+        "특징"
+      ],
+      "domain": "personality"
+    },
+    "answer": {
+      "text": "자신에게 맡겨진 일을 끝까지 해내고, 약속을 잘 지켜.",
+      "tokens": [
+        {
+          "text": "자신",
+          "lemma": "자신",
+          "pos": "NNG"
+        },
+        {
+          "text": "에게",
+          "lemma": "에게",
+          "pos": "JKB"
+        },
+        {
+          "text": "맡기",
+          "lemma": "맡기",
+          "pos": "VV"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EC"
+        },
+        {
+          "text": "지",
+          "lemma": "지",
+          "pos": "VX"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "일",
+          "lemma": "일",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "끝",
+          "lemma": "끝",
+          "pos": "NNG"
+        },
+        {
+          "text": "까지",
+          "lemma": "까지",
+          "pos": "JX"
+        },
+        {
+          "text": "해내",
+          "lemma": "해내",
+          "pos": "VV"
+        },
+        {
+          "text": "고",
+          "lemma": "고",
+          "pos": "EC"
+        },
+        {
+          "text": "약속",
+          "lemma": "약속",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "잘",
+          "lemma": "잘",
+          "pos": "MAG"
+        },
+        {
+          "text": "지키",
+          "lemma": "지키",
+          "pos": "VV"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "끝",
+      "사람",
+      "약속",
+      "일",
+      "자신",
+      "책임감",
+      "특징"
+    ],
+    "domain": "personality"
+  },
+  {
+    "question": {
+      "text": "배려심 깊은 사람은 어떤 행동을 해?",
+      "tokens": [
+        {
+          "text": "배려",
+          "lemma": "배려",
+          "pos": "NNG"
+        },
+        {
+          "text": "심",
+          "lemma": "심",
+          "pos": "NNP"
+        },
+        {
+          "text": "깊",
+          "lemma": "깊",
+          "pos": "VA"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "ETM"
+        },
+        {
+          "text": "사람",
+          "lemma": "사람",
+          "pos": "NNG"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "JX"
+        },
+        {
+          "text": "어떤",
+          "lemma": "어떤",
+          "pos": "MM"
+        },
+        {
+          "text": "행동",
+          "lemma": "행동",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "VX"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "감정",
+        "노력",
+        "배려",
+        "사람",
+        "심",
+        "행동"
+      ],
+      "domain": "personality"
+    },
+    "answer": {
+      "text": "다른 사람의 감정을 헤아리고, 먼저 도와주려고 노력해.",
+      "tokens": [
+        {
+          "text": "다른",
+          "lemma": "다른",
+          "pos": "MM"
+        },
+        {
+          "text": "사람",
+          "lemma": "사람",
+          "pos": "NNG"
+        },
+        {
+          "text": "의",
+          "lemma": "의",
+          "pos": "JKG"
+        },
+        {
+          "text": "감정",
+          "lemma": "감정",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "헤아리",
+          "lemma": "헤아리",
+          "pos": "VV"
+        },
+        {
+          "text": "고",
+          "lemma": "고",
+          "pos": "EC"
+        },
+        {
+          "text": "먼저",
+          "lemma": "먼저",
+          "pos": "MAG"
+        },
+        {
+          "text": "도와주",
+          "lemma": "도와주",
+          "pos": "VV"
+        },
+        {
+          "text": "려고",
+          "lemma": "려고",
+          "pos": "EC"
+        },
+        {
+          "text": "노력",
+          "lemma": "노력",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "감정",
+      "노력",
+      "배려",
+      "사람",
+      "심",
+      "행동"
+    ],
+    "domain": "personality"
+  },
+  {
+    "question": {
+      "text": "성격 유형 검사는 어떤 종류가 있어?",
+      "tokens": [
+        {
+          "text": "성격",
+          "lemma": "성격",
+          "pos": "NNG"
+        },
+        {
+          "text": "유형",
+          "lemma": "유형",
+          "pos": "NNP"
+        },
+        {
+          "text": "검사",
+          "lemma": "검사",
+          "pos": "NNG"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "JX"
+        },
+        {
+          "text": "어떤",
+          "lemma": "어떤",
+          "pos": "MM"
+        },
+        {
+          "text": "종류",
+          "lemma": "종류",
+          "pos": "NNG"
+        },
+        {
+          "text": "가",
+          "lemma": "가",
+          "pos": "JKS"
+        },
+        {
+          "text": "있",
+          "lemma": "있",
+          "pos": "VX"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "검사",
+        "등",
+        "성격",
+        "에니어그램",
+        "유형",
+        "종류"
+      ],
+      "domain": "personality"
+    },
+    "answer": {
+      "text": "MBTI, DISC, 에니어그램 등 다양한 유형 검사가 있어.",
+      "tokens": [
+        {
+          "text": "MBTI",
+          "lemma": "MBTI",
+          "pos": "SL"
+        },
+        {
+          "text": "DISC",
+          "lemma": "DISC",
+          "pos": "SL"
+        },
+        {
+          "text": "에니어그램",
+          "lemma": "에니어그램",
+          "pos": "NNP"
+        },
+        {
+          "text": "등",
+          "lemma": "등",
+          "pos": "NNB"
+        },
+        {
+          "text": "다양",
+          "lemma": "다양",
+          "pos": "XR"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSA"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "유형",
+          "lemma": "유형",
+          "pos": "NNP"
+        },
+        {
+          "text": "검사",
+          "lemma": "검사",
+          "pos": "NNG"
+        },
+        {
+          "text": "가",
+          "lemma": "가",
+          "pos": "JKS"
+        },
+        {
+          "text": "있",
+          "lemma": "있",
+          "pos": "VX"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "검사",
+      "등",
+      "성격",
+      "에니어그램",
+      "유형",
+      "종류"
+    ],
+    "domain": "personality"
+  },
+  {
+    "question": {
+      "text": "사려 깊은 성격은 어떤 의미야?",
+      "tokens": [
+        {
+          "text": "사려",
+          "lemma": "사려",
+          "pos": "NNG"
+        },
+        {
+          "text": "깊",
+          "lemma": "깊",
+          "pos": "VA"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "ETM"
+        },
+        {
+          "text": "성격",
+          "lemma": "성격",
+          "pos": "NNG"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "JX"
+        },
+        {
+          "text": "어떤",
+          "lemma": "어떤",
+          "pos": "MM"
+        },
+        {
+          "text": "의미",
+          "lemma": "의미",
+          "pos": "NNP"
+        },
+        {
+          "text": "야",
+          "lemma": "야",
+          "pos": "JKV"
+        }
+      ],
+      "concepts": [
+        "말",
+        "사려",
+        "생각",
+        "성격",
+        "신중",
+        "의미",
+        "조심",
+        "행동"
+      ],
+      "domain": "personality"
+    },
+    "answer": {
+      "text": "생각이 깊고 신중하며, 말과 행동을 조심하는 성격이야.",
+      "tokens": [
+        {
+          "text": "생각",
+          "lemma": "생각",
+          "pos": "NNG"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "JKS"
+        },
+        {
+          "text": "깊",
+          "lemma": "깊",
+          "pos": "VA"
+        },
+        {
+          "text": "고",
+          "lemma": "고",
+          "pos": "EC"
+        },
+        {
+          "text": "신중",
+          "lemma": "신중",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "며",
+          "lemma": "며",
+          "pos": "EC"
+        },
+        {
+          "text": "말",
+          "lemma": "말",
+          "pos": "NNG"
+        },
+        {
+          "text": "과",
+          "lemma": "과",
+          "pos": "JC"
+        },
+        {
+          "text": "행동",
+          "lemma": "행동",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "조심",
+          "lemma": "조심",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "ETM"
+        },
+        {
+          "text": "성격",
+          "lemma": "성격",
+          "pos": "NNG"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "VCP"
+        },
+        {
+          "text": "야",
+          "lemma": "야",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "말",
+      "사려",
+      "생각",
+      "성격",
+      "신중",
+      "의미",
+      "조심",
+      "행동"
+    ],
+    "domain": "personality"
+  },
+  {
+    "question": {
+      "text": "온화한 성격의 사람을 보면 어떤 느낌이 들어?",
+      "tokens": [
+        {
+          "text": "온화",
+          "lemma": "온화",
+          "pos": "XR"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSA"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "성격",
+          "lemma": "성격",
+          "pos": "NNG"
+        },
+        {
+          "text": "의",
+          "lemma": "의",
+          "pos": "JKG"
+        },
+        {
+          "text": "사람",
+          "lemma": "사람",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "보",
+          "lemma": "보",
+          "pos": "VV"
+        },
+        {
+          "text": "면",
+          "lemma": "면",
+          "pos": "EC"
+        },
+        {
+          "text": "어떤",
+          "lemma": "어떤",
+          "pos": "MM"
+        },
+        {
+          "text": "느낌",
+          "lemma": "느낌",
+          "pos": "NNG"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "JKS"
+        },
+        {
+          "text": "들",
+          "lemma": "들",
+          "pos": "VV"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "느낌",
+        "마음",
+        "사람",
+        "성격",
+        "안정감",
+        "편안"
+      ],
+      "domain": "personality"
+    },
+    "answer": {
+      "text": "마음이 편안해지고, 안정감을 느껴.",
+      "tokens": [
+        {
+          "text": "마음",
+          "lemma": "마음",
+          "pos": "NNG"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "JKS"
+        },
+        {
+          "text": "편안",
+          "lemma": "편안",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EC"
+        },
+        {
+          "text": "지",
+          "lemma": "지",
+          "pos": "VX"
+        },
+        {
+          "text": "고",
+          "lemma": "고",
+          "pos": "EC"
+        },
+        {
+          "text": "안정감",
+          "lemma": "안정감",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "느끼",
+          "lemma": "느끼",
+          "pos": "VV"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "느낌",
+      "마음",
+      "사람",
+      "성격",
+      "안정감",
+      "편안"
+    ],
+    "domain": "personality"
+  },
+  {
+    "question": {
+      "text": "충동적인 성격을 고치려면 어떻게 해야 해?",
+      "tokens": [
+        {
+          "text": "충동",
+          "lemma": "충동",
+          "pos": "NNG"
+        },
+        {
+          "text": "적",
+          "lemma": "적",
+          "pos": "XSN"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "VCP"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "성격",
+          "lemma": "성격",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "고치",
+          "lemma": "고치",
+          "pos": "VV"
+        },
+        {
+          "text": "려면",
+          "lemma": "려면",
+          "pos": "EC"
+        },
+        {
+          "text": "어떻",
+          "lemma": "어떻",
+          "pos": "VA"
+        },
+        {
+          "text": "게",
+          "lemma": "게",
+          "pos": "EC"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "VV"
+        },
+        {
+          "text": "아야",
+          "lemma": "아야",
+          "pos": "EC"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "VX"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "게",
+        "결정",
+        "고민",
+        "번",
+        "생각",
+        "성격",
+        "습관",
+        "전",
+        "충동"
+      ],
+      "domain": "personality"
+    },
+    "answer": {
+      "text": "결정하기 전에 한 번 더 생각하고, 충분히 고민하는 습관을 들이는 게 좋아.",
+      "tokens": [
+        {
+          "text": "결정",
+          "lemma": "결정",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "기",
+          "lemma": "기",
+          "pos": "ETN"
+        },
+        {
+          "text": "전",
+          "lemma": "전",
+          "pos": "NNG"
+        },
+        {
+          "text": "에",
+          "lemma": "에",
+          "pos": "JKB"
+        },
+        {
+          "text": "한",
+          "lemma": "한",
+          "pos": "MM"
+        },
+        {
+          "text": "번",
+          "lemma": "번",
+          "pos": "NNB"
+        },
+        {
+          "text": "더",
+          "lemma": "더",
+          "pos": "MAG"
+        },
+        {
+          "text": "생각",
+          "lemma": "생각",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "고",
+          "lemma": "고",
+          "pos": "EC"
+        },
+        {
+          "text": "충분히",
+          "lemma": "충분히",
+          "pos": "MAG"
+        },
+        {
+          "text": "고민",
+          "lemma": "고민",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "ETM"
+        },
+        {
+          "text": "습관",
+          "lemma": "습관",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "들이",
+          "lemma": "들이",
+          "pos": "VV"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "ETM"
+        },
+        {
+          "text": "게",
+          "lemma": "게",
+          "pos": "NNG"
+        },
+        {
+          "text": "좋",
+          "lemma": "좋",
+          "pos": "VA"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "게",
+      "결정",
+      "고민",
+      "번",
+      "생각",
+      "성격",
+      "습관",
+      "전",
+      "충동"
+    ],
+    "domain": "personality"
+  },
+  {
+    "question": {
+      "text": "성격과 리더십은 관련이 깊을까?",
+      "tokens": [
+        {
+          "text": "성격",
+          "lemma": "성격",
+          "pos": "NNG"
+        },
+        {
+          "text": "과",
+          "lemma": "과",
+          "pos": "JC"
+        },
+        {
+          "text": "리더십",
+          "lemma": "리더십",
+          "pos": "NNG"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "JX"
+        },
+        {
+          "text": "관련",
+          "lemma": "관련",
+          "pos": "NNG"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "JKS"
+        },
+        {
+          "text": "깊",
+          "lemma": "깊",
+          "pos": "VA"
+        },
+        {
+          "text": "을까",
+          "lemma": "을까",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "관련",
+        "리더",
+        "리더십",
+        "분위기",
+        "성격",
+        "성과",
+        "영향",
+        "조직"
+      ],
+      "domain": "personality"
+    },
+    "answer": {
+      "text": "응, 리더의 성격은 조직 분위기나 성과에 큰 영향을 미치지.",
+      "tokens": [
+        {
+          "text": "응",
+          "lemma": "응",
+          "pos": "IC"
+        },
+        {
+          "text": "리더",
+          "lemma": "리더",
+          "pos": "NNP"
+        },
+        {
+          "text": "의",
+          "lemma": "의",
+          "pos": "JKG"
+        },
+        {
+          "text": "성격",
+          "lemma": "성격",
+          "pos": "NNG"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "JX"
+        },
+        {
+          "text": "조직",
+          "lemma": "조직",
+          "pos": "NNG"
+        },
+        {
+          "text": "분위기",
+          "lemma": "분위기",
+          "pos": "NNG"
+        },
+        {
+          "text": "나",
+          "lemma": "나",
+          "pos": "JC"
+        },
+        {
+          "text": "성과",
+          "lemma": "성과",
+          "pos": "NNG"
+        },
+        {
+          "text": "에",
+          "lemma": "에",
+          "pos": "JKB"
+        },
+        {
+          "text": "크",
+          "lemma": "크",
+          "pos": "VA"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "영향",
+          "lemma": "영향",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "미치",
+          "lemma": "미치",
+          "pos": "VV"
+        },
+        {
+          "text": "지",
+          "lemma": "지",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "관련",
+      "리더",
+      "리더십",
+      "분위기",
+      "성격",
+      "성과",
+      "영향",
+      "조직"
+    ],
+    "domain": "personality"
+  },
+  {
+    "question": {
+      "text": "자신감 있는 사람의 행동 특징은?",
+      "tokens": [
+        {
+          "text": "자신감",
+          "lemma": "자신감",
+          "pos": "NNG"
+        },
+        {
+          "text": "있",
+          "lemma": "있",
+          "pos": "VV"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "ETM"
+        },
+        {
+          "text": "사람",
+          "lemma": "사람",
+          "pos": "NNG"
+        },
+        {
+          "text": "의",
+          "lemma": "의",
+          "pos": "JKG"
+        },
+        {
+          "text": "행동",
+          "lemma": "행동",
+          "pos": "NNG"
+        },
+        {
+          "text": "특징",
+          "lemma": "특징",
+          "pos": "NNG"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "JX"
+        }
+      ],
+      "concepts": [
+        "사람",
+        "의견",
+        "자신",
+        "자신감",
+        "주도",
+        "특징",
+        "표현",
+        "행동"
+      ],
+      "domain": "personality"
+    },
+    "answer": {
+      "text": "당당하고 주도적이며, 자신의 의견을 분명하게 표현해.",
+      "tokens": [
+        {
+          "text": "당당",
+          "lemma": "당당",
+          "pos": "XR"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSA"
+        },
+        {
+          "text": "고",
+          "lemma": "고",
+          "pos": "EC"
+        },
+        {
+          "text": "주도",
+          "lemma": "주도",
+          "pos": "NNG"
+        },
+        {
+          "text": "적",
+          "lemma": "적",
+          "pos": "XSN"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "VCP"
+        },
+        {
+          "text": "며",
+          "lemma": "며",
+          "pos": "EC"
+        },
+        {
+          "text": "자신",
+          "lemma": "자신",
+          "pos": "NNG"
+        },
+        {
+          "text": "의",
+          "lemma": "의",
+          "pos": "JKG"
+        },
+        {
+          "text": "의견",
+          "lemma": "의견",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "분명",
+          "lemma": "분명",
+          "pos": "XR"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSA"
+        },
+        {
+          "text": "게",
+          "lemma": "게",
+          "pos": "EC"
+        },
+        {
+          "text": "표현",
+          "lemma": "표현",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "사람",
+      "의견",
+      "자신",
+      "자신감",
+      "주도",
+      "특징",
+      "표현",
+      "행동"
+    ],
+    "domain": "personality"
+  },
+  {
+    "question": {
+      "text": "성격이 급한 사람을 대할 때 주의할 점은?",
+      "tokens": [
+        {
+          "text": "성격",
+          "lemma": "성격",
+          "pos": "NNG"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "JKS"
+        },
+        {
+          "text": "급하",
+          "lemma": "급하",
+          "pos": "VA"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "사람",
+          "lemma": "사람",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "대하",
+          "lemma": "대하",
+          "pos": "VV"
+        },
+        {
+          "text": "ㄹ",
+          "lemma": "ㄹ",
+          "pos": "ETM"
+        },
+        {
+          "text": "때",
+          "lemma": "때",
+          "pos": "NNG"
+        },
+        {
+          "text": "주의",
+          "lemma": "주의",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "ㄹ",
+          "lemma": "ㄹ",
+          "pos": "ETM"
+        },
+        {
+          "text": "점",
+          "lemma": "점",
+          "pos": "NNB"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "JX"
+        }
+      ],
+      "concepts": [
+        "게",
+        "때",
+        "사람",
+        "성격",
+        "의사소통",
+        "점",
+        "주의"
+      ],
+      "domain": "personality"
+    },
+    "answer": {
+      "text": "조급해하지 않고 차분하게 대하며, 명확하게 의사소통하는 게 중요해.",
+      "tokens": [
+        {
+          "text": "조급",
+          "lemma": "조급",
+          "pos": "XR"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSA"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EC"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "VX"
+        },
+        {
+          "text": "지",
+          "lemma": "지",
+          "pos": "EC"
+        },
+        {
+          "text": "않",
+          "lemma": "않",
+          "pos": "VX"
+        },
+        {
+          "text": "고",
+          "lemma": "고",
+          "pos": "EC"
+        },
+        {
+          "text": "차분",
+          "lemma": "차분",
+          "pos": "XR"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSA"
+        },
+        {
+          "text": "게",
+          "lemma": "게",
+          "pos": "EC"
+        },
+        {
+          "text": "대하",
+          "lemma": "대하",
+          "pos": "VV"
+        },
+        {
+          "text": "며",
+          "lemma": "며",
+          "pos": "EC"
+        },
+        {
+          "text": "명확",
+          "lemma": "명확",
+          "pos": "XR"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSA"
+        },
+        {
+          "text": "게",
+          "lemma": "게",
+          "pos": "EC"
+        },
+        {
+          "text": "의사소통",
+          "lemma": "의사소통",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "ETM"
+        },
+        {
+          "text": "게",
+          "lemma": "게",
+          "pos": "NNG"
+        },
+        {
+          "text": "중요",
+          "lemma": "중요",
+          "pos": "XR"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSA"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "게",
+      "때",
+      "사람",
+      "성격",
+      "의사소통",
+      "점",
+      "주의"
+    ],
+    "domain": "personality"
+  },
+  {
+    "question": {
+      "text": "경쟁심이 강한 성격의 장단점은?",
+      "tokens": [
+        {
+          "text": "경쟁심",
+          "lemma": "경쟁심",
+          "pos": "NNG"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "JKS"
+        },
+        {
+          "text": "강하",
+          "lemma": "강하",
+          "pos": "VA"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "성격",
+          "lemma": "성격",
+          "pos": "NNG"
+        },
+        {
+          "text": "의",
+          "lemma": "의",
+          "pos": "JKG"
+        },
+        {
+          "text": "장단점",
+          "lemma": "장단점",
+          "pos": "NNG"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "JX"
+        }
+      ],
+      "concepts": [
+        "거",
+        "경쟁심",
+        "단점",
+        "달성",
+        "목표",
+        "성격",
+        "수",
+        "의식",
+        "의지",
+        "장단점",
+        "장점",
+        "타인"
+      ],
+      "domain": "personality"
+    },
+    "answer": {
+      "text": "장점은 목표 달성 의지가 강하다는 거고, 단점은 타인을 지나치게 의식할 수 있다는 거야.",
+      "tokens": [
+        {
+          "text": "장점",
+          "lemma": "장점",
+          "pos": "NNG"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "JX"
+        },
+        {
+          "text": "목표",
+          "lemma": "목표",
+          "pos": "NNG"
+        },
+        {
+          "text": "달성",
+          "lemma": "달성",
+          "pos": "NNP"
+        },
+        {
+          "text": "의지",
+          "lemma": "의지",
+          "pos": "NNG"
+        },
+        {
+          "text": "가",
+          "lemma": "가",
+          "pos": "JKS"
+        },
+        {
+          "text": "강하",
+          "lemma": "강하",
+          "pos": "VA"
+        },
+        {
+          "text": "다는",
+          "lemma": "다는",
+          "pos": "ETM"
+        },
+        {
+          "text": "거",
+          "lemma": "거",
+          "pos": "NNB"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "VCP"
+        },
+        {
+          "text": "고",
+          "lemma": "고",
+          "pos": "EC"
+        },
+        {
+          "text": "단점",
+          "lemma": "단점",
+          "pos": "NNG"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "JX"
+        },
+        {
+          "text": "타인",
+          "lemma": "타인",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "지나치",
+          "lemma": "지나치",
+          "pos": "VA"
+        },
+        {
+          "text": "게",
+          "lemma": "게",
+          "pos": "EC"
+        },
+        {
+          "text": "의식",
+          "lemma": "의식",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "ㄹ",
+          "lemma": "ㄹ",
+          "pos": "ETM"
+        },
+        {
+          "text": "수",
+          "lemma": "수",
+          "pos": "NNB"
+        },
+        {
+          "text": "있",
+          "lemma": "있",
+          "pos": "VV"
+        },
+        {
+          "text": "다는",
+          "lemma": "다는",
+          "pos": "ETM"
+        },
+        {
+          "text": "거",
+          "lemma": "거",
+          "pos": "NNB"
+        },
+        {
+          "text": "야",
+          "lemma": "야",
+          "pos": "JKV"
+        }
+      ]
+    },
+    "concepts": [
+      "거",
+      "경쟁심",
+      "단점",
+      "달성",
+      "목표",
+      "성격",
+      "수",
+      "의식",
+      "의지",
+      "장단점",
+      "장점",
+      "타인"
+    ],
+    "domain": "personality"
+  },
+  {
+    "question": {
+      "text": "협력적인 성격은 어떤 상황에서 중요해?",
+      "tokens": [
+        {
+          "text": "협력",
+          "lemma": "협력",
+          "pos": "NNG"
+        },
+        {
+          "text": "적",
+          "lemma": "적",
+          "pos": "XSN"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "VCP"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "성격",
+          "lemma": "성격",
+          "pos": "NNG"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "JX"
+        },
+        {
+          "text": "어떤",
+          "lemma": "어떤",
+          "pos": "MM"
+        },
+        {
+          "text": "상황",
+          "lemma": "상황",
+          "pos": "NNG"
+        },
+        {
+          "text": "에서",
+          "lemma": "에서",
+          "pos": "JKB"
+        },
+        {
+          "text": "중요",
+          "lemma": "중요",
+          "pos": "XR"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSA"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "공동",
+        "때",
+        "목표",
+        "상황",
+        "성격",
+        "팀",
+        "프로젝트",
+        "협력"
+      ],
+      "domain": "personality"
+    },
+    "answer": {
+      "text": "팀 프로젝트나 공동의 목표를 이룰 때 매우 중요해.",
+      "tokens": [
+        {
+          "text": "팀",
+          "lemma": "팀",
+          "pos": "NNG"
+        },
+        {
+          "text": "프로젝트",
+          "lemma": "프로젝트",
+          "pos": "NNP"
+        },
+        {
+          "text": "나",
+          "lemma": "나",
+          "pos": "JC"
+        },
+        {
+          "text": "공동",
+          "lemma": "공동",
+          "pos": "NNG"
+        },
+        {
+          "text": "의",
+          "lemma": "의",
+          "pos": "JKG"
+        },
+        {
+          "text": "목표",
+          "lemma": "목표",
+          "pos": "NNG"
+        },
+        {
+          "text": "를",
+          "lemma": "를",
+          "pos": "JKO"
+        },
+        {
+          "text": "이루",
+          "lemma": "이루",
+          "pos": "VV"
+        },
+        {
+          "text": "ㄹ",
+          "lemma": "ㄹ",
+          "pos": "ETM"
+        },
+        {
+          "text": "때",
+          "lemma": "때",
+          "pos": "NNG"
+        },
+        {
+          "text": "매우",
+          "lemma": "매우",
+          "pos": "MAG"
+        },
+        {
+          "text": "중요",
+          "lemma": "중요",
+          "pos": "XR"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSA"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "공동",
+      "때",
+      "목표",
+      "상황",
+      "성격",
+      "팀",
+      "프로젝트",
+      "협력"
+    ],
+    "domain": "personality"
+  },
+  {
+    "question": {
+      "text": "예술가에게 많은 성격 유형이 있어?",
+      "tokens": [
+        {
+          "text": "예술가",
+          "lemma": "예술가",
+          "pos": "NNP"
+        },
+        {
+          "text": "에게",
+          "lemma": "에게",
+          "pos": "JKB"
+        },
+        {
+          "text": "많",
+          "lemma": "많",
+          "pos": "VA"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "ETM"
+        },
+        {
+          "text": "성격",
+          "lemma": "성격",
+          "pos": "NNG"
+        },
+        {
+          "text": "유형",
+          "lemma": "유형",
+          "pos": "NNG"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "JKS"
+        },
+        {
+          "text": "있",
+          "lemma": "있",
+          "pos": "VX"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "감성",
+        "건",
+        "성격",
+        "예술가",
+        "유형",
+        "정해진",
+        "창의"
+      ],
+      "domain": "personality"
+    },
+    "answer": {
+      "text": "딱 정해진 건 없지만, 창의적이고 감성적인 성격이 많다고 알려져 있어.",
+      "tokens": [
+        {
+          "text": "딱",
+          "lemma": "딱",
+          "pos": "MAG"
+        },
+        {
+          "text": "정해진",
+          "lemma": "정해진",
+          "pos": "NNP"
+        },
+        {
+          "text": "건",
+          "lemma": "건",
+          "pos": "NNB"
+        },
+        {
+          "text": "없",
+          "lemma": "없",
+          "pos": "VA"
+        },
+        {
+          "text": "지만",
+          "lemma": "지만",
+          "pos": "EC"
+        },
+        {
+          "text": "창의",
+          "lemma": "창의",
+          "pos": "NNG"
+        },
+        {
+          "text": "적",
+          "lemma": "적",
+          "pos": "XSN"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "VCP"
+        },
+        {
+          "text": "고",
+          "lemma": "고",
+          "pos": "EC"
+        },
+        {
+          "text": "감성",
+          "lemma": "감성",
+          "pos": "NNG"
+        },
+        {
+          "text": "적",
+          "lemma": "적",
+          "pos": "XSN"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "VCP"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "성격",
+          "lemma": "성격",
+          "pos": "NNG"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "JKS"
+        },
+        {
+          "text": "많",
+          "lemma": "많",
+          "pos": "VA"
+        },
+        {
+          "text": "다고",
+          "lemma": "다고",
+          "pos": "EC"
+        },
+        {
+          "text": "알리",
+          "lemma": "알리",
+          "pos": "VV"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EC"
+        },
+        {
+          "text": "지",
+          "lemma": "지",
+          "pos": "VX"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EC"
+        },
+        {
+          "text": "있",
+          "lemma": "있",
+          "pos": "VX"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "감성",
+      "건",
+      "성격",
+      "예술가",
+      "유형",
+      "정해진",
+      "창의"
+    ],
+    "domain": "personality"
+  },
+  {
+    "question": {
+      "text": "성격이 좋은 사람을 보면 본받고 싶은 점은?",
+      "tokens": [
+        {
+          "text": "성격",
+          "lemma": "성격",
+          "pos": "NNG"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "JKS"
+        },
+        {
+          "text": "좋",
+          "lemma": "좋",
+          "pos": "VA"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "ETM"
+        },
+        {
+          "text": "사람",
+          "lemma": "사람",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "보",
+          "lemma": "보",
+          "pos": "VV"
+        },
+        {
+          "text": "면",
+          "lemma": "면",
+          "pos": "EC"
+        },
+        {
+          "text": "본받",
+          "lemma": "본받",
+          "pos": "VV"
+        },
+        {
+          "text": "고",
+          "lemma": "고",
+          "pos": "EC"
+        },
+        {
+          "text": "싶",
+          "lemma": "싶",
+          "pos": "VX"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "ETM"
+        },
+        {
+          "text": "점",
+          "lemma": "점",
+          "pos": "NNB"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "JX"
+        }
+      ],
+      "concepts": [
+        "긍정",
+        "마음",
+        "배려",
+        "사람",
+        "성격",
+        "점",
+        "타인",
+        "태도"
+      ],
+      "domain": "personality"
+    },
+    "answer": {
+      "text": "긍정적인 태도와 타인을 배려하는 마음을 본받고 싶어.",
+      "tokens": [
+        {
+          "text": "긍정",
+          "lemma": "긍정",
+          "pos": "NNG"
+        },
+        {
+          "text": "적",
+          "lemma": "적",
+          "pos": "XSN"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "VCP"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "태도",
+          "lemma": "태도",
+          "pos": "NNG"
+        },
+        {
+          "text": "와",
+          "lemma": "와",
+          "pos": "JC"
+        },
+        {
+          "text": "타인",
+          "lemma": "타인",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "배려",
+          "lemma": "배려",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "ETM"
+        },
+        {
+          "text": "마음",
+          "lemma": "마음",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "본받",
+          "lemma": "본받",
+          "pos": "VV"
+        },
+        {
+          "text": "고",
+          "lemma": "고",
+          "pos": "EC"
+        },
+        {
+          "text": "싶",
+          "lemma": "싶",
+          "pos": "VX"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "긍정",
+      "마음",
+      "배려",
+      "사람",
+      "성격",
+      "점",
+      "타인",
+      "태도"
+    ],
+    "domain": "personality"
+  },
+  {
+    "question": {
+      "text": "질투심이 많은 성격은 어떻게 다스려야 해?",
+      "tokens": [
+        {
+          "text": "질투심",
+          "lemma": "질투심",
+          "pos": "NNG"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "JKS"
+        },
+        {
+          "text": "많",
+          "lemma": "많",
+          "pos": "VA"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "ETM"
+        },
+        {
+          "text": "성격",
+          "lemma": "성격",
+          "pos": "NNG"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "JX"
+        },
+        {
+          "text": "어떻",
+          "lemma": "어떻",
+          "pos": "VA"
+        },
+        {
+          "text": "게",
+          "lemma": "게",
+          "pos": "EC"
+        },
+        {
+          "text": "다스리",
+          "lemma": "다스리",
+          "pos": "VV"
+        },
+        {
+          "text": "어야",
+          "lemma": "어야",
+          "pos": "EC"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "VX"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "감",
+        "게",
+        "비교",
+        "사람",
+        "성격",
+        "자신",
+        "자존",
+        "장점",
+        "질투심",
+        "집중"
+      ],
+      "domain": "personality"
+    },
+    "answer": {
+      "text": "자신을 다른 사람과 비교하기보다 자신의 장점에 집중하고, 자존감을 높이는 게 중요해.",
+      "tokens": [
+        {
+          "text": "자신",
+          "lemma": "자신",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "다른",
+          "lemma": "다른",
+          "pos": "MM"
+        },
+        {
+          "text": "사람",
+          "lemma": "사람",
+          "pos": "NNG"
+        },
+        {
+          "text": "과",
+          "lemma": "과",
+          "pos": "JC"
+        },
+        {
+          "text": "비교",
+          "lemma": "비교",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "기",
+          "lemma": "기",
+          "pos": "ETN"
+        },
+        {
+          "text": "보다",
+          "lemma": "보다",
+          "pos": "JKB"
+        },
+        {
+          "text": "자신",
+          "lemma": "자신",
+          "pos": "NNG"
+        },
+        {
+          "text": "의",
+          "lemma": "의",
+          "pos": "JKG"
+        },
+        {
+          "text": "장점",
+          "lemma": "장점",
+          "pos": "NNG"
+        },
+        {
+          "text": "에",
+          "lemma": "에",
+          "pos": "JKB"
+        },
+        {
+          "text": "집중",
+          "lemma": "집중",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "고",
+          "lemma": "고",
+          "pos": "EC"
+        },
+        {
+          "text": "자존",
+          "lemma": "자존",
+          "pos": "NNG"
+        },
+        {
+          "text": "감",
+          "lemma": "감",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "높이",
+          "lemma": "높이",
+          "pos": "VV"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "ETM"
+        },
+        {
+          "text": "게",
+          "lemma": "게",
+          "pos": "NNG"
+        },
+        {
+          "text": "중요",
+          "lemma": "중요",
+          "pos": "XR"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSA"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "감",
+      "게",
+      "비교",
+      "사람",
+      "성격",
+      "자신",
+      "자존",
+      "장점",
+      "질투심",
+      "집중"
+    ],
+    "domain": "personality"
+  },
+  {
+    "question": {
+      "text": "외향적인 사람이 내향적인 사람을 이해하려면?",
+      "tokens": [
+        {
+          "text": "외향",
+          "lemma": "외향",
+          "pos": "NNG"
+        },
+        {
+          "text": "적",
+          "lemma": "적",
+          "pos": "XSN"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "VCP"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "사람",
+          "lemma": "사람",
+          "pos": "NNG"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "JKS"
+        },
+        {
+          "text": "내향",
+          "lemma": "내향",
+          "pos": "NNG"
+        },
+        {
+          "text": "적",
+          "lemma": "적",
+          "pos": "XSN"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "VCP"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "사람",
+          "lemma": "사람",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "이해",
+          "lemma": "이해",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "려면",
+          "lemma": "려면",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "것",
+        "내향",
+        "사람",
+        "시간",
+        "외향",
+        "이해",
+        "존중",
+        "필요",
+        "혼자"
+      ],
+      "domain": "personality"
+    },
+    "answer": {
+      "text": "내향적인 사람이 혼자만의 시간을 필요로 한다는 것을 이해하고 존중해줘야 해.",
+      "tokens": [
+        {
+          "text": "내향",
+          "lemma": "내향",
+          "pos": "NNG"
+        },
+        {
+          "text": "적",
+          "lemma": "적",
+          "pos": "XSN"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "VCP"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "사람",
+          "lemma": "사람",
+          "pos": "NNG"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "JKS"
+        },
+        {
+          "text": "혼자",
+          "lemma": "혼자",
+          "pos": "NNG"
+        },
+        {
+          "text": "만",
+          "lemma": "만",
+          "pos": "JX"
+        },
+        {
+          "text": "의",
+          "lemma": "의",
+          "pos": "JKG"
+        },
+        {
+          "text": "시간",
+          "lemma": "시간",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "필요",
+          "lemma": "필요",
+          "pos": "NNG"
+        },
+        {
+          "text": "로",
+          "lemma": "로",
+          "pos": "JKB"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "VV"
+        },
+        {
+          "text": "ㄴ다는",
+          "lemma": "ㄴ다는",
+          "pos": "ETM"
+        },
+        {
+          "text": "것",
+          "lemma": "것",
+          "pos": "NNB"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "이해",
+          "lemma": "이해",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "고",
+          "lemma": "고",
+          "pos": "EC"
+        },
+        {
+          "text": "존중",
+          "lemma": "존중",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EC"
+        },
+        {
+          "text": "주",
+          "lemma": "주",
+          "pos": "VX"
+        },
+        {
+          "text": "어야",
+          "lemma": "어야",
+          "pos": "EC"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "VX"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "것",
+      "내향",
+      "사람",
+      "시간",
+      "외향",
+      "이해",
+      "존중",
+      "필요",
+      "혼자"
+    ],
+    "domain": "personality"
+  },
+  {
+    "question": {
+      "text": "내향적인 사람이 외향적인 사람을 이해하려면?",
+      "tokens": [
+        {
+          "text": "내향",
+          "lemma": "내향",
+          "pos": "NNG"
+        },
+        {
+          "text": "적",
+          "lemma": "적",
+          "pos": "XSN"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "VCP"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "사람",
+          "lemma": "사람",
+          "pos": "NNG"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "JKS"
+        },
+        {
+          "text": "외향",
+          "lemma": "외향",
+          "pos": "NNG"
+        },
+        {
+          "text": "적",
+          "lemma": "적",
+          "pos": "XSN"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "VCP"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "사람",
+          "lemma": "사람",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "이해",
+          "lemma": "이해",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "려면",
+          "lemma": "려면",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "것",
+        "게",
+        "교류",
+        "내향",
+        "사람",
+        "에너지",
+        "외향",
+        "이해"
+      ],
+      "domain": "personality"
+    },
+    "answer": {
+      "text": "외향적인 사람이 사람들과의 교류를 통해 에너지를 얻는다는 것을 이해하는 게 중요해.",
+      "tokens": [
+        {
+          "text": "외향",
+          "lemma": "외향",
+          "pos": "NNG"
+        },
+        {
+          "text": "적",
+          "lemma": "적",
+          "pos": "XSN"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "VCP"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "사람",
+          "lemma": "사람",
+          "pos": "NNG"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "JKS"
+        },
+        {
+          "text": "사람",
+          "lemma": "사람",
+          "pos": "NNG"
+        },
+        {
+          "text": "들",
+          "lemma": "들",
+          "pos": "XSN"
+        },
+        {
+          "text": "과",
+          "lemma": "과",
+          "pos": "JKB"
+        },
+        {
+          "text": "의",
+          "lemma": "의",
+          "pos": "JKG"
+        },
+        {
+          "text": "교류",
+          "lemma": "교류",
+          "pos": "NNG"
+        },
+        {
+          "text": "를",
+          "lemma": "를",
+          "pos": "JKO"
+        },
+        {
+          "text": "통하",
+          "lemma": "통하",
+          "pos": "VV"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EC"
+        },
+        {
+          "text": "에너지",
+          "lemma": "에너지",
+          "pos": "NNG"
+        },
+        {
+          "text": "를",
+          "lemma": "를",
+          "pos": "JKO"
+        },
+        {
+          "text": "얻",
+          "lemma": "얻",
+          "pos": "VV"
+        },
+        {
+          "text": "는다는",
+          "lemma": "는다는",
+          "pos": "ETM"
+        },
+        {
+          "text": "것",
+          "lemma": "것",
+          "pos": "NNB"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "이해",
+          "lemma": "이해",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "ETM"
+        },
+        {
+          "text": "게",
+          "lemma": "게",
+          "pos": "NNG"
+        },
+        {
+          "text": "중요",
+          "lemma": "중요",
+          "pos": "XR"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSA"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "것",
+      "게",
+      "교류",
+      "내향",
+      "사람",
+      "에너지",
+      "외향",
+      "이해"
+    ],
+    "domain": "personality"
+  },
+  {
+    "question": {
+      "text": "다혈질 성격은 어떻게 조절해야 해?",
+      "tokens": [
+        {
+          "text": "다혈질",
+          "lemma": "다혈질",
+          "pos": "NNP"
+        },
+        {
+          "text": "성격",
+          "lemma": "성격",
+          "pos": "NNG"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "JX"
+        },
+        {
+          "text": "어떻",
+          "lemma": "어떻",
+          "pos": "VA"
+        },
+        {
+          "text": "게",
+          "lemma": "게",
+          "pos": "EC"
+        },
+        {
+          "text": "조절",
+          "lemma": "조절",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "아야",
+          "lemma": "아야",
+          "pos": "EC"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "VX"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "감정",
+        "날",
+        "다혈질",
+        "등",
+        "때",
+        "성격",
+        "심호흡",
+        "연습",
+        "자리",
+        "조절",
+        "화가"
+      ],
+      "domain": "personality"
+    },
+    "answer": {
+      "text": "화가 날 때 심호흡을 하거나, 잠시 자리를 피하는 등 감정을 조절하는 연습을 해봐.",
+      "tokens": [
+        {
+          "text": "화가",
+          "lemma": "화가",
+          "pos": "NNG"
+        },
+        {
+          "text": "날",
+          "lemma": "날",
+          "pos": "NNG"
+        },
+        {
+          "text": "때",
+          "lemma": "때",
+          "pos": "NNG"
+        },
+        {
+          "text": "심호흡",
+          "lemma": "심호흡",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "VV"
+        },
+        {
+          "text": "거나",
+          "lemma": "거나",
+          "pos": "EC"
+        },
+        {
+          "text": "잠시",
+          "lemma": "잠시",
+          "pos": "MAG"
+        },
+        {
+          "text": "자리",
+          "lemma": "자리",
+          "pos": "NNG"
+        },
+        {
+          "text": "를",
+          "lemma": "를",
+          "pos": "JKO"
+        },
+        {
+          "text": "피하",
+          "lemma": "피하",
+          "pos": "VV"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "ETM"
+        },
+        {
+          "text": "등",
+          "lemma": "등",
+          "pos": "NNB"
+        },
+        {
+          "text": "감정",
+          "lemma": "감정",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "조절",
+          "lemma": "조절",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "ETM"
+        },
+        {
+          "text": "연습",
+          "lemma": "연습",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "VV"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EC"
+        },
+        {
+          "text": "보",
+          "lemma": "보",
+          "pos": "VX"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "감정",
+      "날",
+      "다혈질",
+      "등",
+      "때",
+      "성격",
+      "심호흡",
+      "연습",
+      "자리",
+      "조절",
+      "화가"
+    ],
+    "domain": "personality"
+  },
+  {
+    "question": {
+      "text": "성격이 삶의 만족도에 영향을 미칠까?",
+      "tokens": [
+        {
+          "text": "성격",
+          "lemma": "성격",
+          "pos": "NNG"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "JKS"
+        },
+        {
+          "text": "삶",
+          "lemma": "삶",
+          "pos": "NNG"
+        },
+        {
+          "text": "의",
+          "lemma": "의",
+          "pos": "JKG"
+        },
+        {
+          "text": "만족도",
+          "lemma": "만족도",
+          "pos": "NNG"
+        },
+        {
+          "text": "에",
+          "lemma": "에",
+          "pos": "JKB"
+        },
+        {
+          "text": "영향",
+          "lemma": "영향",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "미치",
+          "lemma": "미치",
+          "pos": "VV"
+        },
+        {
+          "text": "ㄹ까",
+          "lemma": "ㄹ까",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "만족도",
+        "삶",
+        "성격",
+        "수",
+        "영향",
+        "이해",
+        "자신",
+        "활용"
+      ],
+      "domain": "personality"
+    },
+    "answer": {
+      "text": "그럼! 자신의 성격을 잘 이해하고 활용하면 삶의 만족도가 높아질 수 있어.",
+      "tokens": [
+        {
+          "text": "그럼",
+          "lemma": "그럼",
+          "pos": "IC"
+        },
+        {
+          "text": "자신",
+          "lemma": "자신",
+          "pos": "NNG"
+        },
+        {
+          "text": "의",
+          "lemma": "의",
+          "pos": "JKG"
+        },
+        {
+          "text": "성격",
+          "lemma": "성격",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "잘",
+          "lemma": "잘",
+          "pos": "MAG"
+        },
+        {
+          "text": "이해",
+          "lemma": "이해",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "고",
+          "lemma": "고",
+          "pos": "EC"
+        },
+        {
+          "text": "활용",
+          "lemma": "활용",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "면",
+          "lemma": "면",
+          "pos": "EC"
+        },
+        {
+          "text": "삶",
+          "lemma": "삶",
+          "pos": "NNG"
+        },
+        {
+          "text": "의",
+          "lemma": "의",
+          "pos": "JKG"
+        },
+        {
+          "text": "만족도",
+          "lemma": "만족도",
+          "pos": "NNG"
+        },
+        {
+          "text": "가",
+          "lemma": "가",
+          "pos": "JKS"
+        },
+        {
+          "text": "높",
+          "lemma": "높",
+          "pos": "VA"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EC"
+        },
+        {
+          "text": "지",
+          "lemma": "지",
+          "pos": "VX"
+        },
+        {
+          "text": "ㄹ",
+          "lemma": "ㄹ",
+          "pos": "ETM"
+        },
+        {
+          "text": "수",
+          "lemma": "수",
+          "pos": "NNB"
+        },
+        {
+          "text": "있",
+          "lemma": "있",
+          "pos": "VX"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "만족도",
+      "삶",
+      "성격",
+      "수",
+      "영향",
+      "이해",
+      "자신",
+      "활용"
+    ],
+    "domain": "personality"
+  },
+  {
+    "question": {
+      "text": "사람의 성격은 시간이 지나면서 변하기도 해?",
+      "tokens": [
+        {
+          "text": "사람",
+          "lemma": "사람",
+          "pos": "NNG"
+        },
+        {
+          "text": "의",
+          "lemma": "의",
+          "pos": "JKG"
+        },
+        {
+          "text": "성격",
+          "lemma": "성격",
+          "pos": "NNG"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "JX"
+        },
+        {
+          "text": "시간",
+          "lemma": "시간",
+          "pos": "NNG"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "JKS"
+        },
+        {
+          "text": "지나",
+          "lemma": "지나",
+          "pos": "VV"
+        },
+        {
+          "text": "면서",
+          "lemma": "면서",
+          "pos": "EC"
+        },
+        {
+          "text": "변하",
+          "lemma": "변하",
+          "pos": "VV"
+        },
+        {
+          "text": "기",
+          "lemma": "기",
+          "pos": "ETN"
+        },
+        {
+          "text": "도",
+          "lemma": "도",
+          "pos": "JX"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "VX"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "경험",
+        "변화",
+        "사람",
+        "성격",
+        "성숙",
+        "수",
+        "시간",
+        "조금",
+        "환경"
+      ],
+      "domain": "personality"
+    },
+    "answer": {
+      "text": "응, 경험이나 환경에 따라 조금씩 변화하고 성숙해질 수 있어.",
+      "tokens": [
+        {
+          "text": "응",
+          "lemma": "응",
+          "pos": "IC"
+        },
+        {
+          "text": "경험",
+          "lemma": "경험",
+          "pos": "NNG"
+        },
+        {
+          "text": "이나",
+          "lemma": "이나",
+          "pos": "JC"
+        },
+        {
+          "text": "환경",
+          "lemma": "환경",
+          "pos": "NNG"
+        },
+        {
+          "text": "에",
+          "lemma": "에",
+          "pos": "JKB"
+        },
+        {
+          "text": "따르",
+          "lemma": "따르",
+          "pos": "VV"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EC"
+        },
+        {
+          "text": "조금",
+          "lemma": "조금",
+          "pos": "NNG"
+        },
+        {
+          "text": "씩",
+          "lemma": "씩",
+          "pos": "XSN"
+        },
+        {
+          "text": "변화",
+          "lemma": "변화",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "고",
+          "lemma": "고",
+          "pos": "EC"
+        },
+        {
+          "text": "성숙",
+          "lemma": "성숙",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EC"
+        },
+        {
+          "text": "지",
+          "lemma": "지",
+          "pos": "VX"
+        },
+        {
+          "text": "ㄹ",
+          "lemma": "ㄹ",
+          "pos": "ETM"
+        },
+        {
+          "text": "수",
+          "lemma": "수",
+          "pos": "NNB"
+        },
+        {
+          "text": "있",
+          "lemma": "있",
+          "pos": "VX"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "경험",
+      "변화",
+      "사람",
+      "성격",
+      "성숙",
+      "수",
+      "시간",
+      "조금",
+      "환경"
+    ],
+    "domain": "personality"
+  },
+  {
+    "question": {
+      "text": "성격에 대해 더 궁금한 건 없어?",
+      "tokens": [
+        {
+          "text": "성격",
+          "lemma": "성격",
+          "pos": "NNG"
+        },
+        {
+          "text": "에",
+          "lemma": "에",
+          "pos": "JKB"
+        },
+        {
+          "text": "대하",
+          "lemma": "대하",
+          "pos": "VV"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EC"
+        },
+        {
+          "text": "더",
+          "lemma": "더",
+          "pos": "MAG"
+        },
+        {
+          "text": "궁금",
+          "lemma": "궁금",
+          "pos": "XR"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSA"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "건",
+          "lemma": "건",
+          "pos": "NNB"
+        },
+        {
+          "text": "없",
+          "lemma": "없",
+          "pos": "VA"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "건",
+        "성격"
+      ],
+      "domain": "personality"
+    },
+    "answer": {
+      "text": "없어! 충분해!",
+      "tokens": [
+        {
+          "text": "없",
+          "lemma": "없",
+          "pos": "VA"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        },
+        {
+          "text": "충분",
+          "lemma": "충분",
+          "pos": "XR"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSA"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "건",
+      "성격"
+    ],
+    "domain": "personality"
+  }
+]

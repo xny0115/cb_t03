@@ -1,0 +1,9693 @@
+[
+  {
+    "question": {
+      "text": "오늘 좋은 일 있었어?",
+      "tokens": [
+        {
+          "text": "오늘",
+          "lemma": "오늘",
+          "pos": "NNG"
+        },
+        {
+          "text": "좋",
+          "lemma": "좋",
+          "pos": "VA"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "ETM"
+        },
+        {
+          "text": "일",
+          "lemma": "일",
+          "pos": "NNB"
+        },
+        {
+          "text": "있",
+          "lemma": "있",
+          "pos": "VX"
+        },
+        {
+          "text": "었",
+          "lemma": "었",
+          "pos": "EP"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "기분",
+        "노래",
+        "시작",
+        "아침",
+        "오늘",
+        "일"
+      ],
+      "domain": "good"
+    },
+    "answer": {
+      "text": "응, 오늘 아침에 좋아하는 노래가 나와서 기분 좋게 시작했어!",
+      "tokens": [
+        {
+          "text": "응",
+          "lemma": "응",
+          "pos": "IC"
+        },
+        {
+          "text": "오늘",
+          "lemma": "오늘",
+          "pos": "NNG"
+        },
+        {
+          "text": "아침",
+          "lemma": "아침",
+          "pos": "NNG"
+        },
+        {
+          "text": "에",
+          "lemma": "에",
+          "pos": "JKB"
+        },
+        {
+          "text": "좋아하",
+          "lemma": "좋아하",
+          "pos": "VV"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "ETM"
+        },
+        {
+          "text": "노래",
+          "lemma": "노래",
+          "pos": "NNG"
+        },
+        {
+          "text": "가",
+          "lemma": "가",
+          "pos": "JKS"
+        },
+        {
+          "text": "나오",
+          "lemma": "나오",
+          "pos": "VV"
+        },
+        {
+          "text": "아서",
+          "lemma": "아서",
+          "pos": "EC"
+        },
+        {
+          "text": "기분",
+          "lemma": "기분",
+          "pos": "NNG"
+        },
+        {
+          "text": "좋",
+          "lemma": "좋",
+          "pos": "VA"
+        },
+        {
+          "text": "게",
+          "lemma": "게",
+          "pos": "EC"
+        },
+        {
+          "text": "시작",
+          "lemma": "시작",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "았",
+          "lemma": "았",
+          "pos": "EP"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "기분",
+      "노래",
+      "시작",
+      "아침",
+      "오늘",
+      "일"
+    ],
+    "domain": "good"
+  },
+  {
+    "question": {
+      "text": "혹시 나쁜 일 있었어?",
+      "tokens": [
+        {
+          "text": "혹시",
+          "lemma": "혹시",
+          "pos": "MAG"
+        },
+        {
+          "text": "나쁘",
+          "lemma": "나쁘",
+          "pos": "VA"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "일",
+          "lemma": "일",
+          "pos": "NNB"
+        },
+        {
+          "text": "있",
+          "lemma": "있",
+          "pos": "VX"
+        },
+        {
+          "text": "었",
+          "lemma": "었",
+          "pos": "EP"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "오늘",
+        "일"
+      ],
+      "domain": "good"
+    },
+    "answer": {
+      "text": "아니, 다행히 오늘은 특별히 나쁜 일은 없었어.",
+      "tokens": [
+        {
+          "text": "아니",
+          "lemma": "아니",
+          "pos": "IC"
+        },
+        {
+          "text": "다행히",
+          "lemma": "다행히",
+          "pos": "MAG"
+        },
+        {
+          "text": "오늘",
+          "lemma": "오늘",
+          "pos": "NNG"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "JX"
+        },
+        {
+          "text": "특별히",
+          "lemma": "특별히",
+          "pos": "MAG"
+        },
+        {
+          "text": "나쁘",
+          "lemma": "나쁘",
+          "pos": "VA"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "일",
+          "lemma": "일",
+          "pos": "NNB"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "JX"
+        },
+        {
+          "text": "없",
+          "lemma": "없",
+          "pos": "VA"
+        },
+        {
+          "text": "었",
+          "lemma": "었",
+          "pos": "EP"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "오늘",
+      "일"
+    ],
+    "domain": "good"
+  },
+  {
+    "question": {
+      "text": "최근에 가장 좋았던 일은 뭐야?",
+      "tokens": [
+        {
+          "text": "최근",
+          "lemma": "최근",
+          "pos": "NNG"
+        },
+        {
+          "text": "에",
+          "lemma": "에",
+          "pos": "JKB"
+        },
+        {
+          "text": "가장",
+          "lemma": "가장",
+          "pos": "MAG"
+        },
+        {
+          "text": "좋",
+          "lemma": "좋",
+          "pos": "VA"
+        },
+        {
+          "text": "았",
+          "lemma": "았",
+          "pos": "EP"
+        },
+        {
+          "text": "던",
+          "lemma": "던",
+          "pos": "ETM"
+        },
+        {
+          "text": "일",
+          "lemma": "일",
+          "pos": "NNB"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "JX"
+        },
+        {
+          "text": "뭐",
+          "lemma": "뭐",
+          "pos": "NP"
+        },
+        {
+          "text": "야",
+          "lemma": "야",
+          "pos": "JKV"
+        }
+      ],
+      "concepts": [
+        "거",
+        "오랜만",
+        "음식",
+        "일",
+        "최근",
+        "친구"
+      ],
+      "domain": "good"
+    },
+    "answer": {
+      "text": "오랜만에 친구들과 만나 맛있는 음식을 먹으면서 실컷 웃었던 거야.",
+      "tokens": [
+        {
+          "text": "오랜만",
+          "lemma": "오랜만",
+          "pos": "NNG"
+        },
+        {
+          "text": "에",
+          "lemma": "에",
+          "pos": "JKB"
+        },
+        {
+          "text": "친구",
+          "lemma": "친구",
+          "pos": "NNG"
+        },
+        {
+          "text": "들",
+          "lemma": "들",
+          "pos": "XSN"
+        },
+        {
+          "text": "과",
+          "lemma": "과",
+          "pos": "JC"
+        },
+        {
+          "text": "만나",
+          "lemma": "만나",
+          "pos": "VV"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EC"
+        },
+        {
+          "text": "맛있",
+          "lemma": "맛있",
+          "pos": "VA"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "ETM"
+        },
+        {
+          "text": "음식",
+          "lemma": "음식",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "먹",
+          "lemma": "먹",
+          "pos": "VV"
+        },
+        {
+          "text": "으면서",
+          "lemma": "으면서",
+          "pos": "EC"
+        },
+        {
+          "text": "실컷",
+          "lemma": "실컷",
+          "pos": "MAG"
+        },
+        {
+          "text": "웃",
+          "lemma": "웃",
+          "pos": "VV"
+        },
+        {
+          "text": "었",
+          "lemma": "었",
+          "pos": "EP"
+        },
+        {
+          "text": "던",
+          "lemma": "던",
+          "pos": "ETM"
+        },
+        {
+          "text": "거",
+          "lemma": "거",
+          "pos": "NNB"
+        },
+        {
+          "text": "야",
+          "lemma": "야",
+          "pos": "JKV"
+        }
+      ]
+    },
+    "concepts": [
+      "거",
+      "오랜만",
+      "음식",
+      "일",
+      "최근",
+      "친구"
+    ],
+    "domain": "good"
+  },
+  {
+    "question": {
+      "text": "가장 힘들었던 나쁜 일은?",
+      "tokens": [
+        {
+          "text": "가장",
+          "lemma": "가장",
+          "pos": "MAG"
+        },
+        {
+          "text": "힘들",
+          "lemma": "힘들",
+          "pos": "VA"
+        },
+        {
+          "text": "었",
+          "lemma": "었",
+          "pos": "EP"
+        },
+        {
+          "text": "던",
+          "lemma": "던",
+          "pos": "ETM"
+        },
+        {
+          "text": "나쁘",
+          "lemma": "나쁘",
+          "pos": "VA"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "일",
+          "lemma": "일",
+          "pos": "NNB"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "JX"
+        }
+      ],
+      "concepts": [
+        "때",
+        "시험",
+        "일",
+        "좌절"
+      ],
+      "domain": "good"
+    },
+    "answer": {
+      "text": "시험에 떨어졌을 때가 가장 힘들었어. 정말 좌절했지.",
+      "tokens": [
+        {
+          "text": "시험",
+          "lemma": "시험",
+          "pos": "NNG"
+        },
+        {
+          "text": "에",
+          "lemma": "에",
+          "pos": "JKB"
+        },
+        {
+          "text": "떨어지",
+          "lemma": "떨어지",
+          "pos": "VV"
+        },
+        {
+          "text": "었",
+          "lemma": "었",
+          "pos": "EP"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "ETM"
+        },
+        {
+          "text": "때",
+          "lemma": "때",
+          "pos": "NNG"
+        },
+        {
+          "text": "가",
+          "lemma": "가",
+          "pos": "JKS"
+        },
+        {
+          "text": "가장",
+          "lemma": "가장",
+          "pos": "MAG"
+        },
+        {
+          "text": "힘들",
+          "lemma": "힘들",
+          "pos": "VA"
+        },
+        {
+          "text": "었",
+          "lemma": "었",
+          "pos": "EP"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        },
+        {
+          "text": "정말",
+          "lemma": "정말",
+          "pos": "MAG"
+        },
+        {
+          "text": "좌절",
+          "lemma": "좌절",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "았",
+          "lemma": "았",
+          "pos": "EP"
+        },
+        {
+          "text": "지",
+          "lemma": "지",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "때",
+      "시험",
+      "일",
+      "좌절"
+    ],
+    "domain": "good"
+  },
+  {
+    "question": {
+      "text": "좋은 일이 생기면 어떤 기분이야?",
+      "tokens": [
+        {
+          "text": "좋",
+          "lemma": "좋",
+          "pos": "VA"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "ETM"
+        },
+        {
+          "text": "일",
+          "lemma": "일",
+          "pos": "NNG"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "JKS"
+        },
+        {
+          "text": "생기",
+          "lemma": "생기",
+          "pos": "VV"
+        },
+        {
+          "text": "면",
+          "lemma": "면",
+          "pos": "EC"
+        },
+        {
+          "text": "어떤",
+          "lemma": "어떤",
+          "pos": "MM"
+        },
+        {
+          "text": "기분",
+          "lemma": "기분",
+          "pos": "NNG"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "VCP"
+        },
+        {
+          "text": "야",
+          "lemma": "야",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "것",
+        "기분",
+        "세상",
+        "일",
+        "행복"
+      ],
+      "domain": "good"
+    },
+    "answer": {
+      "text": "세상을 다 가진 것처럼 기쁘고 행복해져.",
+      "tokens": [
+        {
+          "text": "세상",
+          "lemma": "세상",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "다",
+          "lemma": "다",
+          "pos": "MAG"
+        },
+        {
+          "text": "가지",
+          "lemma": "가지",
+          "pos": "VV"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "것",
+          "lemma": "것",
+          "pos": "NNB"
+        },
+        {
+          "text": "처럼",
+          "lemma": "처럼",
+          "pos": "JKB"
+        },
+        {
+          "text": "기쁘",
+          "lemma": "기쁘",
+          "pos": "VA"
+        },
+        {
+          "text": "고",
+          "lemma": "고",
+          "pos": "EC"
+        },
+        {
+          "text": "행복",
+          "lemma": "행복",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EC"
+        },
+        {
+          "text": "지",
+          "lemma": "지",
+          "pos": "VX"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "것",
+      "기분",
+      "세상",
+      "일",
+      "행복"
+    ],
+    "domain": "good"
+  },
+  {
+    "question": {
+      "text": "나쁜 일이 생기면 어떻게 대처해?",
+      "tokens": [
+        {
+          "text": "나쁘",
+          "lemma": "나쁘",
+          "pos": "VA"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "일",
+          "lemma": "일",
+          "pos": "NNG"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "JKS"
+        },
+        {
+          "text": "생기",
+          "lemma": "생기",
+          "pos": "VV"
+        },
+        {
+          "text": "면",
+          "lemma": "면",
+          "pos": "EC"
+        },
+        {
+          "text": "어떻",
+          "lemma": "어떻",
+          "pos": "VA"
+        },
+        {
+          "text": "게",
+          "lemma": "게",
+          "pos": "EC"
+        },
+        {
+          "text": "대처",
+          "lemma": "대처",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "긍정",
+        "노력",
+        "대처",
+        "방법",
+        "생각",
+        "일",
+        "처음",
+        "최대한",
+        "해결"
+      ],
+      "domain": "good"
+    },
+    "answer": {
+      "text": "처음엔 힘들지만, 최대한 긍정적으로 생각하고 해결 방법을 찾으려고 노력해.",
+      "tokens": [
+        {
+          "text": "처음",
+          "lemma": "처음",
+          "pos": "NNG"
+        },
+        {
+          "text": "에",
+          "lemma": "에",
+          "pos": "JKB"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "JX"
+        },
+        {
+          "text": "힘들",
+          "lemma": "힘들",
+          "pos": "VA"
+        },
+        {
+          "text": "지만",
+          "lemma": "지만",
+          "pos": "EC"
+        },
+        {
+          "text": "최대한",
+          "lemma": "최대한",
+          "pos": "NNG"
+        },
+        {
+          "text": "긍정",
+          "lemma": "긍정",
+          "pos": "NNG"
+        },
+        {
+          "text": "적",
+          "lemma": "적",
+          "pos": "XSN"
+        },
+        {
+          "text": "으로",
+          "lemma": "으로",
+          "pos": "JKB"
+        },
+        {
+          "text": "생각",
+          "lemma": "생각",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "고",
+          "lemma": "고",
+          "pos": "EC"
+        },
+        {
+          "text": "해결",
+          "lemma": "해결",
+          "pos": "NNG"
+        },
+        {
+          "text": "방법",
+          "lemma": "방법",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "찾",
+          "lemma": "찾",
+          "pos": "VV"
+        },
+        {
+          "text": "으려고",
+          "lemma": "으려고",
+          "pos": "EC"
+        },
+        {
+          "text": "노력",
+          "lemma": "노력",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "긍정",
+      "노력",
+      "대처",
+      "방법",
+      "생각",
+      "일",
+      "처음",
+      "최대한",
+      "해결"
+    ],
+    "domain": "good"
+  },
+  {
+    "question": {
+      "text": "작은 좋은 일에도 감사하는 편이야?",
+      "tokens": [
+        {
+          "text": "작",
+          "lemma": "작",
+          "pos": "VA"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "ETM"
+        },
+        {
+          "text": "좋",
+          "lemma": "좋",
+          "pos": "VA"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "ETM"
+        },
+        {
+          "text": "일",
+          "lemma": "일",
+          "pos": "NNG"
+        },
+        {
+          "text": "에",
+          "lemma": "에",
+          "pos": "JKB"
+        },
+        {
+          "text": "도",
+          "lemma": "도",
+          "pos": "JX"
+        },
+        {
+          "text": "감사",
+          "lemma": "감사",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "ETM"
+        },
+        {
+          "text": "편",
+          "lemma": "편",
+          "pos": "NNB"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "VCP"
+        },
+        {
+          "text": "야",
+          "lemma": "야",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "감사",
+        "것",
+        "노력",
+        "일",
+        "편"
+      ],
+      "domain": "good"
+    },
+    "answer": {
+      "text": "응, 사소한 것에도 감사함을 느끼려고 노력하는 편이야.",
+      "tokens": [
+        {
+          "text": "응",
+          "lemma": "응",
+          "pos": "IC"
+        },
+        {
+          "text": "사소",
+          "lemma": "사소",
+          "pos": "XR"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSA"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "것",
+          "lemma": "것",
+          "pos": "NNB"
+        },
+        {
+          "text": "에",
+          "lemma": "에",
+          "pos": "JKB"
+        },
+        {
+          "text": "도",
+          "lemma": "도",
+          "pos": "JX"
+        },
+        {
+          "text": "감사",
+          "lemma": "감사",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "ㅁ",
+          "lemma": "ㅁ",
+          "pos": "ETN"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "느끼",
+          "lemma": "느끼",
+          "pos": "VV"
+        },
+        {
+          "text": "려고",
+          "lemma": "려고",
+          "pos": "EC"
+        },
+        {
+          "text": "노력",
+          "lemma": "노력",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "ETM"
+        },
+        {
+          "text": "편",
+          "lemma": "편",
+          "pos": "NNB"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "VCP"
+        },
+        {
+          "text": "야",
+          "lemma": "야",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "감사",
+      "것",
+      "노력",
+      "일",
+      "편"
+    ],
+    "domain": "good"
+  },
+  {
+    "question": {
+      "text": "나쁜 일을 겪고 나서 배우는 점이 있어?",
+      "tokens": [
+        {
+          "text": "나쁘",
+          "lemma": "나쁘",
+          "pos": "VA"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "일",
+          "lemma": "일",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "겪",
+          "lemma": "겪",
+          "pos": "VV"
+        },
+        {
+          "text": "고",
+          "lemma": "고",
+          "pos": "EC"
+        },
+        {
+          "text": "나서",
+          "lemma": "나서",
+          "pos": "VV"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EC"
+        },
+        {
+          "text": "배우",
+          "lemma": "배우",
+          "pos": "VV"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "ETM"
+        },
+        {
+          "text": "점",
+          "lemma": "점",
+          "pos": "NNB"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "JKS"
+        },
+        {
+          "text": "있",
+          "lemma": "있",
+          "pos": "VX"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "것",
+        "성장",
+        "어려움",
+        "일",
+        "점"
+      ],
+      "domain": "good"
+    },
+    "answer": {
+      "text": "그럼! 어려움을 통해 더 성장하고 단단해지는 것 같아.",
+      "tokens": [
+        {
+          "text": "그럼",
+          "lemma": "그럼",
+          "pos": "IC"
+        },
+        {
+          "text": "어려움",
+          "lemma": "어려움",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "통하",
+          "lemma": "통하",
+          "pos": "VV"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EC"
+        },
+        {
+          "text": "더",
+          "lemma": "더",
+          "pos": "MAG"
+        },
+        {
+          "text": "성장",
+          "lemma": "성장",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "고",
+          "lemma": "고",
+          "pos": "EC"
+        },
+        {
+          "text": "단단",
+          "lemma": "단단",
+          "pos": "XR"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSA"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EC"
+        },
+        {
+          "text": "지",
+          "lemma": "지",
+          "pos": "VX"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "ETM"
+        },
+        {
+          "text": "것",
+          "lemma": "것",
+          "pos": "NNB"
+        },
+        {
+          "text": "같",
+          "lemma": "같",
+          "pos": "VA"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "것",
+      "성장",
+      "어려움",
+      "일",
+      "점"
+    ],
+    "domain": "good"
+  },
+  {
+    "question": {
+      "text": "좋은 일을 오래 기억하는 나만의 방법은?",
+      "tokens": [
+        {
+          "text": "좋",
+          "lemma": "좋",
+          "pos": "VA"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "ETM"
+        },
+        {
+          "text": "일",
+          "lemma": "일",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "오래",
+          "lemma": "오래",
+          "pos": "MAG"
+        },
+        {
+          "text": "기억",
+          "lemma": "기억",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "ETM"
+        },
+        {
+          "text": "나",
+          "lemma": "나",
+          "pos": "NP"
+        },
+        {
+          "text": "만",
+          "lemma": "만",
+          "pos": "JX"
+        },
+        {
+          "text": "의",
+          "lemma": "의",
+          "pos": "JKG"
+        },
+        {
+          "text": "방법",
+          "lemma": "방법",
+          "pos": "NNG"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "JX"
+        }
+      ],
+      "concepts": [
+        "그때",
+        "기록",
+        "기분",
+        "기억",
+        "방법",
+        "사진",
+        "일",
+        "일기"
+      ],
+      "domain": "good"
+    },
+    "answer": {
+      "text": "일기나 사진으로 기록해두고, 가끔 꺼내 보면서 그때의 기분을 다시 느껴.",
+      "tokens": [
+        {
+          "text": "일기",
+          "lemma": "일기",
+          "pos": "NNP"
+        },
+        {
+          "text": "나",
+          "lemma": "나",
+          "pos": "JC"
+        },
+        {
+          "text": "사진",
+          "lemma": "사진",
+          "pos": "NNG"
+        },
+        {
+          "text": "으로",
+          "lemma": "으로",
+          "pos": "JKB"
+        },
+        {
+          "text": "기록",
+          "lemma": "기록",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EC"
+        },
+        {
+          "text": "두",
+          "lemma": "두",
+          "pos": "VX"
+        },
+        {
+          "text": "고",
+          "lemma": "고",
+          "pos": "EC"
+        },
+        {
+          "text": "가끔",
+          "lemma": "가끔",
+          "pos": "MAG"
+        },
+        {
+          "text": "꺼내",
+          "lemma": "꺼내",
+          "pos": "VV"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EC"
+        },
+        {
+          "text": "보",
+          "lemma": "보",
+          "pos": "VV"
+        },
+        {
+          "text": "면서",
+          "lemma": "면서",
+          "pos": "EC"
+        },
+        {
+          "text": "그때",
+          "lemma": "그때",
+          "pos": "NNG"
+        },
+        {
+          "text": "의",
+          "lemma": "의",
+          "pos": "JKG"
+        },
+        {
+          "text": "기분",
+          "lemma": "기분",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "다시",
+          "lemma": "다시",
+          "pos": "MAG"
+        },
+        {
+          "text": "느끼",
+          "lemma": "느끼",
+          "pos": "VV"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "그때",
+      "기록",
+      "기분",
+      "기억",
+      "방법",
+      "사진",
+      "일",
+      "일기"
+    ],
+    "domain": "good"
+  },
+  {
+    "question": {
+      "text": "나쁜 일을 겪었을 때 위로가 되는 말은?",
+      "tokens": [
+        {
+          "text": "나쁘",
+          "lemma": "나쁘",
+          "pos": "VA"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "일",
+          "lemma": "일",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "겪",
+          "lemma": "겪",
+          "pos": "VV"
+        },
+        {
+          "text": "었",
+          "lemma": "었",
+          "pos": "EP"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "ETM"
+        },
+        {
+          "text": "때",
+          "lemma": "때",
+          "pos": "NNG"
+        },
+        {
+          "text": "위로",
+          "lemma": "위로",
+          "pos": "NNG"
+        },
+        {
+          "text": "가",
+          "lemma": "가",
+          "pos": "JKS"
+        },
+        {
+          "text": "되",
+          "lemma": "되",
+          "pos": "VV"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "ETM"
+        },
+        {
+          "text": "말",
+          "lemma": "말",
+          "pos": "NNG"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "JX"
+        }
+      ],
+      "concepts": [
+        "거",
+        "괜찮아",
+        "때",
+        "말",
+        "위로",
+        "일"
+      ],
+      "domain": "good"
+    },
+    "answer": {
+      "text": "괜찮아, 다 잘 될 거야.라는 말이 가장 위로가 돼.",
+      "tokens": [
+        {
+          "text": "괜찮아",
+          "lemma": "괜찮아",
+          "pos": "NNP"
+        },
+        {
+          "text": "다",
+          "lemma": "다",
+          "pos": "MAG"
+        },
+        {
+          "text": "잘",
+          "lemma": "잘",
+          "pos": "MAG"
+        },
+        {
+          "text": "되",
+          "lemma": "되",
+          "pos": "VV"
+        },
+        {
+          "text": "ㄹ",
+          "lemma": "ㄹ",
+          "pos": "ETM"
+        },
+        {
+          "text": "거",
+          "lemma": "거",
+          "pos": "NNB"
+        },
+        {
+          "text": "야",
+          "lemma": "야",
+          "pos": "JKV"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "VCP"
+        },
+        {
+          "text": "라는",
+          "lemma": "라는",
+          "pos": "ETM"
+        },
+        {
+          "text": "말",
+          "lemma": "말",
+          "pos": "NNG"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "JKS"
+        },
+        {
+          "text": "가장",
+          "lemma": "가장",
+          "pos": "MAG"
+        },
+        {
+          "text": "위로",
+          "lemma": "위로",
+          "pos": "NNG"
+        },
+        {
+          "text": "가",
+          "lemma": "가",
+          "pos": "JKS"
+        },
+        {
+          "text": "되",
+          "lemma": "되",
+          "pos": "VV"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "거",
+      "괜찮아",
+      "때",
+      "말",
+      "위로",
+      "일"
+    ],
+    "domain": "good"
+  },
+  {
+    "question": {
+      "text": "일상 속에서 좋은 일을 찾는 방법은?",
+      "tokens": [
+        {
+          "text": "일상",
+          "lemma": "일상",
+          "pos": "NNP"
+        },
+        {
+          "text": "속",
+          "lemma": "속",
+          "pos": "NNG"
+        },
+        {
+          "text": "에서",
+          "lemma": "에서",
+          "pos": "JKB"
+        },
+        {
+          "text": "좋",
+          "lemma": "좋",
+          "pos": "VA"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "ETM"
+        },
+        {
+          "text": "일",
+          "lemma": "일",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "찾",
+          "lemma": "찾",
+          "pos": "VV"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "ETM"
+        },
+        {
+          "text": "방법",
+          "lemma": "방법",
+          "pos": "NNG"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "JX"
+        }
+      ],
+      "concepts": [
+        "긍정",
+        "방법",
+        "변화",
+        "부여",
+        "속",
+        "시선",
+        "의미",
+        "일",
+        "일상",
+        "주변"
+      ],
+      "domain": "good"
+    },
+    "answer": {
+      "text": "긍정적인 시선으로 주변을 둘러보고, 작은 변화에도 의미를 부여하면 돼.",
+      "tokens": [
+        {
+          "text": "긍정",
+          "lemma": "긍정",
+          "pos": "NNG"
+        },
+        {
+          "text": "적",
+          "lemma": "적",
+          "pos": "XSN"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "VCP"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "시선",
+          "lemma": "시선",
+          "pos": "NNG"
+        },
+        {
+          "text": "으로",
+          "lemma": "으로",
+          "pos": "JKB"
+        },
+        {
+          "text": "주변",
+          "lemma": "주변",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "둘러보",
+          "lemma": "둘러보",
+          "pos": "VV"
+        },
+        {
+          "text": "고",
+          "lemma": "고",
+          "pos": "EC"
+        },
+        {
+          "text": "작",
+          "lemma": "작",
+          "pos": "VA"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "ETM"
+        },
+        {
+          "text": "변화",
+          "lemma": "변화",
+          "pos": "NNG"
+        },
+        {
+          "text": "에",
+          "lemma": "에",
+          "pos": "JKB"
+        },
+        {
+          "text": "도",
+          "lemma": "도",
+          "pos": "JX"
+        },
+        {
+          "text": "의미",
+          "lemma": "의미",
+          "pos": "NNG"
+        },
+        {
+          "text": "를",
+          "lemma": "를",
+          "pos": "JKO"
+        },
+        {
+          "text": "부여",
+          "lemma": "부여",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "면",
+          "lemma": "면",
+          "pos": "EC"
+        },
+        {
+          "text": "되",
+          "lemma": "되",
+          "pos": "VV"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "긍정",
+      "방법",
+      "변화",
+      "부여",
+      "속",
+      "시선",
+      "의미",
+      "일",
+      "일상",
+      "주변"
+    ],
+    "domain": "good"
+  },
+  {
+    "question": {
+      "text": "나쁜 일은 피할 수 없는 걸까?",
+      "tokens": [
+        {
+          "text": "나쁘",
+          "lemma": "나쁘",
+          "pos": "VA"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "일",
+          "lemma": "일",
+          "pos": "NNB"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "JX"
+        },
+        {
+          "text": "피하",
+          "lemma": "피하",
+          "pos": "VV"
+        },
+        {
+          "text": "ㄹ",
+          "lemma": "ㄹ",
+          "pos": "ETM"
+        },
+        {
+          "text": "수",
+          "lemma": "수",
+          "pos": "NNB"
+        },
+        {
+          "text": "없",
+          "lemma": "없",
+          "pos": "VA"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "ETM"
+        },
+        {
+          "text": "걸",
+          "lemma": "걸",
+          "pos": "VV"
+        },
+        {
+          "text": "ㄹ까",
+          "lemma": "ㄹ까",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "삶",
+        "생각",
+        "수",
+        "일",
+        "일부",
+        "정도"
+      ],
+      "domain": "good"
+    },
+    "answer": {
+      "text": "어느 정도는 피할 수 없다고 생각해. 삶의 일부니까.",
+      "tokens": [
+        {
+          "text": "어느",
+          "lemma": "어느",
+          "pos": "MM"
+        },
+        {
+          "text": "정도",
+          "lemma": "정도",
+          "pos": "NNG"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "JX"
+        },
+        {
+          "text": "피하",
+          "lemma": "피하",
+          "pos": "VV"
+        },
+        {
+          "text": "ㄹ",
+          "lemma": "ㄹ",
+          "pos": "ETM"
+        },
+        {
+          "text": "수",
+          "lemma": "수",
+          "pos": "NNB"
+        },
+        {
+          "text": "없",
+          "lemma": "없",
+          "pos": "VA"
+        },
+        {
+          "text": "다고",
+          "lemma": "다고",
+          "pos": "EC"
+        },
+        {
+          "text": "생각",
+          "lemma": "생각",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EF"
+        },
+        {
+          "text": "삶",
+          "lemma": "삶",
+          "pos": "NNG"
+        },
+        {
+          "text": "의",
+          "lemma": "의",
+          "pos": "JKG"
+        },
+        {
+          "text": "일부",
+          "lemma": "일부",
+          "pos": "NNG"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "VCP"
+        },
+        {
+          "text": "니까",
+          "lemma": "니까",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "삶",
+      "생각",
+      "수",
+      "일",
+      "일부",
+      "정도"
+    ],
+    "domain": "good"
+  },
+  {
+    "question": {
+      "text": "좋은 일이 생겼을 때 누구에게 가장 먼저 알려?",
+      "tokens": [
+        {
+          "text": "좋",
+          "lemma": "좋",
+          "pos": "VA"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "ETM"
+        },
+        {
+          "text": "일",
+          "lemma": "일",
+          "pos": "NNG"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "JKS"
+        },
+        {
+          "text": "생기",
+          "lemma": "생기",
+          "pos": "VV"
+        },
+        {
+          "text": "었",
+          "lemma": "었",
+          "pos": "EP"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "ETM"
+        },
+        {
+          "text": "때",
+          "lemma": "때",
+          "pos": "NNG"
+        },
+        {
+          "text": "누구",
+          "lemma": "누구",
+          "pos": "NP"
+        },
+        {
+          "text": "에게",
+          "lemma": "에게",
+          "pos": "JKB"
+        },
+        {
+          "text": "가장",
+          "lemma": "가장",
+          "pos": "MAG"
+        },
+        {
+          "text": "먼저",
+          "lemma": "먼저",
+          "pos": "MAG"
+        },
+        {
+          "text": "알리",
+          "lemma": "알리",
+          "pos": "VV"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "가족",
+        "때",
+        "일",
+        "친구"
+      ],
+      "domain": "good"
+    },
+    "answer": {
+      "text": "가장 친한 친구나 가족에게 먼저 알려주고 싶어.",
+      "tokens": [
+        {
+          "text": "가장",
+          "lemma": "가장",
+          "pos": "MAG"
+        },
+        {
+          "text": "친하",
+          "lemma": "친하",
+          "pos": "VA"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "친구",
+          "lemma": "친구",
+          "pos": "NNG"
+        },
+        {
+          "text": "나",
+          "lemma": "나",
+          "pos": "JC"
+        },
+        {
+          "text": "가족",
+          "lemma": "가족",
+          "pos": "NNG"
+        },
+        {
+          "text": "에게",
+          "lemma": "에게",
+          "pos": "JKB"
+        },
+        {
+          "text": "먼저",
+          "lemma": "먼저",
+          "pos": "MAG"
+        },
+        {
+          "text": "알리",
+          "lemma": "알리",
+          "pos": "VV"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EC"
+        },
+        {
+          "text": "주",
+          "lemma": "주",
+          "pos": "VX"
+        },
+        {
+          "text": "고",
+          "lemma": "고",
+          "pos": "EC"
+        },
+        {
+          "text": "싶",
+          "lemma": "싶",
+          "pos": "VX"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "가족",
+      "때",
+      "일",
+      "친구"
+    ],
+    "domain": "good"
+  },
+  {
+    "question": {
+      "text": "나쁜 일이 생겼을 때 누구에게 가장 먼저 이야기해?",
+      "tokens": [
+        {
+          "text": "나쁘",
+          "lemma": "나쁘",
+          "pos": "VA"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "일",
+          "lemma": "일",
+          "pos": "NNG"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "JKS"
+        },
+        {
+          "text": "생기",
+          "lemma": "생기",
+          "pos": "VV"
+        },
+        {
+          "text": "었",
+          "lemma": "었",
+          "pos": "EP"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "ETM"
+        },
+        {
+          "text": "때",
+          "lemma": "때",
+          "pos": "NNG"
+        },
+        {
+          "text": "누구",
+          "lemma": "누구",
+          "pos": "NP"
+        },
+        {
+          "text": "에게",
+          "lemma": "에게",
+          "pos": "JKB"
+        },
+        {
+          "text": "가장",
+          "lemma": "가장",
+          "pos": "MAG"
+        },
+        {
+          "text": "먼저",
+          "lemma": "먼저",
+          "pos": "MAG"
+        },
+        {
+          "text": "이야기",
+          "lemma": "이야기",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "가족",
+        "때",
+        "수",
+        "이야기",
+        "일",
+        "친구",
+        "편"
+      ],
+      "domain": "good"
+    },
+    "answer": {
+      "text": "믿을 수 있는 친구나 가족에게 털어놓는 편이야.",
+      "tokens": [
+        {
+          "text": "믿",
+          "lemma": "믿",
+          "pos": "VV"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "ETM"
+        },
+        {
+          "text": "수",
+          "lemma": "수",
+          "pos": "NNB"
+        },
+        {
+          "text": "있",
+          "lemma": "있",
+          "pos": "VV"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "ETM"
+        },
+        {
+          "text": "친구",
+          "lemma": "친구",
+          "pos": "NNG"
+        },
+        {
+          "text": "나",
+          "lemma": "나",
+          "pos": "JC"
+        },
+        {
+          "text": "가족",
+          "lemma": "가족",
+          "pos": "NNG"
+        },
+        {
+          "text": "에게",
+          "lemma": "에게",
+          "pos": "JKB"
+        },
+        {
+          "text": "털어놓",
+          "lemma": "털어놓",
+          "pos": "VV"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "ETM"
+        },
+        {
+          "text": "편",
+          "lemma": "편",
+          "pos": "NNB"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "VCP"
+        },
+        {
+          "text": "야",
+          "lemma": "야",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "가족",
+      "때",
+      "수",
+      "이야기",
+      "일",
+      "친구",
+      "편"
+    ],
+    "domain": "good"
+  },
+  {
+    "question": {
+      "text": "우연히 좋은 일이 생겼을 때 기분은?",
+      "tokens": [
+        {
+          "text": "우연히",
+          "lemma": "우연히",
+          "pos": "MAG"
+        },
+        {
+          "text": "좋",
+          "lemma": "좋",
+          "pos": "VA"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "ETM"
+        },
+        {
+          "text": "일",
+          "lemma": "일",
+          "pos": "NNG"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "JKS"
+        },
+        {
+          "text": "생기",
+          "lemma": "생기",
+          "pos": "VV"
+        },
+        {
+          "text": "었",
+          "lemma": "었",
+          "pos": "EP"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "ETM"
+        },
+        {
+          "text": "때",
+          "lemma": "때",
+          "pos": "NNG"
+        },
+        {
+          "text": "기분",
+          "lemma": "기분",
+          "pos": "NNG"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "JX"
+        }
+      ],
+      "concepts": [
+        "것",
+        "기분",
+        "때",
+        "뜻밖",
+        "선물",
+        "일"
+      ],
+      "domain": "good"
+    },
+    "answer": {
+      "text": "뜻밖의 선물을 받은 것처럼 깜짝 놀라고 기뻐.",
+      "tokens": [
+        {
+          "text": "뜻밖",
+          "lemma": "뜻밖",
+          "pos": "NNG"
+        },
+        {
+          "text": "의",
+          "lemma": "의",
+          "pos": "JKG"
+        },
+        {
+          "text": "선물",
+          "lemma": "선물",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "받",
+          "lemma": "받",
+          "pos": "VV"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "ETM"
+        },
+        {
+          "text": "것",
+          "lemma": "것",
+          "pos": "NNB"
+        },
+        {
+          "text": "처럼",
+          "lemma": "처럼",
+          "pos": "JKB"
+        },
+        {
+          "text": "깜짝",
+          "lemma": "깜짝",
+          "pos": "MAG"
+        },
+        {
+          "text": "놀라",
+          "lemma": "놀라",
+          "pos": "VV"
+        },
+        {
+          "text": "고",
+          "lemma": "고",
+          "pos": "EC"
+        },
+        {
+          "text": "기쁘",
+          "lemma": "기쁘",
+          "pos": "VA"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "것",
+      "기분",
+      "때",
+      "뜻밖",
+      "선물",
+      "일"
+    ],
+    "domain": "good"
+  },
+  {
+    "question": {
+      "text": "실수로 나쁜 일을 저지른 적 있어?",
+      "tokens": [
+        {
+          "text": "실수",
+          "lemma": "실수",
+          "pos": "NNG"
+        },
+        {
+          "text": "로",
+          "lemma": "로",
+          "pos": "JKB"
+        },
+        {
+          "text": "나쁘",
+          "lemma": "나쁘",
+          "pos": "VA"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "일",
+          "lemma": "일",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "저지르",
+          "lemma": "저지르",
+          "pos": "VV"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "적",
+          "lemma": "적",
+          "pos": "NNB"
+        },
+        {
+          "text": "있",
+          "lemma": "있",
+          "pos": "VX"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "그때",
+        "사람",
+        "실수",
+        "일",
+        "적",
+        "피해"
+      ],
+      "domain": "good"
+    },
+    "answer": {
+      "text": "응, 작은 실수로 다른 사람에게 피해를 준 적이 있어. 그때 정말 미안했지.",
+      "tokens": [
+        {
+          "text": "응",
+          "lemma": "응",
+          "pos": "IC"
+        },
+        {
+          "text": "작",
+          "lemma": "작",
+          "pos": "VA"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "ETM"
+        },
+        {
+          "text": "실수",
+          "lemma": "실수",
+          "pos": "NNG"
+        },
+        {
+          "text": "로",
+          "lemma": "로",
+          "pos": "JKB"
+        },
+        {
+          "text": "다른",
+          "lemma": "다른",
+          "pos": "MM"
+        },
+        {
+          "text": "사람",
+          "lemma": "사람",
+          "pos": "NNG"
+        },
+        {
+          "text": "에게",
+          "lemma": "에게",
+          "pos": "JKB"
+        },
+        {
+          "text": "피해",
+          "lemma": "피해",
+          "pos": "NNG"
+        },
+        {
+          "text": "를",
+          "lemma": "를",
+          "pos": "JKO"
+        },
+        {
+          "text": "주",
+          "lemma": "주",
+          "pos": "VX"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "적",
+          "lemma": "적",
+          "pos": "NNB"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "JKS"
+        },
+        {
+          "text": "있",
+          "lemma": "있",
+          "pos": "VX"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        },
+        {
+          "text": "그때",
+          "lemma": "그때",
+          "pos": "NNG"
+        },
+        {
+          "text": "정말",
+          "lemma": "정말",
+          "pos": "MAG"
+        },
+        {
+          "text": "미안",
+          "lemma": "미안",
+          "pos": "XR"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSA"
+        },
+        {
+          "text": "었",
+          "lemma": "었",
+          "pos": "EP"
+        },
+        {
+          "text": "지",
+          "lemma": "지",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "그때",
+      "사람",
+      "실수",
+      "일",
+      "적",
+      "피해"
+    ],
+    "domain": "good"
+  },
+  {
+    "question": {
+      "text": "좋은 일과 나쁜 일 중에 뭐가 더 기억에 남아?",
+      "tokens": [
+        {
+          "text": "좋",
+          "lemma": "좋",
+          "pos": "VA"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "ETM"
+        },
+        {
+          "text": "일",
+          "lemma": "일",
+          "pos": "NNG"
+        },
+        {
+          "text": "과",
+          "lemma": "과",
+          "pos": "JC"
+        },
+        {
+          "text": "나쁘",
+          "lemma": "나쁘",
+          "pos": "VA"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "일",
+          "lemma": "일",
+          "pos": "NNB"
+        },
+        {
+          "text": "중",
+          "lemma": "중",
+          "pos": "NNB"
+        },
+        {
+          "text": "에",
+          "lemma": "에",
+          "pos": "JKB"
+        },
+        {
+          "text": "뭐",
+          "lemma": "뭐",
+          "pos": "NP"
+        },
+        {
+          "text": "가",
+          "lemma": "가",
+          "pos": "JKS"
+        },
+        {
+          "text": "더",
+          "lemma": "더",
+          "pos": "MAG"
+        },
+        {
+          "text": "기억",
+          "lemma": "기억",
+          "pos": "NNG"
+        },
+        {
+          "text": "에",
+          "lemma": "에",
+          "pos": "JKB"
+        },
+        {
+          "text": "남",
+          "lemma": "남",
+          "pos": "VV"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "것",
+        "기억",
+        "일",
+        "점",
+        "중"
+      ],
+      "domain": "good"
+    },
+    "answer": {
+      "text": "둘 다 기억에 남지만, 나쁜 일을 통해 배운 점이 더 강렬하게 기억되는 것 같아.",
+      "tokens": [
+        {
+          "text": "둘",
+          "lemma": "둘",
+          "pos": "NR"
+        },
+        {
+          "text": "다",
+          "lemma": "다",
+          "pos": "MAG"
+        },
+        {
+          "text": "기억",
+          "lemma": "기억",
+          "pos": "NNG"
+        },
+        {
+          "text": "에",
+          "lemma": "에",
+          "pos": "JKB"
+        },
+        {
+          "text": "남",
+          "lemma": "남",
+          "pos": "VV"
+        },
+        {
+          "text": "지만",
+          "lemma": "지만",
+          "pos": "EC"
+        },
+        {
+          "text": "나쁘",
+          "lemma": "나쁘",
+          "pos": "VA"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "일",
+          "lemma": "일",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "통하",
+          "lemma": "통하",
+          "pos": "VV"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EC"
+        },
+        {
+          "text": "배우",
+          "lemma": "배우",
+          "pos": "VV"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "점",
+          "lemma": "점",
+          "pos": "NNB"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "JKS"
+        },
+        {
+          "text": "더",
+          "lemma": "더",
+          "pos": "MAG"
+        },
+        {
+          "text": "강렬",
+          "lemma": "강렬",
+          "pos": "XR"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSA"
+        },
+        {
+          "text": "게",
+          "lemma": "게",
+          "pos": "EC"
+        },
+        {
+          "text": "기억",
+          "lemma": "기억",
+          "pos": "NNG"
+        },
+        {
+          "text": "되",
+          "lemma": "되",
+          "pos": "XSV"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "ETM"
+        },
+        {
+          "text": "것",
+          "lemma": "것",
+          "pos": "NNB"
+        },
+        {
+          "text": "같",
+          "lemma": "같",
+          "pos": "VA"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "것",
+      "기억",
+      "일",
+      "점",
+      "중"
+    ],
+    "domain": "good"
+  },
+  {
+    "question": {
+      "text": "나쁜 일을 겪고 나서 긍정적으로 변한 계기가 있어?",
+      "tokens": [
+        {
+          "text": "나쁘",
+          "lemma": "나쁘",
+          "pos": "VA"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "일",
+          "lemma": "일",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "겪",
+          "lemma": "겪",
+          "pos": "VV"
+        },
+        {
+          "text": "고",
+          "lemma": "고",
+          "pos": "EC"
+        },
+        {
+          "text": "나서",
+          "lemma": "나서",
+          "pos": "VV"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EC"
+        },
+        {
+          "text": "긍정",
+          "lemma": "긍정",
+          "pos": "NNG"
+        },
+        {
+          "text": "적",
+          "lemma": "적",
+          "pos": "XSN"
+        },
+        {
+          "text": "으로",
+          "lemma": "으로",
+          "pos": "JKB"
+        },
+        {
+          "text": "변하",
+          "lemma": "변하",
+          "pos": "VV"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "계기",
+          "lemma": "계기",
+          "pos": "NNG"
+        },
+        {
+          "text": "가",
+          "lemma": "가",
+          "pos": "JKS"
+        },
+        {
+          "text": "있",
+          "lemma": "있",
+          "pos": "VX"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "것",
+        "겸손",
+        "계기",
+        "긍정",
+        "노력",
+        "실패",
+        "일"
+      ],
+      "domain": "good"
+    },
+    "answer": {
+      "text": "응, 실패를 통해 겸손함을 배우고 더 노력하게 된 것 같아.",
+      "tokens": [
+        {
+          "text": "응",
+          "lemma": "응",
+          "pos": "IC"
+        },
+        {
+          "text": "실패",
+          "lemma": "실패",
+          "pos": "NNG"
+        },
+        {
+          "text": "를",
+          "lemma": "를",
+          "pos": "JKO"
+        },
+        {
+          "text": "통하",
+          "lemma": "통하",
+          "pos": "VV"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EC"
+        },
+        {
+          "text": "겸손",
+          "lemma": "겸손",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "ㅁ",
+          "lemma": "ㅁ",
+          "pos": "ETN"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "배우",
+          "lemma": "배우",
+          "pos": "VV"
+        },
+        {
+          "text": "고",
+          "lemma": "고",
+          "pos": "EC"
+        },
+        {
+          "text": "더",
+          "lemma": "더",
+          "pos": "MAG"
+        },
+        {
+          "text": "노력",
+          "lemma": "노력",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "게",
+          "lemma": "게",
+          "pos": "EC"
+        },
+        {
+          "text": "되",
+          "lemma": "되",
+          "pos": "VV"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "것",
+          "lemma": "것",
+          "pos": "NNB"
+        },
+        {
+          "text": "같",
+          "lemma": "같",
+          "pos": "VA"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "것",
+      "겸손",
+      "계기",
+      "긍정",
+      "노력",
+      "실패",
+      "일"
+    ],
+    "domain": "good"
+  },
+  {
+    "question": {
+      "text": "다른 사람에게 좋은 일을 해준 적 있어?",
+      "tokens": [
+        {
+          "text": "다른",
+          "lemma": "다른",
+          "pos": "MM"
+        },
+        {
+          "text": "사람",
+          "lemma": "사람",
+          "pos": "NNG"
+        },
+        {
+          "text": "에게",
+          "lemma": "에게",
+          "pos": "JKB"
+        },
+        {
+          "text": "좋",
+          "lemma": "좋",
+          "pos": "VA"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "ETM"
+        },
+        {
+          "text": "일",
+          "lemma": "일",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "VV"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EC"
+        },
+        {
+          "text": "주",
+          "lemma": "주",
+          "pos": "VX"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "적",
+          "lemma": "적",
+          "pos": "NNB"
+        },
+        {
+          "text": "있",
+          "lemma": "있",
+          "pos": "VX"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "길",
+        "사람",
+        "일",
+        "적",
+        "짐"
+      ],
+      "domain": "good"
+    },
+    "answer": {
+      "text": "길을 잃은 사람에게 길을 알려주거나, 무거운 짐을 들어준 적 있어.",
+      "tokens": [
+        {
+          "text": "길",
+          "lemma": "길",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "잃",
+          "lemma": "잃",
+          "pos": "VV"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "ETM"
+        },
+        {
+          "text": "사람",
+          "lemma": "사람",
+          "pos": "NNG"
+        },
+        {
+          "text": "에게",
+          "lemma": "에게",
+          "pos": "JKB"
+        },
+        {
+          "text": "길",
+          "lemma": "길",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "알리",
+          "lemma": "알리",
+          "pos": "VV"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EC"
+        },
+        {
+          "text": "주",
+          "lemma": "주",
+          "pos": "VX"
+        },
+        {
+          "text": "거나",
+          "lemma": "거나",
+          "pos": "EC"
+        },
+        {
+          "text": "무겁",
+          "lemma": "무겁",
+          "pos": "VA"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "짐",
+          "lemma": "짐",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "들어주",
+          "lemma": "들어주",
+          "pos": "VV"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "적",
+          "lemma": "적",
+          "pos": "NNB"
+        },
+        {
+          "text": "있",
+          "lemma": "있",
+          "pos": "VX"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "길",
+      "사람",
+      "일",
+      "적",
+      "짐"
+    ],
+    "domain": "good"
+  },
+  {
+    "question": {
+      "text": "다른 사람에게 나쁜 영향을 준 적은?",
+      "tokens": [
+        {
+          "text": "다른",
+          "lemma": "다른",
+          "pos": "MM"
+        },
+        {
+          "text": "사람",
+          "lemma": "사람",
+          "pos": "NNG"
+        },
+        {
+          "text": "에게",
+          "lemma": "에게",
+          "pos": "JKB"
+        },
+        {
+          "text": "나쁘",
+          "lemma": "나쁘",
+          "pos": "VA"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "영향",
+          "lemma": "영향",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "주",
+          "lemma": "주",
+          "pos": "VX"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "적",
+          "lemma": "적",
+          "pos": "NNB"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "JX"
+        }
+      ],
+      "concepts": [
+        "그때",
+        "말",
+        "반성",
+        "사람",
+        "상처",
+        "실수",
+        "영향",
+        "의도",
+        "적"
+      ],
+      "domain": "good"
+    },
+    "answer": {
+      "text": "의도치 않게 말실수로 상처를 준 적이 있어. 그때마다 반성하고 있어.",
+      "tokens": [
+        {
+          "text": "의도",
+          "lemma": "의도",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "지",
+          "lemma": "지",
+          "pos": "EC"
+        },
+        {
+          "text": "않",
+          "lemma": "않",
+          "pos": "VX"
+        },
+        {
+          "text": "게",
+          "lemma": "게",
+          "pos": "EC"
+        },
+        {
+          "text": "말",
+          "lemma": "말",
+          "pos": "NNG"
+        },
+        {
+          "text": "실수",
+          "lemma": "실수",
+          "pos": "NNP"
+        },
+        {
+          "text": "로",
+          "lemma": "로",
+          "pos": "JKB"
+        },
+        {
+          "text": "상처",
+          "lemma": "상처",
+          "pos": "NNG"
+        },
+        {
+          "text": "를",
+          "lemma": "를",
+          "pos": "JKO"
+        },
+        {
+          "text": "주",
+          "lemma": "주",
+          "pos": "VX"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "적",
+          "lemma": "적",
+          "pos": "NNB"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "JKS"
+        },
+        {
+          "text": "있",
+          "lemma": "있",
+          "pos": "VX"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        },
+        {
+          "text": "그때",
+          "lemma": "그때",
+          "pos": "NNG"
+        },
+        {
+          "text": "마다",
+          "lemma": "마다",
+          "pos": "JX"
+        },
+        {
+          "text": "반성",
+          "lemma": "반성",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "고",
+          "lemma": "고",
+          "pos": "EC"
+        },
+        {
+          "text": "있",
+          "lemma": "있",
+          "pos": "VX"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "그때",
+      "말",
+      "반성",
+      "사람",
+      "상처",
+      "실수",
+      "영향",
+      "의도",
+      "적"
+    ],
+    "domain": "good"
+  },
+  {
+    "question": {
+      "text": "좋은 일은 왜 나쁜 일보다 빨리 잊혀질까?",
+      "tokens": [
+        {
+          "text": "좋",
+          "lemma": "좋",
+          "pos": "VA"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "ETM"
+        },
+        {
+          "text": "일",
+          "lemma": "일",
+          "pos": "NNB"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "JX"
+        },
+        {
+          "text": "왜",
+          "lemma": "왜",
+          "pos": "MAG"
+        },
+        {
+          "text": "나쁘",
+          "lemma": "나쁘",
+          "pos": "VA"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "일",
+          "lemma": "일",
+          "pos": "NNG"
+        },
+        {
+          "text": "보다",
+          "lemma": "보다",
+          "pos": "JKB"
+        },
+        {
+          "text": "빨리",
+          "lemma": "빨리",
+          "pos": "MAG"
+        },
+        {
+          "text": "잊히",
+          "lemma": "잊히",
+          "pos": "VV"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EC"
+        },
+        {
+          "text": "지",
+          "lemma": "지",
+          "pos": "VX"
+        },
+        {
+          "text": "ㄹ까",
+          "lemma": "ㄹ까",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "것",
+        "경향",
+        "반응",
+        "부정",
+        "인간",
+        "일"
+      ],
+      "domain": "good"
+    },
+    "answer": {
+      "text": "인간은 부정적인 것에 더 강하게 반응하는 경향이 있다고 들었어.",
+      "tokens": [
+        {
+          "text": "인간",
+          "lemma": "인간",
+          "pos": "NNG"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "JX"
+        },
+        {
+          "text": "부정",
+          "lemma": "부정",
+          "pos": "NNG"
+        },
+        {
+          "text": "적",
+          "lemma": "적",
+          "pos": "XSN"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "VCP"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "것",
+          "lemma": "것",
+          "pos": "NNB"
+        },
+        {
+          "text": "에",
+          "lemma": "에",
+          "pos": "JKB"
+        },
+        {
+          "text": "더",
+          "lemma": "더",
+          "pos": "MAG"
+        },
+        {
+          "text": "강하",
+          "lemma": "강하",
+          "pos": "VA"
+        },
+        {
+          "text": "게",
+          "lemma": "게",
+          "pos": "EC"
+        },
+        {
+          "text": "반응",
+          "lemma": "반응",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "ETM"
+        },
+        {
+          "text": "경향",
+          "lemma": "경향",
+          "pos": "NNG"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "JKS"
+        },
+        {
+          "text": "있",
+          "lemma": "있",
+          "pos": "VV"
+        },
+        {
+          "text": "다고",
+          "lemma": "다고",
+          "pos": "EC"
+        },
+        {
+          "text": "들",
+          "lemma": "들",
+          "pos": "VV"
+        },
+        {
+          "text": "었",
+          "lemma": "었",
+          "pos": "EP"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "것",
+      "경향",
+      "반응",
+      "부정",
+      "인간",
+      "일"
+    ],
+    "domain": "good"
+  },
+  {
+    "question": {
+      "text": "나쁜 일은 왜 자꾸 반복되는 것 같을까?",
+      "tokens": [
+        {
+          "text": "나쁘",
+          "lemma": "나쁘",
+          "pos": "VA"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "일",
+          "lemma": "일",
+          "pos": "NNB"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "JX"
+        },
+        {
+          "text": "왜",
+          "lemma": "왜",
+          "pos": "MAG"
+        },
+        {
+          "text": "자꾸",
+          "lemma": "자꾸",
+          "pos": "MAG"
+        },
+        {
+          "text": "반복",
+          "lemma": "반복",
+          "pos": "NNG"
+        },
+        {
+          "text": "되",
+          "lemma": "되",
+          "pos": "XSV"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "ETM"
+        },
+        {
+          "text": "것",
+          "lemma": "것",
+          "pos": "NNB"
+        },
+        {
+          "text": "같",
+          "lemma": "같",
+          "pos": "VA"
+        },
+        {
+          "text": "을까",
+          "lemma": "을까",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "것",
+        "반복",
+        "변화",
+        "시도",
+        "원인",
+        "일",
+        "파악",
+        "패턴"
+      ],
+      "domain": "good"
+    },
+    "answer": {
+      "text": "비슷한 패턴으로 반복되는 나쁜 일이라면, 원인을 파악하고 변화를 시도해야 해.",
+      "tokens": [
+        {
+          "text": "비슷",
+          "lemma": "비슷",
+          "pos": "XR"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSA"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "패턴",
+          "lemma": "패턴",
+          "pos": "NNP"
+        },
+        {
+          "text": "으로",
+          "lemma": "으로",
+          "pos": "JKB"
+        },
+        {
+          "text": "반복",
+          "lemma": "반복",
+          "pos": "NNG"
+        },
+        {
+          "text": "되",
+          "lemma": "되",
+          "pos": "XSV"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "ETM"
+        },
+        {
+          "text": "나쁘",
+          "lemma": "나쁘",
+          "pos": "VA"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "일",
+          "lemma": "일",
+          "pos": "NNB"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "VCP"
+        },
+        {
+          "text": "라면",
+          "lemma": "라면",
+          "pos": "EC"
+        },
+        {
+          "text": "원인",
+          "lemma": "원인",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "파악",
+          "lemma": "파악",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "고",
+          "lemma": "고",
+          "pos": "EC"
+        },
+        {
+          "text": "변화",
+          "lemma": "변화",
+          "pos": "NNG"
+        },
+        {
+          "text": "를",
+          "lemma": "를",
+          "pos": "JKO"
+        },
+        {
+          "text": "시도",
+          "lemma": "시도",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "아야",
+          "lemma": "아야",
+          "pos": "EC"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "VX"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "것",
+      "반복",
+      "변화",
+      "시도",
+      "원인",
+      "일",
+      "파악",
+      "패턴"
+    ],
+    "domain": "good"
+  },
+  {
+    "question": {
+      "text": "좋은 일을 만들어내는 노력이 중요할까?",
+      "tokens": [
+        {
+          "text": "좋",
+          "lemma": "좋",
+          "pos": "VA"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "ETM"
+        },
+        {
+          "text": "일",
+          "lemma": "일",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "만들",
+          "lemma": "만들",
+          "pos": "VV"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EC"
+        },
+        {
+          "text": "내",
+          "lemma": "내",
+          "pos": "VX"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "ETM"
+        },
+        {
+          "text": "노력",
+          "lemma": "노력",
+          "pos": "NNG"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "JKS"
+        },
+        {
+          "text": "중요",
+          "lemma": "중요",
+          "pos": "XR"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSA"
+        },
+        {
+          "text": "ㄹ까",
+          "lemma": "ㄹ까",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "노력",
+        "생각",
+        "수",
+        "일",
+        "행동"
+      ],
+      "domain": "good"
+    },
+    "answer": {
+      "text": "그럼! 좋은 일은 그냥 오지 않아. 노력하고 행동해야 얻을 수 있다고 생각해.",
+      "tokens": [
+        {
+          "text": "그럼",
+          "lemma": "그럼",
+          "pos": "IC"
+        },
+        {
+          "text": "좋",
+          "lemma": "좋",
+          "pos": "VA"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "ETM"
+        },
+        {
+          "text": "일",
+          "lemma": "일",
+          "pos": "NNB"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "JX"
+        },
+        {
+          "text": "그냥",
+          "lemma": "그냥",
+          "pos": "MAG"
+        },
+        {
+          "text": "오",
+          "lemma": "오",
+          "pos": "VV"
+        },
+        {
+          "text": "지",
+          "lemma": "지",
+          "pos": "EC"
+        },
+        {
+          "text": "않",
+          "lemma": "않",
+          "pos": "VX"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EF"
+        },
+        {
+          "text": "노력",
+          "lemma": "노력",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "고",
+          "lemma": "고",
+          "pos": "EC"
+        },
+        {
+          "text": "행동",
+          "lemma": "행동",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "아야",
+          "lemma": "아야",
+          "pos": "EC"
+        },
+        {
+          "text": "얻",
+          "lemma": "얻",
+          "pos": "VV"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "ETM"
+        },
+        {
+          "text": "수",
+          "lemma": "수",
+          "pos": "NNB"
+        },
+        {
+          "text": "있",
+          "lemma": "있",
+          "pos": "VV"
+        },
+        {
+          "text": "다고",
+          "lemma": "다고",
+          "pos": "EC"
+        },
+        {
+          "text": "생각",
+          "lemma": "생각",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "노력",
+      "생각",
+      "수",
+      "일",
+      "행동"
+    ],
+    "domain": "good"
+  },
+  {
+    "question": {
+      "text": "나쁜 일에 대한 두려움을 어떻게 극복해?",
+      "tokens": [
+        {
+          "text": "나쁘",
+          "lemma": "나쁘",
+          "pos": "VA"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "일",
+          "lemma": "일",
+          "pos": "NNG"
+        },
+        {
+          "text": "에",
+          "lemma": "에",
+          "pos": "JKB"
+        },
+        {
+          "text": "대하",
+          "lemma": "대하",
+          "pos": "VV"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "두려움",
+          "lemma": "두려움",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "어떻",
+          "lemma": "어떻",
+          "pos": "VA"
+        },
+        {
+          "text": "게",
+          "lemma": "게",
+          "pos": "EC"
+        },
+        {
+          "text": "극복",
+          "lemma": "극복",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "것",
+        "결국",
+        "극복",
+        "긍정",
+        "두려움",
+        "마음",
+        "일"
+      ],
+      "domain": "good"
+    },
+    "answer": {
+      "text": "나쁜 일이 생겨도 결국엔 지나간다는 것을 믿고, 긍정적인 마음을 가지려고 해.",
+      "tokens": [
+        {
+          "text": "나쁘",
+          "lemma": "나쁘",
+          "pos": "VA"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "일",
+          "lemma": "일",
+          "pos": "NNG"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "JKS"
+        },
+        {
+          "text": "생기",
+          "lemma": "생기",
+          "pos": "VV"
+        },
+        {
+          "text": "어도",
+          "lemma": "어도",
+          "pos": "EC"
+        },
+        {
+          "text": "결국",
+          "lemma": "결국",
+          "pos": "NNG"
+        },
+        {
+          "text": "에",
+          "lemma": "에",
+          "pos": "JKB"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "JX"
+        },
+        {
+          "text": "지나가",
+          "lemma": "지나가",
+          "pos": "VV"
+        },
+        {
+          "text": "ㄴ다는",
+          "lemma": "ㄴ다는",
+          "pos": "ETM"
+        },
+        {
+          "text": "것",
+          "lemma": "것",
+          "pos": "NNB"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "믿",
+          "lemma": "믿",
+          "pos": "VV"
+        },
+        {
+          "text": "고",
+          "lemma": "고",
+          "pos": "EC"
+        },
+        {
+          "text": "긍정",
+          "lemma": "긍정",
+          "pos": "NNG"
+        },
+        {
+          "text": "적",
+          "lemma": "적",
+          "pos": "XSN"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "VCP"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "마음",
+          "lemma": "마음",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "가지",
+          "lemma": "가지",
+          "pos": "VV"
+        },
+        {
+          "text": "려고",
+          "lemma": "려고",
+          "pos": "EC"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "VX"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "것",
+      "결국",
+      "극복",
+      "긍정",
+      "두려움",
+      "마음",
+      "일"
+    ],
+    "domain": "good"
+  },
+  {
+    "question": {
+      "text": "작은 좋은 일들이 모여 큰 행복이 될 수 있을까?",
+      "tokens": [
+        {
+          "text": "작",
+          "lemma": "작",
+          "pos": "VA"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "ETM"
+        },
+        {
+          "text": "좋",
+          "lemma": "좋",
+          "pos": "VA"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "ETM"
+        },
+        {
+          "text": "일",
+          "lemma": "일",
+          "pos": "NNG"
+        },
+        {
+          "text": "들",
+          "lemma": "들",
+          "pos": "XSN"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "JKS"
+        },
+        {
+          "text": "모이",
+          "lemma": "모이",
+          "pos": "VV"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EC"
+        },
+        {
+          "text": "크",
+          "lemma": "크",
+          "pos": "VA"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "행복",
+          "lemma": "행복",
+          "pos": "NNG"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "JKS"
+        },
+        {
+          "text": "되",
+          "lemma": "되",
+          "pos": "VV"
+        },
+        {
+          "text": "ㄹ",
+          "lemma": "ㄹ",
+          "pos": "ETM"
+        },
+        {
+          "text": "수",
+          "lemma": "수",
+          "pos": "NNB"
+        },
+        {
+          "text": "있",
+          "lemma": "있",
+          "pos": "VX"
+        },
+        {
+          "text": "을까",
+          "lemma": "을까",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "생각",
+        "수",
+        "일",
+        "행복"
+      ],
+      "domain": "good"
+    },
+    "answer": {
+      "text": "응, 작은 행복들이 쌓여서 큰 행복을 만든다고 생각해.",
+      "tokens": [
+        {
+          "text": "응",
+          "lemma": "응",
+          "pos": "IC"
+        },
+        {
+          "text": "작",
+          "lemma": "작",
+          "pos": "VA"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "ETM"
+        },
+        {
+          "text": "행복",
+          "lemma": "행복",
+          "pos": "NNG"
+        },
+        {
+          "text": "들",
+          "lemma": "들",
+          "pos": "XSN"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "JKS"
+        },
+        {
+          "text": "쌓",
+          "lemma": "쌓",
+          "pos": "VV"
+        },
+        {
+          "text": "아서",
+          "lemma": "아서",
+          "pos": "EC"
+        },
+        {
+          "text": "크",
+          "lemma": "크",
+          "pos": "VA"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "행복",
+          "lemma": "행복",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "만들",
+          "lemma": "만들",
+          "pos": "VV"
+        },
+        {
+          "text": "ㄴ다고",
+          "lemma": "ㄴ다고",
+          "pos": "EC"
+        },
+        {
+          "text": "생각",
+          "lemma": "생각",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "생각",
+      "수",
+      "일",
+      "행복"
+    ],
+    "domain": "good"
+  },
+  {
+    "question": {
+      "text": "나쁜 일이 생겼을 때 힘이 되는 명언이 있어?",
+      "tokens": [
+        {
+          "text": "나쁘",
+          "lemma": "나쁘",
+          "pos": "VA"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "일",
+          "lemma": "일",
+          "pos": "NNG"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "JKS"
+        },
+        {
+          "text": "생기",
+          "lemma": "생기",
+          "pos": "VV"
+        },
+        {
+          "text": "었",
+          "lemma": "었",
+          "pos": "EP"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "ETM"
+        },
+        {
+          "text": "때",
+          "lemma": "때",
+          "pos": "NNG"
+        },
+        {
+          "text": "힘",
+          "lemma": "힘",
+          "pos": "NNG"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "JKS"
+        },
+        {
+          "text": "되",
+          "lemma": "되",
+          "pos": "VV"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "ETM"
+        },
+        {
+          "text": "명언",
+          "lemma": "명언",
+          "pos": "NNP"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "JKS"
+        },
+        {
+          "text": "있",
+          "lemma": "있",
+          "pos": "VX"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "뒤",
+        "땅",
+        "때",
+        "말",
+        "명언",
+        "비",
+        "일",
+        "힘"
+      ],
+      "domain": "good"
+    },
+    "answer": {
+      "text": "비 온 뒤에 땅이 더 굳어진다는 말이 힘이 돼.",
+      "tokens": [
+        {
+          "text": "비",
+          "lemma": "비",
+          "pos": "NNG"
+        },
+        {
+          "text": "오",
+          "lemma": "오",
+          "pos": "VV"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "뒤",
+          "lemma": "뒤",
+          "pos": "NNG"
+        },
+        {
+          "text": "에",
+          "lemma": "에",
+          "pos": "JKB"
+        },
+        {
+          "text": "땅",
+          "lemma": "땅",
+          "pos": "NNG"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "JKS"
+        },
+        {
+          "text": "더",
+          "lemma": "더",
+          "pos": "MAG"
+        },
+        {
+          "text": "굳어지",
+          "lemma": "굳어지",
+          "pos": "VV"
+        },
+        {
+          "text": "ㄴ다는",
+          "lemma": "ㄴ다는",
+          "pos": "ETM"
+        },
+        {
+          "text": "말",
+          "lemma": "말",
+          "pos": "NNG"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "JKS"
+        },
+        {
+          "text": "힘",
+          "lemma": "힘",
+          "pos": "NNG"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "JKS"
+        },
+        {
+          "text": "되",
+          "lemma": "되",
+          "pos": "VV"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "뒤",
+      "땅",
+      "때",
+      "말",
+      "명언",
+      "비",
+      "일",
+      "힘"
+    ],
+    "domain": "good"
+  },
+  {
+    "question": {
+      "text": "좋은 일은 예고 없이 찾아올까?",
+      "tokens": [
+        {
+          "text": "좋",
+          "lemma": "좋",
+          "pos": "VA"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "ETM"
+        },
+        {
+          "text": "일",
+          "lemma": "일",
+          "pos": "NNB"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "JX"
+        },
+        {
+          "text": "예고",
+          "lemma": "예고",
+          "pos": "NNG"
+        },
+        {
+          "text": "없이",
+          "lemma": "없이",
+          "pos": "MAG"
+        },
+        {
+          "text": "찾아오",
+          "lemma": "찾아오",
+          "pos": "VV"
+        },
+        {
+          "text": "ㄹ까",
+          "lemma": "ㄹ까",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "결과",
+        "노력",
+        "때",
+        "예고",
+        "일"
+      ],
+      "domain": "good"
+    },
+    "answer": {
+      "text": "때로는 예고 없이 찾아오기도 하고, 때로는 노력한 결과로 찾아오기도 해.",
+      "tokens": [
+        {
+          "text": "때",
+          "lemma": "때",
+          "pos": "NNG"
+        },
+        {
+          "text": "로",
+          "lemma": "로",
+          "pos": "JKB"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "JX"
+        },
+        {
+          "text": "예고",
+          "lemma": "예고",
+          "pos": "NNG"
+        },
+        {
+          "text": "없이",
+          "lemma": "없이",
+          "pos": "MAG"
+        },
+        {
+          "text": "찾아오",
+          "lemma": "찾아오",
+          "pos": "VV"
+        },
+        {
+          "text": "기",
+          "lemma": "기",
+          "pos": "ETN"
+        },
+        {
+          "text": "도",
+          "lemma": "도",
+          "pos": "JX"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "VV"
+        },
+        {
+          "text": "고",
+          "lemma": "고",
+          "pos": "EC"
+        },
+        {
+          "text": "때",
+          "lemma": "때",
+          "pos": "NNG"
+        },
+        {
+          "text": "로",
+          "lemma": "로",
+          "pos": "JKB"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "JX"
+        },
+        {
+          "text": "노력",
+          "lemma": "노력",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "결과",
+          "lemma": "결과",
+          "pos": "NNG"
+        },
+        {
+          "text": "로",
+          "lemma": "로",
+          "pos": "JKB"
+        },
+        {
+          "text": "찾아오",
+          "lemma": "찾아오",
+          "pos": "VV"
+        },
+        {
+          "text": "기",
+          "lemma": "기",
+          "pos": "ETN"
+        },
+        {
+          "text": "도",
+          "lemma": "도",
+          "pos": "JX"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "VX"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "결과",
+      "노력",
+      "때",
+      "예고",
+      "일"
+    ],
+    "domain": "good"
+  },
+  {
+    "question": {
+      "text": "나쁜 일을 통해 성장하는 경험은 어땠어?",
+      "tokens": [
+        {
+          "text": "나쁘",
+          "lemma": "나쁘",
+          "pos": "VA"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "일",
+          "lemma": "일",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "통하",
+          "lemma": "통하",
+          "pos": "VV"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EC"
+        },
+        {
+          "text": "성장",
+          "lemma": "성장",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "ETM"
+        },
+        {
+          "text": "경험",
+          "lemma": "경험",
+          "pos": "NNG"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "JX"
+        },
+        {
+          "text": "어떻",
+          "lemma": "어떻",
+          "pos": "VA"
+        },
+        {
+          "text": "었",
+          "lemma": "었",
+          "pos": "EP"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "경험",
+        "나중",
+        "당시",
+        "생각",
+        "성장",
+        "일"
+      ],
+      "domain": "good"
+    },
+    "answer": {
+      "text": "당시에는 힘들었지만, 나중에 돌아보면 소중한 경험이었다는 생각이 들어.",
+      "tokens": [
+        {
+          "text": "당시",
+          "lemma": "당시",
+          "pos": "NNG"
+        },
+        {
+          "text": "에",
+          "lemma": "에",
+          "pos": "JKB"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "JX"
+        },
+        {
+          "text": "힘들",
+          "lemma": "힘들",
+          "pos": "VA"
+        },
+        {
+          "text": "었",
+          "lemma": "었",
+          "pos": "EP"
+        },
+        {
+          "text": "지만",
+          "lemma": "지만",
+          "pos": "EC"
+        },
+        {
+          "text": "나중",
+          "lemma": "나중",
+          "pos": "NNG"
+        },
+        {
+          "text": "에",
+          "lemma": "에",
+          "pos": "JKB"
+        },
+        {
+          "text": "돌아보",
+          "lemma": "돌아보",
+          "pos": "VV"
+        },
+        {
+          "text": "면",
+          "lemma": "면",
+          "pos": "EC"
+        },
+        {
+          "text": "소중",
+          "lemma": "소중",
+          "pos": "XR"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSA"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "경험",
+          "lemma": "경험",
+          "pos": "NNG"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "VCP"
+        },
+        {
+          "text": "었",
+          "lemma": "었",
+          "pos": "EP"
+        },
+        {
+          "text": "다는",
+          "lemma": "다는",
+          "pos": "ETM"
+        },
+        {
+          "text": "생각",
+          "lemma": "생각",
+          "pos": "NNG"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "JKS"
+        },
+        {
+          "text": "들",
+          "lemma": "들",
+          "pos": "VV"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "경험",
+      "나중",
+      "당시",
+      "생각",
+      "성장",
+      "일"
+    ],
+    "domain": "good"
+  },
+  {
+    "question": {
+      "text": "좋은 일이 생겼을 때 자만하지 않으려면?",
+      "tokens": [
+        {
+          "text": "좋",
+          "lemma": "좋",
+          "pos": "VA"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "ETM"
+        },
+        {
+          "text": "일",
+          "lemma": "일",
+          "pos": "NNG"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "JKS"
+        },
+        {
+          "text": "생기",
+          "lemma": "생기",
+          "pos": "VV"
+        },
+        {
+          "text": "었",
+          "lemma": "었",
+          "pos": "EP"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "ETM"
+        },
+        {
+          "text": "때",
+          "lemma": "때",
+          "pos": "NNG"
+        },
+        {
+          "text": "자만",
+          "lemma": "자만",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "지",
+          "lemma": "지",
+          "pos": "EC"
+        },
+        {
+          "text": "않",
+          "lemma": "않",
+          "pos": "VX"
+        },
+        {
+          "text": "으려면",
+          "lemma": "으려면",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "겸손",
+        "다음",
+        "때",
+        "마음",
+        "목표",
+        "일",
+        "자만",
+        "자세"
+      ],
+      "domain": "good"
+    },
+    "answer": {
+      "text": "겸손한 마음을 잃지 않고, 다음 목표를 향해 나아가는 자세가 중요해.",
+      "tokens": [
+        {
+          "text": "겸손",
+          "lemma": "겸손",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "마음",
+          "lemma": "마음",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "잃",
+          "lemma": "잃",
+          "pos": "VV"
+        },
+        {
+          "text": "지",
+          "lemma": "지",
+          "pos": "EC"
+        },
+        {
+          "text": "않",
+          "lemma": "않",
+          "pos": "VX"
+        },
+        {
+          "text": "고",
+          "lemma": "고",
+          "pos": "EC"
+        },
+        {
+          "text": "다음",
+          "lemma": "다음",
+          "pos": "NNG"
+        },
+        {
+          "text": "목표",
+          "lemma": "목표",
+          "pos": "NNG"
+        },
+        {
+          "text": "를",
+          "lemma": "를",
+          "pos": "JKO"
+        },
+        {
+          "text": "향하",
+          "lemma": "향하",
+          "pos": "VV"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EC"
+        },
+        {
+          "text": "나아가",
+          "lemma": "나아가",
+          "pos": "VV"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "ETM"
+        },
+        {
+          "text": "자세",
+          "lemma": "자세",
+          "pos": "NNG"
+        },
+        {
+          "text": "가",
+          "lemma": "가",
+          "pos": "JKS"
+        },
+        {
+          "text": "중요",
+          "lemma": "중요",
+          "pos": "XR"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSA"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "겸손",
+      "다음",
+      "때",
+      "마음",
+      "목표",
+      "일",
+      "자만",
+      "자세"
+    ],
+    "domain": "good"
+  },
+  {
+    "question": {
+      "text": "나쁜 일이 생겼을 때 침착함을 유지하는 방법은?",
+      "tokens": [
+        {
+          "text": "나쁘",
+          "lemma": "나쁘",
+          "pos": "VA"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "일",
+          "lemma": "일",
+          "pos": "NNG"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "JKS"
+        },
+        {
+          "text": "생기",
+          "lemma": "생기",
+          "pos": "VV"
+        },
+        {
+          "text": "었",
+          "lemma": "었",
+          "pos": "EP"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "ETM"
+        },
+        {
+          "text": "때",
+          "lemma": "때",
+          "pos": "NNG"
+        },
+        {
+          "text": "침착",
+          "lemma": "침착",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "ㅁ",
+          "lemma": "ㅁ",
+          "pos": "ETN"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "유지",
+          "lemma": "유지",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "ETM"
+        },
+        {
+          "text": "방법",
+          "lemma": "방법",
+          "pos": "NNG"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "JX"
+        }
+      ],
+      "concepts": [
+        "객관",
+        "노력",
+        "때",
+        "방법",
+        "상황",
+        "심호흡",
+        "유지",
+        "일",
+        "침착"
+      ],
+      "domain": "good"
+    },
+    "answer": {
+      "text": "심호흡을 하고, 상황을 객관적으로 바라보려고 노력해.",
+      "tokens": [
+        {
+          "text": "심호흡",
+          "lemma": "심호흡",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "VV"
+        },
+        {
+          "text": "고",
+          "lemma": "고",
+          "pos": "EC"
+        },
+        {
+          "text": "상황",
+          "lemma": "상황",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "객관",
+          "lemma": "객관",
+          "pos": "NNG"
+        },
+        {
+          "text": "적",
+          "lemma": "적",
+          "pos": "XSN"
+        },
+        {
+          "text": "으로",
+          "lemma": "으로",
+          "pos": "JKB"
+        },
+        {
+          "text": "바라보",
+          "lemma": "바라보",
+          "pos": "VV"
+        },
+        {
+          "text": "려고",
+          "lemma": "려고",
+          "pos": "EC"
+        },
+        {
+          "text": "노력",
+          "lemma": "노력",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "객관",
+      "노력",
+      "때",
+      "방법",
+      "상황",
+      "심호흡",
+      "유지",
+      "일",
+      "침착"
+    ],
+    "domain": "good"
+  },
+  {
+    "question": {
+      "text": "긍정적인 태도가 좋은 일을 끌어당길 수 있을까?",
+      "tokens": [
+        {
+          "text": "긍정",
+          "lemma": "긍정",
+          "pos": "NNG"
+        },
+        {
+          "text": "적",
+          "lemma": "적",
+          "pos": "XSN"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "VCP"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "태도",
+          "lemma": "태도",
+          "pos": "NNG"
+        },
+        {
+          "text": "가",
+          "lemma": "가",
+          "pos": "JKS"
+        },
+        {
+          "text": "좋",
+          "lemma": "좋",
+          "pos": "VA"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "ETM"
+        },
+        {
+          "text": "일",
+          "lemma": "일",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "끌어당기",
+          "lemma": "끌어당기",
+          "pos": "VV"
+        },
+        {
+          "text": "ㄹ",
+          "lemma": "ㄹ",
+          "pos": "ETM"
+        },
+        {
+          "text": "수",
+          "lemma": "수",
+          "pos": "NNB"
+        },
+        {
+          "text": "있",
+          "lemma": "있",
+          "pos": "VX"
+        },
+        {
+          "text": "을까",
+          "lemma": "을까",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "긍정",
+        "수",
+        "에너지",
+        "일",
+        "태도",
+        "힘"
+      ],
+      "domain": "good"
+    },
+    "answer": {
+      "text": "응, 긍정적인 에너지는 좋은 일들을 끌어당기는 힘이 있다고 믿어.",
+      "tokens": [
+        {
+          "text": "응",
+          "lemma": "응",
+          "pos": "IC"
+        },
+        {
+          "text": "긍정",
+          "lemma": "긍정",
+          "pos": "NNG"
+        },
+        {
+          "text": "적",
+          "lemma": "적",
+          "pos": "XSN"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "VCP"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "에너지",
+          "lemma": "에너지",
+          "pos": "NNP"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "JX"
+        },
+        {
+          "text": "좋",
+          "lemma": "좋",
+          "pos": "VA"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "ETM"
+        },
+        {
+          "text": "일",
+          "lemma": "일",
+          "pos": "NNG"
+        },
+        {
+          "text": "들",
+          "lemma": "들",
+          "pos": "XSN"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "끌어당기",
+          "lemma": "끌어당기",
+          "pos": "VV"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "ETM"
+        },
+        {
+          "text": "힘",
+          "lemma": "힘",
+          "pos": "NNG"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "JKS"
+        },
+        {
+          "text": "있",
+          "lemma": "있",
+          "pos": "VV"
+        },
+        {
+          "text": "다고",
+          "lemma": "다고",
+          "pos": "EC"
+        },
+        {
+          "text": "믿",
+          "lemma": "믿",
+          "pos": "VV"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "긍정",
+      "수",
+      "에너지",
+      "일",
+      "태도",
+      "힘"
+    ],
+    "domain": "good"
+  },
+  {
+    "question": {
+      "text": "나쁜 일을 되풀이하지 않으려면 어떻게 해야 해?",
+      "tokens": [
+        {
+          "text": "나쁘",
+          "lemma": "나쁘",
+          "pos": "VA"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "일",
+          "lemma": "일",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "되풀이",
+          "lemma": "되풀이",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "지",
+          "lemma": "지",
+          "pos": "EC"
+        },
+        {
+          "text": "않",
+          "lemma": "않",
+          "pos": "VX"
+        },
+        {
+          "text": "으려면",
+          "lemma": "으려면",
+          "pos": "EC"
+        },
+        {
+          "text": "어떻",
+          "lemma": "어떻",
+          "pos": "VA"
+        },
+        {
+          "text": "게",
+          "lemma": "게",
+          "pos": "EC"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "VV"
+        },
+        {
+          "text": "아야",
+          "lemma": "아야",
+          "pos": "EC"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "VX"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "개선",
+        "노력",
+        "되풀이",
+        "반복",
+        "실수",
+        "인정",
+        "일"
+      ],
+      "domain": "good"
+    },
+    "answer": {
+      "text": "실수를 인정하고, 같은 실수를 반복하지 않도록 개선하려고 노력해야 해.",
+      "tokens": [
+        {
+          "text": "실수",
+          "lemma": "실수",
+          "pos": "NNG"
+        },
+        {
+          "text": "를",
+          "lemma": "를",
+          "pos": "JKO"
+        },
+        {
+          "text": "인정",
+          "lemma": "인정",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "고",
+          "lemma": "고",
+          "pos": "EC"
+        },
+        {
+          "text": "같",
+          "lemma": "같",
+          "pos": "VA"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "ETM"
+        },
+        {
+          "text": "실수",
+          "lemma": "실수",
+          "pos": "NNG"
+        },
+        {
+          "text": "를",
+          "lemma": "를",
+          "pos": "JKO"
+        },
+        {
+          "text": "반복",
+          "lemma": "반복",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "지",
+          "lemma": "지",
+          "pos": "EC"
+        },
+        {
+          "text": "않",
+          "lemma": "않",
+          "pos": "VX"
+        },
+        {
+          "text": "도록",
+          "lemma": "도록",
+          "pos": "EC"
+        },
+        {
+          "text": "개선",
+          "lemma": "개선",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "려고",
+          "lemma": "려고",
+          "pos": "EC"
+        },
+        {
+          "text": "노력",
+          "lemma": "노력",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "아야",
+          "lemma": "아야",
+          "pos": "EC"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "VX"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "개선",
+      "노력",
+      "되풀이",
+      "반복",
+      "실수",
+      "인정",
+      "일"
+    ],
+    "domain": "good"
+  },
+  {
+    "question": {
+      "text": "다른 사람의 좋은 일을 축하해 주는 건 중요할까?",
+      "tokens": [
+        {
+          "text": "다른",
+          "lemma": "다른",
+          "pos": "MM"
+        },
+        {
+          "text": "사람",
+          "lemma": "사람",
+          "pos": "NNG"
+        },
+        {
+          "text": "의",
+          "lemma": "의",
+          "pos": "JKG"
+        },
+        {
+          "text": "좋",
+          "lemma": "좋",
+          "pos": "VA"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "ETM"
+        },
+        {
+          "text": "일",
+          "lemma": "일",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "축하",
+          "lemma": "축하",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EC"
+        },
+        {
+          "text": "주",
+          "lemma": "주",
+          "pos": "VX"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "ETM"
+        },
+        {
+          "text": "건",
+          "lemma": "건",
+          "pos": "NNB"
+        },
+        {
+          "text": "중요",
+          "lemma": "중요",
+          "pos": "XR"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSA"
+        },
+        {
+          "text": "ㄹ까",
+          "lemma": "ㄹ까",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "건",
+        "관계",
+        "사람",
+        "일",
+        "진심",
+        "축하"
+      ],
+      "domain": "good"
+    },
+    "answer": {
+      "text": "그럼! 진심으로 축하해주면 관계도 좋아지고, 나도 기뻐져.",
+      "tokens": [
+        {
+          "text": "그럼",
+          "lemma": "그럼",
+          "pos": "IC"
+        },
+        {
+          "text": "진심",
+          "lemma": "진심",
+          "pos": "NNP"
+        },
+        {
+          "text": "으로",
+          "lemma": "으로",
+          "pos": "JKB"
+        },
+        {
+          "text": "축하",
+          "lemma": "축하",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EC"
+        },
+        {
+          "text": "주",
+          "lemma": "주",
+          "pos": "VX"
+        },
+        {
+          "text": "면",
+          "lemma": "면",
+          "pos": "EC"
+        },
+        {
+          "text": "관계",
+          "lemma": "관계",
+          "pos": "NNG"
+        },
+        {
+          "text": "도",
+          "lemma": "도",
+          "pos": "JX"
+        },
+        {
+          "text": "좋",
+          "lemma": "좋",
+          "pos": "VA"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EC"
+        },
+        {
+          "text": "지",
+          "lemma": "지",
+          "pos": "VX"
+        },
+        {
+          "text": "고",
+          "lemma": "고",
+          "pos": "EC"
+        },
+        {
+          "text": "나",
+          "lemma": "나",
+          "pos": "NP"
+        },
+        {
+          "text": "도",
+          "lemma": "도",
+          "pos": "JX"
+        },
+        {
+          "text": "기쁘",
+          "lemma": "기쁘",
+          "pos": "VA"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EC"
+        },
+        {
+          "text": "지",
+          "lemma": "지",
+          "pos": "VX"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "건",
+      "관계",
+      "사람",
+      "일",
+      "진심",
+      "축하"
+    ],
+    "domain": "good"
+  },
+  {
+    "question": {
+      "text": "나쁜 일 때문에 힘들어하는 친구에게 어떤 말을 해줄래?",
+      "tokens": [
+        {
+          "text": "나쁘",
+          "lemma": "나쁘",
+          "pos": "VA"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "일",
+          "lemma": "일",
+          "pos": "NNB"
+        },
+        {
+          "text": "때문",
+          "lemma": "때문",
+          "pos": "NNB"
+        },
+        {
+          "text": "에",
+          "lemma": "에",
+          "pos": "JKB"
+        },
+        {
+          "text": "힘들",
+          "lemma": "힘들",
+          "pos": "VA"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EC"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "VX"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "ETM"
+        },
+        {
+          "text": "친구",
+          "lemma": "친구",
+          "pos": "NNG"
+        },
+        {
+          "text": "에게",
+          "lemma": "에게",
+          "pos": "JKB"
+        },
+        {
+          "text": "어떤",
+          "lemma": "어떤",
+          "pos": "MM"
+        },
+        {
+          "text": "말",
+          "lemma": "말",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "VV"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EC"
+        },
+        {
+          "text": "주",
+          "lemma": "주",
+          "pos": "VX"
+        },
+        {
+          "text": "ㄹ래",
+          "lemma": "ㄹ래",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "거",
+        "곁",
+        "때문",
+        "라고",
+        "말",
+        "일",
+        "친구",
+        "혼자"
+      ],
+      "domain": "good"
+    },
+    "answer": {
+      "text": "네 곁에 항상 내가 있어. 혼자 힘들어하지 마.라고 말해줄 거야.",
+      "tokens": [
+        {
+          "text": "네",
+          "lemma": "네",
+          "pos": "MM"
+        },
+        {
+          "text": "곁",
+          "lemma": "곁",
+          "pos": "NNG"
+        },
+        {
+          "text": "에",
+          "lemma": "에",
+          "pos": "JKB"
+        },
+        {
+          "text": "항상",
+          "lemma": "항상",
+          "pos": "MAG"
+        },
+        {
+          "text": "내",
+          "lemma": "내",
+          "pos": "NP"
+        },
+        {
+          "text": "가",
+          "lemma": "가",
+          "pos": "JKS"
+        },
+        {
+          "text": "있",
+          "lemma": "있",
+          "pos": "VX"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        },
+        {
+          "text": "혼자",
+          "lemma": "혼자",
+          "pos": "NNG"
+        },
+        {
+          "text": "힘들",
+          "lemma": "힘들",
+          "pos": "VA"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EC"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "VX"
+        },
+        {
+          "text": "지",
+          "lemma": "지",
+          "pos": "EC"
+        },
+        {
+          "text": "말",
+          "lemma": "말",
+          "pos": "VX"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EF"
+        },
+        {
+          "text": "라고",
+          "lemma": "라고",
+          "pos": "NNP"
+        },
+        {
+          "text": "말",
+          "lemma": "말",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EC"
+        },
+        {
+          "text": "주",
+          "lemma": "주",
+          "pos": "VX"
+        },
+        {
+          "text": "ㄹ",
+          "lemma": "ㄹ",
+          "pos": "ETM"
+        },
+        {
+          "text": "거",
+          "lemma": "거",
+          "pos": "NNB"
+        },
+        {
+          "text": "야",
+          "lemma": "야",
+          "pos": "JKV"
+        }
+      ]
+    },
+    "concepts": [
+      "거",
+      "곁",
+      "때문",
+      "라고",
+      "말",
+      "일",
+      "친구",
+      "혼자"
+    ],
+    "domain": "good"
+  },
+  {
+    "question": {
+      "text": "좋은 일과 나쁜 일 사이의 균형이 중요할까?",
+      "tokens": [
+        {
+          "text": "좋",
+          "lemma": "좋",
+          "pos": "VA"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "ETM"
+        },
+        {
+          "text": "일",
+          "lemma": "일",
+          "pos": "NNG"
+        },
+        {
+          "text": "과",
+          "lemma": "과",
+          "pos": "JC"
+        },
+        {
+          "text": "나쁘",
+          "lemma": "나쁘",
+          "pos": "VA"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "일",
+          "lemma": "일",
+          "pos": "NNB"
+        },
+        {
+          "text": "사이",
+          "lemma": "사이",
+          "pos": "NNG"
+        },
+        {
+          "text": "의",
+          "lemma": "의",
+          "pos": "JKG"
+        },
+        {
+          "text": "균형",
+          "lemma": "균형",
+          "pos": "NNG"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "JKS"
+        },
+        {
+          "text": "중요",
+          "lemma": "중요",
+          "pos": "XR"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSA"
+        },
+        {
+          "text": "ㄹ까",
+          "lemma": "ㄹ까",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "것",
+        "균형",
+        "사이",
+        "일",
+        "집착"
+      ],
+      "domain": "good"
+    },
+    "answer": {
+      "text": "응, 너무 좋은 일만 바라는 것도, 너무 나쁜 일에만 집착하는 것도 좋지 않아.",
+      "tokens": [
+        {
+          "text": "응",
+          "lemma": "응",
+          "pos": "IC"
+        },
+        {
+          "text": "너무",
+          "lemma": "너무",
+          "pos": "MAG"
+        },
+        {
+          "text": "좋",
+          "lemma": "좋",
+          "pos": "VA"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "ETM"
+        },
+        {
+          "text": "일",
+          "lemma": "일",
+          "pos": "NNB"
+        },
+        {
+          "text": "만",
+          "lemma": "만",
+          "pos": "JX"
+        },
+        {
+          "text": "바라",
+          "lemma": "바라",
+          "pos": "VV"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "ETM"
+        },
+        {
+          "text": "것",
+          "lemma": "것",
+          "pos": "NNB"
+        },
+        {
+          "text": "도",
+          "lemma": "도",
+          "pos": "JX"
+        },
+        {
+          "text": "너무",
+          "lemma": "너무",
+          "pos": "MAG"
+        },
+        {
+          "text": "나쁘",
+          "lemma": "나쁘",
+          "pos": "VA"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "일",
+          "lemma": "일",
+          "pos": "NNG"
+        },
+        {
+          "text": "에",
+          "lemma": "에",
+          "pos": "JKB"
+        },
+        {
+          "text": "만",
+          "lemma": "만",
+          "pos": "JX"
+        },
+        {
+          "text": "집착",
+          "lemma": "집착",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "ETM"
+        },
+        {
+          "text": "것",
+          "lemma": "것",
+          "pos": "NNB"
+        },
+        {
+          "text": "도",
+          "lemma": "도",
+          "pos": "JX"
+        },
+        {
+          "text": "좋",
+          "lemma": "좋",
+          "pos": "VA"
+        },
+        {
+          "text": "지",
+          "lemma": "지",
+          "pos": "EC"
+        },
+        {
+          "text": "않",
+          "lemma": "않",
+          "pos": "VX"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "것",
+      "균형",
+      "사이",
+      "일",
+      "집착"
+    ],
+    "domain": "good"
+  },
+  {
+    "question": {
+      "text": "나쁜 일이 오히려 기회가 될 수도 있을까?",
+      "tokens": [
+        {
+          "text": "나쁘",
+          "lemma": "나쁘",
+          "pos": "VA"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "일",
+          "lemma": "일",
+          "pos": "NNG"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "JKS"
+        },
+        {
+          "text": "오히려",
+          "lemma": "오히려",
+          "pos": "MAJ"
+        },
+        {
+          "text": "기회",
+          "lemma": "기회",
+          "pos": "NNG"
+        },
+        {
+          "text": "가",
+          "lemma": "가",
+          "pos": "JKS"
+        },
+        {
+          "text": "되",
+          "lemma": "되",
+          "pos": "VV"
+        },
+        {
+          "text": "ㄹ",
+          "lemma": "ㄹ",
+          "pos": "ETM"
+        },
+        {
+          "text": "수",
+          "lemma": "수",
+          "pos": "NNB"
+        },
+        {
+          "text": "도",
+          "lemma": "도",
+          "pos": "JX"
+        },
+        {
+          "text": "있",
+          "lemma": "있",
+          "pos": "VX"
+        },
+        {
+          "text": "을까",
+          "lemma": "을까",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "기회",
+        "길",
+        "물론",
+        "성장",
+        "수",
+        "일"
+      ],
+      "domain": "good"
+    },
+    "answer": {
+      "text": "물론이지! 나쁜 일을 통해 새로운 길을 찾거나 더 큰 성장을 할 수도 있어.",
+      "tokens": [
+        {
+          "text": "물론",
+          "lemma": "물론",
+          "pos": "NNG"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "VCP"
+        },
+        {
+          "text": "지",
+          "lemma": "지",
+          "pos": "EF"
+        },
+        {
+          "text": "나쁘",
+          "lemma": "나쁘",
+          "pos": "VA"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "일",
+          "lemma": "일",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "통하",
+          "lemma": "통하",
+          "pos": "VV"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EC"
+        },
+        {
+          "text": "새롭",
+          "lemma": "새롭",
+          "pos": "VA"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "길",
+          "lemma": "길",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "찾",
+          "lemma": "찾",
+          "pos": "VV"
+        },
+        {
+          "text": "거나",
+          "lemma": "거나",
+          "pos": "EC"
+        },
+        {
+          "text": "더",
+          "lemma": "더",
+          "pos": "MAG"
+        },
+        {
+          "text": "크",
+          "lemma": "크",
+          "pos": "VA"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "성장",
+          "lemma": "성장",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "VV"
+        },
+        {
+          "text": "ㄹ",
+          "lemma": "ㄹ",
+          "pos": "ETM"
+        },
+        {
+          "text": "수",
+          "lemma": "수",
+          "pos": "NNB"
+        },
+        {
+          "text": "도",
+          "lemma": "도",
+          "pos": "JX"
+        },
+        {
+          "text": "있",
+          "lemma": "있",
+          "pos": "VX"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "기회",
+      "길",
+      "물론",
+      "성장",
+      "수",
+      "일"
+    ],
+    "domain": "good"
+  },
+  {
+    "question": {
+      "text": "어떤 좋은 일이 너에게 가장 큰 동기 부여가 돼?",
+      "tokens": [
+        {
+          "text": "어떤",
+          "lemma": "어떤",
+          "pos": "MM"
+        },
+        {
+          "text": "좋",
+          "lemma": "좋",
+          "pos": "VA"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "ETM"
+        },
+        {
+          "text": "일",
+          "lemma": "일",
+          "pos": "NNG"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "JKS"
+        },
+        {
+          "text": "너에게",
+          "lemma": "너에게",
+          "pos": "NNP"
+        },
+        {
+          "text": "가장",
+          "lemma": "가장",
+          "pos": "MAG"
+        },
+        {
+          "text": "크",
+          "lemma": "크",
+          "pos": "VA"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "동기 부여",
+          "lemma": "동기 부여",
+          "pos": "NNP"
+        },
+        {
+          "text": "가",
+          "lemma": "가",
+          "pos": "JKS"
+        },
+        {
+          "text": "되",
+          "lemma": "되",
+          "pos": "VV"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "것",
+        "너에게",
+        "도움",
+        "동기 부여",
+        "때",
+        "사람",
+        "일"
+      ],
+      "domain": "good"
+    },
+    "answer": {
+      "text": "내가 만든 것이 다른 사람에게 도움이 될 때 가장 큰 동기 부여가 돼.",
+      "tokens": [
+        {
+          "text": "내",
+          "lemma": "내",
+          "pos": "NP"
+        },
+        {
+          "text": "가",
+          "lemma": "가",
+          "pos": "JKS"
+        },
+        {
+          "text": "만들",
+          "lemma": "만들",
+          "pos": "VV"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "것",
+          "lemma": "것",
+          "pos": "NNB"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "JKS"
+        },
+        {
+          "text": "다른",
+          "lemma": "다른",
+          "pos": "MM"
+        },
+        {
+          "text": "사람",
+          "lemma": "사람",
+          "pos": "NNG"
+        },
+        {
+          "text": "에게",
+          "lemma": "에게",
+          "pos": "JKB"
+        },
+        {
+          "text": "도움",
+          "lemma": "도움",
+          "pos": "NNG"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "JKS"
+        },
+        {
+          "text": "되",
+          "lemma": "되",
+          "pos": "VV"
+        },
+        {
+          "text": "ㄹ",
+          "lemma": "ㄹ",
+          "pos": "ETM"
+        },
+        {
+          "text": "때",
+          "lemma": "때",
+          "pos": "NNG"
+        },
+        {
+          "text": "가장",
+          "lemma": "가장",
+          "pos": "MAG"
+        },
+        {
+          "text": "크",
+          "lemma": "크",
+          "pos": "VA"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "동기 부여",
+          "lemma": "동기 부여",
+          "pos": "NNP"
+        },
+        {
+          "text": "가",
+          "lemma": "가",
+          "pos": "JKS"
+        },
+        {
+          "text": "되",
+          "lemma": "되",
+          "pos": "VV"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "것",
+      "너에게",
+      "도움",
+      "동기 부여",
+      "때",
+      "사람",
+      "일"
+    ],
+    "domain": "good"
+  },
+  {
+    "question": {
+      "text": "나쁜 일 때문에 포기하고 싶을 때는 없어?",
+      "tokens": [
+        {
+          "text": "나쁘",
+          "lemma": "나쁘",
+          "pos": "VA"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "일",
+          "lemma": "일",
+          "pos": "NNB"
+        },
+        {
+          "text": "때문",
+          "lemma": "때문",
+          "pos": "NNB"
+        },
+        {
+          "text": "에",
+          "lemma": "에",
+          "pos": "JKB"
+        },
+        {
+          "text": "포기",
+          "lemma": "포기",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "고",
+          "lemma": "고",
+          "pos": "EC"
+        },
+        {
+          "text": "싶",
+          "lemma": "싶",
+          "pos": "VX"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "ETM"
+        },
+        {
+          "text": "때",
+          "lemma": "때",
+          "pos": "NNG"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "JX"
+        },
+        {
+          "text": "없",
+          "lemma": "없",
+          "pos": "VA"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "결국",
+        "때",
+        "때문",
+        "마음",
+        "일",
+        "포기"
+      ],
+      "domain": "good"
+    },
+    "answer": {
+      "text": "솔직히 그런 마음이 들 때도 있지만, 결국엔 다시 일어서려고 해.",
+      "tokens": [
+        {
+          "text": "솔직히",
+          "lemma": "솔직히",
+          "pos": "MAG"
+        },
+        {
+          "text": "그런",
+          "lemma": "그런",
+          "pos": "MM"
+        },
+        {
+          "text": "마음",
+          "lemma": "마음",
+          "pos": "NNG"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "JKS"
+        },
+        {
+          "text": "들",
+          "lemma": "들",
+          "pos": "VV"
+        },
+        {
+          "text": "ㄹ",
+          "lemma": "ㄹ",
+          "pos": "ETM"
+        },
+        {
+          "text": "때",
+          "lemma": "때",
+          "pos": "NNG"
+        },
+        {
+          "text": "도",
+          "lemma": "도",
+          "pos": "JX"
+        },
+        {
+          "text": "있",
+          "lemma": "있",
+          "pos": "VV"
+        },
+        {
+          "text": "지만",
+          "lemma": "지만",
+          "pos": "EC"
+        },
+        {
+          "text": "결국",
+          "lemma": "결국",
+          "pos": "NNG"
+        },
+        {
+          "text": "에",
+          "lemma": "에",
+          "pos": "JKB"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "JX"
+        },
+        {
+          "text": "다시",
+          "lemma": "다시",
+          "pos": "MAG"
+        },
+        {
+          "text": "일어서",
+          "lemma": "일어서",
+          "pos": "VV"
+        },
+        {
+          "text": "려고",
+          "lemma": "려고",
+          "pos": "EC"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "VX"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "결국",
+      "때",
+      "때문",
+      "마음",
+      "일",
+      "포기"
+    ],
+    "domain": "good"
+  },
+  {
+    "question": {
+      "text": "좋은 일은 어떻게 만들어가는 거라고 생각해?",
+      "tokens": [
+        {
+          "text": "좋",
+          "lemma": "좋",
+          "pos": "VA"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "ETM"
+        },
+        {
+          "text": "일",
+          "lemma": "일",
+          "pos": "NNB"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "JX"
+        },
+        {
+          "text": "어떻",
+          "lemma": "어떻",
+          "pos": "VA"
+        },
+        {
+          "text": "게",
+          "lemma": "게",
+          "pos": "EC"
+        },
+        {
+          "text": "만들",
+          "lemma": "만들",
+          "pos": "VV"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EC"
+        },
+        {
+          "text": "가",
+          "lemma": "가",
+          "pos": "VX"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "ETM"
+        },
+        {
+          "text": "걸",
+          "lemma": "걸",
+          "pos": "VV"
+        },
+        {
+          "text": "라고",
+          "lemma": "라고",
+          "pos": "EC"
+        },
+        {
+          "text": "생각",
+          "lemma": "생각",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "관계",
+        "긍정",
+        "노력",
+        "사람",
+        "생각",
+        "속",
+        "일"
+      ],
+      "domain": "good"
+    },
+    "answer": {
+      "text": "긍정적인 생각과 꾸준한 노력, 그리고 사람들과의 좋은 관계 속에서 만들어지는 거라고 생각해.",
+      "tokens": [
+        {
+          "text": "긍정",
+          "lemma": "긍정",
+          "pos": "NNG"
+        },
+        {
+          "text": "적",
+          "lemma": "적",
+          "pos": "XSN"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "VCP"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "생각",
+          "lemma": "생각",
+          "pos": "NNG"
+        },
+        {
+          "text": "과",
+          "lemma": "과",
+          "pos": "JC"
+        },
+        {
+          "text": "꾸준",
+          "lemma": "꾸준",
+          "pos": "XR"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSA"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "노력",
+          "lemma": "노력",
+          "pos": "NNG"
+        },
+        {
+          "text": "그리고",
+          "lemma": "그리고",
+          "pos": "MAJ"
+        },
+        {
+          "text": "사람",
+          "lemma": "사람",
+          "pos": "NNG"
+        },
+        {
+          "text": "들",
+          "lemma": "들",
+          "pos": "XSN"
+        },
+        {
+          "text": "과",
+          "lemma": "과",
+          "pos": "JKB"
+        },
+        {
+          "text": "의",
+          "lemma": "의",
+          "pos": "JKG"
+        },
+        {
+          "text": "좋",
+          "lemma": "좋",
+          "pos": "VA"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "ETM"
+        },
+        {
+          "text": "관계",
+          "lemma": "관계",
+          "pos": "NNG"
+        },
+        {
+          "text": "속",
+          "lemma": "속",
+          "pos": "NNG"
+        },
+        {
+          "text": "에서",
+          "lemma": "에서",
+          "pos": "JKB"
+        },
+        {
+          "text": "만들",
+          "lemma": "만들",
+          "pos": "VV"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EC"
+        },
+        {
+          "text": "지",
+          "lemma": "지",
+          "pos": "VX"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "ETM"
+        },
+        {
+          "text": "걸",
+          "lemma": "걸",
+          "pos": "VV"
+        },
+        {
+          "text": "라고",
+          "lemma": "라고",
+          "pos": "EC"
+        },
+        {
+          "text": "생각",
+          "lemma": "생각",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "관계",
+      "긍정",
+      "노력",
+      "사람",
+      "생각",
+      "속",
+      "일"
+    ],
+    "domain": "good"
+  },
+  {
+    "question": {
+      "text": "나쁜 일은 왜 우리에게 필요한 걸까?",
+      "tokens": [
+        {
+          "text": "나쁘",
+          "lemma": "나쁘",
+          "pos": "VA"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "일",
+          "lemma": "일",
+          "pos": "NNB"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "JX"
+        },
+        {
+          "text": "왜",
+          "lemma": "왜",
+          "pos": "MAG"
+        },
+        {
+          "text": "우리",
+          "lemma": "우리",
+          "pos": "NP"
+        },
+        {
+          "text": "에게",
+          "lemma": "에게",
+          "pos": "JKB"
+        },
+        {
+          "text": "필요",
+          "lemma": "필요",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "걸",
+          "lemma": "걸",
+          "pos": "VV"
+        },
+        {
+          "text": "ㄹ까",
+          "lemma": "ㄹ까",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "성장",
+        "역할",
+        "일",
+        "필요"
+      ],
+      "domain": "good"
+    },
+    "answer": {
+      "text": "나쁜 일은 우리를 성장시키고, 좋은 일의 소중함을 깨닫게 해주는 역할을 해.",
+      "tokens": [
+        {
+          "text": "나쁘",
+          "lemma": "나쁘",
+          "pos": "VA"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "일",
+          "lemma": "일",
+          "pos": "NNB"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "JX"
+        },
+        {
+          "text": "우리",
+          "lemma": "우리",
+          "pos": "NP"
+        },
+        {
+          "text": "를",
+          "lemma": "를",
+          "pos": "JKO"
+        },
+        {
+          "text": "성장",
+          "lemma": "성장",
+          "pos": "NNG"
+        },
+        {
+          "text": "시키",
+          "lemma": "시키",
+          "pos": "XSV"
+        },
+        {
+          "text": "고",
+          "lemma": "고",
+          "pos": "EC"
+        },
+        {
+          "text": "좋",
+          "lemma": "좋",
+          "pos": "VA"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "ETM"
+        },
+        {
+          "text": "일",
+          "lemma": "일",
+          "pos": "NNG"
+        },
+        {
+          "text": "의",
+          "lemma": "의",
+          "pos": "JKG"
+        },
+        {
+          "text": "소중",
+          "lemma": "소중",
+          "pos": "XR"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSA"
+        },
+        {
+          "text": "ㅁ",
+          "lemma": "ㅁ",
+          "pos": "ETN"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "깨닫",
+          "lemma": "깨닫",
+          "pos": "VV"
+        },
+        {
+          "text": "게",
+          "lemma": "게",
+          "pos": "EC"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "VV"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EC"
+        },
+        {
+          "text": "주",
+          "lemma": "주",
+          "pos": "VX"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "ETM"
+        },
+        {
+          "text": "역할",
+          "lemma": "역할",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "VX"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "성장",
+      "역할",
+      "일",
+      "필요"
+    ],
+    "domain": "good"
+  },
+  {
+    "question": {
+      "text": "삶에 좋은 일만 가득하다면 어떨 것 같아?",
+      "tokens": [
+        {
+          "text": "삶",
+          "lemma": "삶",
+          "pos": "NNG"
+        },
+        {
+          "text": "에",
+          "lemma": "에",
+          "pos": "JKB"
+        },
+        {
+          "text": "좋",
+          "lemma": "좋",
+          "pos": "VA"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "ETM"
+        },
+        {
+          "text": "일",
+          "lemma": "일",
+          "pos": "NNB"
+        },
+        {
+          "text": "만",
+          "lemma": "만",
+          "pos": "JX"
+        },
+        {
+          "text": "가득",
+          "lemma": "가득",
+          "pos": "MAG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "다면",
+          "lemma": "다면",
+          "pos": "EC"
+        },
+        {
+          "text": "어떻",
+          "lemma": "어떻",
+          "pos": "VA"
+        },
+        {
+          "text": "ㄹ",
+          "lemma": "ㄹ",
+          "pos": "ETM"
+        },
+        {
+          "text": "것",
+          "lemma": "것",
+          "pos": "NNB"
+        },
+        {
+          "text": "같",
+          "lemma": "같",
+          "pos": "VA"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "것",
+        "발전",
+        "삶",
+        "일",
+        "처음"
+      ],
+      "domain": "good"
+    },
+    "answer": {
+      "text": "처음엔 좋겠지만, 아마 지루하고 발전이 없을 것 같아.",
+      "tokens": [
+        {
+          "text": "처음",
+          "lemma": "처음",
+          "pos": "NNG"
+        },
+        {
+          "text": "에",
+          "lemma": "에",
+          "pos": "JKB"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "JX"
+        },
+        {
+          "text": "좋",
+          "lemma": "좋",
+          "pos": "VA"
+        },
+        {
+          "text": "겠",
+          "lemma": "겠",
+          "pos": "EP"
+        },
+        {
+          "text": "지만",
+          "lemma": "지만",
+          "pos": "EC"
+        },
+        {
+          "text": "아마",
+          "lemma": "아마",
+          "pos": "MAG"
+        },
+        {
+          "text": "지루",
+          "lemma": "지루",
+          "pos": "XR"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSA"
+        },
+        {
+          "text": "고",
+          "lemma": "고",
+          "pos": "EC"
+        },
+        {
+          "text": "발전",
+          "lemma": "발전",
+          "pos": "NNG"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "JKS"
+        },
+        {
+          "text": "없",
+          "lemma": "없",
+          "pos": "VA"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "ETM"
+        },
+        {
+          "text": "것",
+          "lemma": "것",
+          "pos": "NNB"
+        },
+        {
+          "text": "같",
+          "lemma": "같",
+          "pos": "VA"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "것",
+      "발전",
+      "삶",
+      "일",
+      "처음"
+    ],
+    "domain": "good"
+  },
+  {
+    "question": {
+      "text": "나쁜 일이 닥쳤을 때 나 자신을 믿는 것이 중요할까?",
+      "tokens": [
+        {
+          "text": "나쁘",
+          "lemma": "나쁘",
+          "pos": "VA"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "일",
+          "lemma": "일",
+          "pos": "NNG"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "JKS"
+        },
+        {
+          "text": "닥치",
+          "lemma": "닥치",
+          "pos": "VV"
+        },
+        {
+          "text": "었",
+          "lemma": "었",
+          "pos": "EP"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "ETM"
+        },
+        {
+          "text": "때",
+          "lemma": "때",
+          "pos": "NNG"
+        },
+        {
+          "text": "나",
+          "lemma": "나",
+          "pos": "NP"
+        },
+        {
+          "text": "자신",
+          "lemma": "자신",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "믿",
+          "lemma": "믿",
+          "pos": "VV"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "ETM"
+        },
+        {
+          "text": "것",
+          "lemma": "것",
+          "pos": "NNB"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "JKS"
+        },
+        {
+          "text": "중요",
+          "lemma": "중요",
+          "pos": "XR"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSA"
+        },
+        {
+          "text": "ㄹ까",
+          "lemma": "ㄹ까",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "것",
+        "때",
+        "믿음",
+        "수",
+        "어려움",
+        "일",
+        "자신"
+      ],
+      "domain": "good"
+    },
+    "answer": {
+      "text": "그럼! 자신에 대한 믿음이 있어야 어떤 어려움도 헤쳐나갈 수 있어.",
+      "tokens": [
+        {
+          "text": "그럼",
+          "lemma": "그럼",
+          "pos": "IC"
+        },
+        {
+          "text": "자신",
+          "lemma": "자신",
+          "pos": "NNG"
+        },
+        {
+          "text": "에",
+          "lemma": "에",
+          "pos": "JKB"
+        },
+        {
+          "text": "대하",
+          "lemma": "대하",
+          "pos": "VV"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "믿음",
+          "lemma": "믿음",
+          "pos": "NNG"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "JKS"
+        },
+        {
+          "text": "있",
+          "lemma": "있",
+          "pos": "VV"
+        },
+        {
+          "text": "어야",
+          "lemma": "어야",
+          "pos": "EC"
+        },
+        {
+          "text": "어떤",
+          "lemma": "어떤",
+          "pos": "MM"
+        },
+        {
+          "text": "어려움",
+          "lemma": "어려움",
+          "pos": "NNG"
+        },
+        {
+          "text": "도",
+          "lemma": "도",
+          "pos": "JX"
+        },
+        {
+          "text": "헤치",
+          "lemma": "헤치",
+          "pos": "VV"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EC"
+        },
+        {
+          "text": "나가",
+          "lemma": "나가",
+          "pos": "VX"
+        },
+        {
+          "text": "ㄹ",
+          "lemma": "ㄹ",
+          "pos": "ETM"
+        },
+        {
+          "text": "수",
+          "lemma": "수",
+          "pos": "NNB"
+        },
+        {
+          "text": "있",
+          "lemma": "있",
+          "pos": "VX"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "것",
+      "때",
+      "믿음",
+      "수",
+      "어려움",
+      "일",
+      "자신"
+    ],
+    "domain": "good"
+  },
+  {
+    "question": {
+      "text": "좋은 일이 생겼을 때 표현하는 나만의 방식은?",
+      "tokens": [
+        {
+          "text": "좋",
+          "lemma": "좋",
+          "pos": "VA"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "ETM"
+        },
+        {
+          "text": "일",
+          "lemma": "일",
+          "pos": "NNG"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "JKS"
+        },
+        {
+          "text": "생기",
+          "lemma": "생기",
+          "pos": "VV"
+        },
+        {
+          "text": "었",
+          "lemma": "었",
+          "pos": "EP"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "ETM"
+        },
+        {
+          "text": "때",
+          "lemma": "때",
+          "pos": "NNG"
+        },
+        {
+          "text": "표현",
+          "lemma": "표현",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "ETM"
+        },
+        {
+          "text": "나",
+          "lemma": "나",
+          "pos": "NP"
+        },
+        {
+          "text": "만",
+          "lemma": "만",
+          "pos": "JX"
+        },
+        {
+          "text": "의",
+          "lemma": "의",
+          "pos": "JKG"
+        },
+        {
+          "text": "방식",
+          "lemma": "방식",
+          "pos": "NNG"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "JX"
+        }
+      ],
+      "concepts": [
+        "간식",
+        "때",
+        "라고",
+        "방식",
+        "일",
+        "축하",
+        "표현"
+      ],
+      "domain": "good"
+    },
+    "answer": {
+      "text": "작게 야호!라고 외치거나, 좋아하는 간식을 먹으면서 축하해.",
+      "tokens": [
+        {
+          "text": "작",
+          "lemma": "작",
+          "pos": "VA"
+        },
+        {
+          "text": "게",
+          "lemma": "게",
+          "pos": "EC"
+        },
+        {
+          "text": "야호",
+          "lemma": "야호",
+          "pos": "IC"
+        },
+        {
+          "text": "라고",
+          "lemma": "라고",
+          "pos": "NNP"
+        },
+        {
+          "text": "외치",
+          "lemma": "외치",
+          "pos": "VV"
+        },
+        {
+          "text": "거나",
+          "lemma": "거나",
+          "pos": "EC"
+        },
+        {
+          "text": "좋아하",
+          "lemma": "좋아하",
+          "pos": "VV"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "ETM"
+        },
+        {
+          "text": "간식",
+          "lemma": "간식",
+          "pos": "NNP"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "먹",
+          "lemma": "먹",
+          "pos": "VV"
+        },
+        {
+          "text": "으면서",
+          "lemma": "으면서",
+          "pos": "EC"
+        },
+        {
+          "text": "축하",
+          "lemma": "축하",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "간식",
+      "때",
+      "라고",
+      "방식",
+      "일",
+      "축하",
+      "표현"
+    ],
+    "domain": "good"
+  },
+  {
+    "question": {
+      "text": "나쁜 일로부터 배우는 교훈은?",
+      "tokens": [
+        {
+          "text": "나쁘",
+          "lemma": "나쁘",
+          "pos": "VA"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "일",
+          "lemma": "일",
+          "pos": "NNG"
+        },
+        {
+          "text": "로부터",
+          "lemma": "로부터",
+          "pos": "JKB"
+        },
+        {
+          "text": "배우",
+          "lemma": "배우",
+          "pos": "VV"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "ETM"
+        },
+        {
+          "text": "교훈",
+          "lemma": "교훈",
+          "pos": "NNP"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "JX"
+        }
+      ],
+      "concepts": [
+        "교훈",
+        "법",
+        "이해",
+        "일",
+        "자신",
+        "좌절"
+      ],
+      "domain": "good"
+    },
+    "answer": {
+      "text": "좌절하지 않는 법, 다시 일어서는 법, 그리고 나 자신을 더 깊이 이해하는 법을 배워.",
+      "tokens": [
+        {
+          "text": "좌절",
+          "lemma": "좌절",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "지",
+          "lemma": "지",
+          "pos": "EC"
+        },
+        {
+          "text": "않",
+          "lemma": "않",
+          "pos": "VX"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "ETM"
+        },
+        {
+          "text": "법",
+          "lemma": "법",
+          "pos": "NNG"
+        },
+        {
+          "text": "다시",
+          "lemma": "다시",
+          "pos": "MAG"
+        },
+        {
+          "text": "일어서",
+          "lemma": "일어서",
+          "pos": "VV"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "ETM"
+        },
+        {
+          "text": "법",
+          "lemma": "법",
+          "pos": "NNG"
+        },
+        {
+          "text": "그리고",
+          "lemma": "그리고",
+          "pos": "MAJ"
+        },
+        {
+          "text": "나",
+          "lemma": "나",
+          "pos": "NP"
+        },
+        {
+          "text": "자신",
+          "lemma": "자신",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "더",
+          "lemma": "더",
+          "pos": "MAG"
+        },
+        {
+          "text": "깊이",
+          "lemma": "깊이",
+          "pos": "MAG"
+        },
+        {
+          "text": "이해",
+          "lemma": "이해",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "ETM"
+        },
+        {
+          "text": "법",
+          "lemma": "법",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "배우",
+          "lemma": "배우",
+          "pos": "VV"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "교훈",
+      "법",
+      "이해",
+      "일",
+      "자신",
+      "좌절"
+    ],
+    "domain": "good"
+  },
+  {
+    "question": {
+      "text": "기대하지 않았던 좋은 일이 생겼을 때 어때?",
+      "tokens": [
+        {
+          "text": "기대",
+          "lemma": "기대",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "지",
+          "lemma": "지",
+          "pos": "EC"
+        },
+        {
+          "text": "않",
+          "lemma": "않",
+          "pos": "VX"
+        },
+        {
+          "text": "았",
+          "lemma": "았",
+          "pos": "EP"
+        },
+        {
+          "text": "던",
+          "lemma": "던",
+          "pos": "ETM"
+        },
+        {
+          "text": "좋",
+          "lemma": "좋",
+          "pos": "VA"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "ETM"
+        },
+        {
+          "text": "일",
+          "lemma": "일",
+          "pos": "NNG"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "JKS"
+        },
+        {
+          "text": "생기",
+          "lemma": "생기",
+          "pos": "VV"
+        },
+        {
+          "text": "었",
+          "lemma": "었",
+          "pos": "EP"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "ETM"
+        },
+        {
+          "text": "때",
+          "lemma": "때",
+          "pos": "NNG"
+        },
+        {
+          "text": "어떻",
+          "lemma": "어떻",
+          "pos": "VA"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "것",
+        "기대",
+        "기쁨",
+        "때",
+        "일",
+        "행복"
+      ],
+      "domain": "good"
+    },
+    "answer": {
+      "text": "더 큰 기쁨과 행복을 느끼게 되는 것 같아.",
+      "tokens": [
+        {
+          "text": "더",
+          "lemma": "더",
+          "pos": "MAG"
+        },
+        {
+          "text": "크",
+          "lemma": "크",
+          "pos": "VA"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "기쁨",
+          "lemma": "기쁨",
+          "pos": "NNG"
+        },
+        {
+          "text": "과",
+          "lemma": "과",
+          "pos": "JC"
+        },
+        {
+          "text": "행복",
+          "lemma": "행복",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "느끼",
+          "lemma": "느끼",
+          "pos": "VV"
+        },
+        {
+          "text": "게",
+          "lemma": "게",
+          "pos": "EC"
+        },
+        {
+          "text": "되",
+          "lemma": "되",
+          "pos": "VV"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "ETM"
+        },
+        {
+          "text": "것",
+          "lemma": "것",
+          "pos": "NNB"
+        },
+        {
+          "text": "같",
+          "lemma": "같",
+          "pos": "VA"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "것",
+      "기대",
+      "기쁨",
+      "때",
+      "일",
+      "행복"
+    ],
+    "domain": "good"
+  },
+  {
+    "question": {
+      "text": "가장 극복하고 싶은 나쁜 습관이 있다면?",
+      "tokens": [
+        {
+          "text": "가장",
+          "lemma": "가장",
+          "pos": "MAG"
+        },
+        {
+          "text": "극복",
+          "lemma": "극복",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "고",
+          "lemma": "고",
+          "pos": "EC"
+        },
+        {
+          "text": "싶",
+          "lemma": "싶",
+          "pos": "VX"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "ETM"
+        },
+        {
+          "text": "나쁘",
+          "lemma": "나쁘",
+          "pos": "VA"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "습관",
+          "lemma": "습관",
+          "pos": "NNG"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "JKS"
+        },
+        {
+          "text": "있",
+          "lemma": "있",
+          "pos": "VX"
+        },
+        {
+          "text": "다면",
+          "lemma": "다면",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "것",
+        "극복",
+        "수",
+        "습관",
+        "일"
+      ],
+      "domain": "good"
+    },
+    "answer": {
+      "text": "미루는 습관! 이걸 고치면 더 많은 좋은 일을 할 수 있을 것 같아.",
+      "tokens": [
+        {
+          "text": "미루",
+          "lemma": "미루",
+          "pos": "VV"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "ETM"
+        },
+        {
+          "text": "습관",
+          "lemma": "습관",
+          "pos": "NNP"
+        },
+        {
+          "text": "이거",
+          "lemma": "이거",
+          "pos": "NP"
+        },
+        {
+          "text": "ㄹ",
+          "lemma": "ㄹ",
+          "pos": "JKO"
+        },
+        {
+          "text": "고치",
+          "lemma": "고치",
+          "pos": "VV"
+        },
+        {
+          "text": "면",
+          "lemma": "면",
+          "pos": "EC"
+        },
+        {
+          "text": "더",
+          "lemma": "더",
+          "pos": "MAG"
+        },
+        {
+          "text": "많",
+          "lemma": "많",
+          "pos": "VA"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "ETM"
+        },
+        {
+          "text": "좋",
+          "lemma": "좋",
+          "pos": "VA"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "ETM"
+        },
+        {
+          "text": "일",
+          "lemma": "일",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "VV"
+        },
+        {
+          "text": "ㄹ",
+          "lemma": "ㄹ",
+          "pos": "ETM"
+        },
+        {
+          "text": "수",
+          "lemma": "수",
+          "pos": "NNB"
+        },
+        {
+          "text": "있",
+          "lemma": "있",
+          "pos": "VV"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "ETM"
+        },
+        {
+          "text": "것",
+          "lemma": "것",
+          "pos": "NNB"
+        },
+        {
+          "text": "같",
+          "lemma": "같",
+          "pos": "VA"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "것",
+      "극복",
+      "수",
+      "습관",
+      "일"
+    ],
+    "domain": "good"
+  },
+  {
+    "question": {
+      "text": "주변에 좋은 일을 많이 하는 사람이 있어?",
+      "tokens": [
+        {
+          "text": "주변",
+          "lemma": "주변",
+          "pos": "NNG"
+        },
+        {
+          "text": "에",
+          "lemma": "에",
+          "pos": "JKB"
+        },
+        {
+          "text": "좋",
+          "lemma": "좋",
+          "pos": "VA"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "ETM"
+        },
+        {
+          "text": "일",
+          "lemma": "일",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "많이",
+          "lemma": "많이",
+          "pos": "MAG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "VV"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "ETM"
+        },
+        {
+          "text": "사람",
+          "lemma": "사람",
+          "pos": "NNG"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "JKS"
+        },
+        {
+          "text": "있",
+          "lemma": "있",
+          "pos": "VX"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "긍정",
+        "남",
+        "배려",
+        "사람",
+        "에너지",
+        "일",
+        "주변",
+        "친구"
+      ],
+      "domain": "good"
+    },
+    "answer": {
+      "text": "응, 항상 남을 배려하고 긍정적인 에너지를 주는 친구가 있어.",
+      "tokens": [
+        {
+          "text": "응",
+          "lemma": "응",
+          "pos": "IC"
+        },
+        {
+          "text": "항상",
+          "lemma": "항상",
+          "pos": "MAG"
+        },
+        {
+          "text": "남",
+          "lemma": "남",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "배려",
+          "lemma": "배려",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "고",
+          "lemma": "고",
+          "pos": "EC"
+        },
+        {
+          "text": "긍정",
+          "lemma": "긍정",
+          "pos": "NNG"
+        },
+        {
+          "text": "적",
+          "lemma": "적",
+          "pos": "XSN"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "VCP"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "에너지",
+          "lemma": "에너지",
+          "pos": "NNG"
+        },
+        {
+          "text": "를",
+          "lemma": "를",
+          "pos": "JKO"
+        },
+        {
+          "text": "주",
+          "lemma": "주",
+          "pos": "VX"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "ETM"
+        },
+        {
+          "text": "친구",
+          "lemma": "친구",
+          "pos": "NNG"
+        },
+        {
+          "text": "가",
+          "lemma": "가",
+          "pos": "JKS"
+        },
+        {
+          "text": "있",
+          "lemma": "있",
+          "pos": "VX"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "긍정",
+      "남",
+      "배려",
+      "사람",
+      "에너지",
+      "일",
+      "주변",
+      "친구"
+    ],
+    "domain": "good"
+  },
+  {
+    "question": {
+      "text": "나쁜 일에 대한 복수는 좋은 결과를 가져올까?",
+      "tokens": [
+        {
+          "text": "나쁘",
+          "lemma": "나쁘",
+          "pos": "VA"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "일",
+          "lemma": "일",
+          "pos": "NNG"
+        },
+        {
+          "text": "에",
+          "lemma": "에",
+          "pos": "JKB"
+        },
+        {
+          "text": "대하",
+          "lemma": "대하",
+          "pos": "VV"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "복수",
+          "lemma": "복수",
+          "pos": "NNP"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "JX"
+        },
+        {
+          "text": "좋",
+          "lemma": "좋",
+          "pos": "VA"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "ETM"
+        },
+        {
+          "text": "결과",
+          "lemma": "결과",
+          "pos": "NNG"
+        },
+        {
+          "text": "를",
+          "lemma": "를",
+          "pos": "JKO"
+        },
+        {
+          "text": "가져오",
+          "lemma": "가져오",
+          "pos": "VV"
+        },
+        {
+          "text": "ㄹ까",
+          "lemma": "ㄹ까",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "결과",
+        "복수",
+        "뿐",
+        "생각",
+        "일"
+      ],
+      "domain": "good"
+    },
+    "answer": {
+      "text": "아니, 복수는 또 다른 나쁜 결과를 낳을 뿐이라고 생각해.",
+      "tokens": [
+        {
+          "text": "아니",
+          "lemma": "아니",
+          "pos": "IC"
+        },
+        {
+          "text": "복수",
+          "lemma": "복수",
+          "pos": "NNP"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "JX"
+        },
+        {
+          "text": "또",
+          "lemma": "또",
+          "pos": "MAJ"
+        },
+        {
+          "text": "다른",
+          "lemma": "다른",
+          "pos": "MM"
+        },
+        {
+          "text": "나쁘",
+          "lemma": "나쁘",
+          "pos": "VA"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "결과",
+          "lemma": "결과",
+          "pos": "NNG"
+        },
+        {
+          "text": "를",
+          "lemma": "를",
+          "pos": "JKO"
+        },
+        {
+          "text": "낳",
+          "lemma": "낳",
+          "pos": "VV"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "ETM"
+        },
+        {
+          "text": "뿐",
+          "lemma": "뿐",
+          "pos": "NNB"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "VCP"
+        },
+        {
+          "text": "라고",
+          "lemma": "라고",
+          "pos": "EC"
+        },
+        {
+          "text": "생각",
+          "lemma": "생각",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "결과",
+      "복수",
+      "뿐",
+      "생각",
+      "일"
+    ],
+    "domain": "good"
+  },
+  {
+    "question": {
+      "text": "좋은 일만 가득한 세상을 꿈꿔본 적 있어?",
+      "tokens": [
+        {
+          "text": "좋",
+          "lemma": "좋",
+          "pos": "VA"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "ETM"
+        },
+        {
+          "text": "일",
+          "lemma": "일",
+          "pos": "NNB"
+        },
+        {
+          "text": "만",
+          "lemma": "만",
+          "pos": "JX"
+        },
+        {
+          "text": "가득",
+          "lemma": "가득",
+          "pos": "MAG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "세상",
+          "lemma": "세상",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "꿈",
+          "lemma": "꿈",
+          "pos": "NNG"
+        },
+        {
+          "text": "꾸",
+          "lemma": "꾸",
+          "pos": "VV"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EC"
+        },
+        {
+          "text": "보",
+          "lemma": "보",
+          "pos": "VX"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "적",
+          "lemma": "적",
+          "pos": "NNB"
+        },
+        {
+          "text": "있",
+          "lemma": "있",
+          "pos": "VX"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "꿈",
+        "모두",
+        "물론",
+        "세상",
+        "일",
+        "적",
+        "평화",
+        "행복"
+      ],
+      "domain": "good"
+    },
+    "answer": {
+      "text": "물론이지! 모두가 행복하고 평화로운 세상을 꿈꿔봐.",
+      "tokens": [
+        {
+          "text": "물론",
+          "lemma": "물론",
+          "pos": "NNG"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "VCP"
+        },
+        {
+          "text": "지",
+          "lemma": "지",
+          "pos": "EF"
+        },
+        {
+          "text": "모두",
+          "lemma": "모두",
+          "pos": "NNG"
+        },
+        {
+          "text": "가",
+          "lemma": "가",
+          "pos": "JKS"
+        },
+        {
+          "text": "행복",
+          "lemma": "행복",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "고",
+          "lemma": "고",
+          "pos": "EC"
+        },
+        {
+          "text": "평화",
+          "lemma": "평화",
+          "pos": "NNG"
+        },
+        {
+          "text": "롭",
+          "lemma": "롭",
+          "pos": "XSA"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "세상",
+          "lemma": "세상",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "꿈",
+          "lemma": "꿈",
+          "pos": "NNG"
+        },
+        {
+          "text": "꾸",
+          "lemma": "꾸",
+          "pos": "VV"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EC"
+        },
+        {
+          "text": "보",
+          "lemma": "보",
+          "pos": "VX"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "꿈",
+      "모두",
+      "물론",
+      "세상",
+      "일",
+      "적",
+      "평화",
+      "행복"
+    ],
+    "domain": "good"
+  },
+  {
+    "question": {
+      "text": "나쁜 일과 좋은 일에 대해 더 궁금한 건 없어?",
+      "tokens": [
+        {
+          "text": "나쁘",
+          "lemma": "나쁘",
+          "pos": "VA"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "일",
+          "lemma": "일",
+          "pos": "NNG"
+        },
+        {
+          "text": "과",
+          "lemma": "과",
+          "pos": "JC"
+        },
+        {
+          "text": "좋",
+          "lemma": "좋",
+          "pos": "VA"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "ETM"
+        },
+        {
+          "text": "일",
+          "lemma": "일",
+          "pos": "NNG"
+        },
+        {
+          "text": "에",
+          "lemma": "에",
+          "pos": "JKB"
+        },
+        {
+          "text": "대하",
+          "lemma": "대하",
+          "pos": "VV"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EC"
+        },
+        {
+          "text": "더",
+          "lemma": "더",
+          "pos": "MAG"
+        },
+        {
+          "text": "궁금",
+          "lemma": "궁금",
+          "pos": "XR"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSA"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "건",
+          "lemma": "건",
+          "pos": "NNB"
+        },
+        {
+          "text": "없",
+          "lemma": "없",
+          "pos": "VA"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "건",
+        "일"
+      ],
+      "domain": "good"
+    },
+    "answer": {
+      "text": "없어! 충분해!",
+      "tokens": [
+        {
+          "text": "없",
+          "lemma": "없",
+          "pos": "VA"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        },
+        {
+          "text": "충분",
+          "lemma": "충분",
+          "pos": "XR"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSA"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "건",
+      "일"
+    ],
+    "domain": "good"
+  }
+]

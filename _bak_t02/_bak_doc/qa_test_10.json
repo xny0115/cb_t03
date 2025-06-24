@@ -1,0 +1,236 @@
+[
+  {
+    "question": {
+      "text": "인공지능이란 뭐야?",
+      "tokens": [
+        {"text": "인공지능", "lemma": "인공지능", "pos": "NNG"},
+        {"text": "이", "lemma": "이", "pos": "JKS"},
+        {"text": "란", "lemma": "이다", "pos": "JX"},
+        {"text": "뭐야", "lemma": "뭐야", "pos": "NP"}
+      ]
+    },
+    "answer": {
+      "text": "사람처럼 사고하고 학습하는 컴퓨터 시스템이야.",
+      "tokens": [
+        {"text": "사람", "lemma": "사람", "pos": "NNG"},
+        {"text": "처럼", "lemma": "처럼", "pos": "JC"},
+        {"text": "사고", "lemma": "사고", "pos": "NNG"},
+        {"text": "하고", "lemma": "하다", "pos": "VV"},
+        {"text": "학습", "lemma": "학습", "pos": "NNG"},
+        {"text": "하는", "lemma": "하다", "pos": "VV"},
+        {"text": "컴퓨터", "lemma": "컴퓨터", "pos": "NNG"},
+        {"text": "시스템", "lemma": "시스템", "pos": "NNG"},
+        {"text": "이야", "lemma": "이다", "pos": "VCP+EC"}
+      ]
+    },
+    "concepts": ["인공지능", "학습", "컴퓨터"],
+    "domain": "기술"
+  },
+  {
+    "question": {
+      "text": "지구는 왜 둥글어?",
+      "tokens": [
+        {"text": "지구", "lemma": "지구", "pos": "NNG"},
+        {"text": "는", "lemma": "는", "pos": "JX"},
+        {"text": "왜", "lemma": "왜", "pos": "MAG"},
+        {"text": "둥글어", "lemma": "둥글다", "pos": "VA"}
+      ]
+    },
+    "answer": {
+      "text": "중력 때문에 구형을 이루게 돼.",
+      "tokens": [
+        {"text": "중력", "lemma": "중력", "pos": "NNG"},
+        {"text": "때문", "lemma": "때문", "pos": "NNB"},
+        {"text": "에", "lemma": "에", "pos": "JKB"},
+        {"text": "구형", "lemma": "구형", "pos": "NNG"},
+        {"text": "을", "lemma": "을", "pos": "JKO"},
+        {"text": "이루다", "lemma": "이루다", "pos": "VV"},
+        {"text": "게", "lemma": "게", "pos": "ETM"},
+        {"text": "되다", "lemma": "되다", "pos": "VV"}
+      ]
+    },
+    "concepts": ["지구", "중력", "구형"],
+    "domain": "과학"
+  },
+  {
+    "question": {
+      "text": "한국 전쟁은 언제 시작됐어?",
+      "tokens": [
+        {"text": "한국", "lemma": "한국", "pos": "NNG"},
+        {"text": "전쟁", "lemma": "전쟁", "pos": "NNG"},
+        {"text": "은", "lemma": "은", "pos": "JX"},
+        {"text": "언제", "lemma": "언제", "pos": "MAG"},
+        {"text": "시작", "lemma": "시작", "pos": "NNG"},
+        {"text": "됐어", "lemma": "되다", "pos": "VV+EP+EF"}
+      ]
+    },
+    "answer": {
+      "text": "1950년에 발발했어.",
+      "tokens": [
+        {"text": "1950년", "lemma": "1950년", "pos": "NR"},
+        {"text": "에", "lemma": "에", "pos": "JKB"},
+        {"text": "발발하다", "lemma": "발발하다", "pos": "VV"},
+        {"text": "았어", "lemma": "았어", "pos": "EP+EF"}
+      ]
+    },
+    "concepts": ["한국 전쟁", "1950년", "발발"],
+    "domain": "역사"
+  },
+  {
+    "question": {
+      "text": "피카소는 누구야?",
+      "tokens": [
+        {"text": "피카소", "lemma": "피카소", "pos": "NNP"},
+        {"text": "는", "lemma": "는", "pos": "JX"},
+        {"text": "누구", "lemma": "누구", "pos": "NP"},
+        {"text": "야", "lemma": "이다", "pos": "VCP+EF"}
+      ]
+    },
+    "answer": {
+      "text": "스페인의 유명한 화가야.",
+      "tokens": [
+        {"text": "스페인", "lemma": "스페인", "pos": "NNP"},
+        {"text": "의", "lemma": "의", "pos": "JKG"},
+        {"text": "유명하다", "lemma": "유명하다", "pos": "VA"},
+        {"text": "화가", "lemma": "화가", "pos": "NNG"},
+        {"text": "야", "lemma": "이다", "pos": "VCP+EF"}
+      ]
+    },
+    "concepts": ["피카소", "화가", "스페인"],
+    "domain": "예술"
+  },
+  {
+    "question": {
+      "text": "커피는 어떻게 만들어?",
+      "tokens": [
+        {"text": "커피", "lemma": "커피", "pos": "NNG"},
+        {"text": "는", "lemma": "는", "pos": "JX"},
+        {"text": "어떻게", "lemma": "어떻게", "pos": "MAG"},
+        {"text": "만들어", "lemma": "만들다", "pos": "VV+EF"}
+      ]
+    },
+    "answer": {
+      "text": "원두를 갈아서 물에 우려내면 돼.",
+      "tokens": [
+        {"text": "원두", "lemma": "원두", "pos": "NNG"},
+        {"text": "를", "lemma": "를", "pos": "JKO"},
+        {"text": "갈다", "lemma": "갈다", "pos": "VV"},
+        {"text": "아서", "lemma": "아서", "pos": "EC"},
+        {"text": "물", "lemma": "물", "pos": "NNG"},
+        {"text": "에", "lemma": "에", "pos": "JKB"},
+        {"text": "우려내다", "lemma": "우려내다", "pos": "VV"},
+        {"text": "면", "lemma": "면", "pos": "EC"},
+        {"text": "되다", "lemma": "되다", "pos": "VV"}
+      ]
+    },
+    "concepts": ["커피", "원두", "제조"],
+    "domain": "일상"
+  },
+  {
+    "question": {
+      "text": "코딩이 뭐야?",
+      "tokens": [
+        {"text": "코딩", "lemma": "코딩", "pos": "NNG"},
+        {"text": "이", "lemma": "이", "pos": "JKS"},
+        {"text": "뭐야", "lemma": "뭐야", "pos": "NP"}
+      ]
+    },
+    "answer": {
+      "text": "컴퓨터 프로그램을 만드는 과정이야.",
+      "tokens": [
+        {"text": "컴퓨터", "lemma": "컴퓨터", "pos": "NNG"},
+        {"text": "프로그램", "lemma": "프로그램", "pos": "NNG"},
+        {"text": "을", "lemma": "을", "pos": "JKO"},
+        {"text": "만들다", "lemma": "만들다", "pos": "VV"},
+        {"text": "과정", "lemma": "과정", "pos": "NNG"},
+        {"text": "이야", "lemma": "이다", "pos": "VCP+EC"}
+      ]
+    },
+    "concepts": ["코딩", "컴퓨터", "프로그램"],
+    "domain": "기술"
+  },
+  {
+    "question": {
+      "text": "축구는 어떻게 해?",
+      "tokens": [
+        {"text": "축구", "lemma": "축구", "pos": "NNG"},
+        {"text": "는", "lemma": "는", "pos": "JX"},
+        {"text": "어떻게", "lemma": "어떻게", "pos": "MAG"},
+        {"text": "해", "lemma": "하다", "pos": "VV+EF"}
+      ]
+    },
+    "answer": {
+      "text": "두 팀이 공을 차서 골문에 넣는 스포츠야.",
+      "tokens": [
+        {"text": "두", "lemma": "두", "pos": "MM"},
+        {"text": "팀", "lemma": "팀", "pos": "NNG"},
+        {"text": "이", "lemma": "이", "pos": "JKS"},
+        {"text": "공", "lemma": "공", "pos": "NNG"},
+        {"text": "을", "lemma": "을", "pos": "JKO"},
+        {"text": "차다", "lemma": "차다", "pos": "VV"},
+        {"text": "서", "lemma": "서", "pos": "EC"},
+        {"text": "골문", "lemma": "골문", "pos": "NNG"},
+        {"text": "에", "lemma": "에", "pos": "JKB"},
+        {"text": "넣다", "lemma": "넣다", "pos": "VV"},
+        {"text": "는", "lemma": "는", "pos": "ETM"},
+        {"text": "스포츠", "lemma": "스포츠", "pos": "NNG"},
+        {"text": "야", "lemma": "이다", "pos": "VCP+EF"}
+      ]
+    },
+    "concepts": ["축구", "스포츠", "골"],
+    "domain": "스포츠"
+  },
+  {
+    "question": {
+      "text": "영화 추천해줘.",
+      "tokens": [
+        {"text": "영화", "lemma": "영화", "pos": "NNG"},
+        {"text": "추천", "lemma": "추천", "pos": "NNG"},
+        {"text": "해", "lemma": "하다", "pos": "VV+EF"},
+        {"text": "줘", "lemma": "주다", "pos": "VX+EC"}
+      ]
+    },
+    "answer": {
+      "text": "최근 개봉한 액션 영화가 인기가 많아.",
+      "tokens": [
+        {"text": "최근", "lemma": "최근", "pos": "NNG"},
+        {"text": "개봉", "lemma": "개봉", "pos": "NNG"},
+        {"text": "한", "lemma": "하나", "pos": "MDT"},
+        {"text": "액션", "lemma": "액션", "pos": "NNG"},
+        {"text": "영화", "lemma": "영화", "pos": "NNG"},
+        {"text": "가", "lemma": "가", "pos": "JKS"},
+        {"text": "인기", "lemma": "인기", "pos": "NNG"},
+        {"text": "가", "lemma": "가", "pos": "JKS"},
+        {"text": "많다", "lemma": "많다", "pos": "VA"}
+      ]
+    },
+    "concepts": ["영화", "액션", "추천"],
+    "domain": "문화"
+  },
+  {
+    "question": {
+      "text": "바다 생물은 뭐가 있어?",
+      "tokens": [
+        {"text": "바다", "lemma": "바다", "pos": "NNG"},
+        {"text": "생물", "lemma": "생물", "pos": "NNG"},
+        {"text": "은", "lemma": "은", "pos": "JX"},
+        {"text": "뭐", "lemma": "뭐", "pos": "NP"},
+        {"text": "가", "lemma": "가", "pos": "JKS"},
+        {"text": "있다", "lemma": "있다", "pos": "VV+EF"}
+      ]
+    },
+    "answer": {
+      "text": "고래, 상어, 문어 등이 있어.",
+      "tokens": [
+        {"text": "고래", "lemma": "고래", "pos": "NNG"},
+        {"text": "상어", "lemma": "상어", "pos": "NNG"},
+        {"text": "문어", "lemma": "문어", "pos": "NNG"},
+        {"text": "등", "lemma": "등", "pos": "NNB"},
+        {"text": "이", "lemma": "이", "pos": "JKS"},
+        {"text": "있다", "lemma": "있다", "pos": "VV+EF"}
+      ]
+    },
+    "concepts": ["바다 생물", "고래", "상어", "문어"],
+    "domain": "자연"
+  }
+]

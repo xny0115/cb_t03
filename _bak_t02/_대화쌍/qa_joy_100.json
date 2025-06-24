@@ -1,0 +1,7920 @@
+[
+  {
+    "question": {
+      "text": "오늘 기분 어때?",
+      "tokens": [
+        {
+          "text": "오늘",
+          "lemma": "오늘",
+          "pos": "NNG"
+        },
+        {
+          "text": "기분",
+          "lemma": "기분",
+          "pos": "NNG"
+        },
+        {
+          "text": "어떻",
+          "lemma": "어떻",
+          "pos": "VA"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "기분",
+        "에너지",
+        "오늘"
+      ],
+      "domain": "joy"
+    },
+    "answer": {
+      "text": "오늘 기분 너무 좋아! 에너지가 넘쳐!",
+      "tokens": [
+        {
+          "text": "오늘",
+          "lemma": "오늘",
+          "pos": "NNG"
+        },
+        {
+          "text": "기분",
+          "lemma": "기분",
+          "pos": "NNG"
+        },
+        {
+          "text": "너무",
+          "lemma": "너무",
+          "pos": "MAG"
+        },
+        {
+          "text": "좋",
+          "lemma": "좋",
+          "pos": "VA"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EF"
+        },
+        {
+          "text": "에너지",
+          "lemma": "에너지",
+          "pos": "NNG"
+        },
+        {
+          "text": "가",
+          "lemma": "가",
+          "pos": "JKS"
+        },
+        {
+          "text": "넘치",
+          "lemma": "넘치",
+          "pos": "VV"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "기분",
+      "에너지",
+      "오늘"
+    ],
+    "domain": "joy"
+  },
+  {
+    "question": {
+      "text": "뭐가 그렇게 즐거워?",
+      "tokens": [
+        {
+          "text": "뭐",
+          "lemma": "뭐",
+          "pos": "NP"
+        },
+        {
+          "text": "가",
+          "lemma": "가",
+          "pos": "JKS"
+        },
+        {
+          "text": "그렇",
+          "lemma": "그렇",
+          "pos": "VA"
+        },
+        {
+          "text": "게",
+          "lemma": "게",
+          "pos": "EC"
+        },
+        {
+          "text": "즐겁",
+          "lemma": "즐겁",
+          "pos": "VA"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "수다",
+        "오랜만",
+        "친구"
+      ],
+      "domain": "joy"
+    },
+    "answer": {
+      "text": "오랜만에 친구들 만나서 수다 떨었더니 너무 즐거웠어!",
+      "tokens": [
+        {
+          "text": "오랜만",
+          "lemma": "오랜만",
+          "pos": "NNG"
+        },
+        {
+          "text": "에",
+          "lemma": "에",
+          "pos": "JKB"
+        },
+        {
+          "text": "친구",
+          "lemma": "친구",
+          "pos": "NNG"
+        },
+        {
+          "text": "들",
+          "lemma": "들",
+          "pos": "XSN"
+        },
+        {
+          "text": "만나",
+          "lemma": "만나",
+          "pos": "VV"
+        },
+        {
+          "text": "아서",
+          "lemma": "아서",
+          "pos": "EC"
+        },
+        {
+          "text": "수다",
+          "lemma": "수다",
+          "pos": "NNP"
+        },
+        {
+          "text": "떨",
+          "lemma": "떨",
+          "pos": "VV"
+        },
+        {
+          "text": "었",
+          "lemma": "었",
+          "pos": "EP"
+        },
+        {
+          "text": "더니",
+          "lemma": "더니",
+          "pos": "EC"
+        },
+        {
+          "text": "너무",
+          "lemma": "너무",
+          "pos": "MAG"
+        },
+        {
+          "text": "즐겁",
+          "lemma": "즐겁",
+          "pos": "VA"
+        },
+        {
+          "text": "었",
+          "lemma": "었",
+          "pos": "EP"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "수다",
+      "오랜만",
+      "친구"
+    ],
+    "domain": "joy"
+  },
+  {
+    "question": {
+      "text": "요즘 행복해?",
+      "tokens": [
+        {
+          "text": "요즘",
+          "lemma": "요즘",
+          "pos": "NNG"
+        },
+        {
+          "text": "행복",
+          "lemma": "행복",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "감사",
+        "요즘",
+        "일",
+        "행복"
+      ],
+      "domain": "joy"
+    },
+    "answer": {
+      "text": "응, 요즘 정말 행복해. 작은 일에도 감사함을 느껴.",
+      "tokens": [
+        {
+          "text": "응",
+          "lemma": "응",
+          "pos": "IC"
+        },
+        {
+          "text": "요즘",
+          "lemma": "요즘",
+          "pos": "NNG"
+        },
+        {
+          "text": "정말",
+          "lemma": "정말",
+          "pos": "MAG"
+        },
+        {
+          "text": "행복",
+          "lemma": "행복",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EF"
+        },
+        {
+          "text": "작",
+          "lemma": "작",
+          "pos": "VA"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "ETM"
+        },
+        {
+          "text": "일",
+          "lemma": "일",
+          "pos": "NNG"
+        },
+        {
+          "text": "에",
+          "lemma": "에",
+          "pos": "JKB"
+        },
+        {
+          "text": "도",
+          "lemma": "도",
+          "pos": "JX"
+        },
+        {
+          "text": "감사",
+          "lemma": "감사",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "ㅁ",
+          "lemma": "ㅁ",
+          "pos": "ETN"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "느끼",
+          "lemma": "느끼",
+          "pos": "VV"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "감사",
+      "요즘",
+      "일",
+      "행복"
+    ],
+    "domain": "joy"
+  },
+  {
+    "question": {
+      "text": "가장 행복했던 순간은 언제야?",
+      "tokens": [
+        {
+          "text": "가장",
+          "lemma": "가장",
+          "pos": "MAG"
+        },
+        {
+          "text": "행복",
+          "lemma": "행복",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "았",
+          "lemma": "았",
+          "pos": "EP"
+        },
+        {
+          "text": "던",
+          "lemma": "던",
+          "pos": "ETM"
+        },
+        {
+          "text": "순간",
+          "lemma": "순간",
+          "pos": "NNG"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "JX"
+        },
+        {
+          "text": "언제",
+          "lemma": "언제",
+          "pos": "NP"
+        },
+        {
+          "text": "야",
+          "lemma": "야",
+          "pos": "JKV"
+        }
+      ],
+      "concepts": [
+        "때",
+        "목표",
+        "순간",
+        "오랫동안",
+        "행복"
+      ],
+      "domain": "joy"
+    },
+    "answer": {
+      "text": "오랫동안 바라던 목표를 이뤘을 때가 가장 행복했어.",
+      "tokens": [
+        {
+          "text": "오랫동안",
+          "lemma": "오랫동안",
+          "pos": "NNG"
+        },
+        {
+          "text": "바라",
+          "lemma": "바라",
+          "pos": "VV"
+        },
+        {
+          "text": "던",
+          "lemma": "던",
+          "pos": "ETM"
+        },
+        {
+          "text": "목표",
+          "lemma": "목표",
+          "pos": "NNG"
+        },
+        {
+          "text": "를",
+          "lemma": "를",
+          "pos": "JKO"
+        },
+        {
+          "text": "이루",
+          "lemma": "이루",
+          "pos": "VV"
+        },
+        {
+          "text": "었",
+          "lemma": "었",
+          "pos": "EP"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "ETM"
+        },
+        {
+          "text": "때",
+          "lemma": "때",
+          "pos": "NNG"
+        },
+        {
+          "text": "가",
+          "lemma": "가",
+          "pos": "JKS"
+        },
+        {
+          "text": "가장",
+          "lemma": "가장",
+          "pos": "MAG"
+        },
+        {
+          "text": "행복",
+          "lemma": "행복",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "았",
+          "lemma": "았",
+          "pos": "EP"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "때",
+      "목표",
+      "순간",
+      "오랫동안",
+      "행복"
+    ],
+    "domain": "joy"
+  },
+  {
+    "question": {
+      "text": "어떤 게 널 기쁘게 해?",
+      "tokens": [
+        {
+          "text": "어떤",
+          "lemma": "어떤",
+          "pos": "MM"
+        },
+        {
+          "text": "게",
+          "lemma": "게",
+          "pos": "NNG"
+        },
+        {
+          "text": "너",
+          "lemma": "너",
+          "pos": "NP"
+        },
+        {
+          "text": "ㄹ",
+          "lemma": "ㄹ",
+          "pos": "JKO"
+        },
+        {
+          "text": "기쁘",
+          "lemma": "기쁘",
+          "pos": "VA"
+        },
+        {
+          "text": "게",
+          "lemma": "게",
+          "pos": "EC"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "VX"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "건강",
+        "게",
+        "때",
+        "사람",
+        "사랑",
+        "행복"
+      ],
+      "domain": "joy"
+    },
+    "answer": {
+      "text": "사랑하는 사람들이 건강하고 행복할 때 가장 기뻐.",
+      "tokens": [
+        {
+          "text": "사랑",
+          "lemma": "사랑",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "ETM"
+        },
+        {
+          "text": "사람",
+          "lemma": "사람",
+          "pos": "NNG"
+        },
+        {
+          "text": "들",
+          "lemma": "들",
+          "pos": "XSN"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "JKS"
+        },
+        {
+          "text": "건강",
+          "lemma": "건강",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "고",
+          "lemma": "고",
+          "pos": "EC"
+        },
+        {
+          "text": "행복",
+          "lemma": "행복",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "ㄹ",
+          "lemma": "ㄹ",
+          "pos": "ETM"
+        },
+        {
+          "text": "때",
+          "lemma": "때",
+          "pos": "NNG"
+        },
+        {
+          "text": "가장",
+          "lemma": "가장",
+          "pos": "MAG"
+        },
+        {
+          "text": "기쁘",
+          "lemma": "기쁘",
+          "pos": "VA"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "건강",
+      "게",
+      "때",
+      "사람",
+      "사랑",
+      "행복"
+    ],
+    "domain": "joy"
+  },
+  {
+    "question": {
+      "text": "스트레스 받을 때 어떻게 풀어?",
+      "tokens": [
+        {
+          "text": "스트레스",
+          "lemma": "스트레스",
+          "pos": "NNP"
+        },
+        {
+          "text": "받",
+          "lemma": "받",
+          "pos": "VV"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "ETM"
+        },
+        {
+          "text": "때",
+          "lemma": "때",
+          "pos": "NNG"
+        },
+        {
+          "text": "어떻",
+          "lemma": "어떻",
+          "pos": "VA"
+        },
+        {
+          "text": "게",
+          "lemma": "게",
+          "pos": "EC"
+        },
+        {
+          "text": "풀",
+          "lemma": "풀",
+          "pos": "VV"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "때",
+        "산책",
+        "스트레스",
+        "음악"
+      ],
+      "domain": "joy"
+    },
+    "answer": {
+      "text": "좋아하는 음악을 듣거나 산책하면서 스트레스를 풀어.",
+      "tokens": [
+        {
+          "text": "좋아하",
+          "lemma": "좋아하",
+          "pos": "VV"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "ETM"
+        },
+        {
+          "text": "음악",
+          "lemma": "음악",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "듣",
+          "lemma": "듣",
+          "pos": "VV"
+        },
+        {
+          "text": "거나",
+          "lemma": "거나",
+          "pos": "EC"
+        },
+        {
+          "text": "산책",
+          "lemma": "산책",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "면서",
+          "lemma": "면서",
+          "pos": "EC"
+        },
+        {
+          "text": "스트레스",
+          "lemma": "스트레스",
+          "pos": "NNG"
+        },
+        {
+          "text": "를",
+          "lemma": "를",
+          "pos": "JKO"
+        },
+        {
+          "text": "풀",
+          "lemma": "풀",
+          "pos": "VV"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "때",
+      "산책",
+      "스트레스",
+      "음악"
+    ],
+    "domain": "joy"
+  },
+  {
+    "question": {
+      "text": "일상 속에서 행복을 찾는 방법이 있을까?",
+      "tokens": [
+        {
+          "text": "일상",
+          "lemma": "일상",
+          "pos": "NNP"
+        },
+        {
+          "text": "속",
+          "lemma": "속",
+          "pos": "NNG"
+        },
+        {
+          "text": "에서",
+          "lemma": "에서",
+          "pos": "JKB"
+        },
+        {
+          "text": "행복",
+          "lemma": "행복",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "찾",
+          "lemma": "찾",
+          "pos": "VV"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "ETM"
+        },
+        {
+          "text": "방법",
+          "lemma": "방법",
+          "pos": "NNG"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "JKS"
+        },
+        {
+          "text": "있",
+          "lemma": "있",
+          "pos": "VX"
+        },
+        {
+          "text": "을까",
+          "lemma": "을까",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "감사",
+        "것",
+        "긍정",
+        "방법",
+        "생각",
+        "속",
+        "수",
+        "일상",
+        "행복"
+      ],
+      "domain": "joy"
+    },
+    "answer": {
+      "text": "작은 것에 감사하고, 긍정적으로 생각하면 행복을 찾을 수 있어.",
+      "tokens": [
+        {
+          "text": "작",
+          "lemma": "작",
+          "pos": "VA"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "ETM"
+        },
+        {
+          "text": "것",
+          "lemma": "것",
+          "pos": "NNB"
+        },
+        {
+          "text": "에",
+          "lemma": "에",
+          "pos": "JKB"
+        },
+        {
+          "text": "감사",
+          "lemma": "감사",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "고",
+          "lemma": "고",
+          "pos": "EC"
+        },
+        {
+          "text": "긍정",
+          "lemma": "긍정",
+          "pos": "NNG"
+        },
+        {
+          "text": "적",
+          "lemma": "적",
+          "pos": "XSN"
+        },
+        {
+          "text": "으로",
+          "lemma": "으로",
+          "pos": "JKB"
+        },
+        {
+          "text": "생각",
+          "lemma": "생각",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "면",
+          "lemma": "면",
+          "pos": "EC"
+        },
+        {
+          "text": "행복",
+          "lemma": "행복",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "찾",
+          "lemma": "찾",
+          "pos": "VV"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "ETM"
+        },
+        {
+          "text": "수",
+          "lemma": "수",
+          "pos": "NNB"
+        },
+        {
+          "text": "있",
+          "lemma": "있",
+          "pos": "VX"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "감사",
+      "것",
+      "긍정",
+      "방법",
+      "생각",
+      "속",
+      "수",
+      "일상",
+      "행복"
+    ],
+    "domain": "joy"
+  },
+  {
+    "question": {
+      "text": "너만의 행복 루틴이 있어?",
+      "tokens": [
+        {
+          "text": "너",
+          "lemma": "너",
+          "pos": "NP"
+        },
+        {
+          "text": "만",
+          "lemma": "만",
+          "pos": "JX"
+        },
+        {
+          "text": "의",
+          "lemma": "의",
+          "pos": "JKG"
+        },
+        {
+          "text": "행복",
+          "lemma": "행복",
+          "pos": "NNG"
+        },
+        {
+          "text": "루틴",
+          "lemma": "루틴",
+          "pos": "NNP"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "JKS"
+        },
+        {
+          "text": "있",
+          "lemma": "있",
+          "pos": "VX"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "게",
+        "루틴",
+        "아침",
+        "커피",
+        "행복"
+      ],
+      "domain": "joy"
+    },
+    "answer": {
+      "text": "매일 아침 따뜻한 커피 한 잔 마시는 게 나의 행복 루틴이야.",
+      "tokens": [
+        {
+          "text": "매일",
+          "lemma": "매일",
+          "pos": "MAG"
+        },
+        {
+          "text": "아침",
+          "lemma": "아침",
+          "pos": "NNG"
+        },
+        {
+          "text": "따뜻",
+          "lemma": "따뜻",
+          "pos": "XR"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSA"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "커피",
+          "lemma": "커피",
+          "pos": "NNP"
+        },
+        {
+          "text": "한",
+          "lemma": "한",
+          "pos": "MM"
+        },
+        {
+          "text": "자",
+          "lemma": "자",
+          "pos": "VV"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "마시",
+          "lemma": "마시",
+          "pos": "VV"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "ETM"
+        },
+        {
+          "text": "게",
+          "lemma": "게",
+          "pos": "NNG"
+        },
+        {
+          "text": "나",
+          "lemma": "나",
+          "pos": "NP"
+        },
+        {
+          "text": "의",
+          "lemma": "의",
+          "pos": "JKG"
+        },
+        {
+          "text": "행복",
+          "lemma": "행복",
+          "pos": "NNG"
+        },
+        {
+          "text": "루틴",
+          "lemma": "루틴",
+          "pos": "NNP"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "VCP"
+        },
+        {
+          "text": "야",
+          "lemma": "야",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "게",
+      "루틴",
+      "아침",
+      "커피",
+      "행복"
+    ],
+    "domain": "joy"
+  },
+  {
+    "question": {
+      "text": "즐거움을 느끼려면 어떻게 해야 해?",
+      "tokens": [
+        {
+          "text": "즐거움",
+          "lemma": "즐거움",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "느끼",
+          "lemma": "느끼",
+          "pos": "VV"
+        },
+        {
+          "text": "려면",
+          "lemma": "려면",
+          "pos": "EC"
+        },
+        {
+          "text": "어떻",
+          "lemma": "어떻",
+          "pos": "VA"
+        },
+        {
+          "text": "게",
+          "lemma": "게",
+          "pos": "EC"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "VV"
+        },
+        {
+          "text": "아야",
+          "lemma": "아야",
+          "pos": "EC"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "VX"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "경험",
+        "몰두",
+        "수",
+        "즐거움",
+        "활동"
+      ],
+      "domain": "joy"
+    },
+    "answer": {
+      "text": "새로운 경험을 하거나, 좋아하는 활동에 몰두하면 즐거움을 느낄 수 있어.",
+      "tokens": [
+        {
+          "text": "새롭",
+          "lemma": "새롭",
+          "pos": "VA"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "경험",
+          "lemma": "경험",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "VV"
+        },
+        {
+          "text": "거나",
+          "lemma": "거나",
+          "pos": "EC"
+        },
+        {
+          "text": "좋아하",
+          "lemma": "좋아하",
+          "pos": "VV"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "ETM"
+        },
+        {
+          "text": "활동",
+          "lemma": "활동",
+          "pos": "NNG"
+        },
+        {
+          "text": "에",
+          "lemma": "에",
+          "pos": "JKB"
+        },
+        {
+          "text": "몰두",
+          "lemma": "몰두",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "면",
+          "lemma": "면",
+          "pos": "EC"
+        },
+        {
+          "text": "즐거움",
+          "lemma": "즐거움",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "느끼",
+          "lemma": "느끼",
+          "pos": "VV"
+        },
+        {
+          "text": "ㄹ",
+          "lemma": "ㄹ",
+          "pos": "ETM"
+        },
+        {
+          "text": "수",
+          "lemma": "수",
+          "pos": "NNB"
+        },
+        {
+          "text": "있",
+          "lemma": "있",
+          "pos": "VX"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "경험",
+      "몰두",
+      "수",
+      "즐거움",
+      "활동"
+    ],
+    "domain": "joy"
+  },
+  {
+    "question": {
+      "text": "기쁨을 다른 사람과 나누면 더 커질까?",
+      "tokens": [
+        {
+          "text": "기쁨",
+          "lemma": "기쁨",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "다른",
+          "lemma": "다른",
+          "pos": "MM"
+        },
+        {
+          "text": "사람",
+          "lemma": "사람",
+          "pos": "NNG"
+        },
+        {
+          "text": "과",
+          "lemma": "과",
+          "pos": "JC"
+        },
+        {
+          "text": "나누",
+          "lemma": "나누",
+          "pos": "VV"
+        },
+        {
+          "text": "면",
+          "lemma": "면",
+          "pos": "EC"
+        },
+        {
+          "text": "더",
+          "lemma": "더",
+          "pos": "MAG"
+        },
+        {
+          "text": "커지",
+          "lemma": "커지",
+          "pos": "VV"
+        },
+        {
+          "text": "ㄹ까",
+          "lemma": "ㄹ까",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "기쁨",
+        "사람",
+        "생각"
+      ],
+      "domain": "joy"
+    },
+    "answer": {
+      "text": "응, 기쁨은 나눌수록 더 커진다고 생각해!",
+      "tokens": [
+        {
+          "text": "응",
+          "lemma": "응",
+          "pos": "IC"
+        },
+        {
+          "text": "기쁨",
+          "lemma": "기쁨",
+          "pos": "NNP"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "JX"
+        },
+        {
+          "text": "나누",
+          "lemma": "나누",
+          "pos": "VV"
+        },
+        {
+          "text": "ㄹ수록",
+          "lemma": "ㄹ수록",
+          "pos": "EC"
+        },
+        {
+          "text": "더",
+          "lemma": "더",
+          "pos": "MAG"
+        },
+        {
+          "text": "커지",
+          "lemma": "커지",
+          "pos": "VV"
+        },
+        {
+          "text": "ㄴ다고",
+          "lemma": "ㄴ다고",
+          "pos": "EC"
+        },
+        {
+          "text": "생각",
+          "lemma": "생각",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "기쁨",
+      "사람",
+      "생각"
+    ],
+    "domain": "joy"
+  },
+  {
+    "question": {
+      "text": "행복은 돈으로 살 수 있을까?",
+      "tokens": [
+        {
+          "text": "행복",
+          "lemma": "행복",
+          "pos": "NNG"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "JX"
+        },
+        {
+          "text": "돈",
+          "lemma": "돈",
+          "pos": "NNG"
+        },
+        {
+          "text": "으로",
+          "lemma": "으로",
+          "pos": "JKB"
+        },
+        {
+          "text": "살",
+          "lemma": "살",
+          "pos": "VV"
+        },
+        {
+          "text": "ㄹ",
+          "lemma": "ㄹ",
+          "pos": "ETM"
+        },
+        {
+          "text": "수",
+          "lemma": "수",
+          "pos": "NNB"
+        },
+        {
+          "text": "있",
+          "lemma": "있",
+          "pos": "VX"
+        },
+        {
+          "text": "을까",
+          "lemma": "을까",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "도움",
+        "돈",
+        "수",
+        "전부",
+        "정도",
+        "행복"
+      ],
+      "domain": "joy"
+    },
+    "answer": {
+      "text": "돈이 행복의 전부는 아니지만, 어느 정도는 도움이 될 수 있지.",
+      "tokens": [
+        {
+          "text": "돈",
+          "lemma": "돈",
+          "pos": "NNG"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "JKS"
+        },
+        {
+          "text": "행복",
+          "lemma": "행복",
+          "pos": "NNG"
+        },
+        {
+          "text": "의",
+          "lemma": "의",
+          "pos": "JKG"
+        },
+        {
+          "text": "전부",
+          "lemma": "전부",
+          "pos": "NNG"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "JX"
+        },
+        {
+          "text": "아니",
+          "lemma": "아니",
+          "pos": "VCN"
+        },
+        {
+          "text": "지만",
+          "lemma": "지만",
+          "pos": "EC"
+        },
+        {
+          "text": "어느",
+          "lemma": "어느",
+          "pos": "MM"
+        },
+        {
+          "text": "정도",
+          "lemma": "정도",
+          "pos": "NNG"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "JX"
+        },
+        {
+          "text": "도움",
+          "lemma": "도움",
+          "pos": "NNG"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "JKS"
+        },
+        {
+          "text": "되",
+          "lemma": "되",
+          "pos": "VV"
+        },
+        {
+          "text": "ㄹ",
+          "lemma": "ㄹ",
+          "pos": "ETM"
+        },
+        {
+          "text": "수",
+          "lemma": "수",
+          "pos": "NNB"
+        },
+        {
+          "text": "있",
+          "lemma": "있",
+          "pos": "VX"
+        },
+        {
+          "text": "지",
+          "lemma": "지",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "도움",
+      "돈",
+      "수",
+      "전부",
+      "정도",
+      "행복"
+    ],
+    "domain": "joy"
+  },
+  {
+    "question": {
+      "text": "행복의 정의가 뭐라고 생각해?",
+      "tokens": [
+        {
+          "text": "행복",
+          "lemma": "행복",
+          "pos": "NNG"
+        },
+        {
+          "text": "의",
+          "lemma": "의",
+          "pos": "JKG"
+        },
+        {
+          "text": "정의",
+          "lemma": "정의",
+          "pos": "NNG"
+        },
+        {
+          "text": "가",
+          "lemma": "가",
+          "pos": "JKS"
+        },
+        {
+          "text": "뭐",
+          "lemma": "뭐",
+          "pos": "NP"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "VCP"
+        },
+        {
+          "text": "라고",
+          "lemma": "라고",
+          "pos": "EC"
+        },
+        {
+          "text": "생각",
+          "lemma": "생각",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "마음",
+        "만족감",
+        "생각",
+        "정의",
+        "평화",
+        "행복"
+      ],
+      "domain": "joy"
+    },
+    "answer": {
+      "text": "행복은 마음의 평화와 만족감이라고 생각해.",
+      "tokens": [
+        {
+          "text": "행복",
+          "lemma": "행복",
+          "pos": "NNG"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "JX"
+        },
+        {
+          "text": "마음",
+          "lemma": "마음",
+          "pos": "NNG"
+        },
+        {
+          "text": "의",
+          "lemma": "의",
+          "pos": "JKG"
+        },
+        {
+          "text": "평화",
+          "lemma": "평화",
+          "pos": "NNG"
+        },
+        {
+          "text": "와",
+          "lemma": "와",
+          "pos": "JC"
+        },
+        {
+          "text": "만족감",
+          "lemma": "만족감",
+          "pos": "NNG"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "VCP"
+        },
+        {
+          "text": "라고",
+          "lemma": "라고",
+          "pos": "EC"
+        },
+        {
+          "text": "생각",
+          "lemma": "생각",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "마음",
+      "만족감",
+      "생각",
+      "정의",
+      "평화",
+      "행복"
+    ],
+    "domain": "joy"
+  },
+  {
+    "question": {
+      "text": "긍정적인 생각은 행복에 어떤 영향을 줄까?",
+      "tokens": [
+        {
+          "text": "긍정",
+          "lemma": "긍정",
+          "pos": "NNG"
+        },
+        {
+          "text": "적",
+          "lemma": "적",
+          "pos": "XSN"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "VCP"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "생각",
+          "lemma": "생각",
+          "pos": "NNG"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "JX"
+        },
+        {
+          "text": "행복",
+          "lemma": "행복",
+          "pos": "NNG"
+        },
+        {
+          "text": "에",
+          "lemma": "에",
+          "pos": "JKB"
+        },
+        {
+          "text": "어떤",
+          "lemma": "어떤",
+          "pos": "MM"
+        },
+        {
+          "text": "영향",
+          "lemma": "영향",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "주",
+          "lemma": "주",
+          "pos": "VX"
+        },
+        {
+          "text": "ㄹ까",
+          "lemma": "ㄹ까",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "긍정",
+        "데",
+        "생각",
+        "영향",
+        "행복"
+      ],
+      "domain": "joy"
+    },
+    "answer": {
+      "text": "긍정적인 생각은 행복을 느끼는 데 큰 영향을 줘.",
+      "tokens": [
+        {
+          "text": "긍정",
+          "lemma": "긍정",
+          "pos": "NNG"
+        },
+        {
+          "text": "적",
+          "lemma": "적",
+          "pos": "XSN"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "VCP"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "생각",
+          "lemma": "생각",
+          "pos": "NNG"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "JX"
+        },
+        {
+          "text": "행복",
+          "lemma": "행복",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "느끼",
+          "lemma": "느끼",
+          "pos": "VV"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "ETM"
+        },
+        {
+          "text": "데",
+          "lemma": "데",
+          "pos": "NNB"
+        },
+        {
+          "text": "크",
+          "lemma": "크",
+          "pos": "VA"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "영향",
+          "lemma": "영향",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "주",
+          "lemma": "주",
+          "pos": "VX"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "긍정",
+      "데",
+      "생각",
+      "영향",
+      "행복"
+    ],
+    "domain": "joy"
+  },
+  {
+    "question": {
+      "text": "슬플 때 어떻게 하면 기분이 나아질까?",
+      "tokens": [
+        {
+          "text": "슬프",
+          "lemma": "슬프",
+          "pos": "VA"
+        },
+        {
+          "text": "ㄹ",
+          "lemma": "ㄹ",
+          "pos": "ETM"
+        },
+        {
+          "text": "때",
+          "lemma": "때",
+          "pos": "NNG"
+        },
+        {
+          "text": "어떻",
+          "lemma": "어떻",
+          "pos": "VA"
+        },
+        {
+          "text": "게",
+          "lemma": "게",
+          "pos": "EC"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "VV"
+        },
+        {
+          "text": "면",
+          "lemma": "면",
+          "pos": "EC"
+        },
+        {
+          "text": "기분",
+          "lemma": "기분",
+          "pos": "NNG"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "JKS"
+        },
+        {
+          "text": "나아지",
+          "lemma": "나아지",
+          "pos": "VV"
+        },
+        {
+          "text": "ㄹ까",
+          "lemma": "ㄹ까",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "기분",
+        "때",
+        "영화"
+      ],
+      "domain": "joy"
+    },
+    "answer": {
+      "text": "슬플 때는 좋아하는 영화를 보거나 맛있는 걸 먹으면 기분이 좀 나아져.",
+      "tokens": [
+        {
+          "text": "슬프",
+          "lemma": "슬프",
+          "pos": "VA"
+        },
+        {
+          "text": "ㄹ",
+          "lemma": "ㄹ",
+          "pos": "ETM"
+        },
+        {
+          "text": "때",
+          "lemma": "때",
+          "pos": "NNG"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "JX"
+        },
+        {
+          "text": "좋아하",
+          "lemma": "좋아하",
+          "pos": "VV"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "ETM"
+        },
+        {
+          "text": "영화",
+          "lemma": "영화",
+          "pos": "NNG"
+        },
+        {
+          "text": "를",
+          "lemma": "를",
+          "pos": "JKO"
+        },
+        {
+          "text": "보",
+          "lemma": "보",
+          "pos": "VV"
+        },
+        {
+          "text": "거나",
+          "lemma": "거나",
+          "pos": "EC"
+        },
+        {
+          "text": "맛있",
+          "lemma": "맛있",
+          "pos": "VA"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "ETM"
+        },
+        {
+          "text": "걸",
+          "lemma": "걸",
+          "pos": "VV"
+        },
+        {
+          "text": "ㄹ",
+          "lemma": "ㄹ",
+          "pos": "ETM"
+        },
+        {
+          "text": "먹",
+          "lemma": "먹",
+          "pos": "VV"
+        },
+        {
+          "text": "으면",
+          "lemma": "으면",
+          "pos": "EC"
+        },
+        {
+          "text": "기분",
+          "lemma": "기분",
+          "pos": "NNG"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "JKS"
+        },
+        {
+          "text": "좀",
+          "lemma": "좀",
+          "pos": "MAG"
+        },
+        {
+          "text": "나아지",
+          "lemma": "나아지",
+          "pos": "VV"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "기분",
+      "때",
+      "영화"
+    ],
+    "domain": "joy"
+  },
+  {
+    "question": {
+      "text": "웃음은 우리에게 어떤 의미일까?",
+      "tokens": [
+        {
+          "text": "웃음",
+          "lemma": "웃음",
+          "pos": "NNG"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "JX"
+        },
+        {
+          "text": "우리",
+          "lemma": "우리",
+          "pos": "NP"
+        },
+        {
+          "text": "에게",
+          "lemma": "에게",
+          "pos": "JKB"
+        },
+        {
+          "text": "어떤",
+          "lemma": "어떤",
+          "pos": "MM"
+        },
+        {
+          "text": "의미",
+          "lemma": "의미",
+          "pos": "NNG"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "VCP"
+        },
+        {
+          "text": "ㄹ까",
+          "lemma": "ㄹ까",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "거",
+        "선물",
+        "스트레스",
+        "웃음",
+        "의미",
+        "행복",
+        "호르몬"
+      ],
+      "domain": "joy"
+    },
+    "answer": {
+      "text": "웃음은 스트레스를 날려주고 행복 호르몬을 만들어주는 선물 같은 거야.",
+      "tokens": [
+        {
+          "text": "웃음",
+          "lemma": "웃음",
+          "pos": "NNG"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "JX"
+        },
+        {
+          "text": "스트레스",
+          "lemma": "스트레스",
+          "pos": "NNG"
+        },
+        {
+          "text": "를",
+          "lemma": "를",
+          "pos": "JKO"
+        },
+        {
+          "text": "날리",
+          "lemma": "날리",
+          "pos": "VV"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EC"
+        },
+        {
+          "text": "주",
+          "lemma": "주",
+          "pos": "VX"
+        },
+        {
+          "text": "고",
+          "lemma": "고",
+          "pos": "EC"
+        },
+        {
+          "text": "행복",
+          "lemma": "행복",
+          "pos": "NNG"
+        },
+        {
+          "text": "호르몬",
+          "lemma": "호르몬",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "만들",
+          "lemma": "만들",
+          "pos": "VV"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EC"
+        },
+        {
+          "text": "주",
+          "lemma": "주",
+          "pos": "VX"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "ETM"
+        },
+        {
+          "text": "선물",
+          "lemma": "선물",
+          "pos": "NNP"
+        },
+        {
+          "text": "같",
+          "lemma": "같",
+          "pos": "VA"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "ETM"
+        },
+        {
+          "text": "거",
+          "lemma": "거",
+          "pos": "NNB"
+        },
+        {
+          "text": "야",
+          "lemma": "야",
+          "pos": "JKV"
+        }
+      ]
+    },
+    "concepts": [
+      "거",
+      "선물",
+      "스트레스",
+      "웃음",
+      "의미",
+      "행복",
+      "호르몬"
+    ],
+    "domain": "joy"
+  },
+  {
+    "question": {
+      "text": "어떤 일을 할 때 가장 즐거워?",
+      "tokens": [
+        {
+          "text": "어떤",
+          "lemma": "어떤",
+          "pos": "MM"
+        },
+        {
+          "text": "일",
+          "lemma": "일",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "VV"
+        },
+        {
+          "text": "ㄹ",
+          "lemma": "ㄹ",
+          "pos": "ETM"
+        },
+        {
+          "text": "때",
+          "lemma": "때",
+          "pos": "NNG"
+        },
+        {
+          "text": "가장",
+          "lemma": "가장",
+          "pos": "MAG"
+        },
+        {
+          "text": "즐겁",
+          "lemma": "즐겁",
+          "pos": "VA"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "것",
+        "때",
+        "일"
+      ],
+      "domain": "joy"
+    },
+    "answer": {
+      "text": "새로운 것을 배우거나 만들 때 가장 즐거워.",
+      "tokens": [
+        {
+          "text": "새롭",
+          "lemma": "새롭",
+          "pos": "VA"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "것",
+          "lemma": "것",
+          "pos": "NNB"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "배우",
+          "lemma": "배우",
+          "pos": "VV"
+        },
+        {
+          "text": "거나",
+          "lemma": "거나",
+          "pos": "EC"
+        },
+        {
+          "text": "만들",
+          "lemma": "만들",
+          "pos": "VV"
+        },
+        {
+          "text": "ㄹ",
+          "lemma": "ㄹ",
+          "pos": "ETM"
+        },
+        {
+          "text": "때",
+          "lemma": "때",
+          "pos": "NNG"
+        },
+        {
+          "text": "가장",
+          "lemma": "가장",
+          "pos": "MAG"
+        },
+        {
+          "text": "즐겁",
+          "lemma": "즐겁",
+          "pos": "VA"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "것",
+      "때",
+      "일"
+    ],
+    "domain": "joy"
+  },
+  {
+    "question": {
+      "text": "가족과 함께하는 시간은 어떤 의미야?",
+      "tokens": [
+        {
+          "text": "가족",
+          "lemma": "가족",
+          "pos": "NNG"
+        },
+        {
+          "text": "과",
+          "lemma": "과",
+          "pos": "JC"
+        },
+        {
+          "text": "함께",
+          "lemma": "함께",
+          "pos": "MAG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "ETM"
+        },
+        {
+          "text": "시간",
+          "lemma": "시간",
+          "pos": "NNG"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "JX"
+        },
+        {
+          "text": "어떤",
+          "lemma": "어떤",
+          "pos": "MM"
+        },
+        {
+          "text": "의미",
+          "lemma": "의미",
+          "pos": "NNP"
+        },
+        {
+          "text": "야",
+          "lemma": "야",
+          "pos": "JKV"
+        }
+      ],
+      "concepts": [
+        "가족",
+        "시간",
+        "의미",
+        "행복"
+      ],
+      "domain": "joy"
+    },
+    "answer": {
+      "text": "가족과 함께하는 시간은 나에게 가장 소중하고 행복한 시간이야.",
+      "tokens": [
+        {
+          "text": "가족",
+          "lemma": "가족",
+          "pos": "NNG"
+        },
+        {
+          "text": "과",
+          "lemma": "과",
+          "pos": "JC"
+        },
+        {
+          "text": "함께",
+          "lemma": "함께",
+          "pos": "MAG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "ETM"
+        },
+        {
+          "text": "시간",
+          "lemma": "시간",
+          "pos": "NNG"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "JX"
+        },
+        {
+          "text": "나",
+          "lemma": "나",
+          "pos": "NP"
+        },
+        {
+          "text": "에게",
+          "lemma": "에게",
+          "pos": "JKB"
+        },
+        {
+          "text": "가장",
+          "lemma": "가장",
+          "pos": "MAG"
+        },
+        {
+          "text": "소중",
+          "lemma": "소중",
+          "pos": "XR"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSA"
+        },
+        {
+          "text": "고",
+          "lemma": "고",
+          "pos": "EC"
+        },
+        {
+          "text": "행복",
+          "lemma": "행복",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "시간",
+          "lemma": "시간",
+          "pos": "NNG"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "VCP"
+        },
+        {
+          "text": "야",
+          "lemma": "야",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "가족",
+      "시간",
+      "의미",
+      "행복"
+    ],
+    "domain": "joy"
+  },
+  {
+    "question": {
+      "text": "친구들과의 관계는 너에게 어떤 영향을 줘?",
+      "tokens": [
+        {
+          "text": "친구",
+          "lemma": "친구",
+          "pos": "NNG"
+        },
+        {
+          "text": "들",
+          "lemma": "들",
+          "pos": "XSN"
+        },
+        {
+          "text": "과",
+          "lemma": "과",
+          "pos": "JKB"
+        },
+        {
+          "text": "의",
+          "lemma": "의",
+          "pos": "JKG"
+        },
+        {
+          "text": "관계",
+          "lemma": "관계",
+          "pos": "NNG"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "JX"
+        },
+        {
+          "text": "너에게",
+          "lemma": "너에게",
+          "pos": "NNP"
+        },
+        {
+          "text": "어떤",
+          "lemma": "어떤",
+          "pos": "MM"
+        },
+        {
+          "text": "영향",
+          "lemma": "영향",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "주",
+          "lemma": "주",
+          "pos": "VX"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "관계",
+        "너에게",
+        "영향",
+        "즐거움",
+        "친구",
+        "힘"
+      ],
+      "domain": "joy"
+    },
+    "answer": {
+      "text": "친구들과의 관계는 나에게 큰 힘이 되고, 즐거움을 안겨줘.",
+      "tokens": [
+        {
+          "text": "친구",
+          "lemma": "친구",
+          "pos": "NNG"
+        },
+        {
+          "text": "들",
+          "lemma": "들",
+          "pos": "XSN"
+        },
+        {
+          "text": "과",
+          "lemma": "과",
+          "pos": "JKB"
+        },
+        {
+          "text": "의",
+          "lemma": "의",
+          "pos": "JKG"
+        },
+        {
+          "text": "관계",
+          "lemma": "관계",
+          "pos": "NNG"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "JX"
+        },
+        {
+          "text": "나",
+          "lemma": "나",
+          "pos": "NP"
+        },
+        {
+          "text": "에게",
+          "lemma": "에게",
+          "pos": "JKB"
+        },
+        {
+          "text": "크",
+          "lemma": "크",
+          "pos": "VA"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "힘",
+          "lemma": "힘",
+          "pos": "NNG"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "JKS"
+        },
+        {
+          "text": "되",
+          "lemma": "되",
+          "pos": "VV"
+        },
+        {
+          "text": "고",
+          "lemma": "고",
+          "pos": "EC"
+        },
+        {
+          "text": "즐거움",
+          "lemma": "즐거움",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "안기",
+          "lemma": "안기",
+          "pos": "VV"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EC"
+        },
+        {
+          "text": "주",
+          "lemma": "주",
+          "pos": "VX"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "관계",
+      "너에게",
+      "영향",
+      "즐거움",
+      "친구",
+      "힘"
+    ],
+    "domain": "joy"
+  },
+  {
+    "question": {
+      "text": "여행은 왜 사람들을 행복하게 할까?",
+      "tokens": [
+        {
+          "text": "여행",
+          "lemma": "여행",
+          "pos": "NNG"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "JX"
+        },
+        {
+          "text": "왜",
+          "lemma": "왜",
+          "pos": "MAG"
+        },
+        {
+          "text": "사람",
+          "lemma": "사람",
+          "pos": "NNG"
+        },
+        {
+          "text": "들",
+          "lemma": "들",
+          "pos": "XSN"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "행복",
+          "lemma": "행복",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "게",
+          "lemma": "게",
+          "pos": "EC"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "VX"
+        },
+        {
+          "text": "ㄹ까",
+          "lemma": "ㄹ까",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "사람",
+        "여행",
+        "자유",
+        "행복",
+        "환경"
+      ],
+      "domain": "joy"
+    },
+    "answer": {
+      "text": "여행은 새로운 환경에서 벗어나 자유를 느끼게 해줘서 행복하게 해.",
+      "tokens": [
+        {
+          "text": "여행",
+          "lemma": "여행",
+          "pos": "NNG"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "JX"
+        },
+        {
+          "text": "새롭",
+          "lemma": "새롭",
+          "pos": "VA"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "환경",
+          "lemma": "환경",
+          "pos": "NNG"
+        },
+        {
+          "text": "에서",
+          "lemma": "에서",
+          "pos": "JKB"
+        },
+        {
+          "text": "벗어나",
+          "lemma": "벗어나",
+          "pos": "VV"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EC"
+        },
+        {
+          "text": "자유",
+          "lemma": "자유",
+          "pos": "NNG"
+        },
+        {
+          "text": "를",
+          "lemma": "를",
+          "pos": "JKO"
+        },
+        {
+          "text": "느끼",
+          "lemma": "느끼",
+          "pos": "VV"
+        },
+        {
+          "text": "게",
+          "lemma": "게",
+          "pos": "EC"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "VV"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EC"
+        },
+        {
+          "text": "주",
+          "lemma": "주",
+          "pos": "VX"
+        },
+        {
+          "text": "어서",
+          "lemma": "어서",
+          "pos": "EC"
+        },
+        {
+          "text": "행복",
+          "lemma": "행복",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "게",
+          "lemma": "게",
+          "pos": "EC"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "VX"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "사람",
+      "여행",
+      "자유",
+      "행복",
+      "환경"
+    ],
+    "domain": "joy"
+  },
+  {
+    "question": {
+      "text": "작은 선물에도 기뻐하는 편이야?",
+      "tokens": [
+        {
+          "text": "작",
+          "lemma": "작",
+          "pos": "VA"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "ETM"
+        },
+        {
+          "text": "선물",
+          "lemma": "선물",
+          "pos": "NNG"
+        },
+        {
+          "text": "에",
+          "lemma": "에",
+          "pos": "JKB"
+        },
+        {
+          "text": "도",
+          "lemma": "도",
+          "pos": "JX"
+        },
+        {
+          "text": "기뻐하",
+          "lemma": "기뻐하",
+          "pos": "VV"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "ETM"
+        },
+        {
+          "text": "편",
+          "lemma": "편",
+          "pos": "NNB"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "VCP"
+        },
+        {
+          "text": "야",
+          "lemma": "야",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "마음",
+        "상대방",
+        "선물",
+        "편"
+      ],
+      "domain": "joy"
+    },
+    "answer": {
+      "text": "응, 작은 선물이라도 상대방의 마음이 느껴져서 기뻐.",
+      "tokens": [
+        {
+          "text": "응",
+          "lemma": "응",
+          "pos": "IC"
+        },
+        {
+          "text": "작",
+          "lemma": "작",
+          "pos": "VA"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "ETM"
+        },
+        {
+          "text": "선물",
+          "lemma": "선물",
+          "pos": "NNG"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "VCP"
+        },
+        {
+          "text": "라도",
+          "lemma": "라도",
+          "pos": "EC"
+        },
+        {
+          "text": "상대방",
+          "lemma": "상대방",
+          "pos": "NNG"
+        },
+        {
+          "text": "의",
+          "lemma": "의",
+          "pos": "JKG"
+        },
+        {
+          "text": "마음",
+          "lemma": "마음",
+          "pos": "NNG"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "JKS"
+        },
+        {
+          "text": "느끼",
+          "lemma": "느끼",
+          "pos": "VV"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EC"
+        },
+        {
+          "text": "지",
+          "lemma": "지",
+          "pos": "VX"
+        },
+        {
+          "text": "어서",
+          "lemma": "어서",
+          "pos": "EC"
+        },
+        {
+          "text": "기쁘",
+          "lemma": "기쁘",
+          "pos": "VA"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "마음",
+      "상대방",
+      "선물",
+      "편"
+    ],
+    "domain": "joy"
+  },
+  {
+    "question": {
+      "text": "힘들 때 힘이 되는 말은 뭐야?",
+      "tokens": [
+        {
+          "text": "힘들",
+          "lemma": "힘들",
+          "pos": "VA"
+        },
+        {
+          "text": "ㄹ",
+          "lemma": "ㄹ",
+          "pos": "ETM"
+        },
+        {
+          "text": "때",
+          "lemma": "때",
+          "pos": "NNG"
+        },
+        {
+          "text": "힘",
+          "lemma": "힘",
+          "pos": "NNG"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "JKS"
+        },
+        {
+          "text": "되",
+          "lemma": "되",
+          "pos": "VV"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "ETM"
+        },
+        {
+          "text": "말",
+          "lemma": "말",
+          "pos": "NNG"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "JX"
+        },
+        {
+          "text": "뭐",
+          "lemma": "뭐",
+          "pos": "NP"
+        },
+        {
+          "text": "야",
+          "lemma": "야",
+          "pos": "JKV"
+        }
+      ],
+      "concepts": [
+        "넌",
+        "때",
+        "말",
+        "수",
+        "힘"
+      ],
+      "domain": "joy"
+    },
+    "answer": {
+      "text": "잘하고 있어, 넌 할 수 있어! 이런 말이 힘이 돼.",
+      "tokens": [
+        {
+          "text": "잘",
+          "lemma": "잘",
+          "pos": "MAG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "고",
+          "lemma": "고",
+          "pos": "EC"
+        },
+        {
+          "text": "있",
+          "lemma": "있",
+          "pos": "VV"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EC"
+        },
+        {
+          "text": "넌",
+          "lemma": "넌",
+          "pos": "NNP"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "VV"
+        },
+        {
+          "text": "ㄹ",
+          "lemma": "ㄹ",
+          "pos": "ETM"
+        },
+        {
+          "text": "수",
+          "lemma": "수",
+          "pos": "NNB"
+        },
+        {
+          "text": "있",
+          "lemma": "있",
+          "pos": "VX"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        },
+        {
+          "text": "이런",
+          "lemma": "이런",
+          "pos": "MM"
+        },
+        {
+          "text": "말",
+          "lemma": "말",
+          "pos": "NNG"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "JKS"
+        },
+        {
+          "text": "힘",
+          "lemma": "힘",
+          "pos": "NNG"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "JKS"
+        },
+        {
+          "text": "되",
+          "lemma": "되",
+          "pos": "VV"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "넌",
+      "때",
+      "말",
+      "수",
+      "힘"
+    ],
+    "domain": "joy"
+  },
+  {
+    "question": {
+      "text": "감사함을 표현하는 방법이 있어?",
+      "tokens": [
+        {
+          "text": "감사",
+          "lemma": "감사",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "ㅁ",
+          "lemma": "ㅁ",
+          "pos": "ETN"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "표현",
+          "lemma": "표현",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "ETM"
+        },
+        {
+          "text": "방법",
+          "lemma": "방법",
+          "pos": "NNG"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "JKS"
+        },
+        {
+          "text": "있",
+          "lemma": "있",
+          "pos": "VX"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "감사",
+        "마음",
+        "말",
+        "방법",
+        "손",
+        "편지",
+        "표현"
+      ],
+      "domain": "joy"
+    },
+    "answer": {
+      "text": "고맙다고 말하거나, 작은 손편지를 써서 마음을 전해.",
+      "tokens": [
+        {
+          "text": "고맙",
+          "lemma": "고맙",
+          "pos": "VA"
+        },
+        {
+          "text": "다고",
+          "lemma": "다고",
+          "pos": "EC"
+        },
+        {
+          "text": "말",
+          "lemma": "말",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "거나",
+          "lemma": "거나",
+          "pos": "EC"
+        },
+        {
+          "text": "작",
+          "lemma": "작",
+          "pos": "VA"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "ETM"
+        },
+        {
+          "text": "손",
+          "lemma": "손",
+          "pos": "NNG"
+        },
+        {
+          "text": "편지",
+          "lemma": "편지",
+          "pos": "NNG"
+        },
+        {
+          "text": "를",
+          "lemma": "를",
+          "pos": "JKO"
+        },
+        {
+          "text": "쓰",
+          "lemma": "쓰",
+          "pos": "VV"
+        },
+        {
+          "text": "어서",
+          "lemma": "어서",
+          "pos": "EC"
+        },
+        {
+          "text": "마음",
+          "lemma": "마음",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "전하",
+          "lemma": "전하",
+          "pos": "VV"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "감사",
+      "마음",
+      "말",
+      "방법",
+      "손",
+      "편지",
+      "표현"
+    ],
+    "domain": "joy"
+  },
+  {
+    "question": {
+      "text": "취미 생활은 행복에 어떤 영향을 줄까?",
+      "tokens": [
+        {
+          "text": "취미",
+          "lemma": "취미",
+          "pos": "NNP"
+        },
+        {
+          "text": "생활",
+          "lemma": "생활",
+          "pos": "NNG"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "JX"
+        },
+        {
+          "text": "행복",
+          "lemma": "행복",
+          "pos": "NNG"
+        },
+        {
+          "text": "에",
+          "lemma": "에",
+          "pos": "JKB"
+        },
+        {
+          "text": "어떤",
+          "lemma": "어떤",
+          "pos": "MM"
+        },
+        {
+          "text": "영향",
+          "lemma": "영향",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "주",
+          "lemma": "주",
+          "pos": "VX"
+        },
+        {
+          "text": "ㄹ까",
+          "lemma": "ㄹ까",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "삶",
+        "생활",
+        "영향",
+        "취미",
+        "행복",
+        "행복감",
+        "활력"
+      ],
+      "domain": "joy"
+    },
+    "answer": {
+      "text": "취미 생활은 삶의 활력을 불어넣어 주고 행복감을 높여줘.",
+      "tokens": [
+        {
+          "text": "취미",
+          "lemma": "취미",
+          "pos": "NNP"
+        },
+        {
+          "text": "생활",
+          "lemma": "생활",
+          "pos": "NNG"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "JX"
+        },
+        {
+          "text": "삶",
+          "lemma": "삶",
+          "pos": "NNG"
+        },
+        {
+          "text": "의",
+          "lemma": "의",
+          "pos": "JKG"
+        },
+        {
+          "text": "활력",
+          "lemma": "활력",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "불어넣",
+          "lemma": "불어넣",
+          "pos": "VV"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EC"
+        },
+        {
+          "text": "주",
+          "lemma": "주",
+          "pos": "VX"
+        },
+        {
+          "text": "고",
+          "lemma": "고",
+          "pos": "EC"
+        },
+        {
+          "text": "행복감",
+          "lemma": "행복감",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "높이",
+          "lemma": "높이",
+          "pos": "VV"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EC"
+        },
+        {
+          "text": "주",
+          "lemma": "주",
+          "pos": "VX"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "삶",
+      "생활",
+      "영향",
+      "취미",
+      "행복",
+      "행복감",
+      "활력"
+    ],
+    "domain": "joy"
+  },
+  {
+    "question": {
+      "text": "어떤 음식을 먹을 때 가장 행복해?",
+      "tokens": [
+        {
+          "text": "어떤",
+          "lemma": "어떤",
+          "pos": "MM"
+        },
+        {
+          "text": "음식",
+          "lemma": "음식",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "먹",
+          "lemma": "먹",
+          "pos": "VV"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "ETM"
+        },
+        {
+          "text": "때",
+          "lemma": "때",
+          "pos": "NNG"
+        },
+        {
+          "text": "가장",
+          "lemma": "가장",
+          "pos": "MAG"
+        },
+        {
+          "text": "행복",
+          "lemma": "행복",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "때",
+        "떡볶이",
+        "매콤",
+        "음식",
+        "케이크",
+        "한",
+        "행복"
+      ],
+      "domain": "joy"
+    },
+    "answer": {
+      "text": "매콤한 떡볶이나 달콤한 케이크를 먹을 때 행복해!",
+      "tokens": [
+        {
+          "text": "매콤",
+          "lemma": "매콤",
+          "pos": "NNP"
+        },
+        {
+          "text": "한",
+          "lemma": "한",
+          "pos": "NNP"
+        },
+        {
+          "text": "떡볶이",
+          "lemma": "떡볶이",
+          "pos": "NNP"
+        },
+        {
+          "text": "나",
+          "lemma": "나",
+          "pos": "JC"
+        },
+        {
+          "text": "달콤",
+          "lemma": "달콤",
+          "pos": "XR"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSA"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "케이크",
+          "lemma": "케이크",
+          "pos": "NNP"
+        },
+        {
+          "text": "를",
+          "lemma": "를",
+          "pos": "JKO"
+        },
+        {
+          "text": "먹",
+          "lemma": "먹",
+          "pos": "VV"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "ETM"
+        },
+        {
+          "text": "때",
+          "lemma": "때",
+          "pos": "NNG"
+        },
+        {
+          "text": "행복",
+          "lemma": "행복",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "때",
+      "떡볶이",
+      "매콤",
+      "음식",
+      "케이크",
+      "한",
+      "행복"
+    ],
+    "domain": "joy"
+  },
+  {
+    "question": {
+      "text": "좋아하는 음악을 들으면 어떤 기분이야?",
+      "tokens": [
+        {
+          "text": "좋아하",
+          "lemma": "좋아하",
+          "pos": "VV"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "ETM"
+        },
+        {
+          "text": "음악",
+          "lemma": "음악",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "들",
+          "lemma": "들",
+          "pos": "VV"
+        },
+        {
+          "text": "으면",
+          "lemma": "으면",
+          "pos": "EC"
+        },
+        {
+          "text": "어떤",
+          "lemma": "어떤",
+          "pos": "MM"
+        },
+        {
+          "text": "기분",
+          "lemma": "기분",
+          "pos": "NNG"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "VCP"
+        },
+        {
+          "text": "야",
+          "lemma": "야",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "기분",
+        "마음",
+        "음악",
+        "편안",
+        "해지",
+        "행복"
+      ],
+      "domain": "joy"
+    },
+    "answer": {
+      "text": "마음이 편안해지고 행복해지는 기분이야.",
+      "tokens": [
+        {
+          "text": "마음",
+          "lemma": "마음",
+          "pos": "NNG"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "JKS"
+        },
+        {
+          "text": "편안",
+          "lemma": "편안",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EC"
+        },
+        {
+          "text": "지",
+          "lemma": "지",
+          "pos": "VX"
+        },
+        {
+          "text": "고",
+          "lemma": "고",
+          "pos": "EC"
+        },
+        {
+          "text": "행복",
+          "lemma": "행복",
+          "pos": "NNP"
+        },
+        {
+          "text": "해지",
+          "lemma": "해지",
+          "pos": "NNP"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "JX"
+        },
+        {
+          "text": "기분",
+          "lemma": "기분",
+          "pos": "NNG"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "VCP"
+        },
+        {
+          "text": "야",
+          "lemma": "야",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "기분",
+      "마음",
+      "음악",
+      "편안",
+      "해지",
+      "행복"
+    ],
+    "domain": "joy"
+  },
+  {
+    "question": {
+      "text": "꿈을 이루면 어떤 기분일 것 같아?",
+      "tokens": [
+        {
+          "text": "꿈",
+          "lemma": "꿈",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "이루",
+          "lemma": "이루",
+          "pos": "VV"
+        },
+        {
+          "text": "면",
+          "lemma": "면",
+          "pos": "EC"
+        },
+        {
+          "text": "어떤",
+          "lemma": "어떤",
+          "pos": "MM"
+        },
+        {
+          "text": "기분",
+          "lemma": "기분",
+          "pos": "NNG"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "VCP"
+        },
+        {
+          "text": "ㄹ",
+          "lemma": "ㄹ",
+          "pos": "ETM"
+        },
+        {
+          "text": "것",
+          "lemma": "것",
+          "pos": "NNB"
+        },
+        {
+          "text": "같",
+          "lemma": "같",
+          "pos": "VA"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "것",
+        "기분",
+        "꿈",
+        "만큼",
+        "말",
+        "수",
+        "표현"
+      ],
+      "domain": "joy"
+    },
+    "answer": {
+      "text": "말로 표현할 수 없을 만큼 기쁘고 뿌듯할 것 같아.",
+      "tokens": [
+        {
+          "text": "말",
+          "lemma": "말",
+          "pos": "NNG"
+        },
+        {
+          "text": "로",
+          "lemma": "로",
+          "pos": "JKB"
+        },
+        {
+          "text": "표현",
+          "lemma": "표현",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "ㄹ",
+          "lemma": "ㄹ",
+          "pos": "ETM"
+        },
+        {
+          "text": "수",
+          "lemma": "수",
+          "pos": "NNB"
+        },
+        {
+          "text": "없",
+          "lemma": "없",
+          "pos": "VA"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "ETM"
+        },
+        {
+          "text": "만큼",
+          "lemma": "만큼",
+          "pos": "NNB"
+        },
+        {
+          "text": "기쁘",
+          "lemma": "기쁘",
+          "pos": "VA"
+        },
+        {
+          "text": "고",
+          "lemma": "고",
+          "pos": "EC"
+        },
+        {
+          "text": "뿌듯",
+          "lemma": "뿌듯",
+          "pos": "XR"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSA"
+        },
+        {
+          "text": "ㄹ",
+          "lemma": "ㄹ",
+          "pos": "ETM"
+        },
+        {
+          "text": "것",
+          "lemma": "것",
+          "pos": "NNB"
+        },
+        {
+          "text": "같",
+          "lemma": "같",
+          "pos": "VA"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "것",
+      "기분",
+      "꿈",
+      "만큼",
+      "말",
+      "수",
+      "표현"
+    ],
+    "domain": "joy"
+  },
+  {
+    "question": {
+      "text": "봉사 활동은 왜 사람들에게 행복을 줄까?",
+      "tokens": [
+        {
+          "text": "봉사",
+          "lemma": "봉사",
+          "pos": "NNG"
+        },
+        {
+          "text": "활동",
+          "lemma": "활동",
+          "pos": "NNG"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "JX"
+        },
+        {
+          "text": "왜",
+          "lemma": "왜",
+          "pos": "MAG"
+        },
+        {
+          "text": "사람",
+          "lemma": "사람",
+          "pos": "NNG"
+        },
+        {
+          "text": "들",
+          "lemma": "들",
+          "pos": "XSN"
+        },
+        {
+          "text": "에게",
+          "lemma": "에게",
+          "pos": "JKB"
+        },
+        {
+          "text": "행복",
+          "lemma": "행복",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "주",
+          "lemma": "주",
+          "pos": "VX"
+        },
+        {
+          "text": "ㄹ까",
+          "lemma": "ㄹ까",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "보람",
+        "봉사",
+        "사람",
+        "수",
+        "행복",
+        "활동"
+      ],
+      "domain": "joy"
+    },
+    "answer": {
+      "text": "다른 사람을 도우면서 보람을 느끼고 행복을 느낄 수 있어.",
+      "tokens": [
+        {
+          "text": "다른",
+          "lemma": "다른",
+          "pos": "MM"
+        },
+        {
+          "text": "사람",
+          "lemma": "사람",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "돕",
+          "lemma": "돕",
+          "pos": "VV"
+        },
+        {
+          "text": "면서",
+          "lemma": "면서",
+          "pos": "EC"
+        },
+        {
+          "text": "보람",
+          "lemma": "보람",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "느끼",
+          "lemma": "느끼",
+          "pos": "VV"
+        },
+        {
+          "text": "고",
+          "lemma": "고",
+          "pos": "EC"
+        },
+        {
+          "text": "행복",
+          "lemma": "행복",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "느끼",
+          "lemma": "느끼",
+          "pos": "VV"
+        },
+        {
+          "text": "ㄹ",
+          "lemma": "ㄹ",
+          "pos": "ETM"
+        },
+        {
+          "text": "수",
+          "lemma": "수",
+          "pos": "NNB"
+        },
+        {
+          "text": "있",
+          "lemma": "있",
+          "pos": "VX"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "보람",
+      "봉사",
+      "사람",
+      "수",
+      "행복",
+      "활동"
+    ],
+    "domain": "joy"
+  },
+  {
+    "question": {
+      "text": "아침에 일어날 때 어떤 생각을 해?",
+      "tokens": [
+        {
+          "text": "아침",
+          "lemma": "아침",
+          "pos": "NNG"
+        },
+        {
+          "text": "에",
+          "lemma": "에",
+          "pos": "JKB"
+        },
+        {
+          "text": "일어나",
+          "lemma": "일어나",
+          "pos": "VV"
+        },
+        {
+          "text": "ㄹ",
+          "lemma": "ㄹ",
+          "pos": "ETM"
+        },
+        {
+          "text": "때",
+          "lemma": "때",
+          "pos": "NNG"
+        },
+        {
+          "text": "어떤",
+          "lemma": "어떤",
+          "pos": "MM"
+        },
+        {
+          "text": "생각",
+          "lemma": "생각",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "VX"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "때",
+        "생각",
+        "아침",
+        "오늘",
+        "일",
+        "하루"
+      ],
+      "domain": "joy"
+    },
+    "answer": {
+      "text": "오늘 하루도 즐거운 일들로 가득하길 바라며 일어나.",
+      "tokens": [
+        {
+          "text": "오늘",
+          "lemma": "오늘",
+          "pos": "NNG"
+        },
+        {
+          "text": "하루",
+          "lemma": "하루",
+          "pos": "NNG"
+        },
+        {
+          "text": "도",
+          "lemma": "도",
+          "pos": "JX"
+        },
+        {
+          "text": "즐겁",
+          "lemma": "즐겁",
+          "pos": "VA"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "일",
+          "lemma": "일",
+          "pos": "NNG"
+        },
+        {
+          "text": "들",
+          "lemma": "들",
+          "pos": "XSN"
+        },
+        {
+          "text": "로",
+          "lemma": "로",
+          "pos": "JKB"
+        },
+        {
+          "text": "가득",
+          "lemma": "가득",
+          "pos": "MAG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "기",
+          "lemma": "기",
+          "pos": "ETN"
+        },
+        {
+          "text": "ㄹ",
+          "lemma": "ㄹ",
+          "pos": "JKO"
+        },
+        {
+          "text": "바라",
+          "lemma": "바라",
+          "pos": "VV"
+        },
+        {
+          "text": "며",
+          "lemma": "며",
+          "pos": "EC"
+        },
+        {
+          "text": "일어나",
+          "lemma": "일어나",
+          "pos": "VV"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "때",
+      "생각",
+      "아침",
+      "오늘",
+      "일",
+      "하루"
+    ],
+    "domain": "joy"
+  },
+  {
+    "question": {
+      "text": "잠들기 전에 어떤 생각을 해?",
+      "tokens": [
+        {
+          "text": "잠들",
+          "lemma": "잠들",
+          "pos": "VV"
+        },
+        {
+          "text": "기",
+          "lemma": "기",
+          "pos": "ETN"
+        },
+        {
+          "text": "전",
+          "lemma": "전",
+          "pos": "NNG"
+        },
+        {
+          "text": "에",
+          "lemma": "에",
+          "pos": "JKB"
+        },
+        {
+          "text": "어떤",
+          "lemma": "어떤",
+          "pos": "MM"
+        },
+        {
+          "text": "생각",
+          "lemma": "생각",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "VX"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "생각",
+        "오늘",
+        "일",
+        "전"
+      ],
+      "domain": "joy"
+    },
+    "answer": {
+      "text": "오늘 있었던 좋았던 일들을 떠올리면서 잠들어.",
+      "tokens": [
+        {
+          "text": "오늘",
+          "lemma": "오늘",
+          "pos": "NNG"
+        },
+        {
+          "text": "있",
+          "lemma": "있",
+          "pos": "VX"
+        },
+        {
+          "text": "었",
+          "lemma": "었",
+          "pos": "EP"
+        },
+        {
+          "text": "던",
+          "lemma": "던",
+          "pos": "ETM"
+        },
+        {
+          "text": "좋",
+          "lemma": "좋",
+          "pos": "VA"
+        },
+        {
+          "text": "았",
+          "lemma": "았",
+          "pos": "EP"
+        },
+        {
+          "text": "던",
+          "lemma": "던",
+          "pos": "ETM"
+        },
+        {
+          "text": "일",
+          "lemma": "일",
+          "pos": "NNG"
+        },
+        {
+          "text": "들",
+          "lemma": "들",
+          "pos": "XSN"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "떠올리",
+          "lemma": "떠올리",
+          "pos": "VV"
+        },
+        {
+          "text": "면서",
+          "lemma": "면서",
+          "pos": "EC"
+        },
+        {
+          "text": "잠들",
+          "lemma": "잠들",
+          "pos": "VV"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "생각",
+      "오늘",
+      "일",
+      "전"
+    ],
+    "domain": "joy"
+  },
+  {
+    "question": {
+      "text": "행복은 노력으로 얻을 수 있을까?",
+      "tokens": [
+        {
+          "text": "행복",
+          "lemma": "행복",
+          "pos": "NNG"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "JX"
+        },
+        {
+          "text": "노력",
+          "lemma": "노력",
+          "pos": "NNG"
+        },
+        {
+          "text": "으로",
+          "lemma": "으로",
+          "pos": "JKB"
+        },
+        {
+          "text": "얻",
+          "lemma": "얻",
+          "pos": "VV"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "ETM"
+        },
+        {
+          "text": "수",
+          "lemma": "수",
+          "pos": "NNB"
+        },
+        {
+          "text": "있",
+          "lemma": "있",
+          "pos": "VX"
+        },
+        {
+          "text": "을까",
+          "lemma": "을까",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "노력",
+        "만큼",
+        "생각",
+        "수",
+        "행복"
+      ],
+      "domain": "joy"
+    },
+    "answer": {
+      "text": "응, 행복은 노력하는 만큼 더 크게 다가온다고 생각해.",
+      "tokens": [
+        {
+          "text": "응",
+          "lemma": "응",
+          "pos": "IC"
+        },
+        {
+          "text": "행복",
+          "lemma": "행복",
+          "pos": "NNG"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "JX"
+        },
+        {
+          "text": "노력",
+          "lemma": "노력",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "ETM"
+        },
+        {
+          "text": "만큼",
+          "lemma": "만큼",
+          "pos": "NNB"
+        },
+        {
+          "text": "더",
+          "lemma": "더",
+          "pos": "MAG"
+        },
+        {
+          "text": "크",
+          "lemma": "크",
+          "pos": "VA"
+        },
+        {
+          "text": "게",
+          "lemma": "게",
+          "pos": "EC"
+        },
+        {
+          "text": "다가오",
+          "lemma": "다가오",
+          "pos": "VV"
+        },
+        {
+          "text": "ㄴ다고",
+          "lemma": "ㄴ다고",
+          "pos": "EC"
+        },
+        {
+          "text": "생각",
+          "lemma": "생각",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "노력",
+      "만큼",
+      "생각",
+      "수",
+      "행복"
+    ],
+    "domain": "joy"
+  },
+  {
+    "question": {
+      "text": "어떤 날씨가 가장 행복해?",
+      "tokens": [
+        {
+          "text": "어떤",
+          "lemma": "어떤",
+          "pos": "MM"
+        },
+        {
+          "text": "날씨",
+          "lemma": "날씨",
+          "pos": "NNG"
+        },
+        {
+          "text": "가",
+          "lemma": "가",
+          "pos": "JKS"
+        },
+        {
+          "text": "가장",
+          "lemma": "가장",
+          "pos": "MAG"
+        },
+        {
+          "text": "행복",
+          "lemma": "행복",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "날",
+        "날씨",
+        "햇살",
+        "행복"
+      ],
+      "domain": "joy"
+    },
+    "answer": {
+      "text": "햇살 가득한 맑은 날이 가장 행복해.",
+      "tokens": [
+        {
+          "text": "햇살",
+          "lemma": "햇살",
+          "pos": "NNG"
+        },
+        {
+          "text": "가득",
+          "lemma": "가득",
+          "pos": "MAG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "맑",
+          "lemma": "맑",
+          "pos": "VA"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "ETM"
+        },
+        {
+          "text": "날",
+          "lemma": "날",
+          "pos": "NNG"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "JKS"
+        },
+        {
+          "text": "가장",
+          "lemma": "가장",
+          "pos": "MAG"
+        },
+        {
+          "text": "행복",
+          "lemma": "행복",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "날",
+      "날씨",
+      "햇살",
+      "행복"
+    ],
+    "domain": "joy"
+  },
+  {
+    "question": {
+      "text": "가장 좋아하는 계절은 언제야?",
+      "tokens": [
+        {
+          "text": "가장",
+          "lemma": "가장",
+          "pos": "MAG"
+        },
+        {
+          "text": "좋아하",
+          "lemma": "좋아하",
+          "pos": "VV"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "ETM"
+        },
+        {
+          "text": "계절",
+          "lemma": "계절",
+          "pos": "NNG"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "JX"
+        },
+        {
+          "text": "언제",
+          "lemma": "언제",
+          "pos": "NP"
+        },
+        {
+          "text": "야",
+          "lemma": "야",
+          "pos": "JKV"
+        }
+      ],
+      "concepts": [
+        "계절",
+        "봄"
+      ],
+      "domain": "joy"
+    },
+    "answer": {
+      "text": "따뜻하고 포근한 봄을 가장 좋아해.",
+      "tokens": [
+        {
+          "text": "따뜻",
+          "lemma": "따뜻",
+          "pos": "XR"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSA"
+        },
+        {
+          "text": "고",
+          "lemma": "고",
+          "pos": "EC"
+        },
+        {
+          "text": "포근",
+          "lemma": "포근",
+          "pos": "XR"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSA"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "봄",
+          "lemma": "봄",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "가장",
+          "lemma": "가장",
+          "pos": "MAG"
+        },
+        {
+          "text": "좋아하",
+          "lemma": "좋아하",
+          "pos": "VV"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "계절",
+      "봄"
+    ],
+    "domain": "joy"
+  },
+  {
+    "question": {
+      "text": "기분이 우울할 때 어떻게 해?",
+      "tokens": [
+        {
+          "text": "기분",
+          "lemma": "기분",
+          "pos": "NNG"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "JKS"
+        },
+        {
+          "text": "우울",
+          "lemma": "우울",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "ㄹ",
+          "lemma": "ㄹ",
+          "pos": "ETM"
+        },
+        {
+          "text": "때",
+          "lemma": "때",
+          "pos": "NNG"
+        },
+        {
+          "text": "어떻",
+          "lemma": "어떻",
+          "pos": "VA"
+        },
+        {
+          "text": "게",
+          "lemma": "게",
+          "pos": "EC"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "VX"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "기분",
+        "때",
+        "마음",
+        "우울",
+        "차",
+        "책"
+      ],
+      "domain": "joy"
+    },
+    "answer": {
+      "text": "좋아하는 책을 읽거나 따뜻한 차를 마시면서 마음을 진정시켜.",
+      "tokens": [
+        {
+          "text": "좋아하",
+          "lemma": "좋아하",
+          "pos": "VV"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "ETM"
+        },
+        {
+          "text": "책",
+          "lemma": "책",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "읽",
+          "lemma": "읽",
+          "pos": "VV"
+        },
+        {
+          "text": "거나",
+          "lemma": "거나",
+          "pos": "EC"
+        },
+        {
+          "text": "따뜻",
+          "lemma": "따뜻",
+          "pos": "XR"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSA"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "차",
+          "lemma": "차",
+          "pos": "NNG"
+        },
+        {
+          "text": "를",
+          "lemma": "를",
+          "pos": "JKO"
+        },
+        {
+          "text": "마시",
+          "lemma": "마시",
+          "pos": "VV"
+        },
+        {
+          "text": "면서",
+          "lemma": "면서",
+          "pos": "EC"
+        },
+        {
+          "text": "마음",
+          "lemma": "마음",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "진정",
+          "lemma": "진정",
+          "pos": "XR"
+        },
+        {
+          "text": "시키",
+          "lemma": "시키",
+          "pos": "XSV"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "기분",
+      "때",
+      "마음",
+      "우울",
+      "차",
+      "책"
+    ],
+    "domain": "joy"
+  },
+  {
+    "question": {
+      "text": "사랑은 행복에 어떤 영향을 줄까?",
+      "tokens": [
+        {
+          "text": "사랑은",
+          "lemma": "사랑은",
+          "pos": "NNP"
+        },
+        {
+          "text": "행복",
+          "lemma": "행복",
+          "pos": "NNG"
+        },
+        {
+          "text": "에",
+          "lemma": "에",
+          "pos": "JKB"
+        },
+        {
+          "text": "어떤",
+          "lemma": "어떤",
+          "pos": "MM"
+        },
+        {
+          "text": "영향",
+          "lemma": "영향",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "주",
+          "lemma": "주",
+          "pos": "VX"
+        },
+        {
+          "text": "ㄹ까",
+          "lemma": "ㄹ까",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "사랑은",
+        "삶",
+        "선물",
+        "영향",
+        "풍요",
+        "행복"
+      ],
+      "domain": "joy"
+    },
+    "answer": {
+      "text": "사랑은 삶을 더 풍요롭게 하고 행복을 느끼게 해주는 가장 큰 선물이야.",
+      "tokens": [
+        {
+          "text": "사랑은",
+          "lemma": "사랑은",
+          "pos": "NNP"
+        },
+        {
+          "text": "삶",
+          "lemma": "삶",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "더",
+          "lemma": "더",
+          "pos": "MAG"
+        },
+        {
+          "text": "풍요",
+          "lemma": "풍요",
+          "pos": "NNG"
+        },
+        {
+          "text": "롭",
+          "lemma": "롭",
+          "pos": "XSA"
+        },
+        {
+          "text": "게",
+          "lemma": "게",
+          "pos": "EC"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "VV"
+        },
+        {
+          "text": "고",
+          "lemma": "고",
+          "pos": "EC"
+        },
+        {
+          "text": "행복",
+          "lemma": "행복",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "느끼",
+          "lemma": "느끼",
+          "pos": "VV"
+        },
+        {
+          "text": "게",
+          "lemma": "게",
+          "pos": "EC"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "VV"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EC"
+        },
+        {
+          "text": "주",
+          "lemma": "주",
+          "pos": "VX"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "ETM"
+        },
+        {
+          "text": "가장",
+          "lemma": "가장",
+          "pos": "MAG"
+        },
+        {
+          "text": "크",
+          "lemma": "크",
+          "pos": "VA"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "선물",
+          "lemma": "선물",
+          "pos": "NNG"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "VCP"
+        },
+        {
+          "text": "야",
+          "lemma": "야",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "사랑은",
+      "삶",
+      "선물",
+      "영향",
+      "풍요",
+      "행복"
+    ],
+    "domain": "joy"
+  },
+  {
+    "question": {
+      "text": "용서는 왜 중요할까?",
+      "tokens": [
+        {
+          "text": "용서",
+          "lemma": "용서",
+          "pos": "NNP"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "JX"
+        },
+        {
+          "text": "왜",
+          "lemma": "왜",
+          "pos": "MAG"
+        },
+        {
+          "text": "중요",
+          "lemma": "중요",
+          "pos": "XR"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSA"
+        },
+        {
+          "text": "ㄹ까",
+          "lemma": "ㄹ까",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "마음",
+        "용서",
+        "자신",
+        "자유",
+        "타인",
+        "평화"
+      ],
+      "domain": "joy"
+    },
+    "answer": {
+      "text": "용서는 자신과 타인을 자유롭게 하고 마음의 평화를 찾아줘서 중요해.",
+      "tokens": [
+        {
+          "text": "용서",
+          "lemma": "용서",
+          "pos": "NNP"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "JX"
+        },
+        {
+          "text": "자신",
+          "lemma": "자신",
+          "pos": "NNG"
+        },
+        {
+          "text": "과",
+          "lemma": "과",
+          "pos": "JC"
+        },
+        {
+          "text": "타인",
+          "lemma": "타인",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "자유",
+          "lemma": "자유",
+          "pos": "NNG"
+        },
+        {
+          "text": "롭",
+          "lemma": "롭",
+          "pos": "XSA"
+        },
+        {
+          "text": "게",
+          "lemma": "게",
+          "pos": "EC"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "VV"
+        },
+        {
+          "text": "고",
+          "lemma": "고",
+          "pos": "EC"
+        },
+        {
+          "text": "마음",
+          "lemma": "마음",
+          "pos": "NNG"
+        },
+        {
+          "text": "의",
+          "lemma": "의",
+          "pos": "JKG"
+        },
+        {
+          "text": "평화",
+          "lemma": "평화",
+          "pos": "NNG"
+        },
+        {
+          "text": "를",
+          "lemma": "를",
+          "pos": "JKO"
+        },
+        {
+          "text": "찾",
+          "lemma": "찾",
+          "pos": "VV"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EC"
+        },
+        {
+          "text": "주",
+          "lemma": "주",
+          "pos": "VX"
+        },
+        {
+          "text": "어서",
+          "lemma": "어서",
+          "pos": "EC"
+        },
+        {
+          "text": "중요",
+          "lemma": "중요",
+          "pos": "XR"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSA"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "마음",
+      "용서",
+      "자신",
+      "자유",
+      "타인",
+      "평화"
+    ],
+    "domain": "joy"
+  },
+  {
+    "question": {
+      "text": "칭찬은 어떤 효과가 있을까?",
+      "tokens": [
+        {
+          "text": "칭찬",
+          "lemma": "칭찬",
+          "pos": "NNG"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "JX"
+        },
+        {
+          "text": "어떤",
+          "lemma": "어떤",
+          "pos": "MM"
+        },
+        {
+          "text": "효과",
+          "lemma": "효과",
+          "pos": "NNG"
+        },
+        {
+          "text": "가",
+          "lemma": "가",
+          "pos": "JKS"
+        },
+        {
+          "text": "있",
+          "lemma": "있",
+          "pos": "VX"
+        },
+        {
+          "text": "을까",
+          "lemma": "을까",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "긍정",
+        "에너지",
+        "자신감",
+        "칭찬",
+        "효과"
+      ],
+      "domain": "joy"
+    },
+    "answer": {
+      "text": "칭찬은 자신감을 높여주고 긍정적인 에너지를 줘.",
+      "tokens": [
+        {
+          "text": "칭찬",
+          "lemma": "칭찬",
+          "pos": "NNG"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "JX"
+        },
+        {
+          "text": "자신감",
+          "lemma": "자신감",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "높이",
+          "lemma": "높이",
+          "pos": "VV"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EC"
+        },
+        {
+          "text": "주",
+          "lemma": "주",
+          "pos": "VX"
+        },
+        {
+          "text": "고",
+          "lemma": "고",
+          "pos": "EC"
+        },
+        {
+          "text": "긍정",
+          "lemma": "긍정",
+          "pos": "NNG"
+        },
+        {
+          "text": "적",
+          "lemma": "적",
+          "pos": "XSN"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "VCP"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "에너지",
+          "lemma": "에너지",
+          "pos": "NNG"
+        },
+        {
+          "text": "를",
+          "lemma": "를",
+          "pos": "JKO"
+        },
+        {
+          "text": "주",
+          "lemma": "주",
+          "pos": "VX"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "긍정",
+      "에너지",
+      "자신감",
+      "칭찬",
+      "효과"
+    ],
+    "domain": "joy"
+  },
+  {
+    "question": {
+      "text": "실패했을 때 어떻게 극복해?",
+      "tokens": [
+        {
+          "text": "실패",
+          "lemma": "실패",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "았",
+          "lemma": "았",
+          "pos": "EP"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "ETM"
+        },
+        {
+          "text": "때",
+          "lemma": "때",
+          "pos": "NNG"
+        },
+        {
+          "text": "어떻",
+          "lemma": "어떻",
+          "pos": "VA"
+        },
+        {
+          "text": "게",
+          "lemma": "게",
+          "pos": "EC"
+        },
+        {
+          "text": "극복",
+          "lemma": "극복",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "극복",
+        "도전",
+        "때",
+        "실패"
+      ],
+      "domain": "joy"
+    },
+    "answer": {
+      "text": "실패를 통해 배우고, 다시 도전하면서 극복해나가.",
+      "tokens": [
+        {
+          "text": "실패",
+          "lemma": "실패",
+          "pos": "NNG"
+        },
+        {
+          "text": "를",
+          "lemma": "를",
+          "pos": "JKO"
+        },
+        {
+          "text": "통하",
+          "lemma": "통하",
+          "pos": "VV"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EC"
+        },
+        {
+          "text": "배우",
+          "lemma": "배우",
+          "pos": "VV"
+        },
+        {
+          "text": "고",
+          "lemma": "고",
+          "pos": "EC"
+        },
+        {
+          "text": "다시",
+          "lemma": "다시",
+          "pos": "MAG"
+        },
+        {
+          "text": "도전",
+          "lemma": "도전",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "면서",
+          "lemma": "면서",
+          "pos": "EC"
+        },
+        {
+          "text": "극복",
+          "lemma": "극복",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EC"
+        },
+        {
+          "text": "나가",
+          "lemma": "나가",
+          "pos": "VX"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "극복",
+      "도전",
+      "때",
+      "실패"
+    ],
+    "domain": "joy"
+  },
+  {
+    "question": {
+      "text": "자신을 사랑하는 것이 왜 중요해?",
+      "tokens": [
+        {
+          "text": "자신",
+          "lemma": "자신",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "사랑",
+          "lemma": "사랑",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "ETM"
+        },
+        {
+          "text": "것",
+          "lemma": "것",
+          "pos": "NNB"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "JKS"
+        },
+        {
+          "text": "왜",
+          "lemma": "왜",
+          "pos": "MAG"
+        },
+        {
+          "text": "중요",
+          "lemma": "중요",
+          "pos": "XR"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSA"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "것",
+        "사람",
+        "사랑",
+        "수",
+        "자신",
+        "행복"
+      ],
+      "domain": "joy"
+    },
+    "answer": {
+      "text": "자신을 사랑해야 다른 사람도 사랑할 수 있고, 진정한 행복을 찾을 수 있어.",
+      "tokens": [
+        {
+          "text": "자신",
+          "lemma": "자신",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "사랑",
+          "lemma": "사랑",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "아야",
+          "lemma": "아야",
+          "pos": "EC"
+        },
+        {
+          "text": "다른",
+          "lemma": "다른",
+          "pos": "MM"
+        },
+        {
+          "text": "사람",
+          "lemma": "사람",
+          "pos": "NNG"
+        },
+        {
+          "text": "도",
+          "lemma": "도",
+          "pos": "JX"
+        },
+        {
+          "text": "사랑",
+          "lemma": "사랑",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "ㄹ",
+          "lemma": "ㄹ",
+          "pos": "ETM"
+        },
+        {
+          "text": "수",
+          "lemma": "수",
+          "pos": "NNB"
+        },
+        {
+          "text": "있",
+          "lemma": "있",
+          "pos": "VV"
+        },
+        {
+          "text": "고",
+          "lemma": "고",
+          "pos": "EC"
+        },
+        {
+          "text": "진정",
+          "lemma": "진정",
+          "pos": "XR"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSA"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "행복",
+          "lemma": "행복",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "찾",
+          "lemma": "찾",
+          "pos": "VV"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "ETM"
+        },
+        {
+          "text": "수",
+          "lemma": "수",
+          "pos": "NNB"
+        },
+        {
+          "text": "있",
+          "lemma": "있",
+          "pos": "VX"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "것",
+      "사람",
+      "사랑",
+      "수",
+      "자신",
+      "행복"
+    ],
+    "domain": "joy"
+  },
+  {
+    "question": {
+      "text": "어떤 운동을 할 때 가장 즐거워?",
+      "tokens": [
+        {
+          "text": "어떤",
+          "lemma": "어떤",
+          "pos": "MM"
+        },
+        {
+          "text": "운동",
+          "lemma": "운동",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "VV"
+        },
+        {
+          "text": "ㄹ",
+          "lemma": "ㄹ",
+          "pos": "ETM"
+        },
+        {
+          "text": "때",
+          "lemma": "때",
+          "pos": "NNG"
+        },
+        {
+          "text": "가장",
+          "lemma": "가장",
+          "pos": "MAG"
+        },
+        {
+          "text": "즐겁",
+          "lemma": "즐겁",
+          "pos": "VA"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "때",
+        "마음",
+        "산책",
+        "요가",
+        "운동",
+        "편안"
+      ],
+      "domain": "joy"
+    },
+    "answer": {
+      "text": "산책하거나 요가 할 때 마음이 편안하고 즐거워.",
+      "tokens": [
+        {
+          "text": "산책",
+          "lemma": "산책",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "거나",
+          "lemma": "거나",
+          "pos": "EC"
+        },
+        {
+          "text": "요가",
+          "lemma": "요가",
+          "pos": "NNP"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "VV"
+        },
+        {
+          "text": "ㄹ",
+          "lemma": "ㄹ",
+          "pos": "ETM"
+        },
+        {
+          "text": "때",
+          "lemma": "때",
+          "pos": "NNG"
+        },
+        {
+          "text": "마음",
+          "lemma": "마음",
+          "pos": "NNG"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "JKS"
+        },
+        {
+          "text": "편안",
+          "lemma": "편안",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "고",
+          "lemma": "고",
+          "pos": "EC"
+        },
+        {
+          "text": "즐겁",
+          "lemma": "즐겁",
+          "pos": "VA"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "때",
+      "마음",
+      "산책",
+      "요가",
+      "운동",
+      "편안"
+    ],
+    "domain": "joy"
+  },
+  {
+    "question": {
+      "text": "배움은 우리에게 어떤 즐거움을 줄까?",
+      "tokens": [
+        {
+          "text": "배우",
+          "lemma": "배우",
+          "pos": "VV"
+        },
+        {
+          "text": "ㅁ",
+          "lemma": "ㅁ",
+          "pos": "ETN"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "JX"
+        },
+        {
+          "text": "우리",
+          "lemma": "우리",
+          "pos": "NP"
+        },
+        {
+          "text": "에게",
+          "lemma": "에게",
+          "pos": "JKB"
+        },
+        {
+          "text": "어떤",
+          "lemma": "어떤",
+          "pos": "MM"
+        },
+        {
+          "text": "즐거움",
+          "lemma": "즐거움",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "주",
+          "lemma": "주",
+          "pos": "VX"
+        },
+        {
+          "text": "ㄹ까",
+          "lemma": "ㄹ까",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "것",
+        "성장",
+        "수",
+        "즐거움"
+      ],
+      "domain": "joy"
+    },
+    "answer": {
+      "text": "새로운 것을 배우면서 성장하는 즐거움을 느낄 수 있어.",
+      "tokens": [
+        {
+          "text": "새롭",
+          "lemma": "새롭",
+          "pos": "VA"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "것",
+          "lemma": "것",
+          "pos": "NNB"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "배우",
+          "lemma": "배우",
+          "pos": "VV"
+        },
+        {
+          "text": "면서",
+          "lemma": "면서",
+          "pos": "EC"
+        },
+        {
+          "text": "성장",
+          "lemma": "성장",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "ETM"
+        },
+        {
+          "text": "즐거움",
+          "lemma": "즐거움",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "느끼",
+          "lemma": "느끼",
+          "pos": "VV"
+        },
+        {
+          "text": "ㄹ",
+          "lemma": "ㄹ",
+          "pos": "ETM"
+        },
+        {
+          "text": "수",
+          "lemma": "수",
+          "pos": "NNB"
+        },
+        {
+          "text": "있",
+          "lemma": "있",
+          "pos": "VX"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "것",
+      "성장",
+      "수",
+      "즐거움"
+    ],
+    "domain": "joy"
+  },
+  {
+    "question": {
+      "text": "예술 작품을 감상하는 건 어떤 기분이야?",
+      "tokens": [
+        {
+          "text": "예술",
+          "lemma": "예술",
+          "pos": "NNG"
+        },
+        {
+          "text": "작품",
+          "lemma": "작품",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "감상",
+          "lemma": "감상",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "ETM"
+        },
+        {
+          "text": "건",
+          "lemma": "건",
+          "pos": "NNB"
+        },
+        {
+          "text": "어떤",
+          "lemma": "어떤",
+          "pos": "MM"
+        },
+        {
+          "text": "기분",
+          "lemma": "기분",
+          "pos": "NNG"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "VCP"
+        },
+        {
+          "text": "야",
+          "lemma": "야",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "감상",
+        "건",
+        "기분",
+        "마음",
+        "영감",
+        "예술",
+        "작품",
+        "풍요"
+      ],
+      "domain": "joy"
+    },
+    "answer": {
+      "text": "마음이 풍요로워지고 영감을 얻는 기분이야.",
+      "tokens": [
+        {
+          "text": "마음",
+          "lemma": "마음",
+          "pos": "NNG"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "JKS"
+        },
+        {
+          "text": "풍요",
+          "lemma": "풍요",
+          "pos": "NNG"
+        },
+        {
+          "text": "롭",
+          "lemma": "롭",
+          "pos": "XSA"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EC"
+        },
+        {
+          "text": "지",
+          "lemma": "지",
+          "pos": "VX"
+        },
+        {
+          "text": "고",
+          "lemma": "고",
+          "pos": "EC"
+        },
+        {
+          "text": "영감",
+          "lemma": "영감",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "얻",
+          "lemma": "얻",
+          "pos": "VV"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "ETM"
+        },
+        {
+          "text": "기분",
+          "lemma": "기분",
+          "pos": "NNG"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "VCP"
+        },
+        {
+          "text": "야",
+          "lemma": "야",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "감상",
+      "건",
+      "기분",
+      "마음",
+      "영감",
+      "예술",
+      "작품",
+      "풍요"
+    ],
+    "domain": "joy"
+  },
+  {
+    "question": {
+      "text": "자연 속에서 행복을 느낄 수 있을까?",
+      "tokens": [
+        {
+          "text": "자연",
+          "lemma": "자연",
+          "pos": "NNG"
+        },
+        {
+          "text": "속",
+          "lemma": "속",
+          "pos": "NNG"
+        },
+        {
+          "text": "에서",
+          "lemma": "에서",
+          "pos": "JKB"
+        },
+        {
+          "text": "행복",
+          "lemma": "행복",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "느끼",
+          "lemma": "느끼",
+          "pos": "VV"
+        },
+        {
+          "text": "ㄹ",
+          "lemma": "ㄹ",
+          "pos": "ETM"
+        },
+        {
+          "text": "수",
+          "lemma": "수",
+          "pos": "NNB"
+        },
+        {
+          "text": "있",
+          "lemma": "있",
+          "pos": "VX"
+        },
+        {
+          "text": "을까",
+          "lemma": "을까",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "마음",
+        "속",
+        "수",
+        "자연",
+        "편안",
+        "행복"
+      ],
+      "domain": "joy"
+    },
+    "answer": {
+      "text": "응, 자연 속에서는 마음이 편안해지고 진정한 행복을 느낄 수 있어.",
+      "tokens": [
+        {
+          "text": "응",
+          "lemma": "응",
+          "pos": "IC"
+        },
+        {
+          "text": "자연",
+          "lemma": "자연",
+          "pos": "NNG"
+        },
+        {
+          "text": "속",
+          "lemma": "속",
+          "pos": "NNG"
+        },
+        {
+          "text": "에서",
+          "lemma": "에서",
+          "pos": "JKB"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "JX"
+        },
+        {
+          "text": "마음",
+          "lemma": "마음",
+          "pos": "NNG"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "JKS"
+        },
+        {
+          "text": "편안",
+          "lemma": "편안",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EC"
+        },
+        {
+          "text": "지",
+          "lemma": "지",
+          "pos": "VX"
+        },
+        {
+          "text": "고",
+          "lemma": "고",
+          "pos": "EC"
+        },
+        {
+          "text": "진정",
+          "lemma": "진정",
+          "pos": "XR"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSA"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "행복",
+          "lemma": "행복",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "느끼",
+          "lemma": "느끼",
+          "pos": "VV"
+        },
+        {
+          "text": "ㄹ",
+          "lemma": "ㄹ",
+          "pos": "ETM"
+        },
+        {
+          "text": "수",
+          "lemma": "수",
+          "pos": "NNB"
+        },
+        {
+          "text": "있",
+          "lemma": "있",
+          "pos": "VX"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "마음",
+      "속",
+      "수",
+      "자연",
+      "편안",
+      "행복"
+    ],
+    "domain": "joy"
+  },
+  {
+    "question": {
+      "text": "고민이 있을 때 어떻게 해결해?",
+      "tokens": [
+        {
+          "text": "고민",
+          "lemma": "고민",
+          "pos": "NNG"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "JKS"
+        },
+        {
+          "text": "있",
+          "lemma": "있",
+          "pos": "VV"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "ETM"
+        },
+        {
+          "text": "때",
+          "lemma": "때",
+          "pos": "NNG"
+        },
+        {
+          "text": "어떻",
+          "lemma": "어떻",
+          "pos": "VA"
+        },
+        {
+          "text": "게",
+          "lemma": "게",
+          "pos": "EC"
+        },
+        {
+          "text": "해결",
+          "lemma": "해결",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "고민",
+        "때",
+        "사람",
+        "생각",
+        "이야기",
+        "해결",
+        "혼자"
+      ],
+      "domain": "joy"
+    },
+    "answer": {
+      "text": "친한 사람과 이야기 나누거나 혼자 조용히 생각하면서 해결하려고 해.",
+      "tokens": [
+        {
+          "text": "친하",
+          "lemma": "친하",
+          "pos": "VA"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "사람",
+          "lemma": "사람",
+          "pos": "NNG"
+        },
+        {
+          "text": "과",
+          "lemma": "과",
+          "pos": "JC"
+        },
+        {
+          "text": "이야기",
+          "lemma": "이야기",
+          "pos": "NNG"
+        },
+        {
+          "text": "나누",
+          "lemma": "나누",
+          "pos": "VV"
+        },
+        {
+          "text": "거나",
+          "lemma": "거나",
+          "pos": "EC"
+        },
+        {
+          "text": "혼자",
+          "lemma": "혼자",
+          "pos": "NNG"
+        },
+        {
+          "text": "조용히",
+          "lemma": "조용히",
+          "pos": "MAG"
+        },
+        {
+          "text": "생각",
+          "lemma": "생각",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "면서",
+          "lemma": "면서",
+          "pos": "EC"
+        },
+        {
+          "text": "해결",
+          "lemma": "해결",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "려고",
+          "lemma": "려고",
+          "pos": "EC"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "VX"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "고민",
+      "때",
+      "사람",
+      "생각",
+      "이야기",
+      "해결",
+      "혼자"
+    ],
+    "domain": "joy"
+  },
+  {
+    "question": {
+      "text": "긍정적인 습관을 들이는 방법이 있어?",
+      "tokens": [
+        {
+          "text": "긍정",
+          "lemma": "긍정",
+          "pos": "NNG"
+        },
+        {
+          "text": "적",
+          "lemma": "적",
+          "pos": "XSN"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "VCP"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "습관",
+          "lemma": "습관",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "들이",
+          "lemma": "들이",
+          "pos": "VV"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "ETM"
+        },
+        {
+          "text": "방법",
+          "lemma": "방법",
+          "pos": "NNG"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "JKS"
+        },
+        {
+          "text": "있",
+          "lemma": "있",
+          "pos": "VX"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "감사",
+        "긍정",
+        "도움",
+        "방법",
+        "습관",
+        "언",
+        "일기"
+      ],
+      "domain": "joy"
+    },
+    "answer": {
+      "text": "매일 감사 일기를 쓰거나 긍정적인 확언을 하면 도움이 돼.",
+      "tokens": [
+        {
+          "text": "매일",
+          "lemma": "매일",
+          "pos": "MAG"
+        },
+        {
+          "text": "감사",
+          "lemma": "감사",
+          "pos": "NNG"
+        },
+        {
+          "text": "일기",
+          "lemma": "일기",
+          "pos": "NNG"
+        },
+        {
+          "text": "를",
+          "lemma": "를",
+          "pos": "JKO"
+        },
+        {
+          "text": "쓰",
+          "lemma": "쓰",
+          "pos": "VV"
+        },
+        {
+          "text": "거나",
+          "lemma": "거나",
+          "pos": "EC"
+        },
+        {
+          "text": "긍정",
+          "lemma": "긍정",
+          "pos": "NNG"
+        },
+        {
+          "text": "적",
+          "lemma": "적",
+          "pos": "XSN"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "VCP"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "확",
+          "lemma": "확",
+          "pos": "MAG"
+        },
+        {
+          "text": "언",
+          "lemma": "언",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "VV"
+        },
+        {
+          "text": "면",
+          "lemma": "면",
+          "pos": "EC"
+        },
+        {
+          "text": "도움",
+          "lemma": "도움",
+          "pos": "NNG"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "JKS"
+        },
+        {
+          "text": "되",
+          "lemma": "되",
+          "pos": "VV"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "감사",
+      "긍정",
+      "도움",
+      "방법",
+      "습관",
+      "언",
+      "일기"
+    ],
+    "domain": "joy"
+  },
+  {
+    "question": {
+      "text": "작은 성공에도 기뻐하는 편이야?",
+      "tokens": [
+        {
+          "text": "작",
+          "lemma": "작",
+          "pos": "VA"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "ETM"
+        },
+        {
+          "text": "성공",
+          "lemma": "성공",
+          "pos": "NNG"
+        },
+        {
+          "text": "에",
+          "lemma": "에",
+          "pos": "JKB"
+        },
+        {
+          "text": "도",
+          "lemma": "도",
+          "pos": "JX"
+        },
+        {
+          "text": "기뻐하",
+          "lemma": "기뻐하",
+          "pos": "VV"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "ETM"
+        },
+        {
+          "text": "편",
+          "lemma": "편",
+          "pos": "NNB"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "VCP"
+        },
+        {
+          "text": "야",
+          "lemma": "야",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "생각",
+        "성공",
+        "편",
+        "행복"
+      ],
+      "domain": "joy"
+    },
+    "answer": {
+      "text": "응, 작은 성공들이 모여서 큰 행복을 만든다고 생각해.",
+      "tokens": [
+        {
+          "text": "응",
+          "lemma": "응",
+          "pos": "IC"
+        },
+        {
+          "text": "작",
+          "lemma": "작",
+          "pos": "VA"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "ETM"
+        },
+        {
+          "text": "성공",
+          "lemma": "성공",
+          "pos": "NNG"
+        },
+        {
+          "text": "들",
+          "lemma": "들",
+          "pos": "XSN"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "JKS"
+        },
+        {
+          "text": "모이",
+          "lemma": "모이",
+          "pos": "VV"
+        },
+        {
+          "text": "어서",
+          "lemma": "어서",
+          "pos": "EC"
+        },
+        {
+          "text": "크",
+          "lemma": "크",
+          "pos": "VA"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "행복",
+          "lemma": "행복",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "만들",
+          "lemma": "만들",
+          "pos": "VV"
+        },
+        {
+          "text": "ㄴ다고",
+          "lemma": "ㄴ다고",
+          "pos": "EC"
+        },
+        {
+          "text": "생각",
+          "lemma": "생각",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "생각",
+      "성공",
+      "편",
+      "행복"
+    ],
+    "domain": "joy"
+  },
+  {
+    "question": {
+      "text": "휴식은 우리에게 어떤 의미야?",
+      "tokens": [
+        {
+          "text": "휴식",
+          "lemma": "휴식",
+          "pos": "NNP"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "JX"
+        },
+        {
+          "text": "우리",
+          "lemma": "우리",
+          "pos": "NP"
+        },
+        {
+          "text": "에게",
+          "lemma": "에게",
+          "pos": "JKB"
+        },
+        {
+          "text": "어떤",
+          "lemma": "어떤",
+          "pos": "MM"
+        },
+        {
+          "text": "의미",
+          "lemma": "의미",
+          "pos": "NNP"
+        },
+        {
+          "text": "야",
+          "lemma": "야",
+          "pos": "JKV"
+        }
+      ],
+      "concepts": [
+        "시간",
+        "의미",
+        "충전",
+        "휴식",
+        "힘"
+      ],
+      "domain": "joy"
+    },
+    "answer": {
+      "text": "휴식은 재충전의 시간이고, 다시 나아갈 힘을 주는 소중한 시간이야.",
+      "tokens": [
+        {
+          "text": "휴식",
+          "lemma": "휴식",
+          "pos": "NNP"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "JX"
+        },
+        {
+          "text": "재",
+          "lemma": "재",
+          "pos": "XPN"
+        },
+        {
+          "text": "충전",
+          "lemma": "충전",
+          "pos": "NNP"
+        },
+        {
+          "text": "의",
+          "lemma": "의",
+          "pos": "JKG"
+        },
+        {
+          "text": "시간",
+          "lemma": "시간",
+          "pos": "NNG"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "VCP"
+        },
+        {
+          "text": "고",
+          "lemma": "고",
+          "pos": "EC"
+        },
+        {
+          "text": "다시",
+          "lemma": "다시",
+          "pos": "MAG"
+        },
+        {
+          "text": "나아가",
+          "lemma": "나아가",
+          "pos": "VV"
+        },
+        {
+          "text": "ㄹ",
+          "lemma": "ㄹ",
+          "pos": "ETM"
+        },
+        {
+          "text": "힘",
+          "lemma": "힘",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "주",
+          "lemma": "주",
+          "pos": "VX"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "ETM"
+        },
+        {
+          "text": "소중",
+          "lemma": "소중",
+          "pos": "XR"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSA"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "시간",
+          "lemma": "시간",
+          "pos": "NNG"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "VCP"
+        },
+        {
+          "text": "야",
+          "lemma": "야",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "시간",
+      "의미",
+      "충전",
+      "휴식",
+      "힘"
+    ],
+    "domain": "joy"
+  },
+  {
+    "question": {
+      "text": "도전하는 것은 어떤 의미야?",
+      "tokens": [
+        {
+          "text": "도전",
+          "lemma": "도전",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "ETM"
+        },
+        {
+          "text": "것",
+          "lemma": "것",
+          "pos": "NNB"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "JX"
+        },
+        {
+          "text": "어떤",
+          "lemma": "어떤",
+          "pos": "MM"
+        },
+        {
+          "text": "의미",
+          "lemma": "의미",
+          "pos": "NNP"
+        },
+        {
+          "text": "야",
+          "lemma": "야",
+          "pos": "JKV"
+        }
+      ],
+      "concepts": [
+        "것",
+        "기회",
+        "도전",
+        "발전",
+        "생각",
+        "성장",
+        "수",
+        "의미"
+      ],
+      "domain": "joy"
+    },
+    "answer": {
+      "text": "도전은 성장하고 발전할 수 있는 기회라고 생각해.",
+      "tokens": [
+        {
+          "text": "도전",
+          "lemma": "도전",
+          "pos": "NNG"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "JX"
+        },
+        {
+          "text": "성장",
+          "lemma": "성장",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "고",
+          "lemma": "고",
+          "pos": "EC"
+        },
+        {
+          "text": "발전",
+          "lemma": "발전",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "ㄹ",
+          "lemma": "ㄹ",
+          "pos": "ETM"
+        },
+        {
+          "text": "수",
+          "lemma": "수",
+          "pos": "NNB"
+        },
+        {
+          "text": "있",
+          "lemma": "있",
+          "pos": "VV"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "ETM"
+        },
+        {
+          "text": "기회",
+          "lemma": "기회",
+          "pos": "NNG"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "VCP"
+        },
+        {
+          "text": "라고",
+          "lemma": "라고",
+          "pos": "EC"
+        },
+        {
+          "text": "생각",
+          "lemma": "생각",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "것",
+      "기회",
+      "도전",
+      "발전",
+      "생각",
+      "성장",
+      "수",
+      "의미"
+    ],
+    "domain": "joy"
+  },
+  {
+    "question": {
+      "text": "웃음이 부족한 사람들에게 해줄 말이 있다면?",
+      "tokens": [
+        {
+          "text": "웃음",
+          "lemma": "웃음",
+          "pos": "NNG"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "JKS"
+        },
+        {
+          "text": "부족",
+          "lemma": "부족",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "사람",
+          "lemma": "사람",
+          "pos": "NNG"
+        },
+        {
+          "text": "들",
+          "lemma": "들",
+          "pos": "XSN"
+        },
+        {
+          "text": "에게",
+          "lemma": "에게",
+          "pos": "JKB"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "VV"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EC"
+        },
+        {
+          "text": "주",
+          "lemma": "주",
+          "pos": "VX"
+        },
+        {
+          "text": "ㄹ",
+          "lemma": "ㄹ",
+          "pos": "ETM"
+        },
+        {
+          "text": "말",
+          "lemma": "말",
+          "pos": "NNG"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "JKS"
+        },
+        {
+          "text": "있",
+          "lemma": "있",
+          "pos": "VX"
+        },
+        {
+          "text": "다면",
+          "lemma": "다면",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "거",
+        "말",
+        "부족",
+        "사람",
+        "웃어봐",
+        "웃음",
+        "행복"
+      ],
+      "domain": "joy"
+    },
+    "answer": {
+      "text": "억지로라도 웃어봐. 웃다 보면 정말 행복해질 거야!",
+      "tokens": [
+        {
+          "text": "억지로",
+          "lemma": "억지로",
+          "pos": "MAG"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "VCP"
+        },
+        {
+          "text": "라도",
+          "lemma": "라도",
+          "pos": "EC"
+        },
+        {
+          "text": "웃어봐",
+          "lemma": "웃어봐",
+          "pos": "NNP"
+        },
+        {
+          "text": "웃",
+          "lemma": "웃",
+          "pos": "VV"
+        },
+        {
+          "text": "다",
+          "lemma": "다",
+          "pos": "EC"
+        },
+        {
+          "text": "보",
+          "lemma": "보",
+          "pos": "VV"
+        },
+        {
+          "text": "면",
+          "lemma": "면",
+          "pos": "EC"
+        },
+        {
+          "text": "정말",
+          "lemma": "정말",
+          "pos": "MAG"
+        },
+        {
+          "text": "행복",
+          "lemma": "행복",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EC"
+        },
+        {
+          "text": "지",
+          "lemma": "지",
+          "pos": "VX"
+        },
+        {
+          "text": "ㄹ",
+          "lemma": "ㄹ",
+          "pos": "ETM"
+        },
+        {
+          "text": "거",
+          "lemma": "거",
+          "pos": "NNB"
+        },
+        {
+          "text": "야",
+          "lemma": "야",
+          "pos": "JKV"
+        }
+      ]
+    },
+    "concepts": [
+      "거",
+      "말",
+      "부족",
+      "사람",
+      "웃어봐",
+      "웃음",
+      "행복"
+    ],
+    "domain": "joy"
+  },
+  {
+    "question": {
+      "text": "지금 이 순간 행복하다고 느껴?",
+      "tokens": [
+        {
+          "text": "지금",
+          "lemma": "지금",
+          "pos": "MAG"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "MM"
+        },
+        {
+          "text": "순간",
+          "lemma": "순간",
+          "pos": "NNG"
+        },
+        {
+          "text": "행복",
+          "lemma": "행복",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "다고",
+          "lemma": "다고",
+          "pos": "EC"
+        },
+        {
+          "text": "느끼",
+          "lemma": "느끼",
+          "pos": "VV"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "것",
+        "대화",
+        "순간",
+        "행복"
+      ],
+      "domain": "joy"
+    },
+    "answer": {
+      "text": "응, 지금 이 순간 너와 대화하고 있는 것도 나에게는 작은 행복이야.",
+      "tokens": [
+        {
+          "text": "응",
+          "lemma": "응",
+          "pos": "IC"
+        },
+        {
+          "text": "지금",
+          "lemma": "지금",
+          "pos": "MAG"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "MM"
+        },
+        {
+          "text": "순간",
+          "lemma": "순간",
+          "pos": "NNG"
+        },
+        {
+          "text": "너",
+          "lemma": "너",
+          "pos": "NP"
+        },
+        {
+          "text": "와",
+          "lemma": "와",
+          "pos": "JKB"
+        },
+        {
+          "text": "대화",
+          "lemma": "대화",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "고",
+          "lemma": "고",
+          "pos": "EC"
+        },
+        {
+          "text": "있",
+          "lemma": "있",
+          "pos": "VV"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "ETM"
+        },
+        {
+          "text": "것",
+          "lemma": "것",
+          "pos": "NNB"
+        },
+        {
+          "text": "도",
+          "lemma": "도",
+          "pos": "JX"
+        },
+        {
+          "text": "나",
+          "lemma": "나",
+          "pos": "NP"
+        },
+        {
+          "text": "에게",
+          "lemma": "에게",
+          "pos": "JKB"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "JX"
+        },
+        {
+          "text": "작",
+          "lemma": "작",
+          "pos": "VA"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "ETM"
+        },
+        {
+          "text": "행복",
+          "lemma": "행복",
+          "pos": "NNG"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "VCP"
+        },
+        {
+          "text": "야",
+          "lemma": "야",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "것",
+      "대화",
+      "순간",
+      "행복"
+    ],
+    "domain": "joy"
+  },
+  {
+    "question": {
+      "text": "다음에 또 즐거운 이야기 많이 하자!",
+      "tokens": [
+        {
+          "text": "다음",
+          "lemma": "다음",
+          "pos": "NNG"
+        },
+        {
+          "text": "에",
+          "lemma": "에",
+          "pos": "JKB"
+        },
+        {
+          "text": "또",
+          "lemma": "또",
+          "pos": "MAJ"
+        },
+        {
+          "text": "즐겁",
+          "lemma": "즐겁",
+          "pos": "VA"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "이야기",
+          "lemma": "이야기",
+          "pos": "NNG"
+        },
+        {
+          "text": "많이",
+          "lemma": "많이",
+          "pos": "MAG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "VX"
+        },
+        {
+          "text": "자",
+          "lemma": "자",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "다음",
+        "이야기",
+        "환영"
+      ],
+      "domain": "joy"
+    },
+    "answer": {
+      "text": "응, 그래! 언제든지 환영이야!",
+      "tokens": [
+        {
+          "text": "응",
+          "lemma": "응",
+          "pos": "IC"
+        },
+        {
+          "text": "그래",
+          "lemma": "그래",
+          "pos": "IC"
+        },
+        {
+          "text": "언제",
+          "lemma": "언제",
+          "pos": "NP"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "VCP"
+        },
+        {
+          "text": "든지",
+          "lemma": "든지",
+          "pos": "EC"
+        },
+        {
+          "text": "환영",
+          "lemma": "환영",
+          "pos": "NNG"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "VCP"
+        },
+        {
+          "text": "야",
+          "lemma": "야",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "다음",
+      "이야기",
+      "환영"
+    ],
+    "domain": "joy"
+  }
+]

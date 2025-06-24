@@ -1,0 +1,822 @@
+question : 산책 , answer : 걷기, 자연, 기분 전환, 건강, 스트레스 해소, 사색, 여유
+question : 공원 , answer : 녹지, 산책로, 조용함, 벤치, 꽃, 동물, 자연
+question : 강변 , answer : 물, 산책로, 풍경, 시원함, 운동, 사진 명소
+question : 음악 , answer : 이어폰, 산책 동반, 기분 전환, 팟캐스트, 리듬
+question : 신발 , answer : 운동화, 편안함, 걷기 필수, 쿠션, 준비물
+question : 물통 , answer : 수분 보충, 건강, 필수 준비물, 더위 대비
+question : 친구 , answer : 동반 산책, 대화, 즐거움, 소통, 친밀감
+question : 반려동물 , answer : 강아지, 고양이, 동반 산책, 즐거움, 행복
+question : 아침 , answer : 신선함, 상쾌함, 조용함, 하루 시작, 산책 추천 시간
+question : 노을 , answer : 저녁, 아름다운 풍경, 사진, 평화, 산책 매력
+question : 건강 , answer : 체력, 다이어트, 유산소 운동, 긍정적 효과, 면역력
+question : 스트레스 , answer : 해소, 산책, 자연, 기분 전환, 심신 안정
+question : 명상 , answer : 사색, 마음 비우기, 걷기 명상, 심신 안정, 집중
+question : 계절 , answer : 봄, 가을, 선선함, 겨울, 날씨, 산책 환경
+question : 사진 , answer : 풍경, 추억, 하늘, 꽃, 기록, 인생샷
+question : 숲길 , answer : 자연, 나무, 산책로, 조용함, 힐링
+question : 벤치 , answer : 휴식, 앉아서 쉬기, 공원, 풍경 감상, 만남
+question : 앱 , answer : 만보기, 걷기 기록, 코스 추천, 스마트폰, 운동 관리
+question : 어린이 , answer : 동반 산책, 교육, 즐거움, 경험, 건강
+question : 샤워 , answer : 산책 후, 피로 회복, 시원함, 일상 루틴
+question : 날씨 , answer : 영향, 좋은 날, 비, 더위, 추위, 산책 계획
+question : 스트레스 , answer : 긴장, 압박감, 불안, 정신적 부담, 피로, 건강 영향
+question : 불안 , answer : 초조함, 걱정, 예측 불가, 긴장, 심리적 압박
+question : 피로 , answer : 신체적 피곤함, 무기력, 휴식 필요, 에너지 부족
+question : 걱정 , answer : 염려, 불안, 미래, 스트레스 원인, 생각 많음
+question : 긴장 , answer : 불안, 압박감, 몸의 경직, 시험, 중요한 순간
+question : 짜증 , answer : 분노, 불쾌감, 작은 일, 피곤, 감정 표출
+question : 분노 , answer : 화, 폭발, 억울함, 감정 조절, 스트레스 반응
+question : 불면증 , answer : 잠이 안 옴, 뒤척임, 피로, 스트레스 원인
+question : 두통 , answer : 머리 아픔, 스트레스 증상, 휴식 필요, 피로
+question : 압박감 , answer : 부담, 책임감, 과제, 결과 요구, 긴장감
+question : 걷기 , answer : 스트레스 해소, 건강, 산책, 기분 전환, 운동
+question : 명상 , answer : 마음 진정, 집중, 심신 안정, 스트레스 완화
+question : 호흡 , answer : 심호흡, 긴장 완화, 명상, 마음 진정
+question : 음악 , answer : 기분 전환, 힐링, 스트레스 해소, 감정 조절
+question : 친구 , answer : 상담, 대화, 감정 공유, 지지, 위로
+question : 휴식 , answer : 에너지 회복, 편안함, 스트레스 감소, 건강
+question : 운동 , answer : 기분 전환, 체력 강화, 스트레스 해소, 건강
+question : 마음 , answer : 감정, 심리, 내면, 스트레스 영향
+question : 일 , answer : 업무, 책임, 과도한 업무, 스트레스 원인
+question : 가족 , answer : 지지, 위로, 대화, 감정 공유, 관계 스트레스
+question : 기쁨 , answer : 행복, 웃음, 긍정, 즐거움, 좋은 감정, 환희
+question : 웃음 , answer : 유쾌함, 기분 좋음, 미소, 행복, 즐거움
+question : 행복 , answer : 만족감, 기쁨, 사랑, 긍정적, 삶의 만족
+question : 감사 , answer : 고마움, 긍정, 행복, 마음 따뜻함, 인정
+question : 칭찬 , answer : 인정, 기분 좋음, 자신감, 긍정적 영향
+question : 축하 , answer : 기쁜 소식, 성공, 응원, 행복, 긍정
+question : 여유 , answer : 마음의 평화, 느긋함, 편안함, 기분 좋음
+question : 즐거움 , answer : 유쾌함, 긍정, 놀이, 웃음, 행복
+question : 사랑 , answer : 행복, 긍정, 따뜻함, 기쁨, 인간관계
+question : 친구 , answer : 우정, 함께, 즐거움, 소통, 웃음
+question : 선물 , answer : 감동, 기쁨, 마음 표현, 감사
+question : 성공 , answer : 만족감, 성취, 기쁨, 자신감, 동기부여
+question : 놀라움 , answer : 신기함, 기대감, 즐거움, 기분 전환
+question : 휴가 , answer : 여행, 자유, 힐링, 행복, 즐거움
+question : 음악 , answer : 감정 표현, 즐거움, 기분 전환, 행복
+question : 가족 , answer : 사랑, 소통, 기쁨, 행복, 소중함
+question : 취미 , answer : 즐거움, 자기계발, 여가, 긍정적 감정
+question : 여행 , answer : 설렘, 모험, 기쁨, 추억, 경험
+question : 축제 , answer : 즐거움, 모임, 축하, 기분 전환
+question : 칭찬받다 , answer : 인정, 자신감, 기쁨, 긍정, 성장
+question : 친척 , answer : 가족, 혈연, 가까운 사람, 명절 모임, 집안
+question : 할머니 , answer : 조부모, 어머니의 어머니, 따뜻함, 연세 많음, 전통 요리
+question : 할아버지 , answer : 조부모, 아버지의 아버지, 경험 풍부, 연세 많음, 지혜
+question : 이모 , answer : 어머니의 여자 형제, 가족 모임, 따뜻함, 도움
+question : 삼촌 , answer : 아버지의 남자 형제, 가족 모임, 친근함, 조언
+question : 고모 , answer : 아버지의 여자 형제, 집안 행사, 친밀감, 선물
+question : 외삼촌 , answer : 어머니의 남자 형제, 가족 모임, 친근함, 조언
+question : 사촌 , answer : 또래, 친구 같은 가족, 함께 성장, 명절
+question : 조카 , answer : 형제 자매의 자녀, 어린이, 귀여움, 돌봄
+question : 형부 , answer : 누나/언니의 남편, 가족 행사, 친근함, 집안
+question : 제수씨 , answer : 남동생의 아내, 가족 모임, 친밀감
+question : 매형 , answer : 누나의 남편, 친근한 가족, 어른
+question : 올케 , answer : 형/오빠의 아내, 가족 관계, 새 식구
+question : 외숙모 , answer : 외삼촌의 아내, 가족 행사, 친절
+question : 고모부 , answer : 고모의 남편, 가족 모임, 어른
+question : 이모부 , answer : 이모의 남편, 집안 행사, 친근함
+question : 조부모 , answer : 할머니, 할아버지, 어른, 가족의 중심
+question : 부부 , answer : 결혼, 가족, 배우자, 함께 사는 사람
+question : 처남 , answer : 아내의 남동생, 친근함, 가족
+question : 사돈 , answer : 혼인으로 맺어진 집안, 결혼, 가족 확장
+question : 존대말 , answer : 공손함, 예의, 어른, 상사, 공식적, 사회생활
+question : 반말 , answer : 친근함, 친구, 동갑, 가족, 비공식, 자유로움
+question : 존칭 , answer : 높임말, 예우, 호칭, 공경, 예절
+question : 경어 , answer : 존대말, 높임, 공식적, 예절, 표현 방식
+question : 예의 , answer : 공손, 존대, 사회 규범, 예절, 예법
+question : 높임말 , answer : 존대, 경어, 어른, 예의, 존경
+question : 말투 , answer : 어투, 분위기, 존대/반말 구분, 성격
+question : 호칭 , answer : 이름, 별명, 높임, 존대, 부르는 법
+question : 공식적 , answer : 격식, 예절, 존대말, 회사, 모임
+question : 비공식 , answer : 자유로움, 반말, 친구, 친근함
+question : 어른 , answer : 존대 대상, 예의, 경어 사용, 존경
+question : 친구 , answer : 반말 사용, 친근, 동갑, 비공식
+question : 상사 , answer : 존대, 회사, 어른, 예의, 공식적
+question : 가족 , answer : 반말, 친밀함, 자유로운 대화, 예외적 예절
+question : 인사말 , answer : 존대/반말 구분, 예의, 공식/비공식
+question : 회화 , answer : 대화, 말투, 상황별 존대/반말
+question : 칭찬 , answer : 존대/반말로 표현, 긍정, 인정
+question : 부탁 , answer : 존대/반말 구분, 공손, 요청
+question : 사과 , answer : 예의, 존대, 반말, 공손함, 용서
+question : 소개 , answer : 존대, 공식, 처음 만남, 예의
+question : 애완동물 , answer : 반려동물, 가족, 돌봄, 사랑, 친구, 즐거움
+question : 강아지 , answer : 충성심, 산책, 가족, 사랑, 애정, 털
+question : 고양이 , answer : 자유로움, 애정, 독립적, 털, 귀여움, 야행성
+question : 새 , answer : 노래, 자유로움, 깃털, 새장, 소리, 애완동물
+question : 물고기 , answer : 수족관, 조용함, 물, 관상, 힐링
+question : 햄스터 , answer : 작음, 귀여움, 활동적, 쳇바퀴, 집
+question : 토끼 , answer : 귀여움, 당근, 점프, 부드러운 털, 가족
+question : 파충류 , answer : 이색 애완동물, 도마뱀, 거북이, 뱀, 독특함
+question : 기니피그 , answer : 작음, 애교, 귀여움, 가족, 돌봄
+question : 거북이 , answer : 장수, 느림, 수조, 돌봄, 가족
+question : 이름짓기 , answer : 애정, 정체성, 가족, 소통, 애착
+question : 먹이 , answer : 사료, 건강, 식사, 간식, 영양
+question : 산책 , answer : 운동, 강아지, 자연, 가족 활동, 건강
+question : 예방접종 , answer : 건강, 필수, 병원, 돌봄, 보호
+question : 목욕 , answer : 청결, 털 관리, 돌봄, 건강, 냄새 제거
+question : 장난감 , answer : 놀이, 즐거움, 스트레스 해소, 운동
+question : 수의사 , answer : 건강 검진, 치료, 예방접종, 전문가
+question : 입양 , answer : 새 가족, 돌봄, 책임감, 사랑, 환영
+question : 훈련 , answer : 교육, 규칙, 상호작용, 성장, 소통
+question : 사진 , answer : 기억, 추억, 가족, 기록, SNS
+question : 성격 , answer : 개성, 특징, 성향, 태도, 성품, 행동
+question : 외향적 , answer : 활발함, 사교성, 사람을 좋아함, 적극적, 활동적
+question : 내향적 , answer : 조용함, 신중함, 혼자 시간 보내기, 사색적, 차분함
+question : 긍정적 , answer : 밝음, 희망, 유쾌함, 낙천적, 자신감
+question : 부정적 , answer : 비관적, 걱정, 우울, 소극적, 회의적
+question : 꼼꼼함 , answer : 세심함, 실수 적음, 완벽주의, 체계적, 신뢰성
+question : 급함 , answer : 성급함, 인내 부족, 빠른 결정, 조바심
+question : 느긋함 , answer : 여유로움, 침착함, 급하지 않음, 온화함
+question : 자신감 , answer : 당당함, 자기 신뢰, 도전적, 긍정적 태도
+question : 배려 , answer : 타인 존중, 친절, 이해심, 공감, 사려 깊음
+question : 유머감각 , answer : 웃음, 재미, 긍정, 분위기 메이커
+question : 완고함 , answer : 고집, 융통성 부족, 자기 주장 강함
+question : 개방적 , answer : 새로운 것에 긍정, 수용, 유연성, 다양한 경험
+question : 책임감 , answer : 의무, 신뢰, 약속 지킴, 성실함
+question : 소심함 , answer : 걱정 많음, 불안, 주저함, 신중함
+question : 용기 , answer : 두려움 극복, 도전, 결단력, 담대함
+question : 예의바름 , answer : 공손함, 존중, 바른 태도, 도덕성
+question : 자유분방 , answer : 구속 없음, 독립적, 창의적, 개성 강함
+question : 성실함 , answer : 근면, 책임감, 꾸준함, 신뢰, 약속
+question : 융통성 , answer : 유연성, 상황 적응, 타협, 다양한 해결
+question : 조부모 , answer : 할머니, 할아버지, 가족의 중심, 어른, 사랑
+question : 할머니 , answer : 조부모, 어머니의 어머니, 따뜻함, 손주 사랑, 전통 음식
+question : 할아버지 , answer : 조부모, 아버지의 아버지, 경험, 지혜, 이야기
+question : 손주 , answer : 자녀의 자녀, 귀여움, 사랑, 가족
+question : 가족 , answer : 가계, 혈연, 연대, 친밀감, 사랑
+question : 명절 , answer : 가족 모임, 음식, 전통, 세배, 친척 만남
+question : 어른 , answer : 존경, 인생 경험, 지도, 가르침
+question : 이야기 , answer : 옛날이야기, 경험담, 지혜, 추억, 교육
+question : 음식 , answer : 전통, 집밥, 할머니표, 명절 음식
+question : 집 , answer : 가족, 방문, 추억, 온기, 옛집
+question : 건강 , answer : 노년, 운동, 장수, 보살핌, 관심
+question : 손자 , answer : 아들의 아들, 귀여움, 사랑, 장손
+question : 손녀 , answer : 아들의 딸, 귀여움, 애정, 손주
+question : 시골 , answer : 자연, 고향, 방문, 가족, 추억
+question : 지혜 , answer : 경험, 인생 조언, 어른, 교훈
+question : 장수 , answer : 오래 사는 것, 건강, 비결, 축복
+question : 도움 , answer : 조언, 경제적 지원, 심리적 지원, 육아 도움
+question : 사진 , answer : 가족 사진, 추억, 어린 시절, 기록
+question : 사랑 , answer : 무조건적, 가족애, 정, 관심
+question : 선물 , answer : 감사의 표시, 기념일, 가족 행사, 나눔
+question : 고기 , answer : 단백질, 음식, 육류, 요리, 구이, 스테이크
+question : 소고기 , answer : 붉은색 육류, 고급, 구이, 스테이크, 영양
+question : 돼지고기 , answer : 돼지, 삼겹살, 구이, 족발, 부드러움
+question : 닭고기 , answer : 닭, 치킨, 담백함, 튀김, 구이
+question : 생선 , answer : 어류, 해산물, 단백질, 회, 조림
+question : 양고기 , answer : 양, 독특한 맛, 구이, 꼬치, 향긋함
+question : 오리고기 , answer : 오리, 담백함, 구이, 보양식, 건강
+question : 스테이크 , answer : 두꺼운 고기, 구이, 소고기, 양식, 고급 요리
+question : 삼겹살 , answer : 돼지고기, 구이, 대표 음식, 인기, 고소함
+question : 바비큐 , answer : 숯불, 야외, 구이, 파티, 향
+question : 육회 , answer : 생고기, 한식, 고급, 별미, 양념
+question : 불고기 , answer : 양념, 한식, 소고기, 달콤함, 인기
+question : 족발 , answer : 돼지, 삶은 고기, 쫄깃함, 야식
+question : 갈비 , answer : 뼈, 구이, 소고기, 양념, 인기
+question : 햄 , answer : 가공육, 샌드위치, 소시지, 간편식, 저장
+question : 소시지 , answer : 가공육, 핫도그, 도시락, 간편식, 어린이 인기
+question : 베이컨 , answer : 가공육, 돼지고기, 구이, 아침식사, 짭짤함
+question : 고깃집 , answer : 식당, 고기 구이, 모임, 회식, 인기
+question : 양념 , answer : 맛, 고기 요리, 단짠, 매콤, 조리법
+question : 고기국 , answer : 탕, 국물, 육수, 영양, 따뜻함
+question : 취미 , answer : 여가, 즐거움, 자기계발, 관심사, 생활, 자유
+question : 독서 , answer : 책, 지식, 상상력, 집중, 자기계발
+question : 운동 , answer : 건강, 체력, 스트레스 해소, 규칙적, 에너지
+question : 요리 , answer : 음식, 창의성, 맛, 실용적, 가족
+question : 그림 , answer : 미술, 창의성, 표현, 색감, 집중
+question : 악기 , answer : 음악, 연주, 취미, 감성, 자기계발
+question : 사진 , answer : 추억, 기록, 예술, 창의성, 감성
+question : 산책 , answer : 자연, 운동, 기분 전환, 건강, 휴식
+question : 영화감상 , answer : 영화, 감상, 이야기, 감정, 여가
+question : 음악감상 , answer : 음악, 감상, 힐링, 감정, 취향
+question : 게임 , answer : 오락, 스트레스 해소, 경쟁, 즐거움, 여가
+question : 여행 , answer : 탐험, 설렘, 경험, 추억, 새로운 곳
+question : 자전거 , answer : 운동, 이동, 자유, 자연, 취미
+question : 등산 , answer : 산, 자연, 체력, 성취감, 힐링
+question : 공예 , answer : 만들기, 창의성, 손재주, 집중, 작품
+question : 원예 , answer : 식물, 자연, 힐링, 돌봄, 취미
+question : 수영 , answer : 운동, 건강, 물, 기술, 체력
+question : 캠핑 , answer : 야외, 자연, 모험, 휴식, 자유
+question : 봉사 , answer : 나눔, 도움, 보람, 사회참여, 선행
+question : 블로그 , answer : 글쓰기, 기록, 정보공유, 취미, 소통
+question : 기분 , answer : 감정, 상태, 분위기, 변화, 심리
+question : 행복 , answer : 만족감, 웃음, 긍정, 즐거움, 좋은 감정
+question : 우울 , answer : 침체, 슬픔, 무기력, 혼자 있고 싶음
+question : 분노 , answer : 화, 폭발, 불쾌, 감정조절, 스트레스
+question : 불안 , answer : 초조, 걱정, 긴장, 예측불가
+question : 설렘 , answer : 기대, 두근거림, 긍정, 시작, 희망
+question : 차분함 , answer : 침착, 안정, 평온, 마음 진정
+question : 즐거움 , answer : 유쾌함, 긍정, 놀이, 웃음, 행복
+question : 지루함 , answer : 흥미 없음, 반복, 권태, 무료함
+question : 피곤함 , answer : 에너지 부족, 휴식 필요, 무기력
+question : 흥분 , answer : 열정, 에너지, 감정 고조, 활기
+question : 여유 , answer : 느긋함, 마음의 평화, 편안함
+question : 놀람 , answer : 예상치 못함, 감정의 변화, 반응
+question : 편안함 , answer : 안정, 휴식, 부담 없음, 마음 평화
+question : 허탈함 , answer : 실망, 기대 무너짐, 무기력
+question : 당황 , answer : 혼란, 놀람, 어쩔 줄 모름
+question : 감동 , answer : 마음 울림, 인상적, 눈물, 긍정
+question : 자신감 , answer : 당당함, 긍정, 성공 기대
+question : 무관심 , answer : 관심 없음, 냉담, 무표정
+question : 후회 , answer : 미련, 과거, 반성, 아쉬움
+question : 즐거움 , answer : 기쁨, 유쾌함, 놀이, 긍정, 행복
+question : 웃음 , answer : 기분 좋음, 유쾌함, 행복, 미소
+question : 행복 , answer : 만족감, 긍정, 즐거움, 사랑, 좋은 감정
+question : 놀이 , answer : 게임, 오락, 활동, 재미, 유쾌함
+question : 파티 , answer : 모임, 축제, 유쾌함, 소통, 기쁨
+question : 여행 , answer : 설렘, 경험, 새로운 곳, 추억, 즐거움
+question : 음악 , answer : 기분 전환, 감정 표현, 행복, 힐링
+question : 취미 , answer : 여가, 자기계발, 즐거움, 관심사
+question : 친구 , answer : 소통, 웃음, 함께, 친밀감, 기쁨
+question : 운동 , answer : 활동, 건강, 기분 전환, 성취감, 긍정
+question : 동물 , answer : 애완동물, 귀여움, 위로, 행복
+question : 축하 , answer : 기쁨, 성공, 긍정, 축제, 칭찬
+question : 맛집 , answer : 음식, 만족감, 기분 전환, 외식
+question : 장난 , answer : 웃음, 친근함, 재미, 유쾌함
+question : 영화 , answer : 감상, 감정, 즐거움, 추억
+question : 게임 , answer : 오락, 경쟁, 즐거움, 스트레스 해소
+question : 댄스 , answer : 음악, 움직임, 열정, 기분 전환
+question : 사진 , answer : 추억, 기록, 예술, 감정
+question : 쇼핑 , answer : 만족감, 새로움, 즐거움, 기분 전환
+question : 봉사 , answer : 보람, 긍정, 나눔, 기쁨, 사회참여
+question : 고등학교 , answer : 중등 교육, 학업, 진학 준비, 입시, 교복, 친구, 동아리, 수능, 담임, 교장, 졸업, 반, 수업, 시험, 사춘기, 선생님, 체육대회, 모의고사, 급식, 방과후
+question : 대학교 , answer : 고등 교육, 전공, 학과, 캠퍼스, 동아리, MT, 교수, 강의, 수강신청, 졸업, 동기, 학점, 시험, 졸업논문, 학식, 새내기, 졸업생, 편입, 장학금, 자취
+question : 입시 , answer : 수능, 내신, 경쟁, 진학, 준비, 부담, 목표, 시험, 학원, 스트레스
+question : 수능 , answer : 대학입시, 시험, 전국, 경쟁, 11월, 공부, 목표, 긴장, 미래, 합격
+question : 교복 , answer : 학생, 단체, 복장, 학교, 규칙, 이미지, 디자인, 계절, 교칙, 추억
+question : 동아리 , answer : 활동, 친구, 관심사, 모임, 대회, 공연, 취미, 경험, 동료, 교류
+question : 강의 , answer : 대학교, 교수, 수업, 학점, 출석, 레포트, 온라인, 오프라인, 발표, 과제
+question : 졸업 , answer : 완료, 이별, 추억, 축하, 진로, 새로운 시작, 졸업식, 친구, 성장, 감동
+question : 학점 , answer : 성적, 평가, 졸업, 기준, 이수, 관리, 장학금, 취업, 공부, 목표
+question : 동기 , answer : 동기생, 학년, 친구, 신입생, 단합, 모임, 교류, 입학, 새내기, 친목
+question : 교수 , answer : 대학교, 강의, 연구, 지도, 상담, 전공, 멘토, 시험, 평가, 논문
+question : 자취 , answer : 독립, 생활, 방, 대학생, 자유, 집밥, 비용, 관리, 경험, 청소
+question : 장학금 , answer : 지원, 우수, 성적, 혜택, 경쟁, 재정, 공부, 도움, 기준, 신청
+question : 편입 , answer : 전과, 진학, 대학, 도전, 시험, 준비, 선택, 기회, 학점, 목표
+question : 새내기 , answer : 신입생, 대학교, 설렘, 긴장, 첫 경험, 동기, 적응, 만남, 환영, 기대
+question : 학식 , answer : 대학교, 식사, 저렴함, 학생, 메뉴, 맛, 식당, 점심, 인기, 생활
+question : 시험 , answer : 평가, 공부, 성적, 긴장, 대비, 노력, 스트레스, 목표, 준비, 결과
+question : 졸업논문 , answer : 대학교, 학점, 연구, 작성, 지도, 평가, 제출, 완성, 성취, 어려움
+question : 담임 , answer : 고등학교, 선생님, 지도, 상담, 관리, 반, 지원, 책임, 학기, 소통
+question : 방과후 , answer : 수업 후, 자유 시간, 동아리, 학원, 친구, 운동, 휴식, 공부, 활동, 취미
+question : 인사법 , answer : 인사, 예의, 인사말, 존중, 첫 만남, 사회 규범, 문화
+question : 악수 , answer : 손 맞잡기, 친근함, 공식 인사, 만남, 신뢰
+question : 고개 숙임 , answer : 예의, 존중, 한국 문화, 겸손, 공식적 인사
+question : 손 흔들기 , answer : 친근함, 비공식, 헤어질 때, 만날 때, 간단한 인사
+question : 미소 , answer : 친절, 긍정, 첫인상, 호감, 감정 표현
+question : 말로 인사하기 , answer : 안녕하세요, 반가워요, 존대말, 친근감, 대화 시작
+question : 허그 , answer : 포옹, 친밀감, 정서적 교류, 가족, 친구
+question : 목례 , answer : 가볍게 고개 숙임, 예의, 공손함, 인사
+question : 전화 인사 , answer : 목소리, 예의, 공식, 비공식, 소통
+question : 이메일 인사 , answer : 서두, 예의, 공식, 서면, 비즈니스
+question : 존대 인사 , answer : 공손함, 어른, 공식, 사회적, 예절
+question : 반말 인사 , answer : 친구, 가족, 비공식, 자유로움, 친근함
+question : 첫 만남 , answer : 인상, 예의, 자기소개, 긴장, 호감
+question : 헤어질 때 , answer : 작별 인사, 예의, 웃음, 다음 만남, 인연
+question : 만날 때 , answer : 반가움, 인사, 시작, 웃음, 기대
+question : 상사에게 인사 , answer : 존대, 공손함, 예절, 공식, 사회생활
+question : 친구에게 인사 , answer : 반말, 친근함, 자유로움, 소통
+question : 외국인과 인사 , answer : 문화 차이, 악수, 미소, 영어, 열린 마음
+question : 아침 인사 , answer : 좋은 아침, 하루 시작, 상쾌함, 긍정
+question : 저녁 인사 , answer : 좋은 밤, 하루 마무리, 편안함, 작별
+question : 좋은 일 , answer : 행복, 기쁨, 성공, 칭찬, 행운, 보람, 감사, 성취, 즐거움, 발전
+question : 나쁜 일 , answer : 불행, 실수, 실패, 슬픔, 걱정, 후회, 실망, 위기, 갈등, 좌절
+question : 행운 , answer : 기쁨, 우연, 좋은 결과, 긍정, 만족
+question : 불운 , answer : 실망, 우연, 나쁜 결과, 걱정, 안타까움
+question : 칭찬 , answer : 인정, 기쁨, 좋은 일, 동기부여, 행복
+question : 질병 , answer : 아픔, 걱정, 힘듦, 회복, 건강
+question : 합격 , answer : 성공, 기쁨, 성취, 목표 달성, 발전
+question : 실패 , answer : 실망, 아쉬움, 경험, 교훈, 성장
+question : 성공 , answer : 기쁨, 목표 달성, 보람, 성취, 자랑
+question : 실수 , answer : 아쉬움, 반성, 배움, 개선, 성장
+question : 축하 , answer : 기쁨, 성공, 좋은 소식, 행복, 응원
+question : 사고 , answer : 위험, 걱정, 나쁜 일, 조심, 반성
+question : 선물 , answer : 기쁨, 감동, 좋은 일, 사랑, 감사
+question : 다툼 , answer : 갈등, 나쁜 일, 오해, 화해, 감정
+question : 보상 , answer : 성취, 보람, 긍정적 결과, 인정
+question : 화해 , answer : 이해, 용서, 좋은 일, 관계 회복, 평화
+question : 이별 , answer : 슬픔, 아쉬움, 성장, 새로운 시작, 나쁜 일
+question : 기부 , answer : 선행, 좋은 일, 나눔, 만족, 보람
+question : 약속 , answer : 신뢰, 성실, 지킴, 좋은 일, 실망
+question : 거짓말 , answer : 신뢰 저하, 나쁜 일, 후회, 오해, 문제
+question : 과일 , answer : 식물, 열매, 달콤함, 비타민, 건강, 간식, 자연, 색감 다양함
+question : 야채 , answer : 채소, 식물, 식이섬유, 건강, 요리, 밥상, 영양, 잎줄기뿌리
+question : 사과 , answer : 과일, 둥글다, 붉은색, 달콤함, 나무열매, 비타민
+question : 포도 , answer : 과일, 보라색, 작음, 달콤함, 나무열매, 씨 있음
+question : 바나나 , answer : 과일, 노란색, 부드러움, 달콤함, 껍질, 열대
+question : 오렌지 , answer : 과일, 주황색, 새콤함, 비타민C, 껍질, 즙
+question : 수박 , answer : 과일, 여름, 크다, 시원함, 씨, 붉은색
+question : 딸기 , answer : 과일, 빨간색, 달콤함, 작음, 비타민, 봄
+question : 배 , answer : 과일, 노란색, 아삭함, 즙 많음, 달콤함
+question : 토마토 , answer : 과일, 야채로 취급, 붉은색, 새콤함, 건강
+question : 당근 , answer : 야채, 오렌지색, 뿌리, 비타민A, 아삭함
+question : 오이 , answer : 야채, 초록색, 시원함, 물 많음, 샐러드
+question : 양파 , answer : 야채, 뿌리, 매움, 요리 재료, 건강
+question : 상추 , answer : 야채, 잎채소, 쌈, 아삭함, 건강
+question : 고구마 , answer : 야채, 뿌리, 달콤함, 구워 먹음, 영양
+question : 호박 , answer : 야채, 노란색, 씨 있음, 부드러움, 요리
+question : 브로콜리 , answer : 야채, 꽃채소, 초록색, 건강식, 식이섬유
+question : 시금치 , answer : 야채, 잎채소, 비타민, 건강, 나물
+question : 감자 , answer : 야채, 뿌리, 전분, 구워 먹음, 요리
+question : 파프리카 , answer : 야채, 색 다양함, 비타민, 아삭함, 샐러드
+question : 물고기 , answer : 어류, 지느러미, 아가미, 수영, 물속, 생물, 비늘
+question : 금붕어 , answer : 작음, 관상용, 수조, 주황색, 물고기
+question : 송사리 , answer : 작음, 민물, 빠름, 학교, 먹이사슬
+question : 잉어 , answer : 큰 물고기, 민물, 강, 튼튼함, 상징
+question : 메기 , answer : 수염, 민물, 바닥, 야행성, 진흙
+question : 상어 , answer : 육식성, 바다, 지느러미, 날카로움, 무서움
+question : 연어 , answer : 바다와 강, 회귀, 맛있음, 건강식, 산란
+question : 참치 , answer : 대형어류, 바다, 식용, 빠름, 고급
+question : 고등어 , answer : 바다, 식용, 구이, 푸른색, 대중적
+question : 광어 , answer : 바다, 회, 넙적함, 식용, 고급
+question : 복어 , answer : 독성, 식용, 위험, 특별한 요리, 바다
+question : 피라냐 , answer : 육식성, 무서움, 강, 이빨, 남아메리카
+question : 해마 , answer : 특이한 생김새, 작은 지느러미, 바다, 관상용
+question : 구피 , answer : 관상용, 알록달록, 수조, 작은 크기, 번식
+question : 베타 , answer : 관상용, 공격성, 아름다운 지느러미, 수조
+question : 열대어 , answer : 따뜻한 물, 관상용, 수족관, 다양한 색상
+question : 플라티 , answer : 관상용, 번식력, 다양한 색, 작은 크기
+question : 민물고기 , answer : 강, 호수, 아가미, 물속, 다양한 종류
+question : 바닷물고기 , answer : 바다, 염분, 다양한 크기, 어업, 식용
+question : 수조 , answer : 관상어, 물고기 집, 청소, 물, 장식
+question : 초등학생 , answer : 어린이, 초등학교, 공부, 놀이, 친구, 성장, 기초교육, 밝음, 순수, 창의성
+question : 중학생 , answer : 청소년, 중학교, 사춘기, 공부, 교복, 변화, 친구, 고민, 진로, 성장
+question : 학교 , answer : 교육, 교실, 선생님, 공부, 친구, 생활, 성장, 숙제, 급식, 행사
+question : 교실 , answer : 책상, 칠판, 수업, 친구, 발표, 학습, 선생님, 활동, 분위기, 성장
+question : 교복 , answer : 중학생, 학생복, 단체, 학교, 이미지, 규칙, 추억, 일상
+question : 선생님 , answer : 교육, 지도, 상담, 존경, 지식, 수업, 도움, 역할모델, 지도자, 평가
+question : 급식 , answer : 학교 식사, 점심, 식단, 인기 메뉴, 친구와 식사, 배식, 영양, 추억, 만족, 위생
+question : 숙제 , answer : 공부, 과제, 집에서, 책임감, 평가, 반복, 연습, 성취감, 시간관리, 도움
+question : 시험 , answer : 평가, 공부, 긴장, 준비, 결과, 성적, 목표, 노력, 성장, 경쟁
+question : 방과후 , answer : 자유시간, 놀이, 학원, 친구, 운동, 취미, 동아리, 활동, 휴식, 경험
+question : 친구 , answer : 동갑, 놀이, 대화, 우정, 경쟁, 협력, 비밀, 성장, 지지, 갈등
+question : 사춘기 , answer : 중학생, 성장, 변화, 감정, 고민, 자아, 독립심, 가족 갈등, 호기심, 예민함
+question : 운동장 , answer : 놀이, 체육, 달리기, 운동, 모임, 게임, 땀, 즐거움, 경기, 휴식
+question : 동아리 , answer : 활동, 관심사, 모임, 친구, 경험, 발표, 자율성, 즐거움, 대회, 취미
+question : 독서 , answer : 책, 공부, 상상력, 독후감, 도서관, 지식, 습관, 성취, 감상, 성장
+question : 가족 , answer : 지원, 사랑, 대화, 집, 숙제 도움, 성장, 보호, 일상, 추억, 이해
+question : 놀이 , answer : 게임, 친구, 활동, 즐거움, 창의력, 웃음, 에너지, 시간, 성장, 경험
+question : 발표 , answer : 수업, 연습, 자신감, 떨림, 성장, 준비, 의견, 경험, 도전, 평가
+question : 졸업 , answer : 마무리, 이별, 추억, 성장, 새로운 시작, 행사, 기념, 친구, 선생님, 감동
+question : 체험학습 , answer : 현장학습, 경험, 활동, 배움, 즐거움, 친구, 선생님, 여행, 성장, 발표
+question : 음식 , answer : 식사, 요리, 맛, 영양, 재료, 건강, 문화
+question : 밥 , answer : 주식, 쌀, 한식, 포만감, 에너지
+question : 국 , answer : 국물, 따뜻함, 한식, 밥과 함께, 영양
+question : 반찬 , answer : 다양함, 곁들임, 한식, 식사, 맛
+question : 김치 , answer : 발효, 매콤함, 한식, 건강, 한국 전통
+question : 찌개 , answer : 국물, 매콤함, 한식, 가족 식사, 다양함
+question : 구이 , answer : 직화, 고기, 맛, 바삭함, 한식
+question : 볶음 , answer : 야채, 고기, 불, 간장, 고소함
+question : 면 , answer : 국수, 밀가루, 쫄깃함, 다양한 종류, 국물
+question : 떡 , answer : 쌀, 간식, 전통, 명절, 다양한 종류
+question : 과일 , answer : 신선함, 달콤함, 건강, 후식, 비타민
+question : 야채 , answer : 채소, 건강, 식이섬유, 샐러드, 신선함
+question : 고기 , answer : 단백질, 고소함, 구이, 요리, 영양
+question : 튀김 , answer : 바삭함, 간식, 다양한 재료, 기름, 인기
+question : 죽 , answer : 부드러움, 소화, 건강식, 따뜻함, 아침
+question : 장 , answer : 간장, 된장, 고추장, 발효, 한식
+question : 음료 , answer : 마실 것, 주스, 탄산, 해갈, 후식
+question : 샐러드 , answer : 야채, 신선함, 건강, 다이어트, 드레싱
+question : 간식 , answer : 간단한 음식, 에너지, 달콤함, 휴식, 인기
+question : 조미료 , answer : 맛, 소금, 설탕, 향신료, 요리
+question : 전통 , answer : 역사, 문화, 유산, 관습, 오랜 세월, 계승
+question : 한복 , answer : 전통의상, 한국, 아름다움, 명절, 색감
+question : 한옥 , answer : 전통주택, 목조, 기와, 자연 친화, 아름다움
+question : 명절 , answer : 설날, 추석, 가족 모임, 음식, 풍습
+question : 세배 , answer : 인사, 설날, 예의, 어른, 덕담
+question : 국악 , answer : 음악, 전통 악기, 소리, 판소리, 한국
+question : 김치 , answer : 전통 음식, 발효, 매콤함, 건강, 상징
+question : 가야금 , answer : 국악기, 줄, 연주, 전통 음악, 한국
+question : 탈춤 , answer : 전통 공연, 탈, 춤, 풍자, 명절
+question : 한지 , answer : 전통 종이, 자연, 장인정신, 공예, 한국
+question : 다도 , answer : 차, 예절, 전통문화, 의식, 마음 가다듬기
+question : 혼례 , answer : 결혼, 전통 예식, 예절, 가족, 의상
+question : 제사 , answer : 조상, 가족 행사, 전통의식, 음식, 추모
+question : 농악 , answer : 전통 음악, 축제, 농사, 흥, 공동체
+question : 떡 , answer : 전통 음식, 쌀, 명절, 간식, 다양한 종류
+question : 부채 , answer : 공예, 여름, 전통, 장식, 실용성
+question : 풍물놀이 , answer : 음악, 축제, 농악, 전통 공연, 즐거움
+question : 서예 , answer : 글씨, 예술, 전통, 먹, 붓
+question : 장인 , answer : 숙련자, 전통기술, 공예, 계승, 기술
+question : 궁궐 , answer : 왕, 역사, 건축, 한국, 문화재
+question : 인공지능 , answer : AI, 컴퓨터, 학습, 판단, 자동화, 혁신
+question : 머신러닝 , answer : 기계학습, 데이터, 예측, 알고리즘, 모델
+question : 딥러닝 , answer : 심층학습, 신경망, 이미지 인식, 음성 인식, 빅데이터
+question : 데이터 , answer : 정보, 학습, 빅데이터, 분석, 입력
+question : 신경망 , answer : 노드, 계층, 딥러닝, 모방, 구조
+question : 알고리즘 , answer : 문제 해결, 절차, 프로그래밍, 규칙, 논리
+question : 챗봇 , answer : 대화, AI, 자동응답, 고객지원, 자연어처리
+question : 음성인식 , answer : 소리, 변환, AI, 통신, 음성 명령
+question : 이미지인식 , answer : 사진, 분석, 딥러닝, 객체 인식, 컴퓨터 비전
+question : 로봇 , answer : 기계, 자동화, 작업, AI, 공장
+question : 자율주행 , answer : 자동차, 센서, AI, 지도, 운전
+question : 자연어처리 , answer : 언어, 텍스트, 번역, 챗봇, 분석
+question : 자동화 , answer : 효율, 반복 작업, AI, 공정, 기술
+question : 빅데이터 , answer : 대용량, 분석, 데이터, 트렌드, 인사이트
+question : 예측 , answer : 미래, 데이터, 모델, AI, 결과
+question : 학습 , answer : 데이터, 모델, 개선, 반복, 경험
+question : 분류 , answer : 카테고리, 그룹, AI, 데이터, 분류기
+question : 추천 , answer : 개인화, AI, 상품, 영화, 서비스
+question : 모델 , answer : 구조, 학습, 예측, 딥러닝, 알고리즘
+question : 혁신 , answer : 새로움, 기술, 변화, 발전, AI
+question : 직업 , answer : 일, 생계, 소득, 역할, 선택, 경력
+question : 의사 , answer : 의료, 진료, 환자, 병원, 전문직
+question : 교사 , answer : 교육, 학생, 가르침, 학교, 상담
+question : 경찰 , answer : 치안, 법, 질서, 시민 보호, 제복
+question : 소방관 , answer : 화재, 구조, 안전, 긴급, 시민 보호
+question : 엔지니어 , answer : 기술, 개발, 설계, 문제 해결, 전문직
+question : 변호사 , answer : 법, 재판, 상담, 변론, 자격증
+question : 요리사 , answer : 음식, 조리, 식당, 맛, 창의성
+question : 간호사 , answer : 병원, 환자 돌봄, 의료, 건강, 협력
+question : 운동선수 , answer : 스포츠, 경기, 체력, 연습, 경쟁
+question : 연구원 , answer : 실험, 조사, 학문, 연구, 논문
+question : 기자 , answer : 보도, 뉴스, 취재, 정보, 글쓰기
+question : 프로그래머 , answer : 코딩, 컴퓨터, 개발, 소프트웨어, 창의성
+question : 배우 , answer : 연기, 드라마, 영화, 무대, 유명인
+question : 화가 , answer : 그림, 예술, 창의성, 전시, 작품
+question : 가수 , answer : 노래, 무대, 음악, 공연, 인기
+question : 회계사 , answer : 재무, 숫자, 계산, 세무, 자격증
+question : 건축가 , answer : 설계, 건물, 디자인, 창의성, 프로젝트
+question : 디자이너 , answer : 창의성, 미적 감각, 시각, 제품, 패션
+question : 운전기사 , answer : 차량, 운전, 교통, 서비스, 안전
+question : 직업 , answer : 일, 생계, 소득, 역할, 선택, 경력
+question : 의사 , answer : 의료, 진료, 환자, 병원, 전문직
+question : 교사 , answer : 교육, 학생, 가르침, 학교, 상담
+question : 경찰 , answer : 치안, 법, 질서, 시민 보호, 제복
+question : 소방관 , answer : 화재, 구조, 안전, 긴급, 시민 보호
+question : 엔지니어 , answer : 기술, 개발, 설계, 문제 해결, 전문직
+question : 변호사 , answer : 법, 재판, 상담, 변론, 자격증
+question : 요리사 , answer : 음식, 조리, 식당, 맛, 창의성
+question : 간호사 , answer : 병원, 환자 돌봄, 의료, 건강, 협력
+question : 운동선수 , answer : 스포츠, 경기, 체력, 연습, 경쟁
+question : 연구원 , answer : 실험, 조사, 학문, 연구, 논문
+question : 기자 , answer : 보도, 뉴스, 취재, 정보, 글쓰기
+question : 프로그래머 , answer : 코딩, 컴퓨터, 개발, 소프트웨어, 창의성
+question : 배우 , answer : 연기, 드라마, 영화, 무대, 유명인
+question : 화가 , answer : 그림, 예술, 창의성, 전시, 작품
+question : 가수 , answer : 노래, 무대, 음악, 공연, 인기
+question : 회계사 , answer : 재무, 숫자, 계산, 세무, 자격증
+question : 건축가 , answer : 설계, 건물, 디자인, 창의성, 프로젝트
+question : 디자이너 , answer : 창의성, 미적 감각, 시각, 제품, 패션
+question : 운전기사 , answer : 차량, 운전, 교통, 서비스, 안전
+question : 날씨 , answer : 기온, 구름, 비, 바람, 계절, 변화
+question : 맑음 , answer : 파란 하늘, 햇살, 쾌청, 기분 좋음
+question : 흐림 , answer : 구름, 흐린 하늘, 차분함, 낮은 햇빛
+question : 비 , answer : 강수, 우산, 젖음, 소리, 여름
+question : 눈 , answer : 겨울, 하얀색, 쌓임, 차가움
+question : 폭염 , answer : 매우 더움, 여름, 열대야, 건강 위험
+question : 한파 , answer : 매우 추움, 겨울, 방한, 건강 위험
+question : 바람 , answer : 강풍, 선선함, 자연, 체감 온도
+question : 습도 , answer : 촉촉함, 불쾌지수, 여름, 피부
+question : 번개 , answer : 천둥, 폭풍, 밝은 빛, 위험
+question : 천둥 , answer : 번개, 큰 소리, 비, 두려움
+question : 쌀쌀함 , answer : 가을, 봄, 서늘함, 기온 변화
+question : 쾌청 , answer : 맑음, 시원함, 하늘, 좋은 기분
+question : 미세먼지 , answer : 공기, 건강, 마스크, 황사, 봄
+question : 안개 , answer : 뿌연, 시야, 이른 아침, 촉촉함
+question : 소나기 , answer : 갑작스러운 비, 여름, 젖음, 우산
+question : 무지개 , answer : 색깔, 비온 뒤, 아름다움, 자연
+question : 일기예보 , answer : 정보, 예측, 뉴스, 준비
+question : 기온 , answer : 온도, 높고 낮음, 계절, 변화
+question : 자외선 , answer : 햇빛, 여름, 피부, 차단
+question : 날씨 , answer : 기온, 구름, 비, 바람, 계절, 변화
+question : 맑음 , answer : 파란 하늘, 햇살, 쾌청, 기분 좋음
+question : 흐림 , answer : 구름, 흐린 하늘, 차분함, 낮은 햇빛
+question : 비 , answer : 강수, 우산, 젖음, 소리, 여름
+question : 눈 , answer : 겨울, 하얀색, 쌓임, 차가움
+question : 폭염 , answer : 매우 더움, 여름, 열대야, 건강 위험
+question : 한파 , answer : 매우 추움, 겨울, 방한, 건강 위험
+question : 바람 , answer : 강풍, 선선함, 자연, 체감 온도
+question : 습도 , answer : 촉촉함, 불쾌지수, 여름, 피부
+question : 번개 , answer : 천둥, 폭풍, 밝은 빛, 위험
+question : 천둥 , answer : 번개, 큰 소리, 비, 두려움
+question : 쌀쌀함 , answer : 가을, 봄, 서늘함, 기온 변화
+question : 쾌청 , answer : 맑음, 시원함, 하늘, 좋은 기분
+question : 미세먼지 , answer : 공기, 건강, 마스크, 황사, 봄
+question : 안개 , answer : 뿌연, 시야, 이른 아침, 촉촉함
+question : 소나기 , answer : 갑작스러운 비, 여름, 젖음, 우산
+question : 무지개 , answer : 색깔, 비온 뒤, 아름다움, 자연
+question : 일기예보 , answer : 정보, 예측, 뉴스, 준비
+question : 기온 , answer : 온도, 높고 낮음, 계절, 변화
+question : 자외선 , answer : 햇빛, 여름, 피부, 차단
+question : 가전제품 , answer : 집, 생활, 전기, 편리함, 필수품
+question : 냉장고 , answer : 음식 보관, 냉각, 집, 필수, 신선함
+question : 세탁기 , answer : 빨래, 자동, 물, 시간 절약, 집
+question : 에어컨 , answer : 냉방, 여름, 시원함, 집, 전기
+question : TV , answer : 영상, 오락, 뉴스, 집, 리모컨
+question : 청소기 , answer : 먼지, 집, 청결, 자동, 전기
+question : 전자레인지 , answer : 조리, 간편함, 전기, 집, 음식
+question : 밥솥 , answer : 밥, 자동, 집, 간편함, 전기
+question : 컴퓨터 , answer : 인터넷, 작업, 정보, 집, 오피스
+question : 선풍기 , answer : 바람, 시원함, 여름, 집, 전기
+question : 보일러 , answer : 난방, 겨울, 온수, 집, 따뜻함
+question : 스피커 , answer : 음악, 소리, 집, 오디오, 전기
+question : 헤어드라이기 , answer : 머리, 건조, 전기, 욕실, 편리함
+question : 프린터 , answer : 출력, 종이, 컴퓨터, 집, 사무실
+question : 전기밥솥 , answer : 밥, 자동, 집, 간편함, 조리
+question : 커피머신 , answer : 커피, 자동, 음료, 집, 오피스
+question : 다리미 , answer : 옷, 다림질, 집, 깔끔함, 전기
+question : 건조기 , answer : 빨래, 건조, 집, 전기, 편리함
+question : 전기포트 , answer : 물 끓이기, 전기, 주방, 집, 간편함
+question : 냉동고 , answer : 냉각, 음식 저장, 집, 필수, 얼음
+question : 가전제품 , answer : 집, 생활, 전기, 편리함, 필수품
+question : 냉장고 , answer : 음식 보관, 냉각, 집, 필수, 신선함
+question : 세탁기 , answer : 빨래, 자동, 물, 시간 절약, 집
+question : 에어컨 , answer : 냉방, 여름, 시원함, 집, 전기
+question : TV , answer : 영상, 오락, 뉴스, 집, 리모컨
+question : 청소기 , answer : 먼지, 집, 청결, 자동, 전기
+question : 전자레인지 , answer : 조리, 간편함, 전기, 집, 음식
+question : 밥솥 , answer : 밥, 자동, 집, 간편함, 전기
+question : 컴퓨터 , answer : 인터넷, 작업, 정보, 집, 오피스
+question : 선풍기 , answer : 바람, 시원함, 여름, 집, 전기
+question : 보일러 , answer : 난방, 겨울, 온수, 집, 따뜻함
+question : 스피커 , answer : 음악, 소리, 집, 오디오, 전기
+question : 헤어드라이기 , answer : 머리, 건조, 전기, 욕실, 편리함
+question : 프린터 , answer : 출력, 종이, 컴퓨터, 집, 사무실
+question : 전기밥솥 , answer : 밥, 자동, 집, 간편함, 조리
+question : 커피머신 , answer : 커피, 자동, 음료, 집, 오피스
+question : 다리미 , answer : 옷, 다림질, 집, 깔끔함, 전기
+question : 건조기 , answer : 빨래, 건조, 집, 전기, 편리함
+question : 전기포트 , answer : 물 끓이기, 전기, 주방, 집, 간편함
+question : 냉동고 , answer : 냉각, 음식 저장, 집, 필수, 얼음
+question : 여행 , answer : 이동, 경험, 새로운 곳, 추억, 즐거움
+question : 비행기표 , answer : 항공권, 예매, 여행 준비, 좌석, 국제선
+question : 여권 , answer : 국제여행, 신분증, 입국, 준비물, 서류
+question : 호텔 , answer : 숙박, 서비스, 여행지, 예약, 편안함
+question : 관광지 , answer : 명소, 볼거리, 유명, 방문, 체험
+question : 지도 , answer : 위치, 방향, 여행 준비, 계획, 길 찾기
+question : 사진 , answer : 추억, 기록, 카메라, 여행, 감성
+question : 가이드 , answer : 안내, 설명, 전문가, 여행 도움, 단체
+question : 여행가방 , answer : 짐, 준비물, 이동, 여행 필수, 패킹
+question : 기념품 , answer : 선물, 추억, 여행지, 쇼핑, 소장
+question : 비자 , answer : 입국 허가, 서류, 국제여행, 준비, 국가
+question : 관광버스 , answer : 단체, 이동, 여행, 가이드, 경로
+question : 계획 , answer : 일정, 준비, 여행, 시간, 경로
+question : 경험 , answer : 체험, 추억, 성장, 여행, 변화
+question : 경비 , answer : 비용, 예산, 여행, 준비, 지출
+question : 명소 , answer : 유명, 볼거리, 사진, 방문, 관광
+question : 식당 , answer : 음식, 맛집, 현지, 여행, 경험
+question : 관람 , answer : 전시, 박물관, 체험, 문화, 여행
+question : 가족여행 , answer : 가족, 단체, 추억, 행복, 계획
+question : 자유여행 , answer : 자유, 일정, 개인, 탐험, 계획
+question : 감정 , answer : 느낌, 마음, 심리, 상태, 변화
+question : 사랑 , answer : 애정, 긍정, 친밀감, 소중함, 감동
+question : 슬픔 , answer : 눈물, 아픔, 상실, 위로, 어두움
+question : 기쁨 , answer : 행복, 즐거움, 긍정, 환희, 미소
+question : 분노 , answer : 화, 폭발, 감정 조절, 불쾌, 스트레스
+question : 불안 , answer : 걱정, 초조, 긴장, 두려움, 심리
+question : 평온 , answer : 안정, 차분함, 마음의 평화, 휴식, 온화함
+question : 설렘 , answer : 기대, 두근거림, 긍정, 희망, 변화
+question : 짜증 , answer : 불쾌, 작은 일, 피곤, 감정 표출, 분노
+question : 걱정 , answer : 불안, 미래, 염려, 심리, 스트레스
+question : 감동 , answer : 마음 울림, 인상, 긍정, 감정 변화
+question : 실망 , answer : 아쉬움, 기대 무너짐, 상실, 부정
+question : 후회 , answer : 과거, 미련, 반성, 아쉬움, 성장
+question : 무관심 , answer : 냉담, 관심 없음, 무표정, 심리
+question : 자신감 , answer : 당당함, 긍정, 성공 기대, 용기
+question : 외로움 , answer : 혼자, 고독, 소외, 슬픔, 생각
+question : 행복 , answer : 만족감, 기쁨, 긍정, 웃음, 삶
+question : 열정 , answer : 에너지, 적극성, 힘, 목표, 노력
+question : 동경 , answer : 우상, 선망, 흠모, 관심, 기대
+question : 수치심 , answer : 부끄러움, 창피함, 당황, 심리, 불편
+question : 스포츠 , answer : 운동, 경쟁, 경기, 체력, 규칙
+question : 축구 , answer : 공, 팀, 경기장, 골, 전 세계 인기
+question : 야구 , answer : 공, 배트, 투수, 타자, 구단
+question : 농구 , answer : 공, 골대, 점프, 드리블, 팀워크
+question : 배구 , answer : 공, 네트, 점프, 팀, 스파이크
+question : 수영 , answer : 물, 운동, 경기, 자유형, 건강
+question : 테니스 , answer : 라켓, 공, 네트, 경기, 스코어
+question : 탁구 , answer : 작은 공, 라켓, 빠름, 네트, 스매시
+question : 골프 , answer : 클럽, 공, 필드, 홀, 경기
+question : 복싱 , answer : 글러브, 링, 경쟁, 힘, 경기
+question : 유도 , answer : 도복, 기술, 힘, 경기, 무도
+question : 태권도 , answer : 무도, 발차기, 도복, 경기, 한국
+question : 스케이트 , answer : 얼음, 운동, 경기, 겨울, 빠름
+question : 스키 , answer : 눈, 산, 겨울, 장비, 스포츠
+question : 배드민턴 , answer : 셔틀콕, 라켓, 네트, 경기, 운동
+question : 양궁 , answer : 활, 과녁, 경기, 집중, 한국
+question : 럭비 , answer : 공, 팀, 경기, 힘, 체력
+question : 씨름 , answer : 한국, 경기, 힘, 전통, 체력
+question : 자전거 , answer : 운동, 교통, 레이스, 팀, 건강
+question : 마라톤 , answer : 달리기, 장거리, 경기, 체력, 인내
+question : 색깔 , answer : 컬러, 시각, 미적 감각, 다양성, 구분
+question : 빨강 , answer : 강렬함, 에너지, 열정, 위험, 사랑
+question : 파랑 , answer : 차분함, 신뢰, 바다, 하늘, 시원함
+question : 노랑 , answer : 밝음, 명랑함, 주의, 태양, 희망
+question : 초록 , answer : 자연, 평화, 안정, 식물, 신선함
+question : 보라 , answer : 신비, 우아함, 창의성, 독특함, 감성
+question : 주황 , answer : 따뜻함, 에너지, 밝음, 즐거움, 열매
+question : 분홍 , answer : 귀여움, 사랑, 로맨틱, 여성적, 부드러움
+question : 갈색 , answer : 흙, 자연, 안정, 따뜻함, 가을
+question : 검정 , answer : 어둠, 고급스러움, 신비, 세련됨, 강렬함
+question : 흰색 , answer : 순수, 깨끗함, 평화, 결혼, 신선함
+question : 회색 , answer : 중립, 도시, 차분함, 세련됨, 현대적
+question : 청록 , answer : 시원함, 바다, 상쾌함, 자연, 평화
+question : 연두 , answer : 산뜻함, 어린잎, 자연, 신선함, 활기
+question : 남색 , answer : 진함, 차분함, 깊이, 신뢰, 밤
+question : 금색 , answer : 부, 번영, 고급, 빛, 명예
+question : 은색 , answer : 세련, 미래, 빛, 금속, 고급
+question : 자주 , answer : 붉음, 진함, 성숙, 우아함, 감성
+question : 연분홍 , answer : 부드러움, 따뜻함, 사랑, 봄, 로맨틱
+question : 카키 , answer : 자연, 군복, 안정, 야외, 소박함
+question : 도시 , answer : 인구 밀집, 빌딩, 교통, 현대적, 편의시설
+question : 시골 , answer : 자연, 논밭, 한적함, 친근함, 농사
+question : 서울 , answer : 수도, 대도시, 문화, 회사, 교통
+question : 마을 , answer : 소규모, 공동체, 이웃, 평화로움, 시골
+question : 빌딩 , answer : 높은 건물, 도시, 사무실, 아파트, 현대
+question : 도로 , answer : 이동, 교통, 자동차, 도시, 시골
+question : 지하철 , answer : 도시 교통, 빠름, 출퇴근, 역, 대중교통
+question : 공원 , answer : 휴식, 산책, 자연, 도시, 녹지
+question : 시장 , answer : 장보기, 사람, 상품, 시끌벅적, 전통
+question : 버스 , answer : 대중교통, 정류장, 이동, 출퇴근, 도시
+question : 아파트 , answer : 주거, 도시, 고층, 가족, 현대적
+question : 주택 , answer : 집, 시골, 단독, 가족, 정원
+question : 논밭 , answer : 농사, 식물, 시골, 자연, 곡식
+question : 농장 , answer : 가축, 작물, 시골, 일, 자연
+question : 교통체증 , answer : 도시, 혼잡, 불편, 자동차, 출퇴근
+question : 고층건물 , answer : 도시, 빌딩, 사무실, 현대, 전망
+question : 자연 , answer : 시골, 환경, 산, 강, 깨끗함
+question : 야경 , answer : 도시, 불빛, 아름다움, 밤, 관광
+question : 인구 , answer : 도시, 시골, 사람, 많음, 적음
+question : 학교 , answer : 교육, 학생, 도시, 시골, 배움
+question : 도시 , answer : 인구 밀집, 빌딩, 교통, 현대적, 편의시설
+question : 시골 , answer : 자연, 논밭, 한적함, 친근함, 농사
+question : 서울 , answer : 수도, 대도시, 문화, 회사, 교통
+question : 마을 , answer : 소규모, 공동체, 이웃, 평화로움, 시골
+question : 빌딩 , answer : 높은 건물, 도시, 사무실, 아파트, 현대
+question : 도로 , answer : 이동, 교통, 자동차, 도시, 시골
+question : 지하철 , answer : 도시 교통, 빠름, 출퇴근, 역, 대중교통
+question : 공원 , answer : 휴식, 산책, 자연, 도시, 녹지
+question : 시장 , answer : 장보기, 사람, 상품, 시끌벅적, 전통
+question : 버스 , answer : 대중교통, 정류장, 이동, 출퇴근, 도시
+question : 아파트 , answer : 주거, 도시, 고층, 가족, 현대적
+question : 주택 , answer : 집, 시골, 단독, 가족, 정원
+question : 논밭 , answer : 농사, 식물, 시골, 자연, 곡식
+question : 농장 , answer : 가축, 작물, 시골, 일, 자연
+question : 교통체증 , answer : 도시, 혼잡, 불편, 자동차, 출퇴근
+question : 고층건물 , answer : 도시, 빌딩, 사무실, 현대, 전망
+question : 자연 , answer : 시골, 환경, 산, 강, 깨끗함
+question : 야경 , answer : 도시, 불빛, 아름다움, 밤, 관광
+question : 인구 , answer : 도시, 시골, 사람, 많음, 적음
+question : 학교 , answer : 교육, 학생, 도시, 시골, 배움
+question : 집안일 , answer : 청소, 설거지, 빨래, 요리, 정리
+question : 청소 , answer : 집, 청결, 먼지, 바닥, 쾌적함
+question : 설거지 , answer : 식사 후, 그릇, 물, 주방, 정리
+question : 빨래 , answer : 의류, 세탁기, 물, 건조, 집
+question : 요리 , answer : 음식, 주방, 조리, 재료, 가족
+question : 정리 , answer : 청소, 질서, 공간, 효율, 집
+question : 쓰레기 , answer : 배출, 청소, 환경, 분리수거, 집
+question : 분리수거 , answer : 재활용, 쓰레기, 환경, 정리, 집
+question : 창문 닦기 , answer : 유리, 먼지, 집, 청결, 청소
+question : 욕실 청소 , answer : 화장실, 청결, 청소, 물, 집
+question : 장보기 , answer : 식재료, 마트, 집, 가족, 준비
+question : 식사 준비 , answer : 요리, 가족, 시간, 재료, 주방
+question : 다림질 , answer : 옷, 다리미, 정돈, 깔끔함, 집
+question : 이불 정리 , answer : 침실, 아침, 정돈, 집, 습관
+question : 고장 수리 , answer : 집, 도구, 수리, 유지, 관리
+question : 화분 관리 , answer : 식물, 물주기, 집, 자연, 관리
+question : 반찬 만들기 , answer : 요리, 식사, 가족, 준비, 주방
+question : 창고 정리 , answer : 물건, 공간, 효율, 집, 청소
+question : 베란다 청소 , answer : 공간, 청결, 먼지, 창문, 집
+question : 휴지통 비우기 , answer : 쓰레기, 청결, 집, 관리, 환경
+question : 직장 , answer : 회사, 사무실, 동료, 업무, 월급
+question : 회사 , answer : 조직, 일, 사무실, 동료, 출근
+question : 상사 , answer : 리더, 책임, 지시, 평가, 존경
+question : 동료 , answer : 함께 일함, 협력, 지원, 우정, 동기
+question : 출근 , answer : 아침, 시간, 교통, 회사, 일
+question : 퇴근 , answer : 저녁, 귀가, 휴식, 자유, 일과
+question : 사무실 , answer : 책상, 컴퓨터, 회의, 근무, 직장
+question : 업무 , answer : 일, 책임, 목표, 진행, 성과
+question : 회의 , answer : 토론, 의견, 결정, 사무실, 팀
+question : 보고서 , answer : 문서, 작성, 평가, 결과, 제출
+question : 점심시간 , answer : 식사, 휴식, 동료, 회사, 에너지
+question : 야근 , answer : 늦은 시간, 일, 피로, 성과, 급여
+question : 프로젝트 , answer : 목표, 팀, 협업, 성과, 진행
+question : 승진 , answer : 직급, 성과, 보상, 목표, 경력
+question : 급여 , answer : 월급, 보상, 수입, 생활, 회사
+question : 복리후생 , answer : 혜택, 복지, 직장, 만족, 지원
+question : 인사평가 , answer : 성과, 평가, 승진, 회사, 목표
+question : 출근길 , answer : 교통, 아침, 버스, 지하철, 시간
+question : 연차 , answer : 휴가, 자유, 일정, 직장, 휴식
+question : 사내식당 , answer : 식사, 점심, 회사, 동료, 편리함
+question : 공부 , answer : 지식, 학습, 책, 노트, 시험
+question : 학습 , answer : 이해, 암기, 연습, 습관, 성장
+question : 책 , answer : 지식, 독서, 종이, 정보, 배움
+question : 노트 , answer : 필기, 정리, 복습, 공부, 연습
+question : 과제 , answer : 숙제, 제출, 노력, 평가, 책임
+question : 시험 , answer : 평가, 준비, 긴장, 성적, 목표
+question : 독서 , answer : 책, 상상력, 지식, 취미, 성장
+question : 암기 , answer : 기억, 반복, 공부, 시험, 습관
+question : 질문 , answer : 호기심, 이해, 답변, 성장, 대화
+question : 교재 , answer : 공부, 자료, 책, 내용, 이해
+question : 수업 , answer : 선생님, 학습, 교실, 발표, 듣기
+question : 발표 , answer : 연습, 자신감, 전달, 청중, 성장
+question : 집중 , answer : 몰입, 주의, 환경, 공부, 효율
+question : 복습 , answer : 확인, 반복, 정리, 이해, 완성
+question : 예습 , answer : 미리, 준비, 공부, 습관, 효율
+question : 토론 , answer : 의견, 발표, 논리, 대화, 성장
+question : 동기부여 , answer : 목표, 열정, 의지, 성취, 성장
+question : 성적 , answer : 결과, 시험, 평가, 목표, 경쟁
+question : 멘토 , answer : 지도, 조언, 성장, 경험, 선생님
+question : 자기주도 , answer : 스스로, 책임, 계획, 동기, 발전
+question : 기술 , answer : 혁신, 발전, 도구, 생활, 창의성
+question : IT , answer : 정보, 기술, 컴퓨터, 인터넷, 디지털
+question : 컴퓨터 , answer : 정보 처리, 인터넷, 작업, 하드웨어, 소프트웨어
+question : 스마트폰 , answer : 휴대성, 통신, 앱, 인터넷, 사진
+question : 프로그래밍 , answer : 코딩, 논리, 소프트웨어, 개발, 창의성
+question : 인터넷 , answer : 연결, 정보, 웹사이트, 검색, 통신
+question : 네트워크 , answer : 연결, 데이터, 통신, 컴퓨터, 공유
+question : 소프트웨어 , answer : 프로그램, 개발, 기능, 업데이트, 사용
+question : 하드웨어 , answer : 기계, 컴퓨터 부품, 장치, 물리적, 성능
+question : 앱 , answer : 프로그램, 스마트폰, 설치, 기능, 사용
+question : AI , answer : 인공지능, 학습, 자동화, 미래, 혁신
+question : 클라우드 , answer : 저장, 서버, 데이터, 인터넷, 공유
+question : 로봇 , answer : 자동화, 기계, 작업, 기술, 미래
+question : 데이터 , answer : 정보, 저장, 분석, 컴퓨터, 활용
+question : 암호 , answer : 보안, 안전, 코드, 정보 보호, 키
+question : 블루투스 , answer : 무선, 연결, 기기, 음악, 편의
+question : USB , answer : 저장, 연결, 이동식, 데이터, 편리함
+question : 업데이트 , answer : 개선, 새로운 기능, 소프트웨어, 주기적, 버그 수정
+question : 보안 , answer : 안전, 정보 보호, 해킹 방지, 암호, 관리
+question : 디지털 , answer : 전자, 변화, 정보, 기술, 현대
+question : 건강 , answer : 신체, 정신, 식습관, 운동, 예방
+question : 운동 , answer : 체력, 활동, 건강, 땀, 규칙적
+question : 달리기 , answer : 유산소, 속도, 다리, 운동, 체력
+question : 걷기 , answer : 산책, 운동, 건강, 일상, 쉽게
+question : 스트레칭 , answer : 근육, 유연성, 준비운동, 부상 예방, 회복
+question : 헬스 , answer : 체력, 근육, 운동기구, 웨이트, 건강
+question : 자전거 , answer : 유산소, 이동, 운동, 취미, 자연
+question : 수영 , answer : 전신 운동, 물, 건강, 호흡, 체력
+question : 요가 , answer : 마음, 유연성, 명상, 자세, 호흡
+question : 체조 , answer : 근력, 유연성, 균형, 학교, 대회
+question : 체중 , answer : 몸무게, 건강, 관리, 운동, 측정
+question : 식사 , answer : 영양, 건강, 음식, 균형, 에너지
+question : 영양 , answer : 비타민, 단백질, 식사, 건강, 균형
+question : 병원 , answer : 진료, 의사, 건강, 치료, 예방
+question : 예방접종 , answer : 백신, 건강, 면역, 병원, 예방
+question : 혈압 , answer : 건강, 측정, 혈관, 관리, 위험
+question : 스트레스 , answer : 심리, 건강, 해소, 관리, 운동
+question : 수면 , answer : 잠, 건강, 회복, 휴식, 리듬
+question : 마스크 , answer : 위생, 감염 예방, 건강, 착용, 외출
+question : 체력 , answer : 힘, 지구력, 건강, 운동, 지속
+question : 여가 , answer : 자유 시간, 취미, 휴식, 즐거움, 만족
+question : 휴식 , answer : 쉬다, 피로 해소, 회복, 안정, 여유
+question : 산책 , answer : 자연, 운동, 기분 전환, 건강, 여유
+question : 영화감상 , answer : 오락, 감정, 이야기, 스크린, 여가
+question : 독서 , answer : 책, 지식, 집중, 휴식, 성장
+question : 음악감상 , answer : 음악, 감정, 힐링, 휴식, 취미
+question : 취미 , answer : 관심사, 즐거움, 자기계발, 여가, 자유
+question : 캠핑 , answer : 야외, 자연, 불, 텐트, 휴식
+question : 명상 , answer : 마음, 휴식, 집중, 안정, 힐링
+question : 낮잠 , answer : 짧은 수면, 피로 해소, 휴식, 집중, 건강
+question : 게임 , answer : 오락, 경쟁, 즐거움, 여가, 스트레스 해소
+question : 요리 , answer : 음식, 창의성, 휴식, 즐거움, 여가
+question : 수영 , answer : 운동, 시원함, 건강, 취미, 여가
+question : 자전거 , answer : 운동, 이동, 취미, 자연, 여가
+question : 카페 , answer : 음료, 휴식, 대화, 만남, 여유
+question : 사진찍기 , answer : 기록, 예술, 취미, 추억, 감성
+question : 여행 , answer : 경험, 새로운 곳, 휴식, 추억, 탐험
+question : 공원 , answer : 자연, 휴식, 산책, 만남, 녹지
+question : 쇼핑 , answer : 구매, 만족, 취미, 즐거움, 여가
+question : 동물원 , answer : 관람, 동물, 가족, 휴식, 교육
+question : 패션 , answer : 유행, 스타일, 의류, 개성, 트렌드
+question : 의류 , answer : 옷, 착용, 계절, 디자인, 소재
+question : 셔츠 , answer : 상의, 단추, 깔끔함, 정장, 캐주얼
+question : 바지 , answer : 하의, 청바지, 편안함, 다양한 스타일, 패션
+question : 신발 , answer : 착용, 걷기, 운동화, 구두, 패션
+question : 코트 , answer : 외투, 겨울, 따뜻함, 패션, 스타일
+question : 치마 , answer : 하의, 여성, 패션, 계절, 디자인
+question : 티셔츠 , answer : 상의, 캐주얼, 면, 편안함, 패션
+question : 정장 , answer : 공식, 직장, 셔츠, 격식, 패션
+question : 모자 , answer : 머리, 햇빛 차단, 패션, 스타일, 액세서리
+question : 액세서리 , answer : 패션, 장식, 반지, 귀걸이, 스타일
+question : 점퍼 , answer : 외투, 캐주얼, 가을, 겨울, 따뜻함
+question : 운동화 , answer : 신발, 운동, 편안함, 캐주얼, 활동
+question : 구두 , answer : 신발, 정장, 공식, 격식, 스타일
+question : 가방 , answer : 휴대, 패션, 소지품, 실용, 스타일
+question : 스카프 , answer : 목, 보온, 장식, 패션, 액세서리
+question : 벨트 , answer : 허리, 착용, 실용, 패션, 정장
+question : 반팔 , answer : 여름, 티셔츠, 시원함, 캐주얼, 패션
+question : 양말 , answer : 발, 착용, 편안함, 패션, 신발
+question : 브랜드 , answer : 유명, 명품, 패션, 로고, 스타일
+question : 음악 , answer : 소리, 감정, 예술, 감상, 힐링
+question : 피아노 , answer : 악기, 건반, 연주, 클래식, 음악
+question : 기타 , answer : 현악기, 연주, 밴드, 음악, 코드
+question : 드럼 , answer : 타악기, 리듬, 밴드, 연주, 소리
+question : 노래 , answer : 목소리, 감정, 음악, 가사, 감상
+question : 작곡 , answer : 창작, 멜로디, 음악, 악기, 예술
+question : 연주 , answer : 악기, 음악, 무대, 공연, 실력
+question : 합창 , answer : 여럿, 노래, 협력, 공연, 음악
+question : 밴드 , answer : 그룹, 음악, 연주, 공연, 협력
+question : 가사 , answer : 노래, 말, 의미, 음악, 표현
+question : 음반 , answer : 노래, 앨범, 가수, 음악, 판매
+question : 오케스트라 , answer : 관현악, 연주, 클래식, 단체, 공연
+question : 공연 , answer : 무대, 음악, 연주, 관객, 예술
+question : 가수 , answer : 노래, 음악, 무대, 유명, 활동
+question : 팝송 , answer : 음악, 외국, 대중, 인기, 트렌드
+question : 클래식 , answer : 음악, 전통, 연주, 오케스트라, 예술
+question : 음정 , answer : 소리, 높낮이, 음악, 멜로디, 조율
+question : 리듬 , answer : 박자, 타악기, 음악, 움직임, 춤
+question : 악보 , answer : 음악, 연주, 기호, 읽기, 준비
+question : 감상 , answer : 음악, 듣기, 감정, 휴식, 힐링
+- 총 질문답 821개

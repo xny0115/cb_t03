@@ -1,0 +1,498 @@
+question : 마트에서 뭐 사야 해? , answer : 과일이랑 채소 사면 돼.
+question : 오늘 저녁에 뭐 할 거야? , answer : 공원에서 산책할 거야.
+question : 아침에 일어나면 바로 뭐 해? , answer : 알람 끄고 세수해.
+question : 온라인 쇼핑할 때 주의할 점 있어? , answer : 상품 후기 꼭 확인해야 해.
+question : 할인 행사 언제 많이 해? , answer : 명절이나 금요일에 많이 해.
+question : 편의점에서 자주 사는 건 뭐야? , answer : 컵라면이랑 삼각김밥 자주 사.
+question : 마트 계산할 때 카드만 받아? , answer : 현금도 받아.
+question : 환불하려면 어떻게 해야 해? , answer : 영수증이랑 상품 들고 가야 해.
+question : 옷 살 때 제일 먼저 보는 건 뭐야? , answer : 가격부터 확인해.
+question : 명절 선물 뭐가 좋아? , answer : 과일 세트가 무난해.
+question : 아침 식사는 꼭 해야 해? , answer : 가능하면 먹는 게 좋아.
+question : 일어나서 첫 번째로 하는 건? , answer : 알람 끄고 스트레칭해.
+question : 자기 전 루틴 알려줘. , answer : 양치하고 휴대폰 잠깐 봐.
+question : 아침에 시간이 없으면? , answer : 빨리 세수하고 나가.
+question : 잠들기 전에 하는 일? , answer : 음악 들으면서 누워 있어.
+question : 아침 준비 빨리하는 비법 있어? , answer : 전날 미리 준비해 두면 좋아.
+question : 저녁엔 뭐 하면서 쉬어? , answer : 티비 보거나 게임해.
+question : 아침마다 꼭 챙기는 거 있어? , answer : 휴대폰이랑 지갑은 꼭 챙겨.
+question : 야외에서 뭐 하고 놀아? , answer : 자전거 타거나 친구랑 놀아.
+question : 공원에서 할 수 있는 운동 알려줘. , answer : 걷기랑 달리기 많이 해.
+question : 야외에서 피크닉 할 때 필요한 건? , answer : 돗자리랑 간식 가져가야 해.
+question : 공원에서 자주 볼 수 있는 사람은? , answer : 강아지 산책하는 사람 많아.
+question : 야외 모임 할 때 주의할 점? , answer : 쓰레기 잘 챙겨야 해.
+question : 친구랑 자전거 타고 어디 가? , answer : 강변 자전거길 자주 가.
+question : 산책할 때 주로 무슨 생각해? , answer : 그냥 멍 때리거나 음악 들어.
+question : 공원에서 주로 하는 놀이? , answer : 프리스비 던지기 많이 해.
+question : 날씨 좋은 날 야외에서 뭐 해? , answer : 돗자리 깔고 쉬어.
+question : 캠핑 갈 때 챙길 거 뭐 있어? , answer : 텐트랑 침낭은 꼭 챙겨야 해.
+question : 이웃이랑 잘 지내는 방법? , answer : 마주치면 인사 잘하면 돼.
+question : 아랫집에서 소음 올라오면? , answer : 한 번 참고, 심하면 얘기해.
+question : 이웃한테 도움 요청할 때 어떻게 해? , answer : 정중하게 부탁하면 돼.
+question : 이웃이랑 갈등 생기면? , answer : 대화로 풀려고 해.
+question : 동네 행사 있으면 참여해? , answer : 가끔은 참여해.
+question : 이웃집에 뭐 빌려 달라면? , answer : 가능하면 빌려줘.
+question : 새로운 이웃 생기면? , answer : 먼저 인사해.
+question : 이웃에게 선물 줄 때 뭐가 좋아? , answer : 간단한 과자나 음료가 좋아.
+question : 층간소음 심하면 어떻게 해? , answer : 관리실에 먼저 연락해.
+question : 이웃끼리 함께하는 모임? , answer : 청소나 소모임 같이 해.
+question : 시간 약속 못 지키면 뭐라고 해? , answer : 미안하다고 먼저 얘기해.
+question : 친구랑 약속 장소 바뀌면? , answer : 연락해서 어디로 갈지 정해.
+question : 일정 겹치면 어떻게 해? , answer : 중요한 약속 먼저 잡아.
+question : 시간 맞춰 나가는 방법? , answer : 알람 여러 번 맞춰.
+question : 지각할 것 같으면? , answer : 미리 연락해.
+question : 약속 전에 준비하는 건 뭐야? , answer : 옷이랑 필요한 물건 챙겨.
+question : 일정 갑자기 바뀌면? , answer : 바로 알려줘야 해.
+question : 시간 정할 때 어려운 점? , answer : 서로 스케줄 맞추기 힘들어.
+question : 친구가 약속 잊으면? , answer : 다음엔 미리 알려주라고 해.
+question : 모임 장소 정할 때 뭐가 중요해? , answer : 다 같이 가기 편한 곳으로 정해.
+question : 마트에 가면 꼭 사는 물건은? , answer : 두부랑 달걀은 항상 사.
+question : 세일 기간에 마트 붐비면? , answer : 사람 적은 시간에 가.
+question : 온라인 쇼핑이랑 오프라인 중 뭐가 더 좋아? , answer : 상황 따라 달라.
+question : 새로 나온 과자 먹어봤어? , answer : 아직 못 먹어봤어.
+question : 마트 시식코너 자주 이용해? , answer : 가끔 맛만 봐.
+question : 할인쿠폰 자주 써? , answer : 있으면 꼭 써.
+question : 장바구니에 꼭 넣는 물건? , answer : 우유는 항상 챙겨.
+question : 온라인 반품하려면 어떻게 해? , answer : 판매자한테 문의해.
+question : 쇼핑할 때 친구랑 같이 가? , answer : 필요할 때만 같이 가.
+question : 마트 계산대 줄 길면 뭐 해? , answer : 휴대폰 보면서 기다려.
+question : 아침에 알람 몇 개 맞춰? , answer : 보통 세 개 맞춰.
+question : 아침에 제일 하기 싫은 건 뭐야? , answer : 이불에서 나오기 싫어.
+question : 아침 준비할 때 시간 얼마나 걸려? , answer : 보통 20분 걸려.
+question : 저녁에 피곤할 때 뭐 해? , answer : 그냥 누워서 쉰다.
+question : 아침에 급하게 나오면 뭐 까먹어? , answer : 지갑이나 마스크 까먹어.
+question : 저녁에 집에 들어오면 제일 먼저 뭐 해? , answer : 옷부터 갈아입어.
+question : 아침마다 스트레칭 해? , answer : 가끔 해.
+question : 저녁에 공부해? , answer : 가끔 필요한 거 있으면 해.
+question : 아침에 뭐 입을지 고민해? , answer : 날씨 보고 정해.
+question : 자기 전 핸드폰 보는 시간 얼마나 돼? , answer : 30분은 꼭 봐.
+question : 공원에서 강아지랑 놀아본 적 있어? , answer : 가끔 친구 강아지랑 놀아.
+question : 야외 운동할 때 뭐 챙겨? , answer : 물하고 수건 챙겨.
+question : 야외 모임에 늦으면 뭐 해? , answer : 미안하다고 말해.
+question : 피크닉 음식 뭐가 좋아? , answer : 샌드위치랑 과일이 좋아.
+question : 공원에서 제일 좋아하는 계절은? , answer : 봄이 제일 좋아.
+question : 공원에 가면 꼭 하는 일? , answer : 벤치에 앉아서 쉬어.
+question : 자전거 타다가 비 오면 어떻게 해? , answer : 가까운 곳에서 비 피하지.
+question : 야외 활동할 때 입는 옷은? , answer : 편한 운동복 입어.
+question : 공원에 사람 많으면 뭐 해? , answer : 조용한 자리 찾아가.
+question : 친구랑 산책하다가 갈등 생기면? , answer : 대화로 풀려고 해.
+question : 이웃과 어색하면 어떻게 해? , answer : 먼저 인사 건네.
+question : 이웃집에서 좋은 냄새 나면? , answer : 무슨 요리인지 궁금해.
+question : 아파트 행사 자주 참여해? , answer : 별로 안 가.
+question : 이웃이 택배 대신 받아달라면? , answer : 시간 맞으면 받아줘.
+question : 동네 청소 같이 해본 적 있어? , answer : 예전에 한 번 해봤어.
+question : 이웃과 함께할 수 있는 활동 뭐 있어? , answer : 동네 산책이나 모임.
+question : 이웃이 시끄럽게 하면 뭐라고 해? , answer : 조심해달라고 정중히 말해.
+question : 이웃에게 생일 축하해줘? , answer : 알면 축하해 줘.
+question : 시간 약속 자주 어겨? , answer : 가끔 늦을 때 있어.
+question : 약속 시간 늦으면 뭐라고 해? , answer : 미안하다고 연락해.
+question : 일정 잊어버리지 않으려면? , answer : 달력에 적어둬.
+question : 친구가 시간 안 지키면? , answer : 다음엔 늦지 말라고 해.
+question : 약속 정할 때 참고하는 건? , answer : 서로 시간 맞추는 거.
+question : 일정이 너무 많으면? , answer : 중요한 거부터 정리해.
+question : 약속 여러 개 겹치면? , answer : 양해 구하고 한 개만 가.
+question : 시간 정하기 어려운 이유는? , answer : 서로 바빠서 그래.
+question : 늦을 것 같으면 언제 연락해? , answer : 알게 되면 바로 연락해.
+question : 마트에서 계산할 때 제일 오래 걸리는 건? , answer : 사람 많을 때 줄 서는 게 오래 걸려.
+question : 신제품 나오면 바로 사? , answer : 관심 있으면 바로 사.
+question : 마트에서 시식 많이 해? , answer : 종종 해.
+question : 온라인 쇼핑 배송 늦으면? , answer : 판매자에게 문의해.
+question : 쇼핑 가방 자주 챙겨? , answer : 잊지 않으려고 가방에 넣어 둬.
+question : 장 본 거 까먹으면 어떻게 해? , answer : 메모해두면 덜 까먹어.
+question : 마감 세일 많이 이용해? , answer : 타이밍 맞으면 해.
+question : 마트에서 제일 좋아하는 코너는? , answer : 간식 코너 좋아해.
+question : 온라인 쇼핑 결제 수단 뭐 써? , answer : 주로 카드 결제해.
+question : 마트에서 카드 포인트 자주 써? , answer : 쓸 수 있으면 꼭 써.
+question : 아침에 제일 먼저 떠오르는 생각은? , answer : 오늘 뭐 하지 생각나.
+question : 저녁에 스트레스 풀 때 뭐 해? , answer : 음악 듣거나 산책해.
+question : 아침에 일어나기 힘들 땐? , answer : 알람 여러 번 맞춰.
+question : 아침 식사 자주 거르니? , answer : 가끔 시간이 없으면 거르지.
+question : 저녁에 외출 자주 해? , answer : 가끔 바람 쐬러 나가.
+question : 아침마다 커피 마셔? , answer : 웬만하면 마셔.
+question : 저녁에 가장 먹고 싶은 음식은? , answer : 매운 음식 땡겨.
+question : 아침에 준비하면서 듣는 음악 있어? , answer : 신나는 노래 들어.
+question : 저녁에 영화 자주 봐? , answer : 일주일에 한 번은 봐.
+question : 아침에 옷 고르는 팁 있어? , answer : 전날 미리 정해 두면 편해.
+question : 공원에서 자전거 타본 적 있어? , answer : 자주 타.
+question : 야외 운동 후에 뭐 마셔? , answer : 물이나 이온음료 마셔.
+question : 공원에서 친구랑 뭐 하고 놀아? , answer : 축구나 농구 해.
+question : 야외에서 바람 많이 불면? , answer : 잠깐 쉬어가.
+question : 공원에서 가장 좋아하는 시간대는? , answer : 해 질 때가 좋아.
+question : 야외 활동할 때 주의할 점은? , answer : 햇빛 차단 꼭 해야 해.
+question : 야외에서 우산 필요할 때 있어? , answer : 소나기 오면 필요해.
+question : 공원에 간식 가져가? , answer : 과자나 음료 챙겨가.
+question : 야외에서 제일 힘든 점은? , answer : 모기 때문에 힘들어.
+question : 공원에서 혼자 시간 보내본 적 있어? , answer : 가끔 혼자 걷기도 해.
+question : 이웃과 어울릴 기회 많아? , answer : 생각보다 적어.
+question : 이웃이랑 식사 같이 해본 적 있어? , answer : 한 번 해봤어.
+question : 이웃이 반려동물 키우면 불편해? , answer : 소음만 조심하면 괜찮아.
+question : 이웃에게 택배 맡겨본 적 있어? , answer : 자주 맡겨.
+question : 이웃집에서 음식 나눠준 적 있어? , answer : 예전에 나눠준 적 있어.
+question : 이웃과 소통하는 법? , answer : 간단하게 인사 나눠.
+question : 이웃 때문에 불편한 점은? , answer : 가끔 소음이 신경 쓰여.
+question : 이웃이 먼저 다가오면 어때? , answer : 편하게 느껴져.
+question : 이웃이랑 약속 잡기 쉬워? , answer : 서로 바빠서 쉽진 않아.
+question : 이웃과 갈등 있으면 어떻게 풀어? , answer : 직접 얘기해서 풀려고 해.
+question : 시간 약속 지키는 비법? , answer : 미리 준비하면 돼.
+question : 약속 장소 정하는 방법? , answer : 서로 가까운 곳으로 정해.
+question : 지각 자주 해? , answer : 가끔 늦어.
+question : 약속 잊어버리지 않으려면? , answer : 메모장에 적어둬.
+question : 일정 겹치면 누구랑 약속해? , answer : 더 중요한 약속을 먼저 가.
+question : 약속 여러 개 있으면 어떻게 해? , answer : 스케줄 표 만들어.
+question : 친구가 약속 안 지키면? , answer : 섭섭하다고 말해.
+question : 약속 잡을 때 제일 신경 쓰는 건? , answer : 상대방 스케줄.
+question : 지각할 것 같으면 언제 연락해? , answer : 늦을 것 같을 때 바로 연락해.
+question : 약속 장소에 먼저 도착하면? , answer : 카페에서 기다려.
+question : 모임 취소할 때 어떻게 해? , answer : 미리 연락해서 사정 설명해.
+question : 마트에서 시식 자주 해? , answer : 맛있어 보이면 해.
+question : 장 볼 때 주로 어디서 시작해? , answer : 채소 코너부터 가.
+question : 쇼핑할 때 고민하는 건? , answer : 가격이랑 품질 둘 다 봐.
+question : 마트에서 제일 좋아하는 시간대는? , answer : 사람 적을 때가 좋아.
+question : 마트에서 할인상품만 골라? , answer : 할인 있으면 우선으로 봐.
+question : 온라인 쇼핑 배송 어디까지 추적해? , answer : 집 앞까지 추적해.
+question : 쇼핑 리스트 작성해? , answer : 잊지 않으려고 꼭 작성해.
+question : 마트 갈 때 에코백 챙겨? , answer : 환경 생각해서 꼭 챙겨.
+question : 신용카드 포인트 쌓이면 써? , answer : 쓸 수 있을 때 바로 써.
+question : 쇼핑할 때 친구 추천 받아? , answer : 가끔 받아.
+question : 아침 준비하는 시간 얼마 걸려? , answer : 보통 15분에서 20분.
+question : 아침에 일어나서 제일 먼저 듣는 소리는? , answer : 알람 소리.
+question : 저녁에 스트레칭 해? , answer : 거의 매일 해.
+question : 아침마다 가족이랑 인사해? , answer : 아침엔 꼭 인사해.
+question : 저녁에 휴식시간 어떻게 보내? , answer : 음악 듣거나 쉬어.
+question : 아침에 준비물 자주 잊어버려? , answer : 가끔 까먹어.
+question : 저녁마다 운동해? , answer : 일주일에 세 번은 해.
+question : 아침에 제일 좋아하는 시간대는? , answer : 해 뜰 때가 좋아.
+question : 저녁에 영화 볼 때 뭐 먹어? , answer : 팝콘이나 과자 먹어.
+question : 아침에 정신 차리는 비법은? , answer : 찬물로 세수해.
+question : 공원에 자주 가? , answer : 주말마다 가.
+question : 야외에서 해보고 싶은 활동은? , answer : 패러글라이딩 해보고 싶어.
+question : 공원에서 혼자 노는 거 어때? , answer : 나름 재미있어.
+question : 야외에서 음식 먹어본 적 있어? , answer : 피크닉 가서 먹어봤어.
+question : 공원에서 가장 불편한 점은? , answer : 화장실이 멀어.
+question : 야외에서 우산 챙기는 이유는? , answer : 갑자기 비 올까봐.
+question : 공원에서 휴대폰 자주 봐? , answer : 가끔 시간 볼 때만 봐.
+question : 야외에서 사진 자주 찍어? , answer : 경치 좋으면 찍어.
+question : 공원에서 노래 듣는 거 좋아해? , answer : 이어폰 끼고 자주 들어.
+question : 야외 운동 끝나고 뭐 먹어? , answer : 간단히 바나나 먹어.
+question : 이웃집에서 파티하면 불편해? , answer : 밤늦게만 안 하면 괜찮아.
+question : 이웃에게 음식 선물 받은 적 있어? , answer : 떡이나 과일 받아봤어.
+question : 이웃이랑 대화 자주 해? , answer : 필요할 때만 해.
+question : 이웃에게 부탁받으면 어때? , answer : 별로 부담 안 돼.
+question : 이웃과 친해지는 법은? , answer : 먼저 인사부터 시작해.
+question : 이웃과 갈등이 생기면 어떻게 해? , answer : 조용히 대화로 풀어.
+question : 이웃에게 선물 줄 때 신경 쓰는 건? , answer : 부담 안 되는 거로 골라.
+question : 이웃이 반려동물 키우면 뭐가 좋아? , answer : 강아지랑 놀 수 있어.
+question : 이웃이 먼저 인사하면 기분 어때? , answer : 기분 좋아.
+question : 이웃 모임에 참여해 본 적 있어? , answer : 한두 번 있어.
+question : 시간 약속 때문에 다툰 적 있어? , answer : 가끔 다툰 적 있어.
+question : 약속 시간 착각한 적 있어? , answer : 가끔 헷갈려.
+question : 일정 관리 어떻게 해? , answer : 스마트폰 앱에 적어둬.
+question : 친구와 약속 장소 헷갈리면? , answer : 전화해서 물어봐.
+question : 모임 시간 늦어지면 뭐 해? , answer : 미리 양해 구해.
+question : 여러 명 약속 잡을 때 힘든 점? , answer : 시간 맞추기 제일 어려워.
+question : 약속 잊어버렸을 때 대처법? , answer : 미안하다고 진심으로 사과해.
+question : 시간 잘 지키는 팁은? , answer : 미리 준비하고 시간 확인 자주 해.
+question : 친구가 일찍 오면 뭐 해? , answer : 같이 기다리거나 먼저 들어가.
+question : 약속 변경 자주 해? , answer : 상황 따라 자주 바꿔.
+question : 마트에서 할인 행사 정보 어디서 확인해? , answer : 마트 홈페이지나 앱에서 볼 수 있어.
+question : 쇼핑할 때 브랜드 신경 써? , answer : 가끔 브랜드도 중요하게 생각해.
+question : 신제품 나오면 꼭 사는 편이야? , answer : 필요하면 바로 사.
+question : 온라인 쇼핑 결제할 때 뭐가 편해? , answer : 간편결제가 제일 편해.
+question : 마트에서 계산할 때 뭘 자주 잊어? , answer : 포인트 카드 자주 깜빡해.
+question : 택배 수령 시간 신경 써? , answer : 집에 있을 때만 시켜.
+question : 할인 행사 놓치면 아쉬워? , answer : 가끔 아쉽지.
+question : 마트에서 시식코너 많이 돌아? , answer : 신기한 거 있으면 꼭 먹어봐.
+question : 장바구니 무거우면 어떻게 해? , answer : 택시 타고 오거나 나눠 들어.
+question : 마트 영수증 모아두는 편이야? , answer : 환불할까 봐 모아둬.
+question : 아침마다 무슨 음료 마셔? , answer : 주스나 우유 마셔.
+question : 아침에 운동해본 적 있어? , answer : 가끔 일찍 일어나면 해.
+question : 저녁에 가족들이랑 밥 자주 먹어? , answer : 가능하면 같이 먹어.
+question : 아침에 출근 준비할 때 제일 바빠? , answer : 출근할 때가 제일 분주해.
+question : 저녁에 뭐 하면서 쉬는 게 좋아? , answer : 따뜻한 차 마시면서 쉬어.
+question : 아침마다 같은 옷 입는 거 신경 써? , answer : 사람들 눈치 조금 보지.
+question : 아침에 일어나서 음악 들어? , answer : 기분 좋게 하루 시작하려고 들어.
+question : 저녁에 친구랑 전화 자주 해? , answer : 가끔 긴 얘기할 때 해.
+question : 아침에 눈 뜨자마자 뭘 해? , answer : 창문 열고 환기시켜.
+question : 저녁에 하루 정리하는 방법은? , answer : 일기 쓰면서 하루 정리해.
+question : 공원에서 운동화 신고 다녀? , answer : 운동화가 제일 편해.
+question : 야외에서 만난 동물 중 제일 기억나는 건? , answer : 청설모 본 적 있어.
+question : 공원에서 쓰레기 주운 적 있어? , answer : 가끔 보이면 주워.
+question : 야외에서 바람 쐬는 거 좋아해? , answer : 바람 쐬면 기분 좋아져.
+question : 공원에서 혼자 책 읽은 적 있어? , answer : 가끔 조용한 데서 읽어.
+question : 야외 운동할 때 신경 쓰는 건? , answer : 햇빛이랑 땀 많이 신경 써.
+question : 공원에서 우산 써본 적 있어? , answer : 비 오면 써.
+question : 야외에서 도시락 먹은 적 있어? , answer : 어릴 때 소풍 가서 먹었어.
+question : 공원에서 친구랑 숨바꼭질 해봤어? , answer : 어릴 땐 자주 했지.
+question : 야외 모임 준비 어떻게 해? , answer : 사람마다 할 일 나눠서 해.
+question : 이웃이 새벽에 시끄럽게 하면? , answer : 아침에 조용히 얘기해.
+question : 이웃집 강아지 짖으면 신경 쓰여? , answer : 늦은 밤만 아니면 괜찮아.
+question : 이웃에게 우편물 맡겨본 적 있어? , answer : 출장 갈 때 부탁해.
+question : 이웃과 인사할 때 어색해? , answer : 처음엔 좀 어색해.
+question : 이웃이 도와준 적 있어? , answer : 이사할 때 도와줬어.
+question : 이웃에게 조용히 해달라고 말하기 힘들어? , answer : 좀 조심스럽긴 해.
+question : 이웃과 같이 나눠 쓸 수 있는 물건 있어? , answer : 공구나 연장 같이 써.
+question : 이웃이 파티 열면 초대받아 봤어? , answer : 한 번 받아본 적 있어.
+question : 이웃이 먼저 찾아오면 기분 어때? , answer : 고마우면서도 좀 어색해.
+question : 이웃끼리 단체채팅방 만들어본 적 있어? , answer : 최근에 만들었어.
+question : 시간 약속 항상 잘 지켜? , answer : 나름 잘 지키는 편이야.
+question : 모임에 늦으면 뭐라고 해? , answer : 미안하다고 사과해.
+question : 여러 명과 약속 시간 맞추기 쉬워? , answer : 시간 맞추기 제일 어려워.
+question : 친구가 늦을 때 뭐 해? , answer : 카페에서 기다려.
+question : 약속 시간 헷갈린 적 있어? , answer : 종종 헷갈려.
+question : 중요한 약속 있는 날 뭐 해? , answer : 일찍 준비해.
+question : 모임 일정 바뀌면 신경 써? , answer : 미리 메모해 둬.
+question : 시간 정하기 어렵다고 느껴? , answer : 서로 바쁘면 어려워.
+question : 모임 시간 잊어버린 적 있어? , answer : 한두 번 있어.
+question : 약속 안 지키면 친구한테 뭐라고 해? , answer : 다음엔 꼭 지키라고 해.
+question : 마트에서 고기 종류 잘 알아? , answer : 종류 많아서 헷갈릴 때 많아.
+question : 쇼핑할 때 무게 많이 따져? , answer : 무거운 건 나중에 산다.
+question : 할인 스티커 붙은 제품 자주 사? , answer : 아무래도 자주 보게 돼.
+question : 마트 주차장 자주 이용해? , answer : 차 가지고 가면 이용해.
+question : 쇼핑할 때 손님 많으면 어때? , answer : 복잡해서 빨리 나가고 싶어.
+question : 온라인 쇼핑 리뷰 꼼꼼히 봐? , answer : 사진 후기 꼭 확인해.
+question : 마트에서 혼자 장 봐? , answer : 주로 혼자 본다.
+question : 할인카드 잊어버리면 어때? , answer : 좀 아깝지.
+question : 신선식품 구입할 때 뭐 확인해? , answer : 유통기한 먼저 봐.
+question : 쇼핑할 때 계산대 줄 길면 짜증 나? , answer : 가끔 기다리기 지루해.
+question : 아침마다 날씨 확인해? , answer : 앱으로 꼭 확인해.
+question : 아침에 집에서 라디오 들어? , answer : 부모님이 가끔 틀어.
+question : 아침 식사 메뉴 어떻게 정해? , answer : 냉장고에 뭐 있는지 보고 정해.
+question : 아침에 잠이 안 깨면 뭐 해? , answer : 찬물로 세수해.
+question : 저녁에 간식 자주 먹어? , answer : 밤마다 군것질해.
+question : 아침에 가족이랑 이야기해? , answer : 간단히 인사만 해.
+question : 저녁에 불 끄고 뭐 해? , answer : 휴대폰 보고 누워 있어.
+question : 아침에 운동복 입고 나가? , answer : 날씨 좋으면 입고 나가.
+question : 아침에 양치 자주 까먹어? , answer : 어릴 때만 까먹었어.
+question : 저녁에 집 청소해? , answer : 시간 되면 정리해.
+question : 공원에서 강아지 산책 자주 봐? , answer : 산책하는 사람 많아.
+question : 야외에서 벤치 자주 앉아? , answer : 햇볕 좋으면 앉아.
+question : 공원에서 휴대폰 충전해본 적 있어? , answer : 한 번도 없어.
+question : 야외 운동 끝나고 바로 샤워해? , answer : 가능하면 바로 해.
+question : 공원에서 제일 좋아하는 소리는? , answer : 새 소리 듣는 거 좋아해.
+question : 야외 모임 날씨 안 좋으면 어떻게 해? , answer : 실내로 바꿔서 모여.
+question : 공원에서 친구랑 뭐 나눠 먹어? , answer : 과자나 음료 나눠 먹어.
+question : 야외에서 우비 챙겨본 적 있어? , answer : 비 온다 하면 챙겨.
+question : 공원에서 줄넘기 해봤어? , answer : 어릴 때 자주 했어.
+question : 야외 운동할 때 신발 신경 써? , answer : 운동화 꼭 신어.
+question : 이웃이랑 같이 식사한 적 많아? , answer : 드물게 한두 번 있어.
+question : 이웃이 음식 나눠주면 어때? , answer : 고마워서 바로 받아.
+question : 이웃집에 초대받은 적 있어? , answer : 한 번 있어.
+question : 이웃에게 도서 빌려준 적 있어? , answer : 가끔 빌려줘.
+question : 이웃과 함께 운동해 본 적 있어? , answer : 한 번 해봤어.
+question : 이웃과 함께 장 본 적 있어? , answer : 필요할 때 같이 가.
+question : 이웃이 시끄럽게 하면 바로 말해? , answer : 한두 번 참고 말해.
+question : 이웃집에서 음악 크게 틀면 어때? , answer : 늦은 밤만 아니면 괜찮아.
+question : 이웃과 함께 쓰는 공간 있어? , answer : 엘리베이터나 복도 같이 써.
+question : 이웃에게 직접 인사해? , answer : 만나면 바로 인사해.
+question : 모임 시간 자주 변경돼? , answer : 일정이 자주 바뀔 때 있어.
+question : 약속 시간 바꾸면 불편해? , answer : 가끔 헷갈려.
+question : 친구가 약속 늦으면 뭐 해? , answer : 혼자서 기다려.
+question : 모임 장소 정하기 힘들어? , answer : 여럿이 모이면 힘들지.
+question : 모임 잊어버릴 때 많아? , answer : 달력에 적어둬서 잘 안 잊어.
+question : 시간 관리 잘하는 비법? , answer : 계획표 세우는 게 좋아.
+question : 친구가 시간 잘 안 지키면 뭐라 해? , answer : 좀 일찍 오라고 해.
+question : 모임에 항상 일찍 도착해? , answer : 웬만하면 일찍 가.
+question : 약속 취소 많이 해? , answer : 상황 따라 달라.
+question : 마트에서 행사하는 날 꼭 가? , answer : 할인 많으면 일부러 가.
+question : 쇼핑할 때 포장 신경 써? , answer : 가능하면 친환경 포장 골라.
+question : 택배 상자 재활용해? , answer : 필요할 때 모아뒀다 써.
+question : 마트에서 음료 뭐 자주 사? , answer : 생수나 탄산음료 자주 사.
+question : 쇼핑 가서 충동구매 자주 해? , answer : 가끔 계획 없이 살 때 있어.
+question : 마트에서 추천받은 상품 산 적 있어? , answer : 직원 추천 믿고 산 적 있어.
+question : 택배가 안 오면 어떻게 해? , answer : 고객센터에 문의해.
+question : 쇼핑할 때 결제 수단 뭐가 좋아? , answer : 포인트 많이 적립되는 카드 써.
+question : 마트에서 아이스크림 자주 사? , answer : 여름엔 항상 사.
+question : 쇼핑할 때 주차 고민해? , answer : 주차장 있는 곳만 간다.
+question : 아침에 일찍 일어나기 힘들어? , answer : 알람 여러 번 맞춰도 힘들어.
+question : 아침에 운동하면 상쾌해? , answer : 몸이 가벼워져서 좋아.
+question : 저녁에 뭐 입고 쉬어? , answer : 편한 잠옷 입고 쉰다.
+question : 아침마다 같은 메뉴 먹어? , answer : 웬만하면 다르게 먹어.
+question : 저녁에 가족이랑 대화 자주 해? , answer : 밥 먹으면서 많이 해.
+question : 아침에 샤워해? , answer : 더울 땐 꼭 해.
+question : 저녁에 책 읽는 거 좋아해? , answer : 가끔 시간 날 때 읽어.
+question : 아침에 준비 오래 걸려? , answer : 서두르면 금방 끝나.
+question : 저녁에 일기 써? , answer : 기분 좋을 때만 써.
+question : 아침에 눈 떠서 바로 뭐 해? , answer : 핸드폰부터 확인해.
+question : 공원에서 운동기구 이용해? , answer : 가끔 이용해 본다.
+question : 야외에서 캠핑 해봤어? , answer : 한 번은 가봤어.
+question : 공원에서 주로 몇 시간 머물러? , answer : 한두 시간 정도 있어.
+question : 야외에서 친구랑 뭐 하니? , answer : 축구나 농구해.
+question : 공원에서 자주 보는 풍경은? , answer : 가족들이 산책하는 모습.
+question : 야외에서 갑자기 비 오면 어떻게 해? , answer : 근처 카페로 피신해.
+question : 공원에서 뛰는 거 좋아해? , answer : 달리기 종종 해.
+question : 야외에서 모기 물리면 어떻게 해? , answer : 약 바르고 긁지 않아.
+question : 공원에서 물 마실 수 있어? , answer : 정수대에서 마셔.
+question : 야외에서 혼자 걷는 거 어때? , answer : 생각 정리돼서 좋아.
+question : 이웃과 연락처 교환한 적 있어? , answer : 필요할 때만 교환해.
+question : 이웃이 반찬 나눠주면 고마워? , answer : 항상 고맙지.
+question : 이웃이 이사 가면 뭐 해? , answer : 작별 인사 해준다.
+question : 이웃이 집 보러 오면 안내해? , answer : 물어보면 친절히 안내해.
+question : 이웃에게 조언 구해본 적 있어? , answer : 가끔 생활정보 물어봐.
+question : 이웃끼리 대화할 때 조심하는 건? , answer : 예의 지키려고 신경 써.
+question : 이웃과 단체모임 자주 해? , answer : 1년에 한두 번 해.
+question : 이웃이 택배 잘못 받으면? , answer : 바로 돌려줘.
+question : 이웃에게 부탁할 때 어떻게 해? , answer : 상황 설명하고 정중히 부탁해.
+question : 이웃끼리 회비 걷은 적 있어? , answer : 모임할 때만 걷어.
+question : 시간 약속 깜빡할 때 많아? , answer : 달력에 적어놔서 잘 안 까먹어.
+question : 모임 날짜 바꾸면 친구들이 싫어해? , answer : 가끔 불평하는 사람도 있어.
+question : 약속 장소 헷갈려서 실수한 적 있어? , answer : 장소 잘못 간 적 있다.
+question : 모임 시간 자주 연기돼? , answer : 가끔 일이 생기면 연기돼.
+question : 약속 시간 정할 때 참고하는 거 있어? , answer : 서로 스케줄 보고 맞춰.
+question : 약속시간에 항상 일찍 도착해? , answer : 10분 전엔 도착하려고 해.
+question : 약속 전에 뭐 준비해? , answer : 필요한 거 미리 챙겨.
+question : 모임 참석 인원 자주 바뀌어? , answer : 상황 따라 많이 바뀌어.
+question : 친구와 약속이 겹치면 뭐 해? , answer : 먼저 잡은 약속 우선이야.
+question : 모임 취소하면 미안해? , answer : 미안하다고 꼭 말해.
+question : 마트에서 신선식품 고를 때 뭘 봐? , answer : 색깔이랑 냄새 봐.
+question : 쇼핑할 때 장바구니 무거우면 어떻게 해? , answer : 나눠서 들고 다녀.
+question : 마트에서 제일 먼저 가는 코너는? , answer : 과일 코너부터 간다.
+question : 온라인 쇼핑할 때 배송비 신경 써? , answer : 무료배송 위주로 산다.
+question : 마트에 자주 가는 요일 있어? , answer : 주말에 많이 가.
+question : 택배기사님 만나면 인사해? , answer : 항상 인사해.
+question : 마트에서 무거운 물건은 언제 사? , answer : 장 마지막에 사.
+question : 쇼핑할 때 할인쿠폰 챙겨가? , answer : 앱으로 꼭 챙겨간다.
+question : 택배 박스 바로 버려? , answer : 분리수거 날까지 모아둬.
+question : 쇼핑 후 남는 잔돈 어떻게 해? , answer : 저금통에 모아.
+question : 아침마다 운동 가는 친구 있어? , answer : 체력 좋은 친구 한 명 있어.
+question : 아침에 물 자주 마셔? , answer : 일어나자마자 한 잔 마셔.
+question : 저녁에 영화관 자주 가? , answer : 가끔 신작 나오면 가.
+question : 아침마다 뭐 챙겨 나가? , answer : 지갑이랑 핸드폰 꼭 챙겨.
+question : 저녁에 산책할 때 뭐 신어? , answer : 운동화 신는다.
+question : 아침에 음악 틀어두고 준비해? , answer : 기분 전환에 좋아.
+question : 저녁에 가족 모임 자주 해? , answer : 명절 때만 모여.
+question : 아침에 빵 먹는 거 좋아해? , answer : 빵보다는 밥을 더 좋아해.
+question : 저녁에 샤워 꼭 해? , answer : 피곤해도 무조건 한다.
+question : 아침에 미리 준비하는 습관 있어? , answer : 전날 밤에 다 챙겨둔다.
+question : 공원에서 햇살 아래 앉아있으면 어때? , answer : 따뜻하고 기분 좋아.
+question : 야외에서 가벼운 운동 뭐가 좋아? , answer : 걷기나 스트레칭이 제일 좋아.
+question : 공원에서 친구 기다릴 때 뭐 해? , answer : 벤치에서 폰 본다.
+question : 야외에서 물 마실 때 조심하는 거 있어? , answer : 흙이나 벌레 안 들어가게 조심해.
+question : 공원에서 비 오면 뭐 해? , answer : 근처 쉼터로 피신해.
+question : 야외에서 소풍 가본 적 있어? , answer : 학창시절에 자주 갔다.
+question : 공원에서 아침에 운동하면 어때? , answer : 공기 좋아서 상쾌해.
+question : 야외에서 해 지는 거 본 적 있어? , answer : 친구랑 같이 본 적 있어.
+question : 공원에서 자주 먹는 간식은? , answer : 김밥이나 과일 많이 먹는다.
+question : 야외에서 캠프파이어 해본 적 있어? , answer : MT 때 해봤다.
+question : 이웃과 동네 행사 준비해 본 적 있어? , answer : 축제 준비 도와준 적 있어.
+question : 이웃에게 꽃 선물한 적 있어? , answer : 집들이 때 준 적 있다.
+question : 이웃이랑 우연히 만난 적 있어? , answer : 엘리베이터에서 자주 만난다.
+question : 이웃과 같이 운동한 적 있어? , answer : 조깅할 때 같이 뛰었다.
+question : 이웃집 아기 울음소리 들려? , answer : 밤에 가끔 들린다.
+question : 이웃이 집에 놀러 오면 뭐 해? , answer : 차랑 과자 내놓는다.
+question : 이웃집 이사 오면 도와줘? , answer : 짐 옮기는 거 도와준다.
+question : 이웃과 단체문자 주고 받아? , answer : 공지사항만 주고받는다.
+question : 이웃과 전화통화 자주 해? , answer : 급할 때만 한다.
+question : 이웃이 택배 잘못 가져가면 뭐 해? , answer : 바로 찾아서 돌려준다.
+question : 모임 시간 잊어버리지 않으려면? , answer : 캘린더에 꼭 기록해.
+question : 친구가 모임 늦으면 뭐라고 해? , answer : 다음엔 좀 더 일찍 오라고 해.
+question : 약속 장소에 먼저 도착하면 뭐 해? , answer : 카페 들어가서 기다려.
+question : 모임 인원 줄어들면 어때? , answer : 좀 아쉽긴 하지.
+question : 시간 약속 헷갈릴 때 어떻게 해? , answer : 단톡방에서 다시 확인해.
+question : 약속 두 개 겹치면 어떻게 해? , answer : 먼저 잡은 약속에 간다.
+question : 모임 장소 헷갈리면 어떻게 해? , answer : 지도 앱으로 위치 확인해.
+question : 시간 약속 어기는 친구 있으면 뭐 해? , answer : 한 번은 이해해준다.
+question : 약속 전에 뭐 먹고 가? , answer : 간단히 간식 챙긴다.
+question : 약속 정할 때 장소 고민해? , answer : 다 같이 편한 곳이 좋아.
+question : 모임 끝나고 바로 집에 가? , answer : 가끔은 2차도 간다.
+question : 마트에서 장보다가 친구 만나면 뭐 해? , answer : 반갑게 인사하고 잠깐 얘기해.
+question : 택배 포장 풀 때 주의하는 점 있어? , answer : 칼로 조심해서 잘라.
+question : 쇼핑할 때 물건 비교 자주 해? , answer : 가격이랑 품질 꼭 비교해.
+question : 마트에서 실수로 물건 떨어뜨리면 어떻게 해? , answer : 직원한테 바로 말해.
+question : 온라인 쇼핑 후기에 사진 남겨? , answer : 가끔 좋은 제품이면 남겨.
+question : 쇼핑할 때 지갑 두고 나오면? , answer : 다시 집에 가서 가져와.
+question : 마트에서 바구니 무거우면 누구한테 부탁해? , answer : 가족이나 친구한테 들어달라고 해.
+question : 택배 오기 전에 집 청소해? , answer : 급하면 잠깐이라도 치워.
+question : 쇼핑 가기 전 체크리스트 써? , answer : 안 잊으려고 꼭 적어.
+question : 마트에서 생선코너 좋아해? , answer : 비린내 나도 신선해서 좋아.
+question : 아침에 졸릴 때 어떻게 깨워? , answer : 찬물로 얼굴 씻어.
+question : 저녁에 집 들어오면 뭐 제일 먼저 해? , answer : 현관문 닫고 신발 벗어.
+question : 아침마다 식물에 물 줘? , answer : 화분 있으면 잊지 않고 줘.
+question : 아침에 라면 끓여먹은 적 있어? , answer : 진짜 급할 때만 먹어.
+question : 저녁에 노래 듣는 거 좋아해? , answer : 잔잔한 음악 자주 들어.
+question : 아침에 거울 보면서 뭐 해? , answer : 머리 정리하고 확인해.
+question : 저녁에 요가해본 적 있어? , answer : 유튜브 따라 해봤어.
+question : 아침에 신문 읽어? , answer : 인터넷 뉴스로 대신해.
+question : 저녁에 집안일 많이 해? , answer : 쉬는 날에 몰아서 해.
+question : 아침에 비 오면 우산 꼭 챙겨? , answer : 절대 안 잊어.
+question : 공원에서 휴대폰 분실해본 적 있어? , answer : 다행히 한 번도 없어.
+question : 야외에서 친구랑 사진 많이 찍어? , answer : 추억 남기려고 자주 찍어.
+question : 공원에서 동물 만난 적 있어? , answer : 고양이나 새 자주 봐.
+question : 야외에서 갑자기 배고프면 어떻게 해? , answer : 근처 편의점 찾는다.
+question : 공원에서 자주 듣는 소리는? , answer : 아이들 뛰노는 소리 많이 들어.
+question : 야외에서 모자 꼭 써? , answer : 햇볕 쎄면 무조건 써.
+question : 공원에서 축제 열린 적 있어? , answer : 주말마다 행사하는 거 본다.
+question : 야외에서 바람 많이 부는 날 어때? , answer : 기분은 좋은데 좀 춥다.
+question : 공원에서 운동할 때 음악 들어? , answer : 이어폰 끼고 자주 들어.
+question : 야외에서 모임할 때 게임 해? , answer : 가위바위보 게임 많이 해.
+question : 이웃집에 택배 잘못 온 적 있어? , answer : 직접 가져다 준다.
+question : 이웃이 밤늦게 방문하면 불편해? , answer : 조금 곤란할 때도 있어.
+question : 이웃이 반려견 산책 나갈 때 같이 가봤어? , answer : 가끔 같이 간다.
+question : 이웃과 운동할 때 주의하는 점? , answer : 서로 속도 맞춰야 해.
+question : 이웃끼리 정보 공유 자주 해? , answer : 필요할 때만 공유해.
+question : 이웃과 함께 음식 만들어본 적 있어? , answer : 요리 행사할 때 같이 한 적 있어.
+question : 이웃집에서 파티하면 시끄러워? , answer : 한두 번이면 괜찮아.
+question : 이웃이 불쾌한 행동하면 어떻게 해? , answer : 조용히 얘기해본다.
+question : 이웃에게 명절 인사 해? , answer : 가끔 문자로 보낸다.
+question : 이웃과 함께하는 모임 즐거워? , answer : 사람 많으면 재밌어.
+question : 시간 약속 두 번 이상 어긴 적 있어? , answer : 한 번은 있지만 두 번은 잘 안 그래.
+question : 모임 시간 정할 때 누구 의견 따르니? , answer : 대부분 다수 의견 따르지.
+question : 약속이 자주 깨지면 어때? , answer : 조금 서운하지.
+question : 모임장소 정하다가 다툰 적 있어? , answer : 취향 다르면 가끔 논쟁해.
+question : 약속 때문에 급하게 준비한 적 있어? , answer : 허둥지둥할 때 많아.
+question : 모임 시간 헷갈려서 혼자 온 적 있어? , answer : 한 번쯤은 실수해봤어.
+question : 시간 맞춰 나가려고 어떻게 해? , answer : 30분 전부터 준비해.
+question : 모임에 제일 늦게 도착한 적 있어? , answer : 교통 체증 때문에 늦은 적 있다.
+question : 약속 바뀌면 바로 알려줘? , answer : 항상 단톡에 올려.
+question : 시간 약속 실수한 친구 있으면 뭐 해? , answer : 다음부턴 꼭 확인하라고 해.
+question : 마트에서 계산대 위치 헷갈린 적 있어? , answer : 처음 가는 곳은 자주 헷갈려.
+question : 쇼핑 중간에 물건 고장 나면? , answer : 직원 불러서 바로 말해.
+question : 마트에서 장시간 머무른 적 있어? , answer : 계획 없이 돌면 오래 있어.
+question : 온라인 쇼핑으로 실패한 경험 있어? , answer : 생각보다 작을 때 실망해.
+question : 쇼핑 끝나고 집에 올 때 피곤해? , answer : 가끔 무거운 거 들면 힘들어.
+question : 택배 늦게 오면 신경 써? , answer : 기다리는 거 좀 답답해.
+question : 마트에서 원하는 물건 못 찾으면? , answer : 직원에게 물어봐.
+question : 쇼핑할 때 신용카드 안 되면? , answer : 현금 있는지 확인해.
+question : 마트에서 어린이 행사 본 적 있어? , answer : 주말에 자주 한다.
+question : 아침에 스트레칭 매일 해? , answer : 허리 아플까 봐 꼭 해.
+question : 저녁에 집에 늦게 들어온 적 있어? , answer : 가끔 회식 때문에 늦어.
+question : 아침마다 일정 체크해? , answer : 핸드폰으로 일정 확인해.
+question : 저녁에 야식 먹는 습관 있어? , answer : 가끔 치킨 시켜 먹어.
+question : 아침에 잠이 안 오면 뭐 해? , answer : 유튜브 영상 본다.
+question : 저녁마다 산책하는 이유 있어? , answer : 기분 전환에 좋아서.
+question : 아침에 운동 나가면 뭐 챙겨? , answer : 물병은 꼭 챙긴다.
+question : 저녁에 가족 TV 같이 봐? , answer : 저녁 먹으면서 같이 본다.
+question : 아침에 음악 듣는 거 좋아해? , answer : 밝은 노래 많이 듣는다.
+question : 저녁에 쉬는 날 뭐 해? , answer : 게임하거나 영화 본다.
+question : 공원에서 친구랑 달리기 해? , answer : 내기 걸고 달린다.
+question : 야외에서 도시락 싸본 적 있어? , answer : 엄마랑 같이 싸봤어.
+question : 공원에서 하늘 보는 거 좋아해? , answer : 구름 구경 자주 해.
+question : 야외에서 밤에 별 본 적 있어? , answer : 별똥별도 본 적 있다.
+question : 공원에서 쓰레기 버릴 때 조심해? , answer : 분리수거 잘한다.
+question : 야외에서 우산 빌려 본 적 있어? , answer : 비 올 때 친구한테 빌려봤어.
+question : 공원에서 운동회 본 적 있어? , answer : 초등학교 때 자주 했다.
+question : 야외에서 길 잃어버린 적 있어? , answer : 한 번 헤맨 적 있어.
+question : 공원에서 벤치에 오래 앉아 있으면 어때? , answer : 허리 아플 때도 있어.
+question : 야외에서 비 오면 뭐가 불편해? , answer : 신발 젖어서 불편하다.
+question : 이웃에게 차 빌려준 적 있어? , answer : 믿을 만한 분께만 빌려준다.
+question : 이웃과 마트 같이 간 적 있어? , answer : 가끔 같이 장본다.
+question : 이웃이 결혼식 초대하면 어떻게 해? , answer : 꽃 선물 준비한다.
+question : 이웃끼리 모임에서 회비 얼마씩 내? , answer : 주로 만 원씩 걷는다.
+question : 이웃에게 택배 보관 부탁 자주 해? , answer : 여름에 음식 올 때 부탁해.
+question : 이웃집 아이랑 놀아본 적 있어? , answer : 가끔 공놀이 해준다.
+question : 이웃과 단톡방에서 소통 자주 해? , answer : 공지 올릴 때만 대화한다.
+question : 이웃끼리 명절 선물 교환해? , answer : 과일이나 떡 주고받는다.
+question : 이웃에게 직접 음식 해준 적 있어? , answer : 반찬 만들어 나눠줬다.
+question : 이웃집 개가 짖으면 신경 쓰여? , answer : 낮에는 괜찮은데 밤엔 조금.
+question : 약속 취소해야 할 때 미안해? , answer : 상황 설명하고 사과한다.
+question : 시간 약속 못 맞출 것 같으면? , answer : 미리 전화해서 양해 구한다.
+question : 모임 시간 자주 바뀌면 어떻게 해? , answer : 단톡방에 항상 공지한다.
+question : 약속 전에 뭐 챙겨서 가? , answer : 핸드폰이랑 지갑 꼭 챙긴다.
+question : 친구가 약속 취소하면 어때? , answer : 좀 서운하지만 이해한다.
+question : 모임에 매번 같은 사람만 늦으면? , answer : 다음엔 일찍 오라고 주의준다.
+question : 약속 시간 잘못 알고 가본 적 있어? , answer : 한 번 헷갈려서 혼자 갔다.
+question : 모임 장소 여러 번 바뀌면? , answer : 헷갈리지 않게 주소 저장해.
+question : 친구가 약속 날짜 틀리게 기억하면? , answer : 단톡방에서 다시 확인시킨다.
+question : 모임 일정 정할 때 누가 주도해? , answer : 주로 리더가 정한다.
+question : 약속 시간 전에 뭐 먹고 가? , answer : 간단히 샌드위치 먹는다.
+question : 약속 끝나고 혼자 산책해본 적 있어? , answer : 기분 좋으면 산책한다.
+- 총 질문답 497개

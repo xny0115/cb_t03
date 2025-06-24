@@ -1,0 +1,266 @@
+[
+  {
+    "question": {
+      "text": "이번 설날에 우리 가족들은 전국 각지에서 모여 하루 종일 안부를 물으며 맛있는 음식을 나누고, 밤늦게까지 옛 추억을 이야기하며 새해의 복을 빌었는데, 이런 풍습은 언제부터 시작되었고 어떤 의미가 있을까?",
+      "tokens": [
+        {
+          "text": "이번",
+          "lemma": "이번",
+          "pos": "NNG"
+        },
+        {
+          "text": "설날에",
+          "lemma": "설날에",
+          "pos": "NNG"
+        },
+        {
+          "text": "우리",
+          "lemma": "우리",
+          "pos": "NNG"
+        },
+        {
+          "text": "가족들은",
+          "lemma": "가족들은",
+          "pos": "NNG"
+        },
+        {
+          "text": "전국",
+          "lemma": "전국",
+          "pos": "NNG"
+        },
+        {
+          "text": "각지에서",
+          "lemma": "각지에서",
+          "pos": "NNG"
+        },
+        {
+          "text": "모여",
+          "lemma": "모여",
+          "pos": "NNG"
+        },
+        {
+          "text": "하루",
+          "lemma": "하루",
+          "pos": "NNG"
+        },
+        {
+          "text": "종일",
+          "lemma": "종일",
+          "pos": "NNG"
+        },
+        {
+          "text": "안부를",
+          "lemma": "안부를",
+          "pos": "NNG"
+        },
+        {
+          "text": "물으며",
+          "lemma": "물으며",
+          "pos": "NNG"
+        },
+        {
+          "text": "맛있는",
+          "lemma": "맛있는",
+          "pos": "NNG"
+        },
+        {
+          "text": "음식을",
+          "lemma": "음식을",
+          "pos": "NNG"
+        },
+        {
+          "text": "나누고,",
+          "lemma": "나누고,",
+          "pos": "NNG"
+        },
+        {
+          "text": "밤늦게까지",
+          "lemma": "밤늦게까지",
+          "pos": "NNG"
+        },
+        {
+          "text": "옛",
+          "lemma": "옛",
+          "pos": "NNG"
+        },
+        {
+          "text": "추억을",
+          "lemma": "추억을",
+          "pos": "NNG"
+        },
+        {
+          "text": "이야기하며",
+          "lemma": "이야기하며",
+          "pos": "NNG"
+        },
+        {
+          "text": "새해의",
+          "lemma": "새해의",
+          "pos": "NNG"
+        },
+        {
+          "text": "복을",
+          "lemma": "복을",
+          "pos": "NNG"
+        },
+        {
+          "text": "빌었는데,",
+          "lemma": "빌었는데,",
+          "pos": "NNG"
+        },
+        {
+          "text": "이런",
+          "lemma": "이런",
+          "pos": "NNG"
+        },
+        {
+          "text": "풍습은",
+          "lemma": "풍습은",
+          "pos": "NNG"
+        },
+        {
+          "text": "언제부터",
+          "lemma": "언제부터",
+          "pos": "NNG"
+        },
+        {
+          "text": "시작되었고",
+          "lemma": "시작되었고",
+          "pos": "NNG"
+        },
+        {
+          "text": "어떤",
+          "lemma": "어떤",
+          "pos": "NNG"
+        },
+        {
+          "text": "의미가",
+          "lemma": "의미가",
+          "pos": "NNG"
+        },
+        {
+          "text": "있을까?",
+          "lemma": "있을까?",
+          "pos": "NNG"
+        }
+      ]
+    },
+    "answer": {
+      "text": "오랜 옛날부터 이어져 온 설날 모임은 가족 간의 결속을 다지고 조상에게 감사하는 전통으로서, 현대에도 가족 공동체 의식을 되새기게 하는 중요한 행사입니다.",
+      "tokens": [
+        {
+          "text": "오랜",
+          "lemma": "오랜",
+          "pos": "NNG"
+        },
+        {
+          "text": "옛날부터",
+          "lemma": "옛날부터",
+          "pos": "NNG"
+        },
+        {
+          "text": "이어져",
+          "lemma": "이어져",
+          "pos": "NNG"
+        },
+        {
+          "text": "온",
+          "lemma": "온",
+          "pos": "NNG"
+        },
+        {
+          "text": "설날",
+          "lemma": "설날",
+          "pos": "NNG"
+        },
+        {
+          "text": "모임은",
+          "lemma": "모임은",
+          "pos": "NNG"
+        },
+        {
+          "text": "가족",
+          "lemma": "가족",
+          "pos": "NNG"
+        },
+        {
+          "text": "간의",
+          "lemma": "간의",
+          "pos": "NNG"
+        },
+        {
+          "text": "결속을",
+          "lemma": "결속을",
+          "pos": "NNG"
+        },
+        {
+          "text": "다지고",
+          "lemma": "다지고",
+          "pos": "NNG"
+        },
+        {
+          "text": "조상에게",
+          "lemma": "조상에게",
+          "pos": "NNG"
+        },
+        {
+          "text": "감사하는",
+          "lemma": "감사하는",
+          "pos": "NNG"
+        },
+        {
+          "text": "전통으로서,",
+          "lemma": "전통으로서,",
+          "pos": "NNG"
+        },
+        {
+          "text": "현대에도",
+          "lemma": "현대에도",
+          "pos": "NNG"
+        },
+        {
+          "text": "가족",
+          "lemma": "가족",
+          "pos": "NNG"
+        },
+        {
+          "text": "공동체",
+          "lemma": "공동체",
+          "pos": "NNG"
+        },
+        {
+          "text": "의식을",
+          "lemma": "의식을",
+          "pos": "NNG"
+        },
+        {
+          "text": "되새기게",
+          "lemma": "되새기게",
+          "pos": "NNG"
+        },
+        {
+          "text": "하는",
+          "lemma": "하는",
+          "pos": "NNG"
+        },
+        {
+          "text": "중요한",
+          "lemma": "중요한",
+          "pos": "NNG"
+        },
+        {
+          "text": "행사입니다.",
+          "lemma": "행사입니다.",
+          "pos": "NNG"
+        }
+      ]
+    },
+    "concepts": [
+      "설날",
+      "가족",
+      "전통",
+      "새해"
+    ],
+    "domain": "명절"
+  }
+]

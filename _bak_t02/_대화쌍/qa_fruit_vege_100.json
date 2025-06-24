@@ -1,0 +1,7034 @@
+[
+  {
+    "question": {
+      "text": "사과를 매일 먹으면 좋은 점이 뭘까?",
+      "tokens": [
+        {
+          "text": "사과",
+          "lemma": "사과",
+          "pos": "NNG"
+        },
+        {
+          "text": "를",
+          "lemma": "를",
+          "pos": "JKO"
+        },
+        {
+          "text": "매일",
+          "lemma": "매일",
+          "pos": "MAG"
+        },
+        {
+          "text": "먹",
+          "lemma": "먹",
+          "pos": "VV"
+        },
+        {
+          "text": "으면",
+          "lemma": "으면",
+          "pos": "EC"
+        },
+        {
+          "text": "좋",
+          "lemma": "좋",
+          "pos": "VA"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "ETM"
+        },
+        {
+          "text": "점",
+          "lemma": "점",
+          "pos": "NNB"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "JKS"
+        },
+        {
+          "text": "뭐",
+          "lemma": "뭐",
+          "pos": "NP"
+        },
+        {
+          "text": "ㄹ까",
+          "lemma": "ㄹ까",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "건강",
+        "비타민",
+        "사과",
+        "식",
+        "유가",
+        "이섬",
+        "점"
+      ],
+      "domain": "fruit"
+    },
+    "answer": {
+      "text": "사과에는 비타민과 식이섬유가 풍부해서 건강에 좋아.",
+      "tokens": [
+        {
+          "text": "사과",
+          "lemma": "사과",
+          "pos": "NNG"
+        },
+        {
+          "text": "에",
+          "lemma": "에",
+          "pos": "JKB"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "JX"
+        },
+        {
+          "text": "비타민",
+          "lemma": "비타민",
+          "pos": "NNP"
+        },
+        {
+          "text": "과",
+          "lemma": "과",
+          "pos": "JC"
+        },
+        {
+          "text": "식",
+          "lemma": "식",
+          "pos": "NNB"
+        },
+        {
+          "text": "이섬",
+          "lemma": "이섬",
+          "pos": "NNP"
+        },
+        {
+          "text": "유가",
+          "lemma": "유가",
+          "pos": "NNP"
+        },
+        {
+          "text": "풍부",
+          "lemma": "풍부",
+          "pos": "XR"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSA"
+        },
+        {
+          "text": "아서",
+          "lemma": "아서",
+          "pos": "EC"
+        },
+        {
+          "text": "건강",
+          "lemma": "건강",
+          "pos": "NNG"
+        },
+        {
+          "text": "에",
+          "lemma": "에",
+          "pos": "JKB"
+        },
+        {
+          "text": "좋",
+          "lemma": "좋",
+          "pos": "VA"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "건강",
+      "비타민",
+      "사과",
+      "식",
+      "유가",
+      "이섬",
+      "점"
+    ],
+    "domain": "fruit"
+  },
+  {
+    "question": {
+      "text": "오렌지는 언제가 제철이야?",
+      "tokens": [
+        {
+          "text": "오렌지",
+          "lemma": "오렌지",
+          "pos": "NNP"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "JX"
+        },
+        {
+          "text": "언제",
+          "lemma": "언제",
+          "pos": "NP"
+        },
+        {
+          "text": "가",
+          "lemma": "가",
+          "pos": "JKS"
+        },
+        {
+          "text": "제철",
+          "lemma": "제철",
+          "pos": "NNP"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "VCP"
+        },
+        {
+          "text": "야",
+          "lemma": "야",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "겨울철",
+        "오렌지",
+        "제철"
+      ],
+      "domain": "fruit"
+    },
+    "answer": {
+      "text": "오렌지는 겨울철이 제철이야.",
+      "tokens": [
+        {
+          "text": "오렌지",
+          "lemma": "오렌지",
+          "pos": "NNP"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "JX"
+        },
+        {
+          "text": "겨울철",
+          "lemma": "겨울철",
+          "pos": "NNG"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "JKS"
+        },
+        {
+          "text": "제철",
+          "lemma": "제철",
+          "pos": "NNP"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "VCP"
+        },
+        {
+          "text": "야",
+          "lemma": "야",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "겨울철",
+      "오렌지",
+      "제철"
+    ],
+    "domain": "fruit"
+  },
+  {
+    "question": {
+      "text": "바나나는 냉장고에 넣어도 괜찮아?",
+      "tokens": [
+        {
+          "text": "바나나",
+          "lemma": "바나나",
+          "pos": "NNP"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "JX"
+        },
+        {
+          "text": "냉장고",
+          "lemma": "냉장고",
+          "pos": "NNP"
+        },
+        {
+          "text": "에",
+          "lemma": "에",
+          "pos": "JKB"
+        },
+        {
+          "text": "넣",
+          "lemma": "넣",
+          "pos": "VV"
+        },
+        {
+          "text": "어도",
+          "lemma": "어도",
+          "pos": "EC"
+        },
+        {
+          "text": "괜찮",
+          "lemma": "괜찮",
+          "pos": "VA"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "게",
+        "냉장고",
+        "바나나",
+        "상온"
+      ],
+      "domain": "fruit"
+    },
+    "answer": {
+      "text": "바나나는 냉장고보다는 상온에 두는 게 좋아.",
+      "tokens": [
+        {
+          "text": "바나나",
+          "lemma": "바나나",
+          "pos": "NNP"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "JX"
+        },
+        {
+          "text": "냉장고",
+          "lemma": "냉장고",
+          "pos": "NNP"
+        },
+        {
+          "text": "보다",
+          "lemma": "보다",
+          "pos": "JKB"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "JX"
+        },
+        {
+          "text": "상온",
+          "lemma": "상온",
+          "pos": "NNP"
+        },
+        {
+          "text": "에",
+          "lemma": "에",
+          "pos": "JKB"
+        },
+        {
+          "text": "두",
+          "lemma": "두",
+          "pos": "VV"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "ETM"
+        },
+        {
+          "text": "게",
+          "lemma": "게",
+          "pos": "NNG"
+        },
+        {
+          "text": "좋",
+          "lemma": "좋",
+          "pos": "VA"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "게",
+      "냉장고",
+      "바나나",
+      "상온"
+    ],
+    "domain": "fruit"
+  },
+  {
+    "question": {
+      "text": "딸기를 오래 보관하는 방법이 있어?",
+      "tokens": [
+        {
+          "text": "딸기",
+          "lemma": "딸기",
+          "pos": "NNP"
+        },
+        {
+          "text": "를",
+          "lemma": "를",
+          "pos": "JKO"
+        },
+        {
+          "text": "오래",
+          "lemma": "오래",
+          "pos": "MAG"
+        },
+        {
+          "text": "보관",
+          "lemma": "보관",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "ETM"
+        },
+        {
+          "text": "방법",
+          "lemma": "방법",
+          "pos": "NNG"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "JKS"
+        },
+        {
+          "text": "있",
+          "lemma": "있",
+          "pos": "VX"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "게",
+        "딸기",
+        "방법",
+        "보관",
+        "전"
+      ],
+      "domain": "fruit"
+    },
+    "answer": {
+      "text": "딸기는 씻지 않고 보관하며, 먹기 전에 씻는 게 좋아.",
+      "tokens": [
+        {
+          "text": "딸기",
+          "lemma": "딸기",
+          "pos": "NNP"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "JX"
+        },
+        {
+          "text": "씻",
+          "lemma": "씻",
+          "pos": "VV"
+        },
+        {
+          "text": "지",
+          "lemma": "지",
+          "pos": "EC"
+        },
+        {
+          "text": "않",
+          "lemma": "않",
+          "pos": "VX"
+        },
+        {
+          "text": "고",
+          "lemma": "고",
+          "pos": "EC"
+        },
+        {
+          "text": "보관",
+          "lemma": "보관",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "며",
+          "lemma": "며",
+          "pos": "EC"
+        },
+        {
+          "text": "먹",
+          "lemma": "먹",
+          "pos": "VV"
+        },
+        {
+          "text": "기",
+          "lemma": "기",
+          "pos": "ETN"
+        },
+        {
+          "text": "전",
+          "lemma": "전",
+          "pos": "NNG"
+        },
+        {
+          "text": "에",
+          "lemma": "에",
+          "pos": "JKB"
+        },
+        {
+          "text": "씻",
+          "lemma": "씻",
+          "pos": "VV"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "ETM"
+        },
+        {
+          "text": "게",
+          "lemma": "게",
+          "pos": "NNG"
+        },
+        {
+          "text": "좋",
+          "lemma": "좋",
+          "pos": "VA"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "게",
+      "딸기",
+      "방법",
+      "보관",
+      "전"
+    ],
+    "domain": "fruit"
+  },
+  {
+    "question": {
+      "text": "포도 껍질째 먹어도 돼?",
+      "tokens": [
+        {
+          "text": "포도",
+          "lemma": "포도",
+          "pos": "NNP"
+        },
+        {
+          "text": "껍질",
+          "lemma": "껍질",
+          "pos": "NNG"
+        },
+        {
+          "text": "째",
+          "lemma": "째",
+          "pos": "XSN"
+        },
+        {
+          "text": "먹",
+          "lemma": "먹",
+          "pos": "VV"
+        },
+        {
+          "text": "어도",
+          "lemma": "어도",
+          "pos": "EC"
+        },
+        {
+          "text": "되",
+          "lemma": "되",
+          "pos": "VV"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "껍질",
+        "요즘",
+        "포도"
+      ],
+      "domain": "fruit"
+    },
+    "answer": {
+      "text": "요즘 나오는 포도는 껍질째 먹어도 돼.",
+      "tokens": [
+        {
+          "text": "요즘",
+          "lemma": "요즘",
+          "pos": "NNG"
+        },
+        {
+          "text": "나오",
+          "lemma": "나오",
+          "pos": "VV"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "ETM"
+        },
+        {
+          "text": "포도",
+          "lemma": "포도",
+          "pos": "NNP"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "JX"
+        },
+        {
+          "text": "껍질",
+          "lemma": "껍질",
+          "pos": "NNG"
+        },
+        {
+          "text": "째",
+          "lemma": "째",
+          "pos": "XSN"
+        },
+        {
+          "text": "먹",
+          "lemma": "먹",
+          "pos": "VV"
+        },
+        {
+          "text": "어도",
+          "lemma": "어도",
+          "pos": "EC"
+        },
+        {
+          "text": "되",
+          "lemma": "되",
+          "pos": "VV"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "껍질",
+      "요즘",
+      "포도"
+    ],
+    "domain": "fruit"
+  },
+  {
+    "question": {
+      "text": "수박은 어떻게 고르는 게 좋아?",
+      "tokens": [
+        {
+          "text": "수박",
+          "lemma": "수박",
+          "pos": "NNP"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "JX"
+        },
+        {
+          "text": "어떻",
+          "lemma": "어떻",
+          "pos": "VA"
+        },
+        {
+          "text": "게",
+          "lemma": "게",
+          "pos": "EC"
+        },
+        {
+          "text": "고르",
+          "lemma": "고르",
+          "pos": "VV"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "ETM"
+        },
+        {
+          "text": "게",
+          "lemma": "게",
+          "pos": "NNG"
+        },
+        {
+          "text": "좋",
+          "lemma": "좋",
+          "pos": "VA"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "게",
+        "꼭지",
+        "때",
+        "소리",
+        "수박"
+      ],
+      "domain": "fruit"
+    },
+    "answer": {
+      "text": "수박은 꼭지가 싱싱하고, 두드렸을 때 맑은 소리가 나면 좋아.",
+      "tokens": [
+        {
+          "text": "수박",
+          "lemma": "수박",
+          "pos": "NNP"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "JX"
+        },
+        {
+          "text": "꼭지",
+          "lemma": "꼭지",
+          "pos": "NNP"
+        },
+        {
+          "text": "가",
+          "lemma": "가",
+          "pos": "JKS"
+        },
+        {
+          "text": "싱싱",
+          "lemma": "싱싱",
+          "pos": "XR"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSA"
+        },
+        {
+          "text": "고",
+          "lemma": "고",
+          "pos": "EC"
+        },
+        {
+          "text": "두드리",
+          "lemma": "두드리",
+          "pos": "VV"
+        },
+        {
+          "text": "었",
+          "lemma": "었",
+          "pos": "EP"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "ETM"
+        },
+        {
+          "text": "때",
+          "lemma": "때",
+          "pos": "NNG"
+        },
+        {
+          "text": "맑",
+          "lemma": "맑",
+          "pos": "VA"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "ETM"
+        },
+        {
+          "text": "소리",
+          "lemma": "소리",
+          "pos": "NNG"
+        },
+        {
+          "text": "가",
+          "lemma": "가",
+          "pos": "JKS"
+        },
+        {
+          "text": "나",
+          "lemma": "나",
+          "pos": "VV"
+        },
+        {
+          "text": "면",
+          "lemma": "면",
+          "pos": "EC"
+        },
+        {
+          "text": "좋",
+          "lemma": "좋",
+          "pos": "VA"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "게",
+      "꼭지",
+      "때",
+      "소리",
+      "수박"
+    ],
+    "domain": "fruit"
+  },
+  {
+    "question": {
+      "text": "토마토는 과일이야, 야채야?",
+      "tokens": [
+        {
+          "text": "토마토",
+          "lemma": "토마토",
+          "pos": "NNP"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "JX"
+        },
+        {
+          "text": "과일",
+          "lemma": "과일",
+          "pos": "NNP"
+        },
+        {
+          "text": "이야",
+          "lemma": "이야",
+          "pos": "JKV"
+        },
+        {
+          "text": "야채",
+          "lemma": "야채",
+          "pos": "NNG"
+        },
+        {
+          "text": "야",
+          "lemma": "야",
+          "pos": "JKV"
+        }
+      ],
+      "concepts": [
+        "과일",
+        "과학",
+        "분류",
+        "야채",
+        "요리",
+        "토마토"
+      ],
+      "domain": "fruit"
+    },
+    "answer": {
+      "text": "과학적으로는 과일이지만, 요리에서는 보통 야채로 분류해.",
+      "tokens": [
+        {
+          "text": "과학",
+          "lemma": "과학",
+          "pos": "NNG"
+        },
+        {
+          "text": "적",
+          "lemma": "적",
+          "pos": "XSN"
+        },
+        {
+          "text": "으로",
+          "lemma": "으로",
+          "pos": "JKB"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "JX"
+        },
+        {
+          "text": "과일",
+          "lemma": "과일",
+          "pos": "NNG"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "VCP"
+        },
+        {
+          "text": "지만",
+          "lemma": "지만",
+          "pos": "EC"
+        },
+        {
+          "text": "요리",
+          "lemma": "요리",
+          "pos": "NNG"
+        },
+        {
+          "text": "에서",
+          "lemma": "에서",
+          "pos": "JKB"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "JX"
+        },
+        {
+          "text": "보통",
+          "lemma": "보통",
+          "pos": "MAG"
+        },
+        {
+          "text": "야채",
+          "lemma": "야채",
+          "pos": "NNG"
+        },
+        {
+          "text": "로",
+          "lemma": "로",
+          "pos": "JKB"
+        },
+        {
+          "text": "분류",
+          "lemma": "분류",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "과일",
+      "과학",
+      "분류",
+      "야채",
+      "요리",
+      "토마토"
+    ],
+    "domain": "fruit"
+  },
+  {
+    "question": {
+      "text": "오이의 신선도를 어떻게 확인해?",
+      "tokens": [
+        {
+          "text": "오이",
+          "lemma": "오이",
+          "pos": "NNP"
+        },
+        {
+          "text": "의",
+          "lemma": "의",
+          "pos": "JKG"
+        },
+        {
+          "text": "신선도",
+          "lemma": "신선도",
+          "pos": "NNG"
+        },
+        {
+          "text": "를",
+          "lemma": "를",
+          "pos": "JKO"
+        },
+        {
+          "text": "어떻",
+          "lemma": "어떻",
+          "pos": "VA"
+        },
+        {
+          "text": "게",
+          "lemma": "게",
+          "pos": "EC"
+        },
+        {
+          "text": "확인",
+          "lemma": "확인",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "색",
+        "신선도",
+        "오이",
+        "표면",
+        "확인"
+      ],
+      "domain": "fruit"
+    },
+    "answer": {
+      "text": "색이 진하고 표면이 매끈한 오이가 신선해.",
+      "tokens": [
+        {
+          "text": "색",
+          "lemma": "색",
+          "pos": "NNG"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "JKS"
+        },
+        {
+          "text": "진하",
+          "lemma": "진하",
+          "pos": "VA"
+        },
+        {
+          "text": "고",
+          "lemma": "고",
+          "pos": "EC"
+        },
+        {
+          "text": "표면",
+          "lemma": "표면",
+          "pos": "NNG"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "JKS"
+        },
+        {
+          "text": "매끈",
+          "lemma": "매끈",
+          "pos": "XR"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSA"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "오이",
+          "lemma": "오이",
+          "pos": "NNP"
+        },
+        {
+          "text": "가",
+          "lemma": "가",
+          "pos": "JKS"
+        },
+        {
+          "text": "신선",
+          "lemma": "신선",
+          "pos": "XR"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSA"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "색",
+      "신선도",
+      "오이",
+      "표면",
+      "확인"
+    ],
+    "domain": "fruit"
+  },
+  {
+    "question": {
+      "text": "당근은 어떻게 먹는 게 가장 영양에 좋아?",
+      "tokens": [
+        {
+          "text": "당근",
+          "lemma": "당근",
+          "pos": "NNP"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "JX"
+        },
+        {
+          "text": "어떻",
+          "lemma": "어떻",
+          "pos": "VA"
+        },
+        {
+          "text": "게",
+          "lemma": "게",
+          "pos": "EC"
+        },
+        {
+          "text": "먹",
+          "lemma": "먹",
+          "pos": "VV"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "ETM"
+        },
+        {
+          "text": "게",
+          "lemma": "게",
+          "pos": "NNG"
+        },
+        {
+          "text": "가장",
+          "lemma": "가장",
+          "pos": "MAG"
+        },
+        {
+          "text": "영양",
+          "lemma": "영양",
+          "pos": "NNP"
+        },
+        {
+          "text": "에",
+          "lemma": "에",
+          "pos": "JKB"
+        },
+        {
+          "text": "좋",
+          "lemma": "좋",
+          "pos": "VA"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "게",
+        "당근",
+        "베타카로틴",
+        "영양",
+        "흡수"
+      ],
+      "domain": "fruit"
+    },
+    "answer": {
+      "text": "가볍게 익혀 먹으면 베타카로틴 흡수가 잘 돼.",
+      "tokens": [
+        {
+          "text": "가볍",
+          "lemma": "가볍",
+          "pos": "VA"
+        },
+        {
+          "text": "게",
+          "lemma": "게",
+          "pos": "EC"
+        },
+        {
+          "text": "익히",
+          "lemma": "익히",
+          "pos": "VV"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EC"
+        },
+        {
+          "text": "먹",
+          "lemma": "먹",
+          "pos": "VV"
+        },
+        {
+          "text": "으면",
+          "lemma": "으면",
+          "pos": "EC"
+        },
+        {
+          "text": "베타카로틴",
+          "lemma": "베타카로틴",
+          "pos": "NNP"
+        },
+        {
+          "text": "흡수",
+          "lemma": "흡수",
+          "pos": "NNG"
+        },
+        {
+          "text": "가",
+          "lemma": "가",
+          "pos": "JKS"
+        },
+        {
+          "text": "잘",
+          "lemma": "잘",
+          "pos": "MAG"
+        },
+        {
+          "text": "되",
+          "lemma": "되",
+          "pos": "VV"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "게",
+      "당근",
+      "베타카로틴",
+      "영양",
+      "흡수"
+    ],
+    "domain": "fruit"
+  },
+  {
+    "question": {
+      "text": "감자를 생으로 먹어도 될까?",
+      "tokens": [
+        {
+          "text": "감자",
+          "lemma": "감자",
+          "pos": "NNG"
+        },
+        {
+          "text": "를",
+          "lemma": "를",
+          "pos": "JKO"
+        },
+        {
+          "text": "생으로",
+          "lemma": "생으로",
+          "pos": "MAG"
+        },
+        {
+          "text": "먹",
+          "lemma": "먹",
+          "pos": "VV"
+        },
+        {
+          "text": "어도",
+          "lemma": "어도",
+          "pos": "EC"
+        },
+        {
+          "text": "되",
+          "lemma": "되",
+          "pos": "VV"
+        },
+        {
+          "text": "ㄹ까",
+          "lemma": "ㄹ까",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "감자",
+        "소화"
+      ],
+      "domain": "fruit"
+    },
+    "answer": {
+      "text": "감자는 익혀서 먹어야 해. 생으로 먹으면 소화에 좋지 않아.",
+      "tokens": [
+        {
+          "text": "감자",
+          "lemma": "감자",
+          "pos": "NNP"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "JX"
+        },
+        {
+          "text": "익히",
+          "lemma": "익히",
+          "pos": "VV"
+        },
+        {
+          "text": "어서",
+          "lemma": "어서",
+          "pos": "EC"
+        },
+        {
+          "text": "먹",
+          "lemma": "먹",
+          "pos": "VV"
+        },
+        {
+          "text": "어야",
+          "lemma": "어야",
+          "pos": "EC"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "VX"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EF"
+        },
+        {
+          "text": "생으로",
+          "lemma": "생으로",
+          "pos": "MAG"
+        },
+        {
+          "text": "먹",
+          "lemma": "먹",
+          "pos": "VV"
+        },
+        {
+          "text": "으면",
+          "lemma": "으면",
+          "pos": "EC"
+        },
+        {
+          "text": "소화",
+          "lemma": "소화",
+          "pos": "NNP"
+        },
+        {
+          "text": "에",
+          "lemma": "에",
+          "pos": "JKB"
+        },
+        {
+          "text": "좋",
+          "lemma": "좋",
+          "pos": "VA"
+        },
+        {
+          "text": "지",
+          "lemma": "지",
+          "pos": "EC"
+        },
+        {
+          "text": "않",
+          "lemma": "않",
+          "pos": "VX"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "감자",
+      "소화"
+    ],
+    "domain": "fruit"
+  },
+  {
+    "question": {
+      "text": "양파는 자르다 보면 왜 눈물이 날까?",
+      "tokens": [
+        {
+          "text": "양파",
+          "lemma": "양파",
+          "pos": "NNP"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "JX"
+        },
+        {
+          "text": "자르",
+          "lemma": "자르",
+          "pos": "VV"
+        },
+        {
+          "text": "다",
+          "lemma": "다",
+          "pos": "EC"
+        },
+        {
+          "text": "보",
+          "lemma": "보",
+          "pos": "VV"
+        },
+        {
+          "text": "면",
+          "lemma": "면",
+          "pos": "EC"
+        },
+        {
+          "text": "왜",
+          "lemma": "왜",
+          "pos": "MAG"
+        },
+        {
+          "text": "눈물",
+          "lemma": "눈물",
+          "pos": "NNG"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "JKS"
+        },
+        {
+          "text": "나",
+          "lemma": "나",
+          "pos": "VV"
+        },
+        {
+          "text": "ㄹ까",
+          "lemma": "ㄹ까",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "눈",
+        "눈물",
+        "양파",
+        "유",
+        "자극",
+        "화합물"
+      ],
+      "domain": "fruit"
+    },
+    "answer": {
+      "text": "양파의 유화합물이 눈을 자극해서 그래.",
+      "tokens": [
+        {
+          "text": "양파",
+          "lemma": "양파",
+          "pos": "NNP"
+        },
+        {
+          "text": "의",
+          "lemma": "의",
+          "pos": "JKG"
+        },
+        {
+          "text": "유",
+          "lemma": "유",
+          "pos": "NNP"
+        },
+        {
+          "text": "화합물",
+          "lemma": "화합물",
+          "pos": "NNP"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "JKS"
+        },
+        {
+          "text": "눈",
+          "lemma": "눈",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "자극",
+          "lemma": "자극",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "아서",
+          "lemma": "아서",
+          "pos": "EC"
+        },
+        {
+          "text": "그래",
+          "lemma": "그래",
+          "pos": "IC"
+        }
+      ]
+    },
+    "concepts": [
+      "눈",
+      "눈물",
+      "양파",
+      "유",
+      "자극",
+      "화합물"
+    ],
+    "domain": "fruit"
+  },
+  {
+    "question": {
+      "text": "브로콜리는 어떻게 삶아야 색이 예쁘게 나와?",
+      "tokens": [
+        {
+          "text": "브로콜리",
+          "lemma": "브로콜리",
+          "pos": "NNP"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "JX"
+        },
+        {
+          "text": "어떻",
+          "lemma": "어떻",
+          "pos": "VA"
+        },
+        {
+          "text": "게",
+          "lemma": "게",
+          "pos": "EC"
+        },
+        {
+          "text": "삶",
+          "lemma": "삶",
+          "pos": "VV"
+        },
+        {
+          "text": "아야",
+          "lemma": "아야",
+          "pos": "EC"
+        },
+        {
+          "text": "색",
+          "lemma": "색",
+          "pos": "NNG"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "JKS"
+        },
+        {
+          "text": "예쁘",
+          "lemma": "예쁘",
+          "pos": "VA"
+        },
+        {
+          "text": "게",
+          "lemma": "게",
+          "pos": "EC"
+        },
+        {
+          "text": "나오",
+          "lemma": "나오",
+          "pos": "VV"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "물",
+        "브로콜리",
+        "색",
+        "소금"
+      ],
+      "domain": "fruit"
+    },
+    "answer": {
+      "text": "끓는 물에 소금을 약간 넣고 짧게 삶으면 색이 선명해져.",
+      "tokens": [
+        {
+          "text": "끓",
+          "lemma": "끓",
+          "pos": "VV"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "ETM"
+        },
+        {
+          "text": "물",
+          "lemma": "물",
+          "pos": "NNG"
+        },
+        {
+          "text": "에",
+          "lemma": "에",
+          "pos": "JKB"
+        },
+        {
+          "text": "소금",
+          "lemma": "소금",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "약간",
+          "lemma": "약간",
+          "pos": "MAG"
+        },
+        {
+          "text": "넣",
+          "lemma": "넣",
+          "pos": "VV"
+        },
+        {
+          "text": "고",
+          "lemma": "고",
+          "pos": "EC"
+        },
+        {
+          "text": "짧",
+          "lemma": "짧",
+          "pos": "VA"
+        },
+        {
+          "text": "게",
+          "lemma": "게",
+          "pos": "EC"
+        },
+        {
+          "text": "삶",
+          "lemma": "삶",
+          "pos": "VV"
+        },
+        {
+          "text": "으면",
+          "lemma": "으면",
+          "pos": "EC"
+        },
+        {
+          "text": "색",
+          "lemma": "색",
+          "pos": "NNG"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "JKS"
+        },
+        {
+          "text": "선명",
+          "lemma": "선명",
+          "pos": "XR"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSA"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EC"
+        },
+        {
+          "text": "지",
+          "lemma": "지",
+          "pos": "VX"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "물",
+      "브로콜리",
+      "색",
+      "소금"
+    ],
+    "domain": "fruit"
+  },
+  {
+    "question": {
+      "text": "호박을 찔 때 어떤 방법이 좋아?",
+      "tokens": [
+        {
+          "text": "호박",
+          "lemma": "호박",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "찌",
+          "lemma": "찌",
+          "pos": "VV"
+        },
+        {
+          "text": "ㄹ",
+          "lemma": "ㄹ",
+          "pos": "ETM"
+        },
+        {
+          "text": "때",
+          "lemma": "때",
+          "pos": "NNG"
+        },
+        {
+          "text": "어떤",
+          "lemma": "어떤",
+          "pos": "MM"
+        },
+        {
+          "text": "방법",
+          "lemma": "방법",
+          "pos": "NNG"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "JKS"
+        },
+        {
+          "text": "좋",
+          "lemma": "좋",
+          "pos": "VA"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "단맛",
+        "때",
+        "방법",
+        "찜",
+        "호박"
+      ],
+      "domain": "fruit"
+    },
+    "answer": {
+      "text": "찜기에 살짝 익히면 단맛이 살아나.",
+      "tokens": [
+        {
+          "text": "찜",
+          "lemma": "찜",
+          "pos": "NNG"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "VCP"
+        },
+        {
+          "text": "기",
+          "lemma": "기",
+          "pos": "ETN"
+        },
+        {
+          "text": "에",
+          "lemma": "에",
+          "pos": "JKB"
+        },
+        {
+          "text": "살짝",
+          "lemma": "살짝",
+          "pos": "MAG"
+        },
+        {
+          "text": "익히",
+          "lemma": "익히",
+          "pos": "VV"
+        },
+        {
+          "text": "면",
+          "lemma": "면",
+          "pos": "EC"
+        },
+        {
+          "text": "단맛",
+          "lemma": "단맛",
+          "pos": "NNP"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "JKS"
+        },
+        {
+          "text": "살아나",
+          "lemma": "살아나",
+          "pos": "VV"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "단맛",
+      "때",
+      "방법",
+      "찜",
+      "호박"
+    ],
+    "domain": "fruit"
+  },
+  {
+    "question": {
+      "text": "배추로 어떤 음식을 만들 수 있어?",
+      "tokens": [
+        {
+          "text": "배추",
+          "lemma": "배추",
+          "pos": "NNP"
+        },
+        {
+          "text": "로",
+          "lemma": "로",
+          "pos": "JKB"
+        },
+        {
+          "text": "어떤",
+          "lemma": "어떤",
+          "pos": "MM"
+        },
+        {
+          "text": "음식",
+          "lemma": "음식",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "만들",
+          "lemma": "만들",
+          "pos": "VV"
+        },
+        {
+          "text": "ㄹ",
+          "lemma": "ㄹ",
+          "pos": "ETM"
+        },
+        {
+          "text": "수",
+          "lemma": "수",
+          "pos": "NNB"
+        },
+        {
+          "text": "있",
+          "lemma": "있",
+          "pos": "VX"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "겉절이",
+        "국",
+        "김치",
+        "등",
+        "배추",
+        "수",
+        "음식"
+      ],
+      "domain": "fruit"
+    },
+    "answer": {
+      "text": "배추로 김치, 겉절이, 국 등을 만들 수 있어.",
+      "tokens": [
+        {
+          "text": "배추",
+          "lemma": "배추",
+          "pos": "NNP"
+        },
+        {
+          "text": "로",
+          "lemma": "로",
+          "pos": "JKB"
+        },
+        {
+          "text": "김치",
+          "lemma": "김치",
+          "pos": "NNP"
+        },
+        {
+          "text": "겉절이",
+          "lemma": "겉절이",
+          "pos": "NNP"
+        },
+        {
+          "text": "국",
+          "lemma": "국",
+          "pos": "NNG"
+        },
+        {
+          "text": "등",
+          "lemma": "등",
+          "pos": "NNB"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "만들",
+          "lemma": "만들",
+          "pos": "VV"
+        },
+        {
+          "text": "ㄹ",
+          "lemma": "ㄹ",
+          "pos": "ETM"
+        },
+        {
+          "text": "수",
+          "lemma": "수",
+          "pos": "NNB"
+        },
+        {
+          "text": "있",
+          "lemma": "있",
+          "pos": "VX"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "겉절이",
+      "국",
+      "김치",
+      "등",
+      "배추",
+      "수",
+      "음식"
+    ],
+    "domain": "fruit"
+  },
+  {
+    "question": {
+      "text": "상추를 오래 신선하게 보관하려면?",
+      "tokens": [
+        {
+          "text": "상추",
+          "lemma": "상추",
+          "pos": "NNP"
+        },
+        {
+          "text": "를",
+          "lemma": "를",
+          "pos": "JKO"
+        },
+        {
+          "text": "오래",
+          "lemma": "오래",
+          "pos": "MAG"
+        },
+        {
+          "text": "신선",
+          "lemma": "신선",
+          "pos": "XR"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSA"
+        },
+        {
+          "text": "게",
+          "lemma": "게",
+          "pos": "EC"
+        },
+        {
+          "text": "보관",
+          "lemma": "보관",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "려면",
+          "lemma": "려면",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "냉장",
+        "물기",
+        "보관",
+        "상추",
+        "신문지",
+        "제거",
+        "최대한"
+      ],
+      "domain": "fruit"
+    },
+    "answer": {
+      "text": "물기를 최대한 제거하고 신문지에 싸서 냉장 보관해.",
+      "tokens": [
+        {
+          "text": "물기",
+          "lemma": "물기",
+          "pos": "NNG"
+        },
+        {
+          "text": "를",
+          "lemma": "를",
+          "pos": "JKO"
+        },
+        {
+          "text": "최대한",
+          "lemma": "최대한",
+          "pos": "NNG"
+        },
+        {
+          "text": "제거",
+          "lemma": "제거",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "고",
+          "lemma": "고",
+          "pos": "EC"
+        },
+        {
+          "text": "신문지",
+          "lemma": "신문지",
+          "pos": "NNG"
+        },
+        {
+          "text": "에",
+          "lemma": "에",
+          "pos": "JKB"
+        },
+        {
+          "text": "싸",
+          "lemma": "싸",
+          "pos": "VV"
+        },
+        {
+          "text": "아서",
+          "lemma": "아서",
+          "pos": "EC"
+        },
+        {
+          "text": "냉장",
+          "lemma": "냉장",
+          "pos": "NNG"
+        },
+        {
+          "text": "보관",
+          "lemma": "보관",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "냉장",
+      "물기",
+      "보관",
+      "상추",
+      "신문지",
+      "제거",
+      "최대한"
+    ],
+    "domain": "fruit"
+  },
+  {
+    "question": {
+      "text": "무를 고를 때 어떤 점을 봐야 해?",
+      "tokens": [
+        {
+          "text": "무",
+          "lemma": "무",
+          "pos": "NNG"
+        },
+        {
+          "text": "를",
+          "lemma": "를",
+          "pos": "JKO"
+        },
+        {
+          "text": "고르",
+          "lemma": "고르",
+          "pos": "VV"
+        },
+        {
+          "text": "ㄹ",
+          "lemma": "ㄹ",
+          "pos": "ETM"
+        },
+        {
+          "text": "때",
+          "lemma": "때",
+          "pos": "NNG"
+        },
+        {
+          "text": "어떤",
+          "lemma": "어떤",
+          "pos": "MM"
+        },
+        {
+          "text": "점",
+          "lemma": "점",
+          "pos": "NNB"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "보",
+          "lemma": "보",
+          "pos": "VV"
+        },
+        {
+          "text": "아야",
+          "lemma": "아야",
+          "pos": "EC"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "VX"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "감",
+        "때",
+        "무",
+        "무가",
+        "무게",
+        "점"
+      ],
+      "domain": "fruit"
+    },
+    "answer": {
+      "text": "단단하고 무게감이 있는 무가 좋아.",
+      "tokens": [
+        {
+          "text": "단단",
+          "lemma": "단단",
+          "pos": "XR"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSA"
+        },
+        {
+          "text": "고",
+          "lemma": "고",
+          "pos": "EC"
+        },
+        {
+          "text": "무게",
+          "lemma": "무게",
+          "pos": "NNP"
+        },
+        {
+          "text": "감",
+          "lemma": "감",
+          "pos": "NNG"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "JKS"
+        },
+        {
+          "text": "있",
+          "lemma": "있",
+          "pos": "VV"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "ETM"
+        },
+        {
+          "text": "무가",
+          "lemma": "무가",
+          "pos": "NNP"
+        },
+        {
+          "text": "좋",
+          "lemma": "좋",
+          "pos": "VA"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "감",
+      "때",
+      "무",
+      "무가",
+      "무게",
+      "점"
+    ],
+    "domain": "fruit"
+  },
+  {
+    "question": {
+      "text": "시금치는 왜 데쳐 먹는 게 좋아?",
+      "tokens": [
+        {
+          "text": "시금치",
+          "lemma": "시금치",
+          "pos": "NNP"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "JX"
+        },
+        {
+          "text": "왜",
+          "lemma": "왜",
+          "pos": "MAG"
+        },
+        {
+          "text": "데치",
+          "lemma": "데치",
+          "pos": "VV"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EC"
+        },
+        {
+          "text": "먹",
+          "lemma": "먹",
+          "pos": "VV"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "ETM"
+        },
+        {
+          "text": "게",
+          "lemma": "게",
+          "pos": "NNG"
+        },
+        {
+          "text": "좋",
+          "lemma": "좋",
+          "pos": "VA"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "게",
+        "남은",
+        "시금치",
+        "아삭",
+        "잎",
+        "제거",
+        "흙"
+      ],
+      "domain": "fruit"
+    },
+    "answer": {
+      "text": "시금치를 데치면 아삭하고, 잎에 남은 흙도 제거돼.",
+      "tokens": [
+        {
+          "text": "시금치",
+          "lemma": "시금치",
+          "pos": "NNP"
+        },
+        {
+          "text": "를",
+          "lemma": "를",
+          "pos": "JKO"
+        },
+        {
+          "text": "데치",
+          "lemma": "데치",
+          "pos": "VV"
+        },
+        {
+          "text": "면",
+          "lemma": "면",
+          "pos": "EC"
+        },
+        {
+          "text": "아삭",
+          "lemma": "아삭",
+          "pos": "NNP"
+        },
+        {
+          "text": "하고",
+          "lemma": "하고",
+          "pos": "JKB"
+        },
+        {
+          "text": "잎",
+          "lemma": "잎",
+          "pos": "NNG"
+        },
+        {
+          "text": "에",
+          "lemma": "에",
+          "pos": "JKB"
+        },
+        {
+          "text": "남은",
+          "lemma": "남은",
+          "pos": "NNP"
+        },
+        {
+          "text": "흙",
+          "lemma": "흙",
+          "pos": "NNG"
+        },
+        {
+          "text": "도",
+          "lemma": "도",
+          "pos": "JX"
+        },
+        {
+          "text": "제거",
+          "lemma": "제거",
+          "pos": "NNG"
+        },
+        {
+          "text": "되",
+          "lemma": "되",
+          "pos": "XSV"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "게",
+      "남은",
+      "시금치",
+      "아삭",
+      "잎",
+      "제거",
+      "흙"
+    ],
+    "domain": "fruit"
+  },
+  {
+    "question": {
+      "text": "파프리카는 색마다 맛이 달라?",
+      "tokens": [
+        {
+          "text": "파프리카",
+          "lemma": "파프리카",
+          "pos": "NNP"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "JX"
+        },
+        {
+          "text": "색",
+          "lemma": "색",
+          "pos": "NNG"
+        },
+        {
+          "text": "마다",
+          "lemma": "마다",
+          "pos": "JX"
+        },
+        {
+          "text": "맛",
+          "lemma": "맛",
+          "pos": "NNG"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "JKS"
+        },
+        {
+          "text": "다르",
+          "lemma": "다르",
+          "pos": "VA"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "노란색",
+        "단맛",
+        "맛",
+        "빨간색",
+        "색",
+        "초록색",
+        "파프리카"
+      ],
+      "domain": "fruit"
+    },
+    "answer": {
+      "text": "노란색은 달고, 초록색은 약간 씁쓸해. 빨간색은 단맛이 강해.",
+      "tokens": [
+        {
+          "text": "노란색",
+          "lemma": "노란색",
+          "pos": "NNG"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "JX"
+        },
+        {
+          "text": "달",
+          "lemma": "달",
+          "pos": "VV"
+        },
+        {
+          "text": "고",
+          "lemma": "고",
+          "pos": "EC"
+        },
+        {
+          "text": "초록색",
+          "lemma": "초록색",
+          "pos": "NNG"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "JX"
+        },
+        {
+          "text": "약간",
+          "lemma": "약간",
+          "pos": "MAG"
+        },
+        {
+          "text": "씁쓸",
+          "lemma": "씁쓸",
+          "pos": "XR"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSA"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EF"
+        },
+        {
+          "text": "빨간색",
+          "lemma": "빨간색",
+          "pos": "NNG"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "JX"
+        },
+        {
+          "text": "단맛",
+          "lemma": "단맛",
+          "pos": "NNP"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "JKS"
+        },
+        {
+          "text": "강하",
+          "lemma": "강하",
+          "pos": "VA"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "노란색",
+      "단맛",
+      "맛",
+      "빨간색",
+      "색",
+      "초록색",
+      "파프리카"
+    ],
+    "domain": "fruit"
+  },
+  {
+    "question": {
+      "text": "가지 요리를 잘하는 팁이 있을까?",
+      "tokens": [
+        {
+          "text": "가지",
+          "lemma": "가지",
+          "pos": "NNB"
+        },
+        {
+          "text": "요리",
+          "lemma": "요리",
+          "pos": "NNG"
+        },
+        {
+          "text": "를",
+          "lemma": "를",
+          "pos": "JKO"
+        },
+        {
+          "text": "잘",
+          "lemma": "잘",
+          "pos": "MAG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "ETM"
+        },
+        {
+          "text": "팁",
+          "lemma": "팁",
+          "pos": "NNG"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "JKS"
+        },
+        {
+          "text": "있",
+          "lemma": "있",
+          "pos": "VX"
+        },
+        {
+          "text": "을까",
+          "lemma": "을까",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "가지",
+        "감",
+        "기름",
+        "식",
+        "요리",
+        "팁"
+      ],
+      "domain": "fruit"
+    },
+    "answer": {
+      "text": "기름을 살짝 둘러 구우면 식감이 좋아져.",
+      "tokens": [
+        {
+          "text": "기름",
+          "lemma": "기름",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "살짝",
+          "lemma": "살짝",
+          "pos": "MAG"
+        },
+        {
+          "text": "두르",
+          "lemma": "두르",
+          "pos": "VV"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EC"
+        },
+        {
+          "text": "굽",
+          "lemma": "굽",
+          "pos": "VV"
+        },
+        {
+          "text": "면",
+          "lemma": "면",
+          "pos": "EC"
+        },
+        {
+          "text": "식",
+          "lemma": "식",
+          "pos": "NNG"
+        },
+        {
+          "text": "감",
+          "lemma": "감",
+          "pos": "NNG"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "JKS"
+        },
+        {
+          "text": "좋",
+          "lemma": "좋",
+          "pos": "VA"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EC"
+        },
+        {
+          "text": "지",
+          "lemma": "지",
+          "pos": "VX"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "가지",
+      "감",
+      "기름",
+      "식",
+      "요리",
+      "팁"
+    ],
+    "domain": "fruit"
+  },
+  {
+    "question": {
+      "text": "고구마는 쪄서 먹는 게 좋아, 구워서 먹는 게 좋아?",
+      "tokens": [
+        {
+          "text": "고구마",
+          "lemma": "고구마",
+          "pos": "NNP"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "JX"
+        },
+        {
+          "text": "찌",
+          "lemma": "찌",
+          "pos": "VV"
+        },
+        {
+          "text": "어서",
+          "lemma": "어서",
+          "pos": "EC"
+        },
+        {
+          "text": "먹",
+          "lemma": "먹",
+          "pos": "VV"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "ETM"
+        },
+        {
+          "text": "게",
+          "lemma": "게",
+          "pos": "NNG"
+        },
+        {
+          "text": "좋",
+          "lemma": "좋",
+          "pos": "VA"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EC"
+        },
+        {
+          "text": "굽",
+          "lemma": "굽",
+          "pos": "VV"
+        },
+        {
+          "text": "어서",
+          "lemma": "어서",
+          "pos": "EC"
+        },
+        {
+          "text": "먹",
+          "lemma": "먹",
+          "pos": "VV"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "ETM"
+        },
+        {
+          "text": "게",
+          "lemma": "게",
+          "pos": "NNG"
+        },
+        {
+          "text": "좋",
+          "lemma": "좋",
+          "pos": "VA"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "게",
+        "고구마",
+        "단맛",
+        "취향"
+      ],
+      "domain": "fruit"
+    },
+    "answer": {
+      "text": "취향에 따라 다르지만, 구우면 단맛이 더 진해져.",
+      "tokens": [
+        {
+          "text": "취향",
+          "lemma": "취향",
+          "pos": "NNG"
+        },
+        {
+          "text": "에",
+          "lemma": "에",
+          "pos": "JKB"
+        },
+        {
+          "text": "따르",
+          "lemma": "따르",
+          "pos": "VV"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EC"
+        },
+        {
+          "text": "다르",
+          "lemma": "다르",
+          "pos": "VA"
+        },
+        {
+          "text": "지만",
+          "lemma": "지만",
+          "pos": "EC"
+        },
+        {
+          "text": "굽",
+          "lemma": "굽",
+          "pos": "VV"
+        },
+        {
+          "text": "면",
+          "lemma": "면",
+          "pos": "EC"
+        },
+        {
+          "text": "단맛",
+          "lemma": "단맛",
+          "pos": "NNP"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "JKS"
+        },
+        {
+          "text": "더",
+          "lemma": "더",
+          "pos": "MAG"
+        },
+        {
+          "text": "진하",
+          "lemma": "진하",
+          "pos": "VA"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EC"
+        },
+        {
+          "text": "지",
+          "lemma": "지",
+          "pos": "VX"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "게",
+      "고구마",
+      "단맛",
+      "취향"
+    ],
+    "domain": "fruit"
+  },
+  {
+    "question": {
+      "text": "양배추는 다이어트에 좋아?",
+      "tokens": [
+        {
+          "text": "양배추",
+          "lemma": "양배추",
+          "pos": "NNP"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "JX"
+        },
+        {
+          "text": "다이어트",
+          "lemma": "다이어트",
+          "pos": "NNP"
+        },
+        {
+          "text": "에",
+          "lemma": "에",
+          "pos": "JKB"
+        },
+        {
+          "text": "좋",
+          "lemma": "좋",
+          "pos": "VA"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "다이어트",
+        "양배추",
+        "칼로리",
+        "커서",
+        "포만감"
+      ],
+      "domain": "fruit"
+    },
+    "answer": {
+      "text": "양배추는 칼로리가 낮고 포만감이 커서 다이어트에 좋아.",
+      "tokens": [
+        {
+          "text": "양배추",
+          "lemma": "양배추",
+          "pos": "NNP"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "JX"
+        },
+        {
+          "text": "칼로리",
+          "lemma": "칼로리",
+          "pos": "NNP"
+        },
+        {
+          "text": "가",
+          "lemma": "가",
+          "pos": "JKS"
+        },
+        {
+          "text": "낮",
+          "lemma": "낮",
+          "pos": "VA"
+        },
+        {
+          "text": "고",
+          "lemma": "고",
+          "pos": "EC"
+        },
+        {
+          "text": "포만감",
+          "lemma": "포만감",
+          "pos": "NNG"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "JKS"
+        },
+        {
+          "text": "커서",
+          "lemma": "커서",
+          "pos": "NNP"
+        },
+        {
+          "text": "다이어트",
+          "lemma": "다이어트",
+          "pos": "NNP"
+        },
+        {
+          "text": "에",
+          "lemma": "에",
+          "pos": "JKB"
+        },
+        {
+          "text": "좋",
+          "lemma": "좋",
+          "pos": "VA"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "다이어트",
+      "양배추",
+      "칼로리",
+      "커서",
+      "포만감"
+    ],
+    "domain": "fruit"
+  },
+  {
+    "question": {
+      "text": "샐러드에 어떤 과일을 넣으면 좋아?",
+      "tokens": [
+        {
+          "text": "샐러드",
+          "lemma": "샐러드",
+          "pos": "NNP"
+        },
+        {
+          "text": "에",
+          "lemma": "에",
+          "pos": "JKB"
+        },
+        {
+          "text": "어떤",
+          "lemma": "어떤",
+          "pos": "MM"
+        },
+        {
+          "text": "과일",
+          "lemma": "과일",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "넣",
+          "lemma": "넣",
+          "pos": "VV"
+        },
+        {
+          "text": "으면",
+          "lemma": "으면",
+          "pos": "EC"
+        },
+        {
+          "text": "좋",
+          "lemma": "좋",
+          "pos": "VA"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "과일",
+        "등",
+        "사과",
+        "샐러드",
+        "오렌지",
+        "키위"
+      ],
+      "domain": "fruit"
+    },
+    "answer": {
+      "text": "사과, 키위, 오렌지 등 상큼한 과일이 잘 어울려.",
+      "tokens": [
+        {
+          "text": "사과",
+          "lemma": "사과",
+          "pos": "NNP"
+        },
+        {
+          "text": "키위",
+          "lemma": "키위",
+          "pos": "NNP"
+        },
+        {
+          "text": "오렌지",
+          "lemma": "오렌지",
+          "pos": "NNP"
+        },
+        {
+          "text": "등",
+          "lemma": "등",
+          "pos": "NNB"
+        },
+        {
+          "text": "상큼",
+          "lemma": "상큼",
+          "pos": "XR"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSA"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "과일",
+          "lemma": "과일",
+          "pos": "NNG"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "JKS"
+        },
+        {
+          "text": "잘",
+          "lemma": "잘",
+          "pos": "MAG"
+        },
+        {
+          "text": "어울리",
+          "lemma": "어울리",
+          "pos": "VV"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "과일",
+      "등",
+      "사과",
+      "샐러드",
+      "오렌지",
+      "키위"
+    ],
+    "domain": "fruit"
+  },
+  {
+    "question": {
+      "text": "귤 껍질을 쉽게 벗기는 방법이 있어?",
+      "tokens": [
+        {
+          "text": "귤",
+          "lemma": "귤",
+          "pos": "NNG"
+        },
+        {
+          "text": "껍질",
+          "lemma": "껍질",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "쉽",
+          "lemma": "쉽",
+          "pos": "VA"
+        },
+        {
+          "text": "게",
+          "lemma": "게",
+          "pos": "EC"
+        },
+        {
+          "text": "벗기",
+          "lemma": "벗기",
+          "pos": "VV"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "ETM"
+        },
+        {
+          "text": "방법",
+          "lemma": "방법",
+          "pos": "NNG"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "JKS"
+        },
+        {
+          "text": "있",
+          "lemma": "있",
+          "pos": "VX"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "귤",
+        "껍질",
+        "방법"
+      ],
+      "domain": "fruit"
+    },
+    "answer": {
+      "text": "귤을 살짝 눌러 돌려주면 껍질이 잘 벗겨져.",
+      "tokens": [
+        {
+          "text": "귤",
+          "lemma": "귤",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "살짝",
+          "lemma": "살짝",
+          "pos": "MAG"
+        },
+        {
+          "text": "누르",
+          "lemma": "누르",
+          "pos": "VV"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EC"
+        },
+        {
+          "text": "돌려주",
+          "lemma": "돌려주",
+          "pos": "VV"
+        },
+        {
+          "text": "면",
+          "lemma": "면",
+          "pos": "EC"
+        },
+        {
+          "text": "껍질",
+          "lemma": "껍질",
+          "pos": "NNP"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "JKS"
+        },
+        {
+          "text": "잘",
+          "lemma": "잘",
+          "pos": "MAG"
+        },
+        {
+          "text": "벗겨지",
+          "lemma": "벗겨지",
+          "pos": "VV"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "귤",
+      "껍질",
+      "방법"
+    ],
+    "domain": "fruit"
+  },
+  {
+    "question": {
+      "text": "파인애플은 어떻게 손질해?",
+      "tokens": [
+        {
+          "text": "파인애플",
+          "lemma": "파인애플",
+          "pos": "NNP"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "JX"
+        },
+        {
+          "text": "어떻",
+          "lemma": "어떻",
+          "pos": "VA"
+        },
+        {
+          "text": "게",
+          "lemma": "게",
+          "pos": "EC"
+        },
+        {
+          "text": "손질",
+          "lemma": "손질",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "껍질",
+        "손질",
+        "아랫부분",
+        "윗부분",
+        "파인애플"
+      ],
+      "domain": "fruit"
+    },
+    "answer": {
+      "text": "윗부분과 아랫부분을 자르고 껍질을 돌려 깎으면 돼.",
+      "tokens": [
+        {
+          "text": "윗부분",
+          "lemma": "윗부분",
+          "pos": "NNG"
+        },
+        {
+          "text": "과",
+          "lemma": "과",
+          "pos": "JC"
+        },
+        {
+          "text": "아랫부분",
+          "lemma": "아랫부분",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "자르",
+          "lemma": "자르",
+          "pos": "VV"
+        },
+        {
+          "text": "고",
+          "lemma": "고",
+          "pos": "EC"
+        },
+        {
+          "text": "껍질",
+          "lemma": "껍질",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "돌리",
+          "lemma": "돌리",
+          "pos": "VV"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EC"
+        },
+        {
+          "text": "깎",
+          "lemma": "깎",
+          "pos": "VV"
+        },
+        {
+          "text": "으면",
+          "lemma": "으면",
+          "pos": "EC"
+        },
+        {
+          "text": "되",
+          "lemma": "되",
+          "pos": "VV"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "껍질",
+      "손질",
+      "아랫부분",
+      "윗부분",
+      "파인애플"
+    ],
+    "domain": "fruit"
+  },
+  {
+    "question": {
+      "text": "키위 껍질째 먹어도 돼?",
+      "tokens": [
+        {
+          "text": "키위",
+          "lemma": "키위",
+          "pos": "NNP"
+        },
+        {
+          "text": "껍질",
+          "lemma": "껍질",
+          "pos": "NNG"
+        },
+        {
+          "text": "째",
+          "lemma": "째",
+          "pos": "XSN"
+        },
+        {
+          "text": "먹",
+          "lemma": "먹",
+          "pos": "VV"
+        },
+        {
+          "text": "어도",
+          "lemma": "어도",
+          "pos": "EC"
+        },
+        {
+          "text": "되",
+          "lemma": "되",
+          "pos": "VV"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "껍질",
+        "수",
+        "식",
+        "유가",
+        "이섬",
+        "키위"
+      ],
+      "domain": "fruit"
+    },
+    "answer": {
+      "text": "키위 껍질에는 식이섬유가 많아 깨끗이 씻으면 먹을 수 있어.",
+      "tokens": [
+        {
+          "text": "키위",
+          "lemma": "키위",
+          "pos": "NNP"
+        },
+        {
+          "text": "껍질",
+          "lemma": "껍질",
+          "pos": "NNP"
+        },
+        {
+          "text": "에",
+          "lemma": "에",
+          "pos": "JKB"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "JX"
+        },
+        {
+          "text": "식",
+          "lemma": "식",
+          "pos": "NNB"
+        },
+        {
+          "text": "이섬",
+          "lemma": "이섬",
+          "pos": "NNP"
+        },
+        {
+          "text": "유가",
+          "lemma": "유가",
+          "pos": "NNP"
+        },
+        {
+          "text": "많",
+          "lemma": "많",
+          "pos": "VA"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EC"
+        },
+        {
+          "text": "깨끗이",
+          "lemma": "깨끗이",
+          "pos": "MAG"
+        },
+        {
+          "text": "씻",
+          "lemma": "씻",
+          "pos": "VV"
+        },
+        {
+          "text": "으면",
+          "lemma": "으면",
+          "pos": "EC"
+        },
+        {
+          "text": "먹",
+          "lemma": "먹",
+          "pos": "VV"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "ETM"
+        },
+        {
+          "text": "수",
+          "lemma": "수",
+          "pos": "NNB"
+        },
+        {
+          "text": "있",
+          "lemma": "있",
+          "pos": "VX"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "껍질",
+      "수",
+      "식",
+      "유가",
+      "이섬",
+      "키위"
+    ],
+    "domain": "fruit"
+  },
+  {
+    "question": {
+      "text": "복숭아와 천도복숭아는 어떻게 달라?",
+      "tokens": [
+        {
+          "text": "복숭아",
+          "lemma": "복숭아",
+          "pos": "NNP"
+        },
+        {
+          "text": "와",
+          "lemma": "와",
+          "pos": "JC"
+        },
+        {
+          "text": "천도",
+          "lemma": "천도",
+          "pos": "NNP"
+        },
+        {
+          "text": "복숭아",
+          "lemma": "복숭아",
+          "pos": "NNP"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "JX"
+        },
+        {
+          "text": "어떻",
+          "lemma": "어떻",
+          "pos": "VA"
+        },
+        {
+          "text": "게",
+          "lemma": "게",
+          "pos": "EC"
+        },
+        {
+          "text": "다르",
+          "lemma": "다르",
+          "pos": "VA"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "껍질",
+        "복숭아",
+        "천도"
+      ],
+      "domain": "fruit"
+    },
+    "answer": {
+      "text": "천도복숭아는 껍질이 매끈하고 복숭아보다 단단해.",
+      "tokens": [
+        {
+          "text": "천도",
+          "lemma": "천도",
+          "pos": "NNP"
+        },
+        {
+          "text": "복숭아",
+          "lemma": "복숭아",
+          "pos": "NNP"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "JX"
+        },
+        {
+          "text": "껍질",
+          "lemma": "껍질",
+          "pos": "NNP"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "JKS"
+        },
+        {
+          "text": "매끈",
+          "lemma": "매끈",
+          "pos": "XR"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSA"
+        },
+        {
+          "text": "고",
+          "lemma": "고",
+          "pos": "EC"
+        },
+        {
+          "text": "복숭아",
+          "lemma": "복숭아",
+          "pos": "NNP"
+        },
+        {
+          "text": "보다",
+          "lemma": "보다",
+          "pos": "JKB"
+        },
+        {
+          "text": "단단",
+          "lemma": "단단",
+          "pos": "XR"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSA"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "껍질",
+      "복숭아",
+      "천도"
+    ],
+    "domain": "fruit"
+  },
+  {
+    "question": {
+      "text": "참외를 고를 때 주의할 점이 있니?",
+      "tokens": [
+        {
+          "text": "참외",
+          "lemma": "참외",
+          "pos": "NNP"
+        },
+        {
+          "text": "를",
+          "lemma": "를",
+          "pos": "JKO"
+        },
+        {
+          "text": "고르",
+          "lemma": "고르",
+          "pos": "VV"
+        },
+        {
+          "text": "ㄹ",
+          "lemma": "ㄹ",
+          "pos": "ETM"
+        },
+        {
+          "text": "때",
+          "lemma": "때",
+          "pos": "NNG"
+        },
+        {
+          "text": "주의",
+          "lemma": "주의",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "ㄹ",
+          "lemma": "ㄹ",
+          "pos": "ETM"
+        },
+        {
+          "text": "점",
+          "lemma": "점",
+          "pos": "NNB"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "JKS"
+        },
+        {
+          "text": "있",
+          "lemma": "있",
+          "pos": "VX"
+        },
+        {
+          "text": "니",
+          "lemma": "니",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "것",
+        "노란색",
+        "때",
+        "점",
+        "주의",
+        "참외",
+        "향"
+      ],
+      "domain": "fruit"
+    },
+    "answer": {
+      "text": "노란색이 선명하고, 단단하며 향이 좋은 것이 맛있어.",
+      "tokens": [
+        {
+          "text": "노란색",
+          "lemma": "노란색",
+          "pos": "NNG"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "JKS"
+        },
+        {
+          "text": "선명",
+          "lemma": "선명",
+          "pos": "XR"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSA"
+        },
+        {
+          "text": "고",
+          "lemma": "고",
+          "pos": "EC"
+        },
+        {
+          "text": "단단",
+          "lemma": "단단",
+          "pos": "XR"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSA"
+        },
+        {
+          "text": "며",
+          "lemma": "며",
+          "pos": "EC"
+        },
+        {
+          "text": "향",
+          "lemma": "향",
+          "pos": "NNG"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "JKS"
+        },
+        {
+          "text": "좋",
+          "lemma": "좋",
+          "pos": "VA"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "ETM"
+        },
+        {
+          "text": "것",
+          "lemma": "것",
+          "pos": "NNB"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "JKS"
+        },
+        {
+          "text": "맛있",
+          "lemma": "맛있",
+          "pos": "VA"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "것",
+      "노란색",
+      "때",
+      "점",
+      "주의",
+      "참외",
+      "향"
+    ],
+    "domain": "fruit"
+  },
+  {
+    "question": {
+      "text": "배는 껍질째 먹을 수 있어?",
+      "tokens": [
+        {
+          "text": "배",
+          "lemma": "배",
+          "pos": "NNG"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "JX"
+        },
+        {
+          "text": "껍질",
+          "lemma": "껍질",
+          "pos": "NNG"
+        },
+        {
+          "text": "째",
+          "lemma": "째",
+          "pos": "XSN"
+        },
+        {
+          "text": "먹",
+          "lemma": "먹",
+          "pos": "VV"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "ETM"
+        },
+        {
+          "text": "수",
+          "lemma": "수",
+          "pos": "NNB"
+        },
+        {
+          "text": "있",
+          "lemma": "있",
+          "pos": "VX"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "게",
+        "껍질",
+        "배",
+        "수",
+        "영양",
+        "일반"
+      ],
+      "domain": "fruit"
+    },
+    "answer": {
+      "text": "배 껍질에도 영양이 있지만, 일반적으로는 벗겨 먹는 게 좋아.",
+      "tokens": [
+        {
+          "text": "배",
+          "lemma": "배",
+          "pos": "NNG"
+        },
+        {
+          "text": "껍질",
+          "lemma": "껍질",
+          "pos": "NNP"
+        },
+        {
+          "text": "에",
+          "lemma": "에",
+          "pos": "JKB"
+        },
+        {
+          "text": "도",
+          "lemma": "도",
+          "pos": "JX"
+        },
+        {
+          "text": "영양",
+          "lemma": "영양",
+          "pos": "NNP"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "JKS"
+        },
+        {
+          "text": "있",
+          "lemma": "있",
+          "pos": "VV"
+        },
+        {
+          "text": "지만",
+          "lemma": "지만",
+          "pos": "EC"
+        },
+        {
+          "text": "일반",
+          "lemma": "일반",
+          "pos": "NNG"
+        },
+        {
+          "text": "적",
+          "lemma": "적",
+          "pos": "XSN"
+        },
+        {
+          "text": "으로",
+          "lemma": "으로",
+          "pos": "JKB"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "JX"
+        },
+        {
+          "text": "벗기",
+          "lemma": "벗기",
+          "pos": "VV"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EC"
+        },
+        {
+          "text": "먹",
+          "lemma": "먹",
+          "pos": "VV"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "ETM"
+        },
+        {
+          "text": "게",
+          "lemma": "게",
+          "pos": "NNG"
+        },
+        {
+          "text": "좋",
+          "lemma": "좋",
+          "pos": "VA"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "게",
+      "껍질",
+      "배",
+      "수",
+      "영양",
+      "일반"
+    ],
+    "domain": "fruit"
+  },
+  {
+    "question": {
+      "text": "레몬을 매일 먹으면 몸에 좋은 점이 있어?",
+      "tokens": [
+        {
+          "text": "레몬",
+          "lemma": "레몬",
+          "pos": "NNP"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "매일",
+          "lemma": "매일",
+          "pos": "MAG"
+        },
+        {
+          "text": "먹",
+          "lemma": "먹",
+          "pos": "VV"
+        },
+        {
+          "text": "으면",
+          "lemma": "으면",
+          "pos": "EC"
+        },
+        {
+          "text": "몸",
+          "lemma": "몸",
+          "pos": "NNG"
+        },
+        {
+          "text": "에",
+          "lemma": "에",
+          "pos": "JKB"
+        },
+        {
+          "text": "좋",
+          "lemma": "좋",
+          "pos": "VA"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "ETM"
+        },
+        {
+          "text": "점",
+          "lemma": "점",
+          "pos": "NNB"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "JKS"
+        },
+        {
+          "text": "있",
+          "lemma": "있",
+          "pos": "VX"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "도움",
+        "레몬",
+        "면역력",
+        "몸",
+        "비타민",
+        "점"
+      ],
+      "domain": "fruit"
+    },
+    "answer": {
+      "text": "비타민C가 풍부해서 면역력에 도움이 돼.",
+      "tokens": [
+        {
+          "text": "비타민",
+          "lemma": "비타민",
+          "pos": "NNP"
+        },
+        {
+          "text": "C",
+          "lemma": "C",
+          "pos": "SL"
+        },
+        {
+          "text": "가",
+          "lemma": "가",
+          "pos": "JKS"
+        },
+        {
+          "text": "풍부",
+          "lemma": "풍부",
+          "pos": "XR"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSA"
+        },
+        {
+          "text": "아서",
+          "lemma": "아서",
+          "pos": "EC"
+        },
+        {
+          "text": "면역력",
+          "lemma": "면역력",
+          "pos": "NNG"
+        },
+        {
+          "text": "에",
+          "lemma": "에",
+          "pos": "JKB"
+        },
+        {
+          "text": "도움",
+          "lemma": "도움",
+          "pos": "NNG"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "JKS"
+        },
+        {
+          "text": "되",
+          "lemma": "되",
+          "pos": "VV"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "도움",
+      "레몬",
+      "면역력",
+      "몸",
+      "비타민",
+      "점"
+    ],
+    "domain": "fruit"
+  },
+  {
+    "question": {
+      "text": "딸기와 블루베리는 어떻게 다르게 보관해야 해?",
+      "tokens": [
+        {
+          "text": "딸기",
+          "lemma": "딸기",
+          "pos": "NNP"
+        },
+        {
+          "text": "와",
+          "lemma": "와",
+          "pos": "JC"
+        },
+        {
+          "text": "블루베리",
+          "lemma": "블루베리",
+          "pos": "NNP"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "JX"
+        },
+        {
+          "text": "어떻",
+          "lemma": "어떻",
+          "pos": "VA"
+        },
+        {
+          "text": "게",
+          "lemma": "게",
+          "pos": "EC"
+        },
+        {
+          "text": "다르",
+          "lemma": "다르",
+          "pos": "VA"
+        },
+        {
+          "text": "게",
+          "lemma": "게",
+          "pos": "EC"
+        },
+        {
+          "text": "보관",
+          "lemma": "보관",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "아야",
+          "lemma": "아야",
+          "pos": "EC"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "VX"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "냉장",
+        "딸기",
+        "보관",
+        "블루베리",
+        "전"
+      ],
+      "domain": "fruit"
+    },
+    "answer": {
+      "text": "둘 다 씻지 않고 냉장 보관, 먹기 전에 씻으면 좋아.",
+      "tokens": [
+        {
+          "text": "둘",
+          "lemma": "둘",
+          "pos": "NR"
+        },
+        {
+          "text": "다",
+          "lemma": "다",
+          "pos": "MAG"
+        },
+        {
+          "text": "씻",
+          "lemma": "씻",
+          "pos": "VV"
+        },
+        {
+          "text": "지",
+          "lemma": "지",
+          "pos": "EC"
+        },
+        {
+          "text": "않",
+          "lemma": "않",
+          "pos": "VX"
+        },
+        {
+          "text": "고",
+          "lemma": "고",
+          "pos": "EC"
+        },
+        {
+          "text": "냉장",
+          "lemma": "냉장",
+          "pos": "NNG"
+        },
+        {
+          "text": "보관",
+          "lemma": "보관",
+          "pos": "NNG"
+        },
+        {
+          "text": "먹",
+          "lemma": "먹",
+          "pos": "VV"
+        },
+        {
+          "text": "기",
+          "lemma": "기",
+          "pos": "ETN"
+        },
+        {
+          "text": "전",
+          "lemma": "전",
+          "pos": "NNG"
+        },
+        {
+          "text": "에",
+          "lemma": "에",
+          "pos": "JKB"
+        },
+        {
+          "text": "씻",
+          "lemma": "씻",
+          "pos": "VV"
+        },
+        {
+          "text": "으면",
+          "lemma": "으면",
+          "pos": "EC"
+        },
+        {
+          "text": "좋",
+          "lemma": "좋",
+          "pos": "VA"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "냉장",
+      "딸기",
+      "보관",
+      "블루베리",
+      "전"
+    ],
+    "domain": "fruit"
+  },
+  {
+    "question": {
+      "text": "고추의 매운맛을 줄이는 방법이 있어?",
+      "tokens": [
+        {
+          "text": "고추",
+          "lemma": "고추",
+          "pos": "NNP"
+        },
+        {
+          "text": "의",
+          "lemma": "의",
+          "pos": "JKG"
+        },
+        {
+          "text": "매운맛",
+          "lemma": "매운맛",
+          "pos": "NNP"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "줄이",
+          "lemma": "줄이",
+          "pos": "VV"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "ETM"
+        },
+        {
+          "text": "방법",
+          "lemma": "방법",
+          "pos": "NNG"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "JKS"
+        },
+        {
+          "text": "있",
+          "lemma": "있",
+          "pos": "VX"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "고추",
+        "매운맛",
+        "방법",
+        "속",
+        "씨",
+        "제거"
+      ],
+      "domain": "fruit"
+    },
+    "answer": {
+      "text": "씨와 하얀 속을 제거하면 매운맛이 줄어들어.",
+      "tokens": [
+        {
+          "text": "씨",
+          "lemma": "씨",
+          "pos": "NNB"
+        },
+        {
+          "text": "와",
+          "lemma": "와",
+          "pos": "JKB"
+        },
+        {
+          "text": "하얗",
+          "lemma": "하얗",
+          "pos": "VA"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "속",
+          "lemma": "속",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "제거",
+          "lemma": "제거",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "면",
+          "lemma": "면",
+          "pos": "EC"
+        },
+        {
+          "text": "매운맛",
+          "lemma": "매운맛",
+          "pos": "NNP"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "JKS"
+        },
+        {
+          "text": "줄어들",
+          "lemma": "줄어들",
+          "pos": "VV"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "고추",
+      "매운맛",
+      "방법",
+      "속",
+      "씨",
+      "제거"
+    ],
+    "domain": "fruit"
+  },
+  {
+    "question": {
+      "text": "수박씨를 먹어도 괜찮아?",
+      "tokens": [
+        {
+          "text": "수박씨",
+          "lemma": "수박씨",
+          "pos": "NNG"
+        },
+        {
+          "text": "를",
+          "lemma": "를",
+          "pos": "JKO"
+        },
+        {
+          "text": "먹",
+          "lemma": "먹",
+          "pos": "VV"
+        },
+        {
+          "text": "어도",
+          "lemma": "어도",
+          "pos": "EC"
+        },
+        {
+          "text": "괜찮",
+          "lemma": "괜찮",
+          "pos": "VA"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "부담",
+        "소량",
+        "소화",
+        "수",
+        "수박씨"
+      ],
+      "domain": "fruit"
+    },
+    "answer": {
+      "text": "소량 먹어도 무해하지만, 많이 먹으면 소화에 부담이 될 수 있어.",
+      "tokens": [
+        {
+          "text": "소량",
+          "lemma": "소량",
+          "pos": "NNG"
+        },
+        {
+          "text": "먹",
+          "lemma": "먹",
+          "pos": "VV"
+        },
+        {
+          "text": "어도",
+          "lemma": "어도",
+          "pos": "EC"
+        },
+        {
+          "text": "무해",
+          "lemma": "무해",
+          "pos": "XR"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSA"
+        },
+        {
+          "text": "지만",
+          "lemma": "지만",
+          "pos": "EC"
+        },
+        {
+          "text": "많이",
+          "lemma": "많이",
+          "pos": "MAG"
+        },
+        {
+          "text": "먹",
+          "lemma": "먹",
+          "pos": "VV"
+        },
+        {
+          "text": "으면",
+          "lemma": "으면",
+          "pos": "EC"
+        },
+        {
+          "text": "소화",
+          "lemma": "소화",
+          "pos": "NNP"
+        },
+        {
+          "text": "에",
+          "lemma": "에",
+          "pos": "JKB"
+        },
+        {
+          "text": "부담",
+          "lemma": "부담",
+          "pos": "NNG"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "JKS"
+        },
+        {
+          "text": "되",
+          "lemma": "되",
+          "pos": "VV"
+        },
+        {
+          "text": "ㄹ",
+          "lemma": "ㄹ",
+          "pos": "ETM"
+        },
+        {
+          "text": "수",
+          "lemma": "수",
+          "pos": "NNB"
+        },
+        {
+          "text": "있",
+          "lemma": "있",
+          "pos": "VX"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "부담",
+      "소량",
+      "소화",
+      "수",
+      "수박씨"
+    ],
+    "domain": "fruit"
+  },
+  {
+    "question": {
+      "text": "파는 어떤 요리에 주로 사용해?",
+      "tokens": [
+        {
+          "text": "팔",
+          "lemma": "팔",
+          "pos": "VV"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "ETM"
+        },
+        {
+          "text": "어떤",
+          "lemma": "어떤",
+          "pos": "MM"
+        },
+        {
+          "text": "요리",
+          "lemma": "요리",
+          "pos": "NNG"
+        },
+        {
+          "text": "에",
+          "lemma": "에",
+          "pos": "JKB"
+        },
+        {
+          "text": "주로",
+          "lemma": "주로",
+          "pos": "MAG"
+        },
+        {
+          "text": "사용",
+          "lemma": "사용",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "국",
+        "등",
+        "볶음",
+        "사용",
+        "요리",
+        "찌개",
+        "향"
+      ],
+      "domain": "fruit"
+    },
+    "answer": {
+      "text": "국, 찌개, 볶음 등 다양한 요리에 향을 더해줘.",
+      "tokens": [
+        {
+          "text": "국",
+          "lemma": "국",
+          "pos": "NNG"
+        },
+        {
+          "text": "찌개",
+          "lemma": "찌개",
+          "pos": "NNP"
+        },
+        {
+          "text": "볶음",
+          "lemma": "볶음",
+          "pos": "NNP"
+        },
+        {
+          "text": "등",
+          "lemma": "등",
+          "pos": "NNB"
+        },
+        {
+          "text": "다양",
+          "lemma": "다양",
+          "pos": "XR"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSA"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "요리",
+          "lemma": "요리",
+          "pos": "NNG"
+        },
+        {
+          "text": "에",
+          "lemma": "에",
+          "pos": "JKB"
+        },
+        {
+          "text": "향",
+          "lemma": "향",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "더하",
+          "lemma": "더하",
+          "pos": "VV"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EC"
+        },
+        {
+          "text": "주",
+          "lemma": "주",
+          "pos": "VX"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "국",
+      "등",
+      "볶음",
+      "사용",
+      "요리",
+      "찌개",
+      "향"
+    ],
+    "domain": "fruit"
+  },
+  {
+    "question": {
+      "text": "오렌지와 귤의 차이는 뭐야?",
+      "tokens": [
+        {
+          "text": "오렌지",
+          "lemma": "오렌지",
+          "pos": "NNP"
+        },
+        {
+          "text": "와",
+          "lemma": "와",
+          "pos": "JC"
+        },
+        {
+          "text": "귤",
+          "lemma": "귤",
+          "pos": "NNG"
+        },
+        {
+          "text": "의",
+          "lemma": "의",
+          "pos": "JKG"
+        },
+        {
+          "text": "차이",
+          "lemma": "차이",
+          "pos": "NNG"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "JX"
+        },
+        {
+          "text": "뭐",
+          "lemma": "뭐",
+          "pos": "NP"
+        },
+        {
+          "text": "야",
+          "lemma": "야",
+          "pos": "JKV"
+        }
+      ],
+      "concepts": [
+        "귤",
+        "껍질",
+        "오렌지",
+        "차이"
+      ],
+      "domain": "fruit"
+    },
+    "answer": {
+      "text": "오렌지는 크고 단단하며, 귤은 작고 껍질이 잘 벗겨져.",
+      "tokens": [
+        {
+          "text": "오렌지",
+          "lemma": "오렌지",
+          "pos": "NNP"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "JX"
+        },
+        {
+          "text": "크",
+          "lemma": "크",
+          "pos": "VA"
+        },
+        {
+          "text": "고",
+          "lemma": "고",
+          "pos": "EC"
+        },
+        {
+          "text": "단단",
+          "lemma": "단단",
+          "pos": "XR"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSA"
+        },
+        {
+          "text": "며",
+          "lemma": "며",
+          "pos": "EC"
+        },
+        {
+          "text": "귤",
+          "lemma": "귤",
+          "pos": "NNG"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "JX"
+        },
+        {
+          "text": "작",
+          "lemma": "작",
+          "pos": "VA"
+        },
+        {
+          "text": "고",
+          "lemma": "고",
+          "pos": "EC"
+        },
+        {
+          "text": "껍질",
+          "lemma": "껍질",
+          "pos": "NNP"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "JKS"
+        },
+        {
+          "text": "잘",
+          "lemma": "잘",
+          "pos": "MAG"
+        },
+        {
+          "text": "벗겨지",
+          "lemma": "벗겨지",
+          "pos": "VV"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "귤",
+      "껍질",
+      "오렌지",
+      "차이"
+    ],
+    "domain": "fruit"
+  },
+  {
+    "question": {
+      "text": "부추를 먹으면 좋은 점이 있어?",
+      "tokens": [
+        {
+          "text": "부추",
+          "lemma": "부추",
+          "pos": "NNP"
+        },
+        {
+          "text": "를",
+          "lemma": "를",
+          "pos": "JKO"
+        },
+        {
+          "text": "먹",
+          "lemma": "먹",
+          "pos": "VV"
+        },
+        {
+          "text": "으면",
+          "lemma": "으면",
+          "pos": "EC"
+        },
+        {
+          "text": "좋",
+          "lemma": "좋",
+          "pos": "VA"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "ETM"
+        },
+        {
+          "text": "점",
+          "lemma": "점",
+          "pos": "NNB"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "JKS"
+        },
+        {
+          "text": "있",
+          "lemma": "있",
+          "pos": "VX"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "건강",
+        "부추",
+        "위장",
+        "점",
+        "피로",
+        "회복"
+      ],
+      "domain": "fruit"
+    },
+    "answer": {
+      "text": "부추는 위장 건강과 피로 회복에 좋아.",
+      "tokens": [
+        {
+          "text": "부추",
+          "lemma": "부추",
+          "pos": "NNP"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "JX"
+        },
+        {
+          "text": "위장",
+          "lemma": "위장",
+          "pos": "NNP"
+        },
+        {
+          "text": "건강",
+          "lemma": "건강",
+          "pos": "NNG"
+        },
+        {
+          "text": "과",
+          "lemma": "과",
+          "pos": "JC"
+        },
+        {
+          "text": "피로",
+          "lemma": "피로",
+          "pos": "NNP"
+        },
+        {
+          "text": "회복",
+          "lemma": "회복",
+          "pos": "NNG"
+        },
+        {
+          "text": "에",
+          "lemma": "에",
+          "pos": "JKB"
+        },
+        {
+          "text": "좋",
+          "lemma": "좋",
+          "pos": "VA"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "건강",
+      "부추",
+      "위장",
+      "점",
+      "피로",
+      "회복"
+    ],
+    "domain": "fruit"
+  },
+  {
+    "question": {
+      "text": "콩나물과 숙주나물의 차이는?",
+      "tokens": [
+        {
+          "text": "콩나물",
+          "lemma": "콩나물",
+          "pos": "NNP"
+        },
+        {
+          "text": "과",
+          "lemma": "과",
+          "pos": "JC"
+        },
+        {
+          "text": "숙주나물",
+          "lemma": "숙주나물",
+          "pos": "NNP"
+        },
+        {
+          "text": "의",
+          "lemma": "의",
+          "pos": "JKG"
+        },
+        {
+          "text": "차이",
+          "lemma": "차이",
+          "pos": "NNG"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "JX"
+        }
+      ],
+      "concepts": [
+        "녹두",
+        "숙주",
+        "숙주나물",
+        "차이",
+        "콩",
+        "콩나물"
+      ],
+      "domain": "fruit"
+    },
+    "answer": {
+      "text": "콩나물은 콩에서, 숙주는 녹두에서 만들어져.",
+      "tokens": [
+        {
+          "text": "콩나물",
+          "lemma": "콩나물",
+          "pos": "NNP"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "JX"
+        },
+        {
+          "text": "콩",
+          "lemma": "콩",
+          "pos": "NNG"
+        },
+        {
+          "text": "에서",
+          "lemma": "에서",
+          "pos": "JKB"
+        },
+        {
+          "text": "숙주",
+          "lemma": "숙주",
+          "pos": "NNP"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "JX"
+        },
+        {
+          "text": "녹두",
+          "lemma": "녹두",
+          "pos": "NNP"
+        },
+        {
+          "text": "에서",
+          "lemma": "에서",
+          "pos": "JKB"
+        },
+        {
+          "text": "만들",
+          "lemma": "만들",
+          "pos": "VV"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EC"
+        },
+        {
+          "text": "지",
+          "lemma": "지",
+          "pos": "VX"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "녹두",
+      "숙주",
+      "숙주나물",
+      "차이",
+      "콩",
+      "콩나물"
+    ],
+    "domain": "fruit"
+  },
+  {
+    "question": {
+      "text": "감귤류 과일은 뭐가 있을까?",
+      "tokens": [
+        {
+          "text": "감귤",
+          "lemma": "감귤",
+          "pos": "NNG"
+        },
+        {
+          "text": "류",
+          "lemma": "류",
+          "pos": "XSN"
+        },
+        {
+          "text": "과일",
+          "lemma": "과일",
+          "pos": "NNP"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "JX"
+        },
+        {
+          "text": "뭐",
+          "lemma": "뭐",
+          "pos": "NP"
+        },
+        {
+          "text": "가",
+          "lemma": "가",
+          "pos": "JKS"
+        },
+        {
+          "text": "있",
+          "lemma": "있",
+          "pos": "VX"
+        },
+        {
+          "text": "을까",
+          "lemma": "을까",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "감귤",
+        "과일",
+        "귤",
+        "등",
+        "레몬",
+        "오렌지",
+        "자몽"
+      ],
+      "domain": "fruit"
+    },
+    "answer": {
+      "text": "귤, 오렌지, 레몬, 자몽 등이 있어.",
+      "tokens": [
+        {
+          "text": "귤",
+          "lemma": "귤",
+          "pos": "NNG"
+        },
+        {
+          "text": "오렌지",
+          "lemma": "오렌지",
+          "pos": "NNP"
+        },
+        {
+          "text": "레몬",
+          "lemma": "레몬",
+          "pos": "NNP"
+        },
+        {
+          "text": "자몽",
+          "lemma": "자몽",
+          "pos": "NNG"
+        },
+        {
+          "text": "등",
+          "lemma": "등",
+          "pos": "NNB"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "JKS"
+        },
+        {
+          "text": "있",
+          "lemma": "있",
+          "pos": "VX"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "감귤",
+      "과일",
+      "귤",
+      "등",
+      "레몬",
+      "오렌지",
+      "자몽"
+    ],
+    "domain": "fruit"
+  },
+  {
+    "question": {
+      "text": "브로콜리와 콜리플라워 차이점은?",
+      "tokens": [
+        {
+          "text": "브로콜리",
+          "lemma": "브로콜리",
+          "pos": "NNP"
+        },
+        {
+          "text": "와",
+          "lemma": "와",
+          "pos": "JC"
+        },
+        {
+          "text": "콜리플라워",
+          "lemma": "콜리플라워",
+          "pos": "NNP"
+        },
+        {
+          "text": "차이점",
+          "lemma": "차이점",
+          "pos": "NNG"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "JX"
+        }
+      ],
+      "concepts": [
+        "맛",
+        "브로콜리",
+        "차이점",
+        "초록색",
+        "콜리플라워",
+        "하얀색"
+      ],
+      "domain": "fruit"
+    },
+    "answer": {
+      "text": "브로콜리는 초록색, 콜리플라워는 하얀색이며, 맛도 달라.",
+      "tokens": [
+        {
+          "text": "브로콜리",
+          "lemma": "브로콜리",
+          "pos": "NNP"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "JX"
+        },
+        {
+          "text": "초록색",
+          "lemma": "초록색",
+          "pos": "NNG"
+        },
+        {
+          "text": "콜리플라워",
+          "lemma": "콜리플라워",
+          "pos": "NNP"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "JX"
+        },
+        {
+          "text": "하얀색",
+          "lemma": "하얀색",
+          "pos": "NNG"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "VCP"
+        },
+        {
+          "text": "며",
+          "lemma": "며",
+          "pos": "EC"
+        },
+        {
+          "text": "맛",
+          "lemma": "맛",
+          "pos": "NNG"
+        },
+        {
+          "text": "도",
+          "lemma": "도",
+          "pos": "JX"
+        },
+        {
+          "text": "다르",
+          "lemma": "다르",
+          "pos": "VA"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "맛",
+      "브로콜리",
+      "차이점",
+      "초록색",
+      "콜리플라워",
+      "하얀색"
+    ],
+    "domain": "fruit"
+  },
+  {
+    "question": {
+      "text": "호박 종류에는 뭐가 있을까?",
+      "tokens": [
+        {
+          "text": "호박",
+          "lemma": "호박",
+          "pos": "NNP"
+        },
+        {
+          "text": "종류",
+          "lemma": "종류",
+          "pos": "NNG"
+        },
+        {
+          "text": "에",
+          "lemma": "에",
+          "pos": "JKB"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "JX"
+        },
+        {
+          "text": "뭐",
+          "lemma": "뭐",
+          "pos": "NP"
+        },
+        {
+          "text": "가",
+          "lemma": "가",
+          "pos": "JKS"
+        },
+        {
+          "text": "있",
+          "lemma": "있",
+          "pos": "VX"
+        },
+        {
+          "text": "을까",
+          "lemma": "을까",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "등",
+        "애",
+        "종류",
+        "호박"
+      ],
+      "domain": "fruit"
+    },
+    "answer": {
+      "text": "단호박, 애호박, 늙은호박 등 여러 종류가 있어.",
+      "tokens": [
+        {
+          "text": "단",
+          "lemma": "단",
+          "pos": "MM"
+        },
+        {
+          "text": "호박",
+          "lemma": "호박",
+          "pos": "NNP"
+        },
+        {
+          "text": "애",
+          "lemma": "애",
+          "pos": "NNG"
+        },
+        {
+          "text": "호박",
+          "lemma": "호박",
+          "pos": "NNP"
+        },
+        {
+          "text": "늙",
+          "lemma": "늙",
+          "pos": "VV"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "ETM"
+        },
+        {
+          "text": "호박",
+          "lemma": "호박",
+          "pos": "NNP"
+        },
+        {
+          "text": "등",
+          "lemma": "등",
+          "pos": "NNB"
+        },
+        {
+          "text": "여러",
+          "lemma": "여러",
+          "pos": "MM"
+        },
+        {
+          "text": "종류",
+          "lemma": "종류",
+          "pos": "NNG"
+        },
+        {
+          "text": "가",
+          "lemma": "가",
+          "pos": "JKS"
+        },
+        {
+          "text": "있",
+          "lemma": "있",
+          "pos": "VX"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "등",
+      "애",
+      "종류",
+      "호박"
+    ],
+    "domain": "fruit"
+  },
+  {
+    "question": {
+      "text": "무화과는 어떻게 먹는 게 좋아?",
+      "tokens": [
+        {
+          "text": "무화과",
+          "lemma": "무화과",
+          "pos": "NNG"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "JX"
+        },
+        {
+          "text": "어떻",
+          "lemma": "어떻",
+          "pos": "VA"
+        },
+        {
+          "text": "게",
+          "lemma": "게",
+          "pos": "EC"
+        },
+        {
+          "text": "먹",
+          "lemma": "먹",
+          "pos": "VV"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "ETM"
+        },
+        {
+          "text": "게",
+          "lemma": "게",
+          "pos": "NNG"
+        },
+        {
+          "text": "좋",
+          "lemma": "좋",
+          "pos": "VA"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "게",
+        "껍질",
+        "무화과"
+      ],
+      "domain": "fruit"
+    },
+    "answer": {
+      "text": "껍질째 먹거나, 껍질을 살짝 벗겨서 먹으면 돼.",
+      "tokens": [
+        {
+          "text": "껍질",
+          "lemma": "껍질",
+          "pos": "NNG"
+        },
+        {
+          "text": "째",
+          "lemma": "째",
+          "pos": "XSN"
+        },
+        {
+          "text": "먹",
+          "lemma": "먹",
+          "pos": "VV"
+        },
+        {
+          "text": "거나",
+          "lemma": "거나",
+          "pos": "EC"
+        },
+        {
+          "text": "껍질",
+          "lemma": "껍질",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "살짝",
+          "lemma": "살짝",
+          "pos": "MAG"
+        },
+        {
+          "text": "벗기",
+          "lemma": "벗기",
+          "pos": "VV"
+        },
+        {
+          "text": "어서",
+          "lemma": "어서",
+          "pos": "EC"
+        },
+        {
+          "text": "먹",
+          "lemma": "먹",
+          "pos": "VV"
+        },
+        {
+          "text": "으면",
+          "lemma": "으면",
+          "pos": "EC"
+        },
+        {
+          "text": "되",
+          "lemma": "되",
+          "pos": "VV"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "게",
+      "껍질",
+      "무화과"
+    ],
+    "domain": "fruit"
+  },
+  {
+    "question": {
+      "text": "양상추와 로메인 차이점은?",
+      "tokens": [
+        {
+          "text": "양",
+          "lemma": "양",
+          "pos": "MM"
+        },
+        {
+          "text": "상추",
+          "lemma": "상추",
+          "pos": "NNP"
+        },
+        {
+          "text": "와",
+          "lemma": "와",
+          "pos": "JC"
+        },
+        {
+          "text": "로메",
+          "lemma": "로메",
+          "pos": "NNP"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "VCP"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "차이점",
+          "lemma": "차이점",
+          "pos": "NNG"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "JX"
+        }
+      ],
+      "concepts": [
+        "로메",
+        "맛",
+        "상추",
+        "아삭",
+        "인",
+        "진한",
+        "차이점"
+      ],
+      "domain": "fruit"
+    },
+    "answer": {
+      "text": "양상추는 둥글고 아삭, 로메인은 길쭉하고 진한 맛이야.",
+      "tokens": [
+        {
+          "text": "양",
+          "lemma": "양",
+          "pos": "MM"
+        },
+        {
+          "text": "상추",
+          "lemma": "상추",
+          "pos": "NNP"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "JX"
+        },
+        {
+          "text": "둥글",
+          "lemma": "둥글",
+          "pos": "VA"
+        },
+        {
+          "text": "고",
+          "lemma": "고",
+          "pos": "EC"
+        },
+        {
+          "text": "아삭",
+          "lemma": "아삭",
+          "pos": "NNP"
+        },
+        {
+          "text": "로메",
+          "lemma": "로메",
+          "pos": "NNP"
+        },
+        {
+          "text": "인",
+          "lemma": "인",
+          "pos": "NNG"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "JX"
+        },
+        {
+          "text": "길쭉",
+          "lemma": "길쭉",
+          "pos": "XR"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSA"
+        },
+        {
+          "text": "고",
+          "lemma": "고",
+          "pos": "EC"
+        },
+        {
+          "text": "진한",
+          "lemma": "진한",
+          "pos": "NNP"
+        },
+        {
+          "text": "맛",
+          "lemma": "맛",
+          "pos": "NNG"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "VCP"
+        },
+        {
+          "text": "야",
+          "lemma": "야",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "로메",
+      "맛",
+      "상추",
+      "아삭",
+      "인",
+      "진한",
+      "차이점"
+    ],
+    "domain": "fruit"
+  },
+  {
+    "question": {
+      "text": "마늘을 구워 먹으면 어떤 점이 좋아?",
+      "tokens": [
+        {
+          "text": "마늘",
+          "lemma": "마늘",
+          "pos": "NNP"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "굽",
+          "lemma": "굽",
+          "pos": "VV"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EC"
+        },
+        {
+          "text": "먹",
+          "lemma": "먹",
+          "pos": "VV"
+        },
+        {
+          "text": "으면",
+          "lemma": "으면",
+          "pos": "EC"
+        },
+        {
+          "text": "어떤",
+          "lemma": "어떤",
+          "pos": "MM"
+        },
+        {
+          "text": "점",
+          "lemma": "점",
+          "pos": "NNB"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "JKS"
+        },
+        {
+          "text": "좋",
+          "lemma": "좋",
+          "pos": "VA"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "단맛",
+        "마늘",
+        "부담",
+        "소화",
+        "점"
+      ],
+      "domain": "fruit"
+    },
+    "answer": {
+      "text": "구우면 단맛이 나고 소화에 더 부담이 적어.",
+      "tokens": [
+        {
+          "text": "굽",
+          "lemma": "굽",
+          "pos": "VV"
+        },
+        {
+          "text": "면",
+          "lemma": "면",
+          "pos": "EC"
+        },
+        {
+          "text": "단맛",
+          "lemma": "단맛",
+          "pos": "NNP"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "JKS"
+        },
+        {
+          "text": "나",
+          "lemma": "나",
+          "pos": "VV"
+        },
+        {
+          "text": "고",
+          "lemma": "고",
+          "pos": "EC"
+        },
+        {
+          "text": "소화",
+          "lemma": "소화",
+          "pos": "NNP"
+        },
+        {
+          "text": "에",
+          "lemma": "에",
+          "pos": "JKB"
+        },
+        {
+          "text": "더",
+          "lemma": "더",
+          "pos": "MAG"
+        },
+        {
+          "text": "부담",
+          "lemma": "부담",
+          "pos": "NNG"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "JKS"
+        },
+        {
+          "text": "적",
+          "lemma": "적",
+          "pos": "VA"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "단맛",
+      "마늘",
+      "부담",
+      "소화",
+      "점"
+    ],
+    "domain": "fruit"
+  },
+  {
+    "question": {
+      "text": "청포도와 적포도 맛 차이가 있어?",
+      "tokens": [
+        {
+          "text": "청포도",
+          "lemma": "청포도",
+          "pos": "NNP"
+        },
+        {
+          "text": "와",
+          "lemma": "와",
+          "pos": "JC"
+        },
+        {
+          "text": "적",
+          "lemma": "적",
+          "pos": "NNB"
+        },
+        {
+          "text": "포도",
+          "lemma": "포도",
+          "pos": "NNP"
+        },
+        {
+          "text": "맛",
+          "lemma": "맛",
+          "pos": "NNG"
+        },
+        {
+          "text": "차이",
+          "lemma": "차이",
+          "pos": "NNG"
+        },
+        {
+          "text": "가",
+          "lemma": "가",
+          "pos": "JKS"
+        },
+        {
+          "text": "있",
+          "lemma": "있",
+          "pos": "VX"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "당도",
+        "맛",
+        "적",
+        "차이",
+        "청포도",
+        "포도"
+      ],
+      "domain": "fruit"
+    },
+    "answer": {
+      "text": "청포도는 더 산뜻하고, 적포도는 당도가 높아.",
+      "tokens": [
+        {
+          "text": "청포도",
+          "lemma": "청포도",
+          "pos": "NNP"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "JX"
+        },
+        {
+          "text": "더",
+          "lemma": "더",
+          "pos": "MAG"
+        },
+        {
+          "text": "산뜻",
+          "lemma": "산뜻",
+          "pos": "XR"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSA"
+        },
+        {
+          "text": "고",
+          "lemma": "고",
+          "pos": "EC"
+        },
+        {
+          "text": "적",
+          "lemma": "적",
+          "pos": "NNB"
+        },
+        {
+          "text": "포도",
+          "lemma": "포도",
+          "pos": "NNP"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "JX"
+        },
+        {
+          "text": "당도",
+          "lemma": "당도",
+          "pos": "NNG"
+        },
+        {
+          "text": "가",
+          "lemma": "가",
+          "pos": "JKS"
+        },
+        {
+          "text": "높",
+          "lemma": "높",
+          "pos": "VA"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "당도",
+      "맛",
+      "적",
+      "차이",
+      "청포도",
+      "포도"
+    ],
+    "domain": "fruit"
+  },
+  {
+    "question": {
+      "text": "파슬리를 요리에 왜 쓰는 거야?",
+      "tokens": [
+        {
+          "text": "파슬리",
+          "lemma": "파슬리",
+          "pos": "NNP"
+        },
+        {
+          "text": "를",
+          "lemma": "를",
+          "pos": "JKO"
+        },
+        {
+          "text": "요리",
+          "lemma": "요리",
+          "pos": "NNG"
+        },
+        {
+          "text": "에",
+          "lemma": "에",
+          "pos": "JKB"
+        },
+        {
+          "text": "왜",
+          "lemma": "왜",
+          "pos": "MAG"
+        },
+        {
+          "text": "쓰",
+          "lemma": "쓰",
+          "pos": "VV"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "ETM"
+        },
+        {
+          "text": "거",
+          "lemma": "거",
+          "pos": "NNB"
+        },
+        {
+          "text": "야",
+          "lemma": "야",
+          "pos": "JKV"
+        }
+      ],
+      "concepts": [
+        "거",
+        "건강",
+        "비타민",
+        "요리",
+        "파슬리",
+        "향"
+      ],
+      "domain": "fruit"
+    },
+    "answer": {
+      "text": "향을 더하고, 비타민도 풍부해 건강에 좋아.",
+      "tokens": [
+        {
+          "text": "향",
+          "lemma": "향",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "더하",
+          "lemma": "더하",
+          "pos": "VV"
+        },
+        {
+          "text": "고",
+          "lemma": "고",
+          "pos": "EC"
+        },
+        {
+          "text": "비타민",
+          "lemma": "비타민",
+          "pos": "NNP"
+        },
+        {
+          "text": "도",
+          "lemma": "도",
+          "pos": "JX"
+        },
+        {
+          "text": "풍부",
+          "lemma": "풍부",
+          "pos": "XR"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSA"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EC"
+        },
+        {
+          "text": "건강",
+          "lemma": "건강",
+          "pos": "NNG"
+        },
+        {
+          "text": "에",
+          "lemma": "에",
+          "pos": "JKB"
+        },
+        {
+          "text": "좋",
+          "lemma": "좋",
+          "pos": "VA"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "거",
+      "건강",
+      "비타민",
+      "요리",
+      "파슬리",
+      "향"
+    ],
+    "domain": "fruit"
+  },
+  {
+    "question": {
+      "text": "아보카도는 과일이야, 야채야?",
+      "tokens": [
+        {
+          "text": "아보카도",
+          "lemma": "아보카도",
+          "pos": "NNP"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "JX"
+        },
+        {
+          "text": "과일",
+          "lemma": "과일",
+          "pos": "NNP"
+        },
+        {
+          "text": "이야",
+          "lemma": "이야",
+          "pos": "JKV"
+        },
+        {
+          "text": "야채",
+          "lemma": "야채",
+          "pos": "NNG"
+        },
+        {
+          "text": "야",
+          "lemma": "야",
+          "pos": "JKV"
+        }
+      ],
+      "concepts": [
+        "과일",
+        "식물학",
+        "아보카도",
+        "야채",
+        "요리"
+      ],
+      "domain": "fruit"
+    },
+    "answer": {
+      "text": "식물학적으로는 과일이지만, 요리에서는 야채처럼 쓰여.",
+      "tokens": [
+        {
+          "text": "식물학",
+          "lemma": "식물학",
+          "pos": "NNP"
+        },
+        {
+          "text": "적",
+          "lemma": "적",
+          "pos": "XSN"
+        },
+        {
+          "text": "으로",
+          "lemma": "으로",
+          "pos": "JKB"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "JX"
+        },
+        {
+          "text": "과일",
+          "lemma": "과일",
+          "pos": "NNG"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "VCP"
+        },
+        {
+          "text": "지만",
+          "lemma": "지만",
+          "pos": "EC"
+        },
+        {
+          "text": "요리",
+          "lemma": "요리",
+          "pos": "NNG"
+        },
+        {
+          "text": "에서",
+          "lemma": "에서",
+          "pos": "JKB"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "JX"
+        },
+        {
+          "text": "야채",
+          "lemma": "야채",
+          "pos": "NNG"
+        },
+        {
+          "text": "처럼",
+          "lemma": "처럼",
+          "pos": "JKB"
+        },
+        {
+          "text": "쓰이",
+          "lemma": "쓰이",
+          "pos": "VV"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "과일",
+      "식물학",
+      "아보카도",
+      "야채",
+      "요리"
+    ],
+    "domain": "fruit"
+  },
+  {
+    "question": {
+      "text": "오크라를 요리하는 팁이 있을까?",
+      "tokens": [
+        {
+          "text": "오크라",
+          "lemma": "오크라",
+          "pos": "NNP"
+        },
+        {
+          "text": "를",
+          "lemma": "를",
+          "pos": "JKO"
+        },
+        {
+          "text": "요리",
+          "lemma": "요리",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "ETM"
+        },
+        {
+          "text": "팁",
+          "lemma": "팁",
+          "pos": "NNG"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "JKS"
+        },
+        {
+          "text": "있",
+          "lemma": "있",
+          "pos": "VX"
+        },
+        {
+          "text": "을까",
+          "lemma": "을까",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "아삭",
+        "오크라",
+        "요리",
+        "유지",
+        "점액질",
+        "팁",
+        "함"
+      ],
+      "domain": "fruit"
+    },
+    "answer": {
+      "text": "짧게 데치면 점액질이 덜 생기고 아삭함을 유지해.",
+      "tokens": [
+        {
+          "text": "짧",
+          "lemma": "짧",
+          "pos": "VA"
+        },
+        {
+          "text": "게",
+          "lemma": "게",
+          "pos": "EC"
+        },
+        {
+          "text": "데치",
+          "lemma": "데치",
+          "pos": "VV"
+        },
+        {
+          "text": "면",
+          "lemma": "면",
+          "pos": "EC"
+        },
+        {
+          "text": "점액질",
+          "lemma": "점액질",
+          "pos": "NNG"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "JKS"
+        },
+        {
+          "text": "덜",
+          "lemma": "덜",
+          "pos": "MAG"
+        },
+        {
+          "text": "생기",
+          "lemma": "생기",
+          "pos": "VV"
+        },
+        {
+          "text": "고",
+          "lemma": "고",
+          "pos": "EC"
+        },
+        {
+          "text": "아삭",
+          "lemma": "아삭",
+          "pos": "NNP"
+        },
+        {
+          "text": "함",
+          "lemma": "함",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "유지",
+          "lemma": "유지",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "아삭",
+      "오크라",
+      "요리",
+      "유지",
+      "점액질",
+      "팁",
+      "함"
+    ],
+    "domain": "fruit"
+  },
+  {
+    "question": {
+      "text": "피망과 파프리카는 뭐가 달라?",
+      "tokens": [
+        {
+          "text": "피망",
+          "lemma": "피망",
+          "pos": "NNP"
+        },
+        {
+          "text": "과",
+          "lemma": "과",
+          "pos": "JC"
+        },
+        {
+          "text": "파프리카",
+          "lemma": "파프리카",
+          "pos": "NNP"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "JX"
+        },
+        {
+          "text": "뭐",
+          "lemma": "뭐",
+          "pos": "NP"
+        },
+        {
+          "text": "가",
+          "lemma": "가",
+          "pos": "JKS"
+        },
+        {
+          "text": "다르",
+          "lemma": "다르",
+          "pos": "VA"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "매운맛",
+        "파프리카",
+        "피망"
+      ],
+      "domain": "fruit"
+    },
+    "answer": {
+      "text": "피망은 작고 매운맛이 있고, 파프리카는 크고 달콤해.",
+      "tokens": [
+        {
+          "text": "피망",
+          "lemma": "피망",
+          "pos": "NNP"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "JX"
+        },
+        {
+          "text": "작",
+          "lemma": "작",
+          "pos": "VA"
+        },
+        {
+          "text": "고",
+          "lemma": "고",
+          "pos": "EC"
+        },
+        {
+          "text": "매운맛",
+          "lemma": "매운맛",
+          "pos": "NNP"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "JKS"
+        },
+        {
+          "text": "있",
+          "lemma": "있",
+          "pos": "VV"
+        },
+        {
+          "text": "고",
+          "lemma": "고",
+          "pos": "EC"
+        },
+        {
+          "text": "파프리카",
+          "lemma": "파프리카",
+          "pos": "NNP"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "JX"
+        },
+        {
+          "text": "크",
+          "lemma": "크",
+          "pos": "VA"
+        },
+        {
+          "text": "고",
+          "lemma": "고",
+          "pos": "EC"
+        },
+        {
+          "text": "달콤",
+          "lemma": "달콤",
+          "pos": "XR"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSA"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "매운맛",
+      "파프리카",
+      "피망"
+    ],
+    "domain": "fruit"
+  },
+  {
+    "question": {
+      "text": "바질은 어떤 요리에 어울려?",
+      "tokens": [
+        {
+          "text": "바질",
+          "lemma": "바질",
+          "pos": "NNP"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "JX"
+        },
+        {
+          "text": "어떤",
+          "lemma": "어떤",
+          "pos": "MM"
+        },
+        {
+          "text": "요리",
+          "lemma": "요리",
+          "pos": "NNG"
+        },
+        {
+          "text": "에",
+          "lemma": "에",
+          "pos": "JKB"
+        },
+        {
+          "text": "어울리",
+          "lemma": "어울리",
+          "pos": "VV"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "바질",
+        "샐러드",
+        "요리",
+        "파스타",
+        "피자",
+        "향"
+      ],
+      "domain": "fruit"
+    },
+    "answer": {
+      "text": "파스타, 샐러드, 피자에 넣으면 향이 좋아져.",
+      "tokens": [
+        {
+          "text": "파스타",
+          "lemma": "파스타",
+          "pos": "NNP"
+        },
+        {
+          "text": "샐러드",
+          "lemma": "샐러드",
+          "pos": "NNP"
+        },
+        {
+          "text": "피자",
+          "lemma": "피자",
+          "pos": "NNP"
+        },
+        {
+          "text": "에",
+          "lemma": "에",
+          "pos": "JKB"
+        },
+        {
+          "text": "넣",
+          "lemma": "넣",
+          "pos": "VV"
+        },
+        {
+          "text": "으면",
+          "lemma": "으면",
+          "pos": "EC"
+        },
+        {
+          "text": "향",
+          "lemma": "향",
+          "pos": "NNG"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "JKS"
+        },
+        {
+          "text": "좋",
+          "lemma": "좋",
+          "pos": "VA"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EC"
+        },
+        {
+          "text": "지",
+          "lemma": "지",
+          "pos": "VX"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "바질",
+      "샐러드",
+      "요리",
+      "파스타",
+      "피자",
+      "향"
+    ],
+    "domain": "fruit"
+  },
+  {
+    "question": {
+      "text": "무와 당근을 같이 먹어도 될까?",
+      "tokens": [
+        {
+          "text": "무",
+          "lemma": "무",
+          "pos": "NNG"
+        },
+        {
+          "text": "와",
+          "lemma": "와",
+          "pos": "JC"
+        },
+        {
+          "text": "당근",
+          "lemma": "당근",
+          "pos": "NNP"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "같이",
+          "lemma": "같이",
+          "pos": "MAG"
+        },
+        {
+          "text": "먹",
+          "lemma": "먹",
+          "pos": "VV"
+        },
+        {
+          "text": "어도",
+          "lemma": "어도",
+          "pos": "EC"
+        },
+        {
+          "text": "되",
+          "lemma": "되",
+          "pos": "VV"
+        },
+        {
+          "text": "ㄹ까",
+          "lemma": "ㄹ까",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "당근",
+        "무",
+        "문제",
+        "영양",
+        "요리"
+      ],
+      "domain": "fruit"
+    },
+    "answer": {
+      "text": "함께 먹어도 영양상 문제는 없어. 다양한 요리에 함께 써.",
+      "tokens": [
+        {
+          "text": "함께",
+          "lemma": "함께",
+          "pos": "MAG"
+        },
+        {
+          "text": "먹",
+          "lemma": "먹",
+          "pos": "VV"
+        },
+        {
+          "text": "어도",
+          "lemma": "어도",
+          "pos": "EC"
+        },
+        {
+          "text": "영양",
+          "lemma": "영양",
+          "pos": "NNG"
+        },
+        {
+          "text": "상",
+          "lemma": "상",
+          "pos": "XSN"
+        },
+        {
+          "text": "문제",
+          "lemma": "문제",
+          "pos": "NNG"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "JX"
+        },
+        {
+          "text": "없",
+          "lemma": "없",
+          "pos": "VA"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        },
+        {
+          "text": "다양",
+          "lemma": "다양",
+          "pos": "XR"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSA"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "요리",
+          "lemma": "요리",
+          "pos": "NNG"
+        },
+        {
+          "text": "에",
+          "lemma": "에",
+          "pos": "JKB"
+        },
+        {
+          "text": "함께",
+          "lemma": "함께",
+          "pos": "MAG"
+        },
+        {
+          "text": "쓰",
+          "lemma": "쓰",
+          "pos": "VV"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "당근",
+      "무",
+      "문제",
+      "영양",
+      "요리"
+    ],
+    "domain": "fruit"
+  }
+]

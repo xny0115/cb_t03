@@ -1,0 +1,9210 @@
+[
+  {
+    "question": {
+      "text": "고등학생 때 가장 중요하다고 생각했던 건 뭐야?",
+      "tokens": [
+        {
+          "text": "고등학생",
+          "lemma": "고등학생",
+          "pos": "NNG"
+        },
+        {
+          "text": "때",
+          "lemma": "때",
+          "pos": "NNG"
+        },
+        {
+          "text": "가장",
+          "lemma": "가장",
+          "pos": "MAG"
+        },
+        {
+          "text": "중요",
+          "lemma": "중요",
+          "pos": "XR"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSA"
+        },
+        {
+          "text": "다고",
+          "lemma": "다고",
+          "pos": "EC"
+        },
+        {
+          "text": "생각",
+          "lemma": "생각",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "았",
+          "lemma": "았",
+          "pos": "EP"
+        },
+        {
+          "text": "던",
+          "lemma": "던",
+          "pos": "ETM"
+        },
+        {
+          "text": "건",
+          "lemma": "건",
+          "pos": "NNB"
+        },
+        {
+          "text": "뭐",
+          "lemma": "뭐",
+          "pos": "NP"
+        },
+        {
+          "text": "야",
+          "lemma": "야",
+          "pos": "JKV"
+        }
+      ],
+      "concepts": [
+        "건",
+        "고등학생",
+        "관계",
+        "대입",
+        "때",
+        "생각",
+        "준비",
+        "친구"
+      ],
+      "domain": "highschool"
+    },
+    "answer": {
+      "text": "아무래도 대입 준비랑 친구 관계가 가장 중요하다고 생각했어.",
+      "tokens": [
+        {
+          "text": "아무래도",
+          "lemma": "아무래도",
+          "pos": "MAG"
+        },
+        {
+          "text": "대입",
+          "lemma": "대입",
+          "pos": "NNG"
+        },
+        {
+          "text": "준비",
+          "lemma": "준비",
+          "pos": "NNG"
+        },
+        {
+          "text": "랑",
+          "lemma": "랑",
+          "pos": "JKB"
+        },
+        {
+          "text": "친구",
+          "lemma": "친구",
+          "pos": "NNG"
+        },
+        {
+          "text": "관계",
+          "lemma": "관계",
+          "pos": "NNG"
+        },
+        {
+          "text": "가",
+          "lemma": "가",
+          "pos": "JKS"
+        },
+        {
+          "text": "가장",
+          "lemma": "가장",
+          "pos": "MAG"
+        },
+        {
+          "text": "중요",
+          "lemma": "중요",
+          "pos": "XR"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSA"
+        },
+        {
+          "text": "다고",
+          "lemma": "다고",
+          "pos": "EC"
+        },
+        {
+          "text": "생각",
+          "lemma": "생각",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "았",
+          "lemma": "았",
+          "pos": "EP"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "건",
+      "고등학생",
+      "관계",
+      "대입",
+      "때",
+      "생각",
+      "준비",
+      "친구"
+    ],
+    "domain": "highschool"
+  },
+  {
+    "question": {
+      "text": "대학생 때 가장 중요하다고 생각했던 건 뭐야?",
+      "tokens": [
+        {
+          "text": "대학생",
+          "lemma": "대학생",
+          "pos": "NNG"
+        },
+        {
+          "text": "때",
+          "lemma": "때",
+          "pos": "NNG"
+        },
+        {
+          "text": "가장",
+          "lemma": "가장",
+          "pos": "MAG"
+        },
+        {
+          "text": "중요",
+          "lemma": "중요",
+          "pos": "XR"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSA"
+        },
+        {
+          "text": "다고",
+          "lemma": "다고",
+          "pos": "EC"
+        },
+        {
+          "text": "생각",
+          "lemma": "생각",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "았",
+          "lemma": "았",
+          "pos": "EP"
+        },
+        {
+          "text": "던",
+          "lemma": "던",
+          "pos": "ETM"
+        },
+        {
+          "text": "건",
+          "lemma": "건",
+          "pos": "NNB"
+        },
+        {
+          "text": "뭐",
+          "lemma": "뭐",
+          "pos": "NP"
+        },
+        {
+          "text": "야",
+          "lemma": "야",
+          "pos": "JKV"
+        }
+      ],
+      "concepts": [
+        "건",
+        "것",
+        "경험",
+        "대학생",
+        "때",
+        "생각",
+        "진로",
+        "탐색"
+      ],
+      "domain": "highschool"
+    },
+    "answer": {
+      "text": "다양한 경험을 쌓는 거랑 진로 탐색이 중요하다고 생각했어.",
+      "tokens": [
+        {
+          "text": "다양",
+          "lemma": "다양",
+          "pos": "XR"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSA"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "경험",
+          "lemma": "경험",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "쌓",
+          "lemma": "쌓",
+          "pos": "VV"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "ETM"
+        },
+        {
+          "text": "것",
+          "lemma": "것",
+          "pos": "NNB"
+        },
+        {
+          "text": "랑",
+          "lemma": "랑",
+          "pos": "JKB"
+        },
+        {
+          "text": "진로",
+          "lemma": "진로",
+          "pos": "NNP"
+        },
+        {
+          "text": "탐색",
+          "lemma": "탐색",
+          "pos": "NNG"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "JKS"
+        },
+        {
+          "text": "중요",
+          "lemma": "중요",
+          "pos": "XR"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSA"
+        },
+        {
+          "text": "다고",
+          "lemma": "다고",
+          "pos": "EC"
+        },
+        {
+          "text": "생각",
+          "lemma": "생각",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "았",
+          "lemma": "았",
+          "pos": "EP"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "건",
+      "것",
+      "경험",
+      "대학생",
+      "때",
+      "생각",
+      "진로",
+      "탐색"
+    ],
+    "domain": "highschool"
+  },
+  {
+    "question": {
+      "text": "고등학생 때 어떤 과목을 제일 좋아했어?",
+      "tokens": [
+        {
+          "text": "고등학생",
+          "lemma": "고등학생",
+          "pos": "NNG"
+        },
+        {
+          "text": "때",
+          "lemma": "때",
+          "pos": "NNG"
+        },
+        {
+          "text": "어떤",
+          "lemma": "어떤",
+          "pos": "MM"
+        },
+        {
+          "text": "과목",
+          "lemma": "과목",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "제일",
+          "lemma": "제일",
+          "pos": "NNG"
+        },
+        {
+          "text": "좋아하",
+          "lemma": "좋아하",
+          "pos": "VV"
+        },
+        {
+          "text": "았",
+          "lemma": "았",
+          "pos": "EP"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "고등학생",
+        "과목",
+        "때",
+        "문학",
+        "역사",
+        "이야기",
+        "제일"
+      ],
+      "domain": "highschool"
+    },
+    "answer": {
+      "text": "나는 문학이나 역사처럼 이야기 있는 과목을 좋아했어.",
+      "tokens": [
+        {
+          "text": "나",
+          "lemma": "나",
+          "pos": "NP"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "JX"
+        },
+        {
+          "text": "문학",
+          "lemma": "문학",
+          "pos": "NNG"
+        },
+        {
+          "text": "이나",
+          "lemma": "이나",
+          "pos": "JC"
+        },
+        {
+          "text": "역사",
+          "lemma": "역사",
+          "pos": "NNG"
+        },
+        {
+          "text": "처럼",
+          "lemma": "처럼",
+          "pos": "JKB"
+        },
+        {
+          "text": "이야기",
+          "lemma": "이야기",
+          "pos": "NNG"
+        },
+        {
+          "text": "있",
+          "lemma": "있",
+          "pos": "VV"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "ETM"
+        },
+        {
+          "text": "과목",
+          "lemma": "과목",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "좋아하",
+          "lemma": "좋아하",
+          "pos": "VV"
+        },
+        {
+          "text": "았",
+          "lemma": "았",
+          "pos": "EP"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "고등학생",
+      "과목",
+      "때",
+      "문학",
+      "역사",
+      "이야기",
+      "제일"
+    ],
+    "domain": "highschool"
+  },
+  {
+    "question": {
+      "text": "대학생 때 가장 흥미로웠던 수업은?",
+      "tokens": [
+        {
+          "text": "대학생",
+          "lemma": "대학생",
+          "pos": "NNG"
+        },
+        {
+          "text": "때",
+          "lemma": "때",
+          "pos": "NNG"
+        },
+        {
+          "text": "가장",
+          "lemma": "가장",
+          "pos": "MAG"
+        },
+        {
+          "text": "흥미",
+          "lemma": "흥미",
+          "pos": "NNG"
+        },
+        {
+          "text": "롭",
+          "lemma": "롭",
+          "pos": "XSA"
+        },
+        {
+          "text": "었",
+          "lemma": "었",
+          "pos": "EP"
+        },
+        {
+          "text": "던",
+          "lemma": "던",
+          "pos": "ETM"
+        },
+        {
+          "text": "수업",
+          "lemma": "수업",
+          "pos": "NNG"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "JX"
+        }
+      ],
+      "concepts": [
+        "대학생",
+        "때",
+        "분야",
+        "수업",
+        "심화",
+        "전공",
+        "흥미"
+      ],
+      "domain": "highschool"
+    },
+    "answer": {
+      "text": "내가 전공한 분야의 심화 수업들이 정말 흥미로웠어.",
+      "tokens": [
+        {
+          "text": "내",
+          "lemma": "내",
+          "pos": "NP"
+        },
+        {
+          "text": "가",
+          "lemma": "가",
+          "pos": "JKS"
+        },
+        {
+          "text": "전공",
+          "lemma": "전공",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "분야",
+          "lemma": "분야",
+          "pos": "NNG"
+        },
+        {
+          "text": "의",
+          "lemma": "의",
+          "pos": "JKG"
+        },
+        {
+          "text": "심화",
+          "lemma": "심화",
+          "pos": "NNG"
+        },
+        {
+          "text": "수업",
+          "lemma": "수업",
+          "pos": "NNG"
+        },
+        {
+          "text": "들",
+          "lemma": "들",
+          "pos": "XSN"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "JKS"
+        },
+        {
+          "text": "정말",
+          "lemma": "정말",
+          "pos": "MAG"
+        },
+        {
+          "text": "흥미",
+          "lemma": "흥미",
+          "pos": "NNG"
+        },
+        {
+          "text": "롭",
+          "lemma": "롭",
+          "pos": "XSA"
+        },
+        {
+          "text": "었",
+          "lemma": "었",
+          "pos": "EP"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "대학생",
+      "때",
+      "분야",
+      "수업",
+      "심화",
+      "전공",
+      "흥미"
+    ],
+    "domain": "highschool"
+  },
+  {
+    "question": {
+      "text": "고등학생과 대학생의 가장 큰 차이점은 뭐라고 생각해?",
+      "tokens": [
+        {
+          "text": "고등학생",
+          "lemma": "고등학생",
+          "pos": "NNG"
+        },
+        {
+          "text": "과",
+          "lemma": "과",
+          "pos": "JC"
+        },
+        {
+          "text": "대학생",
+          "lemma": "대학생",
+          "pos": "NNG"
+        },
+        {
+          "text": "의",
+          "lemma": "의",
+          "pos": "JKG"
+        },
+        {
+          "text": "가장",
+          "lemma": "가장",
+          "pos": "MAG"
+        },
+        {
+          "text": "크",
+          "lemma": "크",
+          "pos": "VA"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "차이점",
+          "lemma": "차이점",
+          "pos": "NNG"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "JX"
+        },
+        {
+          "text": "뭐",
+          "lemma": "뭐",
+          "pos": "NP"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "VCP"
+        },
+        {
+          "text": "라고",
+          "lemma": "라고",
+          "pos": "EC"
+        },
+        {
+          "text": "생각",
+          "lemma": "생각",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "것",
+        "고등학생",
+        "대학생",
+        "반면",
+        "생각",
+        "생활",
+        "수",
+        "안",
+        "자유",
+        "점",
+        "정해진",
+        "주도",
+        "차이점",
+        "틀"
+      ],
+      "domain": "highschool"
+    },
+    "answer": {
+      "text": "고등학생은 정해진 틀 안에서 생활하는 반면, 대학생은 훨씬 더 자유롭고 주도적으로 생활할 수 있다는 점인 것 같아.",
+      "tokens": [
+        {
+          "text": "고등학생",
+          "lemma": "고등학생",
+          "pos": "NNG"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "JX"
+        },
+        {
+          "text": "정해진",
+          "lemma": "정해진",
+          "pos": "NNP"
+        },
+        {
+          "text": "틀",
+          "lemma": "틀",
+          "pos": "NNG"
+        },
+        {
+          "text": "안",
+          "lemma": "안",
+          "pos": "NNG"
+        },
+        {
+          "text": "에서",
+          "lemma": "에서",
+          "pos": "JKB"
+        },
+        {
+          "text": "생활",
+          "lemma": "생활",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "ETM"
+        },
+        {
+          "text": "반면",
+          "lemma": "반면",
+          "pos": "NNG"
+        },
+        {
+          "text": "대학생",
+          "lemma": "대학생",
+          "pos": "NNG"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "JX"
+        },
+        {
+          "text": "훨씬",
+          "lemma": "훨씬",
+          "pos": "MAG"
+        },
+        {
+          "text": "더",
+          "lemma": "더",
+          "pos": "MAG"
+        },
+        {
+          "text": "자유",
+          "lemma": "자유",
+          "pos": "NNG"
+        },
+        {
+          "text": "롭",
+          "lemma": "롭",
+          "pos": "XSA"
+        },
+        {
+          "text": "고",
+          "lemma": "고",
+          "pos": "EC"
+        },
+        {
+          "text": "주도",
+          "lemma": "주도",
+          "pos": "NNG"
+        },
+        {
+          "text": "적",
+          "lemma": "적",
+          "pos": "XSN"
+        },
+        {
+          "text": "으로",
+          "lemma": "으로",
+          "pos": "JKB"
+        },
+        {
+          "text": "생활",
+          "lemma": "생활",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "ㄹ",
+          "lemma": "ㄹ",
+          "pos": "ETM"
+        },
+        {
+          "text": "수",
+          "lemma": "수",
+          "pos": "NNB"
+        },
+        {
+          "text": "있",
+          "lemma": "있",
+          "pos": "VV"
+        },
+        {
+          "text": "다는",
+          "lemma": "다는",
+          "pos": "ETM"
+        },
+        {
+          "text": "점",
+          "lemma": "점",
+          "pos": "NNB"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "VCP"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "것",
+          "lemma": "것",
+          "pos": "NNB"
+        },
+        {
+          "text": "같",
+          "lemma": "같",
+          "pos": "VA"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "것",
+      "고등학생",
+      "대학생",
+      "반면",
+      "생각",
+      "생활",
+      "수",
+      "안",
+      "자유",
+      "점",
+      "정해진",
+      "주도",
+      "차이점",
+      "틀"
+    ],
+    "domain": "highschool"
+  },
+  {
+    "question": {
+      "text": "고등학생 때 학교생활은 어땠어?",
+      "tokens": [
+        {
+          "text": "고등학생",
+          "lemma": "고등학생",
+          "pos": "NNG"
+        },
+        {
+          "text": "때",
+          "lemma": "때",
+          "pos": "NNG"
+        },
+        {
+          "text": "학교생활",
+          "lemma": "학교생활",
+          "pos": "NNP"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "JX"
+        },
+        {
+          "text": "어떻",
+          "lemma": "어떻",
+          "pos": "VA"
+        },
+        {
+          "text": "었",
+          "lemma": "었",
+          "pos": "EP"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "고등학생",
+        "때",
+        "시험",
+        "야간",
+        "자율 학습",
+        "재미",
+        "친구",
+        "학교생활"
+      ],
+      "domain": "highschool"
+    },
+    "answer": {
+      "text": "매일 야간 자율 학습도 하고 시험도 많아서 힘들었지만, 친구들과 함께 버티는 재미가 있었어.",
+      "tokens": [
+        {
+          "text": "매일",
+          "lemma": "매일",
+          "pos": "MAG"
+        },
+        {
+          "text": "야간",
+          "lemma": "야간",
+          "pos": "NNG"
+        },
+        {
+          "text": "자율 학습",
+          "lemma": "자율 학습",
+          "pos": "NNP"
+        },
+        {
+          "text": "도",
+          "lemma": "도",
+          "pos": "JX"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "VV"
+        },
+        {
+          "text": "고",
+          "lemma": "고",
+          "pos": "EC"
+        },
+        {
+          "text": "시험",
+          "lemma": "시험",
+          "pos": "NNG"
+        },
+        {
+          "text": "도",
+          "lemma": "도",
+          "pos": "JX"
+        },
+        {
+          "text": "많",
+          "lemma": "많",
+          "pos": "VA"
+        },
+        {
+          "text": "아서",
+          "lemma": "아서",
+          "pos": "EC"
+        },
+        {
+          "text": "힘들",
+          "lemma": "힘들",
+          "pos": "VA"
+        },
+        {
+          "text": "었",
+          "lemma": "었",
+          "pos": "EP"
+        },
+        {
+          "text": "지만",
+          "lemma": "지만",
+          "pos": "EC"
+        },
+        {
+          "text": "친구",
+          "lemma": "친구",
+          "pos": "NNG"
+        },
+        {
+          "text": "들",
+          "lemma": "들",
+          "pos": "XSN"
+        },
+        {
+          "text": "과",
+          "lemma": "과",
+          "pos": "JC"
+        },
+        {
+          "text": "함께",
+          "lemma": "함께",
+          "pos": "MAG"
+        },
+        {
+          "text": "버티",
+          "lemma": "버티",
+          "pos": "VV"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "ETM"
+        },
+        {
+          "text": "재미",
+          "lemma": "재미",
+          "pos": "NNG"
+        },
+        {
+          "text": "가",
+          "lemma": "가",
+          "pos": "JKS"
+        },
+        {
+          "text": "있",
+          "lemma": "있",
+          "pos": "VX"
+        },
+        {
+          "text": "었",
+          "lemma": "었",
+          "pos": "EP"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "고등학생",
+      "때",
+      "시험",
+      "야간",
+      "자율 학습",
+      "재미",
+      "친구",
+      "학교생활"
+    ],
+    "domain": "highschool"
+  },
+  {
+    "question": {
+      "text": "대학생 때 학교생활은 어땠어?",
+      "tokens": [
+        {
+          "text": "대학생",
+          "lemma": "대학생",
+          "pos": "NNG"
+        },
+        {
+          "text": "때",
+          "lemma": "때",
+          "pos": "NNG"
+        },
+        {
+          "text": "학교생활",
+          "lemma": "학교생활",
+          "pos": "NNP"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "JX"
+        },
+        {
+          "text": "어떻",
+          "lemma": "어떻",
+          "pos": "VA"
+        },
+        {
+          "text": "었",
+          "lemma": "었",
+          "pos": "EP"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "대외",
+        "대학생",
+        "동아리",
+        "때",
+        "선택",
+        "수",
+        "수업",
+        "자유",
+        "학교생활",
+        "활동"
+      ],
+      "domain": "highschool"
+    },
+    "answer": {
+      "text": "수업도 내가 듣고 싶은 걸 선택할 수 있고, 동아리 활동이나 대외 활동도 자유롭게 할 수 있어서 좋았어.",
+      "tokens": [
+        {
+          "text": "수업",
+          "lemma": "수업",
+          "pos": "NNG"
+        },
+        {
+          "text": "도",
+          "lemma": "도",
+          "pos": "JX"
+        },
+        {
+          "text": "내",
+          "lemma": "내",
+          "pos": "NP"
+        },
+        {
+          "text": "가",
+          "lemma": "가",
+          "pos": "JKS"
+        },
+        {
+          "text": "듣",
+          "lemma": "듣",
+          "pos": "VV"
+        },
+        {
+          "text": "고",
+          "lemma": "고",
+          "pos": "EC"
+        },
+        {
+          "text": "싶",
+          "lemma": "싶",
+          "pos": "VX"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "ETM"
+        },
+        {
+          "text": "걸",
+          "lemma": "걸",
+          "pos": "VV"
+        },
+        {
+          "text": "ㄹ",
+          "lemma": "ㄹ",
+          "pos": "ETM"
+        },
+        {
+          "text": "선택",
+          "lemma": "선택",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "ㄹ",
+          "lemma": "ㄹ",
+          "pos": "ETM"
+        },
+        {
+          "text": "수",
+          "lemma": "수",
+          "pos": "NNB"
+        },
+        {
+          "text": "있",
+          "lemma": "있",
+          "pos": "VV"
+        },
+        {
+          "text": "고",
+          "lemma": "고",
+          "pos": "EC"
+        },
+        {
+          "text": "동아리",
+          "lemma": "동아리",
+          "pos": "NNG"
+        },
+        {
+          "text": "활동",
+          "lemma": "활동",
+          "pos": "NNG"
+        },
+        {
+          "text": "이나",
+          "lemma": "이나",
+          "pos": "JC"
+        },
+        {
+          "text": "대외",
+          "lemma": "대외",
+          "pos": "NNG"
+        },
+        {
+          "text": "활동",
+          "lemma": "활동",
+          "pos": "NNG"
+        },
+        {
+          "text": "도",
+          "lemma": "도",
+          "pos": "JX"
+        },
+        {
+          "text": "자유",
+          "lemma": "자유",
+          "pos": "NNG"
+        },
+        {
+          "text": "롭",
+          "lemma": "롭",
+          "pos": "XSA"
+        },
+        {
+          "text": "게",
+          "lemma": "게",
+          "pos": "EC"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "VV"
+        },
+        {
+          "text": "ㄹ",
+          "lemma": "ㄹ",
+          "pos": "ETM"
+        },
+        {
+          "text": "수",
+          "lemma": "수",
+          "pos": "NNB"
+        },
+        {
+          "text": "있",
+          "lemma": "있",
+          "pos": "VV"
+        },
+        {
+          "text": "어서",
+          "lemma": "어서",
+          "pos": "EC"
+        },
+        {
+          "text": "좋",
+          "lemma": "좋",
+          "pos": "VA"
+        },
+        {
+          "text": "았",
+          "lemma": "았",
+          "pos": "EP"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "대외",
+      "대학생",
+      "동아리",
+      "때",
+      "선택",
+      "수",
+      "수업",
+      "자유",
+      "학교생활",
+      "활동"
+    ],
+    "domain": "highschool"
+  },
+  {
+    "question": {
+      "text": "고등학생 자녀를 둔 부모님에게 해주고 싶은 조언은?",
+      "tokens": [
+        {
+          "text": "고등학생",
+          "lemma": "고등학생",
+          "pos": "NNG"
+        },
+        {
+          "text": "자녀",
+          "lemma": "자녀",
+          "pos": "NNG"
+        },
+        {
+          "text": "를",
+          "lemma": "를",
+          "pos": "JKO"
+        },
+        {
+          "text": "두",
+          "lemma": "두",
+          "pos": "VV"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "부모",
+          "lemma": "부모",
+          "pos": "NNG"
+        },
+        {
+          "text": "님",
+          "lemma": "님",
+          "pos": "XSN"
+        },
+        {
+          "text": "에게",
+          "lemma": "에게",
+          "pos": "JKB"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "VV"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EC"
+        },
+        {
+          "text": "주",
+          "lemma": "주",
+          "pos": "VX"
+        },
+        {
+          "text": "고",
+          "lemma": "고",
+          "pos": "EC"
+        },
+        {
+          "text": "싶",
+          "lemma": "싶",
+          "pos": "VX"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "ETM"
+        },
+        {
+          "text": "조언",
+          "lemma": "조언",
+          "pos": "NNP"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "JX"
+        }
+      ],
+      "concepts": [
+        "고등학생",
+        "꿈",
+        "말",
+        "부모",
+        "시기",
+        "아이",
+        "자녀",
+        "조력자",
+        "조언",
+        "지지"
+      ],
+      "domain": "highschool"
+    },
+    "answer": {
+      "text": "아이의 꿈을 지지해주고, 힘든 시기를 함께 헤쳐나가는 든든한 조력자가 되어달라고 말해주고 싶어.",
+      "tokens": [
+        {
+          "text": "아이",
+          "lemma": "아이",
+          "pos": "NNG"
+        },
+        {
+          "text": "의",
+          "lemma": "의",
+          "pos": "JKG"
+        },
+        {
+          "text": "꿈",
+          "lemma": "꿈",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "지지",
+          "lemma": "지지",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EC"
+        },
+        {
+          "text": "주",
+          "lemma": "주",
+          "pos": "VX"
+        },
+        {
+          "text": "고",
+          "lemma": "고",
+          "pos": "EC"
+        },
+        {
+          "text": "힘들",
+          "lemma": "힘들",
+          "pos": "VA"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "시기",
+          "lemma": "시기",
+          "pos": "NNG"
+        },
+        {
+          "text": "를",
+          "lemma": "를",
+          "pos": "JKO"
+        },
+        {
+          "text": "함께",
+          "lemma": "함께",
+          "pos": "MAG"
+        },
+        {
+          "text": "헤치",
+          "lemma": "헤치",
+          "pos": "VV"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EC"
+        },
+        {
+          "text": "나가",
+          "lemma": "나가",
+          "pos": "VX"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "ETM"
+        },
+        {
+          "text": "든든",
+          "lemma": "든든",
+          "pos": "XR"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSA"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "조력자",
+          "lemma": "조력자",
+          "pos": "NNG"
+        },
+        {
+          "text": "가",
+          "lemma": "가",
+          "pos": "JKS"
+        },
+        {
+          "text": "되",
+          "lemma": "되",
+          "pos": "VV"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EC"
+        },
+        {
+          "text": "달",
+          "lemma": "달",
+          "pos": "VX"
+        },
+        {
+          "text": "라고",
+          "lemma": "라고",
+          "pos": "EC"
+        },
+        {
+          "text": "말",
+          "lemma": "말",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EC"
+        },
+        {
+          "text": "주",
+          "lemma": "주",
+          "pos": "VX"
+        },
+        {
+          "text": "고",
+          "lemma": "고",
+          "pos": "EC"
+        },
+        {
+          "text": "싶",
+          "lemma": "싶",
+          "pos": "VX"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "고등학생",
+      "꿈",
+      "말",
+      "부모",
+      "시기",
+      "아이",
+      "자녀",
+      "조력자",
+      "조언",
+      "지지"
+    ],
+    "domain": "highschool"
+  },
+  {
+    "question": {
+      "text": "대학생 자녀와 소통하는 방법이 있다면?",
+      "tokens": [
+        {
+          "text": "대학생",
+          "lemma": "대학생",
+          "pos": "NNG"
+        },
+        {
+          "text": "자녀",
+          "lemma": "자녀",
+          "pos": "NNG"
+        },
+        {
+          "text": "와",
+          "lemma": "와",
+          "pos": "JC"
+        },
+        {
+          "text": "소통",
+          "lemma": "소통",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "ETM"
+        },
+        {
+          "text": "방법",
+          "lemma": "방법",
+          "pos": "NNG"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "JKS"
+        },
+        {
+          "text": "있",
+          "lemma": "있",
+          "pos": "VX"
+        },
+        {
+          "text": "다면",
+          "lemma": "다면",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "게",
+        "결정",
+        "기회",
+        "대학생",
+        "방법",
+        "소통",
+        "어른",
+        "자녀",
+        "조언",
+        "존중",
+        "필요"
+      ],
+      "domain": "highschool"
+    },
+    "answer": {
+      "text": "어른으로 존중해주고, 스스로 결정할 기회를 주면서 필요한 조언을 아끼지 않는 게 중요해.",
+      "tokens": [
+        {
+          "text": "어른",
+          "lemma": "어른",
+          "pos": "NNG"
+        },
+        {
+          "text": "으로",
+          "lemma": "으로",
+          "pos": "JKB"
+        },
+        {
+          "text": "존중",
+          "lemma": "존중",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EC"
+        },
+        {
+          "text": "주",
+          "lemma": "주",
+          "pos": "VX"
+        },
+        {
+          "text": "고",
+          "lemma": "고",
+          "pos": "EC"
+        },
+        {
+          "text": "스스로",
+          "lemma": "스스로",
+          "pos": "MAG"
+        },
+        {
+          "text": "결정",
+          "lemma": "결정",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "ㄹ",
+          "lemma": "ㄹ",
+          "pos": "ETM"
+        },
+        {
+          "text": "기회",
+          "lemma": "기회",
+          "pos": "NNG"
+        },
+        {
+          "text": "를",
+          "lemma": "를",
+          "pos": "JKO"
+        },
+        {
+          "text": "주",
+          "lemma": "주",
+          "pos": "VX"
+        },
+        {
+          "text": "면서",
+          "lemma": "면서",
+          "pos": "EC"
+        },
+        {
+          "text": "필요",
+          "lemma": "필요",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "조언",
+          "lemma": "조언",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "아끼",
+          "lemma": "아끼",
+          "pos": "VV"
+        },
+        {
+          "text": "지",
+          "lemma": "지",
+          "pos": "EC"
+        },
+        {
+          "text": "않",
+          "lemma": "않",
+          "pos": "VX"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "ETM"
+        },
+        {
+          "text": "게",
+          "lemma": "게",
+          "pos": "NNG"
+        },
+        {
+          "text": "중요",
+          "lemma": "중요",
+          "pos": "XR"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSA"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "게",
+      "결정",
+      "기회",
+      "대학생",
+      "방법",
+      "소통",
+      "어른",
+      "자녀",
+      "조언",
+      "존중",
+      "필요"
+    ],
+    "domain": "highschool"
+  },
+  {
+    "question": {
+      "text": "고등학생 때 장래희망은 뭐였어?",
+      "tokens": [
+        {
+          "text": "고등학생",
+          "lemma": "고등학생",
+          "pos": "NNG"
+        },
+        {
+          "text": "때",
+          "lemma": "때",
+          "pos": "NNG"
+        },
+        {
+          "text": "장래희망",
+          "lemma": "장래희망",
+          "pos": "NNP"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "JX"
+        },
+        {
+          "text": "뭐",
+          "lemma": "뭐",
+          "pos": "NP"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "VCP"
+        },
+        {
+          "text": "었",
+          "lemma": "었",
+          "pos": "EP"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "고등학생",
+        "고민",
+        "구체",
+        "대학교",
+        "때",
+        "선택",
+        "시작",
+        "장래희망",
+        "전공"
+      ],
+      "domain": "highschool"
+    },
+    "answer": {
+      "text": "나는 대학교 전공을 선택하면서 구체적인 장래희망을 고민하기 시작했어.",
+      "tokens": [
+        {
+          "text": "나",
+          "lemma": "나",
+          "pos": "NP"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "JX"
+        },
+        {
+          "text": "대학교",
+          "lemma": "대학교",
+          "pos": "NNG"
+        },
+        {
+          "text": "전공",
+          "lemma": "전공",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "선택",
+          "lemma": "선택",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "면서",
+          "lemma": "면서",
+          "pos": "EC"
+        },
+        {
+          "text": "구체",
+          "lemma": "구체",
+          "pos": "NNG"
+        },
+        {
+          "text": "적",
+          "lemma": "적",
+          "pos": "XSN"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "VCP"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "장래희망",
+          "lemma": "장래희망",
+          "pos": "NNP"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "고민",
+          "lemma": "고민",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "기",
+          "lemma": "기",
+          "pos": "ETN"
+        },
+        {
+          "text": "시작",
+          "lemma": "시작",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "았",
+          "lemma": "았",
+          "pos": "EP"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "고등학생",
+      "고민",
+      "구체",
+      "대학교",
+      "때",
+      "선택",
+      "시작",
+      "장래희망",
+      "전공"
+    ],
+    "domain": "highschool"
+  },
+  {
+    "question": {
+      "text": "대학생 때 가장 많이 했던 고민은?",
+      "tokens": [
+        {
+          "text": "대학생",
+          "lemma": "대학생",
+          "pos": "NNG"
+        },
+        {
+          "text": "때",
+          "lemma": "때",
+          "pos": "NNG"
+        },
+        {
+          "text": "가장",
+          "lemma": "가장",
+          "pos": "MAG"
+        },
+        {
+          "text": "많이",
+          "lemma": "많이",
+          "pos": "MAG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "VV"
+        },
+        {
+          "text": "았",
+          "lemma": "았",
+          "pos": "EP"
+        },
+        {
+          "text": "던",
+          "lemma": "던",
+          "pos": "ETM"
+        },
+        {
+          "text": "고민",
+          "lemma": "고민",
+          "pos": "NNG"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "JX"
+        }
+      ],
+      "concepts": [
+        "고민",
+        "대학생",
+        "때",
+        "일",
+        "적성",
+        "졸업",
+        "직업",
+        "후"
+      ],
+      "domain": "highschool"
+    },
+    "answer": {
+      "text": "졸업 후에 어떤 직업을 가질지, 내 적성에 맞는 일이 무엇일지에 대한 고민을 많이 했어.",
+      "tokens": [
+        {
+          "text": "졸업",
+          "lemma": "졸업",
+          "pos": "NNG"
+        },
+        {
+          "text": "후",
+          "lemma": "후",
+          "pos": "NNG"
+        },
+        {
+          "text": "에",
+          "lemma": "에",
+          "pos": "JKB"
+        },
+        {
+          "text": "어떤",
+          "lemma": "어떤",
+          "pos": "MM"
+        },
+        {
+          "text": "직업",
+          "lemma": "직업",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "가지",
+          "lemma": "가지",
+          "pos": "VV"
+        },
+        {
+          "text": "ㄹ지",
+          "lemma": "ㄹ지",
+          "pos": "EC"
+        },
+        {
+          "text": "내",
+          "lemma": "내",
+          "pos": "NP"
+        },
+        {
+          "text": "적성",
+          "lemma": "적성",
+          "pos": "NNP"
+        },
+        {
+          "text": "에",
+          "lemma": "에",
+          "pos": "JKB"
+        },
+        {
+          "text": "맞",
+          "lemma": "맞",
+          "pos": "VV"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "ETM"
+        },
+        {
+          "text": "일",
+          "lemma": "일",
+          "pos": "NNG"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "JKS"
+        },
+        {
+          "text": "무엇",
+          "lemma": "무엇",
+          "pos": "NP"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "VCP"
+        },
+        {
+          "text": "ㄹ지",
+          "lemma": "ㄹ지",
+          "pos": "EC"
+        },
+        {
+          "text": "에",
+          "lemma": "에",
+          "pos": "JKB"
+        },
+        {
+          "text": "대하",
+          "lemma": "대하",
+          "pos": "VV"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "고민",
+          "lemma": "고민",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "많이",
+          "lemma": "많이",
+          "pos": "MAG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "VV"
+        },
+        {
+          "text": "았",
+          "lemma": "았",
+          "pos": "EP"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "고민",
+      "대학생",
+      "때",
+      "일",
+      "적성",
+      "졸업",
+      "직업",
+      "후"
+    ],
+    "domain": "highschool"
+  },
+  {
+    "question": {
+      "text": "고등학생에게 가장 필요한 교육은 뭐라고 생각해?",
+      "tokens": [
+        {
+          "text": "고등학생",
+          "lemma": "고등학생",
+          "pos": "NNG"
+        },
+        {
+          "text": "에게",
+          "lemma": "에게",
+          "pos": "JKB"
+        },
+        {
+          "text": "가장",
+          "lemma": "가장",
+          "pos": "MAG"
+        },
+        {
+          "text": "필요",
+          "lemma": "필요",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "교육",
+          "lemma": "교육",
+          "pos": "NNG"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "JX"
+        },
+        {
+          "text": "뭐",
+          "lemma": "뭐",
+          "pos": "NP"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "VCP"
+        },
+        {
+          "text": "라고",
+          "lemma": "라고",
+          "pos": "EC"
+        },
+        {
+          "text": "생각",
+          "lemma": "생각",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "고등학생",
+        "교육",
+        "사회",
+        "생각",
+        "위주",
+        "인성",
+        "입시",
+        "필요"
+      ],
+      "domain": "highschool"
+    },
+    "answer": {
+      "text": "입시 위주 교육도 중요하지만, 인성 교육이나 사회성을 기르는 교육도 필요하다고 생각해.",
+      "tokens": [
+        {
+          "text": "입시",
+          "lemma": "입시",
+          "pos": "NNG"
+        },
+        {
+          "text": "위주",
+          "lemma": "위주",
+          "pos": "NNG"
+        },
+        {
+          "text": "교육",
+          "lemma": "교육",
+          "pos": "NNG"
+        },
+        {
+          "text": "도",
+          "lemma": "도",
+          "pos": "JX"
+        },
+        {
+          "text": "중요",
+          "lemma": "중요",
+          "pos": "XR"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSA"
+        },
+        {
+          "text": "지만",
+          "lemma": "지만",
+          "pos": "EC"
+        },
+        {
+          "text": "인성",
+          "lemma": "인성",
+          "pos": "NNP"
+        },
+        {
+          "text": "교육",
+          "lemma": "교육",
+          "pos": "NNG"
+        },
+        {
+          "text": "이나",
+          "lemma": "이나",
+          "pos": "JC"
+        },
+        {
+          "text": "사회",
+          "lemma": "사회",
+          "pos": "NNG"
+        },
+        {
+          "text": "성",
+          "lemma": "성",
+          "pos": "XSN"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "기르",
+          "lemma": "기르",
+          "pos": "VV"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "ETM"
+        },
+        {
+          "text": "교육",
+          "lemma": "교육",
+          "pos": "NNG"
+        },
+        {
+          "text": "도",
+          "lemma": "도",
+          "pos": "JX"
+        },
+        {
+          "text": "필요",
+          "lemma": "필요",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "다고",
+          "lemma": "다고",
+          "pos": "EC"
+        },
+        {
+          "text": "생각",
+          "lemma": "생각",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "고등학생",
+      "교육",
+      "사회",
+      "생각",
+      "위주",
+      "인성",
+      "입시",
+      "필요"
+    ],
+    "domain": "highschool"
+  },
+  {
+    "question": {
+      "text": "대학생에게 가장 중요한 건 스펙 쌓기일까?",
+      "tokens": [
+        {
+          "text": "대학생",
+          "lemma": "대학생",
+          "pos": "NNG"
+        },
+        {
+          "text": "에게",
+          "lemma": "에게",
+          "pos": "JKB"
+        },
+        {
+          "text": "가장",
+          "lemma": "가장",
+          "pos": "MAG"
+        },
+        {
+          "text": "중요",
+          "lemma": "중요",
+          "pos": "XR"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSA"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "건",
+          "lemma": "건",
+          "pos": "NNB"
+        },
+        {
+          "text": "스펙",
+          "lemma": "스펙",
+          "pos": "NNP"
+        },
+        {
+          "text": "쌓",
+          "lemma": "쌓",
+          "pos": "VV"
+        },
+        {
+          "text": "기",
+          "lemma": "기",
+          "pos": "ETN"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "VCP"
+        },
+        {
+          "text": "ㄹ까",
+          "lemma": "ㄹ까",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "강점",
+        "건",
+        "것",
+        "경험",
+        "대학생",
+        "생각",
+        "스펙",
+        "자신"
+      ],
+      "domain": "highschool"
+    },
+    "answer": {
+      "text": "스펙도 중요하지만, 다양한 경험과 자신만의 강점을 찾는 것이 더 중요하다고 생각해.",
+      "tokens": [
+        {
+          "text": "스펙",
+          "lemma": "스펙",
+          "pos": "NNP"
+        },
+        {
+          "text": "도",
+          "lemma": "도",
+          "pos": "JX"
+        },
+        {
+          "text": "중요",
+          "lemma": "중요",
+          "pos": "XR"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSA"
+        },
+        {
+          "text": "지만",
+          "lemma": "지만",
+          "pos": "EC"
+        },
+        {
+          "text": "다양",
+          "lemma": "다양",
+          "pos": "XR"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSA"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "경험",
+          "lemma": "경험",
+          "pos": "NNG"
+        },
+        {
+          "text": "과",
+          "lemma": "과",
+          "pos": "JC"
+        },
+        {
+          "text": "자신",
+          "lemma": "자신",
+          "pos": "NNG"
+        },
+        {
+          "text": "만",
+          "lemma": "만",
+          "pos": "JX"
+        },
+        {
+          "text": "의",
+          "lemma": "의",
+          "pos": "JKG"
+        },
+        {
+          "text": "강점",
+          "lemma": "강점",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "찾",
+          "lemma": "찾",
+          "pos": "VV"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "ETM"
+        },
+        {
+          "text": "것",
+          "lemma": "것",
+          "pos": "NNB"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "JKS"
+        },
+        {
+          "text": "더",
+          "lemma": "더",
+          "pos": "MAG"
+        },
+        {
+          "text": "중요",
+          "lemma": "중요",
+          "pos": "XR"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSA"
+        },
+        {
+          "text": "다고",
+          "lemma": "다고",
+          "pos": "EC"
+        },
+        {
+          "text": "생각",
+          "lemma": "생각",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "강점",
+      "건",
+      "것",
+      "경험",
+      "대학생",
+      "생각",
+      "스펙",
+      "자신"
+    ],
+    "domain": "highschool"
+  },
+  {
+    "question": {
+      "text": "고등학생 때 읽었던 기억에 남는 책은?",
+      "tokens": [
+        {
+          "text": "고등학생",
+          "lemma": "고등학생",
+          "pos": "NNG"
+        },
+        {
+          "text": "때",
+          "lemma": "때",
+          "pos": "NNG"
+        },
+        {
+          "text": "읽",
+          "lemma": "읽",
+          "pos": "VV"
+        },
+        {
+          "text": "었",
+          "lemma": "었",
+          "pos": "EP"
+        },
+        {
+          "text": "던",
+          "lemma": "던",
+          "pos": "ETM"
+        },
+        {
+          "text": "기억",
+          "lemma": "기억",
+          "pos": "NNG"
+        },
+        {
+          "text": "에",
+          "lemma": "에",
+          "pos": "JKB"
+        },
+        {
+          "text": "남",
+          "lemma": "남",
+          "pos": "VV"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "ETM"
+        },
+        {
+          "text": "책",
+          "lemma": "책",
+          "pos": "NNG"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "JX"
+        }
+      ],
+      "concepts": [
+        "고등학생",
+        "기억",
+        "도서",
+        "때",
+        "수능",
+        "준비",
+        "책",
+        "필독"
+      ],
+      "domain": "highschool"
+    },
+    "answer": {
+      "text": "수능 준비를 위해 읽었던 필독 도서들이 기억에 많이 남아.",
+      "tokens": [
+        {
+          "text": "수능",
+          "lemma": "수능",
+          "pos": "NNG"
+        },
+        {
+          "text": "준비",
+          "lemma": "준비",
+          "pos": "NNG"
+        },
+        {
+          "text": "를",
+          "lemma": "를",
+          "pos": "JKO"
+        },
+        {
+          "text": "위하",
+          "lemma": "위하",
+          "pos": "VV"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EC"
+        },
+        {
+          "text": "읽",
+          "lemma": "읽",
+          "pos": "VV"
+        },
+        {
+          "text": "었",
+          "lemma": "었",
+          "pos": "EP"
+        },
+        {
+          "text": "던",
+          "lemma": "던",
+          "pos": "ETM"
+        },
+        {
+          "text": "필독",
+          "lemma": "필독",
+          "pos": "NNP"
+        },
+        {
+          "text": "도서",
+          "lemma": "도서",
+          "pos": "NNG"
+        },
+        {
+          "text": "들",
+          "lemma": "들",
+          "pos": "XSN"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "JKS"
+        },
+        {
+          "text": "기억",
+          "lemma": "기억",
+          "pos": "NNG"
+        },
+        {
+          "text": "에",
+          "lemma": "에",
+          "pos": "JKB"
+        },
+        {
+          "text": "많이",
+          "lemma": "많이",
+          "pos": "MAG"
+        },
+        {
+          "text": "남",
+          "lemma": "남",
+          "pos": "VV"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "고등학생",
+      "기억",
+      "도서",
+      "때",
+      "수능",
+      "준비",
+      "책",
+      "필독"
+    ],
+    "domain": "highschool"
+  },
+  {
+    "question": {
+      "text": "대학생 때 즐겨보던 콘텐츠는?",
+      "tokens": [
+        {
+          "text": "대학생",
+          "lemma": "대학생",
+          "pos": "NNG"
+        },
+        {
+          "text": "때",
+          "lemma": "때",
+          "pos": "NNG"
+        },
+        {
+          "text": "즐기",
+          "lemma": "즐기",
+          "pos": "VV"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EC"
+        },
+        {
+          "text": "보",
+          "lemma": "보",
+          "pos": "VX"
+        },
+        {
+          "text": "던",
+          "lemma": "던",
+          "pos": "ETM"
+        },
+        {
+          "text": "콘텐츠",
+          "lemma": "콘텐츠",
+          "pos": "NNP"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "JX"
+        }
+      ],
+      "concepts": [
+        "관련",
+        "다큐멘터리",
+        "대학생",
+        "때",
+        "예능",
+        "전공",
+        "친구",
+        "콘텐츠",
+        "프로그램"
+      ],
+      "domain": "highschool"
+    },
+    "answer": {
+      "text": "전공 관련 다큐멘터리나, 친구들과 같이 보던 예능 프로그램을 즐겨봤어.",
+      "tokens": [
+        {
+          "text": "전공",
+          "lemma": "전공",
+          "pos": "NNG"
+        },
+        {
+          "text": "관련",
+          "lemma": "관련",
+          "pos": "NNG"
+        },
+        {
+          "text": "다큐멘터리",
+          "lemma": "다큐멘터리",
+          "pos": "NNG"
+        },
+        {
+          "text": "나",
+          "lemma": "나",
+          "pos": "JC"
+        },
+        {
+          "text": "친구",
+          "lemma": "친구",
+          "pos": "NNG"
+        },
+        {
+          "text": "들",
+          "lemma": "들",
+          "pos": "XSN"
+        },
+        {
+          "text": "과",
+          "lemma": "과",
+          "pos": "JC"
+        },
+        {
+          "text": "같이",
+          "lemma": "같이",
+          "pos": "MAG"
+        },
+        {
+          "text": "보",
+          "lemma": "보",
+          "pos": "VV"
+        },
+        {
+          "text": "던",
+          "lemma": "던",
+          "pos": "ETM"
+        },
+        {
+          "text": "예능",
+          "lemma": "예능",
+          "pos": "NNG"
+        },
+        {
+          "text": "프로그램",
+          "lemma": "프로그램",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "즐기",
+          "lemma": "즐기",
+          "pos": "VV"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EC"
+        },
+        {
+          "text": "보",
+          "lemma": "보",
+          "pos": "VX"
+        },
+        {
+          "text": "았",
+          "lemma": "았",
+          "pos": "EP"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "관련",
+      "다큐멘터리",
+      "대학생",
+      "때",
+      "예능",
+      "전공",
+      "친구",
+      "콘텐츠",
+      "프로그램"
+    ],
+    "domain": "highschool"
+  },
+  {
+    "question": {
+      "text": "고등학생 때 친구들과 어떻게 놀았어?",
+      "tokens": [
+        {
+          "text": "고등학생",
+          "lemma": "고등학생",
+          "pos": "NNG"
+        },
+        {
+          "text": "때",
+          "lemma": "때",
+          "pos": "NNG"
+        },
+        {
+          "text": "친구",
+          "lemma": "친구",
+          "pos": "NNG"
+        },
+        {
+          "text": "들",
+          "lemma": "들",
+          "pos": "XSN"
+        },
+        {
+          "text": "과",
+          "lemma": "과",
+          "pos": "JC"
+        },
+        {
+          "text": "어떻",
+          "lemma": "어떻",
+          "pos": "VA"
+        },
+        {
+          "text": "게",
+          "lemma": "게",
+          "pos": "EC"
+        },
+        {
+          "text": "놀",
+          "lemma": "놀",
+          "pos": "VV"
+        },
+        {
+          "text": "았",
+          "lemma": "았",
+          "pos": "EP"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "고등학생",
+        "공부",
+        "독서실",
+        "때",
+        "스터디",
+        "영화",
+        "친구",
+        "카페"
+      ],
+      "domain": "highschool"
+    },
+    "answer": {
+      "text": "주로 독서실이나 스터디 카페에서 같이 공부하고, 가끔은 영화 보러 갔어.",
+      "tokens": [
+        {
+          "text": "주로",
+          "lemma": "주로",
+          "pos": "MAG"
+        },
+        {
+          "text": "독서실",
+          "lemma": "독서실",
+          "pos": "NNP"
+        },
+        {
+          "text": "이나",
+          "lemma": "이나",
+          "pos": "JC"
+        },
+        {
+          "text": "스터디",
+          "lemma": "스터디",
+          "pos": "NNG"
+        },
+        {
+          "text": "카페",
+          "lemma": "카페",
+          "pos": "NNP"
+        },
+        {
+          "text": "에서",
+          "lemma": "에서",
+          "pos": "JKB"
+        },
+        {
+          "text": "같이",
+          "lemma": "같이",
+          "pos": "MAG"
+        },
+        {
+          "text": "공부",
+          "lemma": "공부",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "고",
+          "lemma": "고",
+          "pos": "EC"
+        },
+        {
+          "text": "가끔",
+          "lemma": "가끔",
+          "pos": "MAG"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "JX"
+        },
+        {
+          "text": "영화",
+          "lemma": "영화",
+          "pos": "NNG"
+        },
+        {
+          "text": "보",
+          "lemma": "보",
+          "pos": "VV"
+        },
+        {
+          "text": "러",
+          "lemma": "러",
+          "pos": "EC"
+        },
+        {
+          "text": "가",
+          "lemma": "가",
+          "pos": "VV"
+        },
+        {
+          "text": "았",
+          "lemma": "았",
+          "pos": "EP"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "고등학생",
+      "공부",
+      "독서실",
+      "때",
+      "스터디",
+      "영화",
+      "친구",
+      "카페"
+    ],
+    "domain": "highschool"
+  },
+  {
+    "question": {
+      "text": "대학생 때 친구들과의 관계는 어땠어?",
+      "tokens": [
+        {
+          "text": "대학생",
+          "lemma": "대학생",
+          "pos": "NNG"
+        },
+        {
+          "text": "때",
+          "lemma": "때",
+          "pos": "NNG"
+        },
+        {
+          "text": "친구",
+          "lemma": "친구",
+          "pos": "NNG"
+        },
+        {
+          "text": "들",
+          "lemma": "들",
+          "pos": "XSN"
+        },
+        {
+          "text": "과",
+          "lemma": "과",
+          "pos": "JKB"
+        },
+        {
+          "text": "의",
+          "lemma": "의",
+          "pos": "JKG"
+        },
+        {
+          "text": "관계",
+          "lemma": "관계",
+          "pos": "NNG"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "JX"
+        },
+        {
+          "text": "어떻",
+          "lemma": "어떻",
+          "pos": "VA"
+        },
+        {
+          "text": "었",
+          "lemma": "었",
+          "pos": "EP"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "고등학교",
+        "관계",
+        "대학생",
+        "때",
+        "미래",
+        "서로",
+        "유대감",
+        "응원",
+        "친구",
+        "해주",
+        "형성"
+      ],
+      "domain": "highschool"
+    },
+    "answer": {
+      "text": "고등학교 때보다 더 깊은 유대감을 형성하고, 서로의 미래를 응원해주는 소중한 관계였어.",
+      "tokens": [
+        {
+          "text": "고등학교",
+          "lemma": "고등학교",
+          "pos": "NNP"
+        },
+        {
+          "text": "때",
+          "lemma": "때",
+          "pos": "NNG"
+        },
+        {
+          "text": "보다",
+          "lemma": "보다",
+          "pos": "JKB"
+        },
+        {
+          "text": "더",
+          "lemma": "더",
+          "pos": "MAG"
+        },
+        {
+          "text": "깊",
+          "lemma": "깊",
+          "pos": "VA"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "ETM"
+        },
+        {
+          "text": "유대감",
+          "lemma": "유대감",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "형성",
+          "lemma": "형성",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "고",
+          "lemma": "고",
+          "pos": "EC"
+        },
+        {
+          "text": "서로",
+          "lemma": "서로",
+          "pos": "NNG"
+        },
+        {
+          "text": "의",
+          "lemma": "의",
+          "pos": "JKG"
+        },
+        {
+          "text": "미래",
+          "lemma": "미래",
+          "pos": "NNG"
+        },
+        {
+          "text": "를",
+          "lemma": "를",
+          "pos": "JKO"
+        },
+        {
+          "text": "응원",
+          "lemma": "응원",
+          "pos": "NNP"
+        },
+        {
+          "text": "해주",
+          "lemma": "해주",
+          "pos": "NNP"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "JX"
+        },
+        {
+          "text": "소중",
+          "lemma": "소중",
+          "pos": "XR"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSA"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "관계",
+          "lemma": "관계",
+          "pos": "NNG"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "VCP"
+        },
+        {
+          "text": "었",
+          "lemma": "었",
+          "pos": "EP"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "고등학교",
+      "관계",
+      "대학생",
+      "때",
+      "미래",
+      "서로",
+      "유대감",
+      "응원",
+      "친구",
+      "해주",
+      "형성"
+    ],
+    "domain": "highschool"
+  },
+  {
+    "question": {
+      "text": "고등학생 때 받았던 용돈은 어떻게 썼어?",
+      "tokens": [
+        {
+          "text": "고등학생",
+          "lemma": "고등학생",
+          "pos": "NNG"
+        },
+        {
+          "text": "때",
+          "lemma": "때",
+          "pos": "NNG"
+        },
+        {
+          "text": "받",
+          "lemma": "받",
+          "pos": "VV"
+        },
+        {
+          "text": "았",
+          "lemma": "았",
+          "pos": "EP"
+        },
+        {
+          "text": "던",
+          "lemma": "던",
+          "pos": "ETM"
+        },
+        {
+          "text": "용돈",
+          "lemma": "용돈",
+          "pos": "NNG"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "JX"
+        },
+        {
+          "text": "어떻",
+          "lemma": "어떻",
+          "pos": "VA"
+        },
+        {
+          "text": "게",
+          "lemma": "게",
+          "pos": "EC"
+        },
+        {
+          "text": "쓰",
+          "lemma": "쓰",
+          "pos": "VV"
+        },
+        {
+          "text": "었",
+          "lemma": "었",
+          "pos": "EP"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "고등학생",
+        "교통비",
+        "데",
+        "때",
+        "떡볶이",
+        "사",
+        "용돈",
+        "친구",
+        "학용품"
+      ],
+      "domain": "highschool"
+    },
+    "answer": {
+      "text": "학용품, 교통비, 그리고 가끔 친구들이랑 떡볶이 사 먹는 데 썼어.",
+      "tokens": [
+        {
+          "text": "학용품",
+          "lemma": "학용품",
+          "pos": "NNP"
+        },
+        {
+          "text": "교통비",
+          "lemma": "교통비",
+          "pos": "NNG"
+        },
+        {
+          "text": "그리고",
+          "lemma": "그리고",
+          "pos": "MAJ"
+        },
+        {
+          "text": "가끔",
+          "lemma": "가끔",
+          "pos": "MAG"
+        },
+        {
+          "text": "친구",
+          "lemma": "친구",
+          "pos": "NNG"
+        },
+        {
+          "text": "들",
+          "lemma": "들",
+          "pos": "XSN"
+        },
+        {
+          "text": "이랑",
+          "lemma": "이랑",
+          "pos": "JC"
+        },
+        {
+          "text": "떡볶이",
+          "lemma": "떡볶이",
+          "pos": "NNP"
+        },
+        {
+          "text": "사",
+          "lemma": "사",
+          "pos": "NNG"
+        },
+        {
+          "text": "먹",
+          "lemma": "먹",
+          "pos": "VV"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "ETM"
+        },
+        {
+          "text": "데",
+          "lemma": "데",
+          "pos": "NNB"
+        },
+        {
+          "text": "쓰",
+          "lemma": "쓰",
+          "pos": "VV"
+        },
+        {
+          "text": "었",
+          "lemma": "었",
+          "pos": "EP"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "고등학생",
+      "교통비",
+      "데",
+      "때",
+      "떡볶이",
+      "사",
+      "용돈",
+      "친구",
+      "학용품"
+    ],
+    "domain": "highschool"
+  },
+  {
+    "question": {
+      "text": "대학생 때 용돈으로 뭘 했어?",
+      "tokens": [
+        {
+          "text": "대학생",
+          "lemma": "대학생",
+          "pos": "NNG"
+        },
+        {
+          "text": "때",
+          "lemma": "때",
+          "pos": "NNG"
+        },
+        {
+          "text": "용돈",
+          "lemma": "용돈",
+          "pos": "NNG"
+        },
+        {
+          "text": "으로",
+          "lemma": "으로",
+          "pos": "JKB"
+        },
+        {
+          "text": "뭘",
+          "lemma": "뭘",
+          "pos": "IC"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "VV"
+        },
+        {
+          "text": "았",
+          "lemma": "았",
+          "pos": "EP"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "교통비",
+        "대학생",
+        "데",
+        "때",
+        "문화생활",
+        "식비",
+        "외",
+        "용돈",
+        "책"
+      ],
+      "domain": "highschool"
+    },
+    "answer": {
+      "text": "교통비, 식비 외에 책을 사거나 문화생활을 즐기는 데 많이 썼어.",
+      "tokens": [
+        {
+          "text": "교통비",
+          "lemma": "교통비",
+          "pos": "NNG"
+        },
+        {
+          "text": "식비",
+          "lemma": "식비",
+          "pos": "NNG"
+        },
+        {
+          "text": "외",
+          "lemma": "외",
+          "pos": "NNB"
+        },
+        {
+          "text": "에",
+          "lemma": "에",
+          "pos": "JKB"
+        },
+        {
+          "text": "책",
+          "lemma": "책",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "사",
+          "lemma": "사",
+          "pos": "VV"
+        },
+        {
+          "text": "거나",
+          "lemma": "거나",
+          "pos": "EC"
+        },
+        {
+          "text": "문화생활",
+          "lemma": "문화생활",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "즐기",
+          "lemma": "즐기",
+          "pos": "VV"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "ETM"
+        },
+        {
+          "text": "데",
+          "lemma": "데",
+          "pos": "NNB"
+        },
+        {
+          "text": "많이",
+          "lemma": "많이",
+          "pos": "MAG"
+        },
+        {
+          "text": "쓰",
+          "lemma": "쓰",
+          "pos": "VV"
+        },
+        {
+          "text": "었",
+          "lemma": "었",
+          "pos": "EP"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "교통비",
+      "대학생",
+      "데",
+      "때",
+      "문화생활",
+      "식비",
+      "외",
+      "용돈",
+      "책"
+    ],
+    "domain": "highschool"
+  },
+  {
+    "question": {
+      "text": "고등학생 때 가장 좋아했던 선생님은?",
+      "tokens": [
+        {
+          "text": "고등학생",
+          "lemma": "고등학생",
+          "pos": "NNG"
+        },
+        {
+          "text": "때",
+          "lemma": "때",
+          "pos": "NNG"
+        },
+        {
+          "text": "가장",
+          "lemma": "가장",
+          "pos": "MAG"
+        },
+        {
+          "text": "좋아하",
+          "lemma": "좋아하",
+          "pos": "VV"
+        },
+        {
+          "text": "았",
+          "lemma": "았",
+          "pos": "EP"
+        },
+        {
+          "text": "던",
+          "lemma": "던",
+          "pos": "ETM"
+        },
+        {
+          "text": "선생님",
+          "lemma": "선생님",
+          "pos": "NNP"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "JX"
+        }
+      ],
+      "concepts": [
+        "고등학생",
+        "기억",
+        "때",
+        "선생님",
+        "인생",
+        "조언",
+        "지식"
+      ],
+      "domain": "highschool"
+    },
+    "answer": {
+      "text": "단순히 지식만 가르쳐주기보다 인생의 조언을 해주셨던 선생님이 기억에 남아.",
+      "tokens": [
+        {
+          "text": "단순히",
+          "lemma": "단순히",
+          "pos": "MAG"
+        },
+        {
+          "text": "지식",
+          "lemma": "지식",
+          "pos": "NNG"
+        },
+        {
+          "text": "만",
+          "lemma": "만",
+          "pos": "JX"
+        },
+        {
+          "text": "가르치",
+          "lemma": "가르치",
+          "pos": "VV"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EC"
+        },
+        {
+          "text": "주",
+          "lemma": "주",
+          "pos": "VX"
+        },
+        {
+          "text": "기",
+          "lemma": "기",
+          "pos": "ETN"
+        },
+        {
+          "text": "보다",
+          "lemma": "보다",
+          "pos": "JKB"
+        },
+        {
+          "text": "인생",
+          "lemma": "인생",
+          "pos": "NNG"
+        },
+        {
+          "text": "의",
+          "lemma": "의",
+          "pos": "JKG"
+        },
+        {
+          "text": "조언",
+          "lemma": "조언",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "VV"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EC"
+        },
+        {
+          "text": "주",
+          "lemma": "주",
+          "pos": "VX"
+        },
+        {
+          "text": "시",
+          "lemma": "시",
+          "pos": "EP"
+        },
+        {
+          "text": "었",
+          "lemma": "었",
+          "pos": "EP"
+        },
+        {
+          "text": "던",
+          "lemma": "던",
+          "pos": "ETM"
+        },
+        {
+          "text": "선생님",
+          "lemma": "선생님",
+          "pos": "NNP"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "JKS"
+        },
+        {
+          "text": "기억",
+          "lemma": "기억",
+          "pos": "NNG"
+        },
+        {
+          "text": "에",
+          "lemma": "에",
+          "pos": "JKB"
+        },
+        {
+          "text": "남",
+          "lemma": "남",
+          "pos": "VV"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "고등학생",
+      "기억",
+      "때",
+      "선생님",
+      "인생",
+      "조언",
+      "지식"
+    ],
+    "domain": "highschool"
+  },
+  {
+    "question": {
+      "text": "대학생 때 가장 힘들었던 점은?",
+      "tokens": [
+        {
+          "text": "대학생",
+          "lemma": "대학생",
+          "pos": "NNG"
+        },
+        {
+          "text": "때",
+          "lemma": "때",
+          "pos": "NNG"
+        },
+        {
+          "text": "가장",
+          "lemma": "가장",
+          "pos": "MAG"
+        },
+        {
+          "text": "힘들",
+          "lemma": "힘들",
+          "pos": "VA"
+        },
+        {
+          "text": "었",
+          "lemma": "었",
+          "pos": "EP"
+        },
+        {
+          "text": "던",
+          "lemma": "던",
+          "pos": "ETM"
+        },
+        {
+          "text": "점",
+          "lemma": "점",
+          "pos": "NNB"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "JX"
+        }
+      ],
+      "concepts": [
+        "결정",
+        "대학생",
+        "때",
+        "만큼",
+        "부담",
+        "자유",
+        "점",
+        "책임감"
+      ],
+      "domain": "highschool"
+    },
+    "answer": {
+      "text": "자유로운 만큼 스스로 모든 걸 결정해야 하는 책임감이 때때로 부담스러웠어.",
+      "tokens": [
+        {
+          "text": "자유",
+          "lemma": "자유",
+          "pos": "NNG"
+        },
+        {
+          "text": "롭",
+          "lemma": "롭",
+          "pos": "XSA"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "만큼",
+          "lemma": "만큼",
+          "pos": "NNB"
+        },
+        {
+          "text": "스스로",
+          "lemma": "스스로",
+          "pos": "MAG"
+        },
+        {
+          "text": "모든",
+          "lemma": "모든",
+          "pos": "MM"
+        },
+        {
+          "text": "걸",
+          "lemma": "걸",
+          "pos": "VV"
+        },
+        {
+          "text": "ㄹ",
+          "lemma": "ㄹ",
+          "pos": "ETM"
+        },
+        {
+          "text": "결정",
+          "lemma": "결정",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "아야",
+          "lemma": "아야",
+          "pos": "EC"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "VV"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "ETM"
+        },
+        {
+          "text": "책임감",
+          "lemma": "책임감",
+          "pos": "NNG"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "JKS"
+        },
+        {
+          "text": "때때로",
+          "lemma": "때때로",
+          "pos": "MAG"
+        },
+        {
+          "text": "부담",
+          "lemma": "부담",
+          "pos": "NNG"
+        },
+        {
+          "text": "스럽",
+          "lemma": "스럽",
+          "pos": "XSA"
+        },
+        {
+          "text": "었",
+          "lemma": "었",
+          "pos": "EP"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "결정",
+      "대학생",
+      "때",
+      "만큼",
+      "부담",
+      "자유",
+      "점",
+      "책임감"
+    ],
+    "domain": "highschool"
+  },
+  {
+    "question": {
+      "text": "고등학생에게 스마트폰은 공부에 방해가 될까?",
+      "tokens": [
+        {
+          "text": "고등학생",
+          "lemma": "고등학생",
+          "pos": "NNG"
+        },
+        {
+          "text": "에게",
+          "lemma": "에게",
+          "pos": "JKB"
+        },
+        {
+          "text": "스마트폰",
+          "lemma": "스마트폰",
+          "pos": "NNP"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "JX"
+        },
+        {
+          "text": "공부",
+          "lemma": "공부",
+          "pos": "NNG"
+        },
+        {
+          "text": "에",
+          "lemma": "에",
+          "pos": "JKB"
+        },
+        {
+          "text": "방해",
+          "lemma": "방해",
+          "pos": "NNG"
+        },
+        {
+          "text": "가",
+          "lemma": "가",
+          "pos": "JKS"
+        },
+        {
+          "text": "되",
+          "lemma": "되",
+          "pos": "VV"
+        },
+        {
+          "text": "ㄹ까",
+          "lemma": "ㄹ까",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "고등학생",
+        "공부",
+        "방해",
+        "사용",
+        "수",
+        "스마트폰"
+      ],
+      "domain": "highschool"
+    },
+    "answer": {
+      "text": "어떻게 사용하느냐에 따라 다르겠지만, 너무 많이 사용하면 방해가 될 수도 있어.",
+      "tokens": [
+        {
+          "text": "어떻",
+          "lemma": "어떻",
+          "pos": "VA"
+        },
+        {
+          "text": "게",
+          "lemma": "게",
+          "pos": "EC"
+        },
+        {
+          "text": "사용",
+          "lemma": "사용",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "느냐",
+          "lemma": "느냐",
+          "pos": "EC"
+        },
+        {
+          "text": "에",
+          "lemma": "에",
+          "pos": "JKB"
+        },
+        {
+          "text": "따르",
+          "lemma": "따르",
+          "pos": "VV"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EC"
+        },
+        {
+          "text": "다르",
+          "lemma": "다르",
+          "pos": "VA"
+        },
+        {
+          "text": "겠",
+          "lemma": "겠",
+          "pos": "EP"
+        },
+        {
+          "text": "지만",
+          "lemma": "지만",
+          "pos": "EC"
+        },
+        {
+          "text": "너무",
+          "lemma": "너무",
+          "pos": "MAG"
+        },
+        {
+          "text": "많이",
+          "lemma": "많이",
+          "pos": "MAG"
+        },
+        {
+          "text": "사용",
+          "lemma": "사용",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "면",
+          "lemma": "면",
+          "pos": "EC"
+        },
+        {
+          "text": "방해",
+          "lemma": "방해",
+          "pos": "NNG"
+        },
+        {
+          "text": "가",
+          "lemma": "가",
+          "pos": "JKS"
+        },
+        {
+          "text": "되",
+          "lemma": "되",
+          "pos": "VV"
+        },
+        {
+          "text": "ㄹ",
+          "lemma": "ㄹ",
+          "pos": "ETM"
+        },
+        {
+          "text": "수",
+          "lemma": "수",
+          "pos": "NNB"
+        },
+        {
+          "text": "도",
+          "lemma": "도",
+          "pos": "JX"
+        },
+        {
+          "text": "있",
+          "lemma": "있",
+          "pos": "VX"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "고등학생",
+      "공부",
+      "방해",
+      "사용",
+      "수",
+      "스마트폰"
+    ],
+    "domain": "highschool"
+  },
+  {
+    "question": {
+      "text": "대학생들이 가장 많이 사용하는 앱은 뭐야?",
+      "tokens": [
+        {
+          "text": "대학생",
+          "lemma": "대학생",
+          "pos": "NNG"
+        },
+        {
+          "text": "들",
+          "lemma": "들",
+          "pos": "XSN"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "JKS"
+        },
+        {
+          "text": "가장",
+          "lemma": "가장",
+          "pos": "MAG"
+        },
+        {
+          "text": "많이",
+          "lemma": "많이",
+          "pos": "MAG"
+        },
+        {
+          "text": "사용",
+          "lemma": "사용",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "ETM"
+        },
+        {
+          "text": "앱은",
+          "lemma": "앱은",
+          "pos": "NA"
+        },
+        {
+          "text": "뭐",
+          "lemma": "뭐",
+          "pos": "NP"
+        },
+        {
+          "text": "야",
+          "lemma": "야",
+          "pos": "JKV"
+        }
+      ],
+      "concepts": [
+        "것",
+        "대학생",
+        "배달",
+        "사용",
+        "수강",
+        "신청",
+        "학습 관리 시스템"
+      ],
+      "domain": "highschool"
+    },
+    "answer": {
+      "text": "수강 신청 앱, 학습 관리 시스템(LMS), 그리고 배달 앱을 많이 쓰는 것 같아.",
+      "tokens": [
+        {
+          "text": "수강",
+          "lemma": "수강",
+          "pos": "NNG"
+        },
+        {
+          "text": "신청",
+          "lemma": "신청",
+          "pos": "NNP"
+        },
+        {
+          "text": "앱,",
+          "lemma": "앱,",
+          "pos": "NA"
+        },
+        {
+          "text": "학습 관리 시스템",
+          "lemma": "학습 관리 시스템",
+          "pos": "NNP"
+        },
+        {
+          "text": "(",
+          "lemma": "(",
+          "pos": "SS"
+        },
+        {
+          "text": "LMS",
+          "lemma": "LMS",
+          "pos": "SL"
+        },
+        {
+          "text": ")",
+          "lemma": ")",
+          "pos": "SS"
+        },
+        {
+          "text": "그리고",
+          "lemma": "그리고",
+          "pos": "MAJ"
+        },
+        {
+          "text": "배달",
+          "lemma": "배달",
+          "pos": "NNP"
+        },
+        {
+          "text": "앱을",
+          "lemma": "앱을",
+          "pos": "NA"
+        },
+        {
+          "text": "많이",
+          "lemma": "많이",
+          "pos": "MAG"
+        },
+        {
+          "text": "쓰",
+          "lemma": "쓰",
+          "pos": "VV"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "ETM"
+        },
+        {
+          "text": "것",
+          "lemma": "것",
+          "pos": "NNB"
+        },
+        {
+          "text": "같",
+          "lemma": "같",
+          "pos": "VA"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "것",
+      "대학생",
+      "배달",
+      "사용",
+      "수강",
+      "신청",
+      "학습 관리 시스템"
+    ],
+    "domain": "highschool"
+  },
+  {
+    "question": {
+      "text": "고등학생과 대학생의 진로 교육은 어떻게 달라야 할까?",
+      "tokens": [
+        {
+          "text": "고등학생",
+          "lemma": "고등학생",
+          "pos": "NNG"
+        },
+        {
+          "text": "과",
+          "lemma": "과",
+          "pos": "JC"
+        },
+        {
+          "text": "대학생",
+          "lemma": "대학생",
+          "pos": "NNG"
+        },
+        {
+          "text": "의",
+          "lemma": "의",
+          "pos": "JKG"
+        },
+        {
+          "text": "진로",
+          "lemma": "진로",
+          "pos": "NNP"
+        },
+        {
+          "text": "교육",
+          "lemma": "교육",
+          "pos": "NNG"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "JX"
+        },
+        {
+          "text": "어떻",
+          "lemma": "어떻",
+          "pos": "VA"
+        },
+        {
+          "text": "게",
+          "lemma": "게",
+          "pos": "EC"
+        },
+        {
+          "text": "다르",
+          "lemma": "다르",
+          "pos": "VA"
+        },
+        {
+          "text": "아야",
+          "lemma": "아야",
+          "pos": "EC"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "VX"
+        },
+        {
+          "text": "ㄹ까",
+          "lemma": "ㄹ까",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "고등학생",
+        "교육",
+        "구체",
+        "대학",
+        "대학생",
+        "목표",
+        "세계",
+        "실제",
+        "전공",
+        "준비",
+        "직업",
+        "진로",
+        "탐색"
+      ],
+      "domain": "highschool"
+    },
+    "answer": {
+      "text": "고등학생은 목표 대학과 전공을 구체화하고, 대학생은 실제 직업 세계를 탐색하고 준비해야 해.",
+      "tokens": [
+        {
+          "text": "고등학생",
+          "lemma": "고등학생",
+          "pos": "NNG"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "JX"
+        },
+        {
+          "text": "목표",
+          "lemma": "목표",
+          "pos": "NNG"
+        },
+        {
+          "text": "대학",
+          "lemma": "대학",
+          "pos": "NNG"
+        },
+        {
+          "text": "과",
+          "lemma": "과",
+          "pos": "JC"
+        },
+        {
+          "text": "전공",
+          "lemma": "전공",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "구체",
+          "lemma": "구체",
+          "pos": "NNG"
+        },
+        {
+          "text": "화",
+          "lemma": "화",
+          "pos": "XSN"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "고",
+          "lemma": "고",
+          "pos": "EC"
+        },
+        {
+          "text": "대학생",
+          "lemma": "대학생",
+          "pos": "NNG"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "JX"
+        },
+        {
+          "text": "실제",
+          "lemma": "실제",
+          "pos": "NNG"
+        },
+        {
+          "text": "직업",
+          "lemma": "직업",
+          "pos": "NNG"
+        },
+        {
+          "text": "세계",
+          "lemma": "세계",
+          "pos": "NNG"
+        },
+        {
+          "text": "를",
+          "lemma": "를",
+          "pos": "JKO"
+        },
+        {
+          "text": "탐색",
+          "lemma": "탐색",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "고",
+          "lemma": "고",
+          "pos": "EC"
+        },
+        {
+          "text": "준비",
+          "lemma": "준비",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "아야",
+          "lemma": "아야",
+          "pos": "EC"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "VX"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "고등학생",
+      "교육",
+      "구체",
+      "대학",
+      "대학생",
+      "목표",
+      "세계",
+      "실제",
+      "전공",
+      "준비",
+      "직업",
+      "진로",
+      "탐색"
+    ],
+    "domain": "highschool"
+  },
+  {
+    "question": {
+      "text": "고등학생 때의 꿈과 지금의 꿈은 같아?",
+      "tokens": [
+        {
+          "text": "고등학생",
+          "lemma": "고등학생",
+          "pos": "NNG"
+        },
+        {
+          "text": "때",
+          "lemma": "때",
+          "pos": "NNG"
+        },
+        {
+          "text": "의",
+          "lemma": "의",
+          "pos": "JKG"
+        },
+        {
+          "text": "꿈",
+          "lemma": "꿈",
+          "pos": "NNG"
+        },
+        {
+          "text": "과",
+          "lemma": "과",
+          "pos": "JC"
+        },
+        {
+          "text": "지금",
+          "lemma": "지금",
+          "pos": "NNG"
+        },
+        {
+          "text": "의",
+          "lemma": "의",
+          "pos": "JKG"
+        },
+        {
+          "text": "꿈",
+          "lemma": "꿈",
+          "pos": "NNG"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "JX"
+        },
+        {
+          "text": "같",
+          "lemma": "같",
+          "pos": "VA"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "고등학생",
+        "구체",
+        "꿈",
+        "때",
+        "지금",
+        "현실"
+      ],
+      "domain": "highschool"
+    },
+    "answer": {
+      "text": "고등학생 때보다 훨씬 더 구체적이고 현실적인 꿈을 꾸게 됐어.",
+      "tokens": [
+        {
+          "text": "고등학생",
+          "lemma": "고등학생",
+          "pos": "NNG"
+        },
+        {
+          "text": "때",
+          "lemma": "때",
+          "pos": "NNG"
+        },
+        {
+          "text": "보다",
+          "lemma": "보다",
+          "pos": "JKB"
+        },
+        {
+          "text": "훨씬",
+          "lemma": "훨씬",
+          "pos": "MAG"
+        },
+        {
+          "text": "더",
+          "lemma": "더",
+          "pos": "MAG"
+        },
+        {
+          "text": "구체",
+          "lemma": "구체",
+          "pos": "NNG"
+        },
+        {
+          "text": "적",
+          "lemma": "적",
+          "pos": "XSN"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "VCP"
+        },
+        {
+          "text": "고",
+          "lemma": "고",
+          "pos": "EC"
+        },
+        {
+          "text": "현실",
+          "lemma": "현실",
+          "pos": "NNG"
+        },
+        {
+          "text": "적",
+          "lemma": "적",
+          "pos": "XSN"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "VCP"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "꿈",
+          "lemma": "꿈",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "꾸",
+          "lemma": "꾸",
+          "pos": "VV"
+        },
+        {
+          "text": "게",
+          "lemma": "게",
+          "pos": "EC"
+        },
+        {
+          "text": "되",
+          "lemma": "되",
+          "pos": "VV"
+        },
+        {
+          "text": "었",
+          "lemma": "었",
+          "pos": "EP"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "고등학생",
+      "구체",
+      "꿈",
+      "때",
+      "지금",
+      "현실"
+    ],
+    "domain": "highschool"
+  },
+  {
+    "question": {
+      "text": "대학생들이 학업 스트레스는 어떻게 푸는 게 좋을까?",
+      "tokens": [
+        {
+          "text": "대학생",
+          "lemma": "대학생",
+          "pos": "NNG"
+        },
+        {
+          "text": "들",
+          "lemma": "들",
+          "pos": "XSN"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "JKS"
+        },
+        {
+          "text": "학업",
+          "lemma": "학업",
+          "pos": "NNG"
+        },
+        {
+          "text": "스트레스",
+          "lemma": "스트레스",
+          "pos": "NNP"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "JX"
+        },
+        {
+          "text": "어떻",
+          "lemma": "어떻",
+          "pos": "VA"
+        },
+        {
+          "text": "게",
+          "lemma": "게",
+          "pos": "EC"
+        },
+        {
+          "text": "풀",
+          "lemma": "풀",
+          "pos": "VV"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "ETM"
+        },
+        {
+          "text": "게",
+          "lemma": "게",
+          "pos": "NNG"
+        },
+        {
+          "text": "좋",
+          "lemma": "좋",
+          "pos": "VA"
+        },
+        {
+          "text": "을까",
+          "lemma": "을까",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "게",
+        "그룹",
+        "대학생",
+        "동아리",
+        "등",
+        "스터디",
+        "스트레스",
+        "운동",
+        "학업",
+        "해소",
+        "활동"
+      ],
+      "domain": "highschool"
+    },
+    "answer": {
+      "text": "스터디 그룹을 만들거나, 동아리 활동, 운동 등으로 스트레스를 해소하는 게 좋아.",
+      "tokens": [
+        {
+          "text": "스터디",
+          "lemma": "스터디",
+          "pos": "NNG"
+        },
+        {
+          "text": "그룹",
+          "lemma": "그룹",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "만들",
+          "lemma": "만들",
+          "pos": "VV"
+        },
+        {
+          "text": "거나",
+          "lemma": "거나",
+          "pos": "EC"
+        },
+        {
+          "text": "동아리",
+          "lemma": "동아리",
+          "pos": "NNG"
+        },
+        {
+          "text": "활동",
+          "lemma": "활동",
+          "pos": "NNG"
+        },
+        {
+          "text": "운동",
+          "lemma": "운동",
+          "pos": "NNG"
+        },
+        {
+          "text": "등",
+          "lemma": "등",
+          "pos": "NNB"
+        },
+        {
+          "text": "으로",
+          "lemma": "으로",
+          "pos": "JKB"
+        },
+        {
+          "text": "스트레스",
+          "lemma": "스트레스",
+          "pos": "NNG"
+        },
+        {
+          "text": "를",
+          "lemma": "를",
+          "pos": "JKO"
+        },
+        {
+          "text": "해소",
+          "lemma": "해소",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "ETM"
+        },
+        {
+          "text": "게",
+          "lemma": "게",
+          "pos": "NNG"
+        },
+        {
+          "text": "좋",
+          "lemma": "좋",
+          "pos": "VA"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "게",
+      "그룹",
+      "대학생",
+      "동아리",
+      "등",
+      "스터디",
+      "스트레스",
+      "운동",
+      "학업",
+      "해소",
+      "활동"
+    ],
+    "domain": "highschool"
+  },
+  {
+    "question": {
+      "text": "고등학생에게 좋은 습관을 길러주는 방법은?",
+      "tokens": [
+        {
+          "text": "고등학생",
+          "lemma": "고등학생",
+          "pos": "NNG"
+        },
+        {
+          "text": "에게",
+          "lemma": "에게",
+          "pos": "JKB"
+        },
+        {
+          "text": "좋",
+          "lemma": "좋",
+          "pos": "VA"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "ETM"
+        },
+        {
+          "text": "습관",
+          "lemma": "습관",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "기르",
+          "lemma": "기르",
+          "pos": "VV"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EC"
+        },
+        {
+          "text": "주",
+          "lemma": "주",
+          "pos": "VX"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "ETM"
+        },
+        {
+          "text": "방법",
+          "lemma": "방법",
+          "pos": "NNG"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "JX"
+        }
+      ],
+      "concepts": [
+        "게",
+        "고등학생",
+        "규칙",
+        "방법",
+        "습관",
+        "운동",
+        "학습",
+        "휴식"
+      ],
+      "domain": "highschool"
+    },
+    "answer": {
+      "text": "규칙적인 학습 습관과 충분한 휴식, 그리고 운동 습관을 길러주는 게 중요해.",
+      "tokens": [
+        {
+          "text": "규칙",
+          "lemma": "규칙",
+          "pos": "NNG"
+        },
+        {
+          "text": "적",
+          "lemma": "적",
+          "pos": "XSN"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "VCP"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "학습",
+          "lemma": "학습",
+          "pos": "NNG"
+        },
+        {
+          "text": "습관",
+          "lemma": "습관",
+          "pos": "NNG"
+        },
+        {
+          "text": "과",
+          "lemma": "과",
+          "pos": "JC"
+        },
+        {
+          "text": "충분",
+          "lemma": "충분",
+          "pos": "XR"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSA"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "휴식",
+          "lemma": "휴식",
+          "pos": "NNP"
+        },
+        {
+          "text": "그리고",
+          "lemma": "그리고",
+          "pos": "MAJ"
+        },
+        {
+          "text": "운동",
+          "lemma": "운동",
+          "pos": "NNG"
+        },
+        {
+          "text": "습관",
+          "lemma": "습관",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "기르",
+          "lemma": "기르",
+          "pos": "VV"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EC"
+        },
+        {
+          "text": "주",
+          "lemma": "주",
+          "pos": "VX"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "ETM"
+        },
+        {
+          "text": "게",
+          "lemma": "게",
+          "pos": "NNG"
+        },
+        {
+          "text": "중요",
+          "lemma": "중요",
+          "pos": "XR"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSA"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "게",
+      "고등학생",
+      "규칙",
+      "방법",
+      "습관",
+      "운동",
+      "학습",
+      "휴식"
+    ],
+    "domain": "highschool"
+  },
+  {
+    "question": {
+      "text": "대학생에게 가장 필요한 조언은?",
+      "tokens": [
+        {
+          "text": "대학생",
+          "lemma": "대학생",
+          "pos": "NNG"
+        },
+        {
+          "text": "에게",
+          "lemma": "에게",
+          "pos": "JKB"
+        },
+        {
+          "text": "가장",
+          "lemma": "가장",
+          "pos": "MAG"
+        },
+        {
+          "text": "필요",
+          "lemma": "필요",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "조언",
+          "lemma": "조언",
+          "pos": "NNP"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "JX"
+        }
+      ],
+      "concepts": [
+        "경험",
+        "대학생",
+        "도전",
+        "말",
+        "실패",
+        "조언",
+        "필요"
+      ],
+      "domain": "highschool"
+    },
+    "answer": {
+      "text": "다양한 경험을 해보고, 실패를 두려워하지 말고 도전해보라고 말해주고 싶어.",
+      "tokens": [
+        {
+          "text": "다양",
+          "lemma": "다양",
+          "pos": "XR"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSA"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "경험",
+          "lemma": "경험",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "해보",
+          "lemma": "해보",
+          "pos": "VV"
+        },
+        {
+          "text": "고",
+          "lemma": "고",
+          "pos": "EC"
+        },
+        {
+          "text": "실패",
+          "lemma": "실패",
+          "pos": "NNG"
+        },
+        {
+          "text": "를",
+          "lemma": "를",
+          "pos": "JKO"
+        },
+        {
+          "text": "두려워하",
+          "lemma": "두려워하",
+          "pos": "VV"
+        },
+        {
+          "text": "지",
+          "lemma": "지",
+          "pos": "EC"
+        },
+        {
+          "text": "말",
+          "lemma": "말",
+          "pos": "VX"
+        },
+        {
+          "text": "고",
+          "lemma": "고",
+          "pos": "EC"
+        },
+        {
+          "text": "도전",
+          "lemma": "도전",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EC"
+        },
+        {
+          "text": "보",
+          "lemma": "보",
+          "pos": "VX"
+        },
+        {
+          "text": "라고",
+          "lemma": "라고",
+          "pos": "EC"
+        },
+        {
+          "text": "말",
+          "lemma": "말",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EC"
+        },
+        {
+          "text": "주",
+          "lemma": "주",
+          "pos": "VX"
+        },
+        {
+          "text": "고",
+          "lemma": "고",
+          "pos": "EC"
+        },
+        {
+          "text": "싶",
+          "lemma": "싶",
+          "pos": "VX"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "경험",
+      "대학생",
+      "도전",
+      "말",
+      "실패",
+      "조언",
+      "필요"
+    ],
+    "domain": "highschool"
+  },
+  {
+    "question": {
+      "text": "고등학생 때 학교 폭력에 대해 어떻게 배웠어?",
+      "tokens": [
+        {
+          "text": "고등학생",
+          "lemma": "고등학생",
+          "pos": "NNG"
+        },
+        {
+          "text": "때",
+          "lemma": "때",
+          "pos": "NNG"
+        },
+        {
+          "text": "학교 폭력",
+          "lemma": "학교 폭력",
+          "pos": "NNP"
+        },
+        {
+          "text": "에",
+          "lemma": "에",
+          "pos": "JKB"
+        },
+        {
+          "text": "대하",
+          "lemma": "대하",
+          "pos": "VV"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EC"
+        },
+        {
+          "text": "어떻",
+          "lemma": "어떻",
+          "pos": "VA"
+        },
+        {
+          "text": "게",
+          "lemma": "게",
+          "pos": "EC"
+        },
+        {
+          "text": "배우",
+          "lemma": "배우",
+          "pos": "VV"
+        },
+        {
+          "text": "었",
+          "lemma": "었",
+          "pos": "EP"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "게",
+        "고등학생",
+        "때",
+        "마음",
+        "배려",
+        "존중",
+        "친구",
+        "학교 폭력"
+      ],
+      "domain": "highschool"
+    },
+    "answer": {
+      "text": "친구들과 서로 존중하고 배려하는 마음을 배우는 게 중요하다고 배웠어.",
+      "tokens": [
+        {
+          "text": "친구",
+          "lemma": "친구",
+          "pos": "NNG"
+        },
+        {
+          "text": "들",
+          "lemma": "들",
+          "pos": "XSN"
+        },
+        {
+          "text": "과",
+          "lemma": "과",
+          "pos": "JC"
+        },
+        {
+          "text": "서로",
+          "lemma": "서로",
+          "pos": "MAG"
+        },
+        {
+          "text": "존중",
+          "lemma": "존중",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "고",
+          "lemma": "고",
+          "pos": "EC"
+        },
+        {
+          "text": "배려",
+          "lemma": "배려",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "ETM"
+        },
+        {
+          "text": "마음",
+          "lemma": "마음",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "배우",
+          "lemma": "배우",
+          "pos": "VV"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "ETM"
+        },
+        {
+          "text": "게",
+          "lemma": "게",
+          "pos": "NNG"
+        },
+        {
+          "text": "중요",
+          "lemma": "중요",
+          "pos": "XR"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSA"
+        },
+        {
+          "text": "다고",
+          "lemma": "다고",
+          "pos": "EC"
+        },
+        {
+          "text": "배우",
+          "lemma": "배우",
+          "pos": "VV"
+        },
+        {
+          "text": "었",
+          "lemma": "었",
+          "pos": "EP"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "게",
+      "고등학생",
+      "때",
+      "마음",
+      "배려",
+      "존중",
+      "친구",
+      "학교 폭력"
+    ],
+    "domain": "highschool"
+  },
+  {
+    "question": {
+      "text": "대학생 때 가장 하고 싶었던 일은?",
+      "tokens": [
+        {
+          "text": "대학생",
+          "lemma": "대학생",
+          "pos": "NNG"
+        },
+        {
+          "text": "때",
+          "lemma": "때",
+          "pos": "NNG"
+        },
+        {
+          "text": "가장",
+          "lemma": "가장",
+          "pos": "MAG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "VV"
+        },
+        {
+          "text": "고",
+          "lemma": "고",
+          "pos": "EC"
+        },
+        {
+          "text": "싶",
+          "lemma": "싶",
+          "pos": "VX"
+        },
+        {
+          "text": "었",
+          "lemma": "었",
+          "pos": "EP"
+        },
+        {
+          "text": "던",
+          "lemma": "던",
+          "pos": "ETM"
+        },
+        {
+          "text": "일",
+          "lemma": "일",
+          "pos": "NNB"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "JX"
+        }
+      ],
+      "concepts": [
+        "대학생",
+        "때",
+        "배낭여행",
+        "일",
+        "해외"
+      ],
+      "domain": "highschool"
+    },
+    "answer": {
+      "text": "해외로 배낭여행을 떠나보고 싶었어!",
+      "tokens": [
+        {
+          "text": "해외",
+          "lemma": "해외",
+          "pos": "NNG"
+        },
+        {
+          "text": "로",
+          "lemma": "로",
+          "pos": "JKB"
+        },
+        {
+          "text": "배낭여행",
+          "lemma": "배낭여행",
+          "pos": "NNP"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "떠나",
+          "lemma": "떠나",
+          "pos": "VV"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EC"
+        },
+        {
+          "text": "보",
+          "lemma": "보",
+          "pos": "VX"
+        },
+        {
+          "text": "고",
+          "lemma": "고",
+          "pos": "EC"
+        },
+        {
+          "text": "싶",
+          "lemma": "싶",
+          "pos": "VX"
+        },
+        {
+          "text": "었",
+          "lemma": "었",
+          "pos": "EP"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "대학생",
+      "때",
+      "배낭여행",
+      "일",
+      "해외"
+    ],
+    "domain": "highschool"
+  },
+  {
+    "question": {
+      "text": "고등학생은 보통 몇 시에 잠자리에 들어?",
+      "tokens": [
+        {
+          "text": "고등학생",
+          "lemma": "고등학생",
+          "pos": "NNG"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "JX"
+        },
+        {
+          "text": "보통",
+          "lemma": "보통",
+          "pos": "MAG"
+        },
+        {
+          "text": "몇",
+          "lemma": "몇",
+          "pos": "MM"
+        },
+        {
+          "text": "시",
+          "lemma": "시",
+          "pos": "NNB"
+        },
+        {
+          "text": "에",
+          "lemma": "에",
+          "pos": "JKB"
+        },
+        {
+          "text": "잠자리",
+          "lemma": "잠자리",
+          "pos": "NNP"
+        },
+        {
+          "text": "에",
+          "lemma": "에",
+          "pos": "JKB"
+        },
+        {
+          "text": "들",
+          "lemma": "들",
+          "pos": "VV"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "경우",
+        "고등학생",
+        "때문",
+        "수면",
+        "시",
+        "자",
+        "잠자리",
+        "필수",
+        "학업"
+      ],
+      "domain": "highschool"
+    },
+    "answer": {
+      "text": "학업 때문에 늦게 자는 경우가 많지만, 충분한 수면은 필수야.",
+      "tokens": [
+        {
+          "text": "학업",
+          "lemma": "학업",
+          "pos": "NNG"
+        },
+        {
+          "text": "때문",
+          "lemma": "때문",
+          "pos": "NNB"
+        },
+        {
+          "text": "에",
+          "lemma": "에",
+          "pos": "JKB"
+        },
+        {
+          "text": "늦",
+          "lemma": "늦",
+          "pos": "VA"
+        },
+        {
+          "text": "게",
+          "lemma": "게",
+          "pos": "EC"
+        },
+        {
+          "text": "자",
+          "lemma": "자",
+          "pos": "NNB"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "JX"
+        },
+        {
+          "text": "경우",
+          "lemma": "경우",
+          "pos": "NNG"
+        },
+        {
+          "text": "가",
+          "lemma": "가",
+          "pos": "JKS"
+        },
+        {
+          "text": "많",
+          "lemma": "많",
+          "pos": "VA"
+        },
+        {
+          "text": "지만",
+          "lemma": "지만",
+          "pos": "EC"
+        },
+        {
+          "text": "충분",
+          "lemma": "충분",
+          "pos": "XR"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSA"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "수면",
+          "lemma": "수면",
+          "pos": "NNP"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "JX"
+        },
+        {
+          "text": "필수",
+          "lemma": "필수",
+          "pos": "NNP"
+        },
+        {
+          "text": "야",
+          "lemma": "야",
+          "pos": "JKV"
+        }
+      ]
+    },
+    "concepts": [
+      "경우",
+      "고등학생",
+      "때문",
+      "수면",
+      "시",
+      "자",
+      "잠자리",
+      "필수",
+      "학업"
+    ],
+    "domain": "highschool"
+  },
+  {
+    "question": {
+      "text": "대학생들은 잠이 부족한 편일까?",
+      "tokens": [
+        {
+          "text": "대학생",
+          "lemma": "대학생",
+          "pos": "NNG"
+        },
+        {
+          "text": "들",
+          "lemma": "들",
+          "pos": "XSN"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "JX"
+        },
+        {
+          "text": "잠",
+          "lemma": "잠",
+          "pos": "NNG"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "JKS"
+        },
+        {
+          "text": "부족",
+          "lemma": "부족",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "편",
+          "lemma": "편",
+          "pos": "NNB"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "VCP"
+        },
+        {
+          "text": "ㄹ까",
+          "lemma": "ㄹ까",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "과제",
+        "기간",
+        "대학생",
+        "때",
+        "부족",
+        "시험",
+        "잠",
+        "편"
+      ],
+      "domain": "highschool"
+    },
+    "answer": {
+      "text": "과제나 시험 기간에는 잠이 부족할 때가 많아.",
+      "tokens": [
+        {
+          "text": "과제",
+          "lemma": "과제",
+          "pos": "NNG"
+        },
+        {
+          "text": "나",
+          "lemma": "나",
+          "pos": "JC"
+        },
+        {
+          "text": "시험",
+          "lemma": "시험",
+          "pos": "NNG"
+        },
+        {
+          "text": "기간",
+          "lemma": "기간",
+          "pos": "NNG"
+        },
+        {
+          "text": "에",
+          "lemma": "에",
+          "pos": "JKB"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "JX"
+        },
+        {
+          "text": "잠",
+          "lemma": "잠",
+          "pos": "NNG"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "JKS"
+        },
+        {
+          "text": "부족",
+          "lemma": "부족",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "ㄹ",
+          "lemma": "ㄹ",
+          "pos": "ETM"
+        },
+        {
+          "text": "때",
+          "lemma": "때",
+          "pos": "NNG"
+        },
+        {
+          "text": "가",
+          "lemma": "가",
+          "pos": "JKS"
+        },
+        {
+          "text": "많",
+          "lemma": "많",
+          "pos": "VA"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "과제",
+      "기간",
+      "대학생",
+      "때",
+      "부족",
+      "시험",
+      "잠",
+      "편"
+    ],
+    "domain": "highschool"
+  },
+  {
+    "question": {
+      "text": "고등학생에게 인기 있는 콘텐츠는 뭐야?",
+      "tokens": [
+        {
+          "text": "고등학생",
+          "lemma": "고등학생",
+          "pos": "NNG"
+        },
+        {
+          "text": "에게",
+          "lemma": "에게",
+          "pos": "JKB"
+        },
+        {
+          "text": "인기",
+          "lemma": "인기",
+          "pos": "NNG"
+        },
+        {
+          "text": "있",
+          "lemma": "있",
+          "pos": "VV"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "ETM"
+        },
+        {
+          "text": "콘텐츠",
+          "lemma": "콘텐츠",
+          "pos": "NNP"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "JX"
+        },
+        {
+          "text": "뭐",
+          "lemma": "뭐",
+          "pos": "NP"
+        },
+        {
+          "text": "야",
+          "lemma": "야",
+          "pos": "JKV"
+        }
+      ],
+      "concepts": [
+        "게",
+        "게임",
+        "고등학생",
+        "스트리밍",
+        "아이돌",
+        "영상",
+        "웹툰",
+        "인기",
+        "콘텐츠"
+      ],
+      "domain": "highschool"
+    },
+    "answer": {
+      "text": "웹툰, 아이돌 영상, 게임 스트리밍 같은 게 인기 많다고 들었어.",
+      "tokens": [
+        {
+          "text": "웹툰",
+          "lemma": "웹툰",
+          "pos": "NNP"
+        },
+        {
+          "text": "아이돌",
+          "lemma": "아이돌",
+          "pos": "NNP"
+        },
+        {
+          "text": "영상",
+          "lemma": "영상",
+          "pos": "NNP"
+        },
+        {
+          "text": "게임",
+          "lemma": "게임",
+          "pos": "NNP"
+        },
+        {
+          "text": "스트리밍",
+          "lemma": "스트리밍",
+          "pos": "NNP"
+        },
+        {
+          "text": "같",
+          "lemma": "같",
+          "pos": "VA"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "ETM"
+        },
+        {
+          "text": "게",
+          "lemma": "게",
+          "pos": "NNG"
+        },
+        {
+          "text": "인기",
+          "lemma": "인기",
+          "pos": "NNG"
+        },
+        {
+          "text": "많",
+          "lemma": "많",
+          "pos": "VA"
+        },
+        {
+          "text": "다고",
+          "lemma": "다고",
+          "pos": "EC"
+        },
+        {
+          "text": "들",
+          "lemma": "들",
+          "pos": "VV"
+        },
+        {
+          "text": "었",
+          "lemma": "었",
+          "pos": "EP"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "게",
+      "게임",
+      "고등학생",
+      "스트리밍",
+      "아이돌",
+      "영상",
+      "웹툰",
+      "인기",
+      "콘텐츠"
+    ],
+    "domain": "highschool"
+  },
+  {
+    "question": {
+      "text": "대학생에게 인기 있는 콘텐츠는?",
+      "tokens": [
+        {
+          "text": "대학생",
+          "lemma": "대학생",
+          "pos": "NNG"
+        },
+        {
+          "text": "에게",
+          "lemma": "에게",
+          "pos": "JKB"
+        },
+        {
+          "text": "인기",
+          "lemma": "인기",
+          "pos": "NNG"
+        },
+        {
+          "text": "있",
+          "lemma": "있",
+          "pos": "VV"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "ETM"
+        },
+        {
+          "text": "콘텐츠",
+          "lemma": "콘텐츠",
+          "pos": "NNP"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "JX"
+        }
+      ],
+      "concepts": [
+        "것",
+        "넷플릭스",
+        "대학생",
+        "서비스",
+        "요즘",
+        "유튜브",
+        "이용",
+        "인기",
+        "콘텐츠"
+      ],
+      "domain": "highschool"
+    },
+    "answer": {
+      "text": "요즘은 유튜브나 넷플릭스 같은 OTT 서비스를 많이 이용하는 것 같아.",
+      "tokens": [
+        {
+          "text": "요즘",
+          "lemma": "요즘",
+          "pos": "NNG"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "JX"
+        },
+        {
+          "text": "유튜브",
+          "lemma": "유튜브",
+          "pos": "NNP"
+        },
+        {
+          "text": "나",
+          "lemma": "나",
+          "pos": "JC"
+        },
+        {
+          "text": "넷플릭스",
+          "lemma": "넷플릭스",
+          "pos": "NNP"
+        },
+        {
+          "text": "같",
+          "lemma": "같",
+          "pos": "VA"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "ETM"
+        },
+        {
+          "text": "OTT",
+          "lemma": "OTT",
+          "pos": "SL"
+        },
+        {
+          "text": "서비스",
+          "lemma": "서비스",
+          "pos": "NNG"
+        },
+        {
+          "text": "를",
+          "lemma": "를",
+          "pos": "JKO"
+        },
+        {
+          "text": "많이",
+          "lemma": "많이",
+          "pos": "MAG"
+        },
+        {
+          "text": "이용",
+          "lemma": "이용",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "ETM"
+        },
+        {
+          "text": "것",
+          "lemma": "것",
+          "pos": "NNB"
+        },
+        {
+          "text": "같",
+          "lemma": "같",
+          "pos": "VA"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "것",
+      "넷플릭스",
+      "대학생",
+      "서비스",
+      "요즘",
+      "유튜브",
+      "이용",
+      "인기",
+      "콘텐츠"
+    ],
+    "domain": "highschool"
+  },
+  {
+    "question": {
+      "text": "고등학생 때 학교에 가는 게 좋았어?",
+      "tokens": [
+        {
+          "text": "고등학생",
+          "lemma": "고등학생",
+          "pos": "NNG"
+        },
+        {
+          "text": "때",
+          "lemma": "때",
+          "pos": "NNG"
+        },
+        {
+          "text": "학교",
+          "lemma": "학교",
+          "pos": "NNG"
+        },
+        {
+          "text": "에",
+          "lemma": "에",
+          "pos": "JKB"
+        },
+        {
+          "text": "가",
+          "lemma": "가",
+          "pos": "VV"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "ETM"
+        },
+        {
+          "text": "게",
+          "lemma": "게",
+          "pos": "NNG"
+        },
+        {
+          "text": "좋",
+          "lemma": "좋",
+          "pos": "VA"
+        },
+        {
+          "text": "았",
+          "lemma": "았",
+          "pos": "EP"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "게",
+        "고등학생",
+        "공부",
+        "때",
+        "수다",
+        "재미",
+        "점심시간",
+        "친구",
+        "학교"
+      ],
+      "domain": "highschool"
+    },
+    "answer": {
+      "text": "친구들이랑 같이 공부하고 점심시간에 수다 떠는 재미로 다녔어.",
+      "tokens": [
+        {
+          "text": "친구",
+          "lemma": "친구",
+          "pos": "NNG"
+        },
+        {
+          "text": "들",
+          "lemma": "들",
+          "pos": "XSN"
+        },
+        {
+          "text": "이랑",
+          "lemma": "이랑",
+          "pos": "JC"
+        },
+        {
+          "text": "같이",
+          "lemma": "같이",
+          "pos": "MAG"
+        },
+        {
+          "text": "공부",
+          "lemma": "공부",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "고",
+          "lemma": "고",
+          "pos": "EC"
+        },
+        {
+          "text": "점심시간",
+          "lemma": "점심시간",
+          "pos": "NNG"
+        },
+        {
+          "text": "에",
+          "lemma": "에",
+          "pos": "JKB"
+        },
+        {
+          "text": "수다",
+          "lemma": "수다",
+          "pos": "NNP"
+        },
+        {
+          "text": "떨",
+          "lemma": "떨",
+          "pos": "VV"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "ETM"
+        },
+        {
+          "text": "재미",
+          "lemma": "재미",
+          "pos": "NNG"
+        },
+        {
+          "text": "로",
+          "lemma": "로",
+          "pos": "JKB"
+        },
+        {
+          "text": "다니",
+          "lemma": "다니",
+          "pos": "VV"
+        },
+        {
+          "text": "었",
+          "lemma": "었",
+          "pos": "EP"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "게",
+      "고등학생",
+      "공부",
+      "때",
+      "수다",
+      "재미",
+      "점심시간",
+      "친구",
+      "학교"
+    ],
+    "domain": "highschool"
+  },
+  {
+    "question": {
+      "text": "대학생 때 학교에 가는 건 어땠어?",
+      "tokens": [
+        {
+          "text": "대학생",
+          "lemma": "대학생",
+          "pos": "NNG"
+        },
+        {
+          "text": "때",
+          "lemma": "때",
+          "pos": "NNG"
+        },
+        {
+          "text": "학교",
+          "lemma": "학교",
+          "pos": "NNG"
+        },
+        {
+          "text": "에",
+          "lemma": "에",
+          "pos": "JKB"
+        },
+        {
+          "text": "가",
+          "lemma": "가",
+          "pos": "VV"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "ETM"
+        },
+        {
+          "text": "건",
+          "lemma": "건",
+          "pos": "NNB"
+        },
+        {
+          "text": "어떻",
+          "lemma": "어떻",
+          "pos": "VA"
+        },
+        {
+          "text": "었",
+          "lemma": "었",
+          "pos": "EP"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "강의",
+        "건",
+        "대외",
+        "대학생",
+        "동아리",
+        "때",
+        "사람",
+        "수",
+        "학교",
+        "활동",
+        "흥미"
+      ],
+      "domain": "highschool"
+    },
+    "answer": {
+      "text": "흥미로운 강의도 많고, 동아리나 대외활동으로 새로운 사람들을 만날 수 있어서 좋았어.",
+      "tokens": [
+        {
+          "text": "흥미",
+          "lemma": "흥미",
+          "pos": "NNG"
+        },
+        {
+          "text": "롭",
+          "lemma": "롭",
+          "pos": "XSA"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "강의",
+          "lemma": "강의",
+          "pos": "NNG"
+        },
+        {
+          "text": "도",
+          "lemma": "도",
+          "pos": "JX"
+        },
+        {
+          "text": "많",
+          "lemma": "많",
+          "pos": "VA"
+        },
+        {
+          "text": "고",
+          "lemma": "고",
+          "pos": "EC"
+        },
+        {
+          "text": "동아리",
+          "lemma": "동아리",
+          "pos": "NNG"
+        },
+        {
+          "text": "나",
+          "lemma": "나",
+          "pos": "JC"
+        },
+        {
+          "text": "대외",
+          "lemma": "대외",
+          "pos": "NNG"
+        },
+        {
+          "text": "활동",
+          "lemma": "활동",
+          "pos": "NNG"
+        },
+        {
+          "text": "으로",
+          "lemma": "으로",
+          "pos": "JKB"
+        },
+        {
+          "text": "새롭",
+          "lemma": "새롭",
+          "pos": "VA"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "사람",
+          "lemma": "사람",
+          "pos": "NNG"
+        },
+        {
+          "text": "들",
+          "lemma": "들",
+          "pos": "XSN"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "만나",
+          "lemma": "만나",
+          "pos": "VV"
+        },
+        {
+          "text": "ㄹ",
+          "lemma": "ㄹ",
+          "pos": "ETM"
+        },
+        {
+          "text": "수",
+          "lemma": "수",
+          "pos": "NNB"
+        },
+        {
+          "text": "있",
+          "lemma": "있",
+          "pos": "VV"
+        },
+        {
+          "text": "어서",
+          "lemma": "어서",
+          "pos": "EC"
+        },
+        {
+          "text": "좋",
+          "lemma": "좋",
+          "pos": "VA"
+        },
+        {
+          "text": "았",
+          "lemma": "았",
+          "pos": "EP"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "강의",
+      "건",
+      "대외",
+      "대학생",
+      "동아리",
+      "때",
+      "사람",
+      "수",
+      "학교",
+      "활동",
+      "흥미"
+    ],
+    "domain": "highschool"
+  },
+  {
+    "question": {
+      "text": "고등학생은 주로 어떤 고민을 해?",
+      "tokens": [
+        {
+          "text": "고등학생",
+          "lemma": "고등학생",
+          "pos": "NNG"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "JX"
+        },
+        {
+          "text": "주로",
+          "lemma": "주로",
+          "pos": "MAG"
+        },
+        {
+          "text": "어떤",
+          "lemma": "어떤",
+          "pos": "MM"
+        },
+        {
+          "text": "고민",
+          "lemma": "고민",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "VX"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "고등학생",
+        "고민",
+        "관계",
+        "대입",
+        "등",
+        "성적",
+        "외모",
+        "친구"
+      ],
+      "domain": "highschool"
+    },
+    "answer": {
+      "text": "성적, 대입, 친구 관계, 외모 등 다양한 고민을 해.",
+      "tokens": [
+        {
+          "text": "성적",
+          "lemma": "성적",
+          "pos": "NNG"
+        },
+        {
+          "text": "대입",
+          "lemma": "대입",
+          "pos": "NNG"
+        },
+        {
+          "text": "친구",
+          "lemma": "친구",
+          "pos": "NNG"
+        },
+        {
+          "text": "관계",
+          "lemma": "관계",
+          "pos": "NNG"
+        },
+        {
+          "text": "외모",
+          "lemma": "외모",
+          "pos": "NNG"
+        },
+        {
+          "text": "등",
+          "lemma": "등",
+          "pos": "NNB"
+        },
+        {
+          "text": "다양",
+          "lemma": "다양",
+          "pos": "XR"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSA"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "고민",
+          "lemma": "고민",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "VX"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "고등학생",
+      "고민",
+      "관계",
+      "대입",
+      "등",
+      "성적",
+      "외모",
+      "친구"
+    ],
+    "domain": "highschool"
+  },
+  {
+    "question": {
+      "text": "대학생은 어떤 고민을 많이 해?",
+      "tokens": [
+        {
+          "text": "대학생",
+          "lemma": "대학생",
+          "pos": "NNG"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "JX"
+        },
+        {
+          "text": "어떤",
+          "lemma": "어떤",
+          "pos": "MM"
+        },
+        {
+          "text": "고민",
+          "lemma": "고민",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "많이",
+          "lemma": "많이",
+          "pos": "MAG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "VX"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "것",
+        "고민",
+        "대학생",
+        "등",
+        "인간관계",
+        "졸업",
+        "취업",
+        "학자금 대출",
+        "현실"
+      ],
+      "domain": "highschool"
+    },
+    "answer": {
+      "text": "취업, 졸업, 인간관계, 학자금 대출 등 현실적인 고민들을 많이 하는 것 같아.",
+      "tokens": [
+        {
+          "text": "취업",
+          "lemma": "취업",
+          "pos": "NNG"
+        },
+        {
+          "text": "졸업",
+          "lemma": "졸업",
+          "pos": "NNG"
+        },
+        {
+          "text": "인간관계",
+          "lemma": "인간관계",
+          "pos": "NNG"
+        },
+        {
+          "text": "학자금 대출",
+          "lemma": "학자금 대출",
+          "pos": "NNP"
+        },
+        {
+          "text": "등",
+          "lemma": "등",
+          "pos": "NNB"
+        },
+        {
+          "text": "현실",
+          "lemma": "현실",
+          "pos": "NNG"
+        },
+        {
+          "text": "적",
+          "lemma": "적",
+          "pos": "XSN"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "VCP"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "고민",
+          "lemma": "고민",
+          "pos": "NNG"
+        },
+        {
+          "text": "들",
+          "lemma": "들",
+          "pos": "XSN"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "많이",
+          "lemma": "많이",
+          "pos": "MAG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "VV"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "ETM"
+        },
+        {
+          "text": "것",
+          "lemma": "것",
+          "pos": "NNB"
+        },
+        {
+          "text": "같",
+          "lemma": "같",
+          "pos": "VA"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "것",
+      "고민",
+      "대학생",
+      "등",
+      "인간관계",
+      "졸업",
+      "취업",
+      "학자금 대출",
+      "현실"
+    ],
+    "domain": "highschool"
+  },
+  {
+    "question": {
+      "text": "고등학생에게 가장 중요한 역할은 뭘까?",
+      "tokens": [
+        {
+          "text": "고등학생",
+          "lemma": "고등학생",
+          "pos": "NNG"
+        },
+        {
+          "text": "에게",
+          "lemma": "에게",
+          "pos": "JKB"
+        },
+        {
+          "text": "가장",
+          "lemma": "가장",
+          "pos": "MAG"
+        },
+        {
+          "text": "중요",
+          "lemma": "중요",
+          "pos": "XR"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSA"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "역할",
+          "lemma": "역할",
+          "pos": "NNG"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "JX"
+        },
+        {
+          "text": "뭐",
+          "lemma": "뭐",
+          "pos": "NP"
+        },
+        {
+          "text": "ㄹ까",
+          "lemma": "ㄹ까",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "건강",
+        "것",
+        "고등학생",
+        "방법",
+        "생각",
+        "성장",
+        "역할",
+        "자신",
+        "학습"
+      ],
+      "domain": "highschool"
+    },
+    "answer": {
+      "text": "자신에게 맞는 학습 방법을 찾고, 건강하게 성장하는 것이 중요하다고 생각해.",
+      "tokens": [
+        {
+          "text": "자신",
+          "lemma": "자신",
+          "pos": "NNG"
+        },
+        {
+          "text": "에게",
+          "lemma": "에게",
+          "pos": "JKB"
+        },
+        {
+          "text": "맞",
+          "lemma": "맞",
+          "pos": "VV"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "ETM"
+        },
+        {
+          "text": "학습",
+          "lemma": "학습",
+          "pos": "NNG"
+        },
+        {
+          "text": "방법",
+          "lemma": "방법",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "찾",
+          "lemma": "찾",
+          "pos": "VV"
+        },
+        {
+          "text": "고",
+          "lemma": "고",
+          "pos": "EC"
+        },
+        {
+          "text": "건강",
+          "lemma": "건강",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "게",
+          "lemma": "게",
+          "pos": "EC"
+        },
+        {
+          "text": "성장",
+          "lemma": "성장",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "ETM"
+        },
+        {
+          "text": "것",
+          "lemma": "것",
+          "pos": "NNB"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "JKS"
+        },
+        {
+          "text": "중요",
+          "lemma": "중요",
+          "pos": "XR"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSA"
+        },
+        {
+          "text": "다고",
+          "lemma": "다고",
+          "pos": "EC"
+        },
+        {
+          "text": "생각",
+          "lemma": "생각",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "건강",
+      "것",
+      "고등학생",
+      "방법",
+      "생각",
+      "성장",
+      "역할",
+      "자신",
+      "학습"
+    ],
+    "domain": "highschool"
+  },
+  {
+    "question": {
+      "text": "대학생에게 가장 중요한 역할은 뭘까?",
+      "tokens": [
+        {
+          "text": "대학생",
+          "lemma": "대학생",
+          "pos": "NNG"
+        },
+        {
+          "text": "에게",
+          "lemma": "에게",
+          "pos": "JKB"
+        },
+        {
+          "text": "가장",
+          "lemma": "가장",
+          "pos": "MAG"
+        },
+        {
+          "text": "중요",
+          "lemma": "중요",
+          "pos": "XR"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSA"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "역할",
+          "lemma": "역할",
+          "pos": "NNG"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "JX"
+        },
+        {
+          "text": "뭐",
+          "lemma": "뭐",
+          "pos": "NP"
+        },
+        {
+          "text": "ㄹ까",
+          "lemma": "ㄹ까",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "것",
+        "대학생",
+        "미래",
+        "사회인",
+        "생각",
+        "설계",
+        "역량",
+        "역할",
+        "자신",
+        "주도"
+      ],
+      "domain": "highschool"
+    },
+    "answer": {
+      "text": "주도적으로 자신의 미래를 설계하고, 사회인으로서의 역량을 키우는 것이 중요하다고 생각해.",
+      "tokens": [
+        {
+          "text": "주도",
+          "lemma": "주도",
+          "pos": "NNG"
+        },
+        {
+          "text": "적",
+          "lemma": "적",
+          "pos": "XSN"
+        },
+        {
+          "text": "으로",
+          "lemma": "으로",
+          "pos": "JKB"
+        },
+        {
+          "text": "자신",
+          "lemma": "자신",
+          "pos": "NNG"
+        },
+        {
+          "text": "의",
+          "lemma": "의",
+          "pos": "JKG"
+        },
+        {
+          "text": "미래",
+          "lemma": "미래",
+          "pos": "NNG"
+        },
+        {
+          "text": "를",
+          "lemma": "를",
+          "pos": "JKO"
+        },
+        {
+          "text": "설계",
+          "lemma": "설계",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "고",
+          "lemma": "고",
+          "pos": "EC"
+        },
+        {
+          "text": "사회인",
+          "lemma": "사회인",
+          "pos": "NNG"
+        },
+        {
+          "text": "으로서",
+          "lemma": "으로서",
+          "pos": "JKB"
+        },
+        {
+          "text": "의",
+          "lemma": "의",
+          "pos": "JKG"
+        },
+        {
+          "text": "역량",
+          "lemma": "역량",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "키우",
+          "lemma": "키우",
+          "pos": "VV"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "ETM"
+        },
+        {
+          "text": "것",
+          "lemma": "것",
+          "pos": "NNB"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "JKS"
+        },
+        {
+          "text": "중요",
+          "lemma": "중요",
+          "pos": "XR"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSA"
+        },
+        {
+          "text": "다고",
+          "lemma": "다고",
+          "pos": "EC"
+        },
+        {
+          "text": "생각",
+          "lemma": "생각",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "것",
+      "대학생",
+      "미래",
+      "사회인",
+      "생각",
+      "설계",
+      "역량",
+      "역할",
+      "자신",
+      "주도"
+    ],
+    "domain": "highschool"
+  },
+  {
+    "question": {
+      "text": "고등학생 때 가장 싫어했던 것은?",
+      "tokens": [
+        {
+          "text": "고등학생",
+          "lemma": "고등학생",
+          "pos": "NNG"
+        },
+        {
+          "text": "때",
+          "lemma": "때",
+          "pos": "NNG"
+        },
+        {
+          "text": "가장",
+          "lemma": "가장",
+          "pos": "MAG"
+        },
+        {
+          "text": "싫어하",
+          "lemma": "싫어하",
+          "pos": "VV"
+        },
+        {
+          "text": "았",
+          "lemma": "았",
+          "pos": "EP"
+        },
+        {
+          "text": "던",
+          "lemma": "던",
+          "pos": "ETM"
+        },
+        {
+          "text": "것",
+          "lemma": "것",
+          "pos": "NNB"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "JX"
+        }
+      ],
+      "concepts": [
+        "것",
+        "게",
+        "고등학생",
+        "답",
+        "때",
+        "문제집",
+        "수학",
+        "제일",
+        "짜증"
+      ],
+      "domain": "highschool"
+    },
+    "answer": {
+      "text": "수학 문제집 푸는 게 제일 싫었어. 답이 안 보이면 짜증 났거든.",
+      "tokens": [
+        {
+          "text": "수학",
+          "lemma": "수학",
+          "pos": "NNG"
+        },
+        {
+          "text": "문제집",
+          "lemma": "문제집",
+          "pos": "NNG"
+        },
+        {
+          "text": "풀",
+          "lemma": "풀",
+          "pos": "VV"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "ETM"
+        },
+        {
+          "text": "게",
+          "lemma": "게",
+          "pos": "NNG"
+        },
+        {
+          "text": "제일",
+          "lemma": "제일",
+          "pos": "NNG"
+        },
+        {
+          "text": "싫",
+          "lemma": "싫",
+          "pos": "VA"
+        },
+        {
+          "text": "었",
+          "lemma": "었",
+          "pos": "EP"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        },
+        {
+          "text": "답",
+          "lemma": "답",
+          "pos": "NNG"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "JKS"
+        },
+        {
+          "text": "안",
+          "lemma": "안",
+          "pos": "MAG"
+        },
+        {
+          "text": "보이",
+          "lemma": "보이",
+          "pos": "VV"
+        },
+        {
+          "text": "면",
+          "lemma": "면",
+          "pos": "EC"
+        },
+        {
+          "text": "짜증",
+          "lemma": "짜증",
+          "pos": "NNP"
+        },
+        {
+          "text": "나",
+          "lemma": "나",
+          "pos": "VV"
+        },
+        {
+          "text": "았",
+          "lemma": "았",
+          "pos": "EP"
+        },
+        {
+          "text": "거든",
+          "lemma": "거든",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "것",
+      "게",
+      "고등학생",
+      "답",
+      "때",
+      "문제집",
+      "수학",
+      "제일",
+      "짜증"
+    ],
+    "domain": "highschool"
+  },
+  {
+    "question": {
+      "text": "대학생 때 가장 싫어했던 것은?",
+      "tokens": [
+        {
+          "text": "대학생",
+          "lemma": "대학생",
+          "pos": "NNG"
+        },
+        {
+          "text": "때",
+          "lemma": "때",
+          "pos": "NNG"
+        },
+        {
+          "text": "가장",
+          "lemma": "가장",
+          "pos": "MAG"
+        },
+        {
+          "text": "싫어하",
+          "lemma": "싫어하",
+          "pos": "VV"
+        },
+        {
+          "text": "았",
+          "lemma": "았",
+          "pos": "EP"
+        },
+        {
+          "text": "던",
+          "lemma": "던",
+          "pos": "ETM"
+        },
+        {
+          "text": "것",
+          "lemma": "것",
+          "pos": "NNB"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "JX"
+        }
+      ],
+      "concepts": [
+        "것",
+        "과제",
+        "대학생",
+        "때",
+        "무임승차",
+        "사람",
+        "조별",
+        "중",
+        "팀원"
+      ],
+      "domain": "highschool"
+    },
+    "answer": {
+      "text": "조별 과제 할 때 팀원 중에 무임승차하는 사람이 있으면 정말 싫었어.",
+      "tokens": [
+        {
+          "text": "조별",
+          "lemma": "조별",
+          "pos": "NNG"
+        },
+        {
+          "text": "과제",
+          "lemma": "과제",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "VV"
+        },
+        {
+          "text": "ㄹ",
+          "lemma": "ㄹ",
+          "pos": "ETM"
+        },
+        {
+          "text": "때",
+          "lemma": "때",
+          "pos": "NNG"
+        },
+        {
+          "text": "팀원",
+          "lemma": "팀원",
+          "pos": "NNG"
+        },
+        {
+          "text": "중",
+          "lemma": "중",
+          "pos": "NNB"
+        },
+        {
+          "text": "에",
+          "lemma": "에",
+          "pos": "JKB"
+        },
+        {
+          "text": "무임승차",
+          "lemma": "무임승차",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "ETM"
+        },
+        {
+          "text": "사람",
+          "lemma": "사람",
+          "pos": "NNG"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "JKS"
+        },
+        {
+          "text": "있",
+          "lemma": "있",
+          "pos": "VV"
+        },
+        {
+          "text": "으면",
+          "lemma": "으면",
+          "pos": "EC"
+        },
+        {
+          "text": "정말",
+          "lemma": "정말",
+          "pos": "MAG"
+        },
+        {
+          "text": "싫",
+          "lemma": "싫",
+          "pos": "VA"
+        },
+        {
+          "text": "었",
+          "lemma": "었",
+          "pos": "EP"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "것",
+      "과제",
+      "대학생",
+      "때",
+      "무임승차",
+      "사람",
+      "조별",
+      "중",
+      "팀원"
+    ],
+    "domain": "highschool"
+  },
+  {
+    "question": {
+      "text": "고등학생 때 가장 받고 싶었던 선물은?",
+      "tokens": [
+        {
+          "text": "고등학생",
+          "lemma": "고등학생",
+          "pos": "NNG"
+        },
+        {
+          "text": "때",
+          "lemma": "때",
+          "pos": "NNG"
+        },
+        {
+          "text": "가장",
+          "lemma": "가장",
+          "pos": "MAG"
+        },
+        {
+          "text": "받",
+          "lemma": "받",
+          "pos": "VV"
+        },
+        {
+          "text": "고",
+          "lemma": "고",
+          "pos": "EC"
+        },
+        {
+          "text": "싶",
+          "lemma": "싶",
+          "pos": "VX"
+        },
+        {
+          "text": "었",
+          "lemma": "었",
+          "pos": "EP"
+        },
+        {
+          "text": "던",
+          "lemma": "던",
+          "pos": "ETM"
+        },
+        {
+          "text": "선물",
+          "lemma": "선물",
+          "pos": "NNG"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "JX"
+        }
+      ],
+      "concepts": [
+        "고등학생",
+        "농담",
+        "때",
+        "문제집",
+        "반",
+        "선물",
+        "용돈",
+        "진담",
+        "참고서"
+      ],
+      "domain": "highschool"
+    },
+    "answer": {
+      "text": "새로운 문제집이나 참고서를 가장 받고 싶었어. (농담 반 진담 반) 아니면 용돈!",
+      "tokens": [
+        {
+          "text": "새롭",
+          "lemma": "새롭",
+          "pos": "VA"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "문제집",
+          "lemma": "문제집",
+          "pos": "NNG"
+        },
+        {
+          "text": "이나",
+          "lemma": "이나",
+          "pos": "JC"
+        },
+        {
+          "text": "참고서",
+          "lemma": "참고서",
+          "pos": "NNP"
+        },
+        {
+          "text": "를",
+          "lemma": "를",
+          "pos": "JKO"
+        },
+        {
+          "text": "가장",
+          "lemma": "가장",
+          "pos": "MAG"
+        },
+        {
+          "text": "받",
+          "lemma": "받",
+          "pos": "VV"
+        },
+        {
+          "text": "고",
+          "lemma": "고",
+          "pos": "EC"
+        },
+        {
+          "text": "싶",
+          "lemma": "싶",
+          "pos": "VX"
+        },
+        {
+          "text": "었",
+          "lemma": "었",
+          "pos": "EP"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        },
+        {
+          "text": "(",
+          "lemma": "(",
+          "pos": "SS"
+        },
+        {
+          "text": "농담",
+          "lemma": "농담",
+          "pos": "NNP"
+        },
+        {
+          "text": "반",
+          "lemma": "반",
+          "pos": "NNG"
+        },
+        {
+          "text": "진담",
+          "lemma": "진담",
+          "pos": "NNG"
+        },
+        {
+          "text": "반",
+          "lemma": "반",
+          "pos": "NNG"
+        },
+        {
+          "text": ")",
+          "lemma": ")",
+          "pos": "SS"
+        },
+        {
+          "text": "아니",
+          "lemma": "아니",
+          "pos": "VCN"
+        },
+        {
+          "text": "면",
+          "lemma": "면",
+          "pos": "EC"
+        },
+        {
+          "text": "용돈",
+          "lemma": "용돈",
+          "pos": "NNG"
+        }
+      ]
+    },
+    "concepts": [
+      "고등학생",
+      "농담",
+      "때",
+      "문제집",
+      "반",
+      "선물",
+      "용돈",
+      "진담",
+      "참고서"
+    ],
+    "domain": "highschool"
+  },
+  {
+    "question": {
+      "text": "대학생 때 가장 받고 싶었던 선물은?",
+      "tokens": [
+        {
+          "text": "대학생",
+          "lemma": "대학생",
+          "pos": "NNG"
+        },
+        {
+          "text": "때",
+          "lemma": "때",
+          "pos": "NNG"
+        },
+        {
+          "text": "가장",
+          "lemma": "가장",
+          "pos": "MAG"
+        },
+        {
+          "text": "받",
+          "lemma": "받",
+          "pos": "VV"
+        },
+        {
+          "text": "고",
+          "lemma": "고",
+          "pos": "EC"
+        },
+        {
+          "text": "싶",
+          "lemma": "싶",
+          "pos": "VX"
+        },
+        {
+          "text": "었",
+          "lemma": "었",
+          "pos": "EP"
+        },
+        {
+          "text": "던",
+          "lemma": "던",
+          "pos": "ETM"
+        },
+        {
+          "text": "선물",
+          "lemma": "선물",
+          "pos": "NNG"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "JX"
+        }
+      ],
+      "concepts": [
+        "경비",
+        "대학생",
+        "때",
+        "선물",
+        "여행",
+        "준비",
+        "책",
+        "취업",
+        "필요"
+      ],
+      "domain": "highschool"
+    },
+    "answer": {
+      "text": "취업 준비에 필요한 책이나, 여행 경비 같은 걸 가장 받고 싶었어.",
+      "tokens": [
+        {
+          "text": "취업",
+          "lemma": "취업",
+          "pos": "NNG"
+        },
+        {
+          "text": "준비",
+          "lemma": "준비",
+          "pos": "NNG"
+        },
+        {
+          "text": "에",
+          "lemma": "에",
+          "pos": "JKB"
+        },
+        {
+          "text": "필요",
+          "lemma": "필요",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "책",
+          "lemma": "책",
+          "pos": "NNG"
+        },
+        {
+          "text": "이나",
+          "lemma": "이나",
+          "pos": "JC"
+        },
+        {
+          "text": "여행",
+          "lemma": "여행",
+          "pos": "NNG"
+        },
+        {
+          "text": "경비",
+          "lemma": "경비",
+          "pos": "NNG"
+        },
+        {
+          "text": "같",
+          "lemma": "같",
+          "pos": "VA"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "ETM"
+        },
+        {
+          "text": "걸",
+          "lemma": "걸",
+          "pos": "VV"
+        },
+        {
+          "text": "ㄹ",
+          "lemma": "ㄹ",
+          "pos": "ETM"
+        },
+        {
+          "text": "가장",
+          "lemma": "가장",
+          "pos": "MAG"
+        },
+        {
+          "text": "받",
+          "lemma": "받",
+          "pos": "VV"
+        },
+        {
+          "text": "고",
+          "lemma": "고",
+          "pos": "EC"
+        },
+        {
+          "text": "싶",
+          "lemma": "싶",
+          "pos": "VX"
+        },
+        {
+          "text": "었",
+          "lemma": "었",
+          "pos": "EP"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "경비",
+      "대학생",
+      "때",
+      "선물",
+      "여행",
+      "준비",
+      "책",
+      "취업",
+      "필요"
+    ],
+    "domain": "highschool"
+  },
+  {
+    "question": {
+      "text": "고등학생 때 친구 사귀는 방법은?",
+      "tokens": [
+        {
+          "text": "고등학생",
+          "lemma": "고등학생",
+          "pos": "NNG"
+        },
+        {
+          "text": "때",
+          "lemma": "때",
+          "pos": "NNG"
+        },
+        {
+          "text": "친구",
+          "lemma": "친구",
+          "pos": "NNG"
+        },
+        {
+          "text": "사귀",
+          "lemma": "사귀",
+          "pos": "VV"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "ETM"
+        },
+        {
+          "text": "방법",
+          "lemma": "방법",
+          "pos": "NNG"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "JX"
+        }
+      ],
+      "concepts": [
+        "고등학생",
+        "동아리",
+        "때",
+        "반",
+        "방법",
+        "자연",
+        "친구",
+        "활동"
+      ],
+      "domain": "highschool"
+    },
+    "answer": {
+      "text": "같은 반 친구들이나 동아리 활동을 하면서 자연스럽게 친해졌어.",
+      "tokens": [
+        {
+          "text": "같",
+          "lemma": "같",
+          "pos": "VA"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "ETM"
+        },
+        {
+          "text": "반",
+          "lemma": "반",
+          "pos": "NNG"
+        },
+        {
+          "text": "친구",
+          "lemma": "친구",
+          "pos": "NNG"
+        },
+        {
+          "text": "들",
+          "lemma": "들",
+          "pos": "XSN"
+        },
+        {
+          "text": "이나",
+          "lemma": "이나",
+          "pos": "JC"
+        },
+        {
+          "text": "동아리",
+          "lemma": "동아리",
+          "pos": "NNG"
+        },
+        {
+          "text": "활동",
+          "lemma": "활동",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "VV"
+        },
+        {
+          "text": "면서",
+          "lemma": "면서",
+          "pos": "EC"
+        },
+        {
+          "text": "자연",
+          "lemma": "자연",
+          "pos": "NNG"
+        },
+        {
+          "text": "스럽",
+          "lemma": "스럽",
+          "pos": "XSA"
+        },
+        {
+          "text": "게",
+          "lemma": "게",
+          "pos": "EC"
+        },
+        {
+          "text": "친하",
+          "lemma": "친하",
+          "pos": "VA"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EC"
+        },
+        {
+          "text": "지",
+          "lemma": "지",
+          "pos": "VX"
+        },
+        {
+          "text": "었",
+          "lemma": "었",
+          "pos": "EP"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "고등학생",
+      "동아리",
+      "때",
+      "반",
+      "방법",
+      "자연",
+      "친구",
+      "활동"
+    ],
+    "domain": "highschool"
+  },
+  {
+    "question": {
+      "text": "대학생 때 친구 사귀는 방법은?",
+      "tokens": [
+        {
+          "text": "대학생",
+          "lemma": "대학생",
+          "pos": "NNG"
+        },
+        {
+          "text": "때",
+          "lemma": "때",
+          "pos": "NNG"
+        },
+        {
+          "text": "친구",
+          "lemma": "친구",
+          "pos": "NNG"
+        },
+        {
+          "text": "사귀",
+          "lemma": "사귀",
+          "pos": "VV"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "ETM"
+        },
+        {
+          "text": "방법",
+          "lemma": "방법",
+          "pos": "NNG"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "JX"
+        }
+      ],
+      "concepts": [
+        "과제",
+        "대외",
+        "대학생",
+        "동아리",
+        "때",
+        "방법",
+        "사람",
+        "수업",
+        "조별",
+        "친구",
+        "활동"
+      ],
+      "domain": "highschool"
+    },
+    "answer": {
+      "text": "수업에서 조별 과제를 하거나, 동아리나 대외 활동을 통해 새로운 사람들을 만났어.",
+      "tokens": [
+        {
+          "text": "수업",
+          "lemma": "수업",
+          "pos": "NNG"
+        },
+        {
+          "text": "에서",
+          "lemma": "에서",
+          "pos": "JKB"
+        },
+        {
+          "text": "조별",
+          "lemma": "조별",
+          "pos": "NNG"
+        },
+        {
+          "text": "과제",
+          "lemma": "과제",
+          "pos": "NNG"
+        },
+        {
+          "text": "를",
+          "lemma": "를",
+          "pos": "JKO"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "VV"
+        },
+        {
+          "text": "거나",
+          "lemma": "거나",
+          "pos": "EC"
+        },
+        {
+          "text": "동아리",
+          "lemma": "동아리",
+          "pos": "NNG"
+        },
+        {
+          "text": "나",
+          "lemma": "나",
+          "pos": "JC"
+        },
+        {
+          "text": "대외",
+          "lemma": "대외",
+          "pos": "NNG"
+        },
+        {
+          "text": "활동",
+          "lemma": "활동",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "통하",
+          "lemma": "통하",
+          "pos": "VV"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EC"
+        },
+        {
+          "text": "새롭",
+          "lemma": "새롭",
+          "pos": "VA"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "사람",
+          "lemma": "사람",
+          "pos": "NNG"
+        },
+        {
+          "text": "들",
+          "lemma": "들",
+          "pos": "XSN"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "만나",
+          "lemma": "만나",
+          "pos": "VV"
+        },
+        {
+          "text": "았",
+          "lemma": "았",
+          "pos": "EP"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "과제",
+      "대외",
+      "대학생",
+      "동아리",
+      "때",
+      "방법",
+      "사람",
+      "수업",
+      "조별",
+      "친구",
+      "활동"
+    ],
+    "domain": "highschool"
+  },
+  {
+    "question": {
+      "text": "고등학생 때 가장 무서웠던 것은?",
+      "tokens": [
+        {
+          "text": "고등학생",
+          "lemma": "고등학생",
+          "pos": "NNG"
+        },
+        {
+          "text": "때",
+          "lemma": "때",
+          "pos": "NNG"
+        },
+        {
+          "text": "가장",
+          "lemma": "가장",
+          "pos": "MAG"
+        },
+        {
+          "text": "무섭",
+          "lemma": "무섭",
+          "pos": "VA"
+        },
+        {
+          "text": "었",
+          "lemma": "었",
+          "pos": "EP"
+        },
+        {
+          "text": "던",
+          "lemma": "던",
+          "pos": "ETM"
+        },
+        {
+          "text": "것",
+          "lemma": "것",
+          "pos": "NNB"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "JX"
+        }
+      ],
+      "concepts": [
+        "것",
+        "고등학생",
+        "고사",
+        "때",
+        "모의",
+        "성적"
+      ],
+      "domain": "highschool"
+    },
+    "answer": {
+      "text": "모의고사 성적이 떨어질까 봐 가장 무서웠어.",
+      "tokens": [
+        {
+          "text": "모의",
+          "lemma": "모의",
+          "pos": "NNG"
+        },
+        {
+          "text": "고사",
+          "lemma": "고사",
+          "pos": "NNP"
+        },
+        {
+          "text": "성적",
+          "lemma": "성적",
+          "pos": "NNG"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "JKS"
+        },
+        {
+          "text": "떨어지",
+          "lemma": "떨어지",
+          "pos": "VV"
+        },
+        {
+          "text": "ㄹ까",
+          "lemma": "ㄹ까",
+          "pos": "EC"
+        },
+        {
+          "text": "보",
+          "lemma": "보",
+          "pos": "VV"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EC"
+        },
+        {
+          "text": "가장",
+          "lemma": "가장",
+          "pos": "MAG"
+        },
+        {
+          "text": "무섭",
+          "lemma": "무섭",
+          "pos": "VA"
+        },
+        {
+          "text": "었",
+          "lemma": "었",
+          "pos": "EP"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "것",
+      "고등학생",
+      "고사",
+      "때",
+      "모의",
+      "성적"
+    ],
+    "domain": "highschool"
+  },
+  {
+    "question": {
+      "text": "대학생 때 가장 무서웠던 것은?",
+      "tokens": [
+        {
+          "text": "대학생",
+          "lemma": "대학생",
+          "pos": "NNG"
+        },
+        {
+          "text": "때",
+          "lemma": "때",
+          "pos": "NNG"
+        },
+        {
+          "text": "가장",
+          "lemma": "가장",
+          "pos": "MAG"
+        },
+        {
+          "text": "무섭",
+          "lemma": "무섭",
+          "pos": "VA"
+        },
+        {
+          "text": "었",
+          "lemma": "었",
+          "pos": "EP"
+        },
+        {
+          "text": "던",
+          "lemma": "던",
+          "pos": "ETM"
+        },
+        {
+          "text": "것",
+          "lemma": "것",
+          "pos": "NNB"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "JX"
+        }
+      ],
+      "concepts": [
+        "것",
+        "대학생",
+        "때",
+        "졸업",
+        "취업"
+      ],
+      "domain": "highschool"
+    },
+    "answer": {
+      "text": "졸업을 못 하거나, 취업이 안 될까 봐 가장 무서웠어.",
+      "tokens": [
+        {
+          "text": "졸업",
+          "lemma": "졸업",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "못",
+          "lemma": "못",
+          "pos": "MAG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "VV"
+        },
+        {
+          "text": "거나",
+          "lemma": "거나",
+          "pos": "EC"
+        },
+        {
+          "text": "취업",
+          "lemma": "취업",
+          "pos": "NNG"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "JKS"
+        },
+        {
+          "text": "안",
+          "lemma": "안",
+          "pos": "MAG"
+        },
+        {
+          "text": "되",
+          "lemma": "되",
+          "pos": "VV"
+        },
+        {
+          "text": "ㄹ까",
+          "lemma": "ㄹ까",
+          "pos": "EC"
+        },
+        {
+          "text": "보",
+          "lemma": "보",
+          "pos": "VV"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EC"
+        },
+        {
+          "text": "가장",
+          "lemma": "가장",
+          "pos": "MAG"
+        },
+        {
+          "text": "무섭",
+          "lemma": "무섭",
+          "pos": "VA"
+        },
+        {
+          "text": "었",
+          "lemma": "었",
+          "pos": "EP"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "것",
+      "대학생",
+      "때",
+      "졸업",
+      "취업"
+    ],
+    "domain": "highschool"
+  },
+  {
+    "question": {
+      "text": "고등학생과 대학생에 대해 더 궁금한 건 없어?",
+      "tokens": [
+        {
+          "text": "고등학생",
+          "lemma": "고등학생",
+          "pos": "NNG"
+        },
+        {
+          "text": "과",
+          "lemma": "과",
+          "pos": "JC"
+        },
+        {
+          "text": "대학생",
+          "lemma": "대학생",
+          "pos": "NNG"
+        },
+        {
+          "text": "에",
+          "lemma": "에",
+          "pos": "JKB"
+        },
+        {
+          "text": "대하",
+          "lemma": "대하",
+          "pos": "VV"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EC"
+        },
+        {
+          "text": "더",
+          "lemma": "더",
+          "pos": "MAG"
+        },
+        {
+          "text": "궁금",
+          "lemma": "궁금",
+          "pos": "XR"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSA"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "건",
+          "lemma": "건",
+          "pos": "NNB"
+        },
+        {
+          "text": "없",
+          "lemma": "없",
+          "pos": "VA"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "건",
+        "고등학생",
+        "대학생"
+      ],
+      "domain": "highschool"
+    },
+    "answer": {
+      "text": "없어! 충분해!",
+      "tokens": [
+        {
+          "text": "없",
+          "lemma": "없",
+          "pos": "VA"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        },
+        {
+          "text": "충분",
+          "lemma": "충분",
+          "pos": "XR"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSA"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "건",
+      "고등학생",
+      "대학생"
+    ],
+    "domain": "highschool"
+  },
+  {
+    "question": {
+      "text": "오늘도 재밌는 대화였어!",
+      "tokens": [
+        {
+          "text": "오늘",
+          "lemma": "오늘",
+          "pos": "NNG"
+        },
+        {
+          "text": "도",
+          "lemma": "도",
+          "pos": "JX"
+        },
+        {
+          "text": "재밌",
+          "lemma": "재밌",
+          "pos": "VA"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "ETM"
+        },
+        {
+          "text": "대화",
+          "lemma": "대화",
+          "pos": "NNG"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "VCP"
+        },
+        {
+          "text": "었",
+          "lemma": "었",
+          "pos": "EP"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "다음",
+        "대화",
+        "오늘"
+      ],
+      "domain": "highschool"
+    },
+    "answer": {
+      "text": "응, 나도 즐거웠어! 다음에 또 보자!",
+      "tokens": [
+        {
+          "text": "응",
+          "lemma": "응",
+          "pos": "IC"
+        },
+        {
+          "text": "나",
+          "lemma": "나",
+          "pos": "NP"
+        },
+        {
+          "text": "도",
+          "lemma": "도",
+          "pos": "JX"
+        },
+        {
+          "text": "즐겁",
+          "lemma": "즐겁",
+          "pos": "VA"
+        },
+        {
+          "text": "었",
+          "lemma": "었",
+          "pos": "EP"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        },
+        {
+          "text": "다음",
+          "lemma": "다음",
+          "pos": "NNG"
+        },
+        {
+          "text": "에",
+          "lemma": "에",
+          "pos": "JKB"
+        },
+        {
+          "text": "또",
+          "lemma": "또",
+          "pos": "MAJ"
+        },
+        {
+          "text": "보",
+          "lemma": "보",
+          "pos": "VX"
+        },
+        {
+          "text": "자",
+          "lemma": "자",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "다음",
+      "대화",
+      "오늘"
+    ],
+    "domain": "highschool"
+  }
+]

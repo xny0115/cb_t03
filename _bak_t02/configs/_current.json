@@ -1,0 +1,23 @@
+{
+  "epochs": 60,
+  "batch_size": 8,
+  "lr": 0.001,
+  "dropout_ratio": 0.1,
+  "warmup_steps": 1000,
+  "max_sequence_length": 128,
+  "num_heads": 8,
+  "num_encoder_layers": 8,
+  "num_decoder_layers": 8,
+  "model_dim": 256,
+  "ff_dim": 1024,
+  "top_k": 10,
+  "top_p": 0.9,
+  "no_repeat_ngram": 2,
+  "temperature": 0.7,
+  "early_stopping_patience": 5,
+  "verbose": false,
+  "num_epochs": 60,
+  "learning_rate": 0.001,
+  "d_model": 256,
+  "n_layers": 4
+}

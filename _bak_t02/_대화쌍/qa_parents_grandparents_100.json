@@ -1,0 +1,9202 @@
+[
+  {
+    "question": {
+      "text": "부모님께 가장 감사한 점은 뭐야?",
+      "tokens": [
+        {
+          "text": "부모",
+          "lemma": "부모",
+          "pos": "NNG"
+        },
+        {
+          "text": "님",
+          "lemma": "님",
+          "pos": "XSN"
+        },
+        {
+          "text": "께",
+          "lemma": "께",
+          "pos": "JKB"
+        },
+        {
+          "text": "가장",
+          "lemma": "가장",
+          "pos": "MAG"
+        },
+        {
+          "text": "감사",
+          "lemma": "감사",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "점",
+          "lemma": "점",
+          "pos": "NNB"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "JX"
+        },
+        {
+          "text": "뭐",
+          "lemma": "뭐",
+          "pos": "NP"
+        },
+        {
+          "text": "야",
+          "lemma": "야",
+          "pos": "JKV"
+        }
+      ],
+      "concepts": [
+        "감사",
+        "부모",
+        "사랑으로",
+        "응원",
+        "점",
+        "해주시"
+      ],
+      "domain": "parents"
+    },
+    "answer": {
+      "text": "나를 사랑으로 키워주시고, 항상 응원해주시는 점이 가장 감사해.",
+      "tokens": [
+        {
+          "text": "나",
+          "lemma": "나",
+          "pos": "NP"
+        },
+        {
+          "text": "를",
+          "lemma": "를",
+          "pos": "JKO"
+        },
+        {
+          "text": "사랑으로",
+          "lemma": "사랑으로",
+          "pos": "NNP"
+        },
+        {
+          "text": "키우",
+          "lemma": "키우",
+          "pos": "VV"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EC"
+        },
+        {
+          "text": "주",
+          "lemma": "주",
+          "pos": "VX"
+        },
+        {
+          "text": "시",
+          "lemma": "시",
+          "pos": "EP"
+        },
+        {
+          "text": "고",
+          "lemma": "고",
+          "pos": "EC"
+        },
+        {
+          "text": "항상",
+          "lemma": "항상",
+          "pos": "MAG"
+        },
+        {
+          "text": "응원",
+          "lemma": "응원",
+          "pos": "NNP"
+        },
+        {
+          "text": "해주시",
+          "lemma": "해주시",
+          "pos": "NNP"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "JX"
+        },
+        {
+          "text": "점",
+          "lemma": "점",
+          "pos": "NNB"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "JKS"
+        },
+        {
+          "text": "가장",
+          "lemma": "가장",
+          "pos": "MAG"
+        },
+        {
+          "text": "감사",
+          "lemma": "감사",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "감사",
+      "부모",
+      "사랑으로",
+      "응원",
+      "점",
+      "해주시"
+    ],
+    "domain": "parents"
+  },
+  {
+    "question": {
+      "text": "조부모님과의 특별한 추억이 있어?",
+      "tokens": [
+        {
+          "text": "조부모",
+          "lemma": "조부모",
+          "pos": "NNG"
+        },
+        {
+          "text": "님",
+          "lemma": "님",
+          "pos": "XSN"
+        },
+        {
+          "text": "과",
+          "lemma": "과",
+          "pos": "JKB"
+        },
+        {
+          "text": "의",
+          "lemma": "의",
+          "pos": "JKG"
+        },
+        {
+          "text": "특별",
+          "lemma": "특별",
+          "pos": "XR"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSA"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "추억",
+          "lemma": "추억",
+          "pos": "NNG"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "JKS"
+        },
+        {
+          "text": "있",
+          "lemma": "있",
+          "pos": "VX"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "게",
+        "기억",
+        "댁",
+        "때",
+        "음식",
+        "조부모",
+        "추억",
+        "텃밭",
+        "할머니"
+      ],
+      "domain": "parents"
+    },
+    "answer": {
+      "text": "어릴 때 할머니 댁에 가서 같이 텃밭을 가꾸고 맛있는 음식을 만들어 먹었던 게 기억에 남아.",
+      "tokens": [
+        {
+          "text": "어리",
+          "lemma": "어리",
+          "pos": "VA"
+        },
+        {
+          "text": "ㄹ",
+          "lemma": "ㄹ",
+          "pos": "ETM"
+        },
+        {
+          "text": "때",
+          "lemma": "때",
+          "pos": "NNG"
+        },
+        {
+          "text": "할머니",
+          "lemma": "할머니",
+          "pos": "NNG"
+        },
+        {
+          "text": "댁",
+          "lemma": "댁",
+          "pos": "NNG"
+        },
+        {
+          "text": "에",
+          "lemma": "에",
+          "pos": "JKB"
+        },
+        {
+          "text": "가",
+          "lemma": "가",
+          "pos": "VV"
+        },
+        {
+          "text": "아서",
+          "lemma": "아서",
+          "pos": "EC"
+        },
+        {
+          "text": "같이",
+          "lemma": "같이",
+          "pos": "MAG"
+        },
+        {
+          "text": "텃밭",
+          "lemma": "텃밭",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "가꾸",
+          "lemma": "가꾸",
+          "pos": "VV"
+        },
+        {
+          "text": "고",
+          "lemma": "고",
+          "pos": "EC"
+        },
+        {
+          "text": "맛있",
+          "lemma": "맛있",
+          "pos": "VA"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "ETM"
+        },
+        {
+          "text": "음식",
+          "lemma": "음식",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "만들",
+          "lemma": "만들",
+          "pos": "VV"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EC"
+        },
+        {
+          "text": "먹",
+          "lemma": "먹",
+          "pos": "VV"
+        },
+        {
+          "text": "었",
+          "lemma": "었",
+          "pos": "EP"
+        },
+        {
+          "text": "던",
+          "lemma": "던",
+          "pos": "ETM"
+        },
+        {
+          "text": "게",
+          "lemma": "게",
+          "pos": "NNG"
+        },
+        {
+          "text": "기억",
+          "lemma": "기억",
+          "pos": "NNG"
+        },
+        {
+          "text": "에",
+          "lemma": "에",
+          "pos": "JKB"
+        },
+        {
+          "text": "남",
+          "lemma": "남",
+          "pos": "VV"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "게",
+      "기억",
+      "댁",
+      "때",
+      "음식",
+      "조부모",
+      "추억",
+      "텃밭",
+      "할머니"
+    ],
+    "domain": "parents"
+  },
+  {
+    "question": {
+      "text": "부모님께 어떤 아들/딸이 되고 싶어?",
+      "tokens": [
+        {
+          "text": "부모",
+          "lemma": "부모",
+          "pos": "NNG"
+        },
+        {
+          "text": "님",
+          "lemma": "님",
+          "pos": "XSN"
+        },
+        {
+          "text": "께",
+          "lemma": "께",
+          "pos": "JKB"
+        },
+        {
+          "text": "어떤",
+          "lemma": "어떤",
+          "pos": "MM"
+        },
+        {
+          "text": "아들",
+          "lemma": "아들",
+          "pos": "NNG"
+        },
+        {
+          "text": "딸",
+          "lemma": "딸",
+          "pos": "NNG"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "JKS"
+        },
+        {
+          "text": "되",
+          "lemma": "되",
+          "pos": "VV"
+        },
+        {
+          "text": "고",
+          "lemma": "고",
+          "pos": "EC"
+        },
+        {
+          "text": "싶",
+          "lemma": "싶",
+          "pos": "VX"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "딸",
+        "부모",
+        "아들",
+        "자랑"
+      ],
+      "domain": "parents"
+    },
+    "answer": {
+      "text": "자랑스럽고 든든한 아들/딸이 되고 싶어.",
+      "tokens": [
+        {
+          "text": "자랑",
+          "lemma": "자랑",
+          "pos": "NNG"
+        },
+        {
+          "text": "스럽",
+          "lemma": "스럽",
+          "pos": "XSA"
+        },
+        {
+          "text": "고",
+          "lemma": "고",
+          "pos": "EC"
+        },
+        {
+          "text": "든든",
+          "lemma": "든든",
+          "pos": "XR"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSA"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "아들",
+          "lemma": "아들",
+          "pos": "NNG"
+        },
+        {
+          "text": "딸",
+          "lemma": "딸",
+          "pos": "NNG"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "JKS"
+        },
+        {
+          "text": "되",
+          "lemma": "되",
+          "pos": "VV"
+        },
+        {
+          "text": "고",
+          "lemma": "고",
+          "pos": "EC"
+        },
+        {
+          "text": "싶",
+          "lemma": "싶",
+          "pos": "VX"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "딸",
+      "부모",
+      "아들",
+      "자랑"
+    ],
+    "domain": "parents"
+  },
+  {
+    "question": {
+      "text": "조부모님께 어떤 손주/손녀가 되고 싶어?",
+      "tokens": [
+        {
+          "text": "조부모",
+          "lemma": "조부모",
+          "pos": "NNG"
+        },
+        {
+          "text": "님",
+          "lemma": "님",
+          "pos": "XSN"
+        },
+        {
+          "text": "께",
+          "lemma": "께",
+          "pos": "JKB"
+        },
+        {
+          "text": "어떤",
+          "lemma": "어떤",
+          "pos": "MM"
+        },
+        {
+          "text": "손주",
+          "lemma": "손주",
+          "pos": "NNG"
+        },
+        {
+          "text": "손녀",
+          "lemma": "손녀",
+          "pos": "NNG"
+        },
+        {
+          "text": "가",
+          "lemma": "가",
+          "pos": "JKS"
+        },
+        {
+          "text": "되",
+          "lemma": "되",
+          "pos": "VV"
+        },
+        {
+          "text": "고",
+          "lemma": "고",
+          "pos": "EC"
+        },
+        {
+          "text": "싶",
+          "lemma": "싶",
+          "pos": "VX"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "건강",
+        "모습",
+        "손녀",
+        "손주",
+        "안부",
+        "조부모"
+      ],
+      "domain": "parents"
+    },
+    "answer": {
+      "text": "자주 찾아뵙고 안부를 여쭤보면서, 항상 건강하게 잘 지내는 모습을 보여드리고 싶어.",
+      "tokens": [
+        {
+          "text": "자주",
+          "lemma": "자주",
+          "pos": "MAG"
+        },
+        {
+          "text": "찾아뵙",
+          "lemma": "찾아뵙",
+          "pos": "VV"
+        },
+        {
+          "text": "고",
+          "lemma": "고",
+          "pos": "EC"
+        },
+        {
+          "text": "안부",
+          "lemma": "안부",
+          "pos": "NNG"
+        },
+        {
+          "text": "를",
+          "lemma": "를",
+          "pos": "JKO"
+        },
+        {
+          "text": "여쭈",
+          "lemma": "여쭈",
+          "pos": "VV"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EC"
+        },
+        {
+          "text": "보",
+          "lemma": "보",
+          "pos": "VX"
+        },
+        {
+          "text": "면서",
+          "lemma": "면서",
+          "pos": "EC"
+        },
+        {
+          "text": "항상",
+          "lemma": "항상",
+          "pos": "MAG"
+        },
+        {
+          "text": "건강",
+          "lemma": "건강",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "게",
+          "lemma": "게",
+          "pos": "EC"
+        },
+        {
+          "text": "잘",
+          "lemma": "잘",
+          "pos": "MAG"
+        },
+        {
+          "text": "지내",
+          "lemma": "지내",
+          "pos": "VV"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "ETM"
+        },
+        {
+          "text": "모습",
+          "lemma": "모습",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "보이",
+          "lemma": "보이",
+          "pos": "VV"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EC"
+        },
+        {
+          "text": "드리",
+          "lemma": "드리",
+          "pos": "VX"
+        },
+        {
+          "text": "고",
+          "lemma": "고",
+          "pos": "EC"
+        },
+        {
+          "text": "싶",
+          "lemma": "싶",
+          "pos": "VX"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "건강",
+      "모습",
+      "손녀",
+      "손주",
+      "안부",
+      "조부모"
+    ],
+    "domain": "parents"
+  },
+  {
+    "question": {
+      "text": "부모님과 가장 많이 하는 대화 주제는?",
+      "tokens": [
+        {
+          "text": "부모",
+          "lemma": "부모",
+          "pos": "NNG"
+        },
+        {
+          "text": "님",
+          "lemma": "님",
+          "pos": "XSN"
+        },
+        {
+          "text": "과",
+          "lemma": "과",
+          "pos": "JC"
+        },
+        {
+          "text": "가장",
+          "lemma": "가장",
+          "pos": "MAG"
+        },
+        {
+          "text": "많이",
+          "lemma": "많이",
+          "pos": "MAG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "VV"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "ETM"
+        },
+        {
+          "text": "대화",
+          "lemma": "대화",
+          "pos": "NNG"
+        },
+        {
+          "text": "주제",
+          "lemma": "주제",
+          "pos": "NNG"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "JX"
+        }
+      ],
+      "concepts": [
+        "건강",
+        "대화",
+        "부모",
+        "서로",
+        "안부",
+        "이야기",
+        "일상",
+        "주제"
+      ],
+      "domain": "parents"
+    },
+    "answer": {
+      "text": "주로 안부나 건강, 그리고 서로의 일상에 대해 이야기해.",
+      "tokens": [
+        {
+          "text": "주로",
+          "lemma": "주로",
+          "pos": "MAG"
+        },
+        {
+          "text": "안부",
+          "lemma": "안부",
+          "pos": "NNG"
+        },
+        {
+          "text": "나",
+          "lemma": "나",
+          "pos": "JC"
+        },
+        {
+          "text": "건강",
+          "lemma": "건강",
+          "pos": "NNG"
+        },
+        {
+          "text": "그리고",
+          "lemma": "그리고",
+          "pos": "MAJ"
+        },
+        {
+          "text": "서로",
+          "lemma": "서로",
+          "pos": "NNG"
+        },
+        {
+          "text": "의",
+          "lemma": "의",
+          "pos": "JKG"
+        },
+        {
+          "text": "일상",
+          "lemma": "일상",
+          "pos": "NNG"
+        },
+        {
+          "text": "에",
+          "lemma": "에",
+          "pos": "JKB"
+        },
+        {
+          "text": "대하",
+          "lemma": "대하",
+          "pos": "VV"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EC"
+        },
+        {
+          "text": "이야기",
+          "lemma": "이야기",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "건강",
+      "대화",
+      "부모",
+      "서로",
+      "안부",
+      "이야기",
+      "일상",
+      "주제"
+    ],
+    "domain": "parents"
+  },
+  {
+    "question": {
+      "text": "조부모님과 어떤 이야기를 나누는 걸 좋아해?",
+      "tokens": [
+        {
+          "text": "조부모",
+          "lemma": "조부모",
+          "pos": "NNG"
+        },
+        {
+          "text": "님",
+          "lemma": "님",
+          "pos": "XSN"
+        },
+        {
+          "text": "과",
+          "lemma": "과",
+          "pos": "JC"
+        },
+        {
+          "text": "어떤",
+          "lemma": "어떤",
+          "pos": "MM"
+        },
+        {
+          "text": "이야기",
+          "lemma": "이야기",
+          "pos": "NNG"
+        },
+        {
+          "text": "를",
+          "lemma": "를",
+          "pos": "JKO"
+        },
+        {
+          "text": "나누",
+          "lemma": "나누",
+          "pos": "VV"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "ETM"
+        },
+        {
+          "text": "걸",
+          "lemma": "걸",
+          "pos": "VV"
+        },
+        {
+          "text": "ㄹ",
+          "lemma": "ㄹ",
+          "pos": "ETM"
+        },
+        {
+          "text": "좋아하",
+          "lemma": "좋아하",
+          "pos": "VV"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "옛날",
+        "이야기",
+        "젊은 시절",
+        "조부모",
+        "흥미"
+      ],
+      "domain": "parents"
+    },
+    "answer": {
+      "text": "옛날이야기나, 조부모님의 젊은 시절 이야기는 언제 들어도 흥미로워.",
+      "tokens": [
+        {
+          "text": "옛날",
+          "lemma": "옛날",
+          "pos": "NNG"
+        },
+        {
+          "text": "이야기",
+          "lemma": "이야기",
+          "pos": "NNG"
+        },
+        {
+          "text": "나",
+          "lemma": "나",
+          "pos": "JC"
+        },
+        {
+          "text": "조부모",
+          "lemma": "조부모",
+          "pos": "NNG"
+        },
+        {
+          "text": "님",
+          "lemma": "님",
+          "pos": "XSN"
+        },
+        {
+          "text": "의",
+          "lemma": "의",
+          "pos": "JKG"
+        },
+        {
+          "text": "젊은 시절",
+          "lemma": "젊은 시절",
+          "pos": "NNP"
+        },
+        {
+          "text": "이야기",
+          "lemma": "이야기",
+          "pos": "NNG"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "JX"
+        },
+        {
+          "text": "언제",
+          "lemma": "언제",
+          "pos": "MAG"
+        },
+        {
+          "text": "들",
+          "lemma": "들",
+          "pos": "VV"
+        },
+        {
+          "text": "어도",
+          "lemma": "어도",
+          "pos": "EC"
+        },
+        {
+          "text": "흥미",
+          "lemma": "흥미",
+          "pos": "NNG"
+        },
+        {
+          "text": "롭",
+          "lemma": "롭",
+          "pos": "XSA"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "옛날",
+      "이야기",
+      "젊은 시절",
+      "조부모",
+      "흥미"
+    ],
+    "domain": "parents"
+  },
+  {
+    "question": {
+      "text": "부모님께 가장 감동받았던 순간은?",
+      "tokens": [
+        {
+          "text": "부모",
+          "lemma": "부모",
+          "pos": "NNG"
+        },
+        {
+          "text": "님",
+          "lemma": "님",
+          "pos": "XSN"
+        },
+        {
+          "text": "께",
+          "lemma": "께",
+          "pos": "JKB"
+        },
+        {
+          "text": "가장",
+          "lemma": "가장",
+          "pos": "MAG"
+        },
+        {
+          "text": "감동",
+          "lemma": "감동",
+          "pos": "NNG"
+        },
+        {
+          "text": "받",
+          "lemma": "받",
+          "pos": "VV"
+        },
+        {
+          "text": "았",
+          "lemma": "았",
+          "pos": "EP"
+        },
+        {
+          "text": "던",
+          "lemma": "던",
+          "pos": "ETM"
+        },
+        {
+          "text": "순간",
+          "lemma": "순간",
+          "pos": "NNG"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "JX"
+        }
+      ],
+      "concepts": [
+        "감동",
+        "곁",
+        "때",
+        "부모",
+        "순간",
+        "응원"
+      ],
+      "domain": "parents"
+    },
+    "answer": {
+      "text": "내가 힘들 때 말없이 곁을 지켜주며 응원해주셨을 때 가장 감동받았어.",
+      "tokens": [
+        {
+          "text": "내",
+          "lemma": "내",
+          "pos": "NP"
+        },
+        {
+          "text": "가",
+          "lemma": "가",
+          "pos": "JKS"
+        },
+        {
+          "text": "힘들",
+          "lemma": "힘들",
+          "pos": "VA"
+        },
+        {
+          "text": "ㄹ",
+          "lemma": "ㄹ",
+          "pos": "ETM"
+        },
+        {
+          "text": "때",
+          "lemma": "때",
+          "pos": "NNG"
+        },
+        {
+          "text": "말없이",
+          "lemma": "말없이",
+          "pos": "MAG"
+        },
+        {
+          "text": "곁",
+          "lemma": "곁",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "지키",
+          "lemma": "지키",
+          "pos": "VV"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EC"
+        },
+        {
+          "text": "주",
+          "lemma": "주",
+          "pos": "VX"
+        },
+        {
+          "text": "며",
+          "lemma": "며",
+          "pos": "EC"
+        },
+        {
+          "text": "응원",
+          "lemma": "응원",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EC"
+        },
+        {
+          "text": "주",
+          "lemma": "주",
+          "pos": "VX"
+        },
+        {
+          "text": "시",
+          "lemma": "시",
+          "pos": "EP"
+        },
+        {
+          "text": "었",
+          "lemma": "었",
+          "pos": "EP"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "ETM"
+        },
+        {
+          "text": "때",
+          "lemma": "때",
+          "pos": "NNG"
+        },
+        {
+          "text": "가장",
+          "lemma": "가장",
+          "pos": "MAG"
+        },
+        {
+          "text": "감동",
+          "lemma": "감동",
+          "pos": "NNG"
+        },
+        {
+          "text": "받",
+          "lemma": "받",
+          "pos": "VV"
+        },
+        {
+          "text": "았",
+          "lemma": "았",
+          "pos": "EP"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "감동",
+      "곁",
+      "때",
+      "부모",
+      "순간",
+      "응원"
+    ],
+    "domain": "parents"
+  },
+  {
+    "question": {
+      "text": "조부모님께 가장 감동받았던 순간은?",
+      "tokens": [
+        {
+          "text": "조부모",
+          "lemma": "조부모",
+          "pos": "NNG"
+        },
+        {
+          "text": "님",
+          "lemma": "님",
+          "pos": "XSN"
+        },
+        {
+          "text": "께",
+          "lemma": "께",
+          "pos": "JKB"
+        },
+        {
+          "text": "가장",
+          "lemma": "가장",
+          "pos": "MAG"
+        },
+        {
+          "text": "감동",
+          "lemma": "감동",
+          "pos": "NNG"
+        },
+        {
+          "text": "받",
+          "lemma": "받",
+          "pos": "VV"
+        },
+        {
+          "text": "았",
+          "lemma": "았",
+          "pos": "EP"
+        },
+        {
+          "text": "던",
+          "lemma": "던",
+          "pos": "ETM"
+        },
+        {
+          "text": "순간",
+          "lemma": "순간",
+          "pos": "NNG"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "JX"
+        }
+      ],
+      "concepts": [
+        "감동",
+        "건강",
+        "때",
+        "모습",
+        "순간",
+        "조부모"
+      ],
+      "domain": "parents"
+    },
+    "answer": {
+      "text": "아프지 않고 건강하게 오래오래 살아계시는 모습을 볼 때마다 감동받아.",
+      "tokens": [
+        {
+          "text": "아프",
+          "lemma": "아프",
+          "pos": "VA"
+        },
+        {
+          "text": "지",
+          "lemma": "지",
+          "pos": "EC"
+        },
+        {
+          "text": "않",
+          "lemma": "않",
+          "pos": "VX"
+        },
+        {
+          "text": "고",
+          "lemma": "고",
+          "pos": "EC"
+        },
+        {
+          "text": "건강",
+          "lemma": "건강",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "게",
+          "lemma": "게",
+          "pos": "EC"
+        },
+        {
+          "text": "오래오래",
+          "lemma": "오래오래",
+          "pos": "MAG"
+        },
+        {
+          "text": "살",
+          "lemma": "살",
+          "pos": "VV"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EC"
+        },
+        {
+          "text": "계시",
+          "lemma": "계시",
+          "pos": "VX"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "ETM"
+        },
+        {
+          "text": "모습",
+          "lemma": "모습",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "보",
+          "lemma": "보",
+          "pos": "VV"
+        },
+        {
+          "text": "ㄹ",
+          "lemma": "ㄹ",
+          "pos": "ETM"
+        },
+        {
+          "text": "때",
+          "lemma": "때",
+          "pos": "NNG"
+        },
+        {
+          "text": "마다",
+          "lemma": "마다",
+          "pos": "JX"
+        },
+        {
+          "text": "감동",
+          "lemma": "감동",
+          "pos": "NNG"
+        },
+        {
+          "text": "받",
+          "lemma": "받",
+          "pos": "VV"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "감동",
+      "건강",
+      "때",
+      "모습",
+      "순간",
+      "조부모"
+    ],
+    "domain": "parents"
+  },
+  {
+    "question": {
+      "text": "부모님께 아직 하지 못한 말이 있다면?",
+      "tokens": [
+        {
+          "text": "부모",
+          "lemma": "부모",
+          "pos": "NNG"
+        },
+        {
+          "text": "님",
+          "lemma": "님",
+          "pos": "XSN"
+        },
+        {
+          "text": "께",
+          "lemma": "께",
+          "pos": "JKB"
+        },
+        {
+          "text": "아직",
+          "lemma": "아직",
+          "pos": "MAG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "VV"
+        },
+        {
+          "text": "지",
+          "lemma": "지",
+          "pos": "EC"
+        },
+        {
+          "text": "못하",
+          "lemma": "못하",
+          "pos": "VX"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "말",
+          "lemma": "말",
+          "pos": "NNG"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "JKS"
+        },
+        {
+          "text": "있",
+          "lemma": "있",
+          "pos": "VX"
+        },
+        {
+          "text": "다면",
+          "lemma": "다면",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "말",
+        "부모",
+        "사랑"
+      ],
+      "domain": "parents"
+    },
+    "answer": {
+      "text": "사랑한다는 말을 더 자주 해드리고 싶어.",
+      "tokens": [
+        {
+          "text": "사랑",
+          "lemma": "사랑",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "ㄴ다는",
+          "lemma": "ㄴ다는",
+          "pos": "ETM"
+        },
+        {
+          "text": "말",
+          "lemma": "말",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "더",
+          "lemma": "더",
+          "pos": "MAG"
+        },
+        {
+          "text": "자주",
+          "lemma": "자주",
+          "pos": "MAG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "VV"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EC"
+        },
+        {
+          "text": "드리",
+          "lemma": "드리",
+          "pos": "VX"
+        },
+        {
+          "text": "고",
+          "lemma": "고",
+          "pos": "EC"
+        },
+        {
+          "text": "싶",
+          "lemma": "싶",
+          "pos": "VX"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "말",
+      "부모",
+      "사랑"
+    ],
+    "domain": "parents"
+  },
+  {
+    "question": {
+      "text": "조부모님께 아직 하지 못한 말이 있다면?",
+      "tokens": [
+        {
+          "text": "조부모",
+          "lemma": "조부모",
+          "pos": "NNG"
+        },
+        {
+          "text": "님",
+          "lemma": "님",
+          "pos": "XSN"
+        },
+        {
+          "text": "께",
+          "lemma": "께",
+          "pos": "JKB"
+        },
+        {
+          "text": "아직",
+          "lemma": "아직",
+          "pos": "MAG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "VV"
+        },
+        {
+          "text": "지",
+          "lemma": "지",
+          "pos": "EC"
+        },
+        {
+          "text": "못하",
+          "lemma": "못하",
+          "pos": "VX"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "말",
+          "lemma": "말",
+          "pos": "NNG"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "JKS"
+        },
+        {
+          "text": "있",
+          "lemma": "있",
+          "pos": "VX"
+        },
+        {
+          "text": "다면",
+          "lemma": "다면",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "건강",
+        "곁",
+        "계",
+        "말",
+        "말씀",
+        "조부모"
+      ],
+      "domain": "parents"
+    },
+    "answer": {
+      "text": "늘 건강하세요, 그리고 오래오래 저희 곁에 계셔주세요라고 말씀드리고 싶어.",
+      "tokens": [
+        {
+          "text": "늘",
+          "lemma": "늘",
+          "pos": "MAG"
+        },
+        {
+          "text": "건강",
+          "lemma": "건강",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "시",
+          "lemma": "시",
+          "pos": "EP"
+        },
+        {
+          "text": "어요",
+          "lemma": "어요",
+          "pos": "EC"
+        },
+        {
+          "text": "그리고",
+          "lemma": "그리고",
+          "pos": "MAJ"
+        },
+        {
+          "text": "오래오래",
+          "lemma": "오래오래",
+          "pos": "MAG"
+        },
+        {
+          "text": "저희",
+          "lemma": "저희",
+          "pos": "NP"
+        },
+        {
+          "text": "곁",
+          "lemma": "곁",
+          "pos": "NNG"
+        },
+        {
+          "text": "에",
+          "lemma": "에",
+          "pos": "JKB"
+        },
+        {
+          "text": "계",
+          "lemma": "계",
+          "pos": "NNG"
+        },
+        {
+          "text": "시",
+          "lemma": "시",
+          "pos": "VA"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EC"
+        },
+        {
+          "text": "주",
+          "lemma": "주",
+          "pos": "VX"
+        },
+        {
+          "text": "시",
+          "lemma": "시",
+          "pos": "EP"
+        },
+        {
+          "text": "어요",
+          "lemma": "어요",
+          "pos": "EC"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "VCP"
+        },
+        {
+          "text": "라고",
+          "lemma": "라고",
+          "pos": "EC"
+        },
+        {
+          "text": "말씀",
+          "lemma": "말씀",
+          "pos": "NNG"
+        },
+        {
+          "text": "드리",
+          "lemma": "드리",
+          "pos": "VV"
+        },
+        {
+          "text": "고",
+          "lemma": "고",
+          "pos": "EC"
+        },
+        {
+          "text": "싶",
+          "lemma": "싶",
+          "pos": "VX"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "건강",
+      "곁",
+      "계",
+      "말",
+      "말씀",
+      "조부모"
+    ],
+    "domain": "parents"
+  },
+  {
+    "question": {
+      "text": "부모님과의 갈등은 어떻게 해결해?",
+      "tokens": [
+        {
+          "text": "부모",
+          "lemma": "부모",
+          "pos": "NNG"
+        },
+        {
+          "text": "님",
+          "lemma": "님",
+          "pos": "XSN"
+        },
+        {
+          "text": "과",
+          "lemma": "과",
+          "pos": "JKB"
+        },
+        {
+          "text": "의",
+          "lemma": "의",
+          "pos": "JKG"
+        },
+        {
+          "text": "갈등",
+          "lemma": "갈등",
+          "pos": "NNG"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "JX"
+        },
+        {
+          "text": "어떻",
+          "lemma": "어떻",
+          "pos": "VA"
+        },
+        {
+          "text": "게",
+          "lemma": "게",
+          "pos": "EC"
+        },
+        {
+          "text": "해결",
+          "lemma": "해결",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "갈등",
+        "노력",
+        "대화",
+        "부모",
+        "상대방",
+        "이해",
+        "입장",
+        "해결"
+      ],
+      "domain": "parents"
+    },
+    "answer": {
+      "text": "서로 솔직하게 대화하고, 상대방의 입장을 이해하려고 노력하면서 해결하려고 해.",
+      "tokens": [
+        {
+          "text": "서로",
+          "lemma": "서로",
+          "pos": "MAG"
+        },
+        {
+          "text": "솔직",
+          "lemma": "솔직",
+          "pos": "XR"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSA"
+        },
+        {
+          "text": "게",
+          "lemma": "게",
+          "pos": "EC"
+        },
+        {
+          "text": "대화",
+          "lemma": "대화",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "고",
+          "lemma": "고",
+          "pos": "EC"
+        },
+        {
+          "text": "상대방",
+          "lemma": "상대방",
+          "pos": "NNG"
+        },
+        {
+          "text": "의",
+          "lemma": "의",
+          "pos": "JKG"
+        },
+        {
+          "text": "입장",
+          "lemma": "입장",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "이해",
+          "lemma": "이해",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "려고",
+          "lemma": "려고",
+          "pos": "EC"
+        },
+        {
+          "text": "노력",
+          "lemma": "노력",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "면서",
+          "lemma": "면서",
+          "pos": "EC"
+        },
+        {
+          "text": "해결",
+          "lemma": "해결",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "려고",
+          "lemma": "려고",
+          "pos": "EC"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "VX"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "갈등",
+      "노력",
+      "대화",
+      "부모",
+      "상대방",
+      "이해",
+      "입장",
+      "해결"
+    ],
+    "domain": "parents"
+  },
+  {
+    "question": {
+      "text": "조부모님을 행복하게 해드리는 방법은?",
+      "tokens": [
+        {
+          "text": "조부모",
+          "lemma": "조부모",
+          "pos": "NNG"
+        },
+        {
+          "text": "님",
+          "lemma": "님",
+          "pos": "XSN"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "행복",
+          "lemma": "행복",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "게",
+          "lemma": "게",
+          "pos": "EC"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "VV"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EC"
+        },
+        {
+          "text": "드리",
+          "lemma": "드리",
+          "pos": "VX"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "ETM"
+        },
+        {
+          "text": "방법",
+          "lemma": "방법",
+          "pos": "NNG"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "JX"
+        }
+      ],
+      "concepts": [
+        "거",
+        "건강",
+        "것",
+        "관리",
+        "모습",
+        "방법",
+        "신경",
+        "전화",
+        "조부모",
+        "행복"
+      ],
+      "domain": "parents"
+    },
+    "answer": {
+      "text": "자주 찾아뵙고 전화 드리는 것, 그리고 건강 관리에 신경 쓰는 모습을 보여드리는 거야.",
+      "tokens": [
+        {
+          "text": "자주",
+          "lemma": "자주",
+          "pos": "MAG"
+        },
+        {
+          "text": "찾아뵙",
+          "lemma": "찾아뵙",
+          "pos": "VV"
+        },
+        {
+          "text": "고",
+          "lemma": "고",
+          "pos": "EC"
+        },
+        {
+          "text": "전화",
+          "lemma": "전화",
+          "pos": "NNG"
+        },
+        {
+          "text": "드리",
+          "lemma": "드리",
+          "pos": "VV"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "ETM"
+        },
+        {
+          "text": "것",
+          "lemma": "것",
+          "pos": "NNB"
+        },
+        {
+          "text": "그리고",
+          "lemma": "그리고",
+          "pos": "MAJ"
+        },
+        {
+          "text": "건강",
+          "lemma": "건강",
+          "pos": "NNG"
+        },
+        {
+          "text": "관리",
+          "lemma": "관리",
+          "pos": "NNG"
+        },
+        {
+          "text": "에",
+          "lemma": "에",
+          "pos": "JKB"
+        },
+        {
+          "text": "신경",
+          "lemma": "신경",
+          "pos": "NNG"
+        },
+        {
+          "text": "쓰",
+          "lemma": "쓰",
+          "pos": "VV"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "ETM"
+        },
+        {
+          "text": "모습",
+          "lemma": "모습",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "보이",
+          "lemma": "보이",
+          "pos": "VV"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EC"
+        },
+        {
+          "text": "드리",
+          "lemma": "드리",
+          "pos": "VX"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "ETM"
+        },
+        {
+          "text": "거",
+          "lemma": "거",
+          "pos": "NNB"
+        },
+        {
+          "text": "야",
+          "lemma": "야",
+          "pos": "JKV"
+        }
+      ]
+    },
+    "concepts": [
+      "거",
+      "건강",
+      "것",
+      "관리",
+      "모습",
+      "방법",
+      "신경",
+      "전화",
+      "조부모",
+      "행복"
+    ],
+    "domain": "parents"
+  },
+  {
+    "question": {
+      "text": "부모님께 용돈은 얼마나 드려야 할까?",
+      "tokens": [
+        {
+          "text": "부모",
+          "lemma": "부모",
+          "pos": "NNG"
+        },
+        {
+          "text": "님",
+          "lemma": "님",
+          "pos": "XSN"
+        },
+        {
+          "text": "께",
+          "lemma": "께",
+          "pos": "JKB"
+        },
+        {
+          "text": "용돈",
+          "lemma": "용돈",
+          "pos": "NNG"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "JX"
+        },
+        {
+          "text": "얼마나",
+          "lemma": "얼마나",
+          "pos": "MAG"
+        },
+        {
+          "text": "드리",
+          "lemma": "드리",
+          "pos": "VV"
+        },
+        {
+          "text": "어야",
+          "lemma": "어야",
+          "pos": "EC"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "VX"
+        },
+        {
+          "text": "ㄹ까",
+          "lemma": "ㄹ까",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "각자",
+        "게",
+        "마음",
+        "만큼",
+        "부모",
+        "상황",
+        "생각",
+        "용돈"
+      ],
+      "domain": "parents"
+    },
+    "answer": {
+      "text": "각자의 상황에 따라 다르겠지만, 마음이 담긴 만큼 드리는 게 중요하다고 생각해.",
+      "tokens": [
+        {
+          "text": "각자",
+          "lemma": "각자",
+          "pos": "NNG"
+        },
+        {
+          "text": "의",
+          "lemma": "의",
+          "pos": "JKG"
+        },
+        {
+          "text": "상황",
+          "lemma": "상황",
+          "pos": "NNG"
+        },
+        {
+          "text": "에",
+          "lemma": "에",
+          "pos": "JKB"
+        },
+        {
+          "text": "따르",
+          "lemma": "따르",
+          "pos": "VV"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EC"
+        },
+        {
+          "text": "다르",
+          "lemma": "다르",
+          "pos": "VA"
+        },
+        {
+          "text": "겠",
+          "lemma": "겠",
+          "pos": "EP"
+        },
+        {
+          "text": "지만",
+          "lemma": "지만",
+          "pos": "EC"
+        },
+        {
+          "text": "마음",
+          "lemma": "마음",
+          "pos": "NNG"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "JKS"
+        },
+        {
+          "text": "담기",
+          "lemma": "담기",
+          "pos": "VV"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "만큼",
+          "lemma": "만큼",
+          "pos": "NNB"
+        },
+        {
+          "text": "드리",
+          "lemma": "드리",
+          "pos": "VV"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "ETM"
+        },
+        {
+          "text": "게",
+          "lemma": "게",
+          "pos": "NNG"
+        },
+        {
+          "text": "중요",
+          "lemma": "중요",
+          "pos": "XR"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSA"
+        },
+        {
+          "text": "다고",
+          "lemma": "다고",
+          "pos": "EC"
+        },
+        {
+          "text": "생각",
+          "lemma": "생각",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "각자",
+      "게",
+      "마음",
+      "만큼",
+      "부모",
+      "상황",
+      "생각",
+      "용돈"
+    ],
+    "domain": "parents"
+  },
+  {
+    "question": {
+      "text": "조부모님께 어떤 선물을 드리는 게 좋아?",
+      "tokens": [
+        {
+          "text": "조부모",
+          "lemma": "조부모",
+          "pos": "NNG"
+        },
+        {
+          "text": "님",
+          "lemma": "님",
+          "pos": "XSN"
+        },
+        {
+          "text": "께",
+          "lemma": "께",
+          "pos": "JKB"
+        },
+        {
+          "text": "어떤",
+          "lemma": "어떤",
+          "pos": "MM"
+        },
+        {
+          "text": "선물",
+          "lemma": "선물",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "드리",
+          "lemma": "드리",
+          "pos": "VV"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "ETM"
+        },
+        {
+          "text": "게",
+          "lemma": "게",
+          "pos": "NNG"
+        },
+        {
+          "text": "좋",
+          "lemma": "좋",
+          "pos": "VA"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "건강식품",
+        "것",
+        "게",
+        "선물",
+        "옷",
+        "음식",
+        "조부모",
+        "편안"
+      ],
+      "domain": "parents"
+    },
+    "answer": {
+      "text": "건강식품이나 편안한 옷, 혹은 좋아하는 음식 선물이 좋을 것 같아.",
+      "tokens": [
+        {
+          "text": "건강식품",
+          "lemma": "건강식품",
+          "pos": "NNG"
+        },
+        {
+          "text": "이나",
+          "lemma": "이나",
+          "pos": "JC"
+        },
+        {
+          "text": "편안",
+          "lemma": "편안",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "옷",
+          "lemma": "옷",
+          "pos": "NNG"
+        },
+        {
+          "text": "혹은",
+          "lemma": "혹은",
+          "pos": "MAJ"
+        },
+        {
+          "text": "좋아하",
+          "lemma": "좋아하",
+          "pos": "VV"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "ETM"
+        },
+        {
+          "text": "음식",
+          "lemma": "음식",
+          "pos": "NNG"
+        },
+        {
+          "text": "선물",
+          "lemma": "선물",
+          "pos": "NNG"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "JKS"
+        },
+        {
+          "text": "좋",
+          "lemma": "좋",
+          "pos": "VA"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "ETM"
+        },
+        {
+          "text": "것",
+          "lemma": "것",
+          "pos": "NNB"
+        },
+        {
+          "text": "같",
+          "lemma": "같",
+          "pos": "VA"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "건강식품",
+      "것",
+      "게",
+      "선물",
+      "옷",
+      "음식",
+      "조부모",
+      "편안"
+    ],
+    "domain": "parents"
+  },
+  {
+    "question": {
+      "text": "부모님의 젊은 시절 사진 본 적 있어?",
+      "tokens": [
+        {
+          "text": "부모",
+          "lemma": "부모",
+          "pos": "NNG"
+        },
+        {
+          "text": "님",
+          "lemma": "님",
+          "pos": "XSN"
+        },
+        {
+          "text": "의",
+          "lemma": "의",
+          "pos": "JKG"
+        },
+        {
+          "text": "젊은 시절",
+          "lemma": "젊은 시절",
+          "pos": "NNP"
+        },
+        {
+          "text": "사진",
+          "lemma": "사진",
+          "pos": "NNG"
+        },
+        {
+          "text": "보",
+          "lemma": "보",
+          "pos": "VV"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "적",
+          "lemma": "적",
+          "pos": "NNB"
+        },
+        {
+          "text": "있",
+          "lemma": "있",
+          "pos": "VX"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "매력",
+        "부모",
+        "사진",
+        "적",
+        "젊은 시절",
+        "지금"
+      ],
+      "domain": "parents"
+    },
+    "answer": {
+      "text": "응, 봤어! 지금과는 또 다른 매력이 있으셨어. 신기했지.",
+      "tokens": [
+        {
+          "text": "응",
+          "lemma": "응",
+          "pos": "IC"
+        },
+        {
+          "text": "보",
+          "lemma": "보",
+          "pos": "VV"
+        },
+        {
+          "text": "았",
+          "lemma": "았",
+          "pos": "EP"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        },
+        {
+          "text": "지금",
+          "lemma": "지금",
+          "pos": "NNG"
+        },
+        {
+          "text": "과",
+          "lemma": "과",
+          "pos": "JKB"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "JX"
+        },
+        {
+          "text": "또",
+          "lemma": "또",
+          "pos": "MAJ"
+        },
+        {
+          "text": "다른",
+          "lemma": "다른",
+          "pos": "MM"
+        },
+        {
+          "text": "매력",
+          "lemma": "매력",
+          "pos": "NNP"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "JKS"
+        },
+        {
+          "text": "있",
+          "lemma": "있",
+          "pos": "VX"
+        },
+        {
+          "text": "으시",
+          "lemma": "으시",
+          "pos": "EP"
+        },
+        {
+          "text": "었",
+          "lemma": "었",
+          "pos": "EP"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        },
+        {
+          "text": "신기",
+          "lemma": "신기",
+          "pos": "XR"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSA"
+        },
+        {
+          "text": "었",
+          "lemma": "었",
+          "pos": "EP"
+        },
+        {
+          "text": "지",
+          "lemma": "지",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "매력",
+      "부모",
+      "사진",
+      "적",
+      "젊은 시절",
+      "지금"
+    ],
+    "domain": "parents"
+  },
+  {
+    "question": {
+      "text": "조부모님께 배우고 싶은 지혜가 있다면?",
+      "tokens": [
+        {
+          "text": "조부모",
+          "lemma": "조부모",
+          "pos": "NNG"
+        },
+        {
+          "text": "님",
+          "lemma": "님",
+          "pos": "XSN"
+        },
+        {
+          "text": "께",
+          "lemma": "께",
+          "pos": "JKB"
+        },
+        {
+          "text": "배우",
+          "lemma": "배우",
+          "pos": "VV"
+        },
+        {
+          "text": "고",
+          "lemma": "고",
+          "pos": "EC"
+        },
+        {
+          "text": "싶",
+          "lemma": "싶",
+          "pos": "VX"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "ETM"
+        },
+        {
+          "text": "지혜",
+          "lemma": "지혜",
+          "pos": "NNG"
+        },
+        {
+          "text": "가",
+          "lemma": "가",
+          "pos": "JKS"
+        },
+        {
+          "text": "있",
+          "lemma": "있",
+          "pos": "VX"
+        },
+        {
+          "text": "다면",
+          "lemma": "다면",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "경험",
+        "삶",
+        "세월",
+        "조부모",
+        "지혜"
+      ],
+      "domain": "parents"
+    },
+    "answer": {
+      "text": "오랜 세월을 살아오시면서 얻으신 삶의 경험과 지혜를 배우고 싶어.",
+      "tokens": [
+        {
+          "text": "오랜",
+          "lemma": "오랜",
+          "pos": "MM"
+        },
+        {
+          "text": "세월",
+          "lemma": "세월",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "살아오",
+          "lemma": "살아오",
+          "pos": "VV"
+        },
+        {
+          "text": "시",
+          "lemma": "시",
+          "pos": "EP"
+        },
+        {
+          "text": "면서",
+          "lemma": "면서",
+          "pos": "EC"
+        },
+        {
+          "text": "얻",
+          "lemma": "얻",
+          "pos": "VV"
+        },
+        {
+          "text": "으시",
+          "lemma": "으시",
+          "pos": "EP"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "삶",
+          "lemma": "삶",
+          "pos": "NNG"
+        },
+        {
+          "text": "의",
+          "lemma": "의",
+          "pos": "JKG"
+        },
+        {
+          "text": "경험",
+          "lemma": "경험",
+          "pos": "NNG"
+        },
+        {
+          "text": "과",
+          "lemma": "과",
+          "pos": "JC"
+        },
+        {
+          "text": "지혜",
+          "lemma": "지혜",
+          "pos": "NNG"
+        },
+        {
+          "text": "를",
+          "lemma": "를",
+          "pos": "JKO"
+        },
+        {
+          "text": "배우",
+          "lemma": "배우",
+          "pos": "VV"
+        },
+        {
+          "text": "고",
+          "lemma": "고",
+          "pos": "EC"
+        },
+        {
+          "text": "싶",
+          "lemma": "싶",
+          "pos": "VX"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "경험",
+      "삶",
+      "세월",
+      "조부모",
+      "지혜"
+    ],
+    "domain": "parents"
+  },
+  {
+    "question": {
+      "text": "부모님과 조부모님께 어떤 추억을 만들어 드리고 싶어?",
+      "tokens": [
+        {
+          "text": "부모",
+          "lemma": "부모",
+          "pos": "NNG"
+        },
+        {
+          "text": "님",
+          "lemma": "님",
+          "pos": "XSN"
+        },
+        {
+          "text": "과",
+          "lemma": "과",
+          "pos": "JC"
+        },
+        {
+          "text": "조부모",
+          "lemma": "조부모",
+          "pos": "NNG"
+        },
+        {
+          "text": "님",
+          "lemma": "님",
+          "pos": "XSN"
+        },
+        {
+          "text": "께",
+          "lemma": "께",
+          "pos": "JKB"
+        },
+        {
+          "text": "어떤",
+          "lemma": "어떤",
+          "pos": "MM"
+        },
+        {
+          "text": "추억",
+          "lemma": "추억",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "만들",
+          "lemma": "만들",
+          "pos": "VV"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EC"
+        },
+        {
+          "text": "드리",
+          "lemma": "드리",
+          "pos": "VV"
+        },
+        {
+          "text": "고",
+          "lemma": "고",
+          "pos": "EC"
+        },
+        {
+          "text": "싶",
+          "lemma": "싶",
+          "pos": "VX"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "부모",
+        "시간",
+        "여행",
+        "음식점",
+        "조부모",
+        "추억"
+      ],
+      "domain": "parents"
+    },
+    "answer": {
+      "text": "같이 여행을 가거나, 맛있는 음식점에 가서 즐거운 시간을 보내드리고 싶어.",
+      "tokens": [
+        {
+          "text": "같이",
+          "lemma": "같이",
+          "pos": "MAG"
+        },
+        {
+          "text": "여행",
+          "lemma": "여행",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "가",
+          "lemma": "가",
+          "pos": "VV"
+        },
+        {
+          "text": "거나",
+          "lemma": "거나",
+          "pos": "EC"
+        },
+        {
+          "text": "맛있",
+          "lemma": "맛있",
+          "pos": "VA"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "ETM"
+        },
+        {
+          "text": "음식점",
+          "lemma": "음식점",
+          "pos": "NNP"
+        },
+        {
+          "text": "에",
+          "lemma": "에",
+          "pos": "JKB"
+        },
+        {
+          "text": "가",
+          "lemma": "가",
+          "pos": "VV"
+        },
+        {
+          "text": "아서",
+          "lemma": "아서",
+          "pos": "EC"
+        },
+        {
+          "text": "즐겁",
+          "lemma": "즐겁",
+          "pos": "VA"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "시간",
+          "lemma": "시간",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "보내",
+          "lemma": "보내",
+          "pos": "VV"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EC"
+        },
+        {
+          "text": "드리",
+          "lemma": "드리",
+          "pos": "VX"
+        },
+        {
+          "text": "고",
+          "lemma": "고",
+          "pos": "EC"
+        },
+        {
+          "text": "싶",
+          "lemma": "싶",
+          "pos": "VX"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "부모",
+      "시간",
+      "여행",
+      "음식점",
+      "조부모",
+      "추억"
+    ],
+    "domain": "parents"
+  },
+  {
+    "question": {
+      "text": "부모님 건강 관리는 어떻게 해드려야 할까?",
+      "tokens": [
+        {
+          "text": "부모",
+          "lemma": "부모",
+          "pos": "NNG"
+        },
+        {
+          "text": "님",
+          "lemma": "님",
+          "pos": "XSN"
+        },
+        {
+          "text": "건강",
+          "lemma": "건강",
+          "pos": "NNG"
+        },
+        {
+          "text": "관리",
+          "lemma": "관리",
+          "pos": "NNG"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "JX"
+        },
+        {
+          "text": "어떻",
+          "lemma": "어떻",
+          "pos": "VA"
+        },
+        {
+          "text": "게",
+          "lemma": "게",
+          "pos": "EC"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "VV"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EC"
+        },
+        {
+          "text": "드리",
+          "lemma": "드리",
+          "pos": "VX"
+        },
+        {
+          "text": "어야",
+          "lemma": "어야",
+          "pos": "EC"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "VX"
+        },
+        {
+          "text": "ㄹ까",
+          "lemma": "ㄹ까",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "건강",
+        "검진",
+        "관리",
+        "규칙",
+        "부모",
+        "식단",
+        "운동",
+        "정기"
+      ],
+      "domain": "parents"
+    },
+    "answer": {
+      "text": "규칙적인 운동과 건강한 식단을 챙겨드리고, 정기적으로 건강 검진을 받으시도록 도와드려야 해.",
+      "tokens": [
+        {
+          "text": "규칙",
+          "lemma": "규칙",
+          "pos": "NNG"
+        },
+        {
+          "text": "적",
+          "lemma": "적",
+          "pos": "XSN"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "VCP"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "운동",
+          "lemma": "운동",
+          "pos": "NNG"
+        },
+        {
+          "text": "과",
+          "lemma": "과",
+          "pos": "JC"
+        },
+        {
+          "text": "건강",
+          "lemma": "건강",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "식단",
+          "lemma": "식단",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "챙기",
+          "lemma": "챙기",
+          "pos": "VV"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EC"
+        },
+        {
+          "text": "드리",
+          "lemma": "드리",
+          "pos": "VX"
+        },
+        {
+          "text": "고",
+          "lemma": "고",
+          "pos": "EC"
+        },
+        {
+          "text": "정기",
+          "lemma": "정기",
+          "pos": "NNG"
+        },
+        {
+          "text": "적",
+          "lemma": "적",
+          "pos": "XSN"
+        },
+        {
+          "text": "으로",
+          "lemma": "으로",
+          "pos": "JKB"
+        },
+        {
+          "text": "건강",
+          "lemma": "건강",
+          "pos": "NNG"
+        },
+        {
+          "text": "검진",
+          "lemma": "검진",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "받",
+          "lemma": "받",
+          "pos": "VV"
+        },
+        {
+          "text": "으시",
+          "lemma": "으시",
+          "pos": "EP"
+        },
+        {
+          "text": "도록",
+          "lemma": "도록",
+          "pos": "EC"
+        },
+        {
+          "text": "돕",
+          "lemma": "돕",
+          "pos": "VV"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EC"
+        },
+        {
+          "text": "드리",
+          "lemma": "드리",
+          "pos": "VX"
+        },
+        {
+          "text": "어야",
+          "lemma": "어야",
+          "pos": "EC"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "VX"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "건강",
+      "검진",
+      "관리",
+      "규칙",
+      "부모",
+      "식단",
+      "운동",
+      "정기"
+    ],
+    "domain": "parents"
+  },
+  {
+    "question": {
+      "text": "조부모님 건강 관리는 어떻게 해드려야 할까?",
+      "tokens": [
+        {
+          "text": "조부모",
+          "lemma": "조부모",
+          "pos": "NNG"
+        },
+        {
+          "text": "님",
+          "lemma": "님",
+          "pos": "XSN"
+        },
+        {
+          "text": "건강",
+          "lemma": "건강",
+          "pos": "NNG"
+        },
+        {
+          "text": "관리",
+          "lemma": "관리",
+          "pos": "NNG"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "JX"
+        },
+        {
+          "text": "어떻",
+          "lemma": "어떻",
+          "pos": "VA"
+        },
+        {
+          "text": "게",
+          "lemma": "게",
+          "pos": "EC"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "VV"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EC"
+        },
+        {
+          "text": "드리",
+          "lemma": "드리",
+          "pos": "VX"
+        },
+        {
+          "text": "어야",
+          "lemma": "어야",
+          "pos": "EC"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "VX"
+        },
+        {
+          "text": "ㄹ까",
+          "lemma": "ㄹ까",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "건강",
+        "관리",
+        "균형",
+        "낙상",
+        "사고",
+        "시",
+        "식사",
+        "외출",
+        "운동",
+        "유의",
+        "조부모"
+      ],
+      "domain": "parents"
+    },
+    "answer": {
+      "text": "꾸준히 운동하시고 균형 잡힌 식사를 하시도록 도와드리고, 외출 시 낙상 사고에 유의하도록 해야 해.",
+      "tokens": [
+        {
+          "text": "꾸준히",
+          "lemma": "꾸준히",
+          "pos": "MAG"
+        },
+        {
+          "text": "운동",
+          "lemma": "운동",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "시",
+          "lemma": "시",
+          "pos": "EP"
+        },
+        {
+          "text": "고",
+          "lemma": "고",
+          "pos": "EC"
+        },
+        {
+          "text": "균형",
+          "lemma": "균형",
+          "pos": "NNG"
+        },
+        {
+          "text": "잡히",
+          "lemma": "잡히",
+          "pos": "VV"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "식사",
+          "lemma": "식사",
+          "pos": "NNG"
+        },
+        {
+          "text": "를",
+          "lemma": "를",
+          "pos": "JKO"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "VV"
+        },
+        {
+          "text": "시",
+          "lemma": "시",
+          "pos": "EP"
+        },
+        {
+          "text": "도록",
+          "lemma": "도록",
+          "pos": "EC"
+        },
+        {
+          "text": "돕",
+          "lemma": "돕",
+          "pos": "VV"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EC"
+        },
+        {
+          "text": "드리",
+          "lemma": "드리",
+          "pos": "VX"
+        },
+        {
+          "text": "고",
+          "lemma": "고",
+          "pos": "EC"
+        },
+        {
+          "text": "외출",
+          "lemma": "외출",
+          "pos": "NNP"
+        },
+        {
+          "text": "시",
+          "lemma": "시",
+          "pos": "NNB"
+        },
+        {
+          "text": "낙상",
+          "lemma": "낙상",
+          "pos": "NNP"
+        },
+        {
+          "text": "사고",
+          "lemma": "사고",
+          "pos": "NNG"
+        },
+        {
+          "text": "에",
+          "lemma": "에",
+          "pos": "JKB"
+        },
+        {
+          "text": "유의",
+          "lemma": "유의",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "도록",
+          "lemma": "도록",
+          "pos": "EC"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "VV"
+        },
+        {
+          "text": "아야",
+          "lemma": "아야",
+          "pos": "EC"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "VX"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "건강",
+      "관리",
+      "균형",
+      "낙상",
+      "사고",
+      "시",
+      "식사",
+      "외출",
+      "운동",
+      "유의",
+      "조부모"
+    ],
+    "domain": "parents"
+  },
+  {
+    "question": {
+      "text": "부모님께 어떤 음식을 해드리고 싶어?",
+      "tokens": [
+        {
+          "text": "부모",
+          "lemma": "부모",
+          "pos": "NNG"
+        },
+        {
+          "text": "님",
+          "lemma": "님",
+          "pos": "XSN"
+        },
+        {
+          "text": "께",
+          "lemma": "께",
+          "pos": "JKB"
+        },
+        {
+          "text": "어떤",
+          "lemma": "어떤",
+          "pos": "MM"
+        },
+        {
+          "text": "음식",
+          "lemma": "음식",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "VV"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EC"
+        },
+        {
+          "text": "드리",
+          "lemma": "드리",
+          "pos": "VX"
+        },
+        {
+          "text": "고",
+          "lemma": "고",
+          "pos": "EC"
+        },
+        {
+          "text": "싶",
+          "lemma": "싶",
+          "pos": "VX"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "때",
+        "부모",
+        "음식"
+      ],
+      "domain": "parents"
+    },
+    "answer": {
+      "text": "어릴 때 부모님이 자주 해주셨던 음식을 직접 만들어 드리고 싶어.",
+      "tokens": [
+        {
+          "text": "어리",
+          "lemma": "어리",
+          "pos": "VA"
+        },
+        {
+          "text": "ㄹ",
+          "lemma": "ㄹ",
+          "pos": "ETM"
+        },
+        {
+          "text": "때",
+          "lemma": "때",
+          "pos": "NNG"
+        },
+        {
+          "text": "부모",
+          "lemma": "부모",
+          "pos": "NNG"
+        },
+        {
+          "text": "님",
+          "lemma": "님",
+          "pos": "XSN"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "JKS"
+        },
+        {
+          "text": "자주",
+          "lemma": "자주",
+          "pos": "MAG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "VV"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EC"
+        },
+        {
+          "text": "주",
+          "lemma": "주",
+          "pos": "VX"
+        },
+        {
+          "text": "시",
+          "lemma": "시",
+          "pos": "EP"
+        },
+        {
+          "text": "었",
+          "lemma": "었",
+          "pos": "EP"
+        },
+        {
+          "text": "던",
+          "lemma": "던",
+          "pos": "ETM"
+        },
+        {
+          "text": "음식",
+          "lemma": "음식",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "직접",
+          "lemma": "직접",
+          "pos": "MAG"
+        },
+        {
+          "text": "만들",
+          "lemma": "만들",
+          "pos": "VV"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EC"
+        },
+        {
+          "text": "드리",
+          "lemma": "드리",
+          "pos": "VV"
+        },
+        {
+          "text": "고",
+          "lemma": "고",
+          "pos": "EC"
+        },
+        {
+          "text": "싶",
+          "lemma": "싶",
+          "pos": "VX"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "때",
+      "부모",
+      "음식"
+    ],
+    "domain": "parents"
+  },
+  {
+    "question": {
+      "text": "조부모님께 어떤 음식을 해드리고 싶어?",
+      "tokens": [
+        {
+          "text": "조부모",
+          "lemma": "조부모",
+          "pos": "NNG"
+        },
+        {
+          "text": "님",
+          "lemma": "님",
+          "pos": "XSN"
+        },
+        {
+          "text": "께",
+          "lemma": "께",
+          "pos": "JKB"
+        },
+        {
+          "text": "어떤",
+          "lemma": "어떤",
+          "pos": "MM"
+        },
+        {
+          "text": "음식",
+          "lemma": "음식",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "VV"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EC"
+        },
+        {
+          "text": "드리",
+          "lemma": "드리",
+          "pos": "VX"
+        },
+        {
+          "text": "고",
+          "lemma": "고",
+          "pos": "EC"
+        },
+        {
+          "text": "싶",
+          "lemma": "싶",
+          "pos": "VX"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "소화",
+        "영양가",
+        "음식",
+        "조부모"
+      ],
+      "domain": "parents"
+    },
+    "answer": {
+      "text": "소화하기 편하고 영양가 있는 음식을 해드리고 싶어.",
+      "tokens": [
+        {
+          "text": "소화",
+          "lemma": "소화",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "기",
+          "lemma": "기",
+          "pos": "ETN"
+        },
+        {
+          "text": "편하",
+          "lemma": "편하",
+          "pos": "VA"
+        },
+        {
+          "text": "고",
+          "lemma": "고",
+          "pos": "EC"
+        },
+        {
+          "text": "영양가",
+          "lemma": "영양가",
+          "pos": "NNG"
+        },
+        {
+          "text": "있",
+          "lemma": "있",
+          "pos": "VV"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "ETM"
+        },
+        {
+          "text": "음식",
+          "lemma": "음식",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "VV"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EC"
+        },
+        {
+          "text": "드리",
+          "lemma": "드리",
+          "pos": "VX"
+        },
+        {
+          "text": "고",
+          "lemma": "고",
+          "pos": "EC"
+        },
+        {
+          "text": "싶",
+          "lemma": "싶",
+          "pos": "VX"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "소화",
+      "영양가",
+      "음식",
+      "조부모"
+    ],
+    "domain": "parents"
+  },
+  {
+    "question": {
+      "text": "부모님을 존경하는 이유는?",
+      "tokens": [
+        {
+          "text": "부모",
+          "lemma": "부모",
+          "pos": "NNG"
+        },
+        {
+          "text": "님",
+          "lemma": "님",
+          "pos": "XSN"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "존경",
+          "lemma": "존경",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "ETM"
+        },
+        {
+          "text": "이유",
+          "lemma": "이유",
+          "pos": "NNG"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "JX"
+        }
+      ],
+      "concepts": [
+        "극복",
+        "긍정",
+        "때문",
+        "부모",
+        "어려움",
+        "이유",
+        "존경"
+      ],
+      "domain": "parents"
+    },
+    "answer": {
+      "text": "항상 긍정적이시고, 어떤 어려움도 극복해내시는 강인함 때문이야.",
+      "tokens": [
+        {
+          "text": "항상",
+          "lemma": "항상",
+          "pos": "MAG"
+        },
+        {
+          "text": "긍정",
+          "lemma": "긍정",
+          "pos": "NNG"
+        },
+        {
+          "text": "적",
+          "lemma": "적",
+          "pos": "XSN"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "VCP"
+        },
+        {
+          "text": "시",
+          "lemma": "시",
+          "pos": "EP"
+        },
+        {
+          "text": "고",
+          "lemma": "고",
+          "pos": "EC"
+        },
+        {
+          "text": "어떤",
+          "lemma": "어떤",
+          "pos": "MM"
+        },
+        {
+          "text": "어려움",
+          "lemma": "어려움",
+          "pos": "NNG"
+        },
+        {
+          "text": "도",
+          "lemma": "도",
+          "pos": "JX"
+        },
+        {
+          "text": "극복",
+          "lemma": "극복",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EC"
+        },
+        {
+          "text": "내",
+          "lemma": "내",
+          "pos": "VX"
+        },
+        {
+          "text": "시",
+          "lemma": "시",
+          "pos": "EP"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "ETM"
+        },
+        {
+          "text": "강인",
+          "lemma": "강인",
+          "pos": "XR"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSA"
+        },
+        {
+          "text": "ㅁ",
+          "lemma": "ㅁ",
+          "pos": "ETN"
+        },
+        {
+          "text": "때문",
+          "lemma": "때문",
+          "pos": "NNB"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "VCP"
+        },
+        {
+          "text": "야",
+          "lemma": "야",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "극복",
+      "긍정",
+      "때문",
+      "부모",
+      "어려움",
+      "이유",
+      "존경"
+    ],
+    "domain": "parents"
+  },
+  {
+    "question": {
+      "text": "조부모님을 존경하는 이유는?",
+      "tokens": [
+        {
+          "text": "조부모",
+          "lemma": "조부모",
+          "pos": "NNG"
+        },
+        {
+          "text": "님",
+          "lemma": "님",
+          "pos": "XSN"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "존경",
+          "lemma": "존경",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "ETM"
+        },
+        {
+          "text": "이유",
+          "lemma": "이유",
+          "pos": "NNG"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "JX"
+        }
+      ],
+      "concepts": [
+        "때문",
+        "사랑",
+        "삶",
+        "이유",
+        "조부모",
+        "존경",
+        "지혜",
+        "포용력"
+      ],
+      "domain": "parents"
+    },
+    "answer": {
+      "text": "삶의 지혜와 넓은 포용력, 그리고 따뜻한 사랑 때문이야.",
+      "tokens": [
+        {
+          "text": "삶",
+          "lemma": "삶",
+          "pos": "NNG"
+        },
+        {
+          "text": "의",
+          "lemma": "의",
+          "pos": "JKG"
+        },
+        {
+          "text": "지혜",
+          "lemma": "지혜",
+          "pos": "NNG"
+        },
+        {
+          "text": "와",
+          "lemma": "와",
+          "pos": "JC"
+        },
+        {
+          "text": "넓",
+          "lemma": "넓",
+          "pos": "VA"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "ETM"
+        },
+        {
+          "text": "포용력",
+          "lemma": "포용력",
+          "pos": "NNG"
+        },
+        {
+          "text": "그리고",
+          "lemma": "그리고",
+          "pos": "MAJ"
+        },
+        {
+          "text": "따뜻",
+          "lemma": "따뜻",
+          "pos": "XR"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSA"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "사랑",
+          "lemma": "사랑",
+          "pos": "NNG"
+        },
+        {
+          "text": "때문",
+          "lemma": "때문",
+          "pos": "NNB"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "VCP"
+        },
+        {
+          "text": "야",
+          "lemma": "야",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "때문",
+      "사랑",
+      "삶",
+      "이유",
+      "조부모",
+      "존경",
+      "지혜",
+      "포용력"
+    ],
+    "domain": "parents"
+  },
+  {
+    "question": {
+      "text": "부모님과 조부모님의 공통점은?",
+      "tokens": [
+        {
+          "text": "부모",
+          "lemma": "부모",
+          "pos": "NNG"
+        },
+        {
+          "text": "님",
+          "lemma": "님",
+          "pos": "XSN"
+        },
+        {
+          "text": "과",
+          "lemma": "과",
+          "pos": "JC"
+        },
+        {
+          "text": "조부모",
+          "lemma": "조부모",
+          "pos": "NNG"
+        },
+        {
+          "text": "님",
+          "lemma": "님",
+          "pos": "XSN"
+        },
+        {
+          "text": "의",
+          "lemma": "의",
+          "pos": "JKG"
+        },
+        {
+          "text": "공통점",
+          "lemma": "공통점",
+          "pos": "NNG"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "JX"
+        }
+      ],
+      "concepts": [
+        "공통점",
+        "부모",
+        "사랑",
+        "생각",
+        "손주",
+        "자식",
+        "조건",
+        "조부모",
+        "희생정신"
+      ],
+      "domain": "parents"
+    },
+    "answer": {
+      "text": "자식과 손주를 향한 조건 없는 사랑과 희생정신이라고 생각해.",
+      "tokens": [
+        {
+          "text": "자식",
+          "lemma": "자식",
+          "pos": "NNG"
+        },
+        {
+          "text": "과",
+          "lemma": "과",
+          "pos": "JC"
+        },
+        {
+          "text": "손주",
+          "lemma": "손주",
+          "pos": "NNG"
+        },
+        {
+          "text": "를",
+          "lemma": "를",
+          "pos": "JKO"
+        },
+        {
+          "text": "향하",
+          "lemma": "향하",
+          "pos": "VV"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "조건",
+          "lemma": "조건",
+          "pos": "NNG"
+        },
+        {
+          "text": "없",
+          "lemma": "없",
+          "pos": "VA"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "ETM"
+        },
+        {
+          "text": "사랑",
+          "lemma": "사랑",
+          "pos": "NNG"
+        },
+        {
+          "text": "과",
+          "lemma": "과",
+          "pos": "JC"
+        },
+        {
+          "text": "희생정신",
+          "lemma": "희생정신",
+          "pos": "NNG"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "VCP"
+        },
+        {
+          "text": "라고",
+          "lemma": "라고",
+          "pos": "EC"
+        },
+        {
+          "text": "생각",
+          "lemma": "생각",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "공통점",
+      "부모",
+      "사랑",
+      "생각",
+      "손주",
+      "자식",
+      "조건",
+      "조부모",
+      "희생정신"
+    ],
+    "domain": "parents"
+  },
+  {
+    "question": {
+      "text": "부모님과의 세대 차이를 느낄 때가 있어?",
+      "tokens": [
+        {
+          "text": "부모",
+          "lemma": "부모",
+          "pos": "NNG"
+        },
+        {
+          "text": "님",
+          "lemma": "님",
+          "pos": "XSN"
+        },
+        {
+          "text": "과",
+          "lemma": "과",
+          "pos": "JKB"
+        },
+        {
+          "text": "의",
+          "lemma": "의",
+          "pos": "JKG"
+        },
+        {
+          "text": "세대 차이",
+          "lemma": "세대 차이",
+          "pos": "NNP"
+        },
+        {
+          "text": "를",
+          "lemma": "를",
+          "pos": "JKO"
+        },
+        {
+          "text": "느끼",
+          "lemma": "느끼",
+          "pos": "VV"
+        },
+        {
+          "text": "ㄹ",
+          "lemma": "ㄹ",
+          "pos": "ETM"
+        },
+        {
+          "text": "때",
+          "lemma": "때",
+          "pos": "NNG"
+        },
+        {
+          "text": "가",
+          "lemma": "가",
+          "pos": "JKS"
+        },
+        {
+          "text": "있",
+          "lemma": "있",
+          "pos": "VX"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "극복",
+        "노력",
+        "때",
+        "부모",
+        "생각",
+        "세대 차이",
+        "수",
+        "이해"
+      ],
+      "domain": "parents"
+    },
+    "answer": {
+      "text": "가끔 있지만, 서로 이해하려고 노력하면 극복할 수 있다고 생각해.",
+      "tokens": [
+        {
+          "text": "가끔",
+          "lemma": "가끔",
+          "pos": "MAG"
+        },
+        {
+          "text": "있",
+          "lemma": "있",
+          "pos": "VV"
+        },
+        {
+          "text": "지만",
+          "lemma": "지만",
+          "pos": "EC"
+        },
+        {
+          "text": "서로",
+          "lemma": "서로",
+          "pos": "MAG"
+        },
+        {
+          "text": "이해",
+          "lemma": "이해",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "려고",
+          "lemma": "려고",
+          "pos": "EC"
+        },
+        {
+          "text": "노력",
+          "lemma": "노력",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "면",
+          "lemma": "면",
+          "pos": "EC"
+        },
+        {
+          "text": "극복",
+          "lemma": "극복",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "ㄹ",
+          "lemma": "ㄹ",
+          "pos": "ETM"
+        },
+        {
+          "text": "수",
+          "lemma": "수",
+          "pos": "NNB"
+        },
+        {
+          "text": "있",
+          "lemma": "있",
+          "pos": "VV"
+        },
+        {
+          "text": "다고",
+          "lemma": "다고",
+          "pos": "EC"
+        },
+        {
+          "text": "생각",
+          "lemma": "생각",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "극복",
+      "노력",
+      "때",
+      "부모",
+      "생각",
+      "세대 차이",
+      "수",
+      "이해"
+    ],
+    "domain": "parents"
+  },
+  {
+    "question": {
+      "text": "조부모님과의 세대 차이는 어떻게 극복해?",
+      "tokens": [
+        {
+          "text": "조부모",
+          "lemma": "조부모",
+          "pos": "NNG"
+        },
+        {
+          "text": "님",
+          "lemma": "님",
+          "pos": "XSN"
+        },
+        {
+          "text": "과",
+          "lemma": "과",
+          "pos": "JKB"
+        },
+        {
+          "text": "의",
+          "lemma": "의",
+          "pos": "JKG"
+        },
+        {
+          "text": "세대 차이",
+          "lemma": "세대 차이",
+          "pos": "NNP"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "JX"
+        },
+        {
+          "text": "어떻",
+          "lemma": "어떻",
+          "pos": "VA"
+        },
+        {
+          "text": "게",
+          "lemma": "게",
+          "pos": "EC"
+        },
+        {
+          "text": "극복",
+          "lemma": "극복",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "경청",
+        "극복",
+        "말씀",
+        "문화",
+        "설명",
+        "세대 차이",
+        "요즘",
+        "조부모"
+      ],
+      "domain": "parents"
+    },
+    "answer": {
+      "text": "조부모님의 말씀을 경청하고, 요즘 문화를 쉽게 설명해드리면서 맞춰가려고 해.",
+      "tokens": [
+        {
+          "text": "조부모",
+          "lemma": "조부모",
+          "pos": "NNG"
+        },
+        {
+          "text": "님",
+          "lemma": "님",
+          "pos": "XSN"
+        },
+        {
+          "text": "의",
+          "lemma": "의",
+          "pos": "JKG"
+        },
+        {
+          "text": "말씀",
+          "lemma": "말씀",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "경청",
+          "lemma": "경청",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "고",
+          "lemma": "고",
+          "pos": "EC"
+        },
+        {
+          "text": "요즘",
+          "lemma": "요즘",
+          "pos": "NNG"
+        },
+        {
+          "text": "문화",
+          "lemma": "문화",
+          "pos": "NNG"
+        },
+        {
+          "text": "를",
+          "lemma": "를",
+          "pos": "JKO"
+        },
+        {
+          "text": "쉽",
+          "lemma": "쉽",
+          "pos": "VA"
+        },
+        {
+          "text": "게",
+          "lemma": "게",
+          "pos": "EC"
+        },
+        {
+          "text": "설명",
+          "lemma": "설명",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EC"
+        },
+        {
+          "text": "드리",
+          "lemma": "드리",
+          "pos": "VX"
+        },
+        {
+          "text": "면서",
+          "lemma": "면서",
+          "pos": "EC"
+        },
+        {
+          "text": "맞추",
+          "lemma": "맞추",
+          "pos": "VV"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EC"
+        },
+        {
+          "text": "가",
+          "lemma": "가",
+          "pos": "VX"
+        },
+        {
+          "text": "려고",
+          "lemma": "려고",
+          "pos": "EC"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "VX"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "경청",
+      "극복",
+      "말씀",
+      "문화",
+      "설명",
+      "세대 차이",
+      "요즘",
+      "조부모"
+    ],
+    "domain": "parents"
+  },
+  {
+    "question": {
+      "text": "부모님께 어떤 점을 배우고 싶어?",
+      "tokens": [
+        {
+          "text": "부모",
+          "lemma": "부모",
+          "pos": "NNG"
+        },
+        {
+          "text": "님",
+          "lemma": "님",
+          "pos": "XSN"
+        },
+        {
+          "text": "께",
+          "lemma": "께",
+          "pos": "JKB"
+        },
+        {
+          "text": "어떤",
+          "lemma": "어떤",
+          "pos": "MM"
+        },
+        {
+          "text": "점",
+          "lemma": "점",
+          "pos": "NNB"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "배우",
+          "lemma": "배우",
+          "pos": "VV"
+        },
+        {
+          "text": "고",
+          "lemma": "고",
+          "pos": "EC"
+        },
+        {
+          "text": "싶",
+          "lemma": "싶",
+          "pos": "VX"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "긍정",
+        "부모",
+        "인생",
+        "점",
+        "책임감",
+        "태도"
+      ],
+      "domain": "parents"
+    },
+    "answer": {
+      "text": "인생을 대하는 긍정적인 태도와 책임감을 배우고 싶어.",
+      "tokens": [
+        {
+          "text": "인생",
+          "lemma": "인생",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "대하",
+          "lemma": "대하",
+          "pos": "VV"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "ETM"
+        },
+        {
+          "text": "긍정",
+          "lemma": "긍정",
+          "pos": "NNG"
+        },
+        {
+          "text": "적",
+          "lemma": "적",
+          "pos": "XSN"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "VCP"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "태도",
+          "lemma": "태도",
+          "pos": "NNG"
+        },
+        {
+          "text": "와",
+          "lemma": "와",
+          "pos": "JC"
+        },
+        {
+          "text": "책임감",
+          "lemma": "책임감",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "배우",
+          "lemma": "배우",
+          "pos": "VV"
+        },
+        {
+          "text": "고",
+          "lemma": "고",
+          "pos": "EC"
+        },
+        {
+          "text": "싶",
+          "lemma": "싶",
+          "pos": "VX"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "긍정",
+      "부모",
+      "인생",
+      "점",
+      "책임감",
+      "태도"
+    ],
+    "domain": "parents"
+  },
+  {
+    "question": {
+      "text": "조부모님께 어떤 점을 배우고 싶어?",
+      "tokens": [
+        {
+          "text": "조부모",
+          "lemma": "조부모",
+          "pos": "NNG"
+        },
+        {
+          "text": "님",
+          "lemma": "님",
+          "pos": "XSN"
+        },
+        {
+          "text": "께",
+          "lemma": "께",
+          "pos": "JKB"
+        },
+        {
+          "text": "어떤",
+          "lemma": "어떤",
+          "pos": "MM"
+        },
+        {
+          "text": "점",
+          "lemma": "점",
+          "pos": "NNB"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "배우",
+          "lemma": "배우",
+          "pos": "VV"
+        },
+        {
+          "text": "고",
+          "lemma": "고",
+          "pos": "EC"
+        },
+        {
+          "text": "싶",
+          "lemma": "싶",
+          "pos": "VX"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "법",
+        "삶",
+        "선택",
+        "여유",
+        "점",
+        "조부모",
+        "지혜"
+      ],
+      "domain": "parents"
+    },
+    "answer": {
+      "text": "삶의 여유와 지혜로운 선택을 하는 법을 배우고 싶어.",
+      "tokens": [
+        {
+          "text": "삶",
+          "lemma": "삶",
+          "pos": "NNG"
+        },
+        {
+          "text": "의",
+          "lemma": "의",
+          "pos": "JKG"
+        },
+        {
+          "text": "여유",
+          "lemma": "여유",
+          "pos": "NNG"
+        },
+        {
+          "text": "와",
+          "lemma": "와",
+          "pos": "JC"
+        },
+        {
+          "text": "지혜",
+          "lemma": "지혜",
+          "pos": "NNG"
+        },
+        {
+          "text": "롭",
+          "lemma": "롭",
+          "pos": "XSA"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "선택",
+          "lemma": "선택",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "VV"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "ETM"
+        },
+        {
+          "text": "법",
+          "lemma": "법",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "배우",
+          "lemma": "배우",
+          "pos": "VV"
+        },
+        {
+          "text": "고",
+          "lemma": "고",
+          "pos": "EC"
+        },
+        {
+          "text": "싶",
+          "lemma": "싶",
+          "pos": "VX"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "법",
+      "삶",
+      "선택",
+      "여유",
+      "점",
+      "조부모",
+      "지혜"
+    ],
+    "domain": "parents"
+  },
+  {
+    "question": {
+      "text": "부모님과의 좋은 추억을 만드는 방법은?",
+      "tokens": [
+        {
+          "text": "부모",
+          "lemma": "부모",
+          "pos": "NNG"
+        },
+        {
+          "text": "님",
+          "lemma": "님",
+          "pos": "XSN"
+        },
+        {
+          "text": "과",
+          "lemma": "과",
+          "pos": "JKB"
+        },
+        {
+          "text": "의",
+          "lemma": "의",
+          "pos": "JKG"
+        },
+        {
+          "text": "좋",
+          "lemma": "좋",
+          "pos": "VA"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "ETM"
+        },
+        {
+          "text": "추억",
+          "lemma": "추억",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "만들",
+          "lemma": "만들",
+          "pos": "VV"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "ETM"
+        },
+        {
+          "text": "방법",
+          "lemma": "방법",
+          "pos": "NNG"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "JX"
+        }
+      ],
+      "concepts": [
+        "거",
+        "대화",
+        "방법",
+        "부모",
+        "시간",
+        "추억"
+      ],
+      "domain": "parents"
+    },
+    "answer": {
+      "text": "작은 시간이라도 함께 보내고, 진솔한 대화를 많이 나누는 거야.",
+      "tokens": [
+        {
+          "text": "작",
+          "lemma": "작",
+          "pos": "VA"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "ETM"
+        },
+        {
+          "text": "시간",
+          "lemma": "시간",
+          "pos": "NNG"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "VCP"
+        },
+        {
+          "text": "라도",
+          "lemma": "라도",
+          "pos": "EC"
+        },
+        {
+          "text": "함께",
+          "lemma": "함께",
+          "pos": "MAG"
+        },
+        {
+          "text": "보내",
+          "lemma": "보내",
+          "pos": "VV"
+        },
+        {
+          "text": "고",
+          "lemma": "고",
+          "pos": "EC"
+        },
+        {
+          "text": "진솔",
+          "lemma": "진솔",
+          "pos": "XR"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSA"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "대화",
+          "lemma": "대화",
+          "pos": "NNG"
+        },
+        {
+          "text": "를",
+          "lemma": "를",
+          "pos": "JKO"
+        },
+        {
+          "text": "많이",
+          "lemma": "많이",
+          "pos": "MAG"
+        },
+        {
+          "text": "나누",
+          "lemma": "나누",
+          "pos": "VV"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "ETM"
+        },
+        {
+          "text": "거",
+          "lemma": "거",
+          "pos": "NNB"
+        },
+        {
+          "text": "야",
+          "lemma": "야",
+          "pos": "JKV"
+        }
+      ]
+    },
+    "concepts": [
+      "거",
+      "대화",
+      "방법",
+      "부모",
+      "시간",
+      "추억"
+    ],
+    "domain": "parents"
+  },
+  {
+    "question": {
+      "text": "조부모님과의 좋은 추억을 만드는 방법은?",
+      "tokens": [
+        {
+          "text": "조부모",
+          "lemma": "조부모",
+          "pos": "NNG"
+        },
+        {
+          "text": "님",
+          "lemma": "님",
+          "pos": "XSN"
+        },
+        {
+          "text": "과",
+          "lemma": "과",
+          "pos": "JKB"
+        },
+        {
+          "text": "의",
+          "lemma": "의",
+          "pos": "JKG"
+        },
+        {
+          "text": "좋",
+          "lemma": "좋",
+          "pos": "VA"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "ETM"
+        },
+        {
+          "text": "추억",
+          "lemma": "추억",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "만들",
+          "lemma": "만들",
+          "pos": "VV"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "ETM"
+        },
+        {
+          "text": "방법",
+          "lemma": "방법",
+          "pos": "NNG"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "JX"
+        }
+      ],
+      "concepts": [
+        "가족",
+        "것",
+        "모임",
+        "방법",
+        "사진",
+        "조부모",
+        "추억"
+      ],
+      "domain": "parents"
+    },
+    "answer": {
+      "text": "가족 모임을 자주 갖고, 추억이 담긴 사진을 함께 보는 것도 좋아.",
+      "tokens": [
+        {
+          "text": "가족",
+          "lemma": "가족",
+          "pos": "NNG"
+        },
+        {
+          "text": "모임",
+          "lemma": "모임",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "자주",
+          "lemma": "자주",
+          "pos": "MAG"
+        },
+        {
+          "text": "갖",
+          "lemma": "갖",
+          "pos": "VV"
+        },
+        {
+          "text": "고",
+          "lemma": "고",
+          "pos": "EC"
+        },
+        {
+          "text": "추억",
+          "lemma": "추억",
+          "pos": "NNG"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "JKS"
+        },
+        {
+          "text": "담기",
+          "lemma": "담기",
+          "pos": "VV"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "사진",
+          "lemma": "사진",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "함께",
+          "lemma": "함께",
+          "pos": "MAG"
+        },
+        {
+          "text": "보",
+          "lemma": "보",
+          "pos": "VV"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "ETM"
+        },
+        {
+          "text": "것",
+          "lemma": "것",
+          "pos": "NNB"
+        },
+        {
+          "text": "도",
+          "lemma": "도",
+          "pos": "JX"
+        },
+        {
+          "text": "좋",
+          "lemma": "좋",
+          "pos": "VA"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "가족",
+      "것",
+      "모임",
+      "방법",
+      "사진",
+      "조부모",
+      "추억"
+    ],
+    "domain": "parents"
+  },
+  {
+    "question": {
+      "text": "부모님은 나에게 어떤 존재일까?",
+      "tokens": [
+        {
+          "text": "부모",
+          "lemma": "부모",
+          "pos": "NNG"
+        },
+        {
+          "text": "님",
+          "lemma": "님",
+          "pos": "XSN"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "JX"
+        },
+        {
+          "text": "나",
+          "lemma": "나",
+          "pos": "NP"
+        },
+        {
+          "text": "에게",
+          "lemma": "에게",
+          "pos": "JKB"
+        },
+        {
+          "text": "어떤",
+          "lemma": "어떤",
+          "pos": "MM"
+        },
+        {
+          "text": "존재",
+          "lemma": "존재",
+          "pos": "NNG"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "VCP"
+        },
+        {
+          "text": "ㄹ까",
+          "lemma": "ㄹ까",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "부모",
+        "뿌리",
+        "세상",
+        "존재"
+      ],
+      "domain": "parents"
+    },
+    "answer": {
+      "text": "세상에 둘도 없는 소중한 존재이자, 나의 뿌리 같은 존재야.",
+      "tokens": [
+        {
+          "text": "세상",
+          "lemma": "세상",
+          "pos": "NNG"
+        },
+        {
+          "text": "에",
+          "lemma": "에",
+          "pos": "JKB"
+        },
+        {
+          "text": "둘",
+          "lemma": "둘",
+          "pos": "NR"
+        },
+        {
+          "text": "도",
+          "lemma": "도",
+          "pos": "JX"
+        },
+        {
+          "text": "없",
+          "lemma": "없",
+          "pos": "VA"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "ETM"
+        },
+        {
+          "text": "소중",
+          "lemma": "소중",
+          "pos": "XR"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSA"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "존재",
+          "lemma": "존재",
+          "pos": "NNG"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "VCP"
+        },
+        {
+          "text": "자",
+          "lemma": "자",
+          "pos": "EC"
+        },
+        {
+          "text": "나",
+          "lemma": "나",
+          "pos": "NP"
+        },
+        {
+          "text": "의",
+          "lemma": "의",
+          "pos": "JKG"
+        },
+        {
+          "text": "뿌리",
+          "lemma": "뿌리",
+          "pos": "NNG"
+        },
+        {
+          "text": "같",
+          "lemma": "같",
+          "pos": "VA"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "ETM"
+        },
+        {
+          "text": "존재",
+          "lemma": "존재",
+          "pos": "NNP"
+        },
+        {
+          "text": "야",
+          "lemma": "야",
+          "pos": "JKV"
+        }
+      ]
+    },
+    "concepts": [
+      "부모",
+      "뿌리",
+      "세상",
+      "존재"
+    ],
+    "domain": "parents"
+  },
+  {
+    "question": {
+      "text": "조부모님은 나에게 어떤 존재일까?",
+      "tokens": [
+        {
+          "text": "조부모",
+          "lemma": "조부모",
+          "pos": "NNG"
+        },
+        {
+          "text": "님",
+          "lemma": "님",
+          "pos": "XSN"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "JX"
+        },
+        {
+          "text": "나",
+          "lemma": "나",
+          "pos": "NP"
+        },
+        {
+          "text": "에게",
+          "lemma": "에게",
+          "pos": "JKB"
+        },
+        {
+          "text": "어떤",
+          "lemma": "어떤",
+          "pos": "MM"
+        },
+        {
+          "text": "존재",
+          "lemma": "존재",
+          "pos": "NNG"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "VCP"
+        },
+        {
+          "text": "ㄹ까",
+          "lemma": "ㄹ까",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "버팀목",
+        "분",
+        "시절",
+        "조부모",
+        "존재",
+        "해주시"
+      ],
+      "domain": "parents"
+    },
+    "answer": {
+      "text": "따뜻하고 든든한 버팀목이자, 나의 어린 시절을 함께 해주신 분들이야.",
+      "tokens": [
+        {
+          "text": "따뜻",
+          "lemma": "따뜻",
+          "pos": "XR"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSA"
+        },
+        {
+          "text": "고",
+          "lemma": "고",
+          "pos": "EC"
+        },
+        {
+          "text": "든든",
+          "lemma": "든든",
+          "pos": "XR"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSA"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "버팀목",
+          "lemma": "버팀목",
+          "pos": "NNG"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "VCP"
+        },
+        {
+          "text": "자",
+          "lemma": "자",
+          "pos": "EC"
+        },
+        {
+          "text": "나",
+          "lemma": "나",
+          "pos": "NP"
+        },
+        {
+          "text": "의",
+          "lemma": "의",
+          "pos": "JKG"
+        },
+        {
+          "text": "어리",
+          "lemma": "어리",
+          "pos": "VA"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "시절",
+          "lemma": "시절",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "함께",
+          "lemma": "함께",
+          "pos": "MAG"
+        },
+        {
+          "text": "해주시",
+          "lemma": "해주시",
+          "pos": "NNP"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "JX"
+        },
+        {
+          "text": "분",
+          "lemma": "분",
+          "pos": "NNB"
+        },
+        {
+          "text": "들",
+          "lemma": "들",
+          "pos": "XSN"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "VCP"
+        },
+        {
+          "text": "야",
+          "lemma": "야",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "버팀목",
+      "분",
+      "시절",
+      "조부모",
+      "존재",
+      "해주시"
+    ],
+    "domain": "parents"
+  },
+  {
+    "question": {
+      "text": "부모님께는 어떤 말씀을 자주 드려야 할까?",
+      "tokens": [
+        {
+          "text": "부모",
+          "lemma": "부모",
+          "pos": "NNG"
+        },
+        {
+          "text": "님",
+          "lemma": "님",
+          "pos": "XSN"
+        },
+        {
+          "text": "께",
+          "lemma": "께",
+          "pos": "JKB"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "JX"
+        },
+        {
+          "text": "어떤",
+          "lemma": "어떤",
+          "pos": "MM"
+        },
+        {
+          "text": "말씀",
+          "lemma": "말씀",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "자주",
+          "lemma": "자주",
+          "pos": "MAG"
+        },
+        {
+          "text": "드리",
+          "lemma": "드리",
+          "pos": "VV"
+        },
+        {
+          "text": "어야",
+          "lemma": "어야",
+          "pos": "EC"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "VX"
+        },
+        {
+          "text": "ㄹ까",
+          "lemma": "ㄹ까",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "감사",
+        "건강",
+        "말",
+        "말씀",
+        "부모",
+        "사랑합니다"
+      ],
+      "domain": "parents"
+    },
+    "answer": {
+      "text": "사랑합니다, 감사합니다, 건강하세요 같은 따뜻한 말을 자주 해드려야 해.",
+      "tokens": [
+        {
+          "text": "사랑합니다",
+          "lemma": "사랑합니다",
+          "pos": "NNP"
+        },
+        {
+          "text": "감사",
+          "lemma": "감사",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "ㅂ니다",
+          "lemma": "ㅂ니다",
+          "pos": "EC"
+        },
+        {
+          "text": "건강",
+          "lemma": "건강",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "시",
+          "lemma": "시",
+          "pos": "EP"
+        },
+        {
+          "text": "어요",
+          "lemma": "어요",
+          "pos": "EC"
+        },
+        {
+          "text": "같",
+          "lemma": "같",
+          "pos": "VA"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "ETM"
+        },
+        {
+          "text": "따뜻",
+          "lemma": "따뜻",
+          "pos": "XR"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSA"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "말",
+          "lemma": "말",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "자주",
+          "lemma": "자주",
+          "pos": "MAG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "VV"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EC"
+        },
+        {
+          "text": "드리",
+          "lemma": "드리",
+          "pos": "VX"
+        },
+        {
+          "text": "어야",
+          "lemma": "어야",
+          "pos": "EC"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "VX"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "감사",
+      "건강",
+      "말",
+      "말씀",
+      "부모",
+      "사랑합니다"
+    ],
+    "domain": "parents"
+  },
+  {
+    "question": {
+      "text": "조부모님께는 어떤 말씀을 자주 드려야 할까?",
+      "tokens": [
+        {
+          "text": "조부모",
+          "lemma": "조부모",
+          "pos": "NNG"
+        },
+        {
+          "text": "님",
+          "lemma": "님",
+          "pos": "XSN"
+        },
+        {
+          "text": "께",
+          "lemma": "께",
+          "pos": "JKB"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "JX"
+        },
+        {
+          "text": "어떤",
+          "lemma": "어떤",
+          "pos": "MM"
+        },
+        {
+          "text": "말씀",
+          "lemma": "말씀",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "자주",
+          "lemma": "자주",
+          "pos": "MAG"
+        },
+        {
+          "text": "드리",
+          "lemma": "드리",
+          "pos": "VV"
+        },
+        {
+          "text": "어야",
+          "lemma": "어야",
+          "pos": "EC"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "VX"
+        },
+        {
+          "text": "ㄹ까",
+          "lemma": "ㄹ까",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "건강",
+        "말",
+        "말씀",
+        "사랑해요",
+        "조부모"
+      ],
+      "domain": "parents"
+    },
+    "answer": {
+      "text": "건강 잘 챙기세요, 사랑해요, 보고 싶어요 같은 말을 자주 해드려야 해.",
+      "tokens": [
+        {
+          "text": "건강",
+          "lemma": "건강",
+          "pos": "NNG"
+        },
+        {
+          "text": "잘",
+          "lemma": "잘",
+          "pos": "MAG"
+        },
+        {
+          "text": "챙기",
+          "lemma": "챙기",
+          "pos": "VV"
+        },
+        {
+          "text": "시",
+          "lemma": "시",
+          "pos": "EP"
+        },
+        {
+          "text": "어요",
+          "lemma": "어요",
+          "pos": "EC"
+        },
+        {
+          "text": "사랑해요",
+          "lemma": "사랑해요",
+          "pos": "NNP"
+        },
+        {
+          "text": "보",
+          "lemma": "보",
+          "pos": "VV"
+        },
+        {
+          "text": "고",
+          "lemma": "고",
+          "pos": "EC"
+        },
+        {
+          "text": "싶",
+          "lemma": "싶",
+          "pos": "VX"
+        },
+        {
+          "text": "어요",
+          "lemma": "어요",
+          "pos": "EC"
+        },
+        {
+          "text": "같",
+          "lemma": "같",
+          "pos": "VA"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "ETM"
+        },
+        {
+          "text": "말",
+          "lemma": "말",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "자주",
+          "lemma": "자주",
+          "pos": "MAG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "VV"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EC"
+        },
+        {
+          "text": "드리",
+          "lemma": "드리",
+          "pos": "VX"
+        },
+        {
+          "text": "어야",
+          "lemma": "어야",
+          "pos": "EC"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "VX"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "건강",
+      "말",
+      "말씀",
+      "사랑해요",
+      "조부모"
+    ],
+    "domain": "parents"
+  },
+  {
+    "question": {
+      "text": "부모님께 드리고 싶은 가장 큰 선물은?",
+      "tokens": [
+        {
+          "text": "부모",
+          "lemma": "부모",
+          "pos": "NNG"
+        },
+        {
+          "text": "님",
+          "lemma": "님",
+          "pos": "XSN"
+        },
+        {
+          "text": "께",
+          "lemma": "께",
+          "pos": "JKB"
+        },
+        {
+          "text": "드리",
+          "lemma": "드리",
+          "pos": "VV"
+        },
+        {
+          "text": "고",
+          "lemma": "고",
+          "pos": "EC"
+        },
+        {
+          "text": "싶",
+          "lemma": "싶",
+          "pos": "VX"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "ETM"
+        },
+        {
+          "text": "가장",
+          "lemma": "가장",
+          "pos": "MAG"
+        },
+        {
+          "text": "크",
+          "lemma": "크",
+          "pos": "VA"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "선물",
+          "lemma": "선물",
+          "pos": "NNG"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "JX"
+        }
+      ],
+      "concepts": [
+        "건강",
+        "것",
+        "모습",
+        "부모",
+        "생각",
+        "선물",
+        "행복"
+      ],
+      "domain": "parents"
+    },
+    "answer": {
+      "text": "내가 건강하고 행복하게 잘 사는 모습을 보여드리는 것이 가장 큰 선물이라고 생각해.",
+      "tokens": [
+        {
+          "text": "내",
+          "lemma": "내",
+          "pos": "NP"
+        },
+        {
+          "text": "가",
+          "lemma": "가",
+          "pos": "JKS"
+        },
+        {
+          "text": "건강",
+          "lemma": "건강",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "고",
+          "lemma": "고",
+          "pos": "EC"
+        },
+        {
+          "text": "행복",
+          "lemma": "행복",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "게",
+          "lemma": "게",
+          "pos": "EC"
+        },
+        {
+          "text": "잘",
+          "lemma": "잘",
+          "pos": "MAG"
+        },
+        {
+          "text": "살",
+          "lemma": "살",
+          "pos": "VV"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "ETM"
+        },
+        {
+          "text": "모습",
+          "lemma": "모습",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "보이",
+          "lemma": "보이",
+          "pos": "VV"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EC"
+        },
+        {
+          "text": "드리",
+          "lemma": "드리",
+          "pos": "VX"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "ETM"
+        },
+        {
+          "text": "것",
+          "lemma": "것",
+          "pos": "NNB"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "JKS"
+        },
+        {
+          "text": "가장",
+          "lemma": "가장",
+          "pos": "MAG"
+        },
+        {
+          "text": "크",
+          "lemma": "크",
+          "pos": "VA"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "선물",
+          "lemma": "선물",
+          "pos": "NNG"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "VCP"
+        },
+        {
+          "text": "라고",
+          "lemma": "라고",
+          "pos": "EC"
+        },
+        {
+          "text": "생각",
+          "lemma": "생각",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "건강",
+      "것",
+      "모습",
+      "부모",
+      "생각",
+      "선물",
+      "행복"
+    ],
+    "domain": "parents"
+  },
+  {
+    "question": {
+      "text": "조부모님께 드리고 싶은 가장 큰 선물은?",
+      "tokens": [
+        {
+          "text": "조부모",
+          "lemma": "조부모",
+          "pos": "NNG"
+        },
+        {
+          "text": "님",
+          "lemma": "님",
+          "pos": "XSN"
+        },
+        {
+          "text": "께",
+          "lemma": "께",
+          "pos": "JKB"
+        },
+        {
+          "text": "드리",
+          "lemma": "드리",
+          "pos": "VV"
+        },
+        {
+          "text": "고",
+          "lemma": "고",
+          "pos": "EC"
+        },
+        {
+          "text": "싶",
+          "lemma": "싶",
+          "pos": "VX"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "ETM"
+        },
+        {
+          "text": "가장",
+          "lemma": "가장",
+          "pos": "MAG"
+        },
+        {
+          "text": "크",
+          "lemma": "크",
+          "pos": "VA"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "선물",
+          "lemma": "선물",
+          "pos": "NNG"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "JX"
+        }
+      ],
+      "concepts": [
+        "가족",
+        "거",
+        "건강",
+        "선물",
+        "시간",
+        "조부모"
+      ],
+      "domain": "parents"
+    },
+    "answer": {
+      "text": "오래오래 건강하게 사시면서 우리 가족과 함께 즐거운 시간을 보내시는 거야.",
+      "tokens": [
+        {
+          "text": "오래오래",
+          "lemma": "오래오래",
+          "pos": "MAG"
+        },
+        {
+          "text": "건강",
+          "lemma": "건강",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "게",
+          "lemma": "게",
+          "pos": "EC"
+        },
+        {
+          "text": "살",
+          "lemma": "살",
+          "pos": "VV"
+        },
+        {
+          "text": "시",
+          "lemma": "시",
+          "pos": "EP"
+        },
+        {
+          "text": "면서",
+          "lemma": "면서",
+          "pos": "EC"
+        },
+        {
+          "text": "우리",
+          "lemma": "우리",
+          "pos": "NP"
+        },
+        {
+          "text": "가족",
+          "lemma": "가족",
+          "pos": "NNG"
+        },
+        {
+          "text": "과",
+          "lemma": "과",
+          "pos": "JC"
+        },
+        {
+          "text": "함께",
+          "lemma": "함께",
+          "pos": "MAG"
+        },
+        {
+          "text": "즐겁",
+          "lemma": "즐겁",
+          "pos": "VA"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "시간",
+          "lemma": "시간",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "보내",
+          "lemma": "보내",
+          "pos": "VV"
+        },
+        {
+          "text": "시",
+          "lemma": "시",
+          "pos": "EP"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "ETM"
+        },
+        {
+          "text": "거",
+          "lemma": "거",
+          "pos": "NNB"
+        },
+        {
+          "text": "야",
+          "lemma": "야",
+          "pos": "JKV"
+        }
+      ]
+    },
+    "concepts": [
+      "가족",
+      "거",
+      "건강",
+      "선물",
+      "시간",
+      "조부모"
+    ],
+    "domain": "parents"
+  },
+  {
+    "question": {
+      "text": "부모님은 나에게 어떤 영향을 주셨어?",
+      "tokens": [
+        {
+          "text": "부모",
+          "lemma": "부모",
+          "pos": "NNG"
+        },
+        {
+          "text": "님",
+          "lemma": "님",
+          "pos": "XSN"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "JX"
+        },
+        {
+          "text": "나",
+          "lemma": "나",
+          "pos": "NP"
+        },
+        {
+          "text": "에게",
+          "lemma": "에게",
+          "pos": "JKB"
+        },
+        {
+          "text": "어떤",
+          "lemma": "어떤",
+          "pos": "MM"
+        },
+        {
+          "text": "영향",
+          "lemma": "영향",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "주",
+          "lemma": "주",
+          "pos": "VX"
+        },
+        {
+          "text": "시",
+          "lemma": "시",
+          "pos": "EP"
+        },
+        {
+          "text": "었",
+          "lemma": "었",
+          "pos": "EP"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "긍정",
+        "부모",
+        "사고방식",
+        "성실",
+        "영향"
+      ],
+      "domain": "parents"
+    },
+    "answer": {
+      "text": "긍정적인 사고방식과 성실함을 가르쳐주셨어.",
+      "tokens": [
+        {
+          "text": "긍정",
+          "lemma": "긍정",
+          "pos": "NNG"
+        },
+        {
+          "text": "적",
+          "lemma": "적",
+          "pos": "XSN"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "VCP"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "사고방식",
+          "lemma": "사고방식",
+          "pos": "NNG"
+        },
+        {
+          "text": "과",
+          "lemma": "과",
+          "pos": "JC"
+        },
+        {
+          "text": "성실",
+          "lemma": "성실",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "ㅁ",
+          "lemma": "ㅁ",
+          "pos": "ETN"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "가르치",
+          "lemma": "가르치",
+          "pos": "VV"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EC"
+        },
+        {
+          "text": "주",
+          "lemma": "주",
+          "pos": "VX"
+        },
+        {
+          "text": "시",
+          "lemma": "시",
+          "pos": "EP"
+        },
+        {
+          "text": "었",
+          "lemma": "었",
+          "pos": "EP"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "긍정",
+      "부모",
+      "사고방식",
+      "성실",
+      "영향"
+    ],
+    "domain": "parents"
+  },
+  {
+    "question": {
+      "text": "조부모님은 나에게 어떤 영향을 주셨어?",
+      "tokens": [
+        {
+          "text": "조부모",
+          "lemma": "조부모",
+          "pos": "NNG"
+        },
+        {
+          "text": "님",
+          "lemma": "님",
+          "pos": "XSN"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "JX"
+        },
+        {
+          "text": "나",
+          "lemma": "나",
+          "pos": "NP"
+        },
+        {
+          "text": "에게",
+          "lemma": "에게",
+          "pos": "JKB"
+        },
+        {
+          "text": "어떤",
+          "lemma": "어떤",
+          "pos": "MM"
+        },
+        {
+          "text": "영향",
+          "lemma": "영향",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "주",
+          "lemma": "주",
+          "pos": "VX"
+        },
+        {
+          "text": "시",
+          "lemma": "시",
+          "pos": "EP"
+        },
+        {
+          "text": "었",
+          "lemma": "었",
+          "pos": "EP"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "마음",
+        "영향",
+        "조부모"
+      ],
+      "domain": "parents"
+    },
+    "answer": {
+      "text": "따뜻한 마음과 인자함을 배우게 해주셨어.",
+      "tokens": [
+        {
+          "text": "따뜻",
+          "lemma": "따뜻",
+          "pos": "XR"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSA"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "마음",
+          "lemma": "마음",
+          "pos": "NNG"
+        },
+        {
+          "text": "과",
+          "lemma": "과",
+          "pos": "JC"
+        },
+        {
+          "text": "인자",
+          "lemma": "인자",
+          "pos": "XR"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSA"
+        },
+        {
+          "text": "ㅁ",
+          "lemma": "ㅁ",
+          "pos": "ETN"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "배우",
+          "lemma": "배우",
+          "pos": "VV"
+        },
+        {
+          "text": "게",
+          "lemma": "게",
+          "pos": "EC"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "VV"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EC"
+        },
+        {
+          "text": "주",
+          "lemma": "주",
+          "pos": "VX"
+        },
+        {
+          "text": "시",
+          "lemma": "시",
+          "pos": "EP"
+        },
+        {
+          "text": "었",
+          "lemma": "었",
+          "pos": "EP"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "마음",
+      "영향",
+      "조부모"
+    ],
+    "domain": "parents"
+  },
+  {
+    "question": {
+      "text": "부모님의 꿈을 응원해드리고 싶다면?",
+      "tokens": [
+        {
+          "text": "부모",
+          "lemma": "부모",
+          "pos": "NNG"
+        },
+        {
+          "text": "님",
+          "lemma": "님",
+          "pos": "XSN"
+        },
+        {
+          "text": "의",
+          "lemma": "의",
+          "pos": "JKG"
+        },
+        {
+          "text": "꿈",
+          "lemma": "꿈",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "응원",
+          "lemma": "응원",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EC"
+        },
+        {
+          "text": "드리",
+          "lemma": "드리",
+          "pos": "VX"
+        },
+        {
+          "text": "고",
+          "lemma": "고",
+          "pos": "EC"
+        },
+        {
+          "text": "싶",
+          "lemma": "싶",
+          "pos": "VX"
+        },
+        {
+          "text": "다면",
+          "lemma": "다면",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "게",
+        "경청",
+        "꿈",
+        "도움",
+        "드릴",
+        "부모",
+        "부분",
+        "수",
+        "응원",
+        "현실"
+      ],
+      "domain": "parents"
+    },
+    "answer": {
+      "text": "부모님의 꿈을 경청하고, 현실적인 도움을 드릴 수 있는 부분을 찾아보는 게 좋아.",
+      "tokens": [
+        {
+          "text": "부모",
+          "lemma": "부모",
+          "pos": "NNG"
+        },
+        {
+          "text": "님",
+          "lemma": "님",
+          "pos": "XSN"
+        },
+        {
+          "text": "의",
+          "lemma": "의",
+          "pos": "JKG"
+        },
+        {
+          "text": "꿈",
+          "lemma": "꿈",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "경청",
+          "lemma": "경청",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "고",
+          "lemma": "고",
+          "pos": "EC"
+        },
+        {
+          "text": "현실",
+          "lemma": "현실",
+          "pos": "NNG"
+        },
+        {
+          "text": "적",
+          "lemma": "적",
+          "pos": "XSN"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "VCP"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "도움",
+          "lemma": "도움",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "드릴",
+          "lemma": "드릴",
+          "pos": "NNP"
+        },
+        {
+          "text": "수",
+          "lemma": "수",
+          "pos": "NNB"
+        },
+        {
+          "text": "있",
+          "lemma": "있",
+          "pos": "VV"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "ETM"
+        },
+        {
+          "text": "부분",
+          "lemma": "부분",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "찾아보",
+          "lemma": "찾아보",
+          "pos": "VV"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "ETM"
+        },
+        {
+          "text": "게",
+          "lemma": "게",
+          "pos": "NNG"
+        },
+        {
+          "text": "좋",
+          "lemma": "좋",
+          "pos": "VA"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "게",
+      "경청",
+      "꿈",
+      "도움",
+      "드릴",
+      "부모",
+      "부분",
+      "수",
+      "응원",
+      "현실"
+    ],
+    "domain": "parents"
+  },
+  {
+    "question": {
+      "text": "조부모님의 남은 꿈을 지지해드리고 싶다면?",
+      "tokens": [
+        {
+          "text": "조부모",
+          "lemma": "조부모",
+          "pos": "NNG"
+        },
+        {
+          "text": "님",
+          "lemma": "님",
+          "pos": "XSN"
+        },
+        {
+          "text": "의",
+          "lemma": "의",
+          "pos": "JKG"
+        },
+        {
+          "text": "남은",
+          "lemma": "남은",
+          "pos": "NNP"
+        },
+        {
+          "text": "꿈",
+          "lemma": "꿈",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "지지",
+          "lemma": "지지",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EC"
+        },
+        {
+          "text": "드리",
+          "lemma": "드리",
+          "pos": "VX"
+        },
+        {
+          "text": "고",
+          "lemma": "고",
+          "pos": "EC"
+        },
+        {
+          "text": "싶",
+          "lemma": "싶",
+          "pos": "VX"
+        },
+        {
+          "text": "다면",
+          "lemma": "다면",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "꿈",
+        "남은",
+        "수",
+        "실현",
+        "조부모",
+        "지지"
+      ],
+      "domain": "parents"
+    },
+    "answer": {
+      "text": "가능하다면 조부모님의 꿈을 실현하실 수 있도록 도와드리고 싶어.",
+      "tokens": [
+        {
+          "text": "가능",
+          "lemma": "가능",
+          "pos": "XR"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSA"
+        },
+        {
+          "text": "다면",
+          "lemma": "다면",
+          "pos": "EC"
+        },
+        {
+          "text": "조부모",
+          "lemma": "조부모",
+          "pos": "NNG"
+        },
+        {
+          "text": "님",
+          "lemma": "님",
+          "pos": "XSN"
+        },
+        {
+          "text": "의",
+          "lemma": "의",
+          "pos": "JKG"
+        },
+        {
+          "text": "꿈",
+          "lemma": "꿈",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "실현",
+          "lemma": "실현",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "시",
+          "lemma": "시",
+          "pos": "EP"
+        },
+        {
+          "text": "ㄹ",
+          "lemma": "ㄹ",
+          "pos": "ETM"
+        },
+        {
+          "text": "수",
+          "lemma": "수",
+          "pos": "NNB"
+        },
+        {
+          "text": "있",
+          "lemma": "있",
+          "pos": "VV"
+        },
+        {
+          "text": "도록",
+          "lemma": "도록",
+          "pos": "EC"
+        },
+        {
+          "text": "돕",
+          "lemma": "돕",
+          "pos": "VV"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EC"
+        },
+        {
+          "text": "드리",
+          "lemma": "드리",
+          "pos": "VX"
+        },
+        {
+          "text": "고",
+          "lemma": "고",
+          "pos": "EC"
+        },
+        {
+          "text": "싶",
+          "lemma": "싶",
+          "pos": "VX"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "꿈",
+      "남은",
+      "수",
+      "실현",
+      "조부모",
+      "지지"
+    ],
+    "domain": "parents"
+  },
+  {
+    "question": {
+      "text": "부모님과 조부모님께 힘이 되는 말은?",
+      "tokens": [
+        {
+          "text": "부모",
+          "lemma": "부모",
+          "pos": "NNG"
+        },
+        {
+          "text": "님",
+          "lemma": "님",
+          "pos": "XSN"
+        },
+        {
+          "text": "과",
+          "lemma": "과",
+          "pos": "JC"
+        },
+        {
+          "text": "조부모",
+          "lemma": "조부모",
+          "pos": "NNG"
+        },
+        {
+          "text": "님",
+          "lemma": "님",
+          "pos": "XSN"
+        },
+        {
+          "text": "께",
+          "lemma": "께",
+          "pos": "JKB"
+        },
+        {
+          "text": "힘",
+          "lemma": "힘",
+          "pos": "NNG"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "JKS"
+        },
+        {
+          "text": "되",
+          "lemma": "되",
+          "pos": "VV"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "ETM"
+        },
+        {
+          "text": "말",
+          "lemma": "말",
+          "pos": "NNG"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "JX"
+        }
+      ],
+      "concepts": [
+        "덕분",
+        "라거",
+        "말",
+        "부모",
+        "사랑해요",
+        "제가",
+        "조부모",
+        "진심",
+        "한마디",
+        "힘"
+      ],
+      "domain": "parents"
+    },
+    "answer": {
+      "text": "덕분에 제가 이렇게 잘 자랐어요 라거나 사랑해요 같은 진심 어린 말 한마디가 아닐까?",
+      "tokens": [
+        {
+          "text": "덕분",
+          "lemma": "덕분",
+          "pos": "NNG"
+        },
+        {
+          "text": "에",
+          "lemma": "에",
+          "pos": "JKB"
+        },
+        {
+          "text": "제가",
+          "lemma": "제가",
+          "pos": "NNP"
+        },
+        {
+          "text": "이렇",
+          "lemma": "이렇",
+          "pos": "VA"
+        },
+        {
+          "text": "게",
+          "lemma": "게",
+          "pos": "EC"
+        },
+        {
+          "text": "잘",
+          "lemma": "잘",
+          "pos": "MAG"
+        },
+        {
+          "text": "자라",
+          "lemma": "자라",
+          "pos": "VV"
+        },
+        {
+          "text": "았",
+          "lemma": "았",
+          "pos": "EP"
+        },
+        {
+          "text": "어요",
+          "lemma": "어요",
+          "pos": "EC"
+        },
+        {
+          "text": "라거",
+          "lemma": "라거",
+          "pos": "NNP"
+        },
+        {
+          "text": "나",
+          "lemma": "나",
+          "pos": "JC"
+        },
+        {
+          "text": "사랑해요",
+          "lemma": "사랑해요",
+          "pos": "NNP"
+        },
+        {
+          "text": "같",
+          "lemma": "같",
+          "pos": "VA"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "ETM"
+        },
+        {
+          "text": "진심",
+          "lemma": "진심",
+          "pos": "NNP"
+        },
+        {
+          "text": "어리",
+          "lemma": "어리",
+          "pos": "VA"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "말",
+          "lemma": "말",
+          "pos": "NNG"
+        },
+        {
+          "text": "한마디",
+          "lemma": "한마디",
+          "pos": "NNG"
+        },
+        {
+          "text": "가",
+          "lemma": "가",
+          "pos": "JKS"
+        },
+        {
+          "text": "아니",
+          "lemma": "아니",
+          "pos": "VCN"
+        },
+        {
+          "text": "ㄹ까",
+          "lemma": "ㄹ까",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "덕분",
+      "라거",
+      "말",
+      "부모",
+      "사랑해요",
+      "제가",
+      "조부모",
+      "진심",
+      "한마디",
+      "힘"
+    ],
+    "domain": "parents"
+  },
+  {
+    "question": {
+      "text": "부모님과의 오해가 생겼을 때 어떻게 풀어?",
+      "tokens": [
+        {
+          "text": "부모",
+          "lemma": "부모",
+          "pos": "NNG"
+        },
+        {
+          "text": "님",
+          "lemma": "님",
+          "pos": "XSN"
+        },
+        {
+          "text": "과",
+          "lemma": "과",
+          "pos": "JKB"
+        },
+        {
+          "text": "의",
+          "lemma": "의",
+          "pos": "JKG"
+        },
+        {
+          "text": "오해",
+          "lemma": "오해",
+          "pos": "NNG"
+        },
+        {
+          "text": "가",
+          "lemma": "가",
+          "pos": "JKS"
+        },
+        {
+          "text": "생기",
+          "lemma": "생기",
+          "pos": "VV"
+        },
+        {
+          "text": "었",
+          "lemma": "었",
+          "pos": "EP"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "ETM"
+        },
+        {
+          "text": "때",
+          "lemma": "때",
+          "pos": "NNG"
+        },
+        {
+          "text": "어떻",
+          "lemma": "어떻",
+          "pos": "VA"
+        },
+        {
+          "text": "게",
+          "lemma": "게",
+          "pos": "EC"
+        },
+        {
+          "text": "풀",
+          "lemma": "풀",
+          "pos": "VV"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "감정",
+        "노력",
+        "때",
+        "부모",
+        "서로",
+        "오해",
+        "이야기"
+      ],
+      "domain": "parents"
+    },
+    "answer": {
+      "text": "서로의 감정을 솔직하게 이야기하고, 오해를 풀기 위해 노력해.",
+      "tokens": [
+        {
+          "text": "서로",
+          "lemma": "서로",
+          "pos": "NNG"
+        },
+        {
+          "text": "의",
+          "lemma": "의",
+          "pos": "JKG"
+        },
+        {
+          "text": "감정",
+          "lemma": "감정",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "솔직",
+          "lemma": "솔직",
+          "pos": "XR"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSA"
+        },
+        {
+          "text": "게",
+          "lemma": "게",
+          "pos": "EC"
+        },
+        {
+          "text": "이야기",
+          "lemma": "이야기",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "고",
+          "lemma": "고",
+          "pos": "EC"
+        },
+        {
+          "text": "오해",
+          "lemma": "오해",
+          "pos": "NNG"
+        },
+        {
+          "text": "를",
+          "lemma": "를",
+          "pos": "JKO"
+        },
+        {
+          "text": "풀",
+          "lemma": "풀",
+          "pos": "VV"
+        },
+        {
+          "text": "기",
+          "lemma": "기",
+          "pos": "ETN"
+        },
+        {
+          "text": "위하",
+          "lemma": "위하",
+          "pos": "VV"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EC"
+        },
+        {
+          "text": "노력",
+          "lemma": "노력",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "감정",
+      "노력",
+      "때",
+      "부모",
+      "서로",
+      "오해",
+      "이야기"
+    ],
+    "domain": "parents"
+  },
+  {
+    "question": {
+      "text": "조부모님과의 좋은 관계를 유지하는 비결은?",
+      "tokens": [
+        {
+          "text": "조부모",
+          "lemma": "조부모",
+          "pos": "NNG"
+        },
+        {
+          "text": "님",
+          "lemma": "님",
+          "pos": "XSN"
+        },
+        {
+          "text": "과",
+          "lemma": "과",
+          "pos": "JKB"
+        },
+        {
+          "text": "의",
+          "lemma": "의",
+          "pos": "JKG"
+        },
+        {
+          "text": "좋",
+          "lemma": "좋",
+          "pos": "VA"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "ETM"
+        },
+        {
+          "text": "관계",
+          "lemma": "관계",
+          "pos": "NNG"
+        },
+        {
+          "text": "를",
+          "lemma": "를",
+          "pos": "JKO"
+        },
+        {
+          "text": "유지",
+          "lemma": "유지",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "ETM"
+        },
+        {
+          "text": "비결",
+          "lemma": "비결",
+          "pos": "NNG"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "JX"
+        }
+      ],
+      "concepts": [
+        "거",
+        "관계",
+        "마음",
+        "비결",
+        "소통",
+        "유지",
+        "조부모"
+      ],
+      "domain": "parents"
+    },
+    "answer": {
+      "text": "자주 찾아뵙고, 따뜻한 마음으로 소통하는 거야.",
+      "tokens": [
+        {
+          "text": "자주",
+          "lemma": "자주",
+          "pos": "MAG"
+        },
+        {
+          "text": "찾아뵙",
+          "lemma": "찾아뵙",
+          "pos": "VV"
+        },
+        {
+          "text": "고",
+          "lemma": "고",
+          "pos": "EC"
+        },
+        {
+          "text": "따뜻",
+          "lemma": "따뜻",
+          "pos": "XR"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSA"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "마음",
+          "lemma": "마음",
+          "pos": "NNG"
+        },
+        {
+          "text": "으로",
+          "lemma": "으로",
+          "pos": "JKB"
+        },
+        {
+          "text": "소통",
+          "lemma": "소통",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "ETM"
+        },
+        {
+          "text": "거",
+          "lemma": "거",
+          "pos": "NNB"
+        },
+        {
+          "text": "야",
+          "lemma": "야",
+          "pos": "JKV"
+        }
+      ]
+    },
+    "concepts": [
+      "거",
+      "관계",
+      "마음",
+      "비결",
+      "소통",
+      "유지",
+      "조부모"
+    ],
+    "domain": "parents"
+  },
+  {
+    "question": {
+      "text": "부모님은 어떤 점이 가장 멋있어?",
+      "tokens": [
+        {
+          "text": "부모",
+          "lemma": "부모",
+          "pos": "NNG"
+        },
+        {
+          "text": "님",
+          "lemma": "님",
+          "pos": "XSN"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "JX"
+        },
+        {
+          "text": "어떤",
+          "lemma": "어떤",
+          "pos": "MM"
+        },
+        {
+          "text": "점",
+          "lemma": "점",
+          "pos": "NNB"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "JKS"
+        },
+        {
+          "text": "가장",
+          "lemma": "가장",
+          "pos": "MAG"
+        },
+        {
+          "text": "멋있",
+          "lemma": "멋있",
+          "pos": "VA"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "모습",
+        "부모",
+        "어려움",
+        "점",
+        "최선",
+        "포기"
+      ],
+      "domain": "parents"
+    },
+    "answer": {
+      "text": "어떤 어려움에도 포기하지 않고 최선을 다하시는 모습이 가장 멋있어.",
+      "tokens": [
+        {
+          "text": "어떤",
+          "lemma": "어떤",
+          "pos": "MM"
+        },
+        {
+          "text": "어려움",
+          "lemma": "어려움",
+          "pos": "NNG"
+        },
+        {
+          "text": "에",
+          "lemma": "에",
+          "pos": "JKB"
+        },
+        {
+          "text": "도",
+          "lemma": "도",
+          "pos": "JX"
+        },
+        {
+          "text": "포기",
+          "lemma": "포기",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "지",
+          "lemma": "지",
+          "pos": "EC"
+        },
+        {
+          "text": "않",
+          "lemma": "않",
+          "pos": "VX"
+        },
+        {
+          "text": "고",
+          "lemma": "고",
+          "pos": "EC"
+        },
+        {
+          "text": "최선",
+          "lemma": "최선",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "다",
+          "lemma": "다",
+          "pos": "MAG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSV"
+        },
+        {
+          "text": "시",
+          "lemma": "시",
+          "pos": "EP"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "ETM"
+        },
+        {
+          "text": "모습",
+          "lemma": "모습",
+          "pos": "NNG"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "JKS"
+        },
+        {
+          "text": "가장",
+          "lemma": "가장",
+          "pos": "MAG"
+        },
+        {
+          "text": "멋있",
+          "lemma": "멋있",
+          "pos": "VA"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "모습",
+      "부모",
+      "어려움",
+      "점",
+      "최선",
+      "포기"
+    ],
+    "domain": "parents"
+  },
+  {
+    "question": {
+      "text": "조부모님은 어떤 점이 가장 멋있어?",
+      "tokens": [
+        {
+          "text": "조부모",
+          "lemma": "조부모",
+          "pos": "NNG"
+        },
+        {
+          "text": "님",
+          "lemma": "님",
+          "pos": "XSN"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "JX"
+        },
+        {
+          "text": "어떤",
+          "lemma": "어떤",
+          "pos": "MM"
+        },
+        {
+          "text": "점",
+          "lemma": "점",
+          "pos": "NNB"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "JKS"
+        },
+        {
+          "text": "가장",
+          "lemma": "가장",
+          "pos": "MAG"
+        },
+        {
+          "text": "멋있",
+          "lemma": "멋있",
+          "pos": "VA"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "경험",
+        "삶",
+        "여유",
+        "점",
+        "조부모",
+        "지혜"
+      ],
+      "domain": "parents"
+    },
+    "answer": {
+      "text": "삶의 경험에서 우러나오는 지혜와 여유가 가장 멋있어.",
+      "tokens": [
+        {
+          "text": "삶",
+          "lemma": "삶",
+          "pos": "NNG"
+        },
+        {
+          "text": "의",
+          "lemma": "의",
+          "pos": "JKG"
+        },
+        {
+          "text": "경험",
+          "lemma": "경험",
+          "pos": "NNG"
+        },
+        {
+          "text": "에서",
+          "lemma": "에서",
+          "pos": "JKB"
+        },
+        {
+          "text": "우러나오",
+          "lemma": "우러나오",
+          "pos": "VV"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "ETM"
+        },
+        {
+          "text": "지혜",
+          "lemma": "지혜",
+          "pos": "NNG"
+        },
+        {
+          "text": "와",
+          "lemma": "와",
+          "pos": "JC"
+        },
+        {
+          "text": "여유",
+          "lemma": "여유",
+          "pos": "NNG"
+        },
+        {
+          "text": "가",
+          "lemma": "가",
+          "pos": "JKS"
+        },
+        {
+          "text": "가장",
+          "lemma": "가장",
+          "pos": "MAG"
+        },
+        {
+          "text": "멋있",
+          "lemma": "멋있",
+          "pos": "VA"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "경험",
+      "삶",
+      "여유",
+      "점",
+      "조부모",
+      "지혜"
+    ],
+    "domain": "parents"
+  },
+  {
+    "question": {
+      "text": "부모님과 함께 할 수 있는 여가 활동은?",
+      "tokens": [
+        {
+          "text": "부모",
+          "lemma": "부모",
+          "pos": "NNG"
+        },
+        {
+          "text": "님과 함께",
+          "lemma": "님과 함께",
+          "pos": "NNP"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "VV"
+        },
+        {
+          "text": "ㄹ",
+          "lemma": "ㄹ",
+          "pos": "ETM"
+        },
+        {
+          "text": "수",
+          "lemma": "수",
+          "pos": "NNB"
+        },
+        {
+          "text": "있",
+          "lemma": "있",
+          "pos": "VV"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "ETM"
+        },
+        {
+          "text": "여가",
+          "lemma": "여가",
+          "pos": "NNP"
+        },
+        {
+          "text": "활동",
+          "lemma": "활동",
+          "pos": "NNG"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "JX"
+        }
+      ],
+      "concepts": [
+        "가족",
+        "것",
+        "관람",
+        "님과 함께",
+        "등",
+        "맛집",
+        "부모",
+        "수",
+        "여가",
+        "여행",
+        "영화",
+        "탐방",
+        "활동"
+      ],
+      "domain": "parents"
+    },
+    "answer": {
+      "text": "가족 여행, 맛집 탐방, 영화 관람 등이 좋을 것 같아.",
+      "tokens": [
+        {
+          "text": "가족",
+          "lemma": "가족",
+          "pos": "NNG"
+        },
+        {
+          "text": "여행",
+          "lemma": "여행",
+          "pos": "NNG"
+        },
+        {
+          "text": "맛집",
+          "lemma": "맛집",
+          "pos": "NNG"
+        },
+        {
+          "text": "탐방",
+          "lemma": "탐방",
+          "pos": "NNG"
+        },
+        {
+          "text": "영화",
+          "lemma": "영화",
+          "pos": "NNG"
+        },
+        {
+          "text": "관람",
+          "lemma": "관람",
+          "pos": "NNG"
+        },
+        {
+          "text": "등",
+          "lemma": "등",
+          "pos": "NNB"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "JKS"
+        },
+        {
+          "text": "좋",
+          "lemma": "좋",
+          "pos": "VA"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "ETM"
+        },
+        {
+          "text": "것",
+          "lemma": "것",
+          "pos": "NNB"
+        },
+        {
+          "text": "같",
+          "lemma": "같",
+          "pos": "VA"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "가족",
+      "것",
+      "관람",
+      "님과 함께",
+      "등",
+      "맛집",
+      "부모",
+      "수",
+      "여가",
+      "여행",
+      "영화",
+      "탐방",
+      "활동"
+    ],
+    "domain": "parents"
+  },
+  {
+    "question": {
+      "text": "조부모님과 함께 할 수 있는 여가 활동은?",
+      "tokens": [
+        {
+          "text": "조부모",
+          "lemma": "조부모",
+          "pos": "NNP"
+        },
+        {
+          "text": "님과 함께",
+          "lemma": "님과 함께",
+          "pos": "NNP"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "VV"
+        },
+        {
+          "text": "ㄹ",
+          "lemma": "ㄹ",
+          "pos": "ETM"
+        },
+        {
+          "text": "수",
+          "lemma": "수",
+          "pos": "NNB"
+        },
+        {
+          "text": "있",
+          "lemma": "있",
+          "pos": "VV"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "ETM"
+        },
+        {
+          "text": "여가",
+          "lemma": "여가",
+          "pos": "NNP"
+        },
+        {
+          "text": "활동",
+          "lemma": "활동",
+          "pos": "NNG"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "JX"
+        }
+      ],
+      "concepts": [
+        "것",
+        "게",
+        "님과 함께",
+        "산책",
+        "수",
+        "여가",
+        "옛날",
+        "음식",
+        "이야기",
+        "조부모",
+        "활동"
+      ],
+      "domain": "parents"
+    },
+    "answer": {
+      "text": "산책, 맛있는 음식 해드리기, 옛날이야기 듣기 같은 게 좋을 것 같아.",
+      "tokens": [
+        {
+          "text": "산책",
+          "lemma": "산책",
+          "pos": "NNP"
+        },
+        {
+          "text": "맛있",
+          "lemma": "맛있",
+          "pos": "VA"
+        },
+        {
+          "text": "는",
+          "lemma": "는",
+          "pos": "ETM"
+        },
+        {
+          "text": "음식",
+          "lemma": "음식",
+          "pos": "NNG"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "VV"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EC"
+        },
+        {
+          "text": "드리",
+          "lemma": "드리",
+          "pos": "VX"
+        },
+        {
+          "text": "기",
+          "lemma": "기",
+          "pos": "ETN"
+        },
+        {
+          "text": "옛날",
+          "lemma": "옛날",
+          "pos": "NNG"
+        },
+        {
+          "text": "이야기",
+          "lemma": "이야기",
+          "pos": "NNG"
+        },
+        {
+          "text": "듣",
+          "lemma": "듣",
+          "pos": "VV"
+        },
+        {
+          "text": "기",
+          "lemma": "기",
+          "pos": "ETN"
+        },
+        {
+          "text": "같",
+          "lemma": "같",
+          "pos": "VA"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "ETM"
+        },
+        {
+          "text": "게",
+          "lemma": "게",
+          "pos": "NNG"
+        },
+        {
+          "text": "좋",
+          "lemma": "좋",
+          "pos": "VA"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "ETM"
+        },
+        {
+          "text": "것",
+          "lemma": "것",
+          "pos": "NNB"
+        },
+        {
+          "text": "같",
+          "lemma": "같",
+          "pos": "VA"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "것",
+      "게",
+      "님과 함께",
+      "산책",
+      "수",
+      "여가",
+      "옛날",
+      "음식",
+      "이야기",
+      "조부모",
+      "활동"
+    ],
+    "domain": "parents"
+  },
+  {
+    "question": {
+      "text": "부모님께 배우고 싶은 요리가 있어?",
+      "tokens": [
+        {
+          "text": "부모",
+          "lemma": "부모",
+          "pos": "NNG"
+        },
+        {
+          "text": "님",
+          "lemma": "님",
+          "pos": "XSN"
+        },
+        {
+          "text": "께",
+          "lemma": "께",
+          "pos": "JKB"
+        },
+        {
+          "text": "배우",
+          "lemma": "배우",
+          "pos": "VV"
+        },
+        {
+          "text": "고",
+          "lemma": "고",
+          "pos": "EC"
+        },
+        {
+          "text": "싶",
+          "lemma": "싶",
+          "pos": "VX"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "ETM"
+        },
+        {
+          "text": "요리",
+          "lemma": "요리",
+          "pos": "NNG"
+        },
+        {
+          "text": "가",
+          "lemma": "가",
+          "pos": "JKS"
+        },
+        {
+          "text": "있",
+          "lemma": "있",
+          "pos": "VX"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "때",
+        "레시",
+        "밥",
+        "부모",
+        "엄마",
+        "요리",
+        "집",
+        "피"
+      ],
+      "domain": "parents"
+    },
+    "answer": {
+      "text": "어릴 때 자주 먹었던 엄마의 집밥 레시피를 배우고 싶어.",
+      "tokens": [
+        {
+          "text": "어리",
+          "lemma": "어리",
+          "pos": "VA"
+        },
+        {
+          "text": "ㄹ",
+          "lemma": "ㄹ",
+          "pos": "ETM"
+        },
+        {
+          "text": "때",
+          "lemma": "때",
+          "pos": "NNG"
+        },
+        {
+          "text": "자주",
+          "lemma": "자주",
+          "pos": "MAG"
+        },
+        {
+          "text": "먹",
+          "lemma": "먹",
+          "pos": "VV"
+        },
+        {
+          "text": "었",
+          "lemma": "었",
+          "pos": "EP"
+        },
+        {
+          "text": "던",
+          "lemma": "던",
+          "pos": "ETM"
+        },
+        {
+          "text": "엄마",
+          "lemma": "엄마",
+          "pos": "NNG"
+        },
+        {
+          "text": "의",
+          "lemma": "의",
+          "pos": "JKG"
+        },
+        {
+          "text": "집",
+          "lemma": "집",
+          "pos": "NNG"
+        },
+        {
+          "text": "밥",
+          "lemma": "밥",
+          "pos": "NNG"
+        },
+        {
+          "text": "레시",
+          "lemma": "레시",
+          "pos": "NNP"
+        },
+        {
+          "text": "피",
+          "lemma": "피",
+          "pos": "NNG"
+        },
+        {
+          "text": "를",
+          "lemma": "를",
+          "pos": "JKO"
+        },
+        {
+          "text": "배우",
+          "lemma": "배우",
+          "pos": "VV"
+        },
+        {
+          "text": "고",
+          "lemma": "고",
+          "pos": "EC"
+        },
+        {
+          "text": "싶",
+          "lemma": "싶",
+          "pos": "VX"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "때",
+      "레시",
+      "밥",
+      "부모",
+      "엄마",
+      "요리",
+      "집",
+      "피"
+    ],
+    "domain": "parents"
+  },
+  {
+    "question": {
+      "text": "조부모님께 배우고 싶은 전통이 있어?",
+      "tokens": [
+        {
+          "text": "조부모",
+          "lemma": "조부모",
+          "pos": "NNG"
+        },
+        {
+          "text": "님",
+          "lemma": "님",
+          "pos": "XSN"
+        },
+        {
+          "text": "께",
+          "lemma": "께",
+          "pos": "JKB"
+        },
+        {
+          "text": "배우",
+          "lemma": "배우",
+          "pos": "VV"
+        },
+        {
+          "text": "고",
+          "lemma": "고",
+          "pos": "EC"
+        },
+        {
+          "text": "싶",
+          "lemma": "싶",
+          "pos": "VX"
+        },
+        {
+          "text": "은",
+          "lemma": "은",
+          "pos": "ETM"
+        },
+        {
+          "text": "전통",
+          "lemma": "전통",
+          "pos": "NNG"
+        },
+        {
+          "text": "이",
+          "lemma": "이",
+          "pos": "JKS"
+        },
+        {
+          "text": "있",
+          "lemma": "있",
+          "pos": "VX"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "전통",
+        "조부모",
+        "집안",
+        "풍습"
+      ],
+      "domain": "parents"
+    },
+    "answer": {
+      "text": "우리 집안의 오래된 전통이나 풍습을 배우고 싶어.",
+      "tokens": [
+        {
+          "text": "우리",
+          "lemma": "우리",
+          "pos": "NP"
+        },
+        {
+          "text": "집안",
+          "lemma": "집안",
+          "pos": "NNG"
+        },
+        {
+          "text": "의",
+          "lemma": "의",
+          "pos": "JKG"
+        },
+        {
+          "text": "오래되",
+          "lemma": "오래되",
+          "pos": "VV"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "전통",
+          "lemma": "전통",
+          "pos": "NNG"
+        },
+        {
+          "text": "이나",
+          "lemma": "이나",
+          "pos": "JC"
+        },
+        {
+          "text": "풍습",
+          "lemma": "풍습",
+          "pos": "NNG"
+        },
+        {
+          "text": "을",
+          "lemma": "을",
+          "pos": "JKO"
+        },
+        {
+          "text": "배우",
+          "lemma": "배우",
+          "pos": "VV"
+        },
+        {
+          "text": "고",
+          "lemma": "고",
+          "pos": "EC"
+        },
+        {
+          "text": "싶",
+          "lemma": "싶",
+          "pos": "VX"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "전통",
+      "조부모",
+      "집안",
+      "풍습"
+    ],
+    "domain": "parents"
+  },
+  {
+    "question": {
+      "text": "부모님과 조부모님에 대해 더 궁금한 건 없어?",
+      "tokens": [
+        {
+          "text": "부모",
+          "lemma": "부모",
+          "pos": "NNG"
+        },
+        {
+          "text": "님",
+          "lemma": "님",
+          "pos": "XSN"
+        },
+        {
+          "text": "과",
+          "lemma": "과",
+          "pos": "JC"
+        },
+        {
+          "text": "조부모",
+          "lemma": "조부모",
+          "pos": "NNG"
+        },
+        {
+          "text": "님",
+          "lemma": "님",
+          "pos": "XSN"
+        },
+        {
+          "text": "에",
+          "lemma": "에",
+          "pos": "JKB"
+        },
+        {
+          "text": "대하",
+          "lemma": "대하",
+          "pos": "VV"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EC"
+        },
+        {
+          "text": "더",
+          "lemma": "더",
+          "pos": "MAG"
+        },
+        {
+          "text": "궁금",
+          "lemma": "궁금",
+          "pos": "XR"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSA"
+        },
+        {
+          "text": "ㄴ",
+          "lemma": "ㄴ",
+          "pos": "ETM"
+        },
+        {
+          "text": "건",
+          "lemma": "건",
+          "pos": "NNB"
+        },
+        {
+          "text": "없",
+          "lemma": "없",
+          "pos": "VA"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        }
+      ],
+      "concepts": [
+        "건",
+        "부모",
+        "조부모"
+      ],
+      "domain": "parents"
+    },
+    "answer": {
+      "text": "없어! 충분해!",
+      "tokens": [
+        {
+          "text": "없",
+          "lemma": "없",
+          "pos": "VA"
+        },
+        {
+          "text": "어",
+          "lemma": "어",
+          "pos": "EF"
+        },
+        {
+          "text": "충분",
+          "lemma": "충분",
+          "pos": "XR"
+        },
+        {
+          "text": "하",
+          "lemma": "하",
+          "pos": "XSA"
+        },
+        {
+          "text": "아",
+          "lemma": "아",
+          "pos": "EF"
+        }
+      ]
+    },
+    "concepts": [
+      "건",
+      "부모",
+      "조부모"
+    ],
+    "domain": "parents"
+  }
+]
