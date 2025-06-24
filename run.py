@@ -63,14 +63,13 @@ def main() -> None:
     _ensure_cuda_torch()
 
     if args.mode == "train":
-        from src.service import ChatbotService
-        from src.service.train_ops import run_training
+        from src.service.service import ChatbotService
 
         svc = ChatbotService()
-        run_training(svc, Path(os.environ.get("DATA_DIR", "datas")))
+        svc.start_training()
         return
 
-    from src.service import ChatbotService
+    from src.service.service import ChatbotService
     from src.ui.backend import WebBackend
     svc = ChatbotService()
     api = WebBackend(svc)

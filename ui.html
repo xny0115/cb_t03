@@ -306,6 +306,7 @@
             width: 100%;
         }
 
+        #instInput,
         #userInput {
             flex-grow: 1;
             padding: 16px 16px;
@@ -561,6 +562,7 @@
         /* Webkit (Chrome, Safari, Edge) 기반 브라우저 */
         /* 전체 스크롤바 트랙 */
         .main-container::-webkit-scrollbar,
+        #instInput::-webkit-scrollbar,
         #userInput::-webkit-scrollbar {
             width: 10px; /* 스크롤바 너비 */
             background-color: var(--color-background-dark); /* 스크롤바 뒷 배경 색상 */
@@ -568,6 +570,7 @@
 
         /* 스크롤바 썸(움직이는 부분) */
         .main-container::-webkit-scrollbar-thumb,
+        #instInput::-webkit-scrollbar-thumb,
         #userInput::-webkit-scrollbar-thumb {
             background-color: var(--color-background-medium); /* 썸 색상 */
             border-radius: var(--border-radius-large); /* 썸 모서리 둥글게 */
@@ -576,6 +579,7 @@
 
         /* 스크롤바 썸 호버 시 */
         .main-container::-webkit-scrollbar-thumb:hover,
+        #instInput::-webkit-scrollbar-thumb:hover,
         #userInput::-webkit-scrollbar-thumb:hover {
             background-color: var(--color-background-light); /* 호버 시 썸 색상 */
         }
@@ -920,7 +924,8 @@
 
     <div class="input-area-wrapper">
         <div class="input-area">
-            <textarea id="userInput" placeholder="메시지를 입력하세요..." rows="1"></textarea>
+            <textarea id="instInput" placeholder="지시문을 입력하세요..." rows="1"></textarea>
+            <textarea id="userInput" placeholder="추가 입력을 입력하세요..." rows="1"></textarea>
             <div class="input-buttons">
                 <button id="attachBtn" title="파일 첨부 (기능 확장용)">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21.44 11.05l-9.19 9.19a6 6 0 0 1-8.49-8.49l9.19-9.19a4 4 0 0 1 5.66 5.66l-9.2 9.19a2 2 0 0 1-2.83-2.83l8.49-8.48"></path></svg>
@@ -939,6 +944,7 @@
             const saveBtn = document.getElementById('saveSettingsBtn');
             const autoBtn = document.getElementById('autoTuneBtn');
             const sendBtn = document.getElementById('sendBtn');
+            const instInput = document.getElementById('instInput');
             const userInput = document.getElementById('userInput');
             const chatHistory = document.getElementById('chatHistory');
             const trainStatus = document.getElementById('trainStatus');
@@ -959,18 +965,17 @@
 
             // 메시지 입력창 높이 자동 조절 함수
             function adjustInputHeight() {
-                userInput.style.height = 'auto'; // 높이 초기화
-                // min-height보다 작아지지 않도록 48px와 scrollHeight 중 큰 값을 사용
-                userInput.style.height = Math.max(userInput.scrollHeight, 48) + 'px';
-
-                // max-height를 넘어가면 max-height로 고정하고 스크롤바 표시
-                const maxHeight = parseInt(getComputedStyle(userInput).maxHeight);
-                if (userInput.scrollHeight > maxHeight) {
-                    userInput.style.overflowY = 'auto';
-                    userInput.style.height = maxHeight + 'px';
-                } else {
-                    userInput.style.overflowY = 'hidden'; // 내용이 max-height보다 작으면 스크롤바 숨김
-                }
+                [instInput, userInput].forEach(el => {
+                    el.style.height = 'auto';
+                    el.style.height = Math.max(el.scrollHeight, 48) + 'px';
+                    const maxHeight = parseInt(getComputedStyle(el).maxHeight);
+                    if (el.scrollHeight > maxHeight) {
+                        el.style.overflowY = 'auto';
+                        el.style.height = maxHeight + 'px';
+                    } else {
+                        el.style.overflowY = 'hidden';
+                    }
+                });
             }
 
             function showStatus(el, msg, type = 'info') {
@@ -1145,9 +1150,16 @@
 
             // 메시지 입력창 높이 자동 조절 이벤트 리스너
             userInput.addEventListener('input', adjustInputHeight);
+            instInput.addEventListener('input', adjustInputHeight);
 
             // Enter 키로 메시지 전송 (Shift + Enter는 줄바꿈)
             userInput.addEventListener('keydown', e => {
+                if (e.key === 'Enter' && !e.shiftKey) {
+                    e.preventDefault();
+                    onSend();
+                }
+            });
+            instInput.addEventListener('keydown', e => {
                 if (e.key === 'Enter' && !e.shiftKey) {
                     e.preventDefault();
                     onSend();
@@ -1273,15 +1285,16 @@
             }
 
             function onSend(){
-                const q = userInput.value.trim();
-                if(!q) return;
+                const inst = instInput.value.trim();
+                const inp = userInput.value.trim();
+                if(!inst) return;
                 const start = performance.now();
-                appendChat('USER', q); // 사용자 메시지를 먼저 화면에 추가
-                userInput.value = ''; // 메시지 입력창 비우기
-                adjustInputHeight(); // 입력창 높이 조절 (비운 후)
+                appendChat('USER', inst + (inp ? '\n' + inp : ''));
+                instInput.value = '';
+                userInput.value = '';
+                adjustInputHeight();
 
-
-                api.infer(q).then(({success,data,msg})=>{
+                api.infer(inst, inp).then(({success,data,msg})=>{
                     const latency = Math.round(performance.now() - start);
                     if(!success || !data || !data.trim()){
                         showError(msg || 'BOT 응답이 비었습니다');
