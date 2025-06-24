@@ -1,5 +1,10 @@
 # 변경 이력
 
+## v1.7 - 2025-06-27
+- 자막 파일을 자동 정제하여 `datas/01_pretrain/`에 저장하는 로직 추가.
+- pretrain 학습 시작 시 정제기가 실행되도록 ChatbotService 수정.
+- 정제기 사용법 문서 `docs/subtitle_cleaner.md` 작성.
+
 ## v1.6 - 2025-06-26
 - delete_model 기능이 models 폴더의 모든 모델 파일을 일괄 삭제하도록 수정.
 - 데이터셋 자동 병합 문서를 보강하여 원본 파일 무결성 원칙 명시.
