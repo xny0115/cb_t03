@@ -23,6 +23,7 @@ from ..model import (
 )
 from ..training.simple import train as train_transformer, pretrain as train_pretrain
 from ..utils.tokenizer import CharTokenizer
+from ..utils.validator import validate_config
 from ..tuning.auto import AutoTuner
 
 
@@ -55,6 +56,9 @@ class ChatbotService:
 
     def start_training(self, mode: str) -> Dict[str, Any]:
         """학습 유형에 따라 분기 처리."""
+        valid, msg = validate_config(self._config)
+        if not valid:
+            return {"success": False, "msg": msg, "data": None}
         if isinstance(self.model, HFModel):
             return {"success": True, "msg": "done", "data": None}
         logger = logging.getLogger(__name__)
@@ -84,6 +88,9 @@ class ChatbotService:
         return {"success": True, "msg": "done", "data": None}
 
     def set_config(self, cfg: Dict[str, Any]) -> Tuple[bool, str]:
+        valid, msg = validate_config(cfg)
+        if not valid:
+            return False, msg
         try:
             self._config.update(cfg)
             save_config(self._config)
@@ -137,6 +144,9 @@ class ChatbotService:
     def auto_tune(self) -> Dict[str, Any]:
         """Apply AutoTuner suggestions to config."""
         cfg = AutoTuner(len(self.dataset)).suggest()
+        valid, msg = validate_config(cfg)
+        if not valid:
+            return {"success": False, "msg": msg, "data": None}
         self._config.update(cfg)
         save_config(self._config)
         logging.getLogger(__name__).info("auto-tune applied: %s", cfg)
