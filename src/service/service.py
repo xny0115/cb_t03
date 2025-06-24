@@ -6,7 +6,11 @@ import logging
 import os
 import torch
 
-from ..data.loader import load_dataset
+from ..data.loader import (
+    load_dataset,
+    load_instruction_dataset,
+    load_pretrain_dataset,
+)
 from ..config import load_config, save_config
 from ..model import (
     DummyModel,
@@ -17,7 +21,7 @@ from ..model import (
     save_transformer,
     load_transformer,
 )
-from ..training.simple import train as train_transformer
+from ..training.simple import train as train_transformer, pretrain as train_pretrain
 from ..utils.tokenizer import CharTokenizer
 from ..tuning.auto import AutoTuner
 
@@ -29,8 +33,12 @@ class ChatbotService:
 
     def __init__(self) -> None:
         self.data_dir = Path("datas")
-        self.model_path = Path("models/current.pth")
-        self.dataset = load_dataset(self.data_dir)
+        self.pretrain_dir = self.data_dir / "pretrain"
+        self.finetune_dir = self.data_dir / "finetune"
+        self.additional_dir = self.data_dir / "additional_finetune"
+        self.model_dir = Path("models")
+        self.model_path = self.model_dir / "finetune.pth"
+        self.dataset = load_instruction_dataset(self.finetune_dir)
         self.model: DummyModel | HFModel | Seq2SeqTransformer | None = None
         self.tokenizer: CharTokenizer | None = None
         self._config = load_config()
@@ -45,13 +53,26 @@ class ChatbotService:
             except Exception:
                 self.model = load_model(self.model_path)
 
-    def start_training(self) -> Dict[str, Any]:
+    def start_training(self, mode: str) -> Dict[str, Any]:
+        """학습 유형에 따라 분기 처리."""
         if isinstance(self.model, HFModel):
             return {"success": True, "msg": "done", "data": None}
         logger = logging.getLogger(__name__)
-        logger.info("training epochs=%d", self._config.get("num_epochs", 5))
-        model, tokenizer = train_transformer(self.dataset, self._config)
+        logger.info("training mode=%s", mode)
+        if mode == "pretrain":
+            data = load_pretrain_dataset(self.pretrain_dir)
+            self.model_path = self.model_dir / "pretrain.pth"
+            model, tokenizer = train_pretrain(data, self._config)
+        elif mode == "additional_finetune":
+            data = load_instruction_dataset(self.additional_dir)
+            self.model_path = self.model_dir / "additional_finetune.pth"
+            model, tokenizer = train_transformer(data, self._config)
+        else:
+            data = load_instruction_dataset(self.finetune_dir)
+            self.model_path = self.model_dir / "finetune.pth"
+            model, tokenizer = train_transformer(data, self._config)
         save_transformer(model, tokenizer.stoi, self.model_path)
+        self.dataset = data if mode == "pretrain" else data
         self.model = model
         self.tokenizer = tokenizer
         logger.info("Training complete")

@@ -1,5 +1,10 @@
 # 변경 이력
 
+## v1.4 - 2025-06-24
+- 학습 데이터를 pretrain/finetune/additional_finetune 폴더로 분리.
+- start_training API가 학습 유형 인자를 받아 분기하도록 수정.
+- 예시 데이터 파일 및 AGENTS.md 갱신.
+
 ## v1.3 - 2025-06-25
 - 오토 튠(HPO) 기능을 추가하여 데이터 크기와 하드웨어에 맞는 설정을 자동 제안.
 
