@@ -19,6 +19,7 @@ from ..model import (
 )
 from ..training.simple import train as train_transformer
 from ..utils.tokenizer import CharTokenizer
+from ..tuning.auto import AutoTuner
 
 
 class ChatbotService:
@@ -98,3 +99,12 @@ class ChatbotService:
 
     def get_status(self) -> Dict[str, Any]:
         return {"success": True, "msg": "idle", "data": {}}
+
+    def auto_tune(self) -> Dict[str, Any]:
+        """Apply AutoTuner suggestions to config."""
+        tuner = AutoTuner(len(self.dataset))
+        cfg = tuner.suggest()
+        self._config.update(cfg)
+        save_config(self._config)
+        logging.getLogger(__name__).info("auto-tune applied: %s", cfg)
+        return cfg
