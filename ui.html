@@ -306,7 +306,6 @@
             width: 100%;
         }
 
-        #instInput,
         #userInput {
             flex-grow: 1;
             padding: 16px 16px;
@@ -562,7 +561,6 @@
         /* Webkit (Chrome, Safari, Edge) 기반 브라우저 */
         /* 전체 스크롤바 트랙 */
         .main-container::-webkit-scrollbar,
-        #instInput::-webkit-scrollbar,
         #userInput::-webkit-scrollbar {
             width: 10px; /* 스크롤바 너비 */
             background-color: var(--color-background-dark); /* 스크롤바 뒷 배경 색상 */
@@ -570,7 +568,6 @@
 
         /* 스크롤바 썸(움직이는 부분) */
         .main-container::-webkit-scrollbar-thumb,
-        #instInput::-webkit-scrollbar-thumb,
         #userInput::-webkit-scrollbar-thumb {
             background-color: var(--color-background-medium); /* 썸 색상 */
             border-radius: var(--border-radius-large); /* 썸 모서리 둥글게 */
@@ -579,7 +576,6 @@
 
         /* 스크롤바 썸 호버 시 */
         .main-container::-webkit-scrollbar-thumb:hover,
-        #instInput::-webkit-scrollbar-thumb:hover,
         #userInput::-webkit-scrollbar-thumb:hover {
             background-color: var(--color-background-light); /* 호버 시 썸 색상 */
         }
@@ -924,8 +920,7 @@
 
     <div class="input-area-wrapper">
         <div class="input-area">
-            <textarea id="instInput" placeholder="지시문을 입력하세요..." rows="1"></textarea>
-            <textarea id="userInput" placeholder="추가 입력을 입력하세요..." rows="1"></textarea>
+            <textarea id="userInput" placeholder="지시문을 입력하세요..." rows="1"></textarea>
             <div class="input-buttons">
                 <button id="attachBtn" title="파일 첨부 (기능 확장용)">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21.44 11.05l-9.19 9.19a6 6 0 0 1-8.49-8.49l9.19-9.19a4 4 0 0 1 5.66 5.66l-9.2 9.19a2 2 0 0 1-2.83-2.83l8.49-8.48"></path></svg>
@@ -944,7 +939,6 @@
             const saveBtn = document.getElementById('saveSettingsBtn');
             const autoBtn = document.getElementById('autoTuneBtn');
             const sendBtn = document.getElementById('sendBtn');
-            const instInput = document.getElementById('instInput');
             const userInput = document.getElementById('userInput');
             const chatHistory = document.getElementById('chatHistory');
             const trainStatus = document.getElementById('trainStatus');
@@ -965,7 +959,7 @@
 
             // 메시지 입력창 높이 자동 조절 함수
             function adjustInputHeight() {
-                [instInput, userInput].forEach(el => {
+                [userInput].forEach(el => {
                     el.style.height = 'auto';
                     el.style.height = Math.max(el.scrollHeight, 48) + 'px';
                     const maxHeight = parseInt(getComputedStyle(el).maxHeight);
@@ -1150,16 +1144,9 @@
 
             // 메시지 입력창 높이 자동 조절 이벤트 리스너
             userInput.addEventListener('input', adjustInputHeight);
-            instInput.addEventListener('input', adjustInputHeight);
 
             // Enter 키로 메시지 전송 (Shift + Enter는 줄바꿈)
             userInput.addEventListener('keydown', e => {
-                if (e.key === 'Enter' && !e.shiftKey) {
-                    e.preventDefault();
-                    onSend();
-                }
-            });
-            instInput.addEventListener('keydown', e => {
                 if (e.key === 'Enter' && !e.shiftKey) {
                     e.preventDefault();
                     onSend();
@@ -1285,16 +1272,14 @@
             }
 
             function onSend(){
-                const inst = instInput.value.trim();
-                const inp = userInput.value.trim();
-                if(!inst) return;
+                const text = userInput.value.trim();
+                if(!text) return;
                 const start = performance.now();
-                appendChat('USER', inst + (inp ? '\n' + inp : ''));
-                instInput.value = '';
+                appendChat('USER', text);
                 userInput.value = '';
                 adjustInputHeight();
 
-                api.infer(inst, inp).then(({success,data,msg})=>{
+                api.infer(text).then(({success,data,msg})=>{
                     const latency = Math.round(performance.now() - start);
                     if(!success || !data || !data.trim()){
                         showError(msg || 'BOT 응답이 비었습니다');
