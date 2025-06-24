@@ -47,11 +47,12 @@ class ChatbotService:
     def start_training(self) -> Dict[str, Any]:
         if isinstance(self.model, HFModel):
             return {"success": True, "msg": "done", "data": None}
+        logger = logging.getLogger(__name__)
+        logger.info("training epochs=%d", self._config.get("num_epochs", 5))
         model, tokenizer = train_transformer(self.dataset, self._config)
         save_transformer(model, tokenizer.stoi, self.model_path)
         self.model = model
         self.tokenizer = tokenizer
-        logger = logging.getLogger(__name__)
         logger.info("Training complete")
         return {"success": True, "msg": "done", "data": None}
 

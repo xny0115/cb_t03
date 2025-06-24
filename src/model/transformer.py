@@ -187,6 +187,7 @@ def save_transformer(model: Seq2SeqTransformer, vocab: Dict[str, int], path: Pat
     torch.save(meta, path)
     if not path.exists() or path.stat().st_size < 1_000_000:
         raise RuntimeError("모델 저장 실패: 생성 실패 또는 용량 미달")
+    logger.info("Model saved to %s", path)
 
 
 def load_transformer(path: Path) -> Tuple[Seq2SeqTransformer, Dict[str, int]]:
