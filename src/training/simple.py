@@ -78,3 +78,9 @@ def train(samples: List[InstructionSample], cfg: dict[str, Any] | None = None):
             opt.step()
 
     return model, tokenizer
+
+
+def pretrain(texts: List[str], cfg: dict[str, Any] | None = None):
+    """사전학습용 간단한 오토인코더 방식."""
+    samples = [InstructionSample("", "", t) for t in texts]
+    return train(samples, cfg)

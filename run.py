@@ -66,7 +66,7 @@ def main() -> None:
         from src.service.service import ChatbotService
 
         svc = ChatbotService()
-        svc.start_training()
+        svc.start_training("finetune")
         return
 
     from src.service.service import ChatbotService

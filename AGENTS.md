@@ -66,6 +66,18 @@ Codex는 아래 지침을 무조건 준수하여 작업해야 합니다.
     "output": "로렘 입숨은 출판 및 그래픽 디자인 분야에서 사용되는 더미 텍스트입니다..."
     }
 
+### 3단계 학습 데이터 구조
+
+```
+datas/
+    pretrain/              # 사전학습용 txt
+    finetune/              # 1차 파인튜닝용 jsonl
+    additional_finetune/   # 추가 파인튜닝용 jsonl
+```
+
+각 폴더에는 `sample_pretrain.txt`, `sample_finetune.jsonl`, `sample_additional_finetune.jsonl` 예시 파일을 포함한다.
+버튼 클릭 시 `pretrain`, `finetune`, `additional_finetune` 값을 백엔드로 전달해 해당 데이터만 로드한다.
+
 
 ## ✅ 학습 로직 강제 기준
 
