@@ -1,5 +1,10 @@
 # 변경 이력
 
+## v1.8 - 2025-06-28
+- 사전학습 데이터 정제 전용 실행 파일 `run_subtitle_cleaner.py` 추가.
+- 학습 루프가 num_workers, pin_memory, mixed precision을 사용하도록 개선하여 GPU 활용도를 향상.
+- 정제기 문서에 실행 방법을 업데이트.
+
 ## v1.7 - 2025-06-27
 - 자막 파일을 자동 정제하여 `datas/01_pretrain/`에 저장하는 로직 추가.
 - pretrain 학습 시작 시 정제기가 실행되도록 ChatbotService 수정.

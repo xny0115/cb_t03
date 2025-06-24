@@ -50,8 +50,18 @@ def train(samples: List[InstructionSample], cfg: dict[str, Any] | None = None):
         tgt = tokenizer.encode(s.output, True)
         pairs.append((src, tgt))
 
+    num_workers = int(cfg.get("num_workers", 0))
+    pin_memory = bool(cfg.get("pin_memory", False))
+
     dataset = _PairDataset(pairs)
-    loader = DataLoader(dataset, batch_size=batch_size, shuffle=True, collate_fn=_collate)
+    loader = DataLoader(
+        dataset,
+        batch_size=batch_size,
+        shuffle=True,
+        collate_fn=_collate,
+        num_workers=num_workers,
+        pin_memory=pin_memory,
+    )
 
     model = Seq2SeqTransformer(
         tokenizer.vocab_size,
@@ -64,18 +74,28 @@ def train(samples: List[InstructionSample], cfg: dict[str, Any] | None = None):
     )
     device = "cuda" if torch.cuda.is_available() else "cpu"
     model.to(device)
+    if device == "cuda":
+        torch.backends.cudnn.benchmark = True
     crit = nn.CrossEntropyLoss(ignore_index=0)
     opt = optim.Adam(model.parameters(), lr=lr)
+    use_mixed = bool(cfg.get("use_mixed_precision", False))
+    scaler = torch.cuda.amp.GradScaler(enabled=use_mixed)
 
     for _ in range(epochs):
         model.train()
         for src, tgt in loader:
-            src, tgt = src.to(device), tgt.to(device)
+            src = src.to(device, non_blocking=pin_memory)
+            tgt = tgt.to(device, non_blocking=pin_memory)
             opt.zero_grad()
-            out = model(src, tgt[:, :-1])
-            loss = crit(out.reshape(-1, tokenizer.vocab_size), tgt[:, 1:].reshape(-1))
-            loss.backward()
-            opt.step()
+            with torch.cuda.amp.autocast(enabled=use_mixed):
+                out = model(src, tgt[:, :-1])
+                loss = crit(
+                    out.reshape(-1, tokenizer.vocab_size),
+                    tgt[:, 1:].reshape(-1),
+                )
+            scaler.scale(loss).backward()
+            scaler.step(opt)
+            scaler.update()
 
     return model, tokenizer
 
