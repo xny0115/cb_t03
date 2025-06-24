@@ -5,7 +5,7 @@ from typing import List, Tuple, Any
 import logging
 import time
 
-import os  # Add this for DataLoader worker count
+import os
 import torch
 from torch import nn, optim
 from torch.utils.data import DataLoader, Dataset
@@ -43,7 +43,6 @@ def train(samples: List[InstructionSample], cfg: dict[str, Any] | None = None):
     cfg = cfg or {}
     epochs = int(cfg.get("num_epochs", 5))
     lr = float(cfg.get("learning_rate", 1e-3))
-    batch_size = int(cfg.get("batch_size", 8))
     model_dim = int(cfg.get("model_dim", 128))
     num_heads = int(cfg.get("num_heads", 4))
     enc_layers = int(cfg.get("num_encoder_layers", 2))
@@ -61,7 +60,7 @@ def train(samples: List[InstructionSample], cfg: dict[str, Any] | None = None):
     dataset = _PairDataset(pairs)
     num_workers = min(max(os.cpu_count() // 2, 2), 8)
     pin_memory = True
-    batch_size = int(cfg.get("batch_size", 32))
+    batch_size = 32
     loader = DataLoader(
         dataset,
         batch_size=batch_size,
@@ -81,7 +80,7 @@ def train(samples: List[InstructionSample], cfg: dict[str, Any] | None = None):
         dropout=dropout,
     )
     if tuple(map(int, torch.__version__.split(".")[:2])) >= (2, 1):
-        model = torch.compile(model)  # compile when supported
+        pass  # compile removed for Windows compatibility
     if torch.cuda.is_available():
         device = "cuda"
         torch.backends.cudnn.benchmark = True

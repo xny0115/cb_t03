@@ -663,13 +663,13 @@
                                 <small class="tip">- 사용할 모델 구조를 선택합니다. (성능과 속도에 영향)</small>
                         </div>
                         <div class="setting-item">
-                            <label for="epochInput">학습 에폭 수</label>
-                            <input type="number" id="epochInput" min="1" max="1000" value="20" />
+                            <label for="epochsInput">학습 에폭 수</label>
+                            <input type="number" id="epochsInput" min="1" max="1000" value="20" />
                             <small class="tip">- 전체 학습 반복 횟수입니다. (높을수록 학습이 깊어짐)</small>
                         </div>
                         <div class="setting-item">
-                            <label for="batchInput">배치 크기</label>
-                            <input type="number" id="batchInput" min="8" max="12" value="8" />
+                            <label for="batchSizeInput">배치 크기</label>
+                            <input type="number" id="batchSizeInput" min="8" max="12" value="8" />
                             <small class="tip">- 한 번에 학습에 사용하는 데이터 수입니다. (메모리 부족 시 줄이세요)</small>
                         </div>
                         <div class="setting-item">
@@ -699,8 +699,8 @@
                 <div id="architecture-settings" class="category-content collapsed">
                     <div class="settings-grid">
                         <div class="setting-item">
-                            <label for="hiddenDimInput">모델 차원 (d_model)</label>
-                            <input type="number" id="hiddenDimInput" min="128" max="1024" step="64" value="256" />
+                            <label for="modelDimInput">모델 차원 (d_model)</label>
+                            <input type="number" id="modelDimInput" min="128" max="1024" step="64" value="256" />
                             <small class="tip">- 각 토큰이 표현되는 벡터 크기입니다.</small>
                         </div>
                         <div class="setting-item">
@@ -709,13 +709,13 @@
                             <small class="tip">- 내부 계산에서 사용되는 은닉층 크기입니다.</small>
                         </div>
                         <div class="setting-item">
-                            <label for="numEncoderLayersInput">인코더 레이어 수</label>
-                            <input type="number" id="numEncoderLayersInput" min="1" max="12" value="8" />
+                            <label for="encLayersInput">인코더 레이어 수</label>
+                            <input type="number" id="encLayersInput" min="1" max="12" value="8" />
                             <small class="tip">- 인코더 층의 개수입니다. (모델 깊이)</small>
                         </div>
                         <div class="setting-item">
-                            <label for="numDecoderLayersInput">디코더 레이어 수</label>
-                            <input type="number" id="numDecoderLayersInput" min="1" max="12" value="8" />
+                            <label for="decLayersInput">디코더 레이어 수</label>
+                            <input type="number" id="decLayersInput" min="1" max="12" value="8" />
                             <small class="tip">- 디코더 층의 개수입니다.</small>
                         </div>
                          <div class="setting-item">
@@ -913,8 +913,8 @@
                             <small class="tip">- 데이터 로딩 시 GPU 메모리 고정을 활성화합니다.</small>
                         </div>
                         <div class="setting-item">
-                            <input type="checkbox" id="use_mixed_precision">
-                            <label for="use_mixed_precision" class="checkbox-label">혼합 정밀도 (AMP) 사용</label>
+                            <input type="checkbox" id="mpCheckbox">
+                            <label for="mpCheckbox" class="checkbox-label">혼합 정밀도 (AMP) 사용</label>
                             <small class="tip">- 학습 속도 향상 및 메모리 절약을 위해 혼합 정밀도를 사용합니다.</small>
                         </div>
                     </div>
@@ -1057,16 +1057,16 @@
 
             function collect() {
                 return {
-                    num_epochs: parseInt(document.getElementById('epochInput').value),
-                    batch_size: parseInt(document.getElementById('batchInput').value),
+                    num_epochs: parseInt(document.getElementById('epochsInput').value),
+                    batch_size: parseInt(document.getElementById('batchSizeInput').value),
                     learning_rate: parseFloat(document.getElementById('lrInput').value),
                     dropout_ratio: parseFloat(dropoutInput.value),
                     warmup_steps: parseInt(document.getElementById('warmupStepsInput').value),
                     max_sequence_length: parseInt(document.getElementById('maxSeqLenInput').value),
                     num_heads: parseInt(document.getElementById('numHeadsInput').value),
-                    num_encoder_layers: parseInt(document.getElementById('numEncoderLayersInput').value),
-                    num_decoder_layers: parseInt(document.getElementById('numDecoderLayersInput').value),
-                    model_dim: parseInt(document.getElementById('hiddenDimInput').value),
+                    num_encoder_layers: parseInt(document.getElementById('encLayersInput').value),
+                    num_decoder_layers: parseInt(document.getElementById('decLayersInput').value),
+                    model_dim: parseInt(document.getElementById('modelDimInput').value),
                     ff_dim: parseInt(document.getElementById('ffDimInput').value),
                     top_k: parseInt(document.getElementById('topkInput').value),
                     temperature: parseFloat(document.getElementById('tempInput').value),
@@ -1089,7 +1089,7 @@
                     save_every: parseInt(document.getElementById('save_every').value),
                     num_workers: parseInt(document.getElementById('num_workers').value),
                     pin_memory: document.getElementById('pin_memory').checked,
-                    use_mixed_precision: document.getElementById('use_mixed_precision').checked,
+                    use_mixed_precision: document.getElementById('mpCheckbox').checked,
                     repetition_penalty: parseFloat(document.getElementById('repetition_penalty').value),
                     max_response_length: parseInt(document.getElementById('max_response_length').value),
 
@@ -1104,61 +1104,21 @@
             }
 
             function applyCfg(cfg) {
-                if ('epochs' in cfg || 'num_epochs' in cfg) document.getElementById('epochInput').value = cfg.epochs || cfg.num_epochs;
-                if ('batch_size' in cfg) document.getElementById('batchInput').value = cfg.batch_size;
-                if ('lr' in cfg || 'learning_rate' in cfg) document.getElementById('lrInput').value = cfg.lr || cfg.learning_rate;
-                if ('warmup_steps' in cfg) document.getElementById('warmupStepsInput').value = cfg.warmup_steps;
-                if ('max_sequence_length' in cfg) document.getElementById('maxSeqLenInput').value = cfg.max_sequence_length;
-                if ('num_heads' in cfg) document.getElementById('numHeadsInput').value = cfg.num_heads;
-                if ('num_encoder_layers' in cfg) document.getElementById('numEncoderLayersInput').value = cfg.num_encoder_layers || cfg.n_layers;
-                if ('num_decoder_layers' in cfg) document.getElementById('numDecoderLayersInput').value = cfg.num_decoder_layers || cfg.n_layers;
-                if ('model_dim' in cfg || 'd_model' in cfg) document.getElementById('hiddenDimInput').value = cfg.model_dim || cfg.d_model;
-                if ('ff_dim' in cfg) document.getElementById('ffDimInput').value = cfg.ff_dim;
-                if ('top_k' in cfg) document.getElementById('topkInput').value = cfg.top_k;
-                if ('temperature' in cfg) document.getElementById('tempInput').value = cfg.temperature;
-                if ('top_p' in cfg) document.getElementById('topPInput').value = cfg.top_p;
+              const setVal = (id, v) => {
+                const el = document.getElementById(id);
+                if (!el) return;
+                if (el.type === 'checkbox') el.checked = !!v;
+                else                        el.value   = v;
+              };
 
-                if ('dropout_ratio' in cfg) {
-                    dropoutInput.value = cfg.dropout_ratio;
-                    dropoutValue.textContent = parseFloat(cfg.dropout_ratio).toFixed(2);
-                }
-                // 새로 추가된 설정 항목들 적용 (환경 설정)
-                if ('data_preprocessing' in cfg) document.getElementById('dataPreprocessing').value = cfg.data_preprocessing;
-                if ('embedding_dim' in cfg) document.getElementById('embeddingDim').value = cfg.embedding_dim;
-                if ('activation_function' in cfg) document.getElementById('activationFunction').value = cfg.activation_function;
-                if ('optimizer_selection' in cfg) document.getElementById('optimizerSelection').value = cfg.optimizer_selection;
-                if ('lr_scheduler' in cfg) document.getElementById('lrScheduler').value = cfg.lr_scheduler;
-                if ('normalization_technique' in cfg) document.getElementById('normalizationTechnique').value = cfg.normalization_technique;
-                if ('attention_type' in cfg) document.getElementById('attentionType').value = cfg.attention_type;
-                if ('positional_encoding' in cfg) document.getElementById('positionalEncoding').value = cfg.positional_encoding;
-
-                // 새로 추가된 고급 설정 및 추론 설정 항목
-                if ('gradient_clipping' in cfg)
-                    document.getElementById('gradient_clipping').value = cfg.gradient_clipping;
-                if ('weight_decay' in cfg)
-                    document.getElementById('weight_decay').value = cfg.weight_decay;
-                if ('early_stopping_patience' in cfg)
-                    document.getElementById('early_stopping_patience').value = cfg.early_stopping_patience;
-                if ('save_every' in cfg)
-                    document.getElementById('save_every').value = cfg.save_every;
-                if ('num_workers' in cfg)
-                    document.getElementById('num_workers').value = cfg.num_workers;
-                if ('pin_memory' in cfg)
-                    document.getElementById('pin_memory').checked = cfg.pin_memory;
-                if ('use_mixed_precision' in cfg)
-                    document.getElementById('use_mixed_precision').checked = cfg.use_mixed_precision;
-                if ('repetition_penalty' in cfg)
-                    document.getElementById('repetition_penalty').value = cfg.repetition_penalty;
-                if ('max_response_length' in cfg)
-                    document.getElementById('max_response_length').value = cfg.max_response_length;
-
-                // 기존 Early Stopping, 패턴 인식 (새로운 위치에서 가져옴)
-                if ('early_stopping' in cfg) document.getElementById('earlyStopping').checked = cfg.early_stopping;
-                if ('pattern_recognition' in cfg) document.getElementById('patternRecognition').checked = cfg.pattern_recognition;
-
-                // 기존 추론 설정 (이제는 빔 서치 크기와 다양성 페널티만 남음)
-                if ('beam_search_size' in cfg) document.getElementById('beamSearchSize').value = cfg.beam_search_size;
-                if ('diversity_penalty' in cfg) document.getElementById('diversityPenalty').value = cfg.diversity_penalty;
+              setVal('batchSizeInput',  cfg.batch_size);
+              setVal('modelDimInput',   cfg.model_dim);
+              setVal('ffDimInput',      cfg.ff_dim);
+              setVal('encLayersInput',  cfg.num_encoder_layers);
+              setVal('decLayersInput',  cfg.num_decoder_layers);
+              setVal('epochsInput',     cfg.num_epochs);
+              setVal('lrInput',         cfg.learning_rate);
+              setVal('mpCheckbox',      cfg.use_mixed_precision);
             }
 
 
@@ -1175,8 +1135,8 @@
                        .then(r => {
                            applyCfg(r.data || r);
                            showStatus(trainStatus,
-                               'Auto-Tune 완료. 학습을 시작하려면 Start를 누르십시오.',
-                               'success');
+                             'Auto-Tune 완료. Start 버튼으로 학습을 시작하세요.',
+                             'success');
                        })
                        .catch(err =>
                            showStatus(trainStatus,
