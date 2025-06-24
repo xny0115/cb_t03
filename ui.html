@@ -1056,7 +1056,7 @@
             }
 
             function collect() {
-                return {
+                const cfg = {
                     num_epochs: parseInt(document.getElementById('epochsInput').value),
                     batch_size: parseInt(document.getElementById('batchSizeInput').value),
                     learning_rate: parseFloat(document.getElementById('lrInput').value),
@@ -1101,6 +1101,19 @@
                     beam_search_size: parseInt(document.getElementById('beamSearchSize').value),
                     diversity_penalty: parseFloat(document.getElementById('diversityPenalty').value)
                 };
+                if (!validateCfg(cfg)) {
+                    showError('설정 값 오류');
+                    return null;
+                }
+                return cfg;
+            }
+
+            function validateCfg(cfg) {
+                for (const [k, v] of Object.entries(cfg)) {
+                    if (v === null || v === '' || v === undefined) return false;
+                    if (typeof v === 'number' && isNaN(v)) return false;
+                }
+                return true;
             }
 
             function applyCfg(cfg) {
@@ -1133,10 +1146,15 @@
                 autoBtn.onclick = () =>
                     api.auto_tune()
                        .then(r => {
-                           applyCfg(r.data || r);
-                           showStatus(trainStatus,
-                             'Auto-Tune 완료. Start 버튼으로 학습을 시작하세요.',
-                             'success');
+                           const d = r.data || r;
+                           if (validateCfg(d)) {
+                               applyCfg(d);
+                               showStatus(trainStatus,
+                                 'Auto-Tune 완료. Start 버튼으로 학습을 시작하세요.',
+                                 'success');
+                           } else {
+                               showStatus(trainStatus, 'Auto-Tune 실패: invalid data', 'error');
+                           }
                        })
                        .catch(err =>
                            showStatus(trainStatus,
@@ -1158,6 +1176,7 @@
             // 학습 시작 핸들러 함수
             function handleTraining(type) {
                 const cfg = collect();
+                if (!cfg) return;
                 clearStatus(trainStatus);
                 clearStatus(deleteStatus);
                 // 모든 학습 관련 버튼 비활성화
@@ -1256,6 +1275,7 @@
             // 설정 저장 버튼
             saveBtn.addEventListener('click', () => {
                 const cfg = collect();
+                if (!cfg) return;
                 clearStatus(trainStatus);
                 clearStatus(deleteStatus);
                 api.set_config(cfg)
