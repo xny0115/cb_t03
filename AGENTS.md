@@ -77,6 +77,8 @@ datas/
 
 각 폴더에는 `sample_pretrain.txt`, `sample_finetune.jsonl`, `sample_additional_finetune.jsonl` 예시 파일을 포함한다.
 버튼 클릭 시 `pretrain`, `finetune`, `additional_finetune` 값을 백엔드로 전달해 해당 데이터만 로드한다.
+모든 스테이지의 데이터는 폴더 내 여러 파일을 메모리에서만 통합하며
+원본 파일은 절대 수정하거나 삭제하지 않는다.
 
 
 ## ✅ 학습 로직 강제 기준
@@ -86,6 +88,7 @@ datas/
 - 모델 저장 후 `.exists()` 및 `파일 크기 ≥ 1MB` 검증 필수
 - 학습 로그는 `Training complete`, `Model saved to ...` 등 명시적으로 출력할 것
 - 삭제 버튼은 실제 `.pth` 파일 삭제 동작과 연결되어야 함
+- 삭제 시 `models` 폴더 내 존재하는 모든 모델 파일을 일괄 제거한다.
 
 ---
 

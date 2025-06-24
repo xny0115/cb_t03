@@ -91,12 +91,20 @@ class ChatbotService:
         return self._config.copy()
 
     def delete_model(self) -> bool:
-        if self.model_path.exists():
-            self.model_path.unlink()
+        """Delete every model file under ``models`` directory."""
+        deleted = False
+        for fp in self.model_dir.glob("*.pth"):
+            try:
+                fp.unlink()
+                deleted = True
+            except FileNotFoundError:
+                continue
+            except Exception as exc:  # pragma: no cover - log only
+                logging.getLogger(__name__).warning("model delete failed: %s", exc)
+        if deleted:
             self.model = None
             self.tokenizer = None
-            return True
-        return False
+        return deleted
 
     def infer(self, text: str) -> Dict[str, Any]:
         if not self.model:
