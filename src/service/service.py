@@ -58,7 +58,10 @@ class ChatbotService:
         if isinstance(self.model, HFModel):
             return {"success": True, "msg": "done", "data": None}
         logger = logging.getLogger(__name__)
-        logger.info("training mode=%s", mode)
+        device = "cuda" if torch.cuda.is_available() else "cpu"
+        if device == "cpu":
+            logger.warning("CUDA not available, training on CPU")
+        logger.info("training mode=%s, device=%s", mode, device)
         if mode == "pretrain":
             from ..data.subtitle_cleaner import clean_subtitle_files
             clean_subtitle_files(Path("."), self.pretrain_dir)

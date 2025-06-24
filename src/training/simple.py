@@ -77,9 +77,13 @@ def train(samples: List[InstructionSample], cfg: dict[str, Any] | None = None):
         dim_ff=ff_dim,
         dropout=dropout,
     )
-    device = "cuda" if torch.cuda.is_available() else "cpu"
-    if device == "cuda":
+    if torch.cuda.is_available():
+        device = "cuda"
         torch.backends.cudnn.benchmark = True
+    else:
+        device = "cpu"
+        logger.warning("CUDA not available, falling back to CPU. Training will be slow")
+    logger.info("Using device: %s", device)
     model.to(device)
     crit = nn.CrossEntropyLoss(ignore_index=0)
     opt = optim.Adam(model.parameters(), lr=lr)
