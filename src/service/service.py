@@ -33,7 +33,7 @@ class ChatbotService:
 
     def __init__(self) -> None:
         self.data_dir = Path("datas")
-        self.pretrain_dir = self.data_dir / "pretrain"
+        self.pretrain_dir = self.data_dir / "01_pretrain"
         self.finetune_dir = self.data_dir / "finetune"
         self.additional_dir = self.data_dir / "additional_finetune"
         self.model_dir = Path("models")
@@ -60,6 +60,8 @@ class ChatbotService:
         logger = logging.getLogger(__name__)
         logger.info("training mode=%s", mode)
         if mode == "pretrain":
+            from ..data.subtitle_cleaner import clean_subtitle_files
+            clean_subtitle_files(Path("."), self.pretrain_dir)
             data = load_pretrain_dataset(self.pretrain_dir)
             self.model_path = self.model_dir / "pretrain.pth"
             model, tokenizer = train_pretrain(data, self._config)
