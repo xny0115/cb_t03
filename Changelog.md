@@ -1,5 +1,10 @@
 # 변경 이력
 
+## v1.14
+- torch.compile 호출을 제거하고 DataLoader 기본값을 고정했다.
+- Auto-Tune이 학습을 시작하지 않고 설정만 저장하도록 수정했다.
+- UI에 Auto-Tune 결과가 즉시 반영되고 Start 버튼으로만 학습을 실행하도록 변경했다.
+
 ## v1.13
 - DataLoader 설정을 수정해 학습 속도를 향상시켰다.
 - Auto-Tune 결과가 UI에 바로 표시되도록 서비스와 스크립트를 수정했다.
