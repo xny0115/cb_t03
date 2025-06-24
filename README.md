@@ -1,5 +1,5 @@
 
-# cb_t02 Project 안내
+# cb_t03 Project 안내
 
 이 프로젝트는 Windows 10 + RTX 4060 기반에서 구동되는 한국어 챗봇 학습 시스템입니다.  
 PyTorch 2.3.0 (CUDA 11.8 GPU 전용), torchtext 0.18.0 환경을 요구합니다.
