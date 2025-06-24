@@ -57,7 +57,16 @@ def train(samples: List[InstructionSample], cfg: dict[str, Any] | None = None):
         pairs.append((src, tgt))
 
     dataset = _PairDataset(pairs)
-    loader = DataLoader(dataset, batch_size=batch_size, shuffle=True, collate_fn=_collate)
+    num_workers = int(cfg.get("num_workers", 0))
+    pin_memory = bool(cfg.get("pin_memory", False)) and torch.cuda.is_available()
+    loader = DataLoader(
+        dataset,
+        batch_size=batch_size,
+        shuffle=True,
+        collate_fn=_collate,
+        num_workers=num_workers,
+        pin_memory=pin_memory,
+    )
 
     model = Seq2SeqTransformer(
         tokenizer.vocab_size,
@@ -69,9 +78,13 @@ def train(samples: List[InstructionSample], cfg: dict[str, Any] | None = None):
         dropout=dropout,
     )
     device = "cuda" if torch.cuda.is_available() else "cpu"
+    if device == "cuda":
+        torch.backends.cudnn.benchmark = True
     model.to(device)
     crit = nn.CrossEntropyLoss(ignore_index=0)
     opt = optim.Adam(model.parameters(), lr=lr)
+    use_amp = bool(cfg.get("use_mixed_precision", False)) and device == "cuda"
+    scaler = torch.cuda.amp.GradScaler(enabled=use_amp)
 
     logger.info("Training start: epochs=%d, samples=%d", epochs, len(samples))
     for epoch in range(epochs):
@@ -79,12 +92,19 @@ def train(samples: List[InstructionSample], cfg: dict[str, Any] | None = None):
         total_loss = 0.0
         start = time.perf_counter()
         for src, tgt in loader:
-            src, tgt = src.to(device), tgt.to(device)
+            src = src.to(device, non_blocking=True)
+            tgt = tgt.to(device, non_blocking=True)
             opt.zero_grad()
-            out = model(src, tgt[:, :-1])
-            loss = crit(out.reshape(-1, tokenizer.vocab_size), tgt[:, 1:].reshape(-1))
-            loss.backward()
-            opt.step()
+            with torch.cuda.amp.autocast(enabled=use_amp):
+                out = model(src, tgt[:, :-1])
+                loss = crit(out.reshape(-1, tokenizer.vocab_size), tgt[:, 1:].reshape(-1))
+            if use_amp:
+                scaler.scale(loss).backward()
+                scaler.step(opt)
+                scaler.update()
+            else:
+                loss.backward()
+                opt.step()
             total_loss += loss.item()
         ms = int((time.perf_counter() - start) * 1000)
         avg_loss = total_loss / len(loader)
