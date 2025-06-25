@@ -1193,21 +1193,53 @@
                 
                 autoBtn.onclick = () =>
                     api.auto_tune()
-                       .then(r => {
-                           const d = r.data || r;
-                           if (validateCfg(d)) {
-                               applyCfg(d);
-                               showStatus(trainStatus,
-                                 'Auto-Tune 완료. Start 버튼으로 학습을 시작하세요.',
-                                 'success');
-                           } else {
-                               showStatus(trainStatus, 'Auto-Tune 실패: invalid data', 'error');
-                           }
-                       })
-                       .catch(err =>
-                           showStatus(trainStatus,
-                               'Auto-Tune 실패: ' + (err.msg || err),
-                               'error'));
+                        .then(resp => {
+                            const cfg = resp.data || {};
+                            const map = {
+                                batch_size: 'batchSizeInput',
+                                lr: 'lrInput',
+                                epochs: 'epochsInput',
+                                warmup_steps: 'warmupStepsInput',
+                                max_seq_len: 'maxSeqLenInput',
+                                model_dim: 'modelDimInput',
+                                ff_dim: 'ffDimInput',
+                                enc_layers: 'encLayersInput',
+                                dec_layers: 'decLayersInput',
+                                num_heads: 'numHeadsInput',
+                                dropout: 'dropoutInput',
+                                topk: 'topkInput',
+                                temperature: 'tempInput',
+                                topp: 'topPInput',
+                            };
+                            for (const [key, id] of Object.entries(map)) {
+                                if (!(key in cfg)) {
+                                    console.warn(`auto_tune: missing ${key}`);
+                                    continue;
+                                }
+                                const el = document.getElementById(id);
+                                if (!el) {
+                                    console.warn(`auto_tune: element #${id} not found`);
+                                    continue;
+                                }
+                                el.value = cfg[key];
+                                if (id === 'dropoutInput') {
+                                    const dv = document.getElementById('dropoutValue');
+                                    if (dv) dv.textContent = parseFloat(cfg[key]).toFixed(2);
+                                }
+                            }
+                            showStatus(
+                                trainStatus,
+                                'Auto-Tune 완료. Start 버튼으로 학습을 시작하세요.',
+                                'success'
+                            );
+                            updateTrainingButtons();
+                        })
+                        .catch(err =>
+                            showStatus(
+                                trainStatus,
+                                'Auto-Tune 실패: ' + (err.msg || err),
+                                'error'
+                            ));
 
                 deleteBtn.onclick = () => api.delete_model().then(r => {
                     if (r.success) {
