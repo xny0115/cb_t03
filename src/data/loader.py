@@ -111,28 +111,27 @@ def get_dataset_info(
     tokens = 0
     skipped: list[str] = []
 
-    for fp in pre_dir.glob("*.txt"):
-        lines = _load_text(fp)
-        txt_lines += len(lines)
-        tokens += sum(len(l) for l in lines)
+    for path in [pre_dir, ft_dir, add_dir]:
+        if path.name.startswith("01"):
+            continue
 
-    def _process_jsonl(dir_path: Path) -> None:
-        nonlocal json_lines, tokens, skipped
-        for fp in dir_path.iterdir():
-            if fp.suffix == ".jsonl":
-                items = _load_jsonl(fp)
-                json_lines += len(items)
-                for it in items:
-                    if not isinstance(it, dict):
-                        continue
-                    tokens += len(it.get("instruction", ""))
-                    tokens += len(it.get("input", ""))
-                    tokens += len(it.get("output", ""))
-            elif fp.suffix == ".json":
-                skipped.append(fp.name)
+        for fp in path.glob("*.txt"):
+            lines = _load_text(fp)
+            txt_lines += len(lines)
+            tokens += sum(len(l) for l in lines)
 
-    _process_jsonl(ft_dir)
-    _process_jsonl(add_dir)
+        for fp in path.glob("*.jsonl"):
+            for item in _load_jsonl(fp):
+                if not isinstance(item, dict) or "instruction" not in item:
+                    continue
+                ins = item.get("instruction", "")
+                inp = item.get("input", "")
+                out = item.get("output", "")
+                json_lines += 1
+                tokens += len(ins) + len(inp) + len(out)
+
+        for fp in path.glob("*.json"):
+            skipped.append(fp.name)
 
     total = txt_lines + json_lines
     return total, tokens, txt_lines, json_lines, skipped
