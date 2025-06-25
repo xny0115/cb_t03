@@ -1191,55 +1191,19 @@
                 finetuneBtn.onclick = () => handleTraining('finetune');
                 additionalFinetuneBtn.onclick = () => handleTraining('additional_finetune');
                 
-                autoBtn.onclick = () =>
+                autoBtn.onclick = () => {
                     api.auto_tune()
                         .then(resp => {
-                            const cfg = resp.data || {};
-                            const map = {
-                                batch_size: 'batchSizeInput',
-                                lr: 'lrInput',
-                                epochs: 'epochsInput',
-                                warmup_steps: 'warmupStepsInput',
-                                max_seq_len: 'maxSeqLenInput',
-                                model_dim: 'modelDimInput',
-                                ff_dim: 'ffDimInput',
-                                enc_layers: 'encLayersInput',
-                                dec_layers: 'decLayersInput',
-                                num_heads: 'numHeadsInput',
-                                dropout: 'dropoutInput',
-                                topk: 'topkInput',
-                                temperature: 'tempInput',
-                                topp: 'topPInput',
-                            };
-                            for (const [key, id] of Object.entries(map)) {
-                                if (!(key in cfg)) {
-                                    console.warn(`auto_tune: missing ${key}`);
-                                    continue;
-                                }
-                                const el = document.getElementById(id);
-                                if (!el) {
-                                    console.warn(`auto_tune: element #${id} not found`);
-                                    continue;
-                                }
-                                el.value = cfg[key];
-                                if (id === 'dropoutInput') {
-                                    const dv = document.getElementById('dropoutValue');
-                                    if (dv) dv.textContent = parseFloat(cfg[key]).toFixed(2);
-                                }
+                            if (resp.success) {
+                                location.reload();
+                            } else {
+                                alert('오토튠 실패: ' + resp.msg);
                             }
-                            showStatus(
-                                trainStatus,
-                                'Auto-Tune 완료. Start 버튼으로 학습을 시작하세요.',
-                                'success'
-                            );
-                            updateTrainingButtons();
                         })
-                        .catch(err =>
-                            showStatus(
-                                trainStatus,
-                                'Auto-Tune 실패: ' + (err.msg || err),
-                                'error'
-                            ));
+                        .catch(err => {
+                            alert('오토튠 실패: ' + (err.msg || err));
+                        });
+                };
 
                 deleteBtn.onclick = () => api.delete_model().then(r => {
                     if (r.success) {
