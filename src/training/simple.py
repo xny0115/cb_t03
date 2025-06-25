@@ -58,9 +58,11 @@ def train(samples: List[InstructionSample], cfg: dict[str, Any] | None = None):
         pairs.append((src, tgt))
 
     dataset = _PairDataset(pairs)
-    num_workers = min(max(os.cpu_count() // 2, 2), 8)
-    pin_memory = True
-    batch_size = 32
+    batch_size = int(cfg.get("batch_size", 32))
+    num_workers = int(
+        cfg.get("num_workers", min(max(os.cpu_count() // 2, 2), 8))
+    )
+    pin_memory = bool(cfg.get("pin_memory", True))
     loader = DataLoader(
         dataset,
         batch_size=batch_size,
@@ -68,7 +70,7 @@ def train(samples: List[InstructionSample], cfg: dict[str, Any] | None = None):
         collate_fn=_collate,
         num_workers=num_workers,
         pin_memory=pin_memory,
-    )  # dataloader tuned
+    )
 
     model = Seq2SeqTransformer(
         tokenizer.vocab_size,
