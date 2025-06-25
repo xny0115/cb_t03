@@ -102,6 +102,53 @@ def load_pretrain_dataset(path: Path) -> List[str]:
     return lines
 
 
+def get_text_stats(path: Path) -> dict[str, float | int]:
+    """Return statistics about txt dataset under ``path``."""
+    files = _collect_files(path, ("*.txt",))
+    file_count = len(files)
+    total_lines = 0
+    empty_lines = 0
+    dup_lines = 0
+    total_chars = 0
+    max_chars = 0
+    min_chars = float("inf")
+    seen: Set[str] = set()
+
+    for fp in files:
+        for raw in open(fp, encoding="utf-8"):
+            total_lines += 1
+            line = raw.strip()
+            if not line:
+                empty_lines += 1
+                continue
+            if line in seen:
+                dup_lines += 1
+            else:
+                seen.add(line)
+            ln = len(line)
+            total_chars += ln
+            max_chars = max(max_chars, ln)
+            if ln < min_chars:
+                min_chars = ln
+
+    non_empty = total_lines - empty_lines
+    avg_chars = total_chars / non_empty if non_empty else 0
+    dup_ratio = dup_lines / non_empty if non_empty else 0
+    if min_chars == float("inf"):
+        min_chars = 0
+
+    return {
+        "files": file_count,
+        "lines": total_lines,
+        "empty_lines": empty_lines,
+        "dup_lines": dup_lines,
+        "dup_ratio": dup_ratio,
+        "avg_chars": avg_chars,
+        "max_chars": max_chars,
+        "min_chars": min_chars,
+    }
+
+
 def get_dataset_info(
     pre_dir: Path, ft_dir: Path, add_dir: Path
 ) -> tuple[int, int, int, int, list[str]]:
@@ -146,6 +193,7 @@ __all__ = [
     "InstructionSample",
     "load_instruction_dataset",
     "load_pretrain_dataset",
+    "get_text_stats",
     "load_dataset",
     "get_dataset_info",
 ]

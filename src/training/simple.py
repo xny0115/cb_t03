@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from typing import List, Tuple, Any
+from typing import List, Any
 
 import logging
 import time
@@ -10,32 +10,12 @@ import platform
 import os
 import torch
 from torch import nn, optim
-from torch.utils.data import DataLoader, Dataset
+from torch.utils.data import DataLoader
 
 from ..data.loader import InstructionSample
 from ..model.transformer import Seq2SeqTransformer
 from ..utils.tokenizer import CharTokenizer
-
-
-class _PairDataset(Dataset):
-    def __init__(self, pairs: List[Tuple[List[int], List[int]]]):
-        self.data = pairs
-
-    def __len__(self) -> int:
-        return len(self.data)
-
-    def __getitem__(self, idx: int):
-        return self.data[idx]
-
-
-def _collate(batch):
-    """Tensorize and pad sequences."""  # speed tweak
-    srcs, tgts = zip(*batch)
-    srcs = [torch.as_tensor(s, dtype=torch.long) for s in srcs]
-    tgts = [torch.as_tensor(t, dtype=torch.long) for t in tgts]
-    src_pad = nn.utils.rnn.pad_sequence(srcs, batch_first=True, padding_value=0)
-    tgt_pad = nn.utils.rnn.pad_sequence(tgts, batch_first=True, padding_value=0)
-    return src_pad, tgt_pad
+from .helpers import PairDataset, timed_collate, log_dataset_stats
 
 
 def train(
@@ -66,39 +46,53 @@ def train(
         texts = [s.output for s in samples]
     else:
         texts = [f"{s.instruction} {s.input} {s.output}" for s in samples]
+    log_dataset_stats(texts)
     start = time.perf_counter()
     tokenizer = CharTokenizer(texts)
     logger.debug("tokenizer build time: %.2fs", time.perf_counter() - start)
     pairs = []
     src_len_sum = 0
     tgt_len_sum = 0
+    encode_times: List[float] = []
+    example: str | None = None
     for idx, s in enumerate(samples):
         if is_pretrain:
             input_text = s.output
+            t0 = time.perf_counter()
             src = tokenizer.encode(input_text, True)
             tgt = src
         else:
             input_text = f"{s.instruction}{s.input}{s.output}"
+            t0 = time.perf_counter()
             src = tokenizer.encode(f"{s.instruction} {s.input}".strip(), True)
             tgt = tokenizer.encode(s.output, True)
+        if len(encode_times) < 10:
+            encode_times.append((time.perf_counter() - t0) * 1000)
+            if example is None:
+                example = input_text
         if idx < 2:
-            print(f"[DEBUG] encode sample {idx}: {input_text[:50]}")
+            logger.debug("encode sample %d: %s", idx, input_text[:50])
         src_len_sum += len(src)
         tgt_len_sum += len(tgt)
         pairs.append((src, tgt))
+    if encode_times:
+        logger.debug(
+            "avg encode time: %.2fms", sum(encode_times) / len(encode_times)
+        )
+        logger.debug("encode example: %s", example[:50] if example else "")
 
-    dataset = _PairDataset(pairs)
+    dataset = PairDataset(pairs)
     if samples:
         avg_instr = sum(len(s.instruction) for s in samples) / len(samples)
         avg_input = sum(len(s.input) for s in samples) / len(samples)
         avg_output = sum(len(s.output) for s in samples) / len(samples)
         avg_src_tok = src_len_sum / len(samples)
         avg_tgt_tok = tgt_len_sum / len(samples)
-        print(f"[DEBUG] avg instruction length: {avg_instr:.2f}")
-        print(f"[DEBUG] avg input length: {avg_input:.2f}")
-        print(f"[DEBUG] avg output length: {avg_output:.2f}")
-        print(f"[DEBUG] avg src tokens: {avg_src_tok:.2f}")
-        print(f"[DEBUG] avg tgt tokens: {avg_tgt_tok:.2f}")
+        logger.debug("avg instruction length: %.2f", avg_instr)
+        logger.debug("avg input length: %.2f", avg_input)
+        logger.debug("avg output length: %.2f", avg_output)
+        logger.debug("avg src tokens: %.2f", avg_src_tok)
+        logger.debug("avg tgt tokens: %.2f", avg_tgt_tok)
     batch_size = int(cfg.get("batch_size", 32))
     num_workers = int(
         cfg.get("num_workers", min(max(os.cpu_count() // 2, 2), 8))
@@ -109,11 +103,16 @@ def train(
         dataset,
         batch_size=batch_size,
         shuffle=True,
-        collate_fn=_collate,
+        collate_fn=timed_collate,
         num_workers=num_workers,
         pin_memory=pin_memory,
     )
     logger.debug("dataloader build time: %.2fs", time.perf_counter() - start)
+    iter_start = time.perf_counter()
+    _ = iter(loader)
+    logger.debug(
+        "dataloader iter build time: %.2fms", (time.perf_counter() - iter_start) * 1000
+    )
 
     model = Seq2SeqTransformer(
         tokenizer.vocab_size,
@@ -142,11 +141,13 @@ def train(
             "CUDA max memory allocated: %.2fMB",
             torch.cuda.max_memory_allocated() / 1_048_576,
         )
-        print(
-            f"[DEBUG] allocated memory: {torch.cuda.memory_allocated() / 1024**2:.2f} MB"
+        logger.debug(
+            "allocated memory: %.2f MB",
+            torch.cuda.memory_allocated() / 1024**2,
         )
-        print(
-            f"[DEBUG] reserved memory: {torch.cuda.memory_reserved() / 1024**2:.2f} MB"
+        logger.debug(
+            "reserved memory: %.2f MB",
+            torch.cuda.memory_reserved() / 1024**2,
         )
     crit = nn.CrossEntropyLoss(ignore_index=0)
     opt = optim.Adam(model.parameters(), lr=lr)
@@ -171,15 +172,27 @@ def train(
         total_loss = 0.0
         epoch_start = time.perf_counter()
         for i, (src, tgt) in enumerate(loader):
-            batch_start = time.time()
+            move_start = time.perf_counter()
             src = src.to(device, non_blocking=True)
             tgt = tgt.to(device, non_blocking=True)
-            if i == 0:
-                logger.debug("input sample device: %s", src.device)
+            move_ms = (time.perf_counter() - move_start) * 1000
+            if i < 2:
+                logger.debug(
+                    "batch %d src%s tgt%s dtype=%s device=%s move=%.2fms",
+                    i,
+                    tuple(src.shape),
+                    tuple(tgt.shape),
+                    src.dtype,
+                    src.device,
+                    move_ms,
+                )
             opt.zero_grad()
+            fwd_start = time.perf_counter()
             with torch.cuda.amp.autocast(enabled=use_amp):
                 out = model(src, tgt[:, :-1])
                 loss = crit(out.reshape(-1, tokenizer.vocab_size), tgt[:, 1:].reshape(-1))
+            fwd_ms = (time.perf_counter() - fwd_start) * 1000
+            bwd_start = time.perf_counter()
             if use_amp:
                 scaler.scale(loss).backward()
                 scaler.step(opt)
@@ -187,8 +200,15 @@ def train(
             else:
                 loss.backward()
                 opt.step()
+            bwd_ms = (time.perf_counter() - bwd_start) * 1000
             total_loss += loss.item()
-            print(f"[DEBUG] batch {i} time: {time.time() - batch_start:.3f}s")
+            if i < 2:
+                logger.debug(
+                    "batch %d forward=%.2fms backward=%.2fms", i, fwd_ms, bwd_ms
+                )
+            logger.debug(
+                "batch %d total: %.2fms", i, move_ms + fwd_ms + bwd_ms
+            )
             if i >= 2:
                 break
         ms = time.perf_counter() - epoch_start
