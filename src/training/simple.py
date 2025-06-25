@@ -99,6 +99,17 @@ def train(samples: List[InstructionSample], cfg: dict[str, Any] | None = None):
     scaler = torch.cuda.amp.GradScaler(enabled=use_amp)
 
     logger.info("Training start: epochs=%d, samples=%d", epochs, len(samples))
+    logger.info(
+        "Config: batch_size=%d, model_dim=%d, ff_dim=%d, enc_layers=%d, dec_layers=%d, lr=%.4f, dropout=%.2f, mixed_precision=%s",
+        batch_size,
+        model_dim,
+        ff_dim,
+        enc_layers,
+        dec_layers,
+        lr,
+        dropout,
+        use_amp,
+    )
     train_start = time.perf_counter()
     for epoch in range(epochs):
         model.train()
