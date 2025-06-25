@@ -982,6 +982,12 @@
             const messages = [];
             const inputsToWatch = document.querySelectorAll('#settingsContent input, #settingsContent select');
 
+            const mustKeys = [
+                'batch_size', 'model_dim', 'ff_dim', 'num_encoder_layers',
+                'num_decoder_layers', 'num_epochs', 'learning_rate',
+                'use_mixed_precision'
+            ];
+
             function checkFieldsFilled() {
                 for (const el of inputsToWatch) {
                     if (el.type === 'checkbox') continue;
@@ -1132,6 +1138,11 @@
             }
 
             function validateCfg(cfg) {
+                for (const k of mustKeys) {
+                    const v = cfg[k];
+                    if (v === null || v === '' || v === undefined) return false;
+                    if (typeof v === 'number' && isNaN(v)) return false;
+                }
                 for (const [k, v] of Object.entries(cfg)) {
                     if (v === null || v === '' || v === undefined) return false;
                     if (typeof v === 'number' && isNaN(v)) return false;
@@ -1140,6 +1151,14 @@
             }
 
             function applyCfg(cfg) {
+              for (const k of mustKeys) {
+                const v = cfg[k];
+                if (v === undefined || v === null || v === '' ||
+                    (typeof v === 'number' && isNaN(v))) {
+                  showError(`[Auto-Tune] ${k} 값이 유효하지 않음`);
+                  throw new Error(`[Auto-Tune] ${k} invalid`);
+                }
+              }
               const setVal = (id, v) => {
                 const el = document.getElementById(id);
                 if (!el) return;
