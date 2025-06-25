@@ -35,7 +35,7 @@ class ChatbotService:
 
     def __init__(self) -> None:
         self.data_dir = Path("datas")
-        self.pretrain_dir = self.data_dir / "01_pretrain"
+        self.pretrain_dir = self.data_dir / "pretrain"
         self.finetune_dir = self.data_dir / "finetune"
         self.additional_dir = self.data_dir / "additional_finetune"
         self.model_dir = Path("models")

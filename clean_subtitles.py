@@ -23,7 +23,7 @@ def _clean_file(src: Path, dst: Path) -> None:
 def main() -> None:
     parser = argparse.ArgumentParser(description="Subtitle cleaner")
     parser.add_argument("src", type=Path, nargs="?", default=Path("."))
-    parser.add_argument("dst", type=Path, nargs="?", default=Path("datas/01_pretrain"))
+    parser.add_argument("dst", type=Path, nargs="?", default=Path("datas/pretrain"))
     args = parser.parse_args()
 
     if args.src.is_file():

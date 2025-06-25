@@ -1,4 +1,8 @@
 # 변경 이력
+## v1.29
+- Auto-Tune 스캔 로직이 `pretrain`, `finetune`, `additional_finetune` 폴더만 탐색하도록 조정.
+- JSONL 처리 시 `instruction` 필드가 없는 라인은 샘플로 인정하지 않고 토큰 계산에서 제외.
+- `clean_subtitles.py`와 문서의 경로를 `datas/pretrain/`으로 변경.
 ## v1.28
 - Auto-Tuner가 모든 데이터셋 폴더를 순회해 샘플 수와 토큰 수를 계산하도록 수정.
 - Flash Attention 경고 억제 코드를 transformer.py 최상단으로 이동.
@@ -78,7 +82,7 @@
 - 학습 루프가 에폭별 손실과 소요 시간을 로그로 출력하도록 개선.
 
 ## v1.7
-- 자막 파일을 자동 정제하여 `datas/01_pretrain/`에 저장하는 로직 추가.
+- 자막 파일을 자동 정제하여 `datas/pretrain/`에 저장하는 로직 추가.
 - pretrain 학습 시작 시 정제기가 실행되도록 ChatbotService 수정.
 - 정제기 사용법 문서 `docs/subtitle_cleaner.md` 작성.
 
