@@ -61,6 +61,7 @@ class AutoTuner:
                 "num_decoder_layers": num_layers,
                 "num_epochs": 30 if self.dataset_size > 300 else 15,
                 "learning_rate": 5e-4 if self.dataset_size > 300 else 1e-3,
+                "dropout_ratio": 0.1 if self.dataset_size > 500 else 0.2,
                 "use_mixed_precision": bool(
                     torch.cuda.is_available() and self.vram_gb >= 6
                 ),

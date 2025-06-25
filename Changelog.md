@@ -1,5 +1,8 @@
 # 변경 이력
 
+## v1.20
+- Auto-Tune이 dropout_ratio 값을 포함해 제안하며 UI 입력폼에 바로 적용되도록 개선.
+
 ## v1.19
 - DataLoader가 배치 크기, num_workers, pin_memory 설정을
   Auto-Tune 결과와 사용자 설정 그대로 반영하도록 수정.
