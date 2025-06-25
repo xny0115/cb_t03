@@ -102,6 +102,42 @@ def load_pretrain_dataset(path: Path) -> List[str]:
     return lines
 
 
+def get_dataset_info(
+    pre_dir: Path, ft_dir: Path, add_dir: Path
+) -> tuple[int, int, int, int, list[str]]:
+    """Return dataset size and token count across all directories."""
+    txt_lines = 0
+    json_lines = 0
+    tokens = 0
+    skipped: list[str] = []
+
+    for fp in pre_dir.glob("*.txt"):
+        lines = _load_text(fp)
+        txt_lines += len(lines)
+        tokens += sum(len(l) for l in lines)
+
+    def _process_jsonl(dir_path: Path) -> None:
+        nonlocal json_lines, tokens, skipped
+        for fp in dir_path.iterdir():
+            if fp.suffix == ".jsonl":
+                items = _load_jsonl(fp)
+                json_lines += len(items)
+                for it in items:
+                    if not isinstance(it, dict):
+                        continue
+                    tokens += len(it.get("instruction", ""))
+                    tokens += len(it.get("input", ""))
+                    tokens += len(it.get("output", ""))
+            elif fp.suffix == ".json":
+                skipped.append(fp.name)
+
+    _process_jsonl(ft_dir)
+    _process_jsonl(add_dir)
+
+    total = txt_lines + json_lines
+    return total, tokens, txt_lines, json_lines, skipped
+
+
 def load_dataset(path: Path) -> List[InstructionSample]:
     """이전 호환을 위해 유지."""
     return load_instruction_dataset(path)
@@ -112,4 +148,5 @@ __all__ = [
     "load_instruction_dataset",
     "load_pretrain_dataset",
     "load_dataset",
+    "get_dataset_info",
 ]

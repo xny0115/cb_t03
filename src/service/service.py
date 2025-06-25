@@ -10,6 +10,7 @@ from ..data.loader import (
     load_dataset,
     load_instruction_dataset,
     load_pretrain_dataset,
+    get_dataset_info,
 )
 from ..config import load_config, save_config
 from ..model import (
@@ -143,11 +144,13 @@ class ChatbotService:
 
     def auto_tune(self) -> Dict[str, Any]:
         """Apply AutoTuner suggestions to config."""
-        size = len(self.dataset)
-        tokens = sum(
-            len(s.instruction) + len(s.input) + len(s.output)
-            for s in self.dataset
+        size, tokens, txt_lines, json_lines, skipped = get_dataset_info(
+            self.pretrain_dir, self.finetune_dir, self.additional_dir
         )
+        print(f"[DEBUG] Found pretrain txt files: {txt_lines} lines")
+        print(f"[DEBUG] Found finetune jsonl files: {json_lines} lines")
+        if skipped:
+            print(f"[DEBUG] Skipped files: {skipped}")
         print(f"[DEBUG] AutoTune triggered: dataset size = {size}, tokens = {tokens}")
         cfg = AutoTuner(size, tokens).suggest()
         valid, msg = validate_config(cfg)

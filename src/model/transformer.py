@@ -4,12 +4,8 @@ from __future__ import annotations
 import warnings
 import platform
 
-# Flash Attention 경고는 Windows에서만 억제
 if platform.system() == "Windows":
-    warnings.filterwarnings(
-        "ignore",
-        message="Torch was not compiled with flash attention",
-    )
+    warnings.filterwarnings("ignore", message="Torch was not compiled with flash attention")
 
 import math
 import logging
