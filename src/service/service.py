@@ -148,6 +148,7 @@ class ChatbotService:
             len(s.instruction) + len(s.input) + len(s.output)
             for s in self.dataset
         )
+        print(f"[DEBUG] AutoTune triggered: dataset size = {size}, tokens = {tokens}")
         cfg = AutoTuner(size, tokens).suggest()
         valid, msg = validate_config(cfg)
         if not valid:

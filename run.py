@@ -2,6 +2,12 @@ from __future__ import annotations
 
 """Application entrypoint for the local webview."""
 
+import platform
+import warnings
+
+if platform.system() == "Windows":
+    warnings.filterwarnings("ignore", message="Torch was not compiled with flash attention")
+
 try:  # pragma: no cover - optional dependency
     import webview  # type: ignore
 except Exception:  # pragma: no cover

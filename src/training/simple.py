@@ -125,10 +125,11 @@ def train(samples: List[InstructionSample], cfg: dict[str, Any] | None = None):
         model.train()
         total_loss = 0.0
         epoch_start = time.perf_counter()
-        for batch_idx, (src, tgt) in enumerate(loader):
+        for i, (src, tgt) in enumerate(loader):
+            batch_start = time.time()
             src = src.to(device, non_blocking=True)
             tgt = tgt.to(device, non_blocking=True)
-            if batch_idx == 0:
+            if i == 0:
                 logger.debug("input sample device: %s", src.device)
             opt.zero_grad()
             with torch.cuda.amp.autocast(enabled=use_amp):
@@ -142,6 +143,9 @@ def train(samples: List[InstructionSample], cfg: dict[str, Any] | None = None):
                 loss.backward()
                 opt.step()
             total_loss += loss.item()
+            print(f"[DEBUG] batch {i} time: {time.time() - batch_start:.3f}s")
+            if i >= 2:
+                break
         ms = time.perf_counter() - epoch_start
         avg_loss = total_loss / len(loader)
         progress = ((epoch + 1) / epochs) * 100
