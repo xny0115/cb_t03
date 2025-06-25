@@ -1173,6 +1173,11 @@
               setVal('decLayersInput',  cfg.num_decoder_layers);
               setVal('epochsInput',     cfg.num_epochs);
               setVal('lrInput',         cfg.learning_rate);
+              if (cfg.dropout_ratio !== undefined) {
+                setVal('dropoutInput', cfg.dropout_ratio);
+                const dv = document.getElementById('dropoutValue');
+                if (dv) dv.textContent = parseFloat(cfg.dropout_ratio).toFixed(2);
+              }
               setVal('mpCheckbox',      cfg.use_mixed_precision);
               updateTrainingButtons();
             }
