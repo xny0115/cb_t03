@@ -4,6 +4,8 @@ from typing import List, Tuple, Any
 
 import logging
 import time
+import warnings
+import platform
 
 import os
 import torch
@@ -40,6 +42,12 @@ def train(samples: List[InstructionSample], cfg: dict[str, Any] | None = None):
     """Train a Seq2SeqTransformer on given samples."""
 
     logger = logging.getLogger(__name__)
+    if platform.system() == "Windows":
+        warnings.filterwarnings(
+            "ignore",
+            message="Torch was not compiled with flash attention",
+            category=UserWarning,
+        )
     cfg = cfg or {}
     epochs = int(cfg.get("num_epochs", 5))
     lr = float(cfg.get("learning_rate", 1e-3))
@@ -60,6 +68,13 @@ def train(samples: List[InstructionSample], cfg: dict[str, Any] | None = None):
         pairs.append((src, tgt))
 
     dataset = _PairDataset(pairs)
+    if samples:
+        avg_instr = sum(len(s.instruction) for s in samples) / len(samples)
+        avg_input = sum(len(s.input) for s in samples) / len(samples)
+        avg_output = sum(len(s.output) for s in samples) / len(samples)
+        print(f"[DEBUG] avg instruction length: {avg_instr:.2f}")
+        print(f"[DEBUG] avg input length: {avg_input:.2f}")
+        print(f"[DEBUG] avg output length: {avg_output:.2f}")
     batch_size = int(cfg.get("batch_size", 32))
     num_workers = int(
         cfg.get("num_workers", min(max(os.cpu_count() // 2, 2), 8))
@@ -102,6 +117,12 @@ def train(samples: List[InstructionSample], cfg: dict[str, Any] | None = None):
         logger.debug(
             "CUDA max memory allocated: %.2fMB",
             torch.cuda.max_memory_allocated() / 1_048_576,
+        )
+        print(
+            f"[DEBUG] allocated memory: {torch.cuda.memory_allocated() / 1024**2:.2f} MB"
+        )
+        print(
+            f"[DEBUG] reserved memory: {torch.cuda.memory_reserved() / 1024**2:.2f} MB"
         )
     crit = nn.CrossEntropyLoss(ignore_index=0)
     opt = optim.Adam(model.parameters(), lr=lr)

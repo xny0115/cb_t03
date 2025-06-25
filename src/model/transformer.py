@@ -4,9 +4,6 @@ from __future__ import annotations
 import warnings
 import platform
 
-if platform.system() == "Windows":
-    warnings.filterwarnings("ignore", message="Torch was not compiled with flash attention")
-
 import math
 import logging
 from pathlib import Path

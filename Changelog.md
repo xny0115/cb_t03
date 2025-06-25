@@ -1,4 +1,7 @@
 # 변경 이력
+## v1.30
+- Flash Attention 경고 억제 시점을 학습 루프 시작 직전으로 이동.
+- GPU 메모리 사용량과 데이터 평균 길이를 디버그 출력하도록 보강.
 ## v1.29
 - Auto-Tune 스캔 로직이 `pretrain`, `finetune`, `additional_finetune` 폴더만 탐색하도록 조정.
 - JSONL 처리 시 `instruction` 필드가 없는 라인은 샘플로 인정하지 않고 토큰 계산에서 제외.
