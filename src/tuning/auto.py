@@ -4,6 +4,8 @@ from __future__ import annotations
 import logging
 from typing import Any, Dict
 
+from ..utils.validator import REQUIRED_KEYS
+
 import torch
 try:
     import psutil  # type: ignore
@@ -39,17 +41,31 @@ class AutoTuner:
         return 0
 
     def suggest(self) -> Dict[str, Any]:
-        """Return recommended hyperparameters."""
+        """Return recommended hyperparameters with all required keys."""
         cfg: Dict[str, Any] = {}
-        logger.info("AutoTuner dataset=%d, vram=%dGB, ram=%dGB", self.dataset_size, self.vram_gb, self.ram_gb)
+        logger.info(
+            "AutoTuner dataset=%d, vram=%dGB, ram=%dGB",
+            self.dataset_size,
+            self.vram_gb,
+            self.ram_gb,
+        )
         high_mem = self.vram_gb >= 8 or self.ram_gb >= 16
-        cfg["batch_size"] = 32 if high_mem else 8
-        cfg["model_dim"] = 512 if self.vram_gb >= 8 else 256
-        cfg["ff_dim"] = 2048 if cfg["model_dim"] >= 512 else 1024
-        cfg["num_encoder_layers"] = 6 if self.dataset_size > 500 else 4
-        cfg["num_decoder_layers"] = cfg["num_encoder_layers"]
-        cfg["num_epochs"] = 30 if self.dataset_size > 300 else 15
-        cfg["learning_rate"] = 5e-4 if self.dataset_size > 300 else 1e-3
-        if torch.cuda.is_available() and self.vram_gb >= 6:
-            cfg["use_mixed_precision"] = True
+        model_dim = 512 if self.vram_gb >= 8 else 256
+        num_layers = 6 if self.dataset_size > 500 else 4
+        cfg.update(
+            {
+                "batch_size": 32 if high_mem else 8,
+                "model_dim": model_dim,
+                "ff_dim": 2048 if model_dim >= 512 else 1024,
+                "num_encoder_layers": num_layers,
+                "num_decoder_layers": num_layers,
+                "num_epochs": 30 if self.dataset_size > 300 else 15,
+                "learning_rate": 5e-4 if self.dataset_size > 300 else 1e-3,
+                "use_mixed_precision": bool(
+                    torch.cuda.is_available() and self.vram_gb >= 6
+                ),
+            }
+        )
+        for k in REQUIRED_KEYS:
+            cfg.setdefault(k, False if k == "use_mixed_precision" else 0)
         return cfg
