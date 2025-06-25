@@ -38,7 +38,12 @@ def _collate(batch):
     return src_pad, tgt_pad
 
 
-def train(samples: List[InstructionSample], cfg: dict[str, Any] | None = None):
+def train(
+    samples: List[InstructionSample],
+    cfg: dict[str, Any] | None = None,
+    *,
+    is_pretrain: bool = False,
+):
     """Train a Seq2SeqTransformer on given samples."""
 
     logger = logging.getLogger(__name__)
@@ -57,14 +62,29 @@ def train(samples: List[InstructionSample], cfg: dict[str, Any] | None = None):
     dec_layers = int(cfg.get("num_decoder_layers", 2))
     ff_dim = int(cfg.get("ff_dim", 512))
     dropout = float(cfg.get("dropout_ratio", 0.1))
-    texts = [f"{s.instruction} {s.input} {s.output}" for s in samples]
+    if is_pretrain:
+        texts = [s.output for s in samples]
+    else:
+        texts = [f"{s.instruction} {s.input} {s.output}" for s in samples]
     start = time.perf_counter()
     tokenizer = CharTokenizer(texts)
     logger.debug("tokenizer build time: %.2fs", time.perf_counter() - start)
     pairs = []
-    for s in samples:
-        src = tokenizer.encode(f"{s.instruction} {s.input}".strip(), True)
-        tgt = tokenizer.encode(s.output, True)
+    src_len_sum = 0
+    tgt_len_sum = 0
+    for idx, s in enumerate(samples):
+        if is_pretrain:
+            input_text = s.output
+            src = tokenizer.encode(input_text, True)
+            tgt = src
+        else:
+            input_text = f"{s.instruction}{s.input}{s.output}"
+            src = tokenizer.encode(f"{s.instruction} {s.input}".strip(), True)
+            tgt = tokenizer.encode(s.output, True)
+        if idx < 2:
+            print(f"[DEBUG] encode sample {idx}: {input_text[:50]}")
+        src_len_sum += len(src)
+        tgt_len_sum += len(tgt)
         pairs.append((src, tgt))
 
     dataset = _PairDataset(pairs)
@@ -72,9 +92,13 @@ def train(samples: List[InstructionSample], cfg: dict[str, Any] | None = None):
         avg_instr = sum(len(s.instruction) for s in samples) / len(samples)
         avg_input = sum(len(s.input) for s in samples) / len(samples)
         avg_output = sum(len(s.output) for s in samples) / len(samples)
+        avg_src_tok = src_len_sum / len(samples)
+        avg_tgt_tok = tgt_len_sum / len(samples)
         print(f"[DEBUG] avg instruction length: {avg_instr:.2f}")
         print(f"[DEBUG] avg input length: {avg_input:.2f}")
         print(f"[DEBUG] avg output length: {avg_output:.2f}")
+        print(f"[DEBUG] avg src tokens: {avg_src_tok:.2f}")
+        print(f"[DEBUG] avg tgt tokens: {avg_tgt_tok:.2f}")
     batch_size = int(cfg.get("batch_size", 32))
     num_workers = int(
         cfg.get("num_workers", min(max(os.cpu_count() // 2, 2), 8))
@@ -189,4 +213,4 @@ def train(samples: List[InstructionSample], cfg: dict[str, Any] | None = None):
 def pretrain(texts: List[str], cfg: dict[str, Any] | None = None):
     """사전학습용 간단한 오토인코더 방식."""
     samples = [InstructionSample("", "", t) for t in texts]
-    return train(samples, cfg)
+    return train(samples, cfg, is_pretrain=True)
