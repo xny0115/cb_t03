@@ -1192,6 +1192,7 @@
                 additionalFinetuneBtn.onclick = () => handleTraining('additional_finetune');
                 
                 autoBtn.onclick = () => {
+                    localStorage.setItem('preferredTab', 'settingsTab');
                     api.auto_tune()
                         .then(resp => {
                             if (resp.success) {
@@ -1306,6 +1307,13 @@
                     }
                 });
             });
+
+            const preferred = localStorage.getItem('preferredTab');
+            if (preferred === 'settingsTab') {
+                const tabButton = document.querySelector('[data-tab="settings"]');
+                if (tabButton) tabButton.click();
+                localStorage.removeItem('preferredTab');
+            }
 
             // 설정 카테고리 접기/펴기
             document.querySelectorAll('.category-header').forEach(header => {
