@@ -11,6 +11,7 @@ from ..data.loader import (
     load_instruction_dataset,
     load_pretrain_dataset,
     get_dataset_info,
+    get_text_stats,
 )
 from ..config import load_config, save_config
 from ..model import (
@@ -70,6 +71,18 @@ class ChatbotService:
         if mode == "pretrain":
             from ..data.subtitle_cleaner import clean_subtitle_files
             clean_subtitle_files(Path("."), self.pretrain_dir)
+            stats = get_text_stats(self.pretrain_dir)
+            logger.debug(
+                "pretrain dataset files=%d lines=%d empty=%d dup=%d(%.2f) avg=%.2f max=%d min=%d",
+                stats["files"],
+                stats["lines"],
+                stats["empty_lines"],
+                stats["dup_lines"],
+                stats["dup_ratio"],
+                stats["avg_chars"],
+                stats["max_chars"],
+                stats["min_chars"],
+            )
             data = load_pretrain_dataset(self.pretrain_dir)
             self.model_path = self.model_dir / "pretrain.pth"
             model, tokenizer = train_pretrain(data, self._config)
