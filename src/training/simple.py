@@ -97,6 +97,7 @@ def train(samples: List[InstructionSample], cfg: dict[str, Any] | None = None):
         )
     logger.info("Training device: %s", device)
     model.to(device)
+    logger.debug("model device: %s", next(model.parameters()).device)
     if device == "cuda":
         logger.debug(
             "CUDA max memory allocated: %.2fMB",
@@ -123,10 +124,12 @@ def train(samples: List[InstructionSample], cfg: dict[str, Any] | None = None):
     for epoch in range(epochs):
         model.train()
         total_loss = 0.0
-        start = time.perf_counter()
-        for src, tgt in loader:
+        epoch_start = time.perf_counter()
+        for batch_idx, (src, tgt) in enumerate(loader):
             src = src.to(device, non_blocking=True)
             tgt = tgt.to(device, non_blocking=True)
+            if batch_idx == 0:
+                logger.debug("input sample device: %s", src.device)
             opt.zero_grad()
             with torch.cuda.amp.autocast(enabled=use_amp):
                 out = model(src, tgt[:, :-1])
@@ -139,7 +142,7 @@ def train(samples: List[InstructionSample], cfg: dict[str, Any] | None = None):
                 loss.backward()
                 opt.step()
             total_loss += loss.item()
-        ms = time.perf_counter() - start
+        ms = time.perf_counter() - epoch_start
         avg_loss = total_loss / len(loader)
         progress = ((epoch + 1) / epochs) * 100
         logger.info(
@@ -150,6 +153,7 @@ def train(samples: List[InstructionSample], cfg: dict[str, Any] | None = None):
             avg_loss,
             ms,
         )
+        logger.debug("epoch %d time: %.2fs", epoch + 1, ms)
 
     logger.info("Training complete in %.2fs", time.perf_counter() - train_start)
     logger.debug("epoch execution time: %.2fs", time.perf_counter() - train_start)
