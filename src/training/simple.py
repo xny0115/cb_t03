@@ -50,7 +50,9 @@ def train(samples: List[InstructionSample], cfg: dict[str, Any] | None = None):
     ff_dim = int(cfg.get("ff_dim", 512))
     dropout = float(cfg.get("dropout_ratio", 0.1))
     texts = [f"{s.instruction} {s.input} {s.output}" for s in samples]
+    start = time.perf_counter()
     tokenizer = CharTokenizer(texts)
+    logger.debug("tokenizer build time: %.2fs", time.perf_counter() - start)
     pairs = []
     for s in samples:
         src = tokenizer.encode(f"{s.instruction} {s.input}".strip(), True)
@@ -63,6 +65,7 @@ def train(samples: List[InstructionSample], cfg: dict[str, Any] | None = None):
         cfg.get("num_workers", min(max(os.cpu_count() // 2, 2), 8))
     )
     pin_memory = bool(cfg.get("pin_memory", True))
+    start = time.perf_counter()
     loader = DataLoader(
         dataset,
         batch_size=batch_size,
@@ -71,6 +74,7 @@ def train(samples: List[InstructionSample], cfg: dict[str, Any] | None = None):
         num_workers=num_workers,
         pin_memory=pin_memory,
     )
+    logger.debug("dataloader build time: %.2fs", time.perf_counter() - start)
 
     model = Seq2SeqTransformer(
         tokenizer.vocab_size,
@@ -93,6 +97,11 @@ def train(samples: List[InstructionSample], cfg: dict[str, Any] | None = None):
         )
     logger.info("Training device: %s", device)
     model.to(device)
+    if device == "cuda":
+        logger.debug(
+            "CUDA max memory allocated: %.2fMB",
+            torch.cuda.max_memory_allocated() / 1_048_576,
+        )
     crit = nn.CrossEntropyLoss(ignore_index=0)
     opt = optim.Adam(model.parameters(), lr=lr)
     use_amp = bool(cfg.get("use_mixed_precision", False)) and device == "cuda"
@@ -143,6 +152,7 @@ def train(samples: List[InstructionSample], cfg: dict[str, Any] | None = None):
         )
 
     logger.info("Training complete in %.2fs", time.perf_counter() - train_start)
+    logger.debug("epoch execution time: %.2fs", time.perf_counter() - train_start)
 
     return model, tokenizer
 

@@ -18,8 +18,9 @@ logger = logging.getLogger(__name__)
 class AutoTuner:
     """Suggest config based on dataset size and hardware."""
 
-    def __init__(self, dataset_size: int) -> None:
+    def __init__(self, dataset_size: int, token_count: int | None = None) -> None:
         self.dataset_size = dataset_size
+        self.token_count = token_count
         self.vram_gb = self._get_vram()
         self.ram_gb = self._get_ram()
 
@@ -43,9 +44,13 @@ class AutoTuner:
     def suggest(self) -> Dict[str, Any]:
         """Return recommended hyperparameters with all required keys."""
         cfg: Dict[str, Any] = {}
+        tok_msg = (
+            f", tokens={self.token_count}" if self.token_count is not None else ""
+        )
         logger.info(
-            "AutoTuner dataset=%d, vram=%dGB, ram=%dGB",
+            "Auto-Tune 기준: dataset size=%d samples%s, vram=%dGB, ram=%dGB",
             self.dataset_size,
+            tok_msg,
             self.vram_gb,
             self.ram_gb,
         )
@@ -69,4 +74,12 @@ class AutoTuner:
         )
         for k in REQUIRED_KEYS:
             cfg.setdefault(k, False if k == "use_mixed_precision" else 0)
+        logger.info(
+            "추천 설정: batch_size=%d, model_dim=%d, ff_dim=%d, enc_layers=%d, dec_layers=%d",
+            cfg["batch_size"],
+            cfg["model_dim"],
+            cfg["ff_dim"],
+            cfg["num_encoder_layers"],
+            cfg["num_decoder_layers"],
+        )
         return cfg

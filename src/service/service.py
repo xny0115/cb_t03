@@ -143,7 +143,12 @@ class ChatbotService:
 
     def auto_tune(self) -> Dict[str, Any]:
         """Apply AutoTuner suggestions to config."""
-        cfg = AutoTuner(len(self.dataset)).suggest()
+        size = len(self.dataset)
+        tokens = sum(
+            len(s.instruction) + len(s.input) + len(s.output)
+            for s in self.dataset
+        )
+        cfg = AutoTuner(size, tokens).suggest()
         valid, msg = validate_config(cfg)
         if not valid:
             return {"success": False, "msg": msg, "data": None}
