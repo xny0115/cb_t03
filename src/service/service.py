@@ -1,9 +1,11 @@
 from __future__ import annotations
 
 from pathlib import Path
-from typing import Any, Dict, Tuple
+from typing import Any, Dict, Tuple, List
 import logging
 import os
+import hashlib
+import re
 import torch
 
 from ..data.loader import (
@@ -27,6 +29,24 @@ from ..training.simple import train as train_transformer, pretrain as train_pret
 from ..utils.tokenizer import CharTokenizer
 from ..utils.validator import validate_config
 from ..tuning.auto import AutoTuner
+
+
+def _sha256(path: Path) -> str:
+    h = hashlib.sha256()
+    with open(path, "rb") as f:
+        for chunk in iter(lambda: f.read(8192), b""):
+            h.update(chunk)
+    return h.hexdigest()
+
+
+def _parse_epoch_metrics(fp: Path) -> List[str]:
+    if not fp.exists():
+        return []
+    lines = []
+    for line in fp.read_text(encoding="utf-8").splitlines():
+        if "Epoch" in line and "Loss" in line:
+            lines.append(line.strip())
+    return lines
 
 
 class ChatbotService:
@@ -68,6 +88,13 @@ class ChatbotService:
         if device == "cpu":
             logger.warning("CUDA not available, training on CPU")
         logger.info("training mode=%s, device=%s", mode, device)
+        log_dir = Path("logs")
+        prev_files = sorted(log_dir.glob("*.log"))
+        prev_metrics = _parse_epoch_metrics(prev_files[-1]) if prev_files else []
+        old_size = old_hash = None
+        if mode == "pretrain" and self.model_path.exists():
+            old_size = self.model_path.stat().st_size
+            old_hash = _sha256(self.model_path)
         if mode == "pretrain":
             from ..data.subtitle_cleaner import clean_subtitle_files
             clean_subtitle_files(Path("."), self.pretrain_dir)
@@ -95,6 +122,25 @@ class ChatbotService:
             self.model_path = self.model_dir / "finetune.pth"
             model, tokenizer = train_transformer(data, self._config)
         save_transformer(model, tokenizer.stoi, self.model_path)
+        if mode == "pretrain" and old_size is not None and old_hash is not None:
+            new_size = self.model_path.stat().st_size
+            new_hash = _sha256(self.model_path)
+            logger.debug("old: %.2fMB / hash: %s", old_size / 1_048_576, old_hash[:6])
+            logger.debug("new: %.2fMB / hash: %s", new_size / 1_048_576, new_hash[:6])
+            if old_size == new_size and old_hash == new_hash:
+                logger.warning("\u26a0 저장 내용 무변화 → 학습 미반영 가능성")
+            loaded, vocab = load_transformer(self.model_path)
+            tok = CharTokenizer.from_vocab(vocab)
+            ids = tok.encode("나는 밥을 먹는다", True)
+            src = torch.tensor(ids, dtype=torch.long).unsqueeze(0)
+            out_ids = loaded.generate(src, max_new_tokens=len(ids), eos_id=tok.stoi["<eos>"])
+            text = tok.decode(out_ids.squeeze().tolist()[1:])
+            if text != "나는 밥을 먹는다":
+                logger.warning("pretrain inference mismatch: %s", text)
+        new_files = sorted(log_dir.glob("*.log"))
+        new_metrics = _parse_epoch_metrics(new_files[-1]) if new_files else []
+        if prev_metrics and new_metrics == prev_metrics:
+            logger.warning("training log duplicated from previous run")
         self.dataset = data if mode == "pretrain" else data
         self.model = model
         self.tokenizer = tokenizer
