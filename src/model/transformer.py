@@ -53,6 +53,7 @@ class MultiHeadAttention(nn.Module):
         mask: torch.Tensor | None = None,
         key_padding_mask: torch.Tensor | None = None,
     ) -> torch.Tensor:
+        """Scaled-dot attention with robust masking."""
         bsz, q_len, _ = q.size()
         k_len = k.size(1)
         q = self.w_q(q).view(bsz, q_len, self.num_heads, self.d_head).transpose(1, 2)
@@ -60,16 +61,24 @@ class MultiHeadAttention(nn.Module):
         v = self.w_v(v).view(bsz, k_len, self.num_heads, self.d_head).transpose(1, 2)
         attn_mask = None
         if mask is not None:
-            if mask.dtype != torch.bool:
-                mask = mask.to(torch.bool)
+            if mask.dtype == torch.bool:
+                mask = mask.to(dtype=q.dtype).masked_fill(mask, -1e4)
+            full_masked = mask.eq(-1e4).all(-1, keepdim=True)
+            if full_masked.any():
+                mask = mask.masked_fill(full_masked.expand_as(mask), 0.0)
             attn_mask = mask
             if attn_mask.dim() == 3:
                 attn_mask = attn_mask.unsqueeze(1)
         if key_padding_mask is not None:
-            if key_padding_mask.dtype != torch.bool:
-                key_padding_mask = key_padding_mask.to(torch.bool)
-            pad = key_padding_mask[:, None, None, :].expand(bsz, self.num_heads, q_len, k_len)
-            attn_mask = pad if attn_mask is None else attn_mask | pad
+            if key_padding_mask.dtype == torch.bool:
+                pad = key_padding_mask.to(dtype=q.dtype).masked_fill(key_padding_mask, -1e4)
+            else:
+                pad = key_padding_mask
+            pad = pad[:, None, None, :].expand(bsz, self.num_heads, q_len, k_len)
+            full_pad = pad.eq(-1e4).all(-1, keepdim=True)
+            if full_pad.any():
+                pad = pad.masked_fill(full_pad.expand_as(pad), 0.0)
+            attn_mask = pad if attn_mask is None else torch.minimum(attn_mask, pad)
         attn = F.scaled_dot_product_attention(
             q,
             k,
