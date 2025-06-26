@@ -19,11 +19,11 @@ from ..model.transformer import Seq2SeqTransformer, save_transformer
 from ..utils.tokenizer import CharTokenizer
 from .helpers import PairDataset, timed_collate, log_dataset_stats
 
+logger = logging.getLogger(__name__)
 
 def _prepare_dataset(
     samples: List[InstructionSample], is_pretrain: bool
 ) -> Tuple[PairDataset, CharTokenizer, int]:
-    logger = logging.getLogger(__name__)
     if is_pretrain:
         texts = [s.output for s in samples]
     else:
@@ -162,7 +162,6 @@ def _train_epoch(
     duration = time.perf_counter() - start
     # average loss per batch
     avg_loss = total_loss / max(step_count, 1)
-    logger = logging.getLogger(__name__)
     logger.info("batches skipped (too short): %d", skipped_batch)
     logger.info("batches skipped (pad-only): %d", skipped_pad)
     return avg_loss, duration
@@ -200,7 +199,6 @@ def train(
     save_dir: str | None = None,
 ) -> Tuple[Seq2SeqTransformer, CharTokenizer]:
     """Train a Seq2SeqTransformer on given samples."""
-    logger = logging.getLogger(__name__)
     torch.autograd.set_detect_anomaly(True)
     if platform.system() == "Windows":
         warnings.filterwarnings(
