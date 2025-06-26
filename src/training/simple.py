@@ -113,10 +113,10 @@ def _train_epoch(loader: DataLoader, model: Seq2SeqTransformer, crit: nn.Module,
             loss.backward()
             opt.step()
         total_loss += loss.item()
-        if i >= 2:
-            break
     duration = time.perf_counter() - start
-    return total_loss / len(loader), duration
+    # average loss per batch
+    avg_loss = total_loss / (i + 1)
+    return avg_loss, duration
 
 
 def train(samples: List[InstructionSample], cfg: dict[str, Any] | None = None, *, is_pretrain: bool = False) -> Tuple[Seq2SeqTransformer, CharTokenizer]:
