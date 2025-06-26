@@ -11,7 +11,7 @@ from pathlib import Path
 
 import torch
 from torch import nn, optim
-from torch.utils.data import DataLoader
+from torch.utils.data import DataLoader, random_split
 
 from ..data.loader import InstructionSample
 from ..model.transformer import Seq2SeqTransformer, save_transformer
@@ -19,7 +19,9 @@ from ..utils.tokenizer import CharTokenizer
 from .helpers import PairDataset, timed_collate, log_dataset_stats
 
 
-def _prepare_dataset(samples: List[InstructionSample], is_pretrain: bool) -> Tuple[PairDataset, CharTokenizer, int]:
+def _prepare_dataset(
+    samples: List[InstructionSample], is_pretrain: bool
+) -> Tuple[PairDataset, CharTokenizer, int]:
     logger = logging.getLogger(__name__)
     if is_pretrain:
         texts = [s.output for s in samples]
@@ -62,11 +64,17 @@ def _create_loader(dataset: PairDataset, cfg: Dict[str, Any]) -> DataLoader:
         num_workers=num_workers,
         pin_memory=pin_memory,
     )
-    logging.getLogger(__name__).debug("dataloader build time: %.2fs", time.perf_counter() - start)
+    logging.getLogger(__name__).debug(
+        "dataloader build time: %.2fs", time.perf_counter() - start
+    )
     return loader
 
 
-def _init_model(tokenizer: CharTokenizer, cfg: Dict[str, Any]) -> Tuple[Seq2SeqTransformer, nn.Module, optim.Optimizer, torch.cuda.amp.GradScaler, str, bool]:
+def _init_model(
+    tokenizer: CharTokenizer, cfg: Dict[str, Any]
+) -> Tuple[
+    Seq2SeqTransformer, nn.Module, optim.Optimizer, torch.cuda.amp.GradScaler, str, bool
+]:
     model_dim = int(cfg.get("model_dim", 128))
     num_heads = int(cfg.get("num_heads", 4))
     enc_layers = int(cfg.get("num_encoder_layers", 2))
@@ -94,7 +102,17 @@ def _init_model(tokenizer: CharTokenizer, cfg: Dict[str, Any]) -> Tuple[Seq2SeqT
     return model, crit, opt, scaler, device, use_amp
 
 
-def _train_epoch(loader: DataLoader, model: Seq2SeqTransformer, crit: nn.Module, opt: optim.Optimizer, scaler: torch.cuda.amp.GradScaler, tokenizer: CharTokenizer, device: str, use_amp: bool) -> Tuple[float, float]:
+def _train_epoch(
+    loader: DataLoader,
+    model: Seq2SeqTransformer,
+    crit: nn.Module,
+    opt: optim.Optimizer,
+    scaler: torch.cuda.amp.GradScaler,
+    scheduler: optim.lr_scheduler._LRScheduler,
+    tokenizer: CharTokenizer,
+    device: str,
+    use_amp: bool,
+) -> Tuple[float, float]:
     model.train()
     total_loss = 0.0
     start = time.perf_counter()
@@ -102,20 +120,48 @@ def _train_epoch(loader: DataLoader, model: Seq2SeqTransformer, crit: nn.Module,
         src, tgt = src.to(device), tgt.to(device)
         opt.zero_grad()
         with torch.cuda.amp.autocast(enabled=use_amp):
-            out = model(src, tgt[:, :-1])
+            out = model(src, tgt[:, :-1], tokenizer.pad_id)
             loss = crit(out.reshape(-1, tokenizer.vocab_size), tgt[:, 1:].reshape(-1))
+        if not torch.isfinite(loss):
+            raise RuntimeError(f"Non-finite loss at step {i}: {loss.item()}")
         if use_amp:
             scaler.scale(loss).backward()
+            scaler.unscale_(opt)
+            torch.nn.utils.clip_grad_norm_(model.parameters(), 1.0)
             scaler.step(opt)
             scaler.update()
         else:
             loss.backward()
+            torch.nn.utils.clip_grad_norm_(model.parameters(), 1.0)
             opt.step()
+        scheduler.step()
         total_loss += loss.item()
     duration = time.perf_counter() - start
     # average loss per batch
     avg_loss = total_loss / (i + 1)
     return avg_loss, duration
+
+
+def _eval_epoch(
+    loader: DataLoader,
+    model: Seq2SeqTransformer,
+    crit: nn.Module,
+    tokenizer: CharTokenizer,
+    device: str,
+    use_amp: bool,
+) -> float:
+    model.eval()
+    total_loss = 0.0
+    with torch.no_grad():
+        for i, (src, tgt) in enumerate(loader):
+            src, tgt = src.to(device), tgt.to(device)
+            with torch.cuda.amp.autocast(enabled=use_amp):
+                out = model(src, tgt[:, :-1], tokenizer.pad_id)
+                loss = crit(
+                    out.reshape(-1, tokenizer.vocab_size), tgt[:, 1:].reshape(-1)
+                )
+            total_loss += loss.item()
+    return total_loss / (i + 1)
 
 
 def train(
@@ -128,22 +174,39 @@ def train(
     """Train a Seq2SeqTransformer on given samples."""
     logger = logging.getLogger(__name__)
     if platform.system() == "Windows":
-        warnings.filterwarnings("ignore", message="Torch was not compiled with flash attention", category=UserWarning)
+        warnings.filterwarnings(
+            "ignore",
+            message="Torch was not compiled with flash attention",
+            category=UserWarning,
+        )
     cfg = cfg or {}
     epochs = int(cfg.get("num_epochs", 5))
 
     dataset, tokenizer, line_count = _prepare_dataset(samples, is_pretrain)
-    loader = _create_loader(dataset, cfg)
+    train_size = int(0.95 * len(dataset))
+    val_size = len(dataset) - train_size
+    train_set, val_set = random_split(dataset, [train_size, val_size])
+    loader = _create_loader(train_set, cfg)
+    val_loader = _create_loader(val_set, cfg)
     model, crit, opt, scaler, device, use_amp = _init_model(tokenizer, cfg)
+    scheduler = torch.optim.lr_scheduler.CosineAnnealingLR(opt, T_max=epochs)
 
     logger.info("Training start: epochs=%d, samples=%d", epochs, line_count)
     param_rates: List[float] = []
-    snapshot = lambda m: {k: v.detach().clone().cpu() for k, v in m.state_dict().items()}
+    snapshot = lambda m: {
+        k: v.detach().clone().cpu() for k, v in m.state_dict().items()
+    }
     prev_state = snapshot(model)
     prev_ratio = None
     train_start = time.perf_counter()
+    best = float("inf")
+    patience, counter = 3, 0
+    best_state = snapshot(model)
     for epoch in range(epochs):
-        loss, duration = _train_epoch(loader, model, crit, opt, scaler, tokenizer, device, use_amp)
+        loss, duration = _train_epoch(
+            loader, model, crit, opt, scaler, scheduler, tokenizer, device, use_amp
+        )
+        val_loss = _eval_epoch(val_loader, model, crit, tokenizer, device, use_amp)
         ratio = duration / max(line_count, 1)
         if prev_ratio is not None:
             ratio_drop = prev_ratio - ratio
@@ -166,10 +229,30 @@ def train(
         changed = sum(not torch.equal(curr[k], prev_state[k]) for k in curr)
         rate = changed / len(curr) * 100
         if len(curr) - changed >= len(curr) * 0.5:
-            logger.warning("epoch %d: %d/%d params unchanged", epoch + 1, len(curr) - changed, len(curr))
+            logger.warning(
+                "epoch %d: %d/%d params unchanged",
+                epoch + 1,
+                len(curr) - changed,
+                len(curr),
+            )
         param_rates.append(rate)
         prev_state = snapshot(model)
-        logger.info("Epoch %d/%d | Loss: %.3f | Time: %.2fs", epoch + 1, epochs, loss, duration)
+        logger.info(
+            "Epoch %d/%d | Loss: %.3f | Val: %.3f | Time: %.2fs",
+            epoch + 1,
+            epochs,
+            loss,
+            val_loss,
+            duration,
+        )
+        if val_loss < best * 0.995:
+            best, counter = val_loss, 0
+            best_state = snapshot(model)
+        else:
+            counter += 1
+            if counter >= patience:
+                logger.info("Early stopping at epoch %d", epoch + 1)
+                break
 
     logger.info("Training complete in %.2fs", time.perf_counter() - train_start)
     for idx, r in enumerate(param_rates, 1):
@@ -178,6 +261,8 @@ def train(
         save_path = Path(save_dir)
         save_path.mkdir(parents=True, exist_ok=True)
         model_path = save_path / "model.pth"
+        if counter >= patience:
+            model.load_state_dict(best_state)
         save_transformer(model, tokenizer.stoi, model_path)
         tokenizer.save(save_path / "tokenizer.json")
         logger.info("Model & tokenizer saved to %s", save_dir)

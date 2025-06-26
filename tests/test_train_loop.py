@@ -14,7 +14,9 @@ class DummyModel(nn.Module):
         super().__init__()
         self.vocab_size = vocab_size
 
-    def forward(self, src: torch.Tensor, tgt: torch.Tensor) -> torch.Tensor:
+    def forward(
+        self, src: torch.Tensor, tgt: torch.Tensor, pad_id: int = 0
+    ) -> torch.Tensor:
         batch, seq = tgt.shape
         return torch.zeros(batch, seq, self.vocab_size, requires_grad=True)
 
@@ -32,16 +34,19 @@ def test_batch_consumption() -> None:
         (torch.zeros(1, 1, dtype=torch.long), torch.zeros(1, 2, dtype=torch.long))
         for _ in range(5)
     ]
-    tokenizer = type("Tok", (), {"vocab_size": 4})()
+    tokenizer = type("Tok", (), {"vocab_size": 4, "pad_id": 0})()
+    scheduler = torch.optim.lr_scheduler.CosineAnnealingLR(
+        torch.optim.Adam([torch.tensor(1.0, requires_grad=True)]), T_max=1
+    )
     loss, _ = _train_epoch(
         dummy_loader,
         DummyModel(),
         nn.CrossEntropyLoss(),
         DummyOptim(),
         torch.cuda.amp.GradScaler(enabled=False),
+        scheduler,
         tokenizer,
         "cpu",
         False,
     )
     assert loss is not None
-

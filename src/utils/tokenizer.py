@@ -8,10 +8,12 @@ import json
 class CharTokenizer:
     """단순 문자 단위 토크나이저."""
 
+    SPECIALS = ["<pad>", "<bos>", "<eos>", "<unk>"]
+
     def __init__(self, texts: List[str]) -> None:
         chars = sorted({ch for t in texts for ch in t})
-        self.stoi = {"<pad>": 0, "<bos>": 1, "<eos>": 2}
-        for i, ch in enumerate(chars, start=3):
+        self.stoi = {tok: i for i, tok in enumerate(self.SPECIALS)}
+        for i, ch in enumerate(chars, start=len(self.SPECIALS)):
             self.stoi[ch] = i
         self.itos = {i: ch for ch, i in self.stoi.items()}
 
@@ -23,13 +25,15 @@ class CharTokenizer:
         return obj
 
     def encode(self, text: str, add_special: bool = False) -> List[int]:
-        ids = [self.stoi.get(ch, 3) for ch in text]
+        """텍스트를 id 시퀀스로 변환한다. 미등록 문자는 ``<unk>``으로 매핑한다."""
+        unk = self.stoi["<unk>"]
+        ids = [self.stoi.get(ch, unk) for ch in text]
         if add_special:
             return [self.stoi["<bos>"]] + ids + [self.stoi["<eos>"]]
         return ids
 
     def decode(self, ids: List[int]) -> str:
-        return "".join(self.itos.get(i, "") for i in ids if i >= 3)
+        return "".join(self.itos.get(i, "") for i in ids if i >= len(self.SPECIALS))
 
     def save(self, path: str | Path) -> None:
         """토크나이저 vocabulary를 JSON 파일로 저장한다."""
@@ -39,3 +43,8 @@ class CharTokenizer:
     @property
     def vocab_size(self) -> int:
         return len(self.stoi)
+
+    @property
+    def pad_id(self) -> int:
+        """패딩 토큰의 ID를 반환한다."""
+        return self.stoi["<pad>"]
