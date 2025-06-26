@@ -1,7 +1,9 @@
 """Custom encoder-decoder Transformer implementation."""
+
 from __future__ import annotations
 
 import warnings
+
 warnings.filterwarnings(
     "ignore",
     message=".*flash attention.*",
@@ -35,14 +37,26 @@ class MultiHeadAttention(nn.Module):
         self.w_o = nn.Linear(d_model, d_model)
         self.dropout = nn.Dropout(dropout)
 
-    def forward(self, q: torch.Tensor, k: torch.Tensor, v: torch.Tensor, mask: torch.Tensor | None = None) -> torch.Tensor:
+    def forward(
+        self,
+        q: torch.Tensor,
+        k: torch.Tensor,
+        v: torch.Tensor,
+        mask: torch.Tensor | None = None,
+    ) -> torch.Tensor:
         bsz, q_len, _ = q.size()
         k_len = k.size(1)
         q = self.w_q(q).view(bsz, q_len, self.num_heads, self.d_head).transpose(1, 2)
         k = self.w_k(k).view(bsz, k_len, self.num_heads, self.d_head).transpose(1, 2)
         v = self.w_v(v).view(bsz, k_len, self.num_heads, self.d_head).transpose(1, 2)
-        attn = F.scaled_dot_product_attention(q, k, v, attn_mask=mask, dropout_p=self.dropout.p if self.training else 0.0)
-        attn = attn.transpose(1, 2).contiguous().view(bsz, q_len, self.num_heads * self.d_head)
+        attn = F.scaled_dot_product_attention(
+            q, k, v, attn_mask=mask, dropout_p=self.dropout.p if self.training else 0.0
+        )
+        attn = (
+            attn.transpose(1, 2)
+            .contiguous()
+            .view(bsz, q_len, self.num_heads * self.d_head)
+        )
         return self.w_o(attn)
 
 
@@ -64,7 +78,9 @@ class FeedForward(nn.Module):
 
 
 class EncoderLayer(nn.Module):
-    def __init__(self, d_model: int, num_heads: int, dim_ff: int, dropout: float) -> None:
+    def __init__(
+        self, d_model: int, num_heads: int, dim_ff: int, dropout: float
+    ) -> None:
         super().__init__()
         self.self_attn = MultiHeadAttention(d_model, num_heads, dropout)
         self.ff = FeedForward(d_model, dim_ff, dropout)
@@ -72,7 +88,9 @@ class EncoderLayer(nn.Module):
         self.norm2 = nn.LayerNorm(d_model)
         self.dropout = nn.Dropout(dropout)
 
-    def forward(self, x: torch.Tensor, mask: torch.Tensor | None = None) -> torch.Tensor:
+    def forward(
+        self, x: torch.Tensor, mask: torch.Tensor | None = None
+    ) -> torch.Tensor:
         attn = self.self_attn(x, x, x, mask)
         x = x + self.dropout(attn)
         x = self.norm1(x)
@@ -81,7 +99,9 @@ class EncoderLayer(nn.Module):
 
 
 class DecoderLayer(nn.Module):
-    def __init__(self, d_model: int, num_heads: int, dim_ff: int, dropout: float) -> None:
+    def __init__(
+        self, d_model: int, num_heads: int, dim_ff: int, dropout: float
+    ) -> None:
         super().__init__()
         self.self_attn = MultiHeadAttention(d_model, num_heads, dropout)
         self.cross_attn = MultiHeadAttention(d_model, num_heads, dropout)
@@ -113,7 +133,9 @@ class PositionalEncoding(nn.Module):
         super().__init__()
         self.dropout = nn.Dropout(dropout)
         position = torch.arange(0, max_len).unsqueeze(1)
-        div_term = torch.exp(torch.arange(0, d_model, 2) * (-math.log(10000.0) / d_model))
+        div_term = torch.exp(
+            torch.arange(0, d_model, 2) * (-math.log(10000.0) / d_model)
+        )
         pe = torch.zeros(max_len, d_model)
         pe[:, 0::2] = torch.sin(position * div_term)
         pe[:, 1::2] = torch.cos(position * div_term)
@@ -144,31 +166,71 @@ class Seq2SeqTransformer(nn.Module):
         self.pos_encoder = PositionalEncoding(embed_dim, dropout)
         self.pos_decoder = PositionalEncoding(embed_dim, dropout)
         self.encoder = nn.ModuleList(
-            [EncoderLayer(embed_dim, num_heads, dim_ff, dropout) for _ in range(num_encoder_layers)]
+            [
+                EncoderLayer(embed_dim, num_heads, dim_ff, dropout)
+                for _ in range(num_encoder_layers)
+            ]
         )
         self.decoder = nn.ModuleList(
-            [DecoderLayer(embed_dim, num_heads, dim_ff, dropout) for _ in range(num_decoder_layers)]
+            [
+                DecoderLayer(embed_dim, num_heads, dim_ff, dropout)
+                for _ in range(num_decoder_layers)
+            ]
         )
         self.fc_out = nn.Linear(embed_dim, vocab_size)
 
-    def forward(self, src: torch.Tensor, tgt: torch.Tensor) -> torch.Tensor:
-        src = self.pos_encoder(self.embed(src))
-        tgt = self.pos_decoder(self.embed(tgt))
-        memory = src
+    def forward(
+        self, src: torch.Tensor, tgt: torch.Tensor, pad_id: int = 0
+    ) -> torch.Tensor:
+        """Transformer forward pass with padding & future masks."""
+        src_emb = self.pos_encoder(
+            self.embed(src) * math.sqrt(self.embed.embedding_dim)
+        )
+        tgt_emb = self.pos_decoder(
+            self.embed(tgt) * math.sqrt(self.embed.embedding_dim)
+        )
+
+        bsz, src_len = src.size()
+        bsz, tgt_len = tgt.size()
+
+        src_pad = src.eq(pad_id)
+        tgt_pad = tgt.eq(pad_id)
+
+        num_heads = self.encoder[0].self_attn.num_heads
+        src_mask = src_pad.unsqueeze(1).expand(-1, src_len, src_len)
+        src_mask = src_mask.repeat_interleave(num_heads, dim=0)
+
+        future = torch.triu(torch.ones(tgt_len, tgt_len, device=tgt.device), 1).bool()
+        tgt_mask = future.unsqueeze(0).expand(bsz, tgt_len, tgt_len)
+        if tgt_pad.any():
+            pad_m = tgt_pad.unsqueeze(1).expand(-1, tgt_len, tgt_len)
+            tgt_mask = tgt_mask | pad_m
+        tgt_mask = tgt_mask.repeat_interleave(num_heads, dim=0)
+
+        mem_mask = src_pad.unsqueeze(1).expand(-1, tgt_len, src_len)
+        mem_mask = mem_mask.repeat_interleave(num_heads, dim=0)
+
+        memory = src_emb
         for layer in self.encoder:
-            memory = layer(memory)
-        out = tgt
+            memory = layer(memory, src_mask)
+        out = tgt_emb
         for layer in self.decoder:
-            out = layer(out, memory)
+            out = layer(out, memory, tgt_mask, mem_mask)
         return self.fc_out(out)
 
     @torch.no_grad()
-    def generate(self, src: torch.Tensor, max_new_tokens: int = 64, eos_id: int = 2) -> torch.Tensor:
+    def generate(
+        self,
+        src: torch.Tensor,
+        max_new_tokens: int = 64,
+        eos_id: int = 2,
+        pad_id: int = 0,
+    ) -> torch.Tensor:
         self.eval()
         device = src.device
         ys = torch.tensor([[1]], device=device)
         for _ in range(max_new_tokens):
-            out = self(src, ys)[:, -1, :]
+            out = self(src, ys, pad_id=pad_id)[:, -1, :]
             prob = torch.softmax(out, dim=-1)
             next_id = torch.multinomial(prob, 1)
             ys = torch.cat([ys, next_id], dim=1)
@@ -177,7 +239,9 @@ class Seq2SeqTransformer(nn.Module):
         return ys
 
 
-def save_transformer(model: Seq2SeqTransformer, vocab: Dict[str, int], path: Path) -> None:
+def save_transformer(
+    model: Seq2SeqTransformer, vocab: Dict[str, int], path: Path
+) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     meta = {
         "state": model.state_dict(),

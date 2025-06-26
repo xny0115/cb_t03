@@ -97,6 +97,7 @@ class ChatbotService:
             old_hash = _sha256(self.model_path)
         if mode == "pretrain":
             from ..data.subtitle_cleaner import clean_subtitle_files
+
             clean_subtitle_files(Path("."), self.pretrain_dir)
             stats = get_text_stats(self.pretrain_dir)
             logger.debug(
@@ -133,7 +134,12 @@ class ChatbotService:
             tok = CharTokenizer.from_vocab(vocab)
             ids = tok.encode("나는 밥을 먹는다", True)
             src = torch.tensor(ids, dtype=torch.long).unsqueeze(0)
-            out_ids = loaded.generate(src, max_new_tokens=len(ids), eos_id=tok.stoi["<eos>"])
+            out_ids = loaded.generate(
+                src,
+                max_new_tokens=len(ids),
+                eos_id=tok.stoi["<eos>"],
+                pad_id=tok.stoi["<pad>"],
+            )
             text = tok.decode(out_ids.squeeze().tolist()[1:])
             if text != "나는 밥을 먹는다":
                 logger.warning("pretrain inference mismatch: %s", text)
@@ -189,7 +195,12 @@ class ChatbotService:
             ids = self.tokenizer.encode(text, True)
             src = torch.tensor(ids, dtype=torch.long).unsqueeze(0)
             src = src.to(next(self.model.parameters()).device)
-            out_ids = self.model.generate(src, max_new_tokens=50, eos_id=self.tokenizer.stoi["<eos>"])
+            out_ids = self.model.generate(
+                src,
+                max_new_tokens=50,
+                eos_id=self.tokenizer.stoi["<eos>"],
+                pad_id=self.tokenizer.stoi["<pad>"],
+            )
             out_text = self.tokenizer.decode(out_ids.squeeze().tolist()[1:])
             msg = "ok" if out_text else "no_answer"
             return {"success": True, "msg": msg, "data": out_text}
