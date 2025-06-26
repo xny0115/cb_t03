@@ -1,4 +1,10 @@
 # 변경 이력
+## v1.46
+- `cudnn.benchmark`를 전역에서 활성화해 반복 커널을 고정.
+- DataLoader 기본 `num_workers`를 4로 조정하고 `persistent_workers`를 사용.
+- 검증 로더는 `drop_last=False`로 유지하도록 수정.
+- epoch 비율 DEBUG 로그를 제거해 I/O를 최소화.
+- `config/default.yaml` 파일을 추가해 기본값을 명시.
 ## v1.45
 - AMP 사용이 안정화되어 기본 설정에서 True로 전환.
 - 기본 batch_size를 48로 확대하고 DataLoader가 마지막 미만 배치를 버리도록 수정.

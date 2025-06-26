@@ -8,6 +8,9 @@ import warnings
 import platform
 import os
 from pathlib import Path
+import torch.backends.cudnn as cudnn
+
+cudnn.benchmark = True
 
 import torch
 from torch import nn, optim
@@ -52,9 +55,11 @@ def _prepare_dataset(
     return PairDataset(pairs), tokenizer, len(samples)
 
 
-def _create_loader(dataset: PairDataset, cfg: Dict[str, Any]) -> DataLoader:
+def _create_loader(
+    dataset: PairDataset, cfg: Dict[str, Any], *, drop_last: bool = True
+) -> DataLoader:
     batch_size = int(cfg.get("batch_size", 32))
-    num_workers = int(cfg.get("num_workers", min(max(os.cpu_count() // 2, 2), 8)))
+    num_workers = int(cfg.get("num_workers", 4))
     pin_memory = bool(cfg.get("pin_memory", True))
     start = time.perf_counter()
     loader = DataLoader(
@@ -64,7 +69,8 @@ def _create_loader(dataset: PairDataset, cfg: Dict[str, Any]) -> DataLoader:
         collate_fn=timed_collate,
         num_workers=num_workers,
         pin_memory=pin_memory,
-        drop_last=True,
+        drop_last=drop_last,
+        persistent_workers=True,
     )
     logging.getLogger(__name__).debug(
         "dataloader build time: %.2fs", time.perf_counter() - start
@@ -95,7 +101,6 @@ def _init_model(
     device = torch.device("cuda")
     if not torch.cuda.is_available():
         raise RuntimeError("CUDA unavailable. GPU 환경이 필요합니다.")
-    torch.backends.cudnn.benchmark = True
     model.to(device)
     crit = nn.CrossEntropyLoss(ignore_index=0)
     opt = optim.Adam(model.parameters(), lr=float(cfg.get("learning_rate", 1e-3)))
@@ -219,8 +224,8 @@ def train(
     train_size = int(0.95 * len(dataset))
     val_size = len(dataset) - train_size
     train_set, val_set = random_split(dataset, [train_size, val_size])
-    loader = _create_loader(train_set, cfg)
-    val_loader = _create_loader(val_set, cfg)
+    loader = _create_loader(train_set, cfg, drop_last=True)
+    val_loader = _create_loader(val_set, cfg, drop_last=False)
     model, crit, opt, scaler, device, amp_enabled = _init_model(tokenizer, cfg)
     scheduler = torch.optim.lr_scheduler.CosineAnnealingLR(opt, T_max=epochs)
 
@@ -244,12 +249,7 @@ def train(
         if prev_ratio is not None:
             ratio_drop = prev_ratio - ratio
             if abs(ratio_drop) < 0.05:
-                logger.debug(
-                    "epoch %d time/line ratio changed: %.4f -> %.4f",
-                    epoch + 1,
-                    prev_ratio,
-                    ratio,
-                )
+                pass  # DEBUG 출력 생략 (성능)
             else:
                 logger.warning(
                     "epoch %d time/line ratio dropped: %.4f -> %.4f",
