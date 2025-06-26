@@ -43,14 +43,27 @@ class MultiHeadAttention(nn.Module):
         k: torch.Tensor,
         v: torch.Tensor,
         mask: torch.Tensor | None = None,
+        key_padding_mask: torch.Tensor | None = None,
     ) -> torch.Tensor:
         bsz, q_len, _ = q.size()
         k_len = k.size(1)
         q = self.w_q(q).view(bsz, q_len, self.num_heads, self.d_head).transpose(1, 2)
         k = self.w_k(k).view(bsz, k_len, self.num_heads, self.d_head).transpose(1, 2)
         v = self.w_v(v).view(bsz, k_len, self.num_heads, self.d_head).transpose(1, 2)
+        attn_mask = None
+        if mask is not None:
+            attn_mask = mask
+            if attn_mask.dim() == 3:
+                attn_mask = attn_mask.unsqueeze(1)
+        if key_padding_mask is not None:
+            pad = key_padding_mask[:, None, None, :].expand(bsz, self.num_heads, q_len, k_len)
+            attn_mask = pad if attn_mask is None else attn_mask | pad
         attn = F.scaled_dot_product_attention(
-            q, k, v, attn_mask=mask, dropout_p=self.dropout.p if self.training else 0.0
+            q,
+            k,
+            v,
+            attn_mask=attn_mask,
+            dropout_p=self.dropout.p if self.training else 0.0,
         )
         attn = (
             attn.transpose(1, 2)
@@ -89,9 +102,11 @@ class EncoderLayer(nn.Module):
         self.dropout = nn.Dropout(dropout)
 
     def forward(
-        self, x: torch.Tensor, mask: torch.Tensor | None = None
+        self,
+        x: torch.Tensor,
+        pad_mask: torch.Tensor | None = None,
     ) -> torch.Tensor:
-        attn = self.self_attn(x, x, x, mask)
+        attn = self.self_attn(x, x, x, key_padding_mask=pad_mask)
         x = x + self.dropout(attn)
         x = self.norm1(x)
         x = x + self.ff(x)
@@ -197,22 +212,18 @@ class Seq2SeqTransformer(nn.Module):
         tgt_pad = tgt.eq(pad_id)
 
         num_heads = self.encoder[0].self_attn.num_heads
-        src_mask = src_pad.unsqueeze(1).expand(-1, src_len, src_len)
-        src_mask = src_mask.repeat_interleave(num_heads, dim=0)
-
         future = torch.triu(torch.ones(tgt_len, tgt_len, device=tgt.device), 1).bool()
-        tgt_mask = future.unsqueeze(0).expand(bsz, tgt_len, tgt_len)
+        tgt_mask = future.unsqueeze(0).unsqueeze(0).expand(bsz, num_heads, tgt_len, tgt_len)
         if tgt_pad.any():
-            pad_m = tgt_pad.unsqueeze(1).expand(-1, tgt_len, tgt_len)
+            pad_m = tgt_pad[:, None, None, :].expand(bsz, num_heads, tgt_len, tgt_len)
             tgt_mask = tgt_mask | pad_m
-        tgt_mask = tgt_mask.repeat_interleave(num_heads, dim=0)
 
-        mem_mask = src_pad.unsqueeze(1).expand(-1, tgt_len, src_len)
-        mem_mask = mem_mask.repeat_interleave(num_heads, dim=0)
+        mem_mask = src_pad[:, None, None, :].expand(bsz, num_heads, tgt_len, src_len)
+        src_key_mask = src_pad
 
         memory = src_emb
         for layer in self.encoder:
-            memory = layer(memory, src_mask)
+            memory = layer(memory, src_key_mask)
         out = tgt_emb
         for layer in self.decoder:
             out = layer(out, memory, tgt_mask, mem_mask)
