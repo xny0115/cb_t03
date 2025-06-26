@@ -91,14 +91,20 @@ def load_instruction_dataset(path: Path) -> List[InstructionSample]:
 def load_pretrain_dataset(path: Path) -> List[str]:
     """Merge all txt files under ``path`` into one dataset."""
     files = _collect_files(path, ("*.txt",))
+    logger = logging.getLogger(__name__)
     lines: List[str] = []
     seen: Set[str] = set()
+    skipped = 0
     for fp in files:
         for line in _load_text(fp):
+            if len(line) < 2:
+                skipped += 1
+                continue
             if line in seen:
                 continue
             seen.add(line)
             lines.append(line)
+    logger.info("short (<2) lines skipped: %d", skipped)
     return lines
 
 
