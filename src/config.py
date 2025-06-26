@@ -11,7 +11,7 @@ CONFIG_PATH = Path(os.environ.get("CONFIG_PATH", "configs/current.json"))
 DEFAULT_CONFIG: Dict[str, Any] = {
     "num_epochs": 20,
     "batch_size": 16,
-    "learning_rate": 1e-3,
+    "learning_rate": 2e-4,
     "dropout_ratio": 0.1,
     "warmup_steps": 0,
     "max_sequence_length": 128,
