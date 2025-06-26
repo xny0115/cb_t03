@@ -1,6 +1,8 @@
 from __future__ import annotations
 
 from typing import List
+from pathlib import Path
+import json
 
 
 class CharTokenizer:
@@ -28,6 +30,11 @@ class CharTokenizer:
 
     def decode(self, ids: List[int]) -> str:
         return "".join(self.itos.get(i, "") for i in ids if i >= 3)
+
+    def save(self, path: str | Path) -> None:
+        """토크나이저 vocabulary를 JSON 파일로 저장한다."""
+        with open(path, "w", encoding="utf-8") as f:
+            json.dump(self.stoi, f, ensure_ascii=False)
 
     @property
     def vocab_size(self) -> int:

@@ -3,8 +3,10 @@ from pathlib import Path
 
 from src.data.loader import load_instruction_dataset, load_pretrain_dataset
 from src.service.service import ChatbotService
+import pytest
 
 
+@pytest.mark.gpu
 def test_dataset_auto_merge(tmp_path: Path) -> None:
     pre = tmp_path / "pretrain"
     ft = tmp_path / "finetune"

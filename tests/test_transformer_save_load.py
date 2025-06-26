@@ -3,10 +3,12 @@ from pathlib import Path
 import torch
 
 from src.training.simple import train
+import pytest
 from src.model.transformer import save_transformer, load_transformer
 from src.data.loader import InstructionSample
 
 
+@pytest.mark.gpu
 def test_transformer_save_load(tmp_path: Path) -> None:
     samples = [InstructionSample("다음 질문에 답하세요.", "안녕", "안녕!")]
     model, tokenizer = train(samples, {"num_epochs": 1})
