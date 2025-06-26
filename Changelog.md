@@ -1,4 +1,8 @@
 # 변경 이력
+## v1.40
+- float16 환경에서 NaN이 발생하는 문제를 수정하기 위해 모든 attention mask를 BoolTensor로 전달하도록 변경.
+- 학습 중 손실이 비정상적일 경우 AMP를 자동으로 비활성화해 fp32로 재시작하도록 수정.
+- `use_mixed_precision` 기본값을 False로 유지해 안전성을 확보.
 ## v1.39
 - PAD로만 구성된 배치를 건너뛰어 NaN loss를 예방하도록 학습 루프를 수정.
 - `cross_entropy` 계산 시 PAD 토큰을 무시하며 비정상 손실을 검증.

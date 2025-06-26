@@ -20,6 +20,14 @@ import torch
 from torch import nn
 from torch.nn import functional as F
 
+
+def _make_causal_mask(size: int, device: torch.device) -> torch.Tensor:
+    """Return upper triangular causal mask."""
+    return torch.triu(
+        torch.ones(size, size, dtype=torch.bool, device=device),
+        1,
+    )
+
 logger = logging.getLogger(__name__)
 
 
@@ -52,10 +60,14 @@ class MultiHeadAttention(nn.Module):
         v = self.w_v(v).view(bsz, k_len, self.num_heads, self.d_head).transpose(1, 2)
         attn_mask = None
         if mask is not None:
+            if mask.dtype != torch.bool:
+                mask = mask.to(torch.bool)
             attn_mask = mask
             if attn_mask.dim() == 3:
                 attn_mask = attn_mask.unsqueeze(1)
         if key_padding_mask is not None:
+            if key_padding_mask.dtype != torch.bool:
+                key_padding_mask = key_padding_mask.to(torch.bool)
             pad = key_padding_mask[:, None, None, :].expand(bsz, self.num_heads, q_len, k_len)
             attn_mask = pad if attn_mask is None else attn_mask | pad
         attn = F.scaled_dot_product_attention(
@@ -211,14 +223,18 @@ class Seq2SeqTransformer(nn.Module):
         src_pad = src.eq(pad_id)
         tgt_pad = tgt.eq(pad_id)
 
+        tgt_mask = _make_causal_mask(tgt_len, tgt.device)
         num_heads = self.encoder[0].self_attn.num_heads
-        future = torch.triu(torch.ones(tgt_len, tgt_len, device=tgt.device), 1).bool()
-        tgt_mask = future.unsqueeze(0).unsqueeze(0).expand(bsz, num_heads, tgt_len, tgt_len)
+        tgt_mask = tgt_mask.unsqueeze(0).unsqueeze(0).expand(
+            bsz, num_heads, tgt_len, tgt_len
+        )
         if tgt_pad.any():
             pad_m = tgt_pad[:, None, None, :].expand(bsz, num_heads, tgt_len, tgt_len)
             tgt_mask = tgt_mask | pad_m
 
-        mem_mask = src_pad[:, None, None, :].expand(bsz, num_heads, tgt_len, src_len)
+        mem_mask = src_pad[:, None, None, :].expand(
+            bsz, num_heads, tgt_len, src_len
+        )
         src_key_mask = src_pad
 
         memory = src_emb

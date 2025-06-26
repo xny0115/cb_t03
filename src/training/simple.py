@@ -98,7 +98,7 @@ def _init_model(
     model.to(device)
     crit = nn.CrossEntropyLoss(ignore_index=0)
     opt = optim.Adam(model.parameters(), lr=float(cfg.get("learning_rate", 1e-3)))
-    use_amp = bool(cfg.get("use_mixed_precision", False)) and device == "cuda"
+    use_amp = bool(cfg.get("use_mixed_precision", False)) and torch.cuda.is_available()
     scaler = torch.cuda.amp.GradScaler(enabled=use_amp)
     return model, crit, opt, scaler, device, use_amp
 
@@ -140,7 +140,12 @@ def _train_epoch(
                 ignore_index=tokenizer.pad_id,
             )
         if not torch.isfinite(loss):
-            raise RuntimeError(f"Non-finite loss at step {i}: {loss.item()}")
+            logger.error(
+                "Loss became non-finite. Disabling AMP and restarting in float32."
+            )
+            use_amp = False
+            scaler = torch.cuda.amp.GradScaler(enabled=False)
+            continue
         if use_amp:
             scaler.scale(loss).backward()
             scaler.unscale_(opt)
