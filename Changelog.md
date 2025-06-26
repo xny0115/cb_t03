@@ -1,4 +1,8 @@
 # 변경 이력
+## v1.41
+- `src/training/simple.py`에서 로거 변수를 함수 안에서 재정의해 `UnboundLocalError`가 발생하던 문제를 수정.
+- 모듈 상단에 전역 `logger`를 선언해 모든 함수에서 동일한 로거를 사용하도록 통일.
+
 ## v1.40
 - float16 환경에서 NaN이 발생하는 문제를 수정하기 위해 모든 attention mask를 BoolTensor로 전달하도록 변경.
 - 학습 중 손실이 비정상적일 경우 AMP를 자동으로 비활성화해 fp32로 재시작하도록 수정.
