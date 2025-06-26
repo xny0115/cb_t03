@@ -1,4 +1,7 @@
 # 변경 이력
+## v1.42
+- run.py에서 `pretrain` 모드를 CLI 옵션으로 추가해 GUI와 동일하게 사용 가능하게 수정.
+- 선택한 모드에 따라 `start_training("pretrain")`를 호출하도록 분기 처리.
 ## v1.41
 - `src/training/simple.py`에서 로거 변수를 함수 안에서 재정의해 `UnboundLocalError`가 발생하던 문제를 수정.
 - 모듈 상단에 전역 `logger`를 선언해 모든 함수에서 동일한 로거를 사용하도록 통일.
