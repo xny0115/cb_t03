@@ -49,7 +49,11 @@ def _ensure_cuda_torch() -> None:
 def main() -> None:
     """Entry point for training or serving."""
     parser = argparse.ArgumentParser(description="Chatbot runner")
-    parser.add_argument("--mode", choices=["train", "serve"], default="serve")
+    parser.add_argument(
+        "--mode",
+        choices=["train", "pretrain", "serve"],
+        default="serve",
+    )
     parser.add_argument("--config", dest="config_path")
     parser.add_argument("--data-dir")
     parser.add_argument("--model-path")
@@ -65,7 +69,13 @@ def main() -> None:
     setup_logger()
     _ensure_cuda_torch()
 
-    if args.mode == "train":
+    if args.mode == "pretrain":
+        from src.service.service import ChatbotService
+
+        svc = ChatbotService()
+        svc.start_training("pretrain")
+        return
+    elif args.mode == "train":
         from src.service.service import ChatbotService
 
         svc = ChatbotService()
