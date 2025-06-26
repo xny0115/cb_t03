@@ -64,6 +64,7 @@ def _create_loader(dataset: PairDataset, cfg: Dict[str, Any]) -> DataLoader:
         collate_fn=timed_collate,
         num_workers=num_workers,
         pin_memory=pin_memory,
+        drop_last=True,
     )
     logging.getLogger(__name__).debug(
         "dataloader build time: %.2fs", time.perf_counter() - start
@@ -243,7 +244,7 @@ def train(
         if prev_ratio is not None:
             ratio_drop = prev_ratio - ratio
             if abs(ratio_drop) < 0.05:
-                logger.info(
+                logger.debug(
                     "epoch %d time/line ratio changed: %.4f -> %.4f",
                     epoch + 1,
                     prev_ratio,
