@@ -10,7 +10,7 @@ CONFIG_PATH = Path(os.environ.get("CONFIG_PATH", "configs/current.json"))
 
 DEFAULT_CONFIG: Dict[str, Any] = {
     "num_epochs": 20,
-    "batch_size": 16,
+    "batch_size": 48,
     "learning_rate": 2e-4,
     "dropout_ratio": 0.1,
     "warmup_steps": 0,
@@ -38,7 +38,7 @@ DEFAULT_CONFIG: Dict[str, Any] = {
     "save_every": 0,
     "num_workers": 6,
     "pin_memory": True,
-    "use_mixed_precision": False,
+    "use_mixed_precision": True,
     "repetition_penalty": 1.1,
     "max_response_length": 64,
     "beam_search_size": 3,
