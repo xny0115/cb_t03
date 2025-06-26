@@ -12,6 +12,7 @@ from pathlib import Path
 import torch
 from torch import nn, optim
 from torch.utils.data import DataLoader, random_split
+import torch.nn.functional as F
 
 from ..data.loader import InstructionSample
 from ..model.transformer import Seq2SeqTransformer, save_transformer
@@ -116,6 +117,7 @@ def _train_epoch(
     model.train()
     total_loss = 0.0
     skipped_batch = 0
+    skipped_pad = 0
     step_count = 0
     start = time.perf_counter()
     for i, (src, tgt) in enumerate(loader):
@@ -124,9 +126,19 @@ def _train_epoch(
             skipped_batch += 1
             continue
         opt.zero_grad()
+        tgt_in = tgt[:, :-1]
+        tgt_out = tgt[:, 1:]
         with torch.cuda.amp.autocast(enabled=use_amp):
-            out = model(src, tgt[:, :-1], tokenizer.pad_id)
-            loss = crit(out.reshape(-1, tokenizer.vocab_size), tgt[:, 1:].reshape(-1))
+            # --- NaN 예방: 유효 토큰이 하나도 없으면 배치 건너뜀 ---
+            if (tgt_out != tokenizer.pad_id).sum() == 0:
+                skipped_pad += 1
+                continue
+            logits = model(src, tgt_in, tokenizer.pad_id)
+            loss = F.cross_entropy(
+                logits.flatten(0, 1),
+                tgt_out.flatten(0, 1),
+                ignore_index=tokenizer.pad_id,
+            )
         if not torch.isfinite(loss):
             raise RuntimeError(f"Non-finite loss at step {i}: {loss.item()}")
         if use_amp:
@@ -145,7 +157,9 @@ def _train_epoch(
     duration = time.perf_counter() - start
     # average loss per batch
     avg_loss = total_loss / max(step_count, 1)
-    logging.getLogger(__name__).info("batches skipped (too short): %d", skipped_batch)
+    logger = logging.getLogger(__name__)
+    logger.info("batches skipped (too short): %d", skipped_batch)
+    logger.info("batches skipped (pad-only): %d", skipped_pad)
     return avg_loss, duration
 
 
@@ -164,8 +178,10 @@ def _eval_epoch(
             src, tgt = src.to(device), tgt.to(device)
             with torch.cuda.amp.autocast(enabled=use_amp):
                 out = model(src, tgt[:, :-1], tokenizer.pad_id)
-                loss = crit(
-                    out.reshape(-1, tokenizer.vocab_size), tgt[:, 1:].reshape(-1)
+                loss = F.cross_entropy(
+                    out.reshape(-1, tokenizer.vocab_size),
+                    tgt[:, 1:].reshape(-1),
+                    ignore_index=tokenizer.pad_id,
                 )
             total_loss += loss.item()
     return total_loss / (i + 1)
@@ -180,6 +196,7 @@ def train(
 ) -> Tuple[Seq2SeqTransformer, CharTokenizer]:
     """Train a Seq2SeqTransformer on given samples."""
     logger = logging.getLogger(__name__)
+    torch.autograd.set_detect_anomaly(True)
     if platform.system() == "Windows":
         warnings.filterwarnings(
             "ignore",
