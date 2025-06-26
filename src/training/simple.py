@@ -115,9 +115,14 @@ def _train_epoch(
 ) -> Tuple[float, float]:
     model.train()
     total_loss = 0.0
+    skipped_batch = 0
+    step_count = 0
     start = time.perf_counter()
     for i, (src, tgt) in enumerate(loader):
         src, tgt = src.to(device), tgt.to(device)
+        if tgt.size(1) < 2:
+            skipped_batch += 1
+            continue
         opt.zero_grad()
         with torch.cuda.amp.autocast(enabled=use_amp):
             out = model(src, tgt[:, :-1], tokenizer.pad_id)
@@ -136,9 +141,11 @@ def _train_epoch(
             opt.step()
         scheduler.step()
         total_loss += loss.item()
+        step_count += 1
     duration = time.perf_counter() - start
     # average loss per batch
-    avg_loss = total_loss / (i + 1)
+    avg_loss = total_loss / max(step_count, 1)
+    logging.getLogger(__name__).info("batches skipped (too short): %d", skipped_batch)
     return avg_loss, duration
 
 
