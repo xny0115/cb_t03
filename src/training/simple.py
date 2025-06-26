@@ -98,9 +98,9 @@ def _init_model(
     model.to(device)
     crit = nn.CrossEntropyLoss(ignore_index=0)
     opt = optim.Adam(model.parameters(), lr=float(cfg.get("learning_rate", 1e-3)))
-    use_amp = bool(cfg.get("use_mixed_precision", False)) and torch.cuda.is_available()
-    scaler = torch.cuda.amp.GradScaler(enabled=use_amp)
-    return model, crit, opt, scaler, device, use_amp
+    amp_enabled = bool(cfg.get("use_mixed_precision", False)) and torch.cuda.is_available()
+    scaler = torch.cuda.amp.GradScaler(enabled=amp_enabled)
+    return model, crit, opt, scaler, device, amp_enabled
 
 
 def _train_epoch(
@@ -112,13 +112,14 @@ def _train_epoch(
     scheduler: optim.lr_scheduler._LRScheduler,
     tokenizer: CharTokenizer,
     device: str,
-    use_amp: bool,
-) -> Tuple[float, float]:
+    amp_enabled: bool,
+) -> Tuple[float, float, torch.cuda.amp.GradScaler, bool]:
     model.train()
     total_loss = 0.0
     skipped_batch = 0
     skipped_pad = 0
     step_count = 0
+    bad_fp32_cnt = 0
     start = time.perf_counter()
     for i, (src, tgt) in enumerate(loader):
         src, tgt = src.to(device), tgt.to(device)
@@ -128,7 +129,7 @@ def _train_epoch(
         opt.zero_grad()
         tgt_in = tgt[:, :-1]
         tgt_out = tgt[:, 1:]
-        with torch.cuda.amp.autocast(enabled=use_amp):
+        with torch.cuda.amp.autocast(enabled=amp_enabled):
             # --- NaN 예방: 유효 토큰이 하나도 없으면 배치 건너뜀 ---
             if (tgt_out != tokenizer.pad_id).sum() == 0:
                 skipped_pad += 1
@@ -140,13 +141,17 @@ def _train_epoch(
                 ignore_index=tokenizer.pad_id,
             )
         if not torch.isfinite(loss):
-            logger.error(
-                "Loss became non-finite. Disabling AMP and restarting in float32."
-            )
-            use_amp = False
-            scaler = torch.cuda.amp.GradScaler(enabled=False)
-            continue
-        if use_amp:
+            logger.error("non-finite loss at step %d, AMP=%s", i, amp_enabled)
+            if amp_enabled:
+                amp_enabled = False
+                scaler = torch.cuda.amp.GradScaler(enabled=False)
+                continue
+            else:
+                bad_fp32_cnt += 1
+                if bad_fp32_cnt >= 3:
+                    raise RuntimeError("FP32 NaN 반복(>=3) – 학습 중단.")
+                continue
+        if amp_enabled:
             scaler.scale(loss).backward()
             scaler.unscale_(opt)
             torch.nn.utils.clip_grad_norm_(model.parameters(), 1.0)
@@ -164,7 +169,7 @@ def _train_epoch(
     avg_loss = total_loss / max(step_count, 1)
     logger.info("batches skipped (too short): %d", skipped_batch)
     logger.info("batches skipped (pad-only): %d", skipped_pad)
-    return avg_loss, duration
+    return avg_loss, duration, scaler, amp_enabled
 
 
 def _eval_epoch(
@@ -173,14 +178,14 @@ def _eval_epoch(
     crit: nn.Module,
     tokenizer: CharTokenizer,
     device: str,
-    use_amp: bool,
+    amp_enabled: bool,
 ) -> float:
     model.eval()
     total_loss = 0.0
     with torch.no_grad():
         for i, (src, tgt) in enumerate(loader):
             src, tgt = src.to(device), tgt.to(device)
-            with torch.cuda.amp.autocast(enabled=use_amp):
+            with torch.cuda.amp.autocast(enabled=amp_enabled):
                 out = model(src, tgt[:, :-1], tokenizer.pad_id)
                 loss = F.cross_entropy(
                     out.reshape(-1, tokenizer.vocab_size),
@@ -215,7 +220,7 @@ def train(
     train_set, val_set = random_split(dataset, [train_size, val_size])
     loader = _create_loader(train_set, cfg)
     val_loader = _create_loader(val_set, cfg)
-    model, crit, opt, scaler, device, use_amp = _init_model(tokenizer, cfg)
+    model, crit, opt, scaler, device, amp_enabled = _init_model(tokenizer, cfg)
     scheduler = torch.optim.lr_scheduler.CosineAnnealingLR(opt, T_max=epochs)
 
     logger.info("Training start: epochs=%d, samples=%d", epochs, line_count)
@@ -230,10 +235,10 @@ def train(
     patience, counter = 3, 0
     best_state = snapshot(model)
     for epoch in range(epochs):
-        loss, duration = _train_epoch(
-            loader, model, crit, opt, scaler, scheduler, tokenizer, device, use_amp
+        loss, duration, scaler, amp_enabled = _train_epoch(
+            loader, model, crit, opt, scaler, scheduler, tokenizer, device, amp_enabled
         )
-        val_loss = _eval_epoch(val_loader, model, crit, tokenizer, device, use_amp)
+        val_loss = _eval_epoch(val_loader, model, crit, tokenizer, device, amp_enabled)
         ratio = duration / max(line_count, 1)
         if prev_ratio is not None:
             ratio_drop = prev_ratio - ratio

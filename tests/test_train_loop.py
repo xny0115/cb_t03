@@ -38,7 +38,7 @@ def test_batch_consumption() -> None:
     scheduler = torch.optim.lr_scheduler.CosineAnnealingLR(
         torch.optim.Adam([torch.tensor(1.0, requires_grad=True)]), T_max=1
     )
-    loss, _ = _train_epoch(
+    loss, _, _, _ = _train_epoch(
         dummy_loader,
         DummyModel(),
         nn.CrossEntropyLoss(),

@@ -31,7 +31,7 @@ def test_short_batch_skip() -> None:
     scheduler = torch.optim.lr_scheduler.CosineAnnealingLR(
         torch.optim.Adam([torch.tensor(1.0, requires_grad=True)]), T_max=1
     )
-    loss, _ = _train_epoch(
+    loss, _, _, _ = _train_epoch(
         loader,
         DummyModel(),
         nn.CrossEntropyLoss(),
