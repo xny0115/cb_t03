@@ -1,4 +1,8 @@
 # 변경 이력
+## v1.37
+- Transformer encoder에서 잘못된 src_mask 차원 계산을 제거하고
+  padding mask만 사용하도록 수정.
+
 ## v1.36
 - GPU 미사용 환경에서 GPU 마크 테스트를 자동 건너뛰도록 `conftest.py` 추가.
 - 에폭 실행 속도 변동이 5% 미만이면 INFO로, 이상이면 WARNING으로 기록.
