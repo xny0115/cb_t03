@@ -81,11 +81,10 @@ def _init_model(tokenizer: CharTokenizer, cfg: Dict[str, Any]) -> Tuple[Seq2SeqT
         dim_ff=ff_dim,
         dropout=dropout,
     )
-    device = "cuda" if torch.cuda.is_available() else "cpu"
-    if device == "cuda":
-        torch.backends.cudnn.benchmark = True
-    else:
-        logging.getLogger(__name__).warning("CUDA not available, training on CPU")
+    device = torch.device("cuda")
+    if not torch.cuda.is_available():
+        raise RuntimeError("CUDA unavailable. GPU 환경이 필요합니다.")
+    torch.backends.cudnn.benchmark = True
     model.to(device)
     crit = nn.CrossEntropyLoss(ignore_index=0)
     opt = optim.Adam(model.parameters(), lr=float(cfg.get("learning_rate", 1e-3)))
@@ -99,8 +98,7 @@ def _train_epoch(loader: DataLoader, model: Seq2SeqTransformer, crit: nn.Module,
     total_loss = 0.0
     start = time.perf_counter()
     for i, (src, tgt) in enumerate(loader):
-        src = src.to(device, non_blocking=True)
-        tgt = tgt.to(device, non_blocking=True)
+        src, tgt = src.to(device), tgt.to(device)
         opt.zero_grad()
         with torch.cuda.amp.autocast(enabled=use_amp):
             out = model(src, tgt[:, :-1])
@@ -133,7 +131,8 @@ def train(samples: List[InstructionSample], cfg: dict[str, Any] | None = None, *
 
     logger.info("Training start: epochs=%d, samples=%d", epochs, line_count)
     param_rates: List[float] = []
-    prev_state = {k: v.detach().cpu().clone() for k, v in model.state_dict().items()}
+    snapshot = lambda m: {k: v.detach().clone().cpu() for k, v in m.state_dict().items()}
+    prev_state = snapshot(model)
     prev_ratio = None
     train_start = time.perf_counter()
     for epoch in range(epochs):
@@ -142,13 +141,13 @@ def train(samples: List[InstructionSample], cfg: dict[str, Any] | None = None, *
         if prev_ratio is not None and ratio < prev_ratio:
             logger.warning("epoch %d time/line ratio dropped: %.4f -> %.4f", epoch + 1, prev_ratio, ratio)
         prev_ratio = ratio
-        curr = model.state_dict()
+        curr = snapshot(model)
         changed = sum(not torch.equal(curr[k], prev_state[k]) for k in curr)
         rate = changed / len(curr) * 100
         if len(curr) - changed >= len(curr) * 0.5:
             logger.warning("epoch %d: %d/%d params unchanged", epoch + 1, len(curr) - changed, len(curr))
         param_rates.append(rate)
-        prev_state = {k: v.detach().cpu().clone() for k, v in curr.items()}
+        prev_state = snapshot(model)
         logger.info("Epoch %d/%d | Loss: %.3f | Time: %.2fs", epoch + 1, epochs, loss, duration)
 
     logger.info("Training complete in %.2fs", time.perf_counter() - train_start)

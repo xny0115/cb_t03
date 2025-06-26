@@ -2,6 +2,11 @@
 from __future__ import annotations
 
 import warnings
+warnings.filterwarnings(
+    "ignore",
+    message=".*flash attention.*",
+    category=UserWarning,
+)
 import platform
 
 import math
