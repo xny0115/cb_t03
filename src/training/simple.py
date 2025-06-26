@@ -7,13 +7,14 @@ import time
 import warnings
 import platform
 import os
+from pathlib import Path
 
 import torch
 from torch import nn, optim
 from torch.utils.data import DataLoader
 
 from ..data.loader import InstructionSample
-from ..model.transformer import Seq2SeqTransformer
+from ..model.transformer import Seq2SeqTransformer, save_transformer
 from ..utils.tokenizer import CharTokenizer
 from .helpers import PairDataset, timed_collate, log_dataset_stats
 
@@ -117,7 +118,13 @@ def _train_epoch(loader: DataLoader, model: Seq2SeqTransformer, crit: nn.Module,
     return avg_loss, duration
 
 
-def train(samples: List[InstructionSample], cfg: dict[str, Any] | None = None, *, is_pretrain: bool = False) -> Tuple[Seq2SeqTransformer, CharTokenizer]:
+def train(
+    samples: List[InstructionSample],
+    cfg: dict[str, Any] | None = None,
+    *,
+    is_pretrain: bool = False,
+    save_dir: str | None = None,
+) -> Tuple[Seq2SeqTransformer, CharTokenizer]:
     """Train a Seq2SeqTransformer on given samples."""
     logger = logging.getLogger(__name__)
     if platform.system() == "Windows":
@@ -138,8 +145,22 @@ def train(samples: List[InstructionSample], cfg: dict[str, Any] | None = None, *
     for epoch in range(epochs):
         loss, duration = _train_epoch(loader, model, crit, opt, scaler, tokenizer, device, use_amp)
         ratio = duration / max(line_count, 1)
-        if prev_ratio is not None and ratio < prev_ratio:
-            logger.warning("epoch %d time/line ratio dropped: %.4f -> %.4f", epoch + 1, prev_ratio, ratio)
+        if prev_ratio is not None:
+            ratio_drop = prev_ratio - ratio
+            if abs(ratio_drop) < 0.05:
+                logger.info(
+                    "epoch %d time/line ratio changed: %.4f -> %.4f",
+                    epoch + 1,
+                    prev_ratio,
+                    ratio,
+                )
+            else:
+                logger.warning(
+                    "epoch %d time/line ratio dropped: %.4f -> %.4f",
+                    epoch + 1,
+                    prev_ratio,
+                    ratio,
+                )
         prev_ratio = ratio
         curr = snapshot(model)
         changed = sum(not torch.equal(curr[k], prev_state[k]) for k in curr)
@@ -153,6 +174,13 @@ def train(samples: List[InstructionSample], cfg: dict[str, Any] | None = None, *
     logger.info("Training complete in %.2fs", time.perf_counter() - train_start)
     for idx, r in enumerate(param_rates, 1):
         logger.debug("Epoch %d → %.1f%% 변화", idx, r)
+    if save_dir:
+        save_path = Path(save_dir)
+        save_path.mkdir(parents=True, exist_ok=True)
+        model_path = save_path / "model.pth"
+        save_transformer(model, tokenizer.stoi, model_path)
+        tokenizer.save(save_path / "tokenizer.json")
+        logger.info("Model & tokenizer saved to %s", save_dir)
     return model, tokenizer
 
 

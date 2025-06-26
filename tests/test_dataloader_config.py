@@ -4,9 +4,11 @@ from pathlib import Path
 sys.path.append(str(Path(__file__).resolve().parents[1]))
 
 from src.training import simple
+import pytest
 from src.data.loader import InstructionSample
 
 
+@pytest.mark.gpu
 def test_dataloader_uses_cfg(monkeypatch):
     captured = {}
     orig_loader = simple.DataLoader
