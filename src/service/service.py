@@ -19,7 +19,7 @@ from ..model import (
     save_transformer,
     load_transformer,
 )
-from ..training.simple import train as train_transformer
+from ..training.simple import train as train_transformer, pretrain
 from ..utils.tokenizer import SentencePieceTokenizer
 from ..utils.validator import validate_config
 from ..tuning.auto import AutoTuner
@@ -98,7 +98,10 @@ class ChatbotService:
 
         logger.info(f"Starting training for mode: {mode}")
 
-        trained_model = train_transformer(dataset, self._config, is_pretrain=(mode == "pretrain"))
+        if mode == "pretrain":
+            trained_model = pretrain(dataset, self._config)
+        else:
+            trained_model = train_transformer(dataset, self._config, is_pretrain=False)
 
         self.model = trained_model
 

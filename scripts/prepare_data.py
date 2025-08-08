@@ -27,7 +27,7 @@ def train_tokenizer(
         return
 
     logging.info(f"Found {len(text_files)} files. Preparing for training.")
-    
+
     # SentencePiece requires a string of file paths, comma-separated
     input_files = ",".join(map(str, text_files))
 
@@ -59,10 +59,10 @@ if __name__ == "__main__":
     pretrain_data_dir = project_root / "datas" / "pretrain"
     model_dir = project_root / "models"
     model_dir.mkdir(exist_ok=True)
-    
+
     # Using a path prefix for the model, not including the extension
     tokenizer_model_prefix = str(model_dir / "spm_bpe_8k")
-    
+
     # A vocab size of 8000 is a reasonable starting point for a custom model.
     VOCAB_SIZE = 8000
 
