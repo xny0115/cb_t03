@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from typing import List, Any, Dict, Tuple
+from typing import List, Any, Dict, Tuple, Optional
 
 import logging
 import time
@@ -30,7 +30,7 @@ def _prepare_dataset(
     if is_pretrain:
         texts = [s.output for s in samples]
         log_dataset_stats(texts)
-
+    
     pairs: List[Tuple[List[int], List[int]]] = []
     for s in samples:
         if is_pretrain:
@@ -51,9 +51,9 @@ def _create_loader(
     batch_size = int(cfg.get("batch_size", 32))
     num_workers = int(cfg.get("num_workers", 0)) # Default to 0 for Windows compatibility
     pin_memory = bool(cfg.get("pin_memory", True))
-
+    
     persistent_workers = num_workers > 0
-
+    
     loader = DataLoader(
         dataset,
         batch_size=batch_size,
@@ -69,16 +69,14 @@ def _create_loader(
 
 def _init_model(
     tokenizer: SentencePieceTokenizer, cfg: Dict[str, Any]
-) -> Tuple[
-    Seq2SeqTransformer, nn.Module, optim.Optimizer, torch.cuda.amp.GradScaler, torch.device
-]:
+) -> Seq2SeqTransformer:
     model_dim = int(cfg.get("model_dim", 256))
     num_heads = int(cfg.get("num_heads", 8))
     enc_layers = int(cfg.get("num_encoder_layers", 6))
     dec_layers = int(cfg.get("num_decoder_layers", 6))
     ff_dim = int(cfg.get("ff_dim", 1024))
     dropout = float(cfg.get("dropout_ratio", 0.1))
-
+    
     model = Seq2SeqTransformer(
         vocab_size=tokenizer.vocab_size,
         embed_dim=model_dim,
@@ -88,17 +86,7 @@ def _init_model(
         dim_ff=ff_dim,
         dropout=dropout,
     )
-
-    device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-    if device.type == "cpu":
-        raise RuntimeError("CUDA unavailable. A GPU environment is required for training.")
-
-    model.to(device)
-    crit = nn.CrossEntropyLoss(ignore_index=tokenizer.pad_id)
-    opt = optim.Adam(model.parameters(), lr=float(cfg.get("learning_rate", 1e-3)))
-    scaler = torch.cuda.amp.GradScaler(enabled=bool(cfg.get("use_mixed_precision", True)))
-
-    return model, crit, opt, scaler, device
+    return model
 
 
 def _train_epoch(
@@ -114,18 +102,18 @@ def _train_epoch(
     model.train()
     total_loss = 0.0
     step_count = 0
-
+    
     for src, tgt in loader:
         src, tgt = src.to(device), tgt.to(device)
-
+        
         if tgt.size(1) < 2:
             continue
-
+            
         opt.zero_grad(set_to_none=True)
-
+        
         tgt_in = tgt[:, :-1]
         tgt_out = tgt[:, 1:]
-
+        
         with torch.cuda.amp.autocast(enabled=scaler.is_enabled()):
             logits = model(src, tgt_in, pad_id=tokenizer.pad_id)
             loss = crit(logits.view(-1, tokenizer.vocab_size), tgt_out.reshape(-1))
@@ -139,12 +127,12 @@ def _train_epoch(
         torch.nn.utils.clip_grad_norm_(model.parameters(), 1.0)
         scaler.step(opt)
         scaler.update()
-
+        
         scheduler.step()
-
+        
         total_loss += loss.item()
         step_count += 1
-
+        
     return total_loss / max(step_count, 1)
 
 
@@ -163,11 +151,11 @@ def _eval_epoch(
             src, tgt = src.to(device), tgt.to(device)
             tgt_in = tgt[:, :-1]
             tgt_out = tgt[:, 1:]
-
+            
             with torch.cuda.amp.autocast(enabled=True):
                 logits = model(src, tgt_in, pad_id=tokenizer.pad_id)
                 loss = crit(logits.view(-1, tokenizer.vocab_size), tgt_out.reshape(-1))
-
+            
             if torch.isfinite(loss):
                 total_loss += loss.item()
                 step_count += 1
@@ -180,9 +168,10 @@ def train(
     cfg: dict[str, Any],
     *,
     is_pretrain: bool = False,
+    model: Optional[Seq2SeqTransformer] = None,
 ) -> Seq2SeqTransformer:
-    """Train a Seq2SeqTransformer on given samples."""
-
+    """Train a Seq2SeqTransformer on given samples. Can resume from an existing model."""
+    
     tokenizer_model_path = Path("models/spm_bpe_8k.model")
     if not tokenizer_model_path.exists():
         raise FileNotFoundError(f"Tokenizer model not found at {tokenizer_model_path}. Please run `scripts/prepare_data.py` first.")
@@ -191,40 +180,65 @@ def train(
     epochs = int(cfg.get("num_epochs", 5))
 
     dataset, line_count = _prepare_dataset(samples, tokenizer, is_pretrain)
-
+    
     train_size = int(0.95 * len(dataset))
     if train_size < 1:
         raise ValueError("Dataset is too small to create a training set.")
     val_size = len(dataset) - train_size
-
+    
     train_set, val_set = random_split(dataset, [train_size, val_size])
-
+    
     loader = _create_loader(train_set, cfg, drop_last=True)
     val_loader = _create_loader(val_set, cfg, drop_last=False)
 
-    model, crit, opt, scaler, device = _init_model(tokenizer, cfg)
+    if model is None:
+        logger.info("No existing model provided, initializing a new one.")
+        model = _init_model(tokenizer, cfg)
+    else:
+        logger.info("Resuming training with the existing model.")
+    
+    device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+    if device.type == "cpu":
+        raise RuntimeError("CUDA unavailable. A GPU environment is required for training.")
+    
+    logger.info(f"Moving model to device: {device}")
+    model.to(device)
+    
+    crit = nn.CrossEntropyLoss(ignore_index=tokenizer.pad_id)
+    opt = optim.Adam(model.parameters(), lr=float(cfg.get("learning_rate", 1e-3)))
+    scaler = torch.cuda.amp.GradScaler(enabled=bool(cfg.get("use_mixed_precision", True)))
     scheduler = torch.optim.lr_scheduler.CosineAnnealingLR(opt, T_max=len(loader) * epochs)
 
     logger.info(f"Training start: epochs={epochs}, samples={line_count}, vocab_size={tokenizer.vocab_size}")
-
+    
     train_start = time.perf_counter()
     best_val_loss = float("inf")
     patience_counter = 0
     early_stopping_patience = int(cfg.get("early_stopping_patience", 3))
     checkpoint_path = Path("models/best_model_checkpoint.pth")
+    
+    # If resuming, check current validation loss
+    if Path.exists(checkpoint_path):
+        try:
+            model.load_state_dict(torch.load(checkpoint_path, map_location=device))
+            best_val_loss = _eval_epoch(val_loader, model, crit, tokenizer, device)
+            logger.info(f"Resuming from checkpoint. Initial validation loss: {best_val_loss:.4f}")
+        except Exception as e:
+            logger.warning(f"Could not load checkpoint, starting fresh. Error: {e}")
+
 
     for epoch in range(epochs):
         epoch_start = time.perf_counter()
-
+        
         train_loss = _train_epoch(loader, model, crit, opt, scaler, scheduler, tokenizer, device)
         val_loss = _eval_epoch(val_loader, model, crit, tokenizer, device)
-
+        
         epoch_duration = time.perf_counter() - epoch_start
-
+        
         logger.info(
             f"Epoch {epoch + 1}/{epochs} | Train Loss: {train_loss:.4f} | Val Loss: {val_loss:.4f} | Time: {epoch_duration:.2f}s"
         )
-
+        
         if val_loss < best_val_loss:
             best_val_loss = val_loss
             torch.save(model.state_dict(), checkpoint_path)
@@ -238,15 +252,19 @@ def train(
 
     total_duration = time.perf_counter() - train_start
     logger.info(f"Training complete in {total_duration:.2f}s")
-
+    
     if checkpoint_path.exists():
         logger.info(f"Loading best model from checkpoint.")
         model.load_state_dict(torch.load(checkpoint_path))
 
     return model
 
-def pretrain(texts: List[str], cfg: dict[str, Any] | None = None) -> Seq2SeqTransformer:
+def pretrain(
+    texts: List[str],
+    cfg: dict[str, Any] | None = None,
+    model: Optional[Seq2SeqTransformer] = None
+) -> Seq2SeqTransformer:
     """Pre-training wrapper."""
     cfg = cfg or {}
     samples = [InstructionSample(instruction="", input="", output=t) for t in texts]
-    return train(samples, cfg, is_pretrain=True)
+    return train(samples, cfg, is_pretrain=True, model=model)
