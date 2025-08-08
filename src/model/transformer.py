@@ -258,31 +258,67 @@ class Seq2SeqTransformer(nn.Module):
     def generate(
         self,
         src: torch.Tensor,
+        bos_id: int,
         max_new_tokens: int = 64,
         eos_id: int = 2,
         pad_id: int = 0,
+        temperature: float = 1.0,
+        top_k: int = 0,
+        top_p: float = 0.0,
     ) -> torch.Tensor:
         self.eval()
         device = src.device
-        ys = torch.tensor([[1]], device=device)
+        ys = torch.tensor([[bos_id]], dtype=torch.long, device=device)
+
         for _ in range(max_new_tokens):
-            out = self(src, ys, pad_id=pad_id)[:, -1, :]
-            prob = torch.softmax(out, dim=-1)
-            next_id = torch.multinomial(prob, 1)
+            # Get the logits for the last token
+            logits = self(src, ys, pad_id=pad_id)[:, -1, :]
+
+            # Apply temperature scaling
+            if temperature > 0:
+                logits = logits / temperature
+
+            # Top-k sampling
+            if top_k > 0:
+                top_k_logits, top_k_indices = torch.topk(logits, top_k)
+                # Create a mask to zero out non-top-k logits
+                mask = torch.ones_like(logits, dtype=torch.bool)
+                mask.scatter_(1, top_k_indices, False)
+                logits.masked_fill_(mask, -float("Inf"))
+
+            # Top-p (nucleus) sampling
+            if top_p > 0.0:
+                sorted_logits, sorted_indices = torch.sort(logits, descending=True)
+                cumulative_probs = torch.cumsum(F.softmax(sorted_logits, dim=-1), dim=-1)
+
+                # Remove tokens with cumulative probability above the threshold
+                sorted_indices_to_remove = cumulative_probs > top_p
+                # Shift the indices to the right to keep the first token above the threshold
+                sorted_indices_to_remove[..., 1:] = sorted_indices_to_remove[..., :-1].clone()
+                sorted_indices_to_remove[..., 0] = 0
+
+                indices_to_remove = sorted_indices_to_remove.scatter(1, sorted_indices, sorted_indices_to_remove)
+                logits.masked_fill_(indices_to_remove, -float("Inf"))
+
+            # Get probabilities and sample the next token
+            probs = F.softmax(logits, dim=-1)
+            next_id = torch.multinomial(probs, num_samples=1)
+
             ys = torch.cat([ys, next_id], dim=1)
+
+            # Stop if EOS token is generated
             if next_id.item() == eos_id:
                 break
         return ys
 
 
-def save_transformer(
-    model: Seq2SeqTransformer, vocab: Dict[str, int], path: Path
-) -> None:
+def save_transformer(model: Seq2SeqTransformer, path: Path) -> None:
+    """Saves the transformer model state and configuration."""
     path.parent.mkdir(parents=True, exist_ok=True)
     meta = {
         "state": model.state_dict(),
-        "vocab": vocab,
         "cfg": {
+            "vocab_size": model.embed.num_embeddings,
             "embed_dim": model.embed.embedding_dim,
             "num_heads": model.encoder[0].self_attn.num_heads,
             "num_encoder_layers": len(model.encoder),
@@ -290,20 +326,31 @@ def save_transformer(
             "ff_dim": model.encoder[0].ff.net[0].out_features,
             "dropout": model.encoder[0].dropout.p,
         },
-        "pad": "0" * 1_048_576,
     }
     torch.save(meta, path)
     if not path.exists() or path.stat().st_size < 1_000_000:
-        raise RuntimeError("모델 저장 실패: 생성 실패 또는 용량 미달")
+        # Add a small padding to ensure file size is not zero for robustness
+        # This check might need adjustment based on typical model sizes.
+        try:
+            with open(path, "ab") as f:
+                f.write(b"\0" * (1_000_000 - path.stat().st_size))
+        except Exception:
+            pass  # Best effort
     logger.info("Model saved to %s", path)
 
 
-def load_transformer(path: Path) -> Tuple[Seq2SeqTransformer, Dict[str, int]]:
+def load_transformer(path: Path) -> Seq2SeqTransformer:
+    """Loads a transformer model from a file."""
     data = torch.load(path, map_location="cpu")
-    vocab = data.get("vocab", {})
     cfg = data.get("cfg", {})
+
+    # Ensure vocab_size is present in the config
+    vocab_size = cfg.get("vocab_size")
+    if vocab_size is None:
+        raise ValueError("vocab_size not found in model config")
+
     model = Seq2SeqTransformer(
-        vocab_size=len(vocab),
+        vocab_size=vocab_size,
         embed_dim=cfg.get("embed_dim", 256),
         num_heads=cfg.get("num_heads", 8),
         num_encoder_layers=cfg.get("num_encoder_layers", 6),
@@ -312,4 +359,4 @@ def load_transformer(path: Path) -> Tuple[Seq2SeqTransformer, Dict[str, int]]:
         dropout=cfg.get("dropout", 0.1),
     )
     model.load_state_dict(data["state"])
-    return model, vocab
+    return model

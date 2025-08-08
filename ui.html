@@ -983,9 +983,11 @@
             const inputsToWatch = document.querySelectorAll('#settingsContent input, #settingsContent select');
 
             const mustKeys = [
-                'batch_size', 'model_dim', 'ff_dim', 'num_encoder_layers',
-                'num_decoder_layers', 'num_epochs', 'learning_rate',
-                'use_mixed_precision'
+                'num_epochs', 'batch_size', 'learning_rate', 'dropout_ratio',
+                'warmup_steps', 'max_sequence_length', 'num_heads',
+                'num_encoder_layers', 'num_decoder_layers', 'model_dim', 'ff_dim',
+                'embedding_dim', 'gradient_clipping', 'weight_decay',
+                'early_stopping_patience'
             ];
 
             function checkFieldsFilled() {
@@ -1140,12 +1142,14 @@
             function validateCfg(cfg) {
                 for (const k of mustKeys) {
                     const v = cfg[k];
-                    if (v === null || v === '' || v === undefined) return false;
-                    if (typeof v === 'number' && isNaN(v)) return false;
-                }
-                for (const [k, v] of Object.entries(cfg)) {
-                    if (v === null || v === '' || v === undefined) return false;
-                    if (typeof v === 'number' && isNaN(v)) return false;
+                    if (v === null || v === '' || v === undefined) {
+                        console.error(`Validation failed: key '${k}' is missing or empty.`);
+                        return false;
+                    }
+                    if (typeof v === 'number' && isNaN(v)) {
+                        console.error(`Validation failed: key '${k}' is NaN.`);
+                        return false;
+                    }
                 }
                 return true;
             }
@@ -1192,17 +1196,17 @@
                 additionalFinetuneBtn.onclick = () => handleTraining('additional_finetune');
                 
                 autoBtn.onclick = () => {
-                    localStorage.setItem('preferredTab', 'settingsTab');
                     api.auto_tune()
                         .then(resp => {
-                            if (resp.success) {
-                                location.reload();
+                            if (resp.success && resp.data) {
+                                showStatus(trainStatus, 'Auto-Tune 설정이 적용되었습니다.', 'success');
+                                applyCfg(resp.data);
                             } else {
-                                alert('오토튠 실패: ' + resp.msg);
+                                showError('오토튠 실패: ' + (resp.msg || '알 수 없는 오류'));
                             }
                         })
                         .catch(err => {
-                            alert('오토튠 실패: ' + (err.msg || err));
+                            showError('오토튠 실패: ' + (err.message || err));
                         });
                 };
 

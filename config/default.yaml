@@ -1,2 +1,3 @@
 batch_size: 48
 use_mixed_precision: True
+tokenizer_path: "models/spm_bpe_8k.model"
