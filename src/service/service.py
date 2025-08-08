@@ -19,7 +19,7 @@ from ..model import (
     save_transformer,
     load_transformer,
 )
-from ..training.simple import train as train_transformer
+from ..training.simple import train as train_transformer, pretrain
 from ..utils.tokenizer import SentencePieceTokenizer
 from ..utils.validator import validate_config
 from ..tuning.auto import AutoTuner
@@ -27,7 +27,7 @@ from ..tuning.auto import AutoTuner
 logger = logging.getLogger(__name__)
 
 class ChatbotService:
-    """Instruction 기반 챗봇 서비스."""
+    '''Instruction 기반 챗봇 서비스.'''
 
     MAX_INPUT_LEN = 1000
 
@@ -37,18 +37,16 @@ class ChatbotService:
         self.finetune_dir = self.data_dir / "finetune"
         self.additional_dir = self.data_dir / "additional_finetune"
         self.model_dir = Path("models")
-
-        # Define paths for different model types
+        
         self.model_paths = {
             "pretrain": self.model_dir / "pretrain.pth",
             "finetune": self.model_dir / "finetune.pth",
             "additional_finetune": self.model_dir / "additional_finetune.pth",
         }
-
+        
         self.model: DummyModel | HFModel | Seq2SeqTransformer | None = None
         self._config = load_config()
 
-        # Initialize the tokenizer
         tokenizer_model_path = self.model_dir / "spm_bpe_8k.model"
         if not tokenizer_model_path.exists():
             logger.warning(f"Tokenizer model not found at {tokenizer_model_path}. Please run `scripts/prepare_data.py` first.")
@@ -56,10 +54,8 @@ class ChatbotService:
         else:
             self.tokenizer = SentencePieceTokenizer(tokenizer_model_path)
 
-        # Load the last used model, if any. Default to finetune model.
-        # This logic can be improved to be more robust.
         last_model_path = self.model_paths["finetune"]
-
+        
         hf_name = os.getenv("HF_MODEL_NAME")
         if hf_name:
             self.model = HFModel(hf_name)
@@ -67,7 +63,6 @@ class ChatbotService:
             try:
                 logger.info(f"Loading model from {last_model_path}...")
                 self.model = load_transformer(last_model_path)
-                # Verify vocab size consistency
                 if self.model.embed.num_embeddings != self.tokenizer.vocab_size:
                     logger.warning(
                         f"Model vocab size ({self.model.embed.num_embeddings}) and tokenizer vocab size ({self.tokenizer.vocab_size}) mismatch."
@@ -77,36 +72,37 @@ class ChatbotService:
                 self.model = None
 
     def start_training(self, mode: str) -> Dict[str, Any]:
-        """학습 유형에 따라 분기 처리."""
+        '''학습 유형에 따라 분기 처리.'''
         valid, msg = validate_config(self._config)
         if not valid:
             return {"success": False, "msg": msg, "data": None}
-
+        
         if self.tokenizer is None:
             return {"success": False, "msg": "Tokenizer is not initialized. Run `scripts/prepare_data.py`.", "data": None}
 
         if mode == "pretrain":
             from ..data.subtitle_cleaner import clean_subtitle_files
-            # Assuming subtitle files are in the root, which might need to be configurable
             clean_subtitle_files(Path("."), self.pretrain_dir)
             dataset = load_pretrain_dataset(self.pretrain_dir)
         elif mode == "additional_finetune":
             dataset = load_instruction_dataset(self.additional_dir)
-        else: # default to finetune
+        else:
             mode = "finetune"
             dataset = load_instruction_dataset(self.finetune_dir)
 
         logger.info(f"Starting training for mode: {mode}")
-
-        trained_model = train_transformer(dataset, self._config, is_pretrain=(mode == "pretrain"))
-
+        
+        if mode == "pretrain":
+            trained_model = pretrain(dataset, self._config)
+        else:
+            trained_model = train_transformer(dataset, self._config, is_pretrain=False)
+        
         self.model = trained_model
-
-        # Save the newly trained model
+        
         target_model_path = self.model_paths[mode]
         logger.info(f"Saving trained model to {target_model_path}...")
         save_transformer(self.model, target_model_path)
-
+        
         logger.info("Training complete.")
         return {"success": True, "msg": "done", "data": None}
 
@@ -126,7 +122,7 @@ class ChatbotService:
         return self._config.copy()
 
     def delete_model(self) -> bool:
-        """Delete every model file under ``models`` directory."""
+        '''Delete every model file under ``models`` directory.'''
         deleted = False
         for fp in self.model_dir.glob("*.pth"):
             try:
@@ -148,12 +144,12 @@ class ChatbotService:
             return {"success": False, "msg": "Empty input.", "data": None}
         if len(text) > self.MAX_INPUT_LEN:
             return {"success": False, "msg": "Input text is too long.", "data": None}
-
+        
         if isinstance(self.model, Seq2SeqTransformer):
             ids = self.tokenizer.encode(text, add_special_tokens=True)
             src = torch.tensor(ids, dtype=torch.long).unsqueeze(0)
             src = src.to(next(self.model.parameters()).device)
-
+            
             out_ids = self.model.generate(
                 src,
                 bos_id=self.tokenizer.bos_id,
@@ -164,34 +160,31 @@ class ChatbotService:
                 top_k=self._config.get("top_k", 0),
                 top_p=self._config.get("top_p", 0.9),
             )
-            # We don't need to slice [1:] anymore if BOS is handled by tokenizer's decode
             out_text = self.tokenizer.decode(out_ids.squeeze().tolist())
-
+            
             msg = "ok" if out_text else "no_answer"
             return {"success": True, "msg": msg, "data": out_text}
-
-        # Fallback for other model types like DummyModel or HFModel
+        
         out = self.model.predict("", text)
         if not out:
             return {"success": True, "msg": "no_answer", "data": ""}
         return {"success": True, "msg": "ok", "data": out}
 
     def get_status(self) -> Dict[str, Any]:
-        # This can be expanded to provide more detailed status
         return {"success": True, "msg": "idle", "data": {}}
 
     def auto_tune(self) -> Dict[str, Any]:
-        """Apply AutoTuner suggestions to config."""
+        '''Apply AutoTuner suggestions to config.'''
         size, tokens, txt_lines, json_lines, skipped = get_dataset_info(
             self.pretrain_dir, self.finetune_dir, self.additional_dir
         )
         logger.info(f"AutoTune triggered: dataset size = {size}, tokens = {tokens}")
-
+        
         cfg = AutoTuner(size, tokens).suggest()
         valid, msg = validate_config(cfg)
         if not valid:
             return {"success": False, "msg": msg, "data": None}
-
+        
         self._config.update(cfg)
         save_config(self._config)
         logger.info("auto-tune applied: %s", cfg)
