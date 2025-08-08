@@ -10,7 +10,6 @@ from ..data.loader import (
     load_instruction_dataset,
     load_pretrain_dataset,
     get_dataset_info,
-    InstructionSample,
 )
 from ..config import load_config, save_config
 from ..model import (

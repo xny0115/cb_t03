@@ -26,7 +26,7 @@ def _prepare_dataset(
     tokenizer: SentencePieceTokenizer,
     is_pretrain: bool,
 ) -> Tuple[PairDataset, int]:
-    """Encodes samples using a pre-trained tokenizer."""
+    '''Encodes samples using a pre-trained tokenizer.'''
     if is_pretrain:
         texts = [s.output for s in samples]
         log_dataset_stats(texts)
@@ -170,7 +170,7 @@ def train(
     is_pretrain: bool = False,
     model: Optional[Seq2SeqTransformer] = None,
 ) -> Seq2SeqTransformer:
-    """Train a Seq2SeqTransformer on given samples. Can resume from an existing model."""
+    '''Train a Seq2SeqTransformer on given samples. Can resume from an existing model.'''
 
     tokenizer_path = cfg.get("tokenizer_path", "models/spm_bpe_8k.model")
     tokenizer_model_path = Path(tokenizer_path)
@@ -266,7 +266,7 @@ def pretrain(
     cfg: dict[str, Any] | None = None,
     model: Optional[Seq2SeqTransformer] = None
 ) -> Seq2SeqTransformer:
-    """Pre-training wrapper."""
+    '''Pre-training wrapper.'''
     cfg = cfg or {}
     samples = [InstructionSample(instruction="", input="", output=t) for t in texts]
     return train(samples, cfg, is_pretrain=True, model=model)
