@@ -24,4 +24,5 @@ class WebBackend:
     def infer(self, text: str) -> Dict[str, Any]:
         return self._try_service_call(self._svc.infer, text)
     def get_config(self) -> Dict[str, Any]:
-        return {"success": True, "data": self._svc.get_config()}
+        cfg = getattr(self._svc, "get_config", lambda: {})()
+        return {"success": bool(cfg), "data": cfg}

@@ -38,6 +38,13 @@ class ChatbotService:
                 except Exception as e:
                     logger.error(f"Failed to load model from {latest_model_path}: {e}")
 
+    def get_config(self) -> dict:
+        """
+        UI 초기화용 설정 딕셔너리 반환
+        필수 키: "model_path", "device"
+        """
+        return self._config
+
     def start_training(self, mode: str) -> Dict[str, Any]:
         if self.tokenizer is None:
             return {"success": False, "msg": "Tokenizer not initialized."}
