@@ -1,50 +1,75 @@
 from __future__ import annotations
 
-from typing import List
 from pathlib import Path
-import json
+from typing import List
+import sentencepiece as spm
 
+class SentencePieceTokenizer:
+    """A wrapper for a custom-trained SentencePiece model."""
 
-class CharTokenizer:
-    """단순 문자 단위 토크나이저."""
+    def __init__(self, model_path: Path):
+        """
+        Initializes the tokenizer by loading a SentencePiece model.
 
-    SPECIALS = ["<pad>", "<bos>", "<eos>", "<unk>"]
+        Args:
+            model_path: Path to the trained SentencePiece model file.
+        """
+        if not model_path.exists():
+            raise FileNotFoundError(f"SentencePiece model not found at {model_path}")
+        self.sp = spm.SentencePieceProcessor(model_file=str(model_path))
 
-    def __init__(self, texts: List[str]) -> None:
-        chars = sorted({ch for t in texts for ch in t})
-        self.stoi = {tok: i for i, tok in enumerate(self.SPECIALS)}
-        for i, ch in enumerate(chars, start=len(self.SPECIALS)):
-            self.stoi[ch] = i
-        self.itos = {i: ch for ch, i in self.stoi.items()}
+    def encode(self, text: str, add_special_tokens: bool = True) -> List[int]:
+        """
+        Encodes a string into a sequence of token IDs.
 
-    @classmethod
-    def from_vocab(cls, vocab: dict[str, int]) -> "CharTokenizer":
-        obj = cls([])
-        obj.stoi = vocab
-        obj.itos = {i: ch for ch, i in vocab.items()}
-        return obj
+        Args:
+            text: The input string to encode.
+            add_special_tokens: Whether to add BOS and EOS tokens.
 
-    def encode(self, text: str, add_special: bool = False) -> List[int]:
-        """텍스트를 id 시퀀스로 변환한다. 미등록 문자는 ``<unk>``으로 매핑한다."""
-        unk = self.stoi["<unk>"]
-        ids = [self.stoi.get(ch, unk) for ch in text]
-        if add_special:
-            return [self.stoi["<bos>"]] + ids + [self.stoi["<eos>"]]
-        return ids
+        Returns:
+            A list of integer token IDs.
+        """
+        encoded = self.sp.encode_as_ids(text)
+        if add_special_tokens:
+            return [self.bos_id] + encoded + [self.eos_id]
+        return encoded
 
     def decode(self, ids: List[int]) -> str:
-        return "".join(self.itos.get(i, "") for i in ids if i >= len(self.SPECIALS))
+        """
+        Decodes a sequence of token IDs back to a string, skipping special tokens.
 
-    def save(self, path: str | Path) -> None:
-        """토크나이저 vocabulary를 JSON 파일로 저장한다."""
-        with open(path, "w", encoding="utf-8") as f:
-            json.dump(self.stoi, f, ensure_ascii=False)
+        Args:
+            ids: A list of integer token IDs.
+
+        Returns:
+            The decoded string.
+        """
+        # Filter out special tokens (BOS, EOS, PAD) before decoding
+        # This prevents them from being rendered as text.
+        special_ids = {self.bos_id, self.eos_id, self.pad_id, self.unk_id}
+        return self.sp.decode([id for id in ids if id not in special_ids])
 
     @property
     def vocab_size(self) -> int:
-        return len(self.stoi)
+        """Returns the size of the vocabulary."""
+        return self.sp.get_piece_size()
 
     @property
     def pad_id(self) -> int:
-        """패딩 토큰의 ID를 반환한다."""
-        return self.stoi["<pad>"]
+        """Returns the ID of the padding token."""
+        return self.sp.pad_id()
+
+    @property
+    def bos_id(self) -> int:
+        """Returns the ID of the beginning-of-sentence token."""
+        return self.sp.bos_id()
+
+    @property
+    def eos_id(self) -> int:
+        """Returns the ID of the end-of-sentence token."""
+        return self.sp.eos_id()
+
+    @property
+    def unk_id(self) -> int:
+        """Returns the ID of the unknown token."""
+        return self.sp.unk_id()
