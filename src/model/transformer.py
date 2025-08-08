@@ -14,7 +14,7 @@ import platform
 import math
 import logging
 from pathlib import Path
-from typing import Tuple, Dict
+from typing import Tuple, Dict, Optional
 
 import torch
 from torch import nn
@@ -312,9 +312,11 @@ def save_transformer(model: Seq2SeqTransformer, path: Path) -> None:
     logger.info("Model saved to %s", path)
 
 
-def load_transformer(path: Path) -> Seq2SeqTransformer:
+def load_transformer(path: Path, device: Optional[torch.device | str] = None) -> Seq2SeqTransformer:
     '''Loads a transformer model from a file.'''
-    data = torch.load(path, map_location='cpu')
+    if device is None:
+        device = "cpu"
+    data = torch.load(path, map_location=device)
     cfg = data.get("cfg", {})
     vocab_size = cfg.get("vocab_size")
     if vocab_size is None:

@@ -16,10 +16,13 @@ class ChatbotService:
     def __init__(self) -> None:
         self.model_dir = Path("models")
         self.data_dir = Path("datas")
+        self.device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
         self._config = load_config()
         self.tokenizer = None
         self.model: Optional[Seq2SeqTransformer] = None
         
+        logger.info(f"Using device: {self.device}")
+
         tokenizer_path = Path(self._config.get("tokenizer_path", "models/spm_bpe_8k.model"))
         if tokenizer_path.exists():
             self.tokenizer = SentencePieceTokenizer(tokenizer_path)
@@ -32,7 +35,8 @@ class ChatbotService:
             if self.tokenizer:
                 try:
                     logger.info(f"Loading most recent model from {latest_model_path}...")
-                    self.model = load_transformer(latest_model_path)
+                    self.model = load_transformer(latest_model_path, device=self.device)
+                    self.model.to(self.device)
                     if self.model.embed.num_embeddings != self.tokenizer.vocab_size:
                         logger.warning(f"Model and tokenizer vocab size mismatch. Re-training might be necessary.")
                 except Exception as e:
@@ -42,14 +46,17 @@ class ChatbotService:
         if self.tokenizer is None:
             return {"success": False, "msg": "Tokenizer not initialized."}
         
+        if self.model:
+            self.model.to(self.device)
+
         if mode == "pretrain":
             dataset = load_pretrain_dataset(self.data_dir / "pretrain")
-            trained_model = pretrain(dataset, self._config, model=self.model)
+            trained_model = pretrain(dataset, self._config, model=self.model, device=self.device)
         else:
             dataset = load_instruction_dataset(self.data_dir / ("additional_finetune" if mode == "additional_finetune" else "finetune"))
-            trained_model = train_transformer(dataset, self._config, is_pretrain=False, model=self.model)
+            trained_model = train_transformer(dataset, self._config, is_pretrain=False, model=self.model, device=self.device)
         
-        self.model = trained_model
+        self.model = trained_model.to(self.device)
         target_model_path = self.model_dir / f"{mode}.pth"
         logger.info(f"Saving trained model to {target_model_path}...")
         save_transformer(self.model, target_model_path)
@@ -59,8 +66,9 @@ class ChatbotService:
         if not (self.model and self.tokenizer):
             return {"success": False, "msg": "Model or tokenizer not loaded."}
         
+        self.model.to(self.device)
         ids = self.tokenizer.encode(text, add_special_tokens=True)
-        src = torch.tensor(ids, dtype=torch.long).unsqueeze(0).to(next(self.model.parameters()).device)
+        src = torch.tensor(ids, dtype=torch.long).unsqueeze(0).to(self.device)
         
         out_ids = self.model.generate(
             src,
@@ -73,3 +81,32 @@ class ChatbotService:
             top_p=float(self._config.get("top_p", 0.9)),
         )
         return {"success": True, "data": self.tokenizer.decode(out_ids.squeeze().tolist())}
+
+    def get_config(self) -> Dict[str, Any]:
+        """현재 설정을 반환합니다."""
+        return self._config
+
+    def save_config(self, config: Dict[str, Any]) -> Dict[str, Any]:
+        """설정을 저장하고 서비스에 적용합니다."""
+        validate_config(config)
+        save_config(config)
+        self._config = config
+        logger.info("Configuration saved successfully.")
+        return {"success": True, "msg": "설정이 저장되었습니다."}
+
+    def delete_model(self) -> Dict[str, Any]:
+        """모델 파일들을 삭제하고 서비스 상태를 초기화합니다."""
+        deleted_files = []
+        for p in self.model_dir.glob("*.pth"):
+            try:
+                p.unlink()
+                deleted_files.append(p.name)
+            except OSError as e:
+                logger.error(f"Failed to delete {p}: {e}")
+
+        if deleted_files:
+            logger.info(f"Deleted model files: {deleted_files}")
+            self.model = None
+            return {"success": True, "msg": f"모델 파일이 삭제되었습니다: {deleted_files}"}
+
+        return {"success": False, "msg": "삭제할 모델 파일이 없습니다."}

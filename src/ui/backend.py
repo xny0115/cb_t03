@@ -25,3 +25,5 @@ class WebBackend:
         return self._try_service_call(self._svc.infer, text)
     def get_config(self) -> Dict[str, Any]:
         return {"success": True, "data": self._svc.get_config()}
+    def save_config(self, config: Dict[str, Any]) -> Dict[str, Any]:
+        return self._try_service_call(self._svc.save_config, config)
