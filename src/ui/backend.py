@@ -1,36 +1,27 @@
 from __future__ import annotations
-
+import logging
 from typing import Any, Dict
-
 from ..service.service import ChatbotService
 
+logger = logging.getLogger(__name__)
 
 class WebBackend:
-    """웹 UI용 API 브리지."""
-
     def __init__(self, svc: ChatbotService) -> None:
         self._svc = svc
 
+    def _try_service_call(self, func, *args, **kwargs) -> Dict[str, Any]:
+        try:
+            result = func(*args, **kwargs)
+            return result if isinstance(result, dict) else {"success": True, "data": result}
+        except Exception as e:
+            logger.exception("Error in service layer")
+            return {"success": False, "msg": str(e)}
+
     def start_training(self, mode: str) -> Dict[str, Any]:
-        return self._svc.start_training(mode)
-
+        return self._try_service_call(self._svc.start_training, mode)
     def delete_model(self) -> Dict[str, Any]:
-        ok = self._svc.delete_model()
-        return {"success": ok, "msg": "deleted" if ok else "no_model", "data": None}
-
+        return self._try_service_call(self._svc.delete_model)
     def infer(self, text: str) -> Dict[str, Any]:
-        return self._svc.infer(text)
-
-    def get_status(self) -> Dict[str, Any]:
-        return self._svc.get_status()
-
-    def set_config(self, cfg: Dict[str, Any]) -> Dict[str, Any]:  # pragma: no cover
-        ok, msg = self._svc.set_config(cfg)
-        return {"success": ok, "msg": msg, "data": None}
-
-    def get_config(self) -> Dict[str, Any]:  # pragma: no cover
-        return {"success": True, "msg": "ok", "data": self._svc.get_config()}
-
-    def auto_tune(self) -> Dict[str, Any]:  # pragma: no cover
-        cfg = self._svc.auto_tune()
-        return {"success": True, "msg": "ok", "data": cfg}
+        return self._try_service_call(self._svc.infer, text)
+    def get_config(self) -> Dict[str, Any]:
+        return {"success": True, "data": self._svc.get_config()}
