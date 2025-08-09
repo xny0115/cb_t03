@@ -59,6 +59,11 @@ def main() -> None:
     parser.add_argument("--model-path")
     args = parser.parse_args()
 
+    setup_logger()
+    import os
+    if os.environ.get("SKIP_CUDA_INSTALL") != "1":
+        _ensure_cuda_torch()
+
     if args.config_path:
         os.environ["CONFIG_PATH"] = args.config_path
     if args.data_dir:
@@ -66,8 +71,6 @@ def main() -> None:
     if args.model_path:
         os.environ["MODEL_PATH"] = args.model_path
 
-    setup_logger()
-    _ensure_cuda_torch()
 
     if args.mode == "pretrain":
         from src.service.service import ChatbotService
