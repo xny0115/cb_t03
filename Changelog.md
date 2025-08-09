@@ -88,3 +88,10 @@
     -   서비스 시작 시 `setup_logger()`로 로그를 강제 초기화하고, 학습 전 프리플라이트 검사(플랫폼 보정, 토크나이저 확인, 데이터 크기 검증)를 수행하여 즉시 실패 원인을 반환하도록 함.
     -   `DataLoader`에 Windows 안전 설정(`num_workers=0`, `pin_memory=False`, `persistent_workers=False`)을 적용하고, 학습 시작 전에 `_dry_run`을 1회 실행하여 AMP 및 데이터로더 문제를 조기에 검출.
     -   학습 로그에 `start_training`, `dataset_size`, `train()` 설정, `dry_run=success`를 출력하여 원인 파악을 용이하게 함.
+
+## [v0.2.7] - 2025-08-15
+
+### 세부 변경 내역
+- 체크포인트 존재 여부를 자동 감지하여 추가 학습 시 손실이 이어지도록 `resume` 정책을 개선함.
+- 모델 삭제 시 `training_state.pth`와 토크나이저 파일을 보존하도록 예외 조건을 추가함.
+- UI 스크립트에서 학습 버튼과 백엔드 API 연결을 점검하여 트리거 동작을 확인함.

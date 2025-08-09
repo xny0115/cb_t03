@@ -55,11 +55,22 @@ class ChatbotService:
         return {"success": True, "data": tuned}
 
     def start_training(self, mode: str) -> Dict[str, Any]:
+        """Run training in the specified mode.
+
+        Args:
+            mode: 학습 모드('pretrain', 'finetune', 'additional_finetune').
+
+        Returns:
+            학습 성공 여부 및 메시지.
+        """
         ok, msg = validate_config(self._config)
         if not ok:
             return {"success": False, "msg": msg}
 
         resume = bool(self._config.get("resume", False))
+        from pathlib import Path
+        ckpt = Path(self._config.get("checkpoint_path", "models/training_state.pth"))
+        resume = ckpt.exists()
 
         import platform, torch, logging
         logger = logging.getLogger(__name__)
@@ -132,8 +143,11 @@ class ChatbotService:
         return {"success": True, "data": self.tokenizer.decode(out_ids.squeeze().tolist())}
 
     def delete_model(self) -> bool:
+        """Delete trained model files except checkpoint and tokenizer."""
         removed = False
         for p in self.model_dir.glob("*.pth"):
+            if p.name == "training_state.pth":
+                continue
             p.unlink(missing_ok=True)
             removed = True
         self.model = None
