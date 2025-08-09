@@ -58,15 +58,26 @@ class ChatbotService:
             return {"success": False, "msg": msg}
         if self.tokenizer is None:
             return {"success": False, "msg": "Tokenizer not initialized."}
-        
+
+        resume = bool(self._config.get("resume", False))
         if mode == "pretrain":
             dataset = load_pretrain_dataset(self.data_dir / "pretrain")
-            trained_model = pretrain(dataset, self._config, model=self.model)
+            trained_model = pretrain(dataset, self._config, model=self.model, resume=resume)
         else:
-            dataset = load_instruction_dataset(self.data_dir / ("additional_finetune" if mode == "additional_finetune" else "finetune"))
-            trained_model = train_transformer(dataset, self._config, is_pretrain=False, model=self.model)
-        
+            dataset = load_instruction_dataset(
+                self.data_dir
+                / ("additional_finetune" if mode == "additional_finetune" else "finetune")
+            )
+            trained_model = train_transformer(
+                dataset,
+                self._config,
+                is_pretrain=False,
+                model=self.model,
+                resume=resume,
+            )
+
         self.model = trained_model
+        self.dataset = dataset
         target_model_path = self.model_dir / f"{mode}.pth"
         logger.info(f"Saving trained model to {target_model_path}...")
         save_transformer(self.model, target_model_path)

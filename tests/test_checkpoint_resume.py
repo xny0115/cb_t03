@@ -26,8 +26,8 @@ def test_resume_continues_step(monkeypatch):
     monkeypatch.setattr(torch.cuda, "is_available", lambda: False)
     train(samples, cfg)
     first = torch.load(ckpt)
-    cfg["num_epochs"] = 2
-    train(samples, cfg)
+    cfg.update({"num_epochs": 2})
+    train(samples, cfg, resume=True)
     second = torch.load(ckpt)
     assert second["epoch"] == first["epoch"] + 1
     assert second["global_step"] > first["global_step"]
