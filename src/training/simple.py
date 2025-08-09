@@ -113,9 +113,13 @@ def train(
     if resume and ckpt_path.exists():
         logger.info("Resume training from checkpoint: %s", ckpt_path)
         ckpt = torch.load(ckpt_path, map_location="cpu")
-        cfg_ckpt = ckpt.get("cfg", cfg)
-        model = _init_model(tokenizer, cfg_ckpt)
-        model.load_state_dict(ckpt["model"])  # type: ignore[arg-type]
+        # 항상 현재 UI의 설정을 기준으로 모델을 생성하고, 가중치만 불러온다.
+        # 이렇게 하면 아키텍처 변경 후에도 안전하게 이어학습 가능.
+        logger.info("Initializing model from CURRENT config for resume.")
+        model = _init_model(tokenizer, cfg)
+        logger.info("Loading weights from checkpoint with strict=False.")
+        model.load_state_dict(ckpt["model"], strict=False)  # type: ignore[arg-type]
+
         start_epoch = int(ckpt.get("epoch", 0)) + 1
         global_step = int(ckpt.get("global_step", 0))
         best_val_loss = float(ckpt.get("best_metric", float("inf")))

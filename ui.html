@@ -927,7 +927,7 @@
                 </button>
                 <button id="pretrainBtn" class="train-btn">사전학습</button>
                 <button id="finetuneBtn" class="train-btn">파인튜닝</button>
-                <button id="resumeTrainingBtn" class="train-btn">이어학습</button>
+                <button id="additionalFinetuneBtn" class="train-btn">추가 파인튜닝</button>
                 <button id="autoTuneBtn">Auto-Tune</button>
                 <button id="deleteModelBtn" class="delete-btn">모델 삭제</button>
             </div>
@@ -964,7 +964,7 @@
             const saveBtn = document.getElementById('saveSettingsBtn');
             const pretrainBtn = document.getElementById('pretrainBtn'); // 새로 추가
             const finetuneBtn = document.getElementById('finetuneBtn'); // 새로 추가
-            const resumeTrainingBtn = document.getElementById('resumeTrainingBtn'); // 새로 추가
+            const additionalFinetuneBtn = document.getElementById('additionalFinetuneBtn'); // 새로 추가
             const autoBtn = document.getElementById('autoTuneBtn');
             const deleteBtn = document.getElementById('deleteModelBtn');
 
@@ -1002,7 +1002,7 @@
                 const ok = checkFieldsFilled();
                 pretrainBtn.disabled = !ok;
                 finetuneBtn.disabled = !ok;
-                resumeTrainingBtn.disabled = !ok;
+                additionalFinetuneBtn.disabled = !ok;
             }
 
             inputsToWatch.forEach(el => el.addEventListener('input', updateTrainingButtons));
@@ -1054,7 +1054,7 @@
                 function setTrainingButtonsDisabled(disabled) {
                     pretrainBtn.disabled = disabled;
                     finetuneBtn.disabled = disabled;
-                    resumeTrainingBtn.disabled = disabled;
+                    additionalFinetuneBtn.disabled = disabled;
                     // autoBtn과 deleteBtn도 학습 중에는 비활성화 (선택 사항, 필요에 따라)
                     autoBtn.disabled = disabled;
                     deleteBtn.disabled = disabled;
@@ -1189,7 +1189,7 @@
                 // 각 학습 버튼에 대한 이벤트 리스너 추가
                 pretrainBtn.onclick = () => handleTraining('pretrain');
                 finetuneBtn.onclick = () => handleTraining('finetune');
-                resumeTrainingBtn.onclick = () => handleTraining('resume_training');
+                additionalFinetuneBtn.onclick = () => handleTraining('additional_finetune');
 
                 autoBtn.onclick = () => {
                     localStorage.setItem('preferredTab', 'settingsTab');
@@ -1227,7 +1227,7 @@
                 // 모든 학습 관련 버튼 비활성화
                 pretrainBtn.disabled = true;
                 finetuneBtn.disabled = true;
-                resumeTrainingBtn.disabled = true;
+                additionalFinetuneBtn.disabled = true;
                 autoBtn.disabled = true;
                 deleteBtn.disabled = true;
 
@@ -1241,7 +1241,7 @@
                             // 실패 시 버튼 다시 활성화
                             pretrainBtn.disabled = false;
                             finetuneBtn.disabled = false;
-                            resumeTrainingBtn.disabled = false;
+                            additionalFinetuneBtn.disabled = false;
                             autoBtn.disabled = false;
                             deleteBtn.disabled = false;
                             updateTrainingButtons();
@@ -1252,7 +1252,7 @@
                         // 실패 시 버튼 다시 활성화
                         pretrainBtn.disabled = false;
                         finetuneBtn.disabled = false;
-                        resumeTrainingBtn.disabled = false;
+                        additionalFinetuneBtn.disabled = false;
                         autoBtn.disabled = false;
                         deleteBtn.disabled = false;
                         updateTrainingButtons();
