@@ -58,7 +58,7 @@ class ChatbotService:
         """Run training in the specified mode.
 
         Args:
-            mode: 학습 모드('pretrain', 'finetune', 'additional_finetune').
+            mode: 학습 모드('pretrain', 'finetune', 'resume_training').
 
         Returns:
             학습 성공 여부 및 메시지.
@@ -69,10 +69,15 @@ class ChatbotService:
             logger.warning(f"[학습 중단] 사유: {msg}")
             return {"success": False, "msg": msg}
 
-        resume = bool(self._config.get("resume", False))
-        from pathlib import Path
-        ckpt = Path(self._config.get("checkpoint_path", "models/training_state.pth"))
-        resume = ckpt.exists()
+        ckpt_path = Path(self._config.get("checkpoint_path", "models/training_state.pth"))
+
+        # 'pretrain', 'finetune' 모드는 항상 새로 시작 (기존 체크포인트 삭제)
+        if mode in ["pretrain", "finetune"]:
+            if ckpt_path.exists():
+                logger.info(f"'{mode}' 모드로 새로 학습을 시작하기 위해 기존 체크포인트를 삭제합니다: {ckpt_path}")
+                ckpt_path.unlink()
+
+        resume = ckpt_path.exists()
 
         import platform, torch
 
@@ -92,11 +97,13 @@ class ChatbotService:
         # 데이터 로딩
         if mode == "pretrain":
             dataset = load_pretrain_dataset(self.data_dir / "pretrain")
-        else:
-            dataset = load_instruction_dataset(
-                self.data_dir
-                / ("additional_finetune" if mode == "additional_finetune" else "finetune")
-            )
+        elif mode == "finetune":
+            dataset = load_instruction_dataset(self.data_dir / "finetune")
+        elif mode == "resume_training":
+            # "이어학습"은 "추가 파인튜닝" 데이터를 사용
+            dataset = load_instruction_dataset(self.data_dir / "additional_finetune")
+        else: # Fallback for safety
+             dataset = load_instruction_dataset(self.data_dir / "finetune")
         ds_len = len(dataset) if hasattr(dataset, "__len__") else 0
         logger.info("start_training mode=%s dataset_size=%d", mode, ds_len)
         if ds_len < 2:
