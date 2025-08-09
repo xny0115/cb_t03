@@ -2,11 +2,10 @@ import logging
 from logging.handlers import RotatingFileHandler
 from logging import Formatter
 from pathlib import Path
-from datetime import datetime
 import warnings
 
 LOG_DIR = Path("logs")
-LOG_PATH = LOG_DIR / f"{datetime.now():%y%m%d_%H%M}.log"
+LOG_PATH = LOG_DIR / "train.log"
 
 class TextFormatter(Formatter):
     """간단한 텍스트 로거 포맷."""

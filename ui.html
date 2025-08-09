@@ -1183,7 +1183,7 @@
             }
 
 
-            let api = null;
+            let api = {};
 
             function initButtons() {
                 // 각 학습 버튼에 대한 이벤트 리스너 추가
@@ -1262,8 +1262,13 @@
 
 
             window.addEventListener('pywebviewready', () => {
-                api = window.pywebview.api;
-                initButtons();
+                ["start_training", "delete_model", "infer", "get_status", "set_config", "auto_tune"].forEach(m => {
+                    if (window.pywebview.api[m]) {
+                        api[m] = wrap(m, window.pywebview.api[m]);
+                    } else {
+                        console.warn(`pywebview.api.${m} is not defined.`);
+                    }
+                });
                 loadCfg();
                 pollStatus(); // 초기 상태 폴링 시작
             });
@@ -1352,8 +1357,11 @@
 
                 const meta = document.createElement('div');
                 meta.className = 'meta';
-                meta.textContent = new Date().toLocaleTimeString();
-                if(role !== 'USER') meta.textContent += ' \u00B7 ' + latency + ' ms';
+                if (role !== 'USER') {
+                    meta.textContent = latency + ' ms';
+                } else {
+                    meta.textContent = '';
+                }
 
                 wrap.appendChild(bubble);
                 wrap.appendChild(meta);
@@ -1406,6 +1414,7 @@
             adjustInputHeight();
             mainContainer.scrollTop = mainContainer.scrollHeight;
             updateTrainingButtons();
+            initButtons();
         });
 
         function wrap(name, fn) {
@@ -1417,15 +1426,6 @@
                 });
             };
         }
-        window.addEventListener("pywebviewready", () => {
-            ["start_training", "delete_model", "infer", "get_status", "set_config", "auto_tune"].forEach(m => {
-                if (window.pywebview.api[m]) { // api[m]이 존재하는지 확인
-                    api[m] = wrap(m, window.pywebview.api[m]);
-                } else {
-                    console.warn(`pywebview.api.${m} is not defined.`);
-                }
-            });
-        });
     </script>
 </body>
 </html>
