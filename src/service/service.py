@@ -63,8 +63,10 @@ class ChatbotService:
         Returns:
             학습 성공 여부 및 메시지.
         """
+        logger.info(f"[학습 진입] mode={mode}")
         ok, msg = validate_config(self._config)
         if not ok:
+            logger.warning(f"[학습 중단] 사유: {msg}")
             return {"success": False, "msg": msg}
 
         resume = bool(self._config.get("resume", False))
@@ -72,8 +74,7 @@ class ChatbotService:
         ckpt = Path(self._config.get("checkpoint_path", "models/training_state.pth"))
         resume = ckpt.exists()
 
-        import platform, torch, logging
-        logger = logging.getLogger(__name__)
+        import platform, torch
 
         # 환경 보정
         if platform.system() == "Windows":
@@ -84,7 +85,9 @@ class ChatbotService:
 
         # 토크나이저 확인
         if self.tokenizer is None:
-            return {"success": False, "msg": "Tokenizer not initialized."}
+            msg = "Tokenizer not initialized."
+            logger.warning(f"[학습 중단] 사유: {msg}")
+            return {"success": False, "msg": msg}
 
         # 데이터 로딩
         if mode == "pretrain":
@@ -97,7 +100,9 @@ class ChatbotService:
         ds_len = len(dataset) if hasattr(dataset, "__len__") else 0
         logger.info("start_training mode=%s dataset_size=%d", mode, ds_len)
         if ds_len < 2:
-            return {"success": False, "msg": f"dataset too small: {ds_len} samples"}
+            msg = f"dataset too small: {ds_len} samples"
+            logger.warning(f"[학습 중단] 사유: {msg}")
+            return {"success": False, "msg": msg}
 
         if mode == "pretrain":
             trained_model = pretrain(dataset, self._config, model=self.model, resume=resume)
@@ -115,7 +120,9 @@ class ChatbotService:
         target_model_path = self.model_dir / f"{mode}.pth"
         logger.info(f"Saving trained model to {target_model_path}...")
         save_transformer(self.model, target_model_path)
-        return {"success": True, "msg": "Training complete."}
+        msg = "Training complete."
+        logger.warning(f"[학습 중단] 사유: {msg}")
+        return {"success": True, "msg": msg}
 
     def infer(self, text: str) -> Dict[str, Any]:
         if not text:
