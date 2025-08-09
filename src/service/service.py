@@ -58,18 +58,40 @@ class ChatbotService:
         ok, msg = validate_config(self._config)
         if not ok:
             return {"success": False, "msg": msg}
+
+        resume = bool(self._config.get("resume", False))
+
+        import platform, torch, logging
+        logger = logging.getLogger(__name__)
+        logger.info("start_training mode=%s", mode)
+
+        # 환경 보정
+        if platform.system() == "Windows":
+            self._config["num_workers"] = 0
+            self._config["pin_memory"] = False
+        if not torch.cuda.is_available():
+            self._config["use_mixed_precision"] = False
+
+        # 토크나이저 확인
         if self.tokenizer is None:
             return {"success": False, "msg": "Tokenizer not initialized."}
 
-        resume = bool(self._config.get("resume", False))
+        # 데이터 로딩
         if mode == "pretrain":
             dataset = load_pretrain_dataset(self.data_dir / "pretrain")
-            trained_model = pretrain(dataset, self._config, model=self.model, resume=resume)
         else:
             dataset = load_instruction_dataset(
                 self.data_dir
                 / ("additional_finetune" if mode == "additional_finetune" else "finetune")
             )
+        ds_len = len(dataset) if hasattr(dataset, "__len__") else 0
+        logger.info("dataset_size=%d", ds_len)
+        if ds_len < 2:
+            return {"success": False, "msg": f"dataset too small: {ds_len} samples"}
+
+        if mode == "pretrain":
+            trained_model = pretrain(dataset, self._config, model=self.model, resume=resume)
+        else:
             trained_model = train_transformer(
                 dataset,
                 self._config,

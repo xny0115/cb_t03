@@ -79,3 +79,12 @@
 - 실행 스크립트에서 `SKIP_CUDA_INSTALL` 환경변수로 CUDA 자동 설치 과정을 조건부 수행하도록 수정.
 - `datas/finetune/train.jsonl` 샘플 데이터를 생성하여 데이터 경로 정합성을 확보.
 - CLI 사전학습 실행을 통해 로그와 `models/pretrain.pth` 생성 여부를 검증하고, 미세튜닝은 데이터 부족으로 실패(`StopIteration`).
+
+## [v0.2.6] - 2025-08-14
+
+### 세부 변경 내역
+-   **문제점:** 서비스 실행 시 로그가 누적되고 데이터/환경 이상이나 Windows/CPU 환경의 DataLoader 문제로 학습 루프에 진입하지 못하는 경우가 있었음.
+-   **개선 사항:**
+    -   서비스 시작 시 `setup_logger()`로 로그를 강제 초기화하고, 학습 전 프리플라이트 검사(플랫폼 보정, 토크나이저 확인, 데이터 크기 검증)를 수행하여 즉시 실패 원인을 반환하도록 함.
+    -   `DataLoader`에 Windows 안전 설정(`num_workers=0`, `pin_memory=False`, `persistent_workers=False`)을 적용하고, 학습 시작 전에 `_dry_run`을 1회 실행하여 AMP 및 데이터로더 문제를 조기에 검출.
+    -   학습 로그에 `start_training`, `dataset_size`, `train()` 설정, `dry_run=success`를 출력하여 원인 파악을 용이하게 함.

@@ -53,8 +53,12 @@ def _prepare_dataset(samples, tokenizer, is_pretrain):
 
 def _create_loader(dataset, cfg):
     """Return DataLoader with device aware pin_memory."""
-    pin = bool(cfg.get("pin_memory", torch.cuda.is_available()))
+    import platform
     workers = int(cfg.get("num_workers", 0))
+    pin = bool(cfg.get("pin_memory", False))
+    if platform.system() == "Windows":
+        workers = 0
+        pin = False
     return DataLoader(
         dataset,
         batch_size=int(cfg.get("batch_size", 32)),
@@ -63,6 +67,7 @@ def _create_loader(dataset, cfg):
         num_workers=workers,
         pin_memory=pin,
         drop_last=True,
+        persistent_workers=False,
     )
 
 def _init_model(tokenizer, cfg):
@@ -79,6 +84,12 @@ def train(
     tok_path = Path(cfg.get("tokenizer_path", "models/spm_bpe_8k.model"))
     tokenizer = SentencePieceTokenizer(tok_path)
     logger.info("tokenizer_path=%s vocab_size=%d", tok_path, tokenizer.vocab_size)
+    logger.info(
+        "train(): epochs=%s max_steps=%s amp=%s",
+        cfg.get("num_epochs"),
+        cfg.get("max_steps", 0),
+        cfg.get("use_mixed_precision"),
+    )
     dataset, line_count = _prepare_dataset(samples, tokenizer, is_pretrain)
     if line_count <= 0:
         raise ValueError("No training samples found")
@@ -139,8 +150,18 @@ def train(
             best_val_loss,
         )
     logger.info("MODE=%s, ckpt_path=%s, vocab_size=%d", mode, ckpt_path, tokenizer.vocab_size)
-    if bool(cfg.get("dry_run", True)):
-        _dry_run(loader, model, crit, tokenizer, device, amp)
+    try:
+        _dry_run(
+            loader,
+            model,
+            crit,
+            tokenizer,
+            device,
+            bool(cfg.get("use_mixed_precision", False)),
+        )
+    except Exception as e:
+        logger.error("dry_run_failed: %s", e)
+        raise
     for epoch in range(start_epoch, max(epochs, 1)):
         train_loss, steps, global_step, _ = _train_epoch(
             loader,
