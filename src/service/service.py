@@ -55,46 +55,28 @@ class ChatbotService:
         return {"success": True, "data": tuned}
 
     def start_training(self, mode: str) -> Dict[str, Any]:
-        logger.info(f"Received training request for mode: {mode}")
-
         ok, msg = validate_config(self._config)
         if not ok:
-            logger.error(f"Configuration validation failed: {msg}")
             return {"success": False, "msg": msg}
-        logger.info("Configuration validation successful.")
-
         if self.tokenizer is None:
-            logger.error("Tokenizer is not initialized. Aborting training.")
             return {"success": False, "msg": "Tokenizer not initialized."}
-        logger.info("Tokenizer is ready.")
 
         resume = bool(self._config.get("resume", False))
-
-        try:
-            if mode == "pretrain":
-                logger.info("Loading pretrain dataset...")
-                dataset = load_pretrain_dataset(self.data_dir / "pretrain")
-                logger.info(f"Pretrain dataset loaded with {len(dataset)} samples.")
-                if not dataset:
-                    raise ValueError("Pretrain dataset is empty.")
-                trained_model = pretrain(dataset, self._config, model=self.model, resume=resume)
-            else:
-                data_path_name = "additional_finetune" if mode == "additional_finetune" else "finetune"
-                logger.info(f"Loading {data_path_name} dataset...")
-                dataset = load_instruction_dataset(self.data_dir / data_path_name)
-                logger.info(f"{data_path_name} dataset loaded with {len(dataset)} samples.")
-                if not dataset:
-                    raise ValueError(f"{data_path_name} dataset is empty.")
-                trained_model = train_transformer(
-                    dataset,
-                    self._config,
-                    is_pretrain=False,
-                    model=self.model,
-                    resume=resume,
-                )
-        except Exception as e:
-            logger.error(f"An error occurred during data loading or training initiation: {e}", exc_info=True)
-            return {"success": False, "msg": f"Error during training setup: {e}"}
+        if mode == "pretrain":
+            dataset = load_pretrain_dataset(self.data_dir / "pretrain")
+            trained_model = pretrain(dataset, self._config, model=self.model, resume=resume)
+        else:
+            dataset = load_instruction_dataset(
+                self.data_dir
+                / ("additional_finetune" if mode == "additional_finetune" else "finetune")
+            )
+            trained_model = train_transformer(
+                dataset,
+                self._config,
+                is_pretrain=False,
+                model=self.model,
+                resume=resume,
+            )
 
         self.model = trained_model
         self.dataset = dataset
