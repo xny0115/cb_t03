@@ -49,3 +49,13 @@
     -   `ChatbotService.get_config` 메소드를 추가하여 UI 초기화 설정을 직접 제공하도록 함.
     -   `WebBackend.get_config`에서 서비스 레이어의 메소드 존재 여부를 검사하고, 설정 딕셔너리 유무에 따라 성공 여부를 반환하도록 방어 로직을 보강함.
     -   `/get_config` 엔드포인트 동작을 검증하는 단위 테스트 `tests/ui/test_backend.py`를 추가함.
+
+## [v0.2.3] - 2025-08-11
+
+### 세부 변경 내역
+-   GPU/CPU 자동 선택 및 AMP 활성화 여부를 로그 한 줄로 출력하도록 학습 루프 개선.
+-   DataLoader가 CUDA 사용 시 `pin_memory=True`로 설정되고, 모든 텐서와 모델이 동일한 device로 이동하도록 수정.
+-   `GradScaler`와 `autocast`를 조건부 적용하여 혼합 정밀도를 안전하게 처리.
+-   단일 체크포인트(`training_state.pth`)에 모델, 옵티마, 스케줄러, 스케일러, 에폭, 글로벌 스텝, 베스트 지표, 설정을 저장하고 중단된 지점에서 이어서 학습 가능하도록 구현.
+-   `_train_epoch`가 글로벌 스텝과 러닝레이트를 반환하도록 갱신하고, 대응 테스트를 추가.
+-   `ChatbotService`에 `auto_tune`, `delete_model`, `MAX_INPUT_LEN` 및 입력 검증 로직을 추가하여 서비스 관련 테스트 안정화.
