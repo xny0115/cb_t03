@@ -99,9 +99,8 @@ def train(
     start_epoch = 0
     global_step = 0
     best_val_loss = float("inf")
-    if resume:
-        if not ckpt_path.exists():
-            raise FileNotFoundError(f"Checkpoint not found at {ckpt_path}")
+    if resume and ckpt_path.exists():
+        logger.info("Resume training from checkpoint: %s", ckpt_path)
         ckpt = torch.load(ckpt_path, map_location="cpu")
         cfg_ckpt = ckpt.get("cfg", cfg)
         model = _init_model(tokenizer, cfg_ckpt)
@@ -111,8 +110,13 @@ def train(
         best_val_loss = float(ckpt.get("best_metric", float("inf")))
         mode = "RESUME"
     else:
+        if resume:
+            logger.warning(
+                "Resume is true but checkpoint not found at %s. Starting fresh.",
+                ckpt_path,
+            )
         if model is None:
-            logger.info("Initializing a new model.")
+            logger.info("Initializing a new model for cold start.")
             model = _init_model(tokenizer, cfg)
         mode = "COLD_START"
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
