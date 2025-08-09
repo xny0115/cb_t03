@@ -8,6 +8,8 @@ from ..model import Seq2SeqTransformer, save_transformer, load_transformer
 from ..training.simple import train as train_transformer, pretrain
 from ..utils.tokenizer import SentencePieceTokenizer
 from ..utils.validator import validate_config, REQUIRED_KEYS
+from ..utils.logger import setup_logger
+setup_logger()  # 서비스 레벨에서 로그 초기화
 
 logger = logging.getLogger(__name__)
 
