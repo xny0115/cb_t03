@@ -74,7 +74,6 @@ class ChatbotService:
 
         import platform, torch, logging
         logger = logging.getLogger(__name__)
-        logger.info("start_training mode=%s", mode)
 
         # 환경 보정
         if platform.system() == "Windows":
@@ -96,7 +95,7 @@ class ChatbotService:
                 / ("additional_finetune" if mode == "additional_finetune" else "finetune")
             )
         ds_len = len(dataset) if hasattr(dataset, "__len__") else 0
-        logger.info("dataset_size=%d", ds_len)
+        logger.info("start_training mode=%s dataset_size=%d", mode, ds_len)
         if ds_len < 2:
             return {"success": False, "msg": f"dataset too small: {ds_len} samples"}
 
