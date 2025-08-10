@@ -533,7 +533,7 @@
             justify-content: center;
         }
         .action-buttons button:hover { transform: translateY(-2px); }
-        
+
         /* Save Button specific styles */
         .action-buttons button#saveSettingsBtn {
             background-color: var(--color-accent-primary);
@@ -547,7 +547,7 @@
             fill: currentColor;
         }
         .action-buttons button#saveSettingsBtn:hover { background-color: var(--color-accent-primary-hover); }
-        
+
         /* New Training Buttons */
         .action-buttons button.train-btn {
             background-color: var(--color-accent-primary);
@@ -555,7 +555,7 @@
         .action-buttons button.train-btn:hover { background-color: var(--color-accent-primary-hover); }
 
         .action-buttons button#autoTuneBtn { background-color: var(--color-accent-primary); }
-        .action-buttons button#autoTuneBtn:hover { background-color: var(--color-accent-primary-hover); } 
+        .action-buttons button#autoTuneBtn:hover { background-color: var(--color-accent-primary-hover); }
         .action-buttons button.delete-btn { background-color: var(--color-danger); }
         .action-buttons button.delete-btn:hover { background-color: var(--color-danger-hover); }
 
@@ -600,16 +600,6 @@
         #userInput::-webkit-scrollbar-thumb:hover {
             background-color: var(--color-background-light); /* 호버 시 썸 색상 */
         }
-
-        /* Firefox (파이어폭스는 커스터마이징이 제한적입니다) */
-        /* .main-container {
-            scrollbar-width: thin;
-            scrollbar-color: var(--color-background-medium) var(--color-background-dark);
-        }
-        #userInput {
-            scrollbar-width: thin;
-            scrollbar-color: var(--color-background-medium) var(--color-background-darkest);
-        } */
     </style>
 </head>
 <body>
@@ -724,7 +714,7 @@
                             <small class="tip">- 병렬 attention 처리 수입니다. (성능과 계산량에 영향)</small>
                         </div>
                         <div class="setting-item">
-                            <label for="dropoutInput">드롭아웃 비율</label>                            
+                            <label for="dropoutInput">드롭아웃 비율</label>
                             <div class="slider-group">
                                 <input type="range" id="dropoutInput" min="0.0" max="0.5" step="0.05" value="0.1" />
                                 <span class="range-value" id="dropoutValue">0.10</span>
@@ -927,7 +917,7 @@
                 </button>
                 <button id="pretrainBtn" class="train-btn">사전학습</button>
                 <button id="finetuneBtn" class="train-btn">파인튜닝</button>
-                <button id="additionalFinetuneBtn" class="train-btn">추가 파인튜닝</button>
+                <button id="resumeBtn" class="train-btn">이어학습</button>
                 <button id="autoTuneBtn">Auto-Tune</button>
                 <button id="deleteModelBtn" class="delete-btn">모델 삭제</button>
             </div>
@@ -960,14 +950,13 @@
 
     <script>
         document.addEventListener('DOMContentLoaded', () => {
-            // 변경된 버튼 ID들을 포함하도록 업데이트
             const saveBtn = document.getElementById('saveSettingsBtn');
-            const pretrainBtn = document.getElementById('pretrainBtn'); // 새로 추가
-            const finetuneBtn = document.getElementById('finetuneBtn'); // 새로 추가
-            const additionalFinetuneBtn = document.getElementById('additionalFinetuneBtn'); // 새로 추가
+            const pretrainBtn = document.getElementById('pretrainBtn');
+            const finetuneBtn = document.getElementById('finetuneBtn');
+            const resumeBtn = document.getElementById('resumeBtn');
             const autoBtn = document.getElementById('autoTuneBtn');
             const deleteBtn = document.getElementById('deleteModelBtn');
-            
+
             const userInput = document.getElementById('userInput');
             const chatHistory = document.getElementById('chatHistory');
             const trainStatus = document.getElementById('trainStatus');
@@ -1002,7 +991,7 @@
                 const ok = checkFieldsFilled();
                 pretrainBtn.disabled = !ok;
                 finetuneBtn.disabled = !ok;
-                additionalFinetuneBtn.disabled = !ok;
+                resumeBtn.disabled = !ok;
             }
 
             inputsToWatch.forEach(el => el.addEventListener('input', updateTrainingButtons));
@@ -1011,25 +1000,21 @@
                 requestAnimationFrame(() => el.classList.add('animate'));
             });
 
-            // 메시지 입력창 높이 자동 조절 함수
             function adjustInputHeight() {
-                userInput.style.height = 'auto'; // 높이 초기화
-                // min-height보다 작아지지 않도록 48px와 scrollHeight 중 큰 값을 사용
+                userInput.style.height = 'auto';
                 userInput.style.height = Math.max(userInput.scrollHeight, 48) + 'px';
-
-                // max-height를 넘어가면 max-height로 고정하고 스크롤바 표시
                 const maxHeight = parseInt(getComputedStyle(userInput).maxHeight);
                 if (userInput.scrollHeight > maxHeight) {
                     userInput.style.overflowY = 'auto';
                     userInput.style.height = maxHeight + 'px';
                 } else {
-                    userInput.style.overflowY = 'hidden'; // 내용이 max-height보다 작으면 스크롤바 숨김
+                    userInput.style.overflowY = 'hidden';
                 }
             }
 
             function showStatus(el, msg, type = 'info') {
                 el.textContent = msg;
-                el.className = `status-message active ${type}`; // 타입 클래스 추가
+                el.className = `status-message active ${type}`;
             }
 
             function showError(msg){
@@ -1050,12 +1035,10 @@
             }
 
             function pollStatus() {
-                // 학습 관련 버튼들을 제어하는 함수
                 function setTrainingButtonsDisabled(disabled) {
                     pretrainBtn.disabled = disabled;
                     finetuneBtn.disabled = disabled;
-                    additionalFinetuneBtn.disabled = disabled;
-                    // autoBtn과 deleteBtn도 학습 중에는 비활성화 (선택 사항, 필요에 따라)
+                    resumeBtn.disabled = disabled;
                     autoBtn.disabled = disabled;
                     deleteBtn.disabled = disabled;
                 }
@@ -1071,10 +1054,10 @@
                     gpuStatus.textContent = data.gpu_usage ? `${data.gpu_usage.toFixed(1)}%` : 'N/A';
                     updateProgress(data.progress, data.status_msg);
                     if (data.training) {
-                        setTrainingButtonsDisabled(true); // 학습 중에는 버튼 비활성화
+                        setTrainingButtonsDisabled(true);
                         setTimeout(pollStatus, 1000);
                     } else {
-                        setTrainingButtonsDisabled(false); // 학습 완료 시 버튼 활성화
+                        setTrainingButtonsDisabled(false);
                         updateTrainingButtons();
                     }
                 }).catch(err => {
@@ -1100,8 +1083,6 @@
                     top_k: parseInt(document.getElementById('topkInput').value),
                     temperature: parseFloat(document.getElementById('tempInput').value),
                     top_p: parseFloat(document.getElementById('topPInput').value),
-                    
-                    // 새로 추가된 설정 항목들 (환경 설정)
                     data_preprocessing: document.getElementById('dataPreprocessing').value,
                     embedding_dim: parseInt(document.getElementById('embeddingDim').value),
                     activation_function: document.getElementById('activationFunction').value,
@@ -1110,8 +1091,6 @@
                     normalization_technique: document.getElementById('normalizationTechnique').value,
                     attention_type: document.getElementById('attentionType').value,
                     positional_encoding: document.getElementById('positionalEncoding').value,
-
-                    // 새로 추가된 고급 설정 및 추론 설정 항목
                     gradient_clipping: parseFloat(document.getElementById('gradient_clipping').value),
                     weight_decay: parseFloat(document.getElementById('weight_decay').value),
                     early_stopping_patience: parseInt(document.getElementById('early_stopping_patience').value),
@@ -1121,12 +1100,8 @@
                     use_mixed_precision: document.getElementById('mpCheckbox').checked,
                     repetition_penalty: parseFloat(document.getElementById('repetition_penalty').value),
                     max_response_length: parseInt(document.getElementById('max_response_length').value),
-
-                    // 기존 Early Stopping, 패턴 인식 (새로운 위치에서 가져옴)
                     early_stopping: document.getElementById('earlyStopping').checked,
                     pattern_recognition: document.getElementById('patternRecognition').checked,
-
-                    // 기존 추론 설정 (이제는 빔 서치 크기와 다양성 페널티만 남음)
                     beam_search_size: parseInt(document.getElementById('beamSearchSize').value),
                     diversity_penalty: parseFloat(document.getElementById('diversityPenalty').value)
                 };
@@ -1186,11 +1161,10 @@
             let api = null;
 
             function initButtons() {
-                // 각 학습 버튼에 대한 이벤트 리스너 추가
                 pretrainBtn.onclick = () => handleTraining('pretrain');
                 finetuneBtn.onclick = () => handleTraining('finetune');
-                additionalFinetuneBtn.onclick = () => handleTraining('additional_finetune');
-                
+                resumeBtn.onclick = () => handleTraining('resume');
+
                 autoBtn.onclick = () => {
                     localStorage.setItem('preferredTab', 'settingsTab');
                     api.auto_tune()
@@ -1218,30 +1192,27 @@
                 });
             }
 
-            // 학습 시작 핸들러 함수
             function handleTraining(type) {
                 const cfg = collect();
                 if (!cfg) return;
                 clearStatus(trainStatus);
                 clearStatus(deleteStatus);
-                // 모든 학습 관련 버튼 비활성화
                 pretrainBtn.disabled = true;
                 finetuneBtn.disabled = true;
-                additionalFinetuneBtn.disabled = true;
+                resumeBtn.disabled = true;
                 autoBtn.disabled = true;
                 deleteBtn.disabled = true;
 
                 api.set_config(cfg)
-                    .then(() => api.start_training(type)) // type 인자 전달
+                    .then(() => api.start_training(type))
                     .then(r => {
                         if (r.success) {
                             pollStatus();
                         } else {
                             showStatus(trainStatus, r.msg, 'error');
-                            // 실패 시 버튼 다시 활성화
                             pretrainBtn.disabled = false;
                             finetuneBtn.disabled = false;
-                            additionalFinetuneBtn.disabled = false;
+                            resumeBtn.disabled = false;
                             autoBtn.disabled = false;
                             deleteBtn.disabled = false;
                             updateTrainingButtons();
@@ -1249,10 +1220,9 @@
                     })
                     .catch(err => {
                         showStatus(trainStatus, '모델 학습 실패: ' + (err.message || err), 'error');
-                        // 실패 시 버튼 다시 활성화
                         pretrainBtn.disabled = false;
                         finetuneBtn.disabled = false;
-                        additionalFinetuneBtn.disabled = false;
+                        resumeBtn.disabled = false;
                         autoBtn.disabled = false;
                         deleteBtn.disabled = false;
                         updateTrainingButtons();
@@ -1265,24 +1235,20 @@
                 api = window.pywebview.api;
                 initButtons();
                 loadCfg();
-                pollStatus(); // 초기 상태 폴링 시작
+                pollStatus();
             });
 
-            // 초기 설정 로드
             const loadCfg = () => api.get_config().then(r => {
                 applyCfg(r.data || {});
                 updateTrainingButtons();
             }).catch(err => console.error('get_config failed', err));
 
-            // 드롭아웃 슬라이더 값 업데이트
             document.getElementById("dropoutInput").addEventListener("input", function () {
                 document.getElementById("dropoutValue").textContent = parseFloat(this.value).toFixed(2);
             });
 
-            // 메시지 입력창 높이 자동 조절 이벤트 리스너
             userInput.addEventListener('input', adjustInputHeight);
 
-            // Enter 키로 메시지 전송 (Shift + Enter는 줄바꿈)
             userInput.addEventListener('keydown', e => {
                 if (e.key === 'Enter' && !e.shiftKey) {
                     e.preventDefault();
@@ -1290,7 +1256,6 @@
                 }
             });
 
-            // 탭 전환 로직
             tabs.forEach(tab => {
                 tab.addEventListener('click', () => {
                     tabs.forEach(t => t.classList.remove('active'));
@@ -1299,11 +1264,10 @@
                     const content = document.getElementById(tab.dataset.tab + 'Content');
                     if (content) content.classList.add('active');
 
-                    // 탭 전환 시 스크롤을 맨 위로 (또는 챗봇 탭일 경우 맨 아래로)
                     if (tab.dataset.tab === 'chat') {
-                        mainContainer.scrollTop = mainContainer.scrollHeight; // 챗봇 대화 탭은 항상 최신 메시지 표시
+                        mainContainer.scrollTop = mainContainer.scrollHeight;
                     } else {
-                        mainContainer.scrollTop = 0; // 설정 탭은 맨 위로
+                        mainContainer.scrollTop = 0;
                     }
                 });
             });
@@ -1315,7 +1279,6 @@
                 localStorage.removeItem('preferredTab');
             }
 
-            // 설정 카테고리 접기/펴기
             document.querySelectorAll('.category-header').forEach(header => {
                 header.addEventListener('click', function() {
                     const targetId = this.dataset.target;
@@ -1327,7 +1290,6 @@
                 });
             });
 
-            // 설정 저장 버튼
             saveBtn.addEventListener('click', () => {
                 const cfg = collect();
                 if (!cfg) return;
@@ -1370,9 +1332,9 @@
                 const q = userInput.value.trim();
                 if(!q) return;
                 const start = performance.now();
-                appendChat('USER', q); // 사용자 메시지를 먼저 화면에 추가
-                userInput.value = ''; // 메시지 입력창 비우기
-                adjustInputHeight(); // 입력창 높이 조절 (비운 후)
+                appendChat('USER', q);
+                userInput.value = '';
+                adjustInputHeight();
 
 
                 api.infer(q).then(({success,data,msg})=>{
@@ -1387,7 +1349,6 @@
 
             sendBtn.onclick = onSend;
 
-            // 시스템 상태 폴링
             setInterval(() => {
                 api.get_status()
                     .then(r => {
@@ -1400,9 +1361,8 @@
                         cpuStatus.textContent = '오류';
                         gpuStatus.textContent = '오류';
                     });
-            }, 3000); // 3초마다 업데이트
+            }, 3000);
 
-            // 페이지 로드 시 초기 입력창 높이 설정 및 스크롤 위치 조정
             adjustInputHeight();
             mainContainer.scrollTop = mainContainer.scrollHeight;
             updateTrainingButtons();
@@ -1419,7 +1379,7 @@
         }
         window.addEventListener("pywebviewready", () => {
             ["start_training", "delete_model", "infer", "get_status", "set_config", "auto_tune"].forEach(m => {
-                if (window.pywebview.api[m]) { // api[m]이 존재하는지 확인
+                if (window.pywebview.api[m]) {
                     api[m] = wrap(m, window.pywebview.api[m]);
                 } else {
                     console.warn(`pywebview.api.${m} is not defined.`);

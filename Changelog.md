@@ -1,4 +1,13 @@
 # 변경 이력
+## v1.47
+- 이어학습(Resume) 모드를 추가하여 중단된 지점부터 학습을 재개하는 기능을 구현.
+- 기존 '추가 파인튜닝' 기능을 이어학습으로 대체하고 UI 버튼을 '이어학습'으로 변경.
+- 토크나이저를 기존 문자(Char) 방식에서 SentencePiece(BPE) 서브워드 방식으로 전면 교체.
+  - `SentencePieceTokenizer` 래퍼 클래스를 `tokenizer.py`에 구현하고 ID 충돌 방지를 위한 시프팅 로직 적용.
+  - `simple.py`, `service.py` 등 관련 모듈의 토크나이저 로직을 모두 `SentencePieceTokenizer`에 맞게 수정.
+- `requirements.txt`에 `sentencepiece` 의존성을 추가하고 중복 항목을 정리.
+- `config.py`에 이어학습 및 SPM 모델 경로 관련 설정을 추가.
+- 사용자가 직접 SPM 모델을 생성할 수 있도록 `train_spm.py` 스크립트 추가.
 ## v1.46
 - `cudnn.benchmark`를 전역에서 활성화해 반복 커널을 고정.
 - DataLoader 기본 `num_workers`를 4로 조정하고 `persistent_workers`를 사용.
