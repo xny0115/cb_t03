@@ -116,10 +116,11 @@ def _train_epoch(
     tokenizer: SentencePieceTokenizer,
     device: str,
     amp_enabled: bool,
-) -> float:
+) -> Tuple[float, float]:
     model.train()
     total_loss = 0.0
     step_count = 0
+    start_time = time.perf_counter()
     for i, (src, tgt) in enumerate(loader):
         src, tgt = src.to(device, non_blocking=True), tgt.to(device, non_blocking=True)
         if tgt.size(1) < 2:
@@ -137,7 +138,10 @@ def _train_epoch(
 
         total_loss += loss.item()
         step_count += 1
-    return total_loss / max(step_count, 1)
+
+    duration = time.perf_counter() - start_time
+    avg_loss = total_loss / max(step_count, 1)
+    return avg_loss, duration
 
 
 def train(
