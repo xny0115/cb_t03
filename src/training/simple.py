@@ -93,7 +93,6 @@ def _init_model(
         raise RuntimeError("CUDA unavailable. GPU 환경이 필요합니다.")
     model.to(device)
 
-    # Add explicit GPU usage confirmation log
     gpu_name = torch.cuda.get_device_name(0)
     logger.info(f"✅✅✅ MODEL LOADED ON GPU: {gpu_name} ✅✅✅")
 
@@ -117,22 +116,17 @@ def _train_epoch(
 ) -> Tuple[float, float, torch.cuda.amp.GradScaler, bool]:
     model.train()
     total_loss = 0.0
-    skipped_batch = 0
-    skipped_pad = 0
     step_count = 0
-    bad_fp32_cnt = 0
     start = time.perf_counter()
     for i, (src, tgt) in enumerate(loader):
         src, tgt = src.to(device), tgt.to(device)
         if tgt.size(1) < 2:
-            skipped_batch += 1
             continue
         opt.zero_grad()
         tgt_in = tgt[:, :-1]
         tgt_out = tgt[:, 1:]
         with torch.cuda.amp.autocast(enabled=amp_enabled):
             if (tgt_out != tokenizer.pad_id).sum() == 0:
-                skipped_pad += 1
                 continue
             logits = model(src, tgt_in, tokenizer.pad_id)
             loss = F.cross_entropy(
@@ -145,29 +139,20 @@ def _train_epoch(
             if amp_enabled:
                 amp_enabled = False
                 scaler = torch.cuda.amp.GradScaler(enabled=False)
-                continue
             else:
-                bad_fp32_cnt += 1
-                if bad_fp32_cnt >= 3:
-                    raise RuntimeError("FP32 NaN 반복(>=3) – 학습 중단.")
-                continue
-        if amp_enabled:
-            scaler.scale(loss).backward()
-            scaler.unscale_(opt)
-            torch.nn.utils.clip_grad_norm_(model.parameters(), 1.0)
-            scaler.step(opt)
-            scaler.update()
-        else:
-            loss.backward()
-            torch.nn.utils.clip_grad_norm_(model.parameters(), 1.0)
-            opt.step()
+                raise RuntimeError("FP32 NaN detected. Training stopped.")
+            continue
+
+        scaler.scale(loss).backward()
+        scaler.unscale_(opt)
+        torch.nn.utils.clip_grad_norm_(model.parameters(), 1.0)
+        scaler.step(opt)
+        scaler.update()
         scheduler.step()
         total_loss += loss.item()
         step_count += 1
     duration = time.perf_counter() - start
     avg_loss = total_loss / max(step_count, 1)
-    logger.info("batches skipped (too short): %d", skipped_batch)
-    logger.info("batches skipped (pad-only): %d", skipped_pad)
     return avg_loss, duration, scaler, amp_enabled
 
 
@@ -181,9 +166,13 @@ def _eval_epoch(
 ) -> float:
     model.eval()
     total_loss = 0.0
+    step_count = 0
     with torch.no_grad():
         for i, (src, tgt) in enumerate(loader):
             src, tgt = src.to(device), tgt.to(device)
+            if tgt.size(1) < 2:
+                continue
+            step_count +=1
             with torch.cuda.amp.autocast(enabled=amp_enabled):
                 out = model(src, tgt[:, :-1], tokenizer.pad_id)
                 loss = F.cross_entropy(
@@ -192,7 +181,7 @@ def _eval_epoch(
                     ignore_index=tokenizer.pad_id,
                 )
             total_loss += loss.item()
-    return total_loss / (i + 1)
+    return total_loss / max(step_count, 1)
 
 
 def train(
@@ -223,21 +212,19 @@ def train(
 
     start_epoch = 0
 
-    # Create save directory before training loop
     if save_dir:
         Path(save_dir).mkdir(parents=True, exist_ok=True)
 
     resume = bool(cfg.get("resume", False))
-    if resume:
-        model_path = Path(cfg.get("model_path"))
-        checkpoint_path = model_path.parent / "checkpoint.pth"
+    if resume and save_dir:
+        checkpoint_path = Path(save_dir) / "checkpoint.pth"
         if checkpoint_path.exists():
             logger.info("Loading checkpoint from %s for resuming training", checkpoint_path)
             checkpoint = torch.load(checkpoint_path, map_location=device)
             model.load_state_dict(checkpoint['model_state_dict'])
             opt.load_state_dict(checkpoint['optimizer_state_dict'])
             scheduler.load_state_dict(checkpoint['scheduler_state_dict'])
-            start_epoch = checkpoint.get('epoch', 0) + 1
+            start_epoch = checkpoint.get('epoch', -1) + 1
             logger.info("Resuming from epoch %d", start_epoch)
         else:
             logger.warning("Resume mode is on, but checkpoint not found. Starting new training: %s", checkpoint_path)
@@ -250,12 +237,11 @@ def train(
     val_loader = _create_loader(val_set, cfg, drop_last=False)
 
     logger.info("Training start: epochs=%d, samples=%d, start_epoch=%d", epochs, line_count, start_epoch)
-    param_rates: List[float] = []
-    snapshot = lambda m: {k: v.detach().clone().cpu() for k, v in m.state_dict().items()}
+
     train_start = time.perf_counter()
     best_val_loss = float("inf")
-    patience, counter = 3, 0
-    best_state = snapshot(model)
+    patience, counter = int(cfg.get("early_stopping_patience", 3)), 0
+    best_state = None
 
     for epoch in range(start_epoch, epochs):
         loss, duration, scaler, amp_enabled = _train_epoch(
@@ -271,19 +257,12 @@ def train(
             val_loss,
             duration,
         )
-        if val_loss < best_val_loss * 0.995:
-            best_val_loss, counter = val_loss, 0
-            best_state = snapshot(model)
-            if save_dir:
-                checkpoint_path = Path(save_dir) / "checkpoint.pth"
-                torch.save({
-                    'epoch': epoch,
-                    'model_state_dict': model.state_dict(),
-                    'optimizer_state_dict': opt.state_dict(),
-                    'scheduler_state_dict': scheduler.state_dict(),
-                    'loss': loss,
-                }, checkpoint_path)
-                logger.info("Checkpoint saved to %s", checkpoint_path)
+        if val_loss < best_val_loss:
+            best_val_loss = val_loss
+            counter = 0
+            # Keep the best model state on the same device to avoid CPU copies
+            best_state = {k: v.clone() for k, v in model.state_dict().items()}
+            logger.info("New best validation loss: %.3f", best_val_loss)
         else:
             counter += 1
             if counter >= patience:
@@ -294,14 +273,26 @@ def train(
 
     if save_dir:
         save_path = Path(save_dir)
-        model_path = save_path / "model.pth"
 
-        if counter >= patience:
+        # Load the best state for the final model if early stopping occurred or training finished
+        if best_state:
             model.load_state_dict(best_state)
+            logger.info("Loaded best model state (val_loss: %.3f) for final save.", best_val_loss)
 
+        # Save final model for inference
+        model_path = save_path / "model.pth"
         save_transformer(model, {}, model_path)
-        tokenizer.save(save_path / "tokenizer.json")
-        logger.info("Final inference model saved to %s", save_dir)
+
+        # Save final checkpoint
+        checkpoint_path = save_path / "checkpoint.pth"
+        torch.save({
+            'epoch': epoch,
+            'model_state_dict': model.state_dict(),
+            'optimizer_state_dict': opt.state_dict(),
+            'scheduler_state_dict': scheduler.state_dict(),
+            'loss': best_val_loss,
+        }, checkpoint_path)
+        logger.info("Final checkpoint saved to %s", checkpoint_path)
 
     return model, tokenizer
 
