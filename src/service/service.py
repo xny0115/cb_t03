@@ -9,24 +9,21 @@ import re
 import torch
 
 from ..data.loader import (
-    load_dataset,
     load_instruction_dataset,
     load_pretrain_dataset,
     get_dataset_info,
-    get_text_stats,
 )
 from ..config import load_config, save_config
 from ..model import (
     DummyModel,
     HFModel,
     load_model,
-    save_model,
     Seq2SeqTransformer,
     save_transformer,
     load_transformer,
 )
 from ..training.simple import train as train_transformer, pretrain as train_pretrain
-from ..utils.tokenizer import CharTokenizer
+from ..utils.tokenizer import SentencePieceTokenizer
 from ..utils.validator import validate_config
 from ..tuning.auto import AutoTuner
 
@@ -58,12 +55,11 @@ class ChatbotService:
         self.data_dir = Path("datas")
         self.pretrain_dir = self.data_dir / "pretrain"
         self.finetune_dir = self.data_dir / "finetune"
-        self.additional_dir = self.data_dir / "additional_finetune"
         self.model_dir = Path("models")
         self.model_path = self.model_dir / "finetune.pth"
         self.dataset = load_instruction_dataset(self.finetune_dir)
         self.model: DummyModel | HFModel | Seq2SeqTransformer | None = None
-        self.tokenizer: CharTokenizer | None = None
+        self.tokenizer: SentencePieceTokenizer | None = None
         self._config = load_config()
 
         hf_name = os.getenv("HF_MODEL_NAME")
@@ -71,8 +67,12 @@ class ChatbotService:
             self.model = HFModel(hf_name)
         elif self.model_path.exists():
             try:
-                self.model, vocab = load_transformer(self.model_path)
-                self.tokenizer = CharTokenizer.from_vocab(vocab)
+                self.model, _ = load_transformer(self.model_path)
+                spm_model_path = str(self._config.get("spm_model_path", "tokenizer/spm.model"))
+                if Path(spm_model_path).exists():
+                    self.tokenizer = SentencePieceTokenizer(spm_model_path)
+                else:
+                    logging.getLogger(__name__).warning(f"SPM model not found at {spm_model_path}, tokenizer not loaded.")
             except Exception:
                 self.model = load_model(self.model_path)
 
@@ -83,10 +83,13 @@ class ChatbotService:
             return {"success": False, "msg": msg, "data": None}
         if isinstance(self.model, HFModel):
             return {"success": True, "msg": "done", "data": None}
+
         logger = logging.getLogger(__name__)
         device = "cuda" if torch.cuda.is_available() else "cpu"
         if device == "cpu":
-            logger.warning("CUDA not available, training on CPU")
+            logger.warning("CUDA is required for training.")
+            return {"success": False, "msg": "CUDA is required for training.", "data": None}
+
         logger.info("training mode=%s, device=%s", mode, device)
         log_dir = Path("logs")
         prev_files = sorted(log_dir.glob("*.log"))
@@ -95,34 +98,31 @@ class ChatbotService:
         if mode == "pretrain" and self.model_path.exists():
             old_size = self.model_path.stat().st_size
             old_hash = _sha256(self.model_path)
+
+        cfg = self._config
         if mode == "pretrain":
             from ..data.subtitle_cleaner import clean_subtitle_files
-
             clean_subtitle_files(Path("."), self.pretrain_dir)
-            stats = get_text_stats(self.pretrain_dir)
-            logger.debug(
-                "pretrain dataset files=%d lines=%d empty=%d dup=%d(%.2f) avg=%.2f max=%d min=%d",
-                stats["files"],
-                stats["lines"],
-                stats["empty_lines"],
-                stats["dup_lines"],
-                stats["dup_ratio"],
-                stats["avg_chars"],
-                stats["max_chars"],
-                stats["min_chars"],
-            )
             data = load_pretrain_dataset(self.pretrain_dir)
             self.model_path = self.model_dir / "pretrain.pth"
-            model, tokenizer = train_pretrain(data, self._config)
-        elif mode == "additional_finetune":
-            data = load_instruction_dataset(self.additional_dir)
-            self.model_path = self.model_dir / "additional_finetune.pth"
-            model, tokenizer = train_transformer(data, self._config)
+            model, tokenizer = train_pretrain(data, cfg, save_dir=str(self.model_path.parent))
+        elif mode == "resume":
+            if (self.model_dir / "pretrain.pth").exists():
+                data = load_pretrain_dataset(self.pretrain_dir)
+                self.model_path = self.model_dir / "pretrain.pth"
+            else:
+                data = load_instruction_dataset(self.finetune_dir)
+                self.model_path = self.model_dir / "finetune.pth"
+            cfg["resume"] = True
+            cfg["model_path"] = str(self.model_path)
+            model, tokenizer = train_transformer(data, cfg, save_dir=str(self.model_path.parent))
         else:
             data = load_instruction_dataset(self.finetune_dir)
             self.model_path = self.model_dir / "finetune.pth"
-            model, tokenizer = train_transformer(data, self._config)
-        save_transformer(model, tokenizer.stoi, self.model_path)
+            model, tokenizer = train_transformer(data, cfg, save_dir=str(self.model_path.parent))
+
+        save_transformer(model, {}, self.model_path)
+
         if mode == "pretrain" and old_size is not None and old_hash is not None:
             new_size = self.model_path.stat().st_size
             new_hash = _sha256(self.model_path)
@@ -130,24 +130,12 @@ class ChatbotService:
             logger.debug("new: %.2fMB / hash: %s", new_size / 1_048_576, new_hash[:6])
             if old_size == new_size and old_hash == new_hash:
                 logger.warning("\u26a0 저장 내용 무변화 → 학습 미반영 가능성")
-            loaded, vocab = load_transformer(self.model_path)
-            tok = CharTokenizer.from_vocab(vocab)
-            ids = tok.encode("나는 밥을 먹는다", True)
-            src = torch.tensor(ids, dtype=torch.long).unsqueeze(0)
-            out_ids = loaded.generate(
-                src,
-                max_new_tokens=len(ids),
-                eos_id=tok.stoi["<eos>"],
-                pad_id=tok.stoi["<pad>"],
-            )
-            text = tok.decode(out_ids.squeeze().tolist()[1:])
-            if text != "나는 밥을 먹는다":
-                logger.warning("pretrain inference mismatch: %s", text)
+
         new_files = sorted(log_dir.glob("*.log"))
         new_metrics = _parse_epoch_metrics(new_files[-1]) if new_files else []
         if prev_metrics and new_metrics == prev_metrics:
             logger.warning("training log duplicated from previous run")
-        self.dataset = data if mode == "pretrain" else data
+
         self.model = model
         self.tokenizer = tokenizer
         logger.info("Training complete")
@@ -161,7 +149,7 @@ class ChatbotService:
             self._config.update(cfg)
             save_config(self._config)
             return True, "saved"
-        except Exception as exc:  # pragma: no cover - best effort
+        except Exception as exc:
             logging.getLogger(__name__).warning("config save failed: %s", exc)
             return False, str(exc)
 
@@ -169,7 +157,6 @@ class ChatbotService:
         return self._config.copy()
 
     def delete_model(self) -> bool:
-        """Delete every model file under ``models`` directory."""
         deleted = False
         for fp in self.model_dir.glob("*.pth"):
             try:
@@ -177,7 +164,7 @@ class ChatbotService:
                 deleted = True
             except FileNotFoundError:
                 continue
-            except Exception as exc:  # pragma: no cover - log only
+            except Exception as exc:
                 logging.getLogger(__name__).warning("model delete failed: %s", exc)
         if deleted:
             self.model = None
@@ -187,10 +174,13 @@ class ChatbotService:
     def infer(self, text: str) -> Dict[str, Any]:
         if not self.model:
             return {"success": False, "msg": "no_model", "data": None}
+        if not self.tokenizer:
+            return {"success": False, "msg": "no_tokenizer", "data": None}
         if not text.strip():
             return {"success": False, "msg": "empty_input", "data": None}
         if len(text) > self.MAX_INPUT_LEN:
             return {"success": False, "msg": "too_long", "data": None}
+
         if isinstance(self.model, Seq2SeqTransformer) and self.tokenizer:
             ids = self.tokenizer.encode(text, True)
             src = torch.tensor(ids, dtype=torch.long).unsqueeze(0)
@@ -198,12 +188,13 @@ class ChatbotService:
             out_ids = self.model.generate(
                 src,
                 max_new_tokens=50,
-                eos_id=self.tokenizer.stoi["<eos>"],
-                pad_id=self.tokenizer.stoi["<pad>"],
+                eos_id=self.tokenizer.eos_id,
+                pad_id=self.tokenizer.pad_id,
             )
-            out_text = self.tokenizer.decode(out_ids.squeeze().tolist()[1:])
+            out_text = self.tokenizer.decode(out_ids.squeeze().tolist())
             msg = "ok" if out_text else "no_answer"
             return {"success": True, "msg": msg, "data": out_text}
+
         out = self.model.predict("", text)
         if not out:
             return {"success": True, "msg": "no_answer", "data": ""}
@@ -215,7 +206,7 @@ class ChatbotService:
     def auto_tune(self) -> Dict[str, Any]:
         """Apply AutoTuner suggestions to config."""
         size, tokens, txt_lines, json_lines, skipped = get_dataset_info(
-            self.pretrain_dir, self.finetune_dir, self.additional_dir
+            self.pretrain_dir, self.finetune_dir
         )
         print(f"[DEBUG] Found pretrain txt files: {txt_lines} lines")
         print(f"[DEBUG] Found finetune jsonl files: {json_lines} lines")

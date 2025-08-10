@@ -6,7 +6,6 @@ import logging
 import time
 import warnings
 import platform
-import os
 from pathlib import Path
 import torch.backends.cudnn as cudnn
 
@@ -19,25 +18,21 @@ import torch.nn.functional as F
 
 from ..data.loader import InstructionSample
 from ..model.transformer import Seq2SeqTransformer, save_transformer
-from ..utils.tokenizer import CharTokenizer
+from ..utils.tokenizer import SentencePieceTokenizer
 from .helpers import PairDataset, timed_collate, log_dataset_stats
 
 logger = logging.getLogger(__name__)
 
 def _prepare_dataset(
-    samples: List[InstructionSample], is_pretrain: bool
-) -> Tuple[PairDataset, CharTokenizer, int]:
+    samples: List[InstructionSample], tokenizer: SentencePieceTokenizer, is_pretrain: bool
+) -> Tuple[PairDataset, int]:
     if is_pretrain:
         texts = [s.output for s in samples]
     else:
         texts = [f"{s.instruction} {s.input} {s.output}" for s in samples]
     log_dataset_stats(texts)
-    start = time.perf_counter()
-    tokenizer = CharTokenizer(texts)
-    logger.debug("tokenizer build time: %.2fs", time.perf_counter() - start)
 
     pairs: List[Tuple[List[int], List[int]]] = []
-    encode_times: List[float] = []
     for idx, s in enumerate(samples):
         if is_pretrain:
             src = tokenizer.encode(s.output, True)
@@ -45,14 +40,9 @@ def _prepare_dataset(
         else:
             src = tokenizer.encode(f"{s.instruction} {s.input}".strip(), True)
             tgt = tokenizer.encode(s.output, True)
-        if idx < 10:
-            encode_times.append((time.perf_counter() - start) * 1000)
-            logger.debug("encode sample %d: %s", idx, s.output[:50])
         pairs.append((src, tgt))
-    if encode_times:
-        logger.debug("avg encode time: %.2fms", sum(encode_times) / len(encode_times))
 
-    return PairDataset(pairs), tokenizer, len(samples)
+    return PairDataset(pairs), len(samples)
 
 
 def _create_loader(
@@ -79,7 +69,7 @@ def _create_loader(
 
 
 def _init_model(
-    tokenizer: CharTokenizer, cfg: Dict[str, Any]
+    tokenizer: SentencePieceTokenizer, cfg: Dict[str, Any]
 ) -> Tuple[
     Seq2SeqTransformer, nn.Module, optim.Optimizer, torch.cuda.amp.GradScaler, str, bool
 ]:
@@ -98,11 +88,11 @@ def _init_model(
         dim_ff=ff_dim,
         dropout=dropout,
     )
-    device = torch.device("cuda")
-    if not torch.cuda.is_available():
+    device = "cuda" if torch.cuda.is_available() else "cpu"
+    if device == "cpu":
         raise RuntimeError("CUDA unavailable. GPU 환경이 필요합니다.")
     model.to(device)
-    crit = nn.CrossEntropyLoss(ignore_index=0)
+    crit = nn.CrossEntropyLoss(ignore_index=tokenizer.pad_id)
     opt = optim.Adam(model.parameters(), lr=float(cfg.get("learning_rate", 1e-3)))
     amp_enabled = bool(cfg.get("use_mixed_precision", False)) and torch.cuda.is_available()
     scaler = torch.cuda.amp.GradScaler(enabled=amp_enabled)
@@ -116,7 +106,7 @@ def _train_epoch(
     opt: optim.Optimizer,
     scaler: torch.cuda.amp.GradScaler,
     scheduler: optim.lr_scheduler._LRScheduler,
-    tokenizer: CharTokenizer,
+    tokenizer: SentencePieceTokenizer,
     device: str,
     amp_enabled: bool,
 ) -> Tuple[float, float, torch.cuda.amp.GradScaler, bool]:
@@ -136,7 +126,6 @@ def _train_epoch(
         tgt_in = tgt[:, :-1]
         tgt_out = tgt[:, 1:]
         with torch.cuda.amp.autocast(enabled=amp_enabled):
-            # --- NaN 예방: 유효 토큰이 하나도 없으면 배치 건너뜀 ---
             if (tgt_out != tokenizer.pad_id).sum() == 0:
                 skipped_pad += 1
                 continue
@@ -171,7 +160,6 @@ def _train_epoch(
         total_loss += loss.item()
         step_count += 1
     duration = time.perf_counter() - start
-    # average loss per batch
     avg_loss = total_loss / max(step_count, 1)
     logger.info("batches skipped (too short): %d", skipped_batch)
     logger.info("batches skipped (pad-only): %d", skipped_pad)
@@ -182,7 +170,7 @@ def _eval_epoch(
     loader: DataLoader,
     model: Seq2SeqTransformer,
     crit: nn.Module,
-    tokenizer: CharTokenizer,
+    tokenizer: SentencePieceTokenizer,
     device: str,
     amp_enabled: bool,
 ) -> float:
@@ -208,7 +196,7 @@ def train(
     *,
     is_pretrain: bool = False,
     save_dir: str | None = None,
-) -> Tuple[Seq2SeqTransformer, CharTokenizer]:
+) -> Tuple[Seq2SeqTransformer, SentencePieceTokenizer]:
     """Train a Seq2SeqTransformer on given samples."""
     torch.autograd.set_detect_anomaly(True)
     if platform.system() == "Windows":
@@ -218,58 +206,55 @@ def train(
             category=UserWarning,
         )
     cfg = cfg or {}
-    epochs = int(cfg.get("num_epochs", 5))
 
-    dataset, tokenizer, line_count = _prepare_dataset(samples, is_pretrain)
+    spm_model_path = str(cfg.get("spm_model_path", "tokenizer/spm.model"))
+    if not Path(spm_model_path).exists():
+        raise FileNotFoundError(f"SentencePiece model not found: {spm_model_path}")
+    tokenizer = SentencePieceTokenizer(spm_model_path)
+
+    model, crit, opt, scaler, device, amp_enabled = _init_model(tokenizer, cfg)
+    epochs = int(cfg.get("num_epochs", 5))
+    scheduler = torch.optim.lr_scheduler.CosineAnnealingLR(opt, T_max=epochs)
+
+    start_epoch = 0
+
+    resume = bool(cfg.get("resume", False))
+    if resume:
+        model_path = Path(cfg.get("model_path"))
+        checkpoint_path = model_path.parent / "checkpoint.pth"
+        if checkpoint_path.exists():
+            logger.info("Loading checkpoint from %s for resuming training", checkpoint_path)
+            checkpoint = torch.load(checkpoint_path, map_location=device)
+            model.load_state_dict(checkpoint['model_state_dict'])
+            opt.load_state_dict(checkpoint['optimizer_state_dict'])
+            scheduler.load_state_dict(checkpoint['scheduler_state_dict'])
+            start_epoch = checkpoint.get('epoch', 0) + 1
+            logger.info("Resuming from epoch %d", start_epoch)
+        else:
+            logger.warning("Resume mode is on, but checkpoint not found. Starting new training: %s", checkpoint_path)
+
+    dataset, line_count = _prepare_dataset(samples, tokenizer, is_pretrain)
     train_size = int(0.95 * len(dataset))
     val_size = len(dataset) - train_size
     train_set, val_set = random_split(dataset, [train_size, val_size])
     loader = _create_loader(train_set, cfg, drop_last=True)
     val_loader = _create_loader(val_set, cfg, drop_last=False)
-    model, crit, opt, scaler, device, amp_enabled = _init_model(tokenizer, cfg)
-    scheduler = torch.optim.lr_scheduler.CosineAnnealingLR(opt, T_max=epochs)
 
-    logger.info("Training start: epochs=%d, samples=%d", epochs, line_count)
+    logger.info("Training start: epochs=%d, samples=%d, start_epoch=%d", epochs, line_count, start_epoch)
     param_rates: List[float] = []
-    snapshot = lambda m: {
-        k: v.detach().clone().cpu() for k, v in m.state_dict().items()
-    }
+    snapshot = lambda m: {k: v.detach().clone().cpu() for k, v in m.state_dict().items()}
     prev_state = snapshot(model)
-    prev_ratio = None
     train_start = time.perf_counter()
-    best = float("inf")
+    best_val_loss = float("inf")
     patience, counter = 3, 0
     best_state = snapshot(model)
-    for epoch in range(epochs):
+
+    for epoch in range(start_epoch, epochs):
         loss, duration, scaler, amp_enabled = _train_epoch(
             loader, model, crit, opt, scaler, scheduler, tokenizer, device, amp_enabled
         )
         val_loss = _eval_epoch(val_loader, model, crit, tokenizer, device, amp_enabled)
-        ratio = duration / max(line_count, 1)
-        if prev_ratio is not None:
-            ratio_drop = prev_ratio - ratio
-            if abs(ratio_drop) < 0.05:
-                pass  # DEBUG 출력 생략 (성능)
-            else:
-                logger.warning(
-                    "epoch %d time/line ratio dropped: %.4f -> %.4f",
-                    epoch + 1,
-                    prev_ratio,
-                    ratio,
-                )
-        prev_ratio = ratio
-        curr = snapshot(model)
-        changed = sum(not torch.equal(curr[k], prev_state[k]) for k in curr)
-        rate = changed / len(curr) * 100
-        if len(curr) - changed >= len(curr) * 0.5:
-            logger.warning(
-                "epoch %d: %d/%d params unchanged",
-                epoch + 1,
-                len(curr) - changed,
-                len(curr),
-            )
-        param_rates.append(rate)
-        prev_state = snapshot(model)
+
         logger.info(
             "Epoch %d/%d | Loss: %.3f | Val: %.3f | Time: %.2fs",
             epoch + 1,
@@ -278,9 +263,19 @@ def train(
             val_loss,
             duration,
         )
-        if val_loss < best * 0.995:
-            best, counter = val_loss, 0
+        if val_loss < best_val_loss * 0.995:
+            best_val_loss, counter = val_loss, 0
             best_state = snapshot(model)
+            if save_dir:
+                checkpoint_path = Path(save_dir) / "checkpoint.pth"
+                torch.save({
+                    'epoch': epoch,
+                    'model_state_dict': model.state_dict(),
+                    'optimizer_state_dict': opt.state_dict(),
+                    'scheduler_state_dict': scheduler.state_dict(),
+                    'loss': loss,
+                }, checkpoint_path)
+                logger.info("Checkpoint saved to %s", checkpoint_path)
         else:
             counter += 1
             if counter >= patience:
@@ -288,21 +283,24 @@ def train(
                 break
 
     logger.info("Training complete in %.2fs", time.perf_counter() - train_start)
-    for idx, r in enumerate(param_rates, 1):
-        logger.debug("Epoch %d → %.1f%% 변화", idx, r)
+
     if save_dir:
         save_path = Path(save_dir)
         save_path.mkdir(parents=True, exist_ok=True)
         model_path = save_path / "model.pth"
+
+        # Load the best state for the final model if early stopping occurred
         if counter >= patience:
             model.load_state_dict(best_state)
-        save_transformer(model, tokenizer.stoi, model_path)
+
+        save_transformer(model, {}, model_path)
         tokenizer.save(save_path / "tokenizer.json")
-        logger.info("Model & tokenizer saved to %s", save_dir)
+        logger.info("Final inference model saved to %s", save_dir)
+
     return model, tokenizer
 
 
-def pretrain(texts: List[str], cfg: dict[str, Any] | None = None):
+def pretrain(texts: List[str], cfg: dict[str, Any] | None = None, save_dir: str | None = None):
     """사전학습용 간단한 오토인코더 방식."""
     samples = [InstructionSample("", "", t) for t in texts]
-    return train(samples, cfg, is_pretrain=True)
+    return train(samples, cfg, is_pretrain=True, save_dir=save_dir)
