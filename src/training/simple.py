@@ -62,7 +62,7 @@ def _create_loader(
         dataset,
         batch_size=batch_size,
         shuffle=True,
-        collate_fn=timed_collate,
+        collate_fn=collate,
         num_workers=num_workers,
         pin_memory=True,
         drop_last=True,

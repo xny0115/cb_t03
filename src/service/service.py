@@ -120,15 +120,21 @@ class ChatbotService:
             self.model_path = self.model_dir / "pretrain.pth"
             model, tokenizer = train_pretrain(data, cfg, save_dir=str(self.model_path.parent))
         elif mode == "resume":
-            if (self.model_dir / "pretrain.pth").exists():
+            is_pretrain_resume = (self.model_dir / "pretrain.pth").exists() or \
+                                 (self.model_dir / "last_pretrain.ckpt").exists()
+
+            cfg["resume"] = True
+
+            if is_pretrain_resume:
                 data = load_pretrain_dataset(self.pretrain_dir)
                 self.model_path = self.model_dir / "pretrain.pth"
+                cfg["model_path"] = str(self.model_path)
+                model, tokenizer = train_pretrain(data, cfg, save_dir=str(self.model_path.parent))
             else:
                 data = load_instruction_dataset(self.finetune_dir)
                 self.model_path = self.model_dir / "finetune.pth"
-            cfg["resume"] = True
-            cfg["model_path"] = str(self.model_path)
-            model, tokenizer = train_transformer(data, cfg, save_dir=str(self.model_path.parent))
+                cfg["model_path"] = str(self.model_path)
+                model, tokenizer = train_transformer(data, cfg, save_dir=str(self.model_path.parent))
         else:
             data = load_instruction_dataset(self.finetune_dir)
             self.model_path = self.model_dir / "finetune.pth"
