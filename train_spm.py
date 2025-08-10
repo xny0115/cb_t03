@@ -1,39 +1,64 @@
 import sentencepiece as spm
 import os
+import glob
+
+def get_auto_vocab_size(total_bytes: int) -> int:
+    """
+    Calculates a dynamic vocabulary size based on the total size of the training data.
+    - Base: 4000
+    - Rate: +2000 for every 10MB
+    - Cap: 32000
+    - Round to nearest 8 for efficiency
+    """
+    megabytes = total_bytes / (1024 * 1024)
+
+    vocab_size = 4000 + int(megabytes / 10) * 2000
+
+    if vocab_size > 32000:
+        vocab_size = 32000
+
+    return (vocab_size + 7) // 8 * 8
 
 print("Starting SentencePiece model training...")
 
 try:
-    # Ensure the input directory and file exist
-    input_file = 'datas/pretrain/sample_pretrain.txt'
-    if not os.path.exists(input_file):
-        raise FileNotFoundError(f"Input file not found: {input_file}")
+    input_dir = 'datas/pretrain/'
+    input_files = glob.glob(os.path.join(input_dir, '*.txt'))
 
-    # Ensure the output directory exists
+    if not input_files:
+        raise FileNotFoundError(f"No .txt files found in directory: {input_dir}")
+
+    total_size = sum(os.path.getsize(f) for f in input_files)
+    vocab_size = get_auto_vocab_size(total_size)
+
+    input_arg = ",".join(input_files)
+
     output_dir = 'tokenizer'
+    model_prefix = os.path.join(output_dir, 'spm')
+    model_file = model_prefix + '.model'
+
+    print(f"Input files: {len(input_files)} found ({total_size / (1024*1024):.2f} MB)")
+    print(f"Output model: {model_file}")
+    print(f"Automatically determined Vocab size: {vocab_size}")
+
     os.makedirs(output_dir, exist_ok=True)
 
-    # Train a BPE model.
-    # Special tokens like pad, bos, eos are handled by our Python wrapper class,
-    # so we disable them here to prevent ID conflicts.
     spm.SentencePieceTrainer.train(
-        f"--input={input_file} "
-        f"--model_prefix={output_dir}/spm "
-        f"--vocab_size=1000 "  # Small vocab size for sample data
+        f"--input={input_arg} "
+        f"--model_prefix={model_prefix} "
+        f"--vocab_size={vocab_size} "
         f"--model_type=bpe "
         f"--character_coverage=1.0 "
-        f"--unk_id=0 "   # SPM's default <unk> token ID
-        f"--bos_id=-1 "  # Disable default <bos>
-        f"--eos_id=-1 "  # Disable default <eos>
-        f"--pad_id=-1 "  # Disable default <pad>
+        f"--unk_id=0 "
+        f"--bos_id=-1 "
+        f"--eos_id=-1 "
+        f"--pad_id=-1 "
     )
-    print("SentencePiece model and vocab files created successfully in 'tokenizer/' directory.")
 
-    # Check if model file was created
-    if os.path.exists(f'{output_dir}/spm.model'):
-        print("spm.model file found.")
+    if os.path.exists(model_file):
+        print(f"Success! Model created at: {model_file}")
     else:
-        print("Error: spm.model file not found after training.")
+        print(f"Error: Model file was not created at {model_file}.")
 
 except Exception as e:
     print(f"An error occurred during SentencePiece training: {e}")
