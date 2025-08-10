@@ -1,4 +1,18 @@
 # 변경 이력
+## v1.48
+- **성능 대폭 개선 및 최적화 (GPT 지침 기반)**
+  - `torch.autograd.set_detect_anomaly(True)`를 비활성화하여 치명적인 성능 저하 요인 제거.
+  - SDPA(Flash Attention), TF32, `cudnn.benchmark` 등 PyTorch 성능 최적화 옵션을 활성화하여 GPU 연산 효율 극대화.
+  - `CosineAnnealingLR` 스케줄러의 `step()` 호출을 배치 단위에서 에폭 단위로 수정하여 올바르게 동작하도록 변경.
+  - `DataLoader`의 `num_workers`, `prefetch_factor` 등을 최적화하고, 데이터 전송 시 `non_blocking=True`를 사용하여 CPU-GPU 전송 병목 완화.
+  - 학습 루프 내 불필요한 모델 상태 복제 로직을 완전히 제거하여 에폭 당 시간을 크게 단축.
+- **이어학습(Resume) 기능 완전 개편**
+  - 모델 가중치뿐만 아니라 Optimizer, Scheduler, Scaler, Epoch 상태까지 모두 포함하는 완전한 체크포인트 시스템 구현 (`last_*.ckpt`).
+  - `checkpoint.py` 유틸리티를 추가하여 저장/복원 로직을 모듈화.
+  - 이어학습 시 `last_*.ckpt` 체크포인트가 있으면 모든 상태를 복원하고, 없으면 최종 모델(`*.pth`)의 가중치만 불러와 학습을 재개하는 Fallback 로직 추가.
+- **UI 및 서비스 안정성 강화**
+  - UI 설정 탭에서 동작하지 않던 CPU/GPU 리소스 모니터링 기능(`get_status`)을 복원.
+  - 학습 시작 시 사용 중인 GPU 모델을 명시적으로 로깅하여 사용자에게 투명성 제공.
 ## v1.47
 - 이어학습(Resume) 모드를 추가하여 중단된 지점부터 학습을 재개하는 기능을 구현.
 - 기존 '추가 파인튜닝' 기능을 이어학습으로 대체하고 UI 버튼을 '이어학습'으로 변경.
