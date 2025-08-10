@@ -241,9 +241,11 @@ def train(
     train_start = time.perf_counter()
     best_val_loss = float("inf")
     patience, counter = int(cfg.get("early_stopping_patience", 3)), 0
-    best_state = None
+
+    final_epoch = 0
 
     for epoch in range(start_epoch, epochs):
+        final_epoch = epoch
         loss, duration, scaler, amp_enabled = _train_epoch(
             loader, model, crit, opt, scaler, scheduler, tokenizer, device, amp_enabled
         )
@@ -260,9 +262,9 @@ def train(
         if val_loss < best_val_loss:
             best_val_loss = val_loss
             counter = 0
-            # Keep the best model state on the same device to avoid CPU copies
-            best_state = {k: v.clone() for k, v in model.state_dict().items()}
-            logger.info("New best validation loss: %.3f", best_val_loss)
+            # No model cloning or saving inside the loop for performance.
+            # The best model will be loaded from the final checkpoint.
+            logger.info("New best validation loss: %.3f. Checkpoint will be saved at the end.", best_val_loss)
         else:
             counter += 1
             if counter >= patience:
@@ -274,25 +276,20 @@ def train(
     if save_dir:
         save_path = Path(save_dir)
 
-        # Load the best state for the final model if early stopping occurred or training finished
-        if best_state:
-            model.load_state_dict(best_state)
-            logger.info("Loaded best model state (val_loss: %.3f) for final save.", best_val_loss)
-
-        # Save final model for inference
+        # Save final model for inference (using the state from the last epoch)
         model_path = save_path / "model.pth"
         save_transformer(model, {}, model_path)
 
         # Save final checkpoint
         checkpoint_path = save_path / "checkpoint.pth"
         torch.save({
-            'epoch': epoch,
+            'epoch': final_epoch,
             'model_state_dict': model.state_dict(),
             'optimizer_state_dict': opt.state_dict(),
             'scheduler_state_dict': scheduler.state_dict(),
             'loss': best_val_loss,
         }, checkpoint_path)
-        logger.info("Final checkpoint saved to %s", checkpoint_path)
+        logger.info("Final checkpoint for model from epoch %d saved to %s", final_epoch + 1, checkpoint_path)
 
     return model, tokenizer
 

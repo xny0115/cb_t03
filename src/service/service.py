@@ -8,6 +8,16 @@ import hashlib
 import re
 import torch
 
+try:
+    import psutil
+except ImportError:
+    psutil = None
+try:
+    import pynvml
+except ImportError:
+    pynvml = None
+
+
 from ..data.loader import (
     load_instruction_dataset,
     load_pretrain_dataset,
@@ -62,6 +72,16 @@ class ChatbotService:
         self.tokenizer: SentencePieceTokenizer | None = None
         self._config = load_config()
 
+        if pynvml:
+            try:
+                pynvml.nvmlInit()
+                self._pynvml_handle = pynvml.nvmlDeviceGetHandleByIndex(0)
+            except Exception:
+                self._pynvml_handle = None
+        else:
+            self._pynvml_handle = None
+
+
         hf_name = os.getenv("HF_MODEL_NAME")
         if hf_name:
             self.model = HFModel(hf_name)
@@ -91,13 +111,6 @@ class ChatbotService:
             return {"success": False, "msg": "CUDA is required for training.", "data": None}
 
         logger.info("training mode=%s, device=%s", mode, device)
-        log_dir = Path("logs")
-        prev_files = sorted(log_dir.glob("*.log"))
-        prev_metrics = _parse_epoch_metrics(prev_files[-1]) if prev_files else []
-        old_size = old_hash = None
-        if mode == "pretrain" and self.model_path.exists():
-            old_size = self.model_path.stat().st_size
-            old_hash = _sha256(self.model_path)
 
         cfg = self._config
         if mode == "pretrain":
@@ -121,20 +134,7 @@ class ChatbotService:
             self.model_path = self.model_dir / "finetune.pth"
             model, tokenizer = train_transformer(data, cfg, save_dir=str(self.model_path.parent))
 
-        save_transformer(model, {}, self.model_path)
-
-        if mode == "pretrain" and old_size is not None and old_hash is not None:
-            new_size = self.model_path.stat().st_size
-            new_hash = _sha256(self.model_path)
-            logger.debug("old: %.2fMB / hash: %s", old_size / 1_048_576, old_hash[:6])
-            logger.debug("new: %.2fMB / hash: %s", new_size / 1_048_576, new_hash[:6])
-            if old_size == new_size and old_hash == new_hash:
-                logger.warning("\u26a0 저장 내용 무변화 → 학습 미반영 가능성")
-
-        new_files = sorted(log_dir.glob("*.log"))
-        new_metrics = _parse_epoch_metrics(new_files[-1]) if new_files else []
-        if prev_metrics and new_metrics == prev_metrics:
-            logger.warning("training log duplicated from previous run")
+        # Note: save_transformer is now called inside train()
 
         self.model = model
         self.tokenizer = tokenizer
@@ -201,7 +201,22 @@ class ChatbotService:
         return {"success": True, "msg": "ok", "data": out}
 
     def get_status(self) -> Dict[str, Any]:
-        return {"success": True, "msg": "idle", "data": {}}
+        data = {}
+        if psutil:
+            data["cpu_usage"] = psutil.cpu_percent()
+        else:
+            data["cpu_usage"] = 0.0
+
+        if self._pynvml_handle:
+            try:
+                util = pynvml.nvmlDeviceGetUtilizationRates(self._pynvml_handle)
+                data["gpu_usage"] = float(util.gpu)
+            except Exception:
+                data["gpu_usage"] = None
+        else:
+            data["gpu_usage"] = None
+
+        return {"success": True, "msg": "idle", "data": data}
 
     def auto_tune(self) -> Dict[str, Any]:
         """Apply AutoTuner suggestions to config."""
