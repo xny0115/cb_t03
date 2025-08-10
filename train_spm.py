@@ -27,20 +27,34 @@ try:
     if not input_files:
         raise FileNotFoundError(f"No .txt files found in directory: {input_dir}")
 
-    # Create a temporary file to hold all training data
+    # Create a temporary file to hold all training data, ensuring UTF-8 encoding.
     with tempfile.NamedTemporaryFile(mode='w', delete=False, encoding='utf-8', suffix='.txt') as tf:
         temp_input_file = tf.name
-        print(f"Creating temporary input file at: {temp_input_file}")
+        print(f"Creating temporary UTF-8 input file at: {temp_input_file}")
         total_size = 0
         for filename in input_files:
+            content = None
             try:
+                # Try reading as UTF-8 first (most common)
                 with open(filename, 'r', encoding='utf-8') as f:
                     content = f.read()
-                    tf.write(content)
-                    tf.write('\\n') # Add newline between files
-                total_size += os.path.getsize(filename)
+            except UnicodeDecodeError:
+                try:
+                    # If UTF-8 fails, try CP949 (common legacy Korean encoding on Windows)
+                    print(f"Info: Could not read {filename} as UTF-8, trying 'cp949'...")
+                    with open(filename, 'r', encoding='cp949') as f:
+                        content = f.read()
+                except Exception as e:
+                    print(f"Warning: Skipping file {filename} due to encoding error: {e}")
+                    continue
             except Exception as e:
-                print(f"Warning: Could not read file {filename} due to error: {e}")
+                print(f"Warning: Skipping file {filename} due to other error: {e}")
+                continue
+
+            if content:
+                tf.write(content)
+                tf.write('\\n')
+                total_size += os.path.getsize(filename)
 
     vocab_size = get_auto_vocab_size(total_size)
 
