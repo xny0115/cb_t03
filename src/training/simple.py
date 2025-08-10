@@ -26,7 +26,7 @@ import torch.nn.functional as F
 from ..data.loader import InstructionSample
 from ..model.transformer import Seq2SeqTransformer, save_transformer, load_transformer
 from ..utils.tokenizer import SentencePieceTokenizer
-from .helpers import PairDataset, timed_collate, log_dataset_stats
+from .helpers import PairDataset, collate, timed_collate, log_dataset_stats
 from .checkpoint import save_checkpoint, load_checkpoint
 
 logger = logging.getLogger(__name__)
