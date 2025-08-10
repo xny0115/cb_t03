@@ -92,6 +92,11 @@ def _init_model(
     if device == "cpu":
         raise RuntimeError("CUDA unavailable. GPU 환경이 필요합니다.")
     model.to(device)
+
+    # Add explicit GPU usage confirmation log
+    gpu_name = torch.cuda.get_device_name(0)
+    logger.info(f"✅✅✅ MODEL LOADED ON GPU: {gpu_name} ✅✅✅")
+
     crit = nn.CrossEntropyLoss(ignore_index=tokenizer.pad_id)
     opt = optim.Adam(model.parameters(), lr=float(cfg.get("learning_rate", 1e-3)))
     amp_enabled = bool(cfg.get("use_mixed_precision", False)) and torch.cuda.is_available()
@@ -218,6 +223,10 @@ def train(
 
     start_epoch = 0
 
+    # Create save directory before training loop
+    if save_dir:
+        Path(save_dir).mkdir(parents=True, exist_ok=True)
+
     resume = bool(cfg.get("resume", False))
     if resume:
         model_path = Path(cfg.get("model_path"))
@@ -243,7 +252,6 @@ def train(
     logger.info("Training start: epochs=%d, samples=%d, start_epoch=%d", epochs, line_count, start_epoch)
     param_rates: List[float] = []
     snapshot = lambda m: {k: v.detach().clone().cpu() for k, v in m.state_dict().items()}
-    prev_state = snapshot(model)
     train_start = time.perf_counter()
     best_val_loss = float("inf")
     patience, counter = 3, 0
@@ -286,10 +294,8 @@ def train(
 
     if save_dir:
         save_path = Path(save_dir)
-        save_path.mkdir(parents=True, exist_ok=True)
         model_path = save_path / "model.pth"
 
-        # Load the best state for the final model if early stopping occurred
         if counter >= patience:
             model.load_state_dict(best_state)
 
