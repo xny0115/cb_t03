@@ -1,3 +1,9 @@
+# === LLM SCOPE NOTICE ===================================
+# 이 모듈의 모든 판단 기준은 LLM 학습 로직에 따릅니다.
+# - 레이블 시프트/마스킹/ignore_index/AMP/스케줄/체크포인트가 핵심 판단축
+# - 단순 챗봇 가정 금지(룰베이스/FAQ/단문 한정 X)
+# =========================================================
+
 from __future__ import annotations
 
 from typing import List, Any, Dict, Tuple, Optional
