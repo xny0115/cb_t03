@@ -77,7 +77,7 @@ Codex는 아래 지침을 무조건 준수하여 작업해야 합니다.
 datas/
     pretrain/              # 사전학습용 txt
     finetune/              # 1차 파인튜닝용 jsonl
-    additional_finetune/   # 추가 파인튜닝용 jsonl
+    additional_finetune/   # 이어학습용 jsonl
 ```
 
 각 폴더에는 `sample_pretrain.txt`, `sample_finetune.jsonl`, `sample_additional_finetune.jsonl` 예시 파일을 포함한다.
