@@ -1,4 +1,6 @@
 # 변경 이력
+## v1.55
+- README와 AGENTS 문서 상단에 GPU 전제, CPU 모드 사용 조건, 변경 사유 기록 의무를 명시했습니다.
 ## v1.54
 - GPU 전제 로직과 CPU 전용 테스트 환경을 README, 주요 테스트 스크립트, `src/training/simple.py` 주석에 명시했습니다.
 ## v1.53
