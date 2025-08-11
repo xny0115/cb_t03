@@ -1,3 +1,7 @@
+# CPU 전용 테스트(gpu 없음 환경용)
+# 실행 전: ALLOW_CPU_TRAINING=1 설정
+# 본 프로젝트 메인 코드는 GPU 전제이며, 여기서는 기능 검증만 수행합니다.
+
 import sys
 from pathlib import Path
 
