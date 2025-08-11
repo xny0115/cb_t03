@@ -1,4 +1,6 @@
 # 변경 이력
+## v1.57
+- `training.simple`에 sdp_kernel·cudnn 환경 변수 가드를 추가했습니다. Codex 내부 테스트는 GPU 미지원으로 `ALLOW_CPU_TRAINING=1` 설정 후 `tests/`만 CPU 모드로 실행합니다.
 ## v1.56
 - `training.simple`: `zero_grad(set_to_none=True)` 호출을 예외 처리 래핑하고, 패딩만 있는 배치·더미 옵티마이저를 안전하게 처리하도록 보강했습니다.
 - `service.infer`: 트랜스포머 모델에만 토크나이저를 필수로 요구하도록 검증 조건을 보강했습니다.

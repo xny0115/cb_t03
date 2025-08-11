@@ -23,8 +23,9 @@ try:
     torch.set_float32_matmul_precision("high")
 except AttributeError:
     pass # Older torch versions may not have this
-sdp_kernel(enable_flash=True, enable_mem_efficient=True, enable_math=False)
-torch.backends.cudnn.benchmark = True
+if os.getenv("DISABLE_SDP_KERNEL") != "1":
+    sdp_kernel(enable_flash=True, enable_mem_efficient=True, enable_math=False)
+torch.backends.cudnn.benchmark = os.getenv("DISABLE_CUDNN_BENCHMARK") != "1"
 
 
 from torch import nn, optim
