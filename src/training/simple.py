@@ -96,7 +96,10 @@ def _init_model(
     )
     device = "cuda" if torch.cuda.is_available() else "cpu"
     if device == "cpu":
-        logger.warning("CUDA not available: training on CPU (slow).")
+        if os.getenv("ALLOW_CPU_TRAINING") == "1":
+            logger.warning("CUDA not available: training on CPU (slow).")
+        else:
+            raise RuntimeError("CUDA required")
     model.to(device)
 
     if device == "cuda":
