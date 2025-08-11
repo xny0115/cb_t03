@@ -1,4 +1,8 @@
 # 변경 이력
+## v1.56
+- `training.simple`: `zero_grad(set_to_none=True)` 호출을 예외 처리 래핑하고, 패딩만 있는 배치·더미 옵티마이저를 안전하게 처리하도록 보강했습니다.
+- `service.infer`: 트랜스포머 모델에만 토크나이저를 필수로 요구하도록 검증 조건을 보강했습니다.
+- `service.auto_tune`: `get_dataset_info` 호출 시 추가 데이터 디렉터리를 인자로 전달하도록 수정했습니다.
 ## v1.55
 - README와 AGENTS 문서 상단에 GPU 전제, CPU 모드 사용 조건, 변경 사유 기록 의무를 명시했습니다.
 ## v1.54
