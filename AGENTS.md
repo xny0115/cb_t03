@@ -77,11 +77,10 @@ Codex는 아래 지침을 무조건 준수하여 작업해야 합니다.
 datas/
     pretrain/              # 사전학습용 txt
     finetune/              # 1차 파인튜닝용 jsonl
-    additional_finetune/   # 이어학습용 jsonl
 ```
 
-각 폴더에는 `sample_pretrain.txt`, `sample_finetune.jsonl`, `sample_additional_finetune.jsonl` 예시 파일을 포함한다.
-버튼 클릭 시 `pretrain`, `finetune`, `additional_finetune` 값을 백엔드로 전달해 해당 데이터만 로드한다.
+각 폴더에는 `sample_pretrain.txt`, `sample_finetune.jsonl` 예시 파일을 포함한다.
+버튼 클릭 시 `pretrain`, `finetune` 값을 백엔드로 전달해 해당 데이터만 로드한다.
 모든 스테이지의 데이터는 폴더 내 여러 파일을 메모리에서만 통합하며
 원본 파일은 절대 수정하거나 삭제하지 않는다.
 
