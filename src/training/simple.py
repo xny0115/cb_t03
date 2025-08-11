@@ -129,37 +129,80 @@ def _train_epoch(
     tokenizer: SentencePieceTokenizer,
     device: str,
     amp_enabled: bool,
+    grad_clip: float = 1.0,
 ) -> Tuple[float, float, float, float]:
     model.train()
     total_loss = 0.0
     step_count = 0
+    first_loss: float | None = None
+    last_loss: float | None = None
     start_time = time.perf_counter()
+    opt.zero_grad(set_to_none=True)
     for i, (src, tgt) in enumerate(loader):
+        step_start = time.perf_counter()
         src, tgt = src.to(device, non_blocking=True), tgt.to(device, non_blocking=True)
         if tgt.size(1) < 2:
             continue
-        try:
-            opt.zero_grad(set_to_none=True)
-        except TypeError:
-            opt.zero_grad()
+
+        # === 라벨 시프트 및 마스크/디바이스 검증 ===
+        tgt_in, tgt_out = tgt[:, :-1], tgt[:, 1:]
+        src_pad, tgt_pad = src.eq(tokenizer.pad_id), tgt_in.eq(tokenizer.pad_id)
+        attn_mask = torch.triu(
+            torch.ones(tgt_in.size(1), tgt_in.size(1), device=device, dtype=torch.bool),
+            1,
+        )
+        assert src_pad.shape == src.shape and tgt_pad.shape == tgt_in.shape
+        assert attn_mask.shape == (tgt_in.size(1), tgt_in.size(1))
+        assert tgt.size(1) - tgt_in.size(1) == 1
+        assert crit.ignore_index == tokenizer.pad_id
+        assert src_pad.dtype == torch.bool and tgt_pad.dtype == torch.bool
+        assert tgt_out.dtype == torch.long
         with torch.cuda.amp.autocast(enabled=amp_enabled):
-            logits = model(src, tgt[:, :-1], tokenizer.pad_id)
-            loss = crit(logits.flatten(0, 1), tgt[:, 1:].flatten(0, 1))
+            logits = model(src, tgt_in, tokenizer.pad_id)
+            assert torch.is_floating_point(logits)
+            loss = crit(logits.flatten(0, 1), tgt_out.flatten(0, 1))
+
+        model_device = next(model.parameters()).device
+        assert (
+            model_device
+            == src.device
+            == tgt_in.device
+            == src_pad.device
+            == tgt_pad.device
+            == attn_mask.device
+        )
 
         scaler.scale(loss).backward()
         scaler.unscale_(opt)
-        torch.nn.utils.clip_grad_norm_(model.parameters(), 1.0)
+        grad_norm = torch.nn.utils.clip_grad_norm_(model.parameters(), grad_clip)
         scaler.step(opt)
         scaler.update()
+        if scheduler:
+            scheduler.step()
+        opt.zero_grad(set_to_none=True)
 
-        total_loss += loss.item()
+        step_loss = loss.item()
+        if first_loss is None:
+            first_loss = step_loss
+        last_loss = step_loss
+        total_loss += step_loss
         step_count += 1
+        lr = opt.param_groups[0]["lr"]
+        tokens = src.numel() + tgt_in.numel()
+        step_time = time.perf_counter() - step_start
+        tps = tokens / step_time if step_time > 0 else float("inf")
+        logger.info(
+            "step %d | loss %.3f | lr %.6f | grad_norm %.2f | tok/s %.2f",
+            i,
+            step_loss,
+            lr,
+            float(grad_norm),
+            tps,
+        )
 
     duration = time.perf_counter() - start_time
     avg_loss = total_loss / max(step_count, 1)
-    if scheduler:
-        scheduler.step()
-    return avg_loss, duration, 0.0, 0.0
+    return avg_loss, duration, first_loss or 0.0, last_loss or 0.0
 
 
 def train(
@@ -214,10 +257,20 @@ def train(
     train_start = time.perf_counter()
     final_epoch = 0
 
+    grad_clip = float(cfg.get("grad_clip", 1.0))
     for epoch in range(start_epoch, epochs):
         final_epoch = epoch
         loss, duration, _, _ = _train_epoch(
-            loader, model, crit, opt, scaler, scheduler, tokenizer, device, amp_enabled
+            loader,
+            model,
+            crit,
+            opt,
+            scaler,
+            scheduler,
+            tokenizer,
+            device,
+            amp_enabled,
+            grad_clip,
         )
 
         logger.info(
