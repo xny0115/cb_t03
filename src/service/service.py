@@ -107,8 +107,7 @@ class ChatbotService:
         logger = logging.getLogger(__name__)
         device = "cuda" if torch.cuda.is_available() else "cpu"
         if device == "cpu":
-            logger.warning("CUDA is required for training.")
-            return {"success": False, "msg": "CUDA is required for training.", "data": None}
+            logger.warning("CUDA not available: proceeding on CPU (slow).")
 
         logger.info("training mode=%s, device=%s", mode, device)
 
