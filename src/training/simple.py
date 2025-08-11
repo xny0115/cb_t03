@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from typing import List, Any, Dict, Tuple
+from typing import List, Any, Dict, Tuple, Optional
 import logging
 import time
 import warnings
@@ -55,8 +55,10 @@ def _prepare_dataset(
 def _create_loader(
     dataset: PairDataset, cfg: Dict[str, Any], *, drop_last: bool = True
 ) -> DataLoader:
-    num_workers = max(2, os.cpu_count() // 2) if platform.system() != "Windows" else 0
+    num_workers_default = max(2, os.cpu_count() // 2) if platform.system() != "Windows" else 0
+    num_workers = int(cfg.get("num_workers", num_workers_default))
     batch_size = int(cfg.get("batch_size", 128))
+    pin_memory = bool(cfg.get("pin_memory", True))
 
     loader = DataLoader(
         dataset,
@@ -64,8 +66,8 @@ def _create_loader(
         shuffle=True,
         collate_fn=collate,
         num_workers=num_workers,
-        pin_memory=True,
-        drop_last=True,
+        pin_memory=pin_memory,
+        drop_last=drop_last,
         persistent_workers=num_workers > 0,
         prefetch_factor=2 if num_workers > 0 else None,
     )
@@ -94,15 +96,16 @@ def _init_model(
     )
     device = "cuda" if torch.cuda.is_available() else "cpu"
     if device == "cpu":
-        raise RuntimeError("CUDA is required for training.")
+        logger.warning("CUDA not available: training on CPU (slow).")
     model.to(device)
 
-    gpu_name = torch.cuda.get_device_name(0)
-    logger.info(f"✅✅✅ MODEL LOADED ON GPU: {gpu_name} ✅✅✅")
+    if device == "cuda":
+        gpu_name = torch.cuda.get_device_name(0)
+        logger.info(f"✅✅✅ MODEL LOADED ON GPU: {gpu_name} ✅✅✅")
 
     crit = nn.CrossEntropyLoss(ignore_index=tokenizer.pad_id)
     opt = optim.Adam(model.parameters(), lr=float(cfg.get("learning_rate", 1e-4)))
-    amp_enabled = bool(cfg.get("use_mixed_precision", True))
+    amp_enabled = bool(cfg.get("use_mixed_precision", True)) and (device == "cuda")
     scaler = torch.cuda.amp.GradScaler(enabled=amp_enabled)
     return model, crit, opt, scaler, device, amp_enabled
 
@@ -113,10 +116,11 @@ def _train_epoch(
     crit: nn.Module,
     opt: optim.Optimizer,
     scaler: torch.cuda.amp.GradScaler,
+    scheduler: Optional[optim.lr_scheduler._LRScheduler],
     tokenizer: SentencePieceTokenizer,
     device: str,
     amp_enabled: bool,
-) -> Tuple[float, float]:
+) -> Tuple[float, float, float, float]:
     model.train()
     total_loss = 0.0
     step_count = 0
@@ -125,7 +129,10 @@ def _train_epoch(
         src, tgt = src.to(device, non_blocking=True), tgt.to(device, non_blocking=True)
         if tgt.size(1) < 2:
             continue
-        opt.zero_grad(set_to_none=True)
+        try:
+            opt.zero_grad(set_to_none=True)
+        except TypeError:
+            opt.zero_grad()
         with torch.cuda.amp.autocast(enabled=amp_enabled):
             logits = model(src, tgt[:, :-1], tokenizer.pad_id)
             loss = crit(logits.flatten(0, 1), tgt[:, 1:].flatten(0, 1))
@@ -141,7 +148,9 @@ def _train_epoch(
 
     duration = time.perf_counter() - start_time
     avg_loss = total_loss / max(step_count, 1)
-    return avg_loss, duration
+    if scheduler:
+        scheduler.step()
+    return avg_loss, duration, 0.0, 0.0
 
 
 def train(
@@ -155,12 +164,15 @@ def train(
 
     spm_model_path = str(cfg.get("spm_model_path", "tokenizer/spm.model"))
     if not Path(spm_model_path).exists():
-        raise FileNotFoundError(f"SentencePiece model not found: {spm_model_path}")
+        raise FileNotFoundError(
+            f"SentencePiece model not found: {spm_model_path}. "
+            f"Run: python train_spm.py --input \"datas/pretrain/**/*.txt\""
+        )
     tokenizer = SentencePieceTokenizer(spm_model_path)
 
     model, crit, opt, scaler, device, amp_enabled = _init_model(tokenizer, cfg)
-    epochs = int(cfg.get("num_epochs", 5))
-    scheduler = torch.optim.lr_scheduler.CosineAnnealingLR(opt, T_max=epochs)
+    num_epochs = int(cfg.get("num_epochs", 5))
+    scheduler = torch.optim.lr_scheduler.CosineAnnealingLR(opt, T_max=num_epochs)
 
     start_epoch = 0
 
@@ -189,20 +201,20 @@ def train(
     dataset, line_count = _prepare_dataset(samples, tokenizer, is_pretrain)
     loader = _create_loader(dataset, cfg, drop_last=True)
 
-    logger.info("Training start: epochs=%d, samples=%d, start_epoch=%d", epochs, line_count, start_epoch)
+    total_epochs = start_epoch + num_epochs
+    logger.info("Training start: epochs=%d, samples=%d, start_epoch=%d", num_epochs, line_count, start_epoch)
     train_start = time.perf_counter()
     final_epoch = 0
 
-    for epoch in range(start_epoch, epochs):
+    for epoch in range(start_epoch, total_epochs):
         final_epoch = epoch
-        loss, duration = _train_epoch(
-            loader, model, crit, opt, scaler, tokenizer, device, amp_enabled
+        loss, duration, _, _ = _train_epoch(
+            loader, model, crit, opt, scaler, scheduler, tokenizer, device, amp_enabled
         )
-        scheduler.step()
 
         logger.info(
             "Epoch %d/%d | Train Loss: %.3f | Time: %.2fs",
-            epoch + 1, epochs, loss, duration,
+            epoch + 1, total_epochs, loss, duration,
         )
 
         if save_dir:
