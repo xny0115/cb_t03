@@ -184,7 +184,7 @@ class ChatbotService:
     def infer(self, text: str) -> Dict[str, Any]:
         if not self.model:
             return {"success": False, "msg": "no_model", "data": None}
-        if not self.tokenizer:
+        if isinstance(self.model, Seq2SeqTransformer) and not self.tokenizer:
             return {"success": False, "msg": "no_tokenizer", "data": None}
         if not text.strip():
             return {"success": False, "msg": "empty_input", "data": None}
@@ -231,7 +231,7 @@ class ChatbotService:
     def auto_tune(self) -> Dict[str, Any]:
         """Apply AutoTuner suggestions to config."""
         size, tokens, txt_lines, json_lines, skipped = get_dataset_info(
-            self.pretrain_dir, self.finetune_dir
+            self.pretrain_dir, self.finetune_dir, self.data_dir / "additional"
         )
         print(f"[DEBUG] Found pretrain txt files: {txt_lines} lines")
         print(f"[DEBUG] Found finetune jsonl files: {json_lines} lines")

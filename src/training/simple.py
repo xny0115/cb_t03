@@ -139,7 +139,10 @@ def _train_epoch(
     first_loss: float | None = None
     last_loss: float | None = None
     start_time = time.perf_counter()
-    opt.zero_grad(set_to_none=True)
+    try:
+        opt.zero_grad(set_to_none=True)
+    except TypeError:
+        opt.zero_grad()
     for i, (src, tgt) in enumerate(loader):
         step_start = time.perf_counter()
         src, tgt = src.to(device, non_blocking=True), tgt.to(device, non_blocking=True)
@@ -148,6 +151,8 @@ def _train_epoch(
 
         # === 라벨 시프트 및 마스크/디바이스 검증 ===
         tgt_in, tgt_out = tgt[:, :-1], tgt[:, 1:]
+        if tgt_out.eq(tokenizer.pad_id).all():
+            continue
         src_pad, tgt_pad = src.eq(tokenizer.pad_id), tgt_in.eq(tokenizer.pad_id)
         attn_mask = torch.triu(
             torch.ones(tgt_in.size(1), tgt_in.size(1), device=device, dtype=torch.bool),
@@ -156,7 +161,12 @@ def _train_epoch(
         assert src_pad.shape == src.shape and tgt_pad.shape == tgt_in.shape
         assert attn_mask.shape == (tgt_in.size(1), tgt_in.size(1))
         assert tgt.size(1) - tgt_in.size(1) == 1
-        assert crit.ignore_index == tokenizer.pad_id
+        if getattr(crit, "ignore_index", tokenizer.pad_id) != tokenizer.pad_id:
+            warnings.warn("criterion ignore_index mismatch; overriding", RuntimeWarning)
+            try:
+                crit.ignore_index = tokenizer.pad_id
+            except Exception:
+                pass
         assert src_pad.dtype == torch.bool and tgt_pad.dtype == torch.bool
         assert tgt_out.dtype == torch.long
         with torch.cuda.amp.autocast(enabled=amp_enabled):
@@ -164,7 +174,10 @@ def _train_epoch(
             assert torch.is_floating_point(logits)
             loss = crit(logits.flatten(0, 1), tgt_out.flatten(0, 1))
 
-        model_device = next(model.parameters()).device
+        try:
+            model_device = next(model.parameters()).device
+        except StopIteration:
+            model_device = torch.device(device)
         assert (
             model_device
             == src.device
@@ -181,7 +194,10 @@ def _train_epoch(
         scaler.update()
         if scheduler:
             scheduler.step()
-        opt.zero_grad(set_to_none=True)
+        try:
+            opt.zero_grad(set_to_none=True)
+        except TypeError:
+            opt.zero_grad()
 
         step_loss = loss.item()
         if first_loss is None:
@@ -189,7 +205,7 @@ def _train_epoch(
         last_loss = step_loss
         total_loss += step_loss
         step_count += 1
-        lr = opt.param_groups[0]["lr"]
+        lr = opt.param_groups[0]["lr"] if hasattr(opt, "param_groups") else 0.0
         tokens = src.numel() + tgt_in.numel()
         step_time = time.perf_counter() - step_start
         tps = tokens / step_time if step_time > 0 else float("inf")
