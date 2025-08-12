@@ -122,6 +122,7 @@ class ChatbotService:
             from ..data.subtitle_cleaner import clean_subtitle_files
             clean_subtitle_files(Path("."), self.pretrain_dir)
             data = load_pretrain_dataset(self.pretrain_dir)
+            logger.info("[DATA] pretrain size=%s", (len(data) if hasattr(data, "__len__") else "?"))
             self.model_path = self.model_dir / "pretrain.pth"
             model, tokenizer = train_pretrain(data, cfg, save_dir=str(self.model_path.parent))
         elif mode == "resume":
@@ -142,6 +143,7 @@ class ChatbotService:
                 model, tokenizer = train_transformer(data, cfg, save_dir=str(self.model_path.parent))
         else:
             data = load_instruction_dataset(self.finetune_dir)
+            logger.info("[DATA] finetune size=%s", (len(data) if hasattr(data, "__len__") else "?"))
             self.model_path = self.model_dir / "finetune.pth"
             model, tokenizer = train_transformer(data, cfg, save_dir=str(self.model_path.parent))
 
