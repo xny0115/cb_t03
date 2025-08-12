@@ -29,6 +29,7 @@ if os.getenv("DISABLE_SDP_KERNEL") != "1":
 torch.backends.cudnn.benchmark = os.getenv("DISABLE_CUDNN_BENCHMARK") != "1"
 logger.info(f"[GPU] cuda_available={torch.cuda.is_available()} device={(torch.cuda.get_device_name(0) if torch.cuda.is_available() else 'CPU')}")
 logger.info(f"[ENV] DISABLE_SDP_KERNEL={os.getenv('DISABLE_SDP_KERNEL')} DISABLE_CUDNN_BENCHMARK={os.getenv('DISABLE_CUDNN_BENCHMARK')} cudnn.benchmark={torch.backends.cudnn.benchmark}")
+if torch.cuda.is_available(): logger.info(f"[GPU] torch={torch.__version__} vram_total={torch.cuda.get_device_properties(0).total_memory}")
 if (v:=os.getenv('DISABLE_SDP_KERNEL')) not in (None, '0', '1'): logger.warning(f"[ENV] DISABLE_SDP_KERNEL='{v}' — only '1' disables; others are ignored.")
 if (v:=os.getenv('DISABLE_CUDNN_BENCHMARK')) not in (None, '0', '1'): logger.warning(f"[ENV] DISABLE_CUDNN_BENCHMARK='{v}' — only '1' disables; others are ignored.")
 

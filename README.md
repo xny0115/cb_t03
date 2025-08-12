@@ -84,3 +84,18 @@ HFModel과 DummyModel 모듈은 테스트용임을 명확히 구분합니다.
 
 → [AGENTS.md를 반드시 참조하여 작업할 것]
 
+### GPU 스모크 실행(10분)
+1. CUDA 확인
+   ```bash
+   python - <<'PY'
+   import torch; print('cuda_available=', torch.cuda.is_available()); 
+   print('device=', (torch.cuda.get_device_name(0) if torch.cuda.is_available() else 'CPU'))
+   PY
+   ```
+2. 실행
+   - `python run.py` 실행 후 UI에서 학습 1~2 스텝만 수행.
+   - 로그에서 `[GPU] cuda_available=` / `[ENV] DISABLE_SDP_KERNEL=` / `[GPU] torch=` 문구를 확인.
+3. ETA(대략) 계산 팁
+   - 실측 tokens/sec = (스텝당 토큰 수 × 스텝/초)
+   - 총 ETA ≈ (총 토큰 수) ÷ (tokens/sec × GPU 수)
+
