@@ -16,6 +16,7 @@ import platform
 from pathlib import Path
 import os
 import torch
+logger = logging.getLogger(__name__)
 
 # Performance settings from GPT instructions
 from torch.backends.cuda import sdp_kernel
@@ -26,6 +27,8 @@ except AttributeError:
 if os.getenv("DISABLE_SDP_KERNEL") != "1":
     sdp_kernel(enable_flash=True, enable_mem_efficient=True, enable_math=False)
 torch.backends.cudnn.benchmark = os.getenv("DISABLE_CUDNN_BENCHMARK") != "1"
+logger.info(f"[GPU] cuda_available={torch.cuda.is_available()} device={(torch.cuda.get_device_name(0) if torch.cuda.is_available() else 'CPU')}")
+logger.info(f"[ENV] DISABLE_SDP_KERNEL={os.getenv('DISABLE_SDP_KERNEL')} DISABLE_CUDNN_BENCHMARK={os.getenv('DISABLE_CUDNN_BENCHMARK')} cudnn.benchmark={torch.backends.cudnn.benchmark}")
 
 
 from torch import nn, optim
@@ -37,8 +40,6 @@ from ..model.transformer import Seq2SeqTransformer, save_transformer, load_trans
 from ..utils.tokenizer import SentencePieceTokenizer
 from .helpers import PairDataset, collate, timed_collate, log_dataset_stats
 from .checkpoint import save_checkpoint, load_checkpoint
-
-logger = logging.getLogger(__name__)
 
 def _prepare_dataset(
     samples: List[InstructionSample], tokenizer: SentencePieceTokenizer, is_pretrain: bool
