@@ -117,6 +117,7 @@ class ChatbotService:
         logger.info("training mode=%s, device=%s", mode, device)
 
         cfg = self._config
+        logger.info("[CFG] epochs=%s batch=%s lr=%s dropout=%s amp=%s grad_clip=%s resume=%s", cfg.get('num_epochs'), cfg.get('batch_size'), cfg.get('learning_rate'), cfg.get('dropout_ratio'), cfg.get('use_mixed_precision'), cfg.get('grad_clip'), cfg.get('resume'))
         if mode == "pretrain":
             from ..data.subtitle_cleaner import clean_subtitle_files
             clean_subtitle_files(Path("."), self.pretrain_dir)
