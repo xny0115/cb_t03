@@ -105,3 +105,9 @@ HFModel과 DummyModel 모듈은 테스트용임을 명확히 구분합니다.
 - 구성: `[CFG] epochs/batch/lr/...` 로그로 설정 확인.
 - 장애 시: 콘솔 로그 마지막 200줄과 스택트레이스 원문만 수집·보고.
 
+### 재개(resume) 절차
+- 학습 중단 후 재개하려면 `configs/current.json`에 `{"resume": true}`를 유지하고, 최근 체크포인트가 `models/`에 존재해야 합니다.
+- `python run.py` 실행 후 UI에서 재개 모드를 선택하면 됩니다.
+- 로그에 `[TRAIN-START]` / `[CFG]` / `[TRAIN-END]`가 순서대로 출력되면 정상 재개입니다.
+- 실패 시 콘솔 로그 마지막 200줄과 스택트레이스 원문을 보고하십시오.
+
