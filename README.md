@@ -124,3 +124,5 @@ HFModel과 DummyModel 모듈은 테스트용임을 명확히 구분합니다.
 - 서빙 1회: `[SERVE] model_loaded`와 `[GEN] max_new_tokens=` 로그가 출력되고 응답이 반환됨.
 - 실패 시 보고: 콘솔 로그 **마지막 200줄** + **스택트레이스 원문** + GPU/torch 버전.
 - ENV 규칙: `DISABLE_*` 값은 '1'만 비활성(기타 값은 무시, 경고 로그 발생).
+
+환경 변수 `LOG_EVERY_STEPS`로 스텝 로그 간격을 조절합니다(기본 10). 예: `LOG_EVERY_STEPS=50`
