@@ -98,4 +98,10 @@ HFModel과 DummyModel 모듈은 테스트용임을 명확히 구분합니다.
 3. ETA(대략) 계산 팁
    - 실측 tokens/sec = (스텝당 토큰 수 × 스텝/초)
    - 총 ETA ≈ (총 토큰 수) ÷ (tokens/sec × GPU 수)
+### 운영 체크리스트(요약)
+- 실행 전: CUDA 가용성, 디바이스명 확인(`[GPU] cuda_available=` 로그).
+- ENV: `DISABLE_*` 값은 **'1'**만 비활성(기타 값은 무시) — 경고 로그 확인.
+- 학습 시작/종료: `[TRAIN-START]` / `[TRAIN-END]` 로그와 체크포인트 경로 확인.
+- 구성: `[CFG] epochs/batch/lr/...` 로그로 설정 확인.
+- 장애 시: 콘솔 로그 마지막 200줄과 스택트레이스 원문만 수집·보고.
 
