@@ -117,3 +117,10 @@ HFModel과 DummyModel 모듈은 테스트용임을 명확히 구분합니다.
 - 응답이 반환되면 정상. 실패 시 콘솔 로그 마지막 200줄과 스택트레이스 원문을 수집·보고.
 - (선택) `configs/current.json`의 `resume`과 무관하게 서빙은 최신 체크포인트를 자동 로드합니다.
 
+
+### MVP 릴리스 체크리스트
+- 학습 스모크(50~100 step): 로그에 `[GPU]`/`[ENV]`/`[CFG]`/`[DATA]`/`[TRAIN-START]`→`[TRAIN-END]` 순서로 출력됨.
+- 재개(20 step): `configs/current.json`의 `{"resume": true}` 유지, 체크포인트 존재 확인 후 재개 성공.
+- 서빙 1회: `[SERVE] model_loaded`와 `[GEN] max_new_tokens=` 로그가 출력되고 응답이 반환됨.
+- 실패 시 보고: 콘솔 로그 **마지막 200줄** + **스택트레이스 원문** + GPU/torch 버전.
+- ENV 규칙: `DISABLE_*` 값은 '1'만 비활성(기타 값은 무시, 경고 로그 발생).
