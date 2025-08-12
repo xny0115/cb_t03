@@ -111,3 +111,9 @@ HFModel과 DummyModel 모듈은 테스트용임을 명확히 구분합니다.
 - 로그에 `[TRAIN-START]` / `[CFG]` / `[TRAIN-END]`가 순서대로 출력되면 정상 재개입니다.
 - 실패 시 콘솔 로그 마지막 200줄과 스택트레이스 원문을 보고하십시오.
 
+### 서빙 스모크 절차
+- `python run.py` 실행 → UI에서 질문 1회 입력.
+- 로그에서 `[SERVE] model_loaded` / `[GEN] max_new_tokens=` 문구가 출력되는지 확인.
+- 응답이 반환되면 정상. 실패 시 콘솔 로그 마지막 200줄과 스택트레이스 원문을 수집·보고.
+- (선택) `configs/current.json`의 `resume`과 무관하게 서빙은 최신 체크포인트를 자동 로드합니다.
+

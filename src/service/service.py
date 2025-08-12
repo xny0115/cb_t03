@@ -93,6 +93,7 @@ class ChatbotService:
         elif self.model_path.exists():
             try:
                 self.model, _ = load_transformer(self.model_path)
+                logging.getLogger(__name__).info("[SERVE] model_loaded path=%s params=%s", str(self.model_path), sum(p.numel() for p in self.model.parameters()))
                 spm_model_path = str(self._config.get("spm_model_path", "tokenizer/spm.model"))
                 if Path(spm_model_path).exists():
                     self.tokenizer = SentencePieceTokenizer(spm_model_path)
@@ -100,6 +101,7 @@ class ChatbotService:
                     logging.getLogger(__name__).warning(f"SPM model not found at {spm_model_path}, tokenizer not loaded.")
             except Exception:
                 self.model = load_model(self.model_path)
+                logging.getLogger(__name__).info("[SERVE] model_loaded path=%s params=%s", str(self.model_path), sum(p.numel() for p in self.model.parameters()))
 
     def start_training(self, mode: str) -> Dict[str, Any]:
         """학습 유형에 따라 분기 처리."""
@@ -198,6 +200,7 @@ class ChatbotService:
             ids = self.tokenizer.encode(text, True)
             src = torch.tensor(ids, dtype=torch.long).unsqueeze(0)
             src = src.to(next(self.model.parameters()).device)
+            logging.getLogger(__name__).info("[GEN] max_new_tokens=%s", 50)
             out_ids = self.model.generate(
                 src,
                 max_new_tokens=50,
