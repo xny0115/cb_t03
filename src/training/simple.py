@@ -138,9 +138,10 @@ def _train_epoch(
     amp_enabled: bool,
     grad_clip: float = 1.0,
 ) -> Tuple[float, float, float, float]:
+    LOG_EVERY = max(1, int(os.getenv("LOG_EVERY_STEPS", "10")))
     model.train()
     total_loss = 0.0
-    step_count = 0
+    step_count = len(loader)
     first_loss: float | None = None
     last_loss: float | None = None
     start_time = time.perf_counter()
@@ -209,19 +210,19 @@ def _train_epoch(
             first_loss = step_loss
         last_loss = step_loss
         total_loss += step_loss
-        step_count += 1
         lr = opt.param_groups[0]["lr"] if hasattr(opt, "param_groups") else 0.0
         tokens = src.numel() + tgt_in.numel()
         step_time = time.perf_counter() - step_start
         tps = tokens / step_time if step_time > 0 else float("inf")
-        logger.info(
-            "step %d | loss %.3f | lr %.6f | grad_norm %.2f | tok/s %.2f",
-            i,
-            step_loss,
-            lr,
-            float(grad_norm),
-            tps,
-        )
+        if (i % LOG_EVERY == 0) or (i + 1 == step_count):
+            logger.info(
+                "step %d | loss %.3f | lr %.6f | grad_norm %.2f | tok/s %.2f",
+                i,
+                step_loss,
+                lr,
+                float(grad_norm),
+                tps,
+            )
 
     duration = time.perf_counter() - start_time
     avg_loss = total_loss / max(step_count, 1)
@@ -272,6 +273,25 @@ def train(
             else:
                 logger.warning("Resume mode is on, but no checkpoint or model found. Starting new training.")
 
+    # v1.67: resume additive epochs if needed
+    orig_epochs = epochs
+    if cfg.get("resume", False) and start_epoch >= epochs:
+        logger.warning(
+            "[RESUME] num_epochs(%d) <= start_epoch(%d); interpreting as 'additive'.",
+            orig_epochs,
+            start_epoch,
+        )
+        epochs = start_epoch + orig_epochs
+        try:
+            scheduler.T_max = epochs
+        except Exception:
+            pass
+        logger.info(
+            "[RESUME] adjusted target epochs=%d (start=%d + add=%d)",
+            epochs,
+            start_epoch,
+            orig_epochs,
+        )
 
     dataset, line_count = _prepare_dataset(samples, tokenizer, is_pretrain)
     loader = _create_loader(dataset, cfg, drop_last=True)
