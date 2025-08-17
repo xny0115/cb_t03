@@ -300,10 +300,27 @@ def save_transformer(
 
 def load_transformer(path: Path) -> Tuple[Seq2SeqTransformer, Dict[str, int]]:
     data = torch.load(path, map_location="cpu")
+    state = data.get("state", {})
     vocab = data.get("vocab", {})
     cfg = data.get("cfg", {})
+    # Legacy ckpt: vocab 없으면 state dict에서 단어수 추론
+    if not vocab:
+        inferred = None
+        if isinstance(state, dict):
+            w = state.get("embed.weight") or state.get("fc_out.weight")
+            if w is not None:
+                try:
+                    inferred = int(getattr(w, "size")(0))
+                except Exception:
+                    inferred = None
+        if not inferred or inferred <= 0:
+            raise RuntimeError("invalid checkpoint: cannot infer vocab size")
+        vocab_size = inferred
+    else:
+        vocab_size = len(vocab)
+
     model = Seq2SeqTransformer(
-        vocab_size=len(vocab),
+        vocab_size=vocab_size,
         embed_dim=cfg.get("embed_dim", 256),
         num_heads=cfg.get("num_heads", 8),
         num_encoder_layers=cfg.get("num_encoder_layers", 6),
@@ -311,5 +328,5 @@ def load_transformer(path: Path) -> Tuple[Seq2SeqTransformer, Dict[str, int]]:
         dim_ff=cfg.get("ff_dim", 1024),
         dropout=cfg.get("dropout", 0.1),
     )
-    model.load_state_dict(data["state"])
+    model.load_state_dict(state)
     return model, vocab
