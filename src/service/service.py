@@ -61,6 +61,14 @@ def _parse_epoch_metrics(fp: Path) -> List[str]:
     return lines
 
 
+def _param_count(model) -> int:
+    try:
+        params = getattr(model, 'parameters', None)
+        return sum(p.numel() for p in params()) if callable(params) else 0
+    except Exception:
+        return 0
+
+
 class ChatbotService:
     """Instruction 기반 챗봇 서비스."""
 
@@ -93,7 +101,11 @@ class ChatbotService:
         elif self.model_path.exists():
             try:
                 self.model, _ = load_transformer(self.model_path)
-                logging.getLogger(__name__).info("[SERVE] model_loaded path=%s params=%s", str(self.model_path), sum(p.numel() for p in self.model.parameters()))
+                logging.getLogger(__name__).info(
+                    "[SERVE] model_loaded path=%s params=%s",
+                    str(self.model_path),
+                    _param_count(self.model),
+                )
                 spm_model_path = str(self._config.get("spm_model_path", "tokenizer/spm.model"))
                 if Path(spm_model_path).exists():
                     self.tokenizer = SentencePieceTokenizer(spm_model_path)
@@ -101,7 +113,11 @@ class ChatbotService:
                     logging.getLogger(__name__).warning(f"SPM model not found at {spm_model_path}, tokenizer not loaded.")
             except Exception:
                 self.model = load_model(self.model_path)
-                logging.getLogger(__name__).info("[SERVE] model_loaded path=%s params=%s", str(self.model_path), sum(p.numel() for p in self.model.parameters()))
+                logging.getLogger(__name__).info(
+                    "[SERVE] model_loaded path=%s params=%s",
+                    str(self.model_path),
+                    _param_count(self.model),
+                )
 
     def start_training(self, mode: str) -> Dict[str, Any]:
         """학습 유형에 따라 분기 처리."""
