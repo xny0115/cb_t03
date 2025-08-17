@@ -1,4 +1,8 @@
 # 변경 이력
+## v1.69: trainconfig.ini 기반 추론/학습 파라미터 오버라이드 추가.
+- service.py에 INI 로더와 `_resolve_params`를 도입해 [CFG] 로그와 함께 생성 파라미터를 적용.
+- start_training이 INI의 train 섹션 값을 config에 병합하여 UI 없이도 수치 조정 가능.
+- 루트에 `trainconfig.ini` 샘플 파일을 추가.
 ## v1.68: 레거시 체크포인트 vocab 추론 로드 및 DummyModel 로깅 가드 추가.
 - 구형 ckpt에 vocab 메타가 없을 때 가중치 행렬에서 단어 수를 추론하여 트랜스포머 로드.
 - DummyModel 로드 시 parameters() 부재로 발생하던 로깅 예외를 _param_count 가드로 방지.

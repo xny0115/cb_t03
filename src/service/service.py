@@ -11,6 +11,7 @@ import logging
 import os
 import hashlib
 import re
+import configparser
 import torch
 
 try:
@@ -69,6 +70,84 @@ def _param_count(model) -> int:
         return 0
 
 
+def _read_ini(path: str = "trainconfig.ini") -> dict:
+    """trainconfig.ini에서 학습/추론 설정을 읽어 반환."""
+    cfg = configparser.ConfigParser()
+    if not cfg.read(path, encoding="utf-8"):
+        return {}
+
+    def get(section, key, cast, default=None):
+        try:
+            v = cfg.get(section, key, fallback=None)
+            if v is None or str(v).strip() == "":
+                return default
+            if cast is bool:
+                return str(v).strip().lower() in ("1", "true", "yes", "y", "on")
+            if cast is int:
+                return int(float(v))
+            if cast is float:
+                return float(v)
+            return v
+        except Exception:
+            return default
+
+    gen = {
+        "temperature": get("generate", "temperature", float, None),
+        "top_p": get("generate", "top_p", float, None),
+        "max_new_tokens": get("generate", "max_new_tokens", int, None),
+        "repetition_penalty": get("generate", "repetition_penalty", float, None),
+        "seed": get("generate", "seed", str, None),
+        "top_k": get("generate", "top_k", int, None),
+        "no_repeat_ngram_size": get("generate", "no_repeat_ngram_size", int, None),
+        "num_beams": get("generate", "num_beams", int, None),
+        "do_sample": get("generate", "do_sample", bool, None),
+        "stop": get("generate", "stop", str, None),
+    }
+    train = {
+        "epochs": get("train", "epochs", int, None),
+        "learning_rate": get("train", "learning_rate", float, None),
+        "warmup_steps": get("train", "warmup_steps", int, None),
+        "batch_size": get("train", "batch_size", int, None),
+        "gradient_accumulation_steps": get("train", "gradient_accumulation_steps", int, None),
+        "max_seq_len": get("train", "max_seq_len", int, None),
+        "label_smoothing": get("train", "label_smoothing", float, None),
+        "weight_decay": get("train", "weight_decay", float, None),
+        "grad_clip": get("train", "grad_clip", float, None),
+        "min_lr": get("train", "min_lr", float, None),
+    }
+    return {
+        "generate": {k: v for k, v in gen.items() if v is not None},
+        "train": {k: v for k, v in train.items() if v is not None},
+    }
+
+
+def _resolve_params(req: dict, cfg: dict) -> dict:
+    """요청 > INI > 기존 config 순서로 생성 파라미터 결정."""
+    ini = _read_ini().get("generate", {})
+
+    def pick(name, default, lo=None, hi=None, cast=float):
+        v = req.get(name, ini.get(name, cfg.get(name, default)))
+        try:
+            v = cast(v) if v is not None else default
+        except Exception:
+            v = default
+        if lo is not None and hi is not None and isinstance(v, (int, float)):
+            v = max(lo, min(hi, v))
+        return v
+
+    return {
+        "temperature": pick("temperature", 0.3, 0.0, 2.0, float),
+        "top_p": pick("top_p", 0.9, 0.0, 1.0, float),
+        "max_new_tokens": pick("max_new_tokens", 128, 1, 4096, int),
+        "repetition_penalty": pick("repetition_penalty", 1.10, 0.8, 2.0, float),
+        "top_k": pick("top_k", 0, 0, 100, int),
+        "no_repeat_ngram_size": pick("no_repeat_ngram_size", 0, 0, 10, int),
+        "num_beams": pick("num_beams", 1, 1, 8, int),
+        "do_sample": bool(pick("do_sample", True, None, None, bool)),
+        "seed": req.get("seed", _read_ini().get("generate", {}).get("seed", cfg.get("seed", "auto"))),
+        "stop": req.get("stop", _read_ini().get("generate", {}).get("stop", None)),
+    }
+
 class ChatbotService:
     """Instruction 기반 챗봇 서비스."""
 
@@ -121,6 +200,8 @@ class ChatbotService:
 
     def start_training(self, mode: str) -> Dict[str, Any]:
         """학습 유형에 따라 분기 처리."""
+        train_ini = _read_ini().get("train", {})
+        self._config.update(train_ini)
         valid, msg = validate_config(self._config)
         if not valid:
             return {"success": False, "msg": msg, "data": None}
@@ -211,15 +292,26 @@ class ChatbotService:
             return {"success": False, "msg": "empty_input", "data": None}
         if len(text) > self.MAX_INPUT_LEN:
             return {"success": False, "msg": "too_long", "data": None}
+        params = _resolve_params({}, self._config)
+        logging.getLogger(__name__).info(
+            "[CFG] t=%.2f tp=%.2f k=%d mnt=%d rep=%.2f beams=%d sample=%s seed=%s",
+            params["temperature"],
+            params["top_p"],
+            params["top_k"],
+            params["max_new_tokens"],
+            params["repetition_penalty"],
+            params["num_beams"],
+            str(params["do_sample"]),
+            str(params["seed"]),
+        )
 
         if isinstance(self.model, Seq2SeqTransformer) and self.tokenizer:
             ids = self.tokenizer.encode(text, True)
             src = torch.tensor(ids, dtype=torch.long).unsqueeze(0)
             src = src.to(next(self.model.parameters()).device)
-            logging.getLogger(__name__).info("[GEN] max_new_tokens=%s", 50)
             out_ids = self.model.generate(
                 src,
-                max_new_tokens=50,
+                max_new_tokens=params["max_new_tokens"],
                 eos_id=self.tokenizer.eos_id,
                 pad_id=self.tokenizer.pad_id,
             )
