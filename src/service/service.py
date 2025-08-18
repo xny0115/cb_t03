@@ -120,12 +120,12 @@ def _read_ini(path: str = "trainconfig.ini") -> dict:
     }
 
 
-def _resolve_generate(cfg: dict) -> dict:
+def _resolve_generate(_cfg: dict | None = None) -> dict:
     """INI 설정을 기준으로 추론 파라미터 확정."""
     ini = _read_ini().get("generate", {})
 
     def pick(name: str, default, lo=None, hi=None, cast=float):
-        v = ini.get(name, cfg.get(name, default))
+        v = ini.get(name, default)
         try:
             v = cast(v) if v is not None else default
         except Exception:
@@ -143,7 +143,7 @@ def _resolve_generate(cfg: dict) -> dict:
         "no_repeat_ngram_size": pick("no_repeat_ngram_size", 0, 0, 10, int),
         "num_beams": pick("num_beams", 1, 1, 8, int),
         "do_sample": bool(pick("do_sample", True, None, None, bool)),
-        "seed": ini.get("seed", cfg.get("seed", "auto")),
+        "seed": ini.get("seed", "auto"),
         "stop": ini.get("stop", None),
     }
     if p["num_beams"] > 1:
@@ -227,6 +227,7 @@ class ChatbotService:
         logger.info("training mode=%s, device=%s", mode, device)
 
         cfg = self._config
+        cfg["resume"] = bool(cfg.get("resume", False) and mode == "resume")
         logger.info(
             "[CFG] epochs=%s batch=%s lr=%s dropout=%s amp=%s grad_clip=%s resume=%s",
             cfg.get('num_epochs'),
@@ -333,7 +334,7 @@ class ChatbotService:
             return {"success": False, "msg": "empty_input", "data": None}
         if len(text) > self.MAX_INPUT_LEN:
             return {"success": False, "msg": "too_long", "data": None}
-        params = _resolve_generate(self._config)
+        params = _resolve_generate()
         logging.getLogger(__name__).info(
             "[CFG] t=%.2f tp=%.2f k=%d mnt=%d rep=%.2f beams=%d sample=%s",
             params["temperature"],
@@ -344,6 +345,38 @@ class ChatbotService:
             params["num_beams"],
             str(params["do_sample"]),
         )
+
+        if isinstance(self.model, HFModel):
+            generator = None
+            if params["seed"] != "auto":
+                try:
+                    device_str = "cuda" if torch.cuda.is_available() else "cpu"
+                    generator = torch.Generator(device=device_str).manual_seed(
+                        int(params["seed"])
+                    )
+                except Exception:
+                    generator = None
+            kwargs = {
+                "temperature": params["temperature"],
+                "top_p": params["top_p"],
+                "top_k": params["top_k"],
+                "max_new_tokens": params["max_new_tokens"],
+                "repetition_penalty": params["repetition_penalty"],
+                "no_repeat_ngram_size": params["no_repeat_ngram_size"],
+                "num_beams": params["num_beams"],
+                "do_sample": params["do_sample"],
+            }
+            if generator:
+                kwargs["generator"] = generator
+            if params.get("stop"):
+                kwargs["stop_sequence"] = params["stop"]
+            outputs = self.model.pipe(text, **kwargs)
+            if isinstance(outputs, list) and outputs:
+                out_text = outputs[0].get("generated_text", "").strip()
+            else:
+                out_text = str(outputs).strip()
+            msg = "ok" if out_text else "no_answer"
+            return {"success": True, "msg": msg, "data": out_text}
 
         if isinstance(self.model, Seq2SeqTransformer) and self.tokenizer:
             ids = self.tokenizer.encode(text, True)
