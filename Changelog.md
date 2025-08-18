@@ -1,4 +1,9 @@
 # 변경 이력
+## v1.71: INI 전용 추론 파라미터와 명시적 이어학습 분기
+- service.py의 `_resolve_generate`가 요청 값을 무시하고 `trainconfig.ini`만 참조하도록 수정했습니다.
+- `start_training`이 `--mode resume`일 때만 `resume`을 활성화하도록 강제했습니다.
+- HFModel 추론 시 INI에서 읽은 생성 파라미터를 그대로 전달합니다.
+- `trainconfig.ini`의 `min_lr` 기본값을 `1e-5`로 조정했습니다.
 ## v1.70: Prototype 모드 – INI 전용 제어 및 학습 안정화.
 - service.py에서 `_resolve_generate`와 `_apply_train_ini`를 도입해 UI 수치를 무시하고 `trainconfig.ini` 값만으로 추론·학습 파라미터를 확정.
 - `resume` 기본값을 False로 고정하고 [CFG] 로그를 강화, run.py에 `resume` 모드 CLI 분기 추가.
