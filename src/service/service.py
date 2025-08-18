@@ -102,16 +102,21 @@ def _read_ini(path: str = "trainconfig.ini") -> dict:
         "stop": get("generate", "stop", str, None),
     }
     train = {
-        "epochs": get("train", "epochs", int, None),
-        "learning_rate": get("train", "learning_rate", float, None),
-        "warmup_steps": get("train", "warmup_steps", int, None),
+        "num_epochs": get("train", "num_epochs", int, None),
         "batch_size": get("train", "batch_size", int, None),
-        "gradient_accumulation_steps": get("train", "gradient_accumulation_steps", int, None),
-        "max_seq_len": get("train", "max_seq_len", int, None),
-        "label_smoothing": get("train", "label_smoothing", float, None),
-        "weight_decay": get("train", "weight_decay", float, None),
+        "learning_rate": get("train", "learning_rate", float, None),
+        "dropout_ratio": get("train", "dropout_ratio", float, None),
         "grad_clip": get("train", "grad_clip", float, None),
         "min_lr": get("train", "min_lr", float, None),
+        "use_mixed_precision": get("train", "use_mixed_precision", bool, None),
+        "model_dim": get("train", "model_dim", int, None),
+        "ff_dim": get("train", "ff_dim", int, None),
+        "num_heads": get("train", "num_heads", int, None),
+        "num_encoder_layers": get("train", "num_encoder_layers", int, None),
+        "num_decoder_layers": get("train", "num_decoder_layers", int, None),
+        "num_workers": get("train", "num_workers", int, None),
+        "pin_memory": get("train", "pin_memory", bool, None),
+        "spm_model_path": get("train", "spm_model_path", str, None),
         "resume": get("train", "resume", bool, False),
     }
     return {
@@ -216,6 +221,25 @@ class ChatbotService:
         valid, msg = validate_config(self._config)
         if not valid:
             return {"success": False, "msg": msg, "data": None}
+        overrides = _read_ini().get("train", {})
+        checks = [
+            ("num_epochs", lambda v: v >= 1),
+            ("batch_size", lambda v: v >= 1),
+            ("learning_rate", lambda v: 1e-6 <= v <= 1e-2),
+            ("dropout_ratio", lambda v: 0 <= v < 0.9),
+            ("grad_clip", lambda v: 0 <= v <= 10),
+            ("min_lr", lambda v: 1e-6 <= v <= 1e-3),
+            ("model_dim", lambda v: v > 0),
+            ("ff_dim", lambda v: v > 0),
+            ("num_heads", lambda v: v > 0),
+            ("num_encoder_layers", lambda v: v > 0),
+            ("num_decoder_layers", lambda v: v > 0),
+        ]
+        for key, rule in checks:
+            if key in overrides:
+                val = self._config.get(key)
+                if val is None or not rule(val):
+                    return {"success": False, "msg": f"{key}: out_of_range", "data": None}
         if isinstance(self.model, HFModel):
             return {"success": True, "msg": "done", "data": None}
 
@@ -229,7 +253,7 @@ class ChatbotService:
         cfg = self._config
         cfg["resume"] = bool(cfg.get("resume", False) and mode == "resume")
         logger.info(
-            "[CFG] epochs=%s batch=%s lr=%s dropout=%s amp=%s grad_clip=%s resume=%s",
+            "[CFG-TRAIN] epochs=%s batch=%s lr=%s dropout=%s amp=%s grad_clip=%s resume=%s",
             cfg.get('num_epochs'),
             cfg.get('batch_size'),
             cfg.get('learning_rate'),
@@ -336,7 +360,7 @@ class ChatbotService:
             return {"success": False, "msg": "too_long", "data": None}
         params = _resolve_generate()
         logging.getLogger(__name__).info(
-            "[CFG] t=%.2f tp=%.2f k=%d mnt=%d rep=%.2f beams=%d sample=%s",
+            "[CFG-GEN] t=%.2f tp=%.2f k=%d mnt=%d rep=%.2f beams=%d sample=%s",
             params["temperature"],
             params["top_p"],
             params["top_k"],

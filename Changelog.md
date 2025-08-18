@@ -1,4 +1,9 @@
 # 변경 이력
+## v1.72: INI 주석 확장 및 구성 검증 강화
+- `trainconfig.ini`에 모든 사용 키와 한국어 주석을 추가하고 기본값으로 초기화했습니다.
+- `service.py`의 구성 로그 태그를 `[CFG-TRAIN]`, `[CFG-GEN]`으로 통일했습니다.
+- `start_training` 진입 전 INI 덮어쓴 값에 대한 범위 검사를 추가했습니다.
+- `training.simple`에는 "검증만 수행, 로직 변경 없음" 주석을 삽입했습니다.
 ## v1.71: INI 전용 추론 파라미터와 명시적 이어학습 분기
 - service.py의 `_resolve_generate`가 요청 값을 무시하고 `trainconfig.ini`만 참조하도록 수정했습니다.
 - `start_training`이 `--mode resume`일 때만 `resume`을 활성화하도록 강제했습니다.
