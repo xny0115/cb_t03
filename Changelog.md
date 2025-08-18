@@ -1,4 +1,8 @@
 # 변경 이력
+## v1.70: Prototype 모드 – INI 전용 제어 및 학습 안정화.
+- service.py에서 `_resolve_generate`와 `_apply_train_ini`를 도입해 UI 수치를 무시하고 `trainconfig.ini` 값만으로 추론·학습 파라미터를 확정.
+- `resume` 기본값을 False로 고정하고 [CFG] 로그를 강화, run.py에 `resume` 모드 CLI 분기 추가.
+- `training.simple`에 학습률 하한(min_lr) 적용해 스케줄러가 0 이하로 내려가지 않도록 보호.
 ## v1.69: trainconfig.ini 기반 추론/학습 파라미터 오버라이드 추가.
 - service.py에 INI 로더와 `_resolve_params`를 도입해 [CFG] 로그와 함께 생성 파라미터를 적용.
 - start_training이 INI의 train 섹션 값을 config에 병합하여 UI 없이도 수치 조정 가능.

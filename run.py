@@ -51,7 +51,7 @@ def main() -> None:
     parser = argparse.ArgumentParser(description="Chatbot runner")
     parser.add_argument(
         "--mode",
-        choices=["train", "pretrain", "serve"],
+        choices=["train", "pretrain", "resume", "serve"],
         default="serve",
     )
     parser.add_argument("--config", dest="config_path")
@@ -75,11 +75,11 @@ def main() -> None:
         svc = ChatbotService()
         svc.start_training("pretrain")
         return
-    elif args.mode == "train":
+    elif args.mode in ("train", "resume"):
         from src.service.service import ChatbotService
 
         svc = ChatbotService()
-        svc.start_training("finetune")
+        svc.start_training("resume" if args.mode == "resume" else "finetune")
         return
 
     from src.service.service import ChatbotService
