@@ -137,6 +137,7 @@ def _train_epoch(
     device: str,
     amp_enabled: bool,
     grad_clip: float = 1.0,
+    min_lr: float = 1e-5,
 ) -> Tuple[float, float, float, float]:
     LOG_EVERY = max(1, int(os.getenv("LOG_EVERY_STEPS", "10")))
     model.train()
@@ -200,6 +201,8 @@ def _train_epoch(
         scaler.update()
         if scheduler:
             scheduler.step()
+            for group in opt.param_groups:
+                group["lr"] = max(group["lr"], min_lr)
         try:
             opt.zero_grad(set_to_none=True)
         except TypeError:
@@ -251,12 +254,15 @@ def train(
     scheduler = torch.optim.lr_scheduler.CosineAnnealingLR(opt, T_max=epochs)
 
     start_epoch = 0
+    resume = bool(cfg.get("resume", False))
+    if not resume:
+        start_epoch = 0
 
     if save_dir:
         save_dir = Path(save_dir)
         save_dir.mkdir(parents=True, exist_ok=True)
 
-        if cfg.get("resume", False):
+        if resume:
             mode_name = 'pretrain' if is_pretrain else 'finetune'
             last_ckpt_path = save_dir / f"last_{mode_name}.ckpt"
             best_model_path = save_dir / f"{mode_name}.pth"
@@ -275,7 +281,7 @@ def train(
 
     # v1.67: resume additive epochs if needed
     orig_epochs = epochs
-    if cfg.get("resume", False) and start_epoch >= epochs:
+    if resume and start_epoch >= epochs:
         logger.warning(
             "[RESUME] num_epochs(%d) <= start_epoch(%d); interpreting as 'additive'.",
             orig_epochs,
@@ -301,6 +307,7 @@ def train(
     final_epoch = 0
 
     grad_clip = float(cfg.get("grad_clip", 1.0))
+    min_lr = float(cfg.get("min_lr", 1e-5))
     for epoch in range(start_epoch, epochs):
         final_epoch = epoch
         loss, duration, _, _ = _train_epoch(
@@ -314,6 +321,7 @@ def train(
             device,
             amp_enabled,
             grad_clip,
+            min_lr,
         )
 
         logger.info(

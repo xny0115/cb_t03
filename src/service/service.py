@@ -71,36 +71,34 @@ def _param_count(model) -> int:
 
 
 def _read_ini(path: str = "trainconfig.ini") -> dict:
-    """trainconfig.ini에서 학습/추론 설정을 읽어 반환."""
+    """trainconfig.ini에서 학습/추론 설정을 읽어 dict로 반환."""
     cfg = configparser.ConfigParser()
     if not cfg.read(path, encoding="utf-8"):
         return {}
 
-    def get(section, key, cast, default=None):
-        try:
-            v = cfg.get(section, key, fallback=None)
-            if v is None or str(v).strip() == "":
-                return default
-            if cast is bool:
-                return str(v).strip().lower() in ("1", "true", "yes", "y", "on")
-            if cast is int:
-                return int(float(v))
-            if cast is float:
-                return float(v)
-            return v
-        except Exception:
+    def get(section: str, key: str, cast, default=None):
+        v = cfg.get(section, key, fallback=None)
+        if v is None or str(v).strip() == "":
             return default
+        if cast is bool:
+            return str(v).strip().lower() in ("1", "true", "yes", "y", "on")
+        if cast is int:
+            return int(float(v))
+        if cast is float:
+            return float(v)
+        return v
 
     gen = {
+        "lock_ui": get("generate", "lock_ui", bool, True),
         "temperature": get("generate", "temperature", float, None),
         "top_p": get("generate", "top_p", float, None),
         "max_new_tokens": get("generate", "max_new_tokens", int, None),
         "repetition_penalty": get("generate", "repetition_penalty", float, None),
-        "seed": get("generate", "seed", str, None),
         "top_k": get("generate", "top_k", int, None),
         "no_repeat_ngram_size": get("generate", "no_repeat_ngram_size", int, None),
         "num_beams": get("generate", "num_beams", int, None),
         "do_sample": get("generate", "do_sample", bool, None),
+        "seed": get("generate", "seed", str, None),
         "stop": get("generate", "stop", str, None),
     }
     train = {
@@ -114,6 +112,7 @@ def _read_ini(path: str = "trainconfig.ini") -> dict:
         "weight_decay": get("train", "weight_decay", float, None),
         "grad_clip": get("train", "grad_clip", float, None),
         "min_lr": get("train", "min_lr", float, None),
+        "resume": get("train", "resume", bool, False),
     }
     return {
         "generate": {k: v for k, v in gen.items() if v is not None},
@@ -121,21 +120,21 @@ def _read_ini(path: str = "trainconfig.ini") -> dict:
     }
 
 
-def _resolve_params(req: dict, cfg: dict) -> dict:
-    """요청 > INI > 기존 config 순서로 생성 파라미터 결정."""
+def _resolve_generate(cfg: dict) -> dict:
+    """INI 설정을 기준으로 추론 파라미터 확정."""
     ini = _read_ini().get("generate", {})
 
-    def pick(name, default, lo=None, hi=None, cast=float):
-        v = req.get(name, ini.get(name, cfg.get(name, default)))
+    def pick(name: str, default, lo=None, hi=None, cast=float):
+        v = ini.get(name, cfg.get(name, default))
         try:
             v = cast(v) if v is not None else default
         except Exception:
             v = default
-        if lo is not None and hi is not None and isinstance(v, (int, float)):
+        if isinstance(v, (int, float)) and lo is not None and hi is not None:
             v = max(lo, min(hi, v))
         return v
 
-    return {
+    p = {
         "temperature": pick("temperature", 0.3, 0.0, 2.0, float),
         "top_p": pick("top_p", 0.9, 0.0, 1.0, float),
         "max_new_tokens": pick("max_new_tokens", 128, 1, 4096, int),
@@ -144,9 +143,22 @@ def _resolve_params(req: dict, cfg: dict) -> dict:
         "no_repeat_ngram_size": pick("no_repeat_ngram_size", 0, 0, 10, int),
         "num_beams": pick("num_beams", 1, 1, 8, int),
         "do_sample": bool(pick("do_sample", True, None, None, bool)),
-        "seed": req.get("seed", _read_ini().get("generate", {}).get("seed", cfg.get("seed", "auto"))),
-        "stop": req.get("stop", _read_ini().get("generate", {}).get("stop", None)),
+        "seed": ini.get("seed", cfg.get("seed", "auto")),
+        "stop": ini.get("stop", None),
     }
+    if p["num_beams"] > 1:
+        p["do_sample"] = False
+    return p
+
+
+def _apply_train_ini(cfg: dict) -> dict:
+    """train 섹션 값을 기존 config에 덮어쓰기."""
+    over = _read_ini().get("train", {})
+    out = dict(cfg)
+    if "epochs" in over:
+        out["num_epochs"] = over.pop("epochs")
+    out.update(over)
+    return out
 
 class ChatbotService:
     """Instruction 기반 챗봇 서비스."""
@@ -200,8 +212,7 @@ class ChatbotService:
 
     def start_training(self, mode: str) -> Dict[str, Any]:
         """학습 유형에 따라 분기 처리."""
-        train_ini = _read_ini().get("train", {})
-        self._config.update(train_ini)
+        self._config = _apply_train_ini(self._config)
         valid, msg = validate_config(self._config)
         if not valid:
             return {"success": False, "msg": msg, "data": None}
@@ -216,35 +227,65 @@ class ChatbotService:
         logger.info("training mode=%s, device=%s", mode, device)
 
         cfg = self._config
-        logger.info("[CFG] epochs=%s batch=%s lr=%s dropout=%s amp=%s grad_clip=%s resume=%s", cfg.get('num_epochs'), cfg.get('batch_size'), cfg.get('learning_rate'), cfg.get('dropout_ratio'), cfg.get('use_mixed_precision'), cfg.get('grad_clip'), cfg.get('resume'))
-        if mode == "pretrain":
-            from ..data.subtitle_cleaner import clean_subtitle_files
-            clean_subtitle_files(Path("."), self.pretrain_dir)
-            data = load_pretrain_dataset(self.pretrain_dir)
-            logger.info("[DATA] pretrain size=%s", (len(data) if hasattr(data, "__len__") else "?"))
-            self.model_path = self.model_dir / "pretrain.pth"
-            model, tokenizer = train_pretrain(data, cfg, save_dir=str(self.model_path.parent))
-        elif mode == "resume":
-            is_pretrain_resume = (self.model_dir / "pretrain.pth").exists() or \
-                                 (self.model_dir / "last_pretrain.ckpt").exists()
+        logger.info(
+            "[CFG] epochs=%s batch=%s lr=%s dropout=%s amp=%s grad_clip=%s resume=%s",
+            cfg.get('num_epochs'),
+            cfg.get('batch_size'),
+            cfg.get('learning_rate'),
+            cfg.get('dropout_ratio'),
+            cfg.get('use_mixed_precision'),
+            cfg.get('grad_clip'),
+            cfg.get('resume'),
+        )
 
-            cfg["resume"] = True
-
-            if is_pretrain_resume:
+        resume = bool(cfg.get("resume", False))
+        try:
+            if mode == "pretrain":
+                from ..data.subtitle_cleaner import clean_subtitle_files
+                clean_subtitle_files(Path("."), self.pretrain_dir)
                 data = load_pretrain_dataset(self.pretrain_dir)
+                logger.info(
+                    "[DATA] pretrain size=%s",
+                    (len(data) if hasattr(data, "__len__") else "?"),
+                )
                 self.model_path = self.model_dir / "pretrain.pth"
-                cfg["model_path"] = str(self.model_path)
-                model, tokenizer = train_pretrain(data, cfg, save_dir=str(self.model_path.parent))
+                model, tokenizer = train_pretrain(
+                    data, cfg, save_dir=str(self.model_path.parent)
+                )
+            elif resume:
+                is_pretrain_resume = (self.model_dir / "pretrain.pth").exists() or (
+                    self.model_dir / "last_pretrain.ckpt"
+                ).exists()
+
+                cfg["resume"] = True
+
+                if is_pretrain_resume:
+                    data = load_pretrain_dataset(self.pretrain_dir)
+                    self.model_path = self.model_dir / "pretrain.pth"
+                    cfg["model_path"] = str(self.model_path)
+                    model, tokenizer = train_pretrain(
+                        data, cfg, save_dir=str(self.model_path.parent)
+                    )
+                else:
+                    data = load_instruction_dataset(self.finetune_dir)
+                    self.model_path = self.model_dir / "finetune.pth"
+                    cfg["model_path"] = str(self.model_path)
+                    model, tokenizer = train_transformer(
+                        data, cfg, save_dir=str(self.model_path.parent)
+                    )
             else:
                 data = load_instruction_dataset(self.finetune_dir)
+                logger.info(
+                    "[DATA] finetune size=%s",
+                    (len(data) if hasattr(data, "__len__") else "?"),
+                )
                 self.model_path = self.model_dir / "finetune.pth"
-                cfg["model_path"] = str(self.model_path)
-                model, tokenizer = train_transformer(data, cfg, save_dir=str(self.model_path.parent))
-        else:
-            data = load_instruction_dataset(self.finetune_dir)
-            logger.info("[DATA] finetune size=%s", (len(data) if hasattr(data, "__len__") else "?"))
-            self.model_path = self.model_dir / "finetune.pth"
-            model, tokenizer = train_transformer(data, cfg, save_dir=str(self.model_path.parent))
+                model, tokenizer = train_transformer(
+                    data, cfg, save_dir=str(self.model_path.parent)
+                )
+        except Exception as exc:
+            logger.warning("training failed: %s", exc)
+            return {"success": False, "msg": str(exc), "data": None}
 
         # Note: save_transformer is now called inside train()
 
@@ -292,9 +333,9 @@ class ChatbotService:
             return {"success": False, "msg": "empty_input", "data": None}
         if len(text) > self.MAX_INPUT_LEN:
             return {"success": False, "msg": "too_long", "data": None}
-        params = _resolve_params({}, self._config)
+        params = _resolve_generate(self._config)
         logging.getLogger(__name__).info(
-            "[CFG] t=%.2f tp=%.2f k=%d mnt=%d rep=%.2f beams=%d sample=%s seed=%s",
+            "[CFG] t=%.2f tp=%.2f k=%d mnt=%d rep=%.2f beams=%d sample=%s",
             params["temperature"],
             params["top_p"],
             params["top_k"],
@@ -302,7 +343,6 @@ class ChatbotService:
             params["repetition_penalty"],
             params["num_beams"],
             str(params["do_sample"]),
-            str(params["seed"]),
         )
 
         if isinstance(self.model, Seq2SeqTransformer) and self.tokenizer:
