@@ -13,6 +13,8 @@ DEFAULT_CONFIG: Dict[str, Any] = {
     "batch_size": 48,
     "learning_rate": 2e-4,
     "dropout_ratio": 0.1,
+    "grad_clip": 1.0,
+    "min_lr": 1e-5,
     "warmup_steps": 0,
     "max_sequence_length": 128,
     "num_heads": 8,

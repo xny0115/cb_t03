@@ -26,6 +26,9 @@ HFModel과 DummyModel 모듈은 테스트용임을 명확히 구분합니다.
 
 ---
 
+## 준비
+python train_spm.py --input "datas/pretrain/**/*.txt"
+
 ## 📦 실행 환경
 
 - OS: Windows 10
