@@ -72,7 +72,7 @@ def _param_count(model) -> int:
 
 def _read_ini(path: str = "trainconfig.ini") -> dict:
     """trainconfig.ini에서 학습/추론 설정을 읽어 dict로 반환."""
-    cfg = configparser.ConfigParser()
+    cfg = configparser.ConfigParser(inline_comment_prefixes=("#", ";"))
     if not cfg.read(path, encoding="utf-8"):
         return {}
 
@@ -88,6 +88,31 @@ def _read_ini(path: str = "trainconfig.ini") -> dict:
             return float(v)
         return v
 
+    def parse_train(section: str) -> Dict[str, Any]:
+        return {
+            k: v
+            for k, v in {
+                "epochs": get(section, "epochs", int, None),
+                "num_epochs": get(section, "num_epochs", int, None),
+                "batch_size": get(section, "batch_size", int, None),
+                "learning_rate": get(section, "learning_rate", float, None),
+                "dropout_ratio": get(section, "dropout_ratio", float, None),
+                "grad_clip": get(section, "grad_clip", float, None),
+                "min_lr": get(section, "min_lr", float, None),
+                "use_mixed_precision": get(section, "use_mixed_precision", bool, None),
+                "model_dim": get(section, "model_dim", int, None),
+                "ff_dim": get(section, "ff_dim", int, None),
+                "num_heads": get(section, "num_heads", int, None),
+                "num_encoder_layers": get(section, "num_encoder_layers", int, None),
+                "num_decoder_layers": get(section, "num_decoder_layers", int, None),
+                "num_workers": get(section, "num_workers", int, None),
+                "pin_memory": get(section, "pin_memory", bool, None),
+                "spm_model_path": get(section, "spm_model_path", str, None),
+                "resume": get(section, "resume", bool, False),
+            }.items()
+            if v is not None
+        }
+
     gen = {
         "lock_ui": get("generate", "lock_ui", bool, True),
         "temperature": get("generate", "temperature", float, None),
@@ -101,28 +126,12 @@ def _read_ini(path: str = "trainconfig.ini") -> dict:
         "seed": get("generate", "seed", str, None),
         "stop": get("generate", "stop", str, None),
     }
-    train = {
-        "num_epochs": get("train", "num_epochs", int, None),
-        "batch_size": get("train", "batch_size", int, None),
-        "learning_rate": get("train", "learning_rate", float, None),
-        "dropout_ratio": get("train", "dropout_ratio", float, None),
-        "grad_clip": get("train", "grad_clip", float, None),
-        "min_lr": get("train", "min_lr", float, None),
-        "use_mixed_precision": get("train", "use_mixed_precision", bool, None),
-        "model_dim": get("train", "model_dim", int, None),
-        "ff_dim": get("train", "ff_dim", int, None),
-        "num_heads": get("train", "num_heads", int, None),
-        "num_encoder_layers": get("train", "num_encoder_layers", int, None),
-        "num_decoder_layers": get("train", "num_decoder_layers", int, None),
-        "num_workers": get("train", "num_workers", int, None),
-        "pin_memory": get("train", "pin_memory", bool, None),
-        "spm_model_path": get("train", "spm_model_path", str, None),
-        "resume": get("train", "resume", bool, False),
-    }
-    return {
-        "generate": {k: v for k, v in gen.items() if v is not None},
-        "train": {k: v for k, v in train.items() if v is not None},
-    }
+
+    out = {"generate": {k: v for k, v in gen.items() if v is not None}, "train": parse_train("train")}
+    for sec in ("pretrain", "finetune"):
+        if cfg.has_section(sec):
+            out[sec] = parse_train(sec)
+    return out
 
 
 def _resolve_generate(_cfg: dict | None = None) -> dict:
@@ -218,10 +227,21 @@ class ChatbotService:
     def start_training(self, mode: str) -> Dict[str, Any]:
         """학습 유형에 따라 분기 처리."""
         self._config = _apply_train_ini(self._config)
+        ini = _read_ini()
+        if mode == "pretrain" and "pretrain" in ini:
+            over = dict(ini["pretrain"])
+            if "epochs" in over:
+                over["num_epochs"] = over.pop("epochs")
+            self._config.update(over)
+        elif mode == "finetune" and "finetune" in ini:
+            over = dict(ini["finetune"])
+            if "epochs" in over:
+                over["num_epochs"] = over.pop("epochs")
+            self._config.update(over)
         valid, msg = validate_config(self._config)
         if not valid:
             return {"success": False, "msg": msg, "data": None}
-        overrides = _read_ini().get("train", {})
+        overrides = ini.get("train", {})
         checks = [
             ("num_epochs", lambda v: v >= 1),
             ("batch_size", lambda v: v >= 1),

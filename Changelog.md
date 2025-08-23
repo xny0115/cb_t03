@@ -1,4 +1,10 @@
 # 변경 이력
+## v1.73: INI 인라인 주석 및 모드 오버레이
+- `trainconfig.ini`에 모든 항목을 인라인 주석 형식으로 통일하고 `epochs` 키를 도입했습니다.
+- `_read_ini`가 `inline_comment_prefixes`를 사용하고 `pretrain`/`finetune` 섹션과 `epochs`를 후방 호환으로 파싱합니다.
+- `start_training`이 모드별 섹션을 오버레이하여 `[train]` 기본값 위에 선택적으로 덮어씁니다.
+- `DEFAULT_CONFIG`에 `grad_clip`, `min_lr` 기본값을 추가하여 누락을 방지했습니다.
+- README 상단에 SentencePiece 준비 명령어를 명시했습니다.
 ## v1.72: INI 주석 확장 및 구성 검증 강화
 - `trainconfig.ini`에 모든 사용 키와 한국어 주석을 추가하고 기본값으로 초기화했습니다.
 - `service.py`의 구성 로그 태그를 `[CFG-TRAIN]`, `[CFG-GEN]`으로 통일했습니다.
