@@ -1,6 +1,0 @@
-[run]
-omit =
-    src/app.py
-    src/training.py
-    src/utils/vocab.py
-    src/model/transformer.py
