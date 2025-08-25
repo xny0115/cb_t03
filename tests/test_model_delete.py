@@ -18,4 +18,4 @@ def test_delete_model_all(tmp_path: Path) -> None:
         p.write_bytes(b"0" * 1_048_576)
     svc.model_path = tmp_path / "finetune.pth"
     assert svc.delete_model()
-    assert list(tmp_path.glob("*.pth")) == []
+    assert (tmp_path / "STOP").exists()

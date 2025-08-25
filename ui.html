@@ -919,7 +919,7 @@
                 <button id="finetuneBtn" class="train-btn">파인튜닝</button>
                 <button id="resumeBtn" class="train-btn">이어학습</button>
                 <button id="autoTuneBtn">Auto-Tune</button>
-                <button id="deleteModelBtn" class="delete-btn">모델 삭제</button>
+                <button id="deleteModelBtn" class="delete-btn">학습 중지</button>
             </div>
 
             <div id="trainStatus" class="status-message"></div>
@@ -1182,13 +1182,13 @@
 
                 deleteBtn.onclick = () => api.delete_model().then(r => {
                     if (r.success) {
-                        showStatus(deleteStatus, '모델 파일이 삭제되었습니다.', 'success');
+                        showStatus(deleteStatus, '중지 요청 완료', 'success');
                         updateProgress(0, 'idle');
                     } else {
-                        showStatus(deleteStatus, r.msg || '모델 파일 삭제 실패', 'error');
+                        showStatus(deleteStatus, r.msg || '중지 요청 실패', 'error');
                     }
                 }).catch(err => {
-                    showStatus(deleteStatus, '모델 삭제 실패: ' + (err.message || err), 'error');
+                    showStatus(deleteStatus, '중지 요청 실패: ' + (err.message || err), 'error');
                 });
             }
 
