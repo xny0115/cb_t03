@@ -261,7 +261,13 @@ def train(
     model, crit, opt, scaler, device, amp_enabled = _init_model(tokenizer, cfg)
 
     piece_size = tokenizer.sp.GetPieceSize()
-    sha = hashlib.sha256(spm_model_path.read_bytes()).hexdigest()
+    model_b = Path(spm_model_path).read_bytes()
+    vocab_path = spm_model_path.with_suffix(".vocab")
+    if not vocab_path.exists():
+        raise FileNotFoundError("SPM vocab missing")
+    vocab_b = Path(vocab_path).read_bytes()
+    # SPM 모델과 어휘 파일을 결합해 해시 계산
+    sha = hashlib.sha256(model_b + vocab_b).hexdigest()
     if tokenizer.vocab_size != model.embed.num_embeddings:
         raise RuntimeError("tokenizer model vocab mismatch (embed)")
     if tokenizer.vocab_size != model.fc_out.out_features:

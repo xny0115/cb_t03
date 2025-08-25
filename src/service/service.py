@@ -224,12 +224,16 @@ class ChatbotService:
                     info = torch.load(ckpt, map_location="cpu").get("tokenizer_info", {})
                     ps = info.get("piece_size")
                     ckpt_sha = info.get("sha256")
-                    if ps is not None and ckpt_sha:
-                        sha = hashlib.sha256(Path(spm_path).read_bytes()).hexdigest()
-                        if ps != self.tokenizer.sp.GetPieceSize() or ckpt_sha != sha:
-                            msg = "spm mismatch: piece_size/sha256 differ"
-                            logging.getLogger(__name__).error("[SERVE] %s", msg)
-                            raise RuntimeError(msg)
+                    model_b = Path(spm_path).read_bytes()
+                    vocab_b = Path(spm_path.with_suffix(".vocab")).read_bytes()
+                    # SPM 모델과 어휘를 결합해 해시 계산
+                    sha = hashlib.sha256(model_b + vocab_b).hexdigest()
+                    if ps is not None and ckpt_sha and (
+                        ps != self.tokenizer.sp.GetPieceSize() or ckpt_sha != sha
+                    ):
+                        msg = "spm mismatch: piece_size/sha256 differ"
+                        logging.getLogger(__name__).error("[SERVE] %s", msg)
+                        raise RuntimeError(msg)
             else:
                 logging.getLogger(__name__).warning(f"SPM model not found at {spm_path}, tokenizer not loaded.")
 
