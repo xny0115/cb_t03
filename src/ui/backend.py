@@ -15,6 +15,7 @@ class WebBackend:
         return self._svc.start_training(mode)
 
     def delete_model(self) -> Dict[str, Any]:
+        """STOP 센티넬 파일로 학습 중지를 요청한다."""
         ok = self._svc.delete_model()
         return {"success": ok, "msg": "stop_requested" if ok else "no_model", "data": None}
 

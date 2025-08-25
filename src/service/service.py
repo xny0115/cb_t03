@@ -164,16 +164,6 @@ def _resolve_generate(_cfg: dict | None = None) -> dict:
         p["do_sample"] = False
     return p
 
-
-def _apply_train_ini(cfg: dict) -> dict:
-    """train 섹션 값을 기존 config에 덮어쓰기."""
-    over = _read_ini().get("train", {})
-    out = dict(cfg)
-    if "epochs" in over:
-        out["num_epochs"] = over.pop("epochs")
-    out.update(over)
-    return out
-
 class ChatbotService:
     """Instruction 기반 챗봇 서비스."""
 
@@ -239,25 +229,26 @@ class ChatbotService:
 
     def start_training(self, mode: str) -> Dict[str, Any]:
         """학습 유형에 따라 분기 처리."""
-        self._config = _apply_train_ini(self._config)
         ini = _read_ini()
-        if mode == "pretrain" and "pretrain" in ini:
-            over = dict(ini["pretrain"])
-            if "epochs" in over:
-                over["num_epochs"] = over.pop("epochs")
-            self._config.update(over)
-        elif mode == "finetune" and "finetune" in ini:
-            over = dict(ini["finetune"])
-            if "epochs" in over:
-                over["num_epochs"] = over.pop("epochs")
-            self._config.update(over)
-        min_lr = self._config.get("min_lr")
+        cfg = dict(self._config)
+        train_over = dict(ini.get("train", {}))
+        if "epochs" in train_over:
+            train_over["num_epochs"] = train_over.pop("epochs")
+        cfg.update(train_over)
+        mode_over = {}
+        if mode in ("pretrain", "finetune"):
+            mode_over = dict(ini.get(mode, {}))
+            if "epochs" in mode_over:
+                mode_over["num_epochs"] = mode_over.pop("epochs")
+            cfg.update(mode_over)
+        min_lr = cfg.get("min_lr")
         if min_lr is not None:
-            self._config["min_lr"] = max(float(min_lr), 1e-5)
-        valid, msg = validate_config(self._config)
+            cfg["min_lr"] = max(float(min_lr), 1e-5)
+        cfg.setdefault("resume", False)
+        valid, msg = validate_config(cfg)
         if not valid:
             return {"success": False, "msg": msg, "data": None}
-        overrides = ini.get("train", {})
+        overrides = {**train_over, **mode_over}
         checks = [
             ("num_epochs", lambda v: v >= 1),
             ("batch_size", lambda v: v >= 1),
@@ -273,9 +264,10 @@ class ChatbotService:
         ]
         for key, rule in checks:
             if key in overrides:
-                val = self._config.get(key)
+                val = cfg.get(key)
                 if val is None or not rule(val):
                     return {"success": False, "msg": f"{key}: out_of_range", "data": None}
+        self._config = cfg
         if isinstance(self.model, HFModel):
             return {"success": True, "msg": "done", "data": None}
 

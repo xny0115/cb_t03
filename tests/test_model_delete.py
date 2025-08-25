@@ -19,3 +19,5 @@ def test_delete_model_all(tmp_path: Path) -> None:
     svc.model_path = tmp_path / "finetune.pth"
     assert svc.delete_model()
     assert (tmp_path / "STOP").exists()
+    for name in ["pretrain.pth", "finetune.pth", "additional_finetune.pth"]:
+        assert (tmp_path / name).exists()

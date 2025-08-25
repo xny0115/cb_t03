@@ -383,9 +383,9 @@ def train(
                 'tokenizer_info': tokenizer_meta
             }
             save_checkpoint(state, last_ckpt_path)
-            if (save_dir / "STOP").exists():
-                logger.info("[TRAIN] stop requested; exiting after epoch %d", epoch + 1)
-                break
+        if save_dir and (save_dir / "STOP").exists():
+            logger.info("[TRAIN] stop requested; exiting after epoch %d", epoch + 1)
+            break
 
     logger.info("Training complete in %.2fs", time.perf_counter() - train_start)
 
