@@ -223,9 +223,10 @@ class ChatbotService:
                 if ckpt.exists():
                     info = torch.load(ckpt, map_location="cpu").get("tokenizer_info", {})
                     ps = info.get("piece_size")
-                    sha = info.get("sha256")
-                    if ps is not None and sha:
-                        if ps != self.tokenizer.sp.GetPieceSize() or sha != _sha256(spm_path):
+                    ckpt_sha = info.get("sha256")
+                    if ps is not None and ckpt_sha:
+                        sha = hashlib.sha256(Path(spm_path).read_bytes()).hexdigest()
+                        if ps != self.tokenizer.sp.GetPieceSize() or ckpt_sha != sha:
                             msg = "spm mismatch: piece_size/sha256 differ"
                             logging.getLogger(__name__).error("[SERVE] %s", msg)
                             raise RuntimeError(msg)

@@ -250,10 +250,10 @@ def train(
         spm_model_path = (Path.cwd() / spm_model_path).resolve()
     spm_model_path.parent.mkdir(parents=True, exist_ok=True)
     if not spm_model_path.exists():
-        subprocess.run(
-            [sys.executable, str(Path.cwd() / "train_spm.py")],
-            check=True,
-        )
+        try:
+            subprocess.run([sys.executable, str(Path.cwd() / "train_spm.py")], check=True)
+        except subprocess.CalledProcessError as e:
+            raise RuntimeError(f"SPM 생성 실패: {e}") from e
     if not spm_model_path.exists():
         raise FileNotFoundError(f"SentencePiece model not found: {spm_model_path}")
     tokenizer = SentencePieceTokenizer(str(spm_model_path))
