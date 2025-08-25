@@ -16,6 +16,9 @@ import warnings
 import platform
 from pathlib import Path
 import os
+import hashlib
+import subprocess
+import sys
 import torch
 logger = logging.getLogger(__name__)
 
@@ -242,15 +245,32 @@ def train(
 ) -> Tuple[Seq2SeqTransformer, SentencePieceTokenizer]:
     cfg = cfg or {}
 
-    spm_model_path = str(cfg.get("spm_model_path", "tokenizer/spm.model"))
-    if not Path(spm_model_path).exists():
-        raise FileNotFoundError(
-            f"SentencePiece model not found: {spm_model_path}. "
-            f"Run: python train_spm.py --input \"datas/pretrain/**/*.txt\""
-        )
-    tokenizer = SentencePieceTokenizer(spm_model_path)
+    spm_model_path = Path(cfg.get("spm_model_path", "models/spm.model"))
+    if not spm_model_path.is_absolute():
+        spm_model_path = (Path.cwd() / spm_model_path).resolve()
+    spm_model_path.parent.mkdir(parents=True, exist_ok=True)
+    if not spm_model_path.exists():
+        subprocess.run([sys.executable, "train_spm.py"], check=True)
+    if not spm_model_path.exists():
+        raise FileNotFoundError(f"SentencePiece model not found: {spm_model_path}")
+    tokenizer = SentencePieceTokenizer(str(spm_model_path))
 
     model, crit, opt, scaler, device, amp_enabled = _init_model(tokenizer, cfg)
+
+    piece_size = tokenizer.sp.GetPieceSize()
+    sha = hashlib.sha256(spm_model_path.read_bytes()).hexdigest()
+    if tokenizer.vocab_size != model.embed.num_embeddings:
+        raise RuntimeError("tokenizer model vocab mismatch (embed)")
+    if tokenizer.vocab_size != model.fc_out.out_features:
+        raise RuntimeError("tokenizer model vocab mismatch (fc_out)")
+    if not (tokenizer.pad_id == 0 and tokenizer.bos_id == 1 and tokenizer.eos_id == 2):
+        raise RuntimeError("special token id mismatch")
+    for s in ["안녕하세요", "토크나이저 확인", "테스트 문장"]:
+        if tokenizer.decode(tokenizer.encode(s, True)) != s:
+            raise RuntimeError("encode/decode mismatch")
+    logger.info("[SPM] path=%s piece_size=%d sha256=%s", str(spm_model_path), piece_size, sha[:8])
+    cfg["spm_model_path"] = str(spm_model_path)
+    tokenizer_meta = {"type": "spm", "spm_model_path": str(spm_model_path), "piece_size": piece_size, "sha256": sha}
     epochs = int(cfg.get("num_epochs", 5))
     scheduler = torch.optim.lr_scheduler.CosineAnnealingLR(opt, T_max=epochs)
 
@@ -339,7 +359,7 @@ def train(
                 'scheduler_state_dict': scheduler.state_dict(),
                 'scaler_state_dict': scaler.state_dict(),
                 'config_snapshot': cfg,
-                'tokenizer_info': {"type": "spm", "spm_model_path": spm_model_path}
+                'tokenizer_info': tokenizer_meta
             }
             save_checkpoint(state, last_ckpt_path)
 
