@@ -206,23 +206,31 @@ class ChatbotService:
         elif self.model_path.exists():
             try:
                 self.model, _ = load_transformer(self.model_path)
-                logging.getLogger(__name__).info(
-                    "[SERVE] model_loaded path=%s params=%s",
-                    str(self.model_path),
-                    _param_count(self.model),
-                )
-                spm_model_path = str(self._config.get("spm_model_path", "tokenizer/spm.model"))
-                if Path(spm_model_path).exists():
-                    self.tokenizer = SentencePieceTokenizer(spm_model_path)
-                else:
-                    logging.getLogger(__name__).warning(f"SPM model not found at {spm_model_path}, tokenizer not loaded.")
             except Exception:
                 self.model = load_model(self.model_path)
-                logging.getLogger(__name__).info(
-                    "[SERVE] model_loaded path=%s params=%s",
-                    str(self.model_path),
-                    _param_count(self.model),
-                )
+            logging.getLogger(__name__).info(
+                "[SERVE] model_loaded path=%s params=%s",
+                str(self.model_path),
+                _param_count(self.model),
+            )
+            spm_model_path = str(self._config.get("spm_model_path", "models/spm.model"))
+            spm_path = Path(spm_model_path)
+            if not spm_path.is_absolute():
+                spm_path = (Path.cwd() / spm_path).resolve()
+            if spm_path.exists():
+                self.tokenizer = SentencePieceTokenizer(str(spm_path))
+                ckpt = self.model_dir / f"last_{self.model_path.stem}.ckpt"
+                if ckpt.exists():
+                    info = torch.load(ckpt, map_location="cpu").get("tokenizer_info", {})
+                    ps = info.get("piece_size")
+                    sha = info.get("sha256")
+                    if ps is not None and sha:
+                        if ps != self.tokenizer.sp.GetPieceSize() or sha != _sha256(spm_path):
+                            msg = "[SERVE] spm mismatch: piece_size/sha256 differ"
+                            logging.getLogger(__name__).error(msg)
+                            raise RuntimeError(msg)
+            else:
+                logging.getLogger(__name__).warning(f"SPM model not found at {spm_path}, tokenizer not loaded.")
 
     def start_training(self, mode: str) -> Dict[str, Any]:
         """학습 유형에 따라 분기 처리."""

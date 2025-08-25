@@ -46,7 +46,7 @@ DEFAULT_CONFIG: Dict[str, Any] = {
     "beam_search_size": 3,
     "diversity_penalty": 0.5,
     "pattern_recognition": False,
-    "spm_model_path": "tokenizer/spm.model",
+    "spm_model_path": "models/spm.model",
     "resume": False,
 }
 

@@ -1,4 +1,8 @@
 # 변경 이력
+## v1.74: SPM 경로 통합 및 프리플라이트 가드
+- SentencePiece 모델 경로를 `tokenizer/`에서 `models/`로 일원화했습니다.
+- 학습 시작 직전에 SPM 존재 확인, 필요 시 자동 생성 및 정합성 검사를 수행합니다.
+- 서빙 시 체크포인트 메타와 SPM의 `piece_size`/`sha256`을 비교해 불일치 시 중단하도록 가드를 추가했습니다.
 ## v1.73: INI 인라인 주석 및 모드 오버레이
 - `trainconfig.ini`에 모든 항목을 인라인 주석 형식으로 통일하고 `epochs` 키를 도입했습니다.
 - `_read_ini`가 `inline_comment_prefixes`를 사용하고 `pretrain`/`finetune` 섹션과 `epochs`를 후방 호환으로 파싱합니다.

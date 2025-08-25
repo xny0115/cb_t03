@@ -56,7 +56,7 @@ try:
 
     vocab_size = get_auto_vocab_size(total_size)
 
-    output_dir = 'tokenizer'
+    output_dir = 'models'
     model_prefix = os.path.join(output_dir, 'spm')
     model_file = model_prefix + '.model'
 
