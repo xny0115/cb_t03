@@ -251,6 +251,9 @@ class ChatbotService:
             if "epochs" in over:
                 over["num_epochs"] = over.pop("epochs")
             self._config.update(over)
+        min_lr = self._config.get("min_lr")
+        if min_lr is not None:
+            self._config["min_lr"] = max(float(min_lr), 1e-5)
         valid, msg = validate_config(self._config)
         if not valid:
             return {"success": False, "msg": msg, "data": None}
@@ -286,14 +289,15 @@ class ChatbotService:
         cfg = self._config
         cfg["resume"] = bool(cfg.get("resume", False) and mode == "resume")
         logger.info(
-            "[CFG-TRAIN] epochs=%s batch=%s lr=%s dropout=%s amp=%s grad_clip=%s resume=%s",
-            cfg.get('num_epochs'),
-            cfg.get('batch_size'),
-            cfg.get('learning_rate'),
-            cfg.get('dropout_ratio'),
-            cfg.get('use_mixed_precision'),
-            cfg.get('grad_clip'),
-            cfg.get('resume'),
+            "[CFG-TRAIN] epochs=%s batch=%s learning_rate=%s dropout=%s amp=%s grad_clip=%s min_lr=%s resume=%s",
+            cfg.get("num_epochs"),
+            cfg.get("batch_size"),
+            cfg.get("learning_rate"),
+            cfg.get("dropout_ratio"),
+            cfg.get("use_mixed_precision"),
+            cfg.get("grad_clip"),
+            cfg.get("min_lr"),
+            cfg.get("resume"),
         )
 
         resume = bool(cfg.get("resume", False))
@@ -368,19 +372,11 @@ class ChatbotService:
         return self._config.copy()
 
     def delete_model(self) -> bool:
-        deleted = False
-        for fp in self.model_dir.glob("*.pth"):
-            try:
-                fp.unlink()
-                deleted = True
-            except FileNotFoundError:
-                continue
-            except Exception as exc:
-                logging.getLogger(__name__).warning("model delete failed: %s", exc)
-        if deleted:
-            self.model = None
-            self.tokenizer = None
-        return deleted
+        """학습 중지 요청 센티넬 파일을 생성한다."""
+        (self.model_dir / "STOP").touch(exist_ok=True)
+        self.model = None
+        self.tokenizer = None
+        return True
 
     def infer(self, text: str) -> Dict[str, Any]:
         if not self.model:

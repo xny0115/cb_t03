@@ -383,10 +383,13 @@ def train(
                 'tokenizer_info': tokenizer_meta
             }
             save_checkpoint(state, last_ckpt_path)
+            if (save_dir / "STOP").exists():
+                logger.info("[TRAIN] stop requested; exiting after epoch %d", epoch + 1)
+                break
 
     logger.info("Training complete in %.2fs", time.perf_counter() - train_start)
 
-    if save_dir:
+    if save_dir and not (save_dir / "STOP").exists():
         model_path = save_dir / f"{'pretrain' if is_pretrain else 'finetune'}.pth"
         save_transformer(model, {}, model_path)
 
