@@ -250,7 +250,10 @@ def train(
         spm_model_path = (Path.cwd() / spm_model_path).resolve()
     spm_model_path.parent.mkdir(parents=True, exist_ok=True)
     if not spm_model_path.exists():
-        subprocess.run([sys.executable, "train_spm.py"], check=True)
+        subprocess.run(
+            [sys.executable, str(Path.cwd() / "train_spm.py")],
+            check=True,
+        )
     if not spm_model_path.exists():
         raise FileNotFoundError(f"SentencePiece model not found: {spm_model_path}")
     tokenizer = SentencePieceTokenizer(str(spm_model_path))
@@ -265,12 +268,24 @@ def train(
         raise RuntimeError("tokenizer model vocab mismatch (fc_out)")
     if not (tokenizer.pad_id == 0 and tokenizer.bos_id == 1 and tokenizer.eos_id == 2):
         raise RuntimeError("special token id mismatch")
+    if tokenizer.sp.IdToPiece(0) != "<unk>":
+        raise RuntimeError("unk token mismatch")
     for s in ["안녕하세요", "토크나이저 확인", "테스트 문장"]:
         if tokenizer.decode(tokenizer.encode(s, True)) != s:
             raise RuntimeError("encode/decode mismatch")
-    logger.info("[SPM] path=%s piece_size=%d sha256=%s", str(spm_model_path), piece_size, sha[:8])
+    logger.info(
+        "[SPM] path=%s piece_size=%d sha256=%s",
+        str(spm_model_path),
+        piece_size,
+        sha[:8],
+    )
     cfg["spm_model_path"] = str(spm_model_path)
-    tokenizer_meta = {"type": "spm", "spm_model_path": str(spm_model_path), "piece_size": piece_size, "sha256": sha}
+    tokenizer_meta = {
+        "type": "spm",
+        "spm_model_path": str(spm_model_path),
+        "piece_size": piece_size,
+        "sha256": sha,
+    }
     epochs = int(cfg.get("num_epochs", 5))
     scheduler = torch.optim.lr_scheduler.CosineAnnealingLR(opt, T_max=epochs)
 

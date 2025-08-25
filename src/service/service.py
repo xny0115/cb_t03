@@ -226,8 +226,8 @@ class ChatbotService:
                     sha = info.get("sha256")
                     if ps is not None and sha:
                         if ps != self.tokenizer.sp.GetPieceSize() or sha != _sha256(spm_path):
-                            msg = "[SERVE] spm mismatch: piece_size/sha256 differ"
-                            logging.getLogger(__name__).error(msg)
+                            msg = "spm mismatch: piece_size/sha256 differ"
+                            logging.getLogger(__name__).error("[SERVE] %s", msg)
                             raise RuntimeError(msg)
             else:
                 logging.getLogger(__name__).warning(f"SPM model not found at {spm_path}, tokenizer not loaded.")
