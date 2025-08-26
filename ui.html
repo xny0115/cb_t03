@@ -1181,16 +1181,20 @@
                         });
                 };
 
-                deleteBtn.onclick = () => api.delete_model().then(r => {
-                    if (r.success) {
-                        showStatus(deleteStatus, '중지 요청 완료', 'success');
-                        updateProgress(0, 'idle');
-                    } else {
-                        showStatus(deleteStatus, r.msg || '중지 요청 실패', 'error');
-                    }
-                }).catch(err => {
-                    showStatus(deleteStatus, '중지 요청 실패: ' + (err.message || err), 'error');
-                });
+                deleteBtn.onclick = () =>
+                    api
+                        .delete_model()
+                        .then(r => {
+                            if (r.success) {
+                                showStatus(deleteStatus, '중지 요청 완료', 'success');
+                                updateProgress(0, 'idle');
+                            } else {
+                                showStatus(deleteStatus, '중지 요청 실패', 'error');
+                            }
+                        })
+                        .catch(() => {
+                            showStatus(deleteStatus, '중지 요청 실패', 'error');
+                        });
             }
 
             function handleTraining(type) {
