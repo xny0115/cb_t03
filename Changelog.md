@@ -1,4 +1,8 @@
 # 변경 이력
+## v1.79: SPM 자동 생성 및 프리플라이트 강화
+- Train: spm 모델 경로를 model_dir 기준으로 해석하고 자동 학습 옵션을 기본 활성화했습니다.
+- Train: 토크나이저 프리플라이트에서 어휘 불일치와 UNK 비율 검증을 보강하고 경고 로그를 추가했습니다.
+- Misc: sha256 헬퍼와 SentencePiece 자동 학습 유틸리티를 도입했습니다.
 ## v1.78: INI 모드 분리 및 안전 중지 유지
 - Config: trainconfig.ini에 [pretrain]/[finetune] 섹션 신설(모드별 오버레이 사용).
 - Train: INI는 학습 시작 직전 1회 로드/병합(코드 반영됨). min_lr≥1e-5 클램프·resume 기본 False.

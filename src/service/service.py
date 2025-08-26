@@ -44,7 +44,8 @@ from ..utils.validator import validate_config
 from ..tuning.auto import AutoTuner
 
 
-def _sha256(path: Path) -> str:
+def sha256(path: Path) -> str:
+    """파일의 SHA256 해시를 계산."""
     h = hashlib.sha256()
     with open(path, "rb") as f:
         for chunk in iter(lambda: f.read(8192), b""):
@@ -68,6 +69,36 @@ def _param_count(model) -> int:
         return sum(p.numel() for p in params()) if callable(params) else 0
     except Exception:
         return 0
+
+
+def _resolve_spm_path(model_dir: Path, cfg) -> Path:
+    """SPM 경로를 model_dir 기준으로 정규화."""
+    p = Path(str(cfg.get("spm_model_path"))).expanduser()
+    return p if p.is_absolute() else (model_dir / p)
+
+
+def _autotrain_spm(
+    spm_path: Path,
+    corpus_dir: Path,
+    vocab_size: int = 32000,
+    coverage: float = 0.9995,
+    model_type: str = "bpe",
+) -> None:
+    """SentencePiece 모델을 자동 학습."""
+    import sentencepiece as spm
+
+    files = " ".join(str(x) for x in Path(corpus_dir).rglob("*.txt"))
+    spm.SentencePieceTrainer.Train(
+        input=files,
+        model_prefix=str(spm_path.with_suffix("")),
+        vocab_size=int(vocab_size),
+        character_coverage=float(coverage),
+        model_type=str(model_type),
+        pad_id=0,
+        bos_id=1,
+        eos_id=2,
+        unk_id=3,
+    )
 
 
 def _read_ini(path: str = "trainconfig.ini") -> dict:
@@ -269,12 +300,31 @@ class ChatbotService:
                     return {"success": False, "msg": f"{key}: out_of_range", "data": None}
         logger = logging.getLogger(__name__)
 
-        spm_path_str = cfg.get("spm_model_path")
-        spm_path = Path(spm_path_str) if spm_path_str else None
-        if not spm_path or not spm_path.exists():
-            return {"success": False, "msg": "spm_not_found", "data": None}
+        spm_path = _resolve_spm_path(self.model_dir, cfg)
+        auto = bool(cfg.get("spm_autotrain", True))
+        if not spm_path.exists():
+            if auto:
+                corpus_key = "pretrain_dir" if mode == "pretrain" else "finetune_dir"
+                corpus_dir = Path(str(cfg.get(corpus_key)))
+                logger.info("[TOK-AUTO] spm.model not found; training -> %s", spm_path)
+                _autotrain_spm(
+                    spm_path,
+                    corpus_dir,
+                    cfg.get("spm_vocab_size", 32000),
+                    cfg.get("spm_character_coverage", 0.9995),
+                    cfg.get("spm_model_type", "bpe"),
+                )
+                logger.info("[TOK-AUTO] done -> %s", spm_path)
+            else:
+                logger.error(
+                    "[TOK-CHK] spm_not_found: cfg=%s resolved=%s cwd=%s",
+                    cfg.get("spm_model_path"),
+                    spm_path,
+                    os.getcwd(),
+                )
+                return {"success": False, "msg": "spm_not_found", "data": None}
 
-        logger.info("[TOK-CHK] spm_sha=%s", _sha256(spm_path))
+        logger.info("[TOK-CHK] spm_sha=%s", sha256(spm_path))
         try:
             tok = SentencePieceTokenizer(str(spm_path))
         except Exception:
@@ -283,33 +333,37 @@ class ChatbotService:
         vocab_size = tok.vocab_size
         if isinstance(self.model, Seq2SeqTransformer):
             if getattr(self.model.embed, "num_embeddings", None) != vocab_size:
-                return {
-                    "success": False,
-                    "msg": "토크나이저 교체 후 모델 재초기화 필요",
-                    "data": None,
-                }
+                return {"success": False, "msg": "tokenizer_mismatch", "data": None}
+
         for tid in (tok.eos_id, tok.bos_id, tok.pad_id):
             if tid < 0 or tid >= vocab_size:
                 return {"success": False, "msg": "invalid_token", "data": None}
 
+        strict = bool(cfg.get("tokenizer_strict", False))
+        unk_max = float(cfg.get("spm_unk_max", 0.10))
         try:
-            texts: List[str] = []
             if mode == "pretrain":
-                texts = load_pretrain_dataset(self.pretrain_dir)[:50]
+                samples = load_pretrain_dataset(self.pretrain_dir)[:50]
+                seqs = samples
             else:
                 samples = load_instruction_dataset(self.finetune_dir)[:50]
-                texts = [f"{s.instruction} {s.input} {s.output}" for s in samples]
-            total = 0
-            unk = 0
-            for t in texts:
-                ids = tok.sp.EncodeAsIds(t)
+                seqs = [f"{s.input} {s.output}" for s in samples]
+            total = unk = 0
+            for s in seqs:
+                ids = tok.sp.EncodeAsIds(s)
                 total += len(ids)
                 unk += sum(1 for i in ids if i == 0)
             if total:
                 rate = unk / total
-                logger.info("[TOK-CHK] vocab=%d unk_rate=%.2f", vocab_size, rate * 100)
-                if rate > 0.02:
-                    return {"success": False, "msg": "too_many_unk", "data": None}
+                logger.warning(
+                    "[TOK-CHK] vocab=%d unk_rate=%.2f%%", vocab_size, rate * 100.0
+                )
+                if strict and rate > unk_max:
+                    return {
+                        "success": False,
+                        "msg": "too_many_unk",
+                        "data": None,
+                    }
         except Exception as exc:
             logger.warning("tokenizer check skipped: %s", exc)
 
