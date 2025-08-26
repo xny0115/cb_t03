@@ -23,19 +23,51 @@ import torch
 logger = logging.getLogger(__name__)
 
 # Performance settings from GPT instructions
-from torch.backends.cuda import sdp_kernel
-try:
-    torch.set_float32_matmul_precision("high")
-except AttributeError:
-    pass # Older torch versions may not have this
-if os.getenv("DISABLE_SDP_KERNEL") != "1":
-    sdp_kernel(enable_flash=True, enable_mem_efficient=True, enable_math=False)
-torch.backends.cudnn.benchmark = os.getenv("DISABLE_CUDNN_BENCHMARK") != "1"
-logger.info(f"[GPU] cuda_available={torch.cuda.is_available()} device={(torch.cuda.get_device_name(0) if torch.cuda.is_available() else 'CPU')}")
-logger.info(f"[ENV] DISABLE_SDP_KERNEL={os.getenv('DISABLE_SDP_KERNEL')} DISABLE_CUDNN_BENCHMARK={os.getenv('DISABLE_CUDNN_BENCHMARK')} cudnn.benchmark={torch.backends.cudnn.benchmark}")
-if torch.cuda.is_available(): logger.info(f"[GPU] torch={torch.__version__} vram_total={torch.cuda.get_device_properties(0).total_memory}")
-if (v:=os.getenv('DISABLE_SDP_KERNEL')) not in (None, '0', '1'): logger.warning(f"[ENV] DISABLE_SDP_KERNEL='{v}' — only '1' disables; others are ignored.")
-if (v:=os.getenv('DISABLE_CUDNN_BENCHMARK')) not in (None, '0', '1'): logger.warning(f"[ENV] DISABLE_CUDNN_BENCHMARK='{v}' — only '1' disables; others are ignored.")
+sdp_flags = "disabled"
+if torch.cuda.is_available():
+    try:
+        torch.set_float32_matmul_precision("high")
+    except Exception:
+        pass
+    try:
+        from torch.backends.cuda import sdp_kernel  # type: ignore
+        if os.getenv("DISABLE_SDP_KERNEL") != "1":
+            try:
+                sdp_kernel(enable_flash=True, enable_mem_efficient=True, enable_math=False)
+                sdp_flags = "flash=True,mem=True,math=False"
+            except Exception:
+                sdp_flags = "flash=False,mem=False,math=False"
+        else:
+            sdp_flags = "disabled"
+    except Exception:
+        sdp_flags = "unavailable"
+    if os.getenv("DISABLE_CUDNN_BENCHMARK") == "1":
+        torch.backends.cudnn.benchmark = False
+else:
+    if os.getenv("DISABLE_CUDNN_BENCHMARK") == "1":
+        try:
+            torch.backends.cudnn.benchmark = False
+        except Exception:
+            pass
+logger.info("[CFG-TRAIN] sdp=%s, cudnn.benchmark=%s", sdp_flags, torch.backends.cudnn.benchmark)
+logger.info(
+    f"[GPU] cuda_available={torch.cuda.is_available()} device={(torch.cuda.get_device_name(0) if torch.cuda.is_available() else 'CPU')}"
+)
+logger.info(
+    f"[ENV] DISABLE_SDP_KERNEL={os.getenv('DISABLE_SDP_KERNEL')} DISABLE_CUDNN_BENCHMARK={os.getenv('DISABLE_CUDNN_BENCHMARK')} cudnn.benchmark={torch.backends.cudnn.benchmark}"
+)
+if torch.cuda.is_available():
+    logger.info(
+        f"[GPU] torch={torch.__version__} vram_total={torch.cuda.get_device_properties(0).total_memory}"
+    )
+if (v := os.getenv('DISABLE_SDP_KERNEL')) not in (None, '0', '1'):
+    logger.warning(
+        f"[ENV] DISABLE_SDP_KERNEL='{v}' — only '1' disables; others are ignored."
+    )
+if (v := os.getenv('DISABLE_CUDNN_BENCHMARK')) not in (None, '0', '1'):
+    logger.warning(
+        f"[ENV] DISABLE_CUDNN_BENCHMARK='{v}' — only '1' disables; others are ignored."
+    )
 
 
 from torch import nn, optim
@@ -343,7 +375,14 @@ def train(
 
     dataset, line_count = _prepare_dataset(samples, tokenizer, is_pretrain)
     loader = _create_loader(dataset, cfg, drop_last=True)
-
+    logger.info(
+        "[CFG-TRAIN] epochs=%s bs=%s lr=%s dropout=%s mixed=%s",
+        epochs,
+        cfg.get("batch_size", 128),
+        cfg.get("learning_rate", 1e-4),
+        cfg.get("dropout_ratio", 0.1),
+        amp_enabled,
+    )
     logger.info("Training start: epochs=%d, samples=%d, start_epoch=%d", epochs, line_count, start_epoch)
     train_start = time.perf_counter()
     final_epoch = 0

@@ -11,7 +11,7 @@ CONFIG_PATH = Path(os.environ.get("CONFIG_PATH", "configs/current.json"))
 DEFAULT_CONFIG: Dict[str, Any] = {
     "num_epochs": 20,
     "batch_size": 48,
-    "learning_rate": 2e-4,
+    "learning_rate": 2e-4,  # 값 표기는 소수(예: 0.0002). 코드 기본값(2e-4)와 동등.
     "dropout_ratio": 0.1,
     "grad_clip": 1.0,
     "min_lr": 1e-5,

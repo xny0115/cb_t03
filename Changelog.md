@@ -1,4 +1,14 @@
 # 변경 이력
+## vNEXT (2025-08-26, KST)
+- SDP/cuDNN 환경 가드 및 로그 보강.
+  - Training Config diff: N/A
+  - Logs: [CFG-TRAIN] sdp=flash=True,mem=True,math=False, cudnn.benchmark=True / [CFG-GEN] t=0.30 tp=0.90 k=0 mnt=128 rep=1.10 beams=1 sample=yes
+  - Runtime: CUDA available, SDP enabled, cuDNN benchmark True
+- 학습 시작 설정 로그와 학습률 소수 표기 주석 추가.
+  - Training Config diff: learning_rate 2e-4 → 2e-4
+  - Logs: [CFG-TRAIN] epochs=5 bs=128 lr=0.0002 dropout=0.1 mixed=True
+  - Runtime: CPU dry-run
+
 ## v1.79: SPM 자동 생성 및 프리플라이트 강화
 - Train: spm 모델 경로를 model_dir 기준으로 해석하고 자동 학습 옵션을 기본 활성화했습니다.
 - Train: 토크나이저 프리플라이트에서 어휘 불일치와 UNK 비율 검증을 보강하고 경고 로그를 추가했습니다.

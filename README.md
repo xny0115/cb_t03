@@ -59,6 +59,7 @@ python train_spm.py --input "datas/pretrain/**/*.txt"
 - 설정 병합 순서는 `DEFAULT` → `[train]` → `[pretrain|finetune]`입니다.
 - `[pretrain]`과 `[finetune]`은 `[train]`과 다른 값이 있을 때만 키를 작성합니다.
 - `min_lr`는 항상 `0.00001` 이상으로 클램프되며 `resume` 기본값은 `no`입니다.
+- 학습률 값은 소수 형태로 표기하며(예: 0.0002), 코드 기본값 2e-4와 동일합니다.
 
 [신규 LLM 프로젝트 개발 지시서 - 2025.06.24 기준]
 
@@ -143,3 +144,9 @@ python train_spm.py --input "datas/pretrain/**/*.txt"
 - ENV 규칙: `DISABLE_*` 값은 '1'만 비활성(기타 값은 무시, 경고 로그 발생).
 
 환경 변수 `LOG_EVERY_STEPS`로 스텝 로그 간격을 조절합니다(기본 10). 예: `LOG_EVERY_STEPS=50`
+
+### Runtime/ENV
+- `DISABLE_SDP_KERNEL=1` : `torch.backends.cuda.sdp_kernel` 호출을 건너뛰어 구형 GPU에서 오류를 방지합니다. (기본: 호출)
+  - 예) `DISABLE_SDP_KERNEL=1 python run.py`
+- `DISABLE_CUDNN_BENCHMARK=1` : `torch.backends.cudnn.benchmark=False`로 설정하여 입력 크기 변동 시 불안정을 줄입니다. (기본: True)
+  - 예) `DISABLE_CUDNN_BENCHMARK=1 python run.py`
