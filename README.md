@@ -49,6 +49,14 @@ python train_spm.py --input "datas/pretrain/**/*.txt"
 - **UI.html 파일은 디자인·스타일 측면에서 함부로 수정 금지 (예외 시 지시 필요)**
 - 학습 모드는 CUDA 환경에서만 동작하며 GPU가 없으면 즉시 오류가 발생합니다.
 
+## 설정 적용 원칙
+
+- 모든 학습·추론 설정은 `trainconfig.ini` 한 곳에서 관리합니다.
+- `lock_ui = yes`일 때 UI에서 입력한 값은 무시됩니다.
+- 설정 병합 순서는 `DEFAULT` → `[train]` → `[pretrain|finetune]`입니다.
+- `[pretrain]`과 `[finetune]`은 `[train]`과 다른 값이 있을 때만 키를 작성합니다.
+- `min_lr`는 항상 `0.00001` 이상으로 클램프되며 `resume` 기본값은 `no`입니다.
+
 [신규 LLM 프로젝트 개발 지시서 - 2025.06.24 기준]
 
 1. 기존 프로젝트는 더 이상 유지/복구/수정하지 않는다.  
