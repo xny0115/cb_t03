@@ -20,9 +20,26 @@ def test_start_training_invalid_config() -> None:
     assert not res["success"]
 
 
-def test_ini_min_lr_clamp(monkeypatch, caplog) -> None:
+def test_ini_min_lr_clamp(monkeypatch, caplog, tmp_path) -> None:
     svc = ChatbotService()
     from src.service import service as svc_module
+
+    dummy_spm = tmp_path / "tok.model"
+    dummy_spm.write_text("m")
+    (tmp_path / "tok.vocab").write_text("v")
+    svc._config["spm_model_path"] = str(dummy_spm)
+
+    class DummyTok:
+        def __init__(self, path: str):
+            self.vocab_size = 4
+            self.pad_id = 0
+            self.bos_id = 1
+            self.eos_id = 2
+            class SP:
+                def EncodeAsIds(self_inner, text: str):
+                    return [0]
+            self.sp = SP()
+    monkeypatch.setattr(svc_module, "SentencePieceTokenizer", DummyTok)
 
     monkeypatch.setattr(
         svc_module, "_read_ini", lambda path="trainconfig.ini": {"train": {"min_lr": 0}}

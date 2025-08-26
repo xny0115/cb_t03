@@ -267,11 +267,64 @@ class ChatbotService:
                 val = cfg.get(key)
                 if val is None or not rule(val):
                     return {"success": False, "msg": f"{key}: out_of_range", "data": None}
+        logger = logging.getLogger(__name__)
+
+        spm_path_str = cfg.get("spm_model_path")
+        spm_path = Path(spm_path_str) if spm_path_str else None
+        if not spm_path or not spm_path.exists():
+            return {"success": False, "msg": "spm_not_found", "data": None}
+
+        logger.info("[TOK-CHK] spm_sha=%s", _sha256(spm_path))
+        try:
+            tok = SentencePieceTokenizer(str(spm_path))
+        except Exception:
+            return {"success": False, "msg": "spm_load_failed", "data": None}
+
+        vocab_size = tok.vocab_size
+        if isinstance(self.model, Seq2SeqTransformer):
+            if getattr(self.model.embed, "num_embeddings", None) != vocab_size:
+                return {
+                    "success": False,
+                    "msg": "토크나이저 교체 후 모델 재초기화 필요",
+                    "data": None,
+                }
+        for tid in (tok.eos_id, tok.bos_id, tok.pad_id):
+            if tid < 0 or tid >= vocab_size:
+                return {"success": False, "msg": "invalid_token", "data": None}
+
+        try:
+            texts: List[str] = []
+            if mode == "pretrain":
+                texts = load_pretrain_dataset(self.pretrain_dir)[:50]
+            else:
+                samples = load_instruction_dataset(self.finetune_dir)[:50]
+                texts = [f"{s.instruction} {s.input} {s.output}" for s in samples]
+            total = 0
+            unk = 0
+            for t in texts:
+                ids = tok.sp.EncodeAsIds(t)
+                total += len(ids)
+                unk += sum(1 for i in ids if i == 0)
+            if total:
+                rate = unk / total
+                logger.info("[TOK-CHK] vocab=%d unk_rate=%.2f", vocab_size, rate * 100)
+                if rate > 0.02:
+                    return {"success": False, "msg": "too_many_unk", "data": None}
+        except Exception as exc:
+            logger.warning("tokenizer check skipped: %s", exc)
+
         self._config = cfg
+        stop_fp = self.model_dir / "STOP"
+        if stop_fp.exists():
+            logger.warning("STOP sentinel detected at start; removing")
+            try:
+                stop_fp.unlink()
+            except Exception:
+                pass
+
         if isinstance(self.model, HFModel):
             return {"success": True, "msg": "done", "data": None}
 
-        logger = logging.getLogger(__name__)
         device = "cuda" if torch.cuda.is_available() else "cpu"
         if device == "cpu":
             logger.warning("CUDA not available: proceeding on CPU (slow).")
@@ -304,7 +357,7 @@ class ChatbotService:
                 )
                 self.model_path = self.model_dir / "pretrain.pth"
                 model, tokenizer = train_pretrain(
-                    data, cfg, save_dir=str(self.model_path.parent)
+                    data, cfg, save_dir=str(self.model_dir)
                 )
             elif resume:
                 is_pretrain_resume = (self.model_dir / "pretrain.pth").exists() or (
@@ -318,14 +371,14 @@ class ChatbotService:
                     self.model_path = self.model_dir / "pretrain.pth"
                     cfg["model_path"] = str(self.model_path)
                     model, tokenizer = train_pretrain(
-                        data, cfg, save_dir=str(self.model_path.parent)
+                        data, cfg, save_dir=str(self.model_dir)
                     )
                 else:
                     data = load_instruction_dataset(self.finetune_dir)
                     self.model_path = self.model_dir / "finetune.pth"
                     cfg["model_path"] = str(self.model_path)
                     model, tokenizer = train_transformer(
-                        data, cfg, save_dir=str(self.model_path.parent)
+                        data, cfg, save_dir=str(self.model_dir)
                     )
             else:
                 data = load_instruction_dataset(self.finetune_dir)
@@ -335,7 +388,7 @@ class ChatbotService:
                 )
                 self.model_path = self.model_dir / "finetune.pth"
                 model, tokenizer = train_transformer(
-                    data, cfg, save_dir=str(self.model_path.parent)
+                    data, cfg, save_dir=str(self.model_dir)
                 )
         except Exception as exc:
             logger.warning("training failed: %s", exc)
@@ -366,8 +419,6 @@ class ChatbotService:
     def delete_model(self) -> bool:
         """학습 중지 요청 센티넬 파일을 생성한다."""
         (self.model_dir / "STOP").touch(exist_ok=True)
-        self.model = None
-        self.tokenizer = None
         return True
 
     def infer(self, text: str) -> Dict[str, Any]:
