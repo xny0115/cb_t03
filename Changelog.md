@@ -8,6 +8,14 @@
   - Training Config diff: learning_rate 2e-4 → 2e-4
   - Logs: [CFG-TRAIN] epochs=5 bs=128 lr=0.0002 dropout=0.1 mixed=True
   - Runtime: CPU dry-run
+- [CFG-TRAIN] 앵커 문자열을 라인 선두로 정렬하고 tests/에 검증을 추가했습니다.
+  - Training Config diff: N/A
+  - Logs: grep -R '^\[CFG-TRAIN\]' -n src/ | head -n 1
+  - Runtime: N/A
+- WORKLOG 지시/처리 구분을 정리하고 확장 섹션 가이드를 문서화했습니다.
+  - Training Config diff: N/A
+  - Logs: N/A
+  - Runtime: N/A
 
 ## v1.79: SPM 자동 생성 및 프리플라이트 강화
 - Train: spm 모델 경로를 model_dir 기준으로 해석하고 자동 학습 옵션을 기본 활성화했습니다.

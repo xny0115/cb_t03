@@ -48,3 +48,48 @@ Test:
   - warn/fail(raw): none
 
 Pending/Rollback/Next: none
+
+Date(KST): 2025-08-26
+Agent: Codex
+Repo: /workspace/cb_t03
+Branch: work
+HEAD: 77e768979e57
+Dirty: no
+Status: DONE (2025-08-26)
+
+Directives:
+  - 지시-1) [CFG-TRAIN] 앵커 라인 선두 정렬 및 tests/ 검증 추가.
+  - 지시-2) WORKLOG 지시/처리 정리와 확장 섹션 가이드 문서화.
+
+Actions:
+  - 처리-1) src/training/simple.py L52–57,L383–390 +10/-2; tests/test_cfg_train_anchor.py L1–14 +14/-0 — [CFG-TRAIN] 로그 문자열을 라인 선두로 배치하고 그렙 검증 테스트를 추가.
+  - 처리-2) AGENTS.md L15 +1/-0; Changelog.md L11–18 +8/-0; WORKLOG.md L52–95 +45/-0 — WORKLOG 확인·확장 안내를 문서화하고 항목을 정비.
+
+FilesChanged:
+  - AGENTS.md +1/-0
+  - Changelog.md +8/-0
+  - src/training/simple.py +10/-2
+  - tests/test_cfg_train_anchor.py +14/-0
+  - WORKLOG.md +45/-0
+
+Logs:
+  - [CFG-TRAIN] sdp=disabled, cudnn.benchmark=False
+
+Test:
+  - cmd: ALLOW_CPU_TRAINING=1 pytest -q
+  - metrics: 17 passed, 3 skipped
+  - warn/fail(raw): none
+
+Pending/Rollback/Next: none
+
+---
+- Context: branch=work, head=N/A, range=N/A, modules=[src.training.simple, tests.test_cfg_train_anchor]
+- Entrypoints/Functions: start_training
+- Invariants/Non-Goals: 기본값 유지, 새 ENV 없음
+- Risk & Mitigation: 앵커 미감지 → grep 테스트로 가드
+- Before/After: grep '^\[CFG-TRAIN\]' src/
+- Perf/Correctness Probes: N/A
+- Runtime toggles used: ALLOW_CPU_TRAINING=1
+- Tests touched/added: tests/test_cfg_train_anchor.py::test_cfg_train_anchor
+- Rollback: git revert HEAD
+- Open/Next: none
