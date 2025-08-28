@@ -49,7 +49,12 @@ else:
             torch.backends.cudnn.benchmark = False
         except Exception:
             pass
-logger.info("[CFG-TRAIN] sdp=%s, cudnn.benchmark=%s", sdp_flags, torch.backends.cudnn.benchmark)
+logger.info(
+    """\
+[CFG-TRAIN] sdp=%s, cudnn.benchmark=%s""",
+    sdp_flags,
+    torch.backends.cudnn.benchmark,
+)
 logger.info(
     f"[GPU] cuda_available={torch.cuda.is_available()} device={(torch.cuda.get_device_name(0) if torch.cuda.is_available() else 'CPU')}"
 )
@@ -376,7 +381,8 @@ def train(
     dataset, line_count = _prepare_dataset(samples, tokenizer, is_pretrain)
     loader = _create_loader(dataset, cfg, drop_last=True)
     logger.info(
-        "[CFG-TRAIN] epochs=%s bs=%s lr=%s dropout=%s mixed=%s",
+        """\
+[CFG-TRAIN] epochs=%s bs=%s lr=%s dropout=%s mixed=%s""",
         epochs,
         cfg.get("batch_size", 128),
         cfg.get("learning_rate", 1e-4),
