@@ -1,5 +1,9 @@
 # 변경 이력
 ## vNEXT (2025-08-26, KST)
+- 저장소 핵심 로직 점검 결과를 `report/issues.txt`로 정리하고 주요 결함 12건과 개선 방안을 문서화했습니다.
+  - Training Config diff: N/A
+  - Logs: report/issues.txt (정적 분석)
+  - Runtime: 코드 리뷰
 - SDP/cuDNN 환경 가드 및 로그 보강.
   - Training Config diff: N/A
   - Logs: [CFG-TRAIN] sdp=flash=True,mem=True,math=False, cudnn.benchmark=True / [CFG-GEN] t=0.30 tp=0.90 k=0 mnt=128 rep=1.10 beams=1 sample=yes
