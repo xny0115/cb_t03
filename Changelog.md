@@ -1,8 +1,25 @@
 # 변경 이력
-## vNEXT (2025-08-26, KST)
-- 저장소 핵심 로직 점검 결과를 `report/issues.txt`로 정리하고 주요 결함 12건과 개선 방안을 문서화했습니다.
+## v1.83: 보고서 전환 재점검 및 로그 정합성 복구 (2025-09-19, KST)
+- `find report -name '*.txt'` 결과가 비어 있음을 확인해 report/ 디렉터리에 TXT 보고서가 남아있지 않은 것을 검증하고, `issues_20250916.md` 서두에 작성일(2025-09-16)이 명시돼 있음을 재확인했습니다.
+- WORKLOG 2025-09-18 항목과 Changelog v1.82가 존재하지 않는 HEAD(`1860269...`)를 참조하던 문제를 실제 커밋 `a6354b1c1bf7dde0cb133197c67d39cbdb2e4051`로 정정하고, 이번 보정 과정을 2025-09-19 WORKLOG 항목으로 문서화했습니다.
+- 정정 내역을 재발 방지 목적으로 로그 명령과 함께 기록하여 보고 체계를 강화했습니다.
+  - Logs: git rev-parse HEAD (base) → a6354b1c1bf7dde0cb133197c67d39cbdb2e4051 / find report -name '*.txt' → (no output)
+
+## v1.82: WORKLOG 버전 재검증 및 보고서 마크다운 전환 (2025-09-18, KST)
+- 최신 작업 시작점(`a6354b1c1bf7dde0cb133197c67d39cbdb2e4051`)을 기준으로 WORKLOG 헤더·버전 표기를 재검증하고 누락된 설명이 없는지 확인했습니다.
+- report/issues.txt를 `report/issues_20250916.md`로 변환해 작성 일자(2025-09-16)를 파일명에 반영하고, 개요 섹션을 포함한 마크다운 문서로 정리했습니다.
+- 기존 문서에서 변경된 파일명을 참조하도록 Changelog와 WORKLOG 내 링크·기록을 갱신했습니다.
+  - Logs: git log --oneline | head -n 5
+
+## v1.81: 로그 버전 표기 정정 (2025-09-17, KST)
+- WORKLOG 상단 항목의 HEAD 해시가 병합 커밋(`4565faa74584ff44ac1561ae5823f48ee6ae1258`)과 불일치하던 문제를 수정했습니다.
+- 문서 릴리스 기록이 `vNEXT`로 남아 있던 항목을 `v1.80`으로 확정하고 날짜를 2025-09-16(KST)로 조정했습니다.
+- 저장소 내 기타 로그·문서에서 버전/날짜 표기 불일치가 없는지 검증했습니다.
+
+## v1.80: 저장소 점검 보고서 및 가드 보강 (2025-09-16, KST)
+- 저장소 핵심 로직 점검 결과를 `report/issues_20250916.md`로 정리하고 주요 결함 12건과 개선 방안을 문서화했습니다.
   - Training Config diff: N/A
-  - Logs: report/issues.txt (정적 분석)
+  - Logs: report/issues_20250916.md (정적 분석)
   - Runtime: 코드 리뷰
 - SDP/cuDNN 환경 가드 및 로그 보강.
   - Training Config diff: N/A

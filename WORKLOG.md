@@ -1,24 +1,124 @@
 읽음 확인
 # WORKLOG
+Date(KST): 2025-09-19
+Agent: Codex
+Repo: /workspace/cb_t03
+Branch: work
+HEAD: a6354b1c1bf7dde0cb133197c67d39cbdb2e4051
+Dirty: no
+Status: DONE (2025-09-19)
+
+Directives:
+  - 지시-1) report/ 디렉터리의 보고서가 Markdown 형식과 작성일자 포함 파일명 규칙을 준수하는지 재점검.
+  - 지시-2) 최근 작업 로그(Changelog·WORKLOG)의 버전·HEAD 표기를 실제 커밋 정보로 정정하고 상세 기록을 추가.
+  - 지시-3) 위 조치 결과를 로그 명령 출력과 함께 문서화해 재발을 방지.
+
+Actions:
+  - 처리-1) `find report -name '*.txt'`로 잔존 TXT 보고서가 없음을 확인하고, `report/issues_20250916.md` 머리말에 작성일이 명시돼 있음을 재검토.
+  - 처리-2) Changelog 최신 항목(v1.82)의 잘못된 HEAD 해시(`1860269...`)를 실제 커밋 `a6354b1c1bf7dde0cb133197c67d39cbdb2e4051`로 교체하고, 정정 작업을 새로운 v1.83 항목으로 기록.
+  - 처리-3) WORKLOG 2025-09-18 항목의 HEAD/Logs를 실제 커밋으로 수정하고, 이번 정정 내역을 2025-09-19 항목으로 추가.
+
+FilesChanged:
+  - Changelog.md
+  - WORKLOG.md
+
+Logs:
+  - git rev-parse HEAD (base) → a6354b1c1bf7dde0cb133197c67d39cbdb2e4051
+  - find report -name '*.txt' → (no output)
+
+Test:
+  - not run (문서 정리 작업)
+
+Pending/Rollback/Next: none
+
+---
+# WORKLOG
+Date(KST): 2025-09-18
+Agent: Codex
+Repo: /workspace/cb_t03
+Branch: work
+HEAD: a6354b1c1bf7dde0cb133197c67d39cbdb2e4051
+Dirty: no
+Status: DONE (2025-09-18)
+
+Directives:
+  - 지시-1) Changelog·WORKLOG 전반의 버전·HEAD 표기를 재검증하고 보완 사항을 정리.
+  - 지시-2) report/ 디렉터리 내 텍스트 보고서를 Markdown으로 전환하고 파일명에 작성 일자를 표기.
+
+Actions:
+  - 처리-1) git 로그·cat-file을 사용해 기존 WORKLOG 항목에 기록된 HEAD 해시(4565faa74584, 0cf5d5594494, 77e768979e57 등)가 실제 커밋으로 존재함을 재확인.
+  - 처리-2) report/issues.txt를 `report/issues_20250916.md`로 이동하고 개요/문제/개선 구조를 갖춘 Markdown 문서로 재작성.
+  - 처리-3) 변경된 파일명을 참조하도록 Changelog와 WORKLOG의 관련 기록을 업데이트.
+
+FilesChanged:
+  - report/issues_20250916.md
+  - Changelog.md
+  - WORKLOG.md
+
+Logs:
+  - git rev-parse HEAD → a6354b1c1bf7dde0cb133197c67d39cbdb2e4051
+  - git log --oneline | head -n 5
+  - git cat-file -t 4565faa74584ff44ac1561ae5823f48ee6ae1258 → commit
+  - git cat-file -t 0cf5d5594494 → commit
+  - git cat-file -t 77e768979e57 → commit
+
+Test:
+  - not run (문서 정리 작업)
+
+Pending/Rollback/Next: none
+
+---
+# WORKLOG
+Date(KST): 2025-09-17
+Agent: Codex
+Repo: /workspace/cb_t03
+Branch: work
+HEAD: 4565faa74584
+Dirty: no
+Status: DONE (2025-09-17)
+
+Directives:
+  - 지시-1) 저장소 로그 및 작업내역의 버전·날짜 표기를 검증하고 불일치 항목을 수정.
+  - 지시-2) 수정 사항을 WORKLOG와 Changelog에 상세히 기록.
+
+Actions:
+  - 처리-1) Changelog 상단을 v1.80(2025-09-16 KST) 릴리스로 확정하고 신규 정정 작업을 v1.81로 문서화.
+  - 처리-2) WORKLOG 최신 항목의 HEAD 해시를 병합 커밋(4565faa74584ff44ac1561ae5823f48ee6ae1258)과 일치하도록 수정.
+  - 처리-3) 기타 문서에서 버전 표기 이상 유무를 확인하고 추가 조치 필요 없음을 검증.
+
+FilesChanged:
+  - Changelog.md
+  - WORKLOG.md
+
+Logs:
+  - git rev-parse HEAD → 4565faa74584ff44ac1561ae5823f48ee6ae1258
+
+Test:
+  - not run (문서 정리 작업)
+
+Pending/Rollback/Next: none
+
+---
+# WORKLOG
 Date(KST): 2025-09-16
 Agent: Codex
 Repo: /workspace/cb_t03
 Branch: work
-HEAD: c1b7c6bb14df
+HEAD: 4565faa74584
 Dirty: no
 Status: DONE (2025-09-16)
 
 Directives:
-  - 지시-1) 저장소 전체 점검 결과를 report/issues.txt로 정리하여 사용자에게 제공.
+  - 지시-1) 저장소 전체 점검 결과를 report/issues_20250916.md로 정리하여 사용자에게 제공.
   - 지시-2) 핵심 로직 이상 징후를 식별하고 개선 방향을 기술.
   - 지시-3) 작업 내역을 WORKLOG·Changelog에 문서화하고 저장소 규칙을 준수.
 
 Actions:
-  - 처리-1) report/issues.txt 작성 — 핵심 로직, 토크나이저, 학습 루프, 서비스 로직 문제를 10건 이상 정리.
+  - 처리-1) report/issues_20250916.md 작성 — 핵심 로직, 토크나이저, 학습 루프, 서비스 로직 문제를 10건 이상 정리.
   - 처리-2) WORKLOG/Changelog를 갱신하여 점검 범위와 산출물을 기록.
 
 FilesChanged:
-  - report/issues.txt (신규)
+  - report/issues_20250916.md (신규)
   - WORKLOG.md
   - Changelog.md
 
