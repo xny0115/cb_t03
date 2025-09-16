@@ -1,10 +1,41 @@
 읽음 확인
 # WORKLOG
+Date(KST): 2025-09-17
+Agent: Codex
+Repo: /workspace/cb_t03
+Branch: work
+HEAD: 4565faa74584
+Dirty: no
+Status: DONE (2025-09-17)
+
+Directives:
+  - 지시-1) 저장소 로그 및 작업내역의 버전·날짜 표기를 검증하고 불일치 항목을 수정.
+  - 지시-2) 수정 사항을 WORKLOG와 Changelog에 상세히 기록.
+
+Actions:
+  - 처리-1) Changelog 상단을 v1.80(2025-09-16 KST) 릴리스로 확정하고 신규 정정 작업을 v1.81로 문서화.
+  - 처리-2) WORKLOG 최신 항목의 HEAD 해시를 병합 커밋(4565faa74584ff44ac1561ae5823f48ee6ae1258)과 일치하도록 수정.
+  - 처리-3) 기타 문서에서 버전 표기 이상 유무를 확인하고 추가 조치 필요 없음을 검증.
+
+FilesChanged:
+  - Changelog.md
+  - WORKLOG.md
+
+Logs:
+  - git rev-parse HEAD → 4565faa74584ff44ac1561ae5823f48ee6ae1258
+
+Test:
+  - not run (문서 정리 작업)
+
+Pending/Rollback/Next: none
+
+---
+# WORKLOG
 Date(KST): 2025-09-16
 Agent: Codex
 Repo: /workspace/cb_t03
 Branch: work
-HEAD: c1b7c6bb14df
+HEAD: 4565faa74584
 Dirty: no
 Status: DONE (2025-09-16)
 
