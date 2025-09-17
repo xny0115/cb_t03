@@ -1,4 +1,11 @@
 # 변경 이력
+## v1.82: config 입출력 컨텍스트 매니저 및 테스트 보강 (2025-09-17, KST)
+- Config: `load_config`/`save_config`에서 `with open(...)` 컨텍스트 매니저를 사용해 예외 상황에서도 파일 핸들을 안전하게 정리하도록 수정했습니다.
+  - Reference: report/issues.txt 항목 11 대응
+- Test: `tests/test_config_io.py`를 신설해 CONFIG_PATH 재설정, 손상된 JSON 복구, 저장 결과 지속성을 검증했습니다.
+  - Test: `pytest -q` (17 passed, 3 skipped)
+  - Runtime: CPU pytest
+
 ## v1.81: 로그 버전 표기 정정 (2025-09-17, KST)
 - WORKLOG 상단 항목의 HEAD 해시가 병합 커밋(`4565faa74584ff44ac1561ae5823f48ee6ae1258`)과 불일치하던 문제를 수정했습니다.
 - 문서 릴리스 기록이 `vNEXT`로 남아 있던 항목을 `v1.80`으로 확정하고 날짜를 2025-09-16(KST)로 조정했습니다.

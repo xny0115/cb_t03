@@ -54,7 +54,8 @@ DEFAULT_CONFIG: Dict[str, Any] = {
 def load_config() -> Dict[str, Any]:
     if CONFIG_PATH.exists():
         try:
-            data = json.load(open(CONFIG_PATH, encoding="utf-8"))
+            with CONFIG_PATH.open(encoding="utf-8") as file:
+                data = json.load(file)
         except Exception:
             data = {}
     else:
@@ -66,4 +67,5 @@ def load_config() -> Dict[str, Any]:
 
 def save_config(cfg: Dict[str, Any]) -> None:
     CONFIG_PATH.parent.mkdir(parents=True, exist_ok=True)
-    json.dump(cfg, open(CONFIG_PATH, "w", encoding="utf-8"), ensure_ascii=False, indent=2)
+    with CONFIG_PATH.open("w", encoding="utf-8") as file:
+        json.dump(cfg, file, ensure_ascii=False, indent=2)
