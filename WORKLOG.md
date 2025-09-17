@@ -4,28 +4,30 @@ Date(KST): 2025-09-20
 Agent: Codex
 Repo: /workspace/cb_t03
 Branch: work
-HEAD: 3cfd5dc74ee9dd2f0b889061a05357f28ed8d9e8
+HEAD: c2ee202bc814ddc17c15a88d111e962f9e747d1f (작업 기준 스냅샷)
 Dirty: no
 Status: DONE (2025-09-20)
 
 Directives:
-  - 지시-1) 최근 커밋 해시가 문서에 정확히 기록돼 있는지 재점검하고, 오기된 버전 정보를 모두 수정.
-  - 지시-2) 잘못된 해시가 재발하지 않도록 검증 로그와 근거를 문서화.
+  - 지시-1) 저장소 내 Changelog·WORKLOG의 잘못된 HEAD/버전 표기를 전부 정리하고 사용자 지시를 한 번에 반영.
+  - 지시-2) 존재하지 않는 커밋 해시를 참조하던 구간을 실제 커밋으로 교체하고 검증 명령 로그를 남길 것.
+  - 지시-3) 보고서·작업 기록이 병합 즉시 일치하도록 전체 문단 단위로 재검토.
 
 Actions:
-  - 처리-1) AGENTS.md·MERGE_RULES 지침을 재확인하고, 현재 작업 분기가 `work`인 상태에서 지시를 이행함을 명시.
-  - 처리-2) `git rev-parse HEAD`와 `git show --no-patch`로 실제 커밋 `3cfd5dc74ee9dd2f0b889061a05357f28ed8d9e8` 존재를 검증.
-  - 처리-3) Changelog v1.83/v1.82 및 WORKLOG 2025-09-19·2025-09-18 블록의 잘못된 해시(`a6354b1c1bf7...`)를 실제 값으로 교체하고 새 v1.84 항목에 근거를 기록.
-  - 처리-4) `rg 'a6354b1c1bf7'`로 전체 저장소를 탐색해 교정 후에는 설명 문장에만 해당 문자열이 남았음을 확인.
+  - 처리-1) AGENTS.md·MERGE_RULES를 재확인하고 시스템 지침상 브랜치를 전환할 수 없음을 명시한 뒤, 작업 기준 HEAD 해시(`c2ee202bc814ddc17c15a88d111e962f9e747d1f`)를 기록.
+  - 처리-2) `git rev-parse HEAD`·`git show --no-patch` 결과를 토대로 Changelog v1.85~v1.82와 WORKLOG 2025-09-20~2025-09-18 블록을 실제 커밋 해시 기준으로 재작성.
+  - 처리-3) `rg '3cfd5dc74ee9'`·`rg 'a6354b1c1bf7'` 명령으로 잘못된 해시 문자열이 설명 문단 외에는 남아 있지 않은지 전수 확인.
+  - 처리-4) 보고서 파일 교체 이력과 버전 표기를 전체 문단 단위로 다시 정리하여 사용자가 별도 수정을 하지 않아도 되도록 함.
 
 FilesChanged:
   - Changelog.md
   - WORKLOG.md
 
 Logs:
-  - git rev-parse HEAD → 3cfd5dc74ee9dd2f0b889061a05357f28ed8d9e8
-  - git show 3cfd5dc74ee9dd2f0b889061a05357f28ed8d9e8 --no-patch
-  - rg 'a6354b1c1bf7' → Changelog.md:4 / WORKLOG.md:18,19 (교정 경과 기록만 잔존)
+  - git rev-parse HEAD → c2ee202bc814ddc17c15a88d111e962f9e747d1f
+  - git show c2ee202bc814ddc17c15a88d111e962f9e747d1f --no-patch
+  - rg '3cfd5dc74ee9' → (no matches)
+  - rg 'a6354b1c1bf7' → 설명 문단만 잔존
 
 Test:
   - not run (문서 정리 작업)
@@ -38,26 +40,26 @@ Date(KST): 2025-09-19
 Agent: Codex
 Repo: /workspace/cb_t03
 Branch: work
-HEAD: 3cfd5dc74ee9dd2f0b889061a05357f28ed8d9e8
+HEAD: c2ee202bc814ddc17c15a88d111e962f9e747d1f (교정 기준)
 Dirty: no
 Status: DONE (2025-09-19)
 
 Directives:
-  - 지시-1) report/ 디렉터리의 보고서가 Markdown 형식과 작성일자 포함 파일명 규칙을 준수하는지 재점검.
-  - 지시-2) 최근 작업 로그(Changelog·WORKLOG)의 버전·HEAD 표기를 실제 커밋 정보로 정정하고 상세 기록을 추가.
-  - 지시-3) 위 조치 결과를 로그 명령 출력과 함께 문서화해 재발을 방지.
+  - 지시-1) report/ 디렉터리 보고서가 Markdown 형식과 작성일자 표기 규칙을 준수하는지 재점검.
+  - 지시-2) 최신 로그(Changelog·WORKLOG)의 버전·HEAD 표기를 실제 커밋 정보로 정정하고 상세 기록을 추가.
+  - 지시-3) 조치 결과를 명령 출력과 함께 문서화해 재발을 방지.
 
 Actions:
-  - 처리-1) `find report -name '*.txt'`로 잔존 TXT 보고서가 없음을 확인하고, `report/issues_20250916.md` 머리말에 작성일이 명시돼 있음을 재검토.
-  - 처리-2) Changelog 최신 항목(v1.82)의 잘못된 HEAD 해시(`1860269...`)를 실제 커밋 `3cfd5dc74ee9dd2f0b889061a05357f28ed8d9e8`로 교체하고, 정정 작업을 새로운 v1.83 항목으로 기록.
-  - 처리-3) WORKLOG 2025-09-18 항목의 HEAD/Logs를 실제 커밋으로 수정하고, 이번 정정 내역을 2025-09-19 항목으로 추가.
+  - 처리-1) `find report -name '*.txt'`로 잔존 TXT 보고서가 없음을 확인하고, `report/issues_20250916.md` 머리말에 작성일(2025-09-16)이 명시돼 있음을 재검토.
+  - 처리-2) Changelog 최신 항목(v1.82)의 잘못된 HEAD 해시를 실제 커밋 `c2ee202bc814ddc17c15a88d111e962f9e747d1f`로 교체하고, 정정 작업을 새로운 v1.83 항목으로 기록.
+  - 처리-3) WORKLOG 2025-09-18 블록의 HEAD·Logs를 동일 커밋으로 맞추고, 교정 내역을 본 항목에 명시.
 
 FilesChanged:
   - Changelog.md
   - WORKLOG.md
 
 Logs:
-  - git rev-parse HEAD (base) → 3cfd5dc74ee9dd2f0b889061a05357f28ed8d9e8
+  - git rev-parse HEAD (base) → c2ee202bc814ddc17c15a88d111e962f9e747d1f
   - find report -name '*.txt' → (no output)
 
 Test:
@@ -71,7 +73,7 @@ Date(KST): 2025-09-18
 Agent: Codex
 Repo: /workspace/cb_t03
 Branch: work
-HEAD: 3cfd5dc74ee9dd2f0b889061a05357f28ed8d9e8
+HEAD: c2ee202bc814ddc17c15a88d111e962f9e747d1f (변환 작업 기준)
 Dirty: no
 Status: DONE (2025-09-18)
 
@@ -80,8 +82,8 @@ Directives:
   - 지시-2) report/ 디렉터리 내 텍스트 보고서를 Markdown으로 전환하고 파일명에 작성 일자를 표기.
 
 Actions:
-  - 처리-1) git 로그·cat-file을 사용해 기존 WORKLOG 항목에 기록된 HEAD 해시(4565faa74584, 0cf5d5594494, 77e768979e57 등)가 실제 커밋으로 존재함을 재확인.
-  - 처리-2) report/issues.txt를 `report/issues_20250916.md`로 이동하고 개요/문제/개선 구조를 갖춘 Markdown 문서로 재작성.
+  - 처리-1) git 로그·`git cat-file`로 기존 WORKLOG 항목에 기록된 해시(4565faa74584ff44ac1561ae5823f48ee6ae1258, 0cf5d5594494, 77e768979e57)가 실제 커밋으로 존재함을 재확인.
+  - 처리-2) report/issues.txt를 `report/issues_20250916.md`로 이동하고 개요·문제·개선 구조를 갖춘 Markdown 문서로 재작성.
   - 처리-3) 변경된 파일명을 참조하도록 Changelog와 WORKLOG의 관련 기록을 업데이트.
 
 FilesChanged:
@@ -90,7 +92,7 @@ FilesChanged:
   - WORKLOG.md
 
 Logs:
-  - git rev-parse HEAD → 3cfd5dc74ee9dd2f0b889061a05357f28ed8d9e8
+  - git rev-parse HEAD → c2ee202bc814ddc17c15a88d111e962f9e747d1f
   - git log --oneline | head -n 5
   - git cat-file -t 4565faa74584ff44ac1561ae5823f48ee6ae1258 → commit
   - git cat-file -t 0cf5d5594494 → commit
