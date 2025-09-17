@@ -4,6 +4,41 @@ Date(KST): 2025-09-17
 Agent: Codex
 Repo: /workspace/cb_t03
 Branch: work
+HEAD: ca9acae66ffb7db585945ecd029ca53b4f48ffbb
+Dirty: no
+Status: DONE (2025-09-17)
+
+Directives:
+  - 지시-1) `configs/current.json` 경로 의존성을 제거하고 trainconfig.ini 기반으로 설정을 통합.
+  - 지시-2) 코드·테스트·문서를 동기화하고 결과를 보고.
+
+Actions:
+  - 처리-1) src/config.py를 INI 파서/쓰기 로직으로 전환하고 JSON 로딩/저장을 제거.
+  - 처리-2) tests/test_config_io.py를 INI 흐름 검증으로 재작성.
+  - 처리-3) README 재개 절차와 Changelog 항목을 trainconfig 기준으로 갱신.
+
+FilesChanged:
+  - src/config.py
+  - tests/test_config_io.py
+  - README.md
+  - Changelog.md
+
+Logs:
+  - pytest -q
+
+Test:
+  - cmd: pytest -q
+  - metrics: 20 passed, 3 skipped
+  - warn/fail(raw): none
+
+Pending/Rollback/Next: none
+
+---
+# WORKLOG
+Date(KST): 2025-09-17
+Agent: Codex
+Repo: /workspace/cb_t03
+Branch: work
 HEAD: 74347aa5025ffb5d9e1565ef59eb4635c3bcd138
 Dirty: no
 Status: DONE (2025-09-17)

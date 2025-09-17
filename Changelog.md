@@ -1,4 +1,10 @@
 # 변경 이력
+## v1.83: trainconfig.ini 기반 설정 일원화 (2025-09-17, KST)
+- Config: `load_config`/`save_config`가 `trainconfig.ini`를 직접 읽고 쓰도록 수정하여 구버전 JSON(`configs/current.json`) 경로 의존성을 제거했습니다.
+- Config: INI 섹션 덮어쓰기 로직을 보강해 `[train]` 공통 값과 모드별 `[pretrain]`/`[finetune]` 키를 일관되게 업데이트합니다.
+- Test: `tests/test_config_io.py`를 INI 흐름에 맞춰 재작성하고 trainconfig 갱신 동작을 검증했습니다.
+- Doc: README 재개 절차에서 `trainconfig.ini` 기준 안내로 교체했습니다.
+
 ## v1.82: config 입출력 컨텍스트 매니저 및 테스트 보강 (2025-09-17, KST)
 - Config: `load_config`/`save_config`에서 `with open(...)` 컨텍스트 매니저를 사용해 예외 상황에서도 파일 핸들을 안전하게 정리하도록 수정했습니다.
   - Reference: report/issues.txt 항목 11 대응

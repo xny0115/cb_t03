@@ -124,7 +124,7 @@ python train_spm.py --input "datas/pretrain/**/*.txt"
 - 장애 시: 콘솔 로그 마지막 200줄과 스택트레이스 원문만 수집·보고.
 
 ### 재개(resume) 절차
-- 학습 중단 후 재개하려면 `configs/current.json`에 `{"resume": true}`를 유지하고, 최근 체크포인트가 `models/`에 존재해야 합니다.
+- 학습 중단 후 재개하려면 `trainconfig.ini`의 대상 섹션(`[pretrain]` 또는 `[finetune]`)에서 `resume = yes`로 지정하고, 최근 체크포인트가 `models/`에 존재해야 합니다.
 - `python run.py` 실행 후 UI에서 재개 모드를 선택하면 됩니다.
 - 로그에 `[TRAIN-START]` / `[CFG]` / `[TRAIN-END]`가 순서대로 출력되면 정상 재개입니다.
 - 실패 시 콘솔 로그 마지막 200줄과 스택트레이스 원문을 보고하십시오.
@@ -133,12 +133,12 @@ python train_spm.py --input "datas/pretrain/**/*.txt"
 - `python run.py` 실행 → UI에서 질문 1회 입력.
 - 로그에서 `[SERVE] model_loaded` / `[GEN] max_new_tokens=` 문구가 출력되는지 확인.
 - 응답이 반환되면 정상. 실패 시 콘솔 로그 마지막 200줄과 스택트레이스 원문을 수집·보고.
-- (선택) `configs/current.json`의 `resume`과 무관하게 서빙은 최신 체크포인트를 자동 로드합니다.
+- (선택) `trainconfig.ini`의 `resume` 설정과 관계없이 서빙은 최신 체크포인트를 자동 로드합니다.
 
 
 ### MVP 릴리스 체크리스트
 - 학습 스모크(50~100 step): 로그에 `[GPU]`/`[ENV]`/`[CFG]`/`[DATA]`/`[TRAIN-START]`→`[TRAIN-END]` 순서로 출력됨.
-- 재개(20 step): `configs/current.json`의 `{"resume": true}` 유지, 체크포인트 존재 확인 후 재개 성공.
+- 재개(20 step): `trainconfig.ini`에서 `resume = yes` 유지, 체크포인트 존재 확인 후 재개 성공.
 - 서빙 1회: `[SERVE] model_loaded`와 `[GEN] max_new_tokens=` 로그가 출력되고 응답이 반환됨.
 - 실패 시 보고: 콘솔 로그 **마지막 200줄** + **스택트레이스 원문** + GPU/torch 버전.
 - ENV 규칙: `DISABLE_*` 값은 '1'만 비활성(기타 값은 무시, 경고 로그 발생).
