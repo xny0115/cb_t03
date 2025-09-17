@@ -4,6 +4,38 @@ Date(KST): 2025-09-17
 Agent: Codex
 Repo: /workspace/cb_t03
 Branch: work
+HEAD: 74347aa5025ffb5d9e1565ef59eb4635c3bcd138
+Dirty: no
+Status: DONE (2025-09-17)
+
+Directives:
+  - 지시-1) report/issues.txt 항목 11을 반영하여 config 입출력에서 컨텍스트 매니저를 사용하도록 수정.
+  - 지시-2) 변경 회귀를 방지할 테스트 케이스를 작성하고 결과를 문서화.
+
+Actions:
+  - 처리-1) src/config.load_config/save_config에 with open(...) 컨텍스트 매니저를 적용해 예외 발생 시 파일 핸들 누수를 방지.
+  - 처리-2) tests/test_config_io.py를 추가해 CONFIG_PATH 재설정, 손상된 JSON 복구, 저장 결과를 검증하는 단위 테스트를 구축.
+
+FilesChanged:
+  - src/config.py
+  - tests/test_config_io.py
+
+Logs:
+  - pytest -q
+
+Test:
+  - cmd: pytest -q
+  - metrics: 17 passed, 3 skipped
+  - warn/fail(raw): none
+
+Pending/Rollback/Next: none
+
+---
+# WORKLOG
+Date(KST): 2025-09-17
+Agent: Codex
+Repo: /workspace/cb_t03
+Branch: work
 HEAD: 4565faa74584
 Dirty: no
 Status: DONE (2025-09-17)
